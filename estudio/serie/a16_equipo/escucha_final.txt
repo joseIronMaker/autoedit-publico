@@ -1,0 +1,1 @@
+a16_equipo {"cortes":[],"tapa_la_voz":[],"limpio":true}

@@ -1,0 +1,79 @@
+{
+  "tema": "cuantas vueltas da un agente por una tarea y que cuesta",
+  "herramienta": "Codex CLI (bitacoras reales de ~/.codex/sessions)",
+  "sesiones_analizadas": 40,
+  "precios_usd_por_millon": {
+    "entrada": 1.25,
+    "entrada_cacheada": 0.125,
+    "salida": 10.0
+  },
+  "agregado": {
+    "llamadas": 293,
+    "esperas": 135,
+    "trabajo": 158,
+    "pct_espera": 46.1,
+    "costo_usd": 2.811
+  },
+  "sesion_mas_larga": {
+    "llamadas": 94,
+    "esperas": 82,
+    "trabajo": 12,
+    "turnos_usuario": 2,
+    "entrada": 2449040,
+    "cacheada": 2272512,
+    "salida": 6588,
+    "costo_usd": 0.5706,
+    "top": [
+      [
+        "wait",
+        82
+      ],
+      [
+        "exec",
+        12
+      ]
+    ]
+  },
+  "distribucion_llamadas": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    4,
+    4,
+    5,
+    5,
+    5,
+    6,
+    6,
+    6,
+    6,
+    7,
+    7,
+    7,
+    7,
+    8,
+    9,
+    11,
+    14,
+    19,
+    94
+  ]
+}

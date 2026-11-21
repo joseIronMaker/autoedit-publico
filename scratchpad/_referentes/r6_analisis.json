@@ -1,0 +1,68 @@
+{
+  "voz": {
+    "genero_aparente": "Femenino",
+    "edad_aparente": "30-45 años",
+    "acento": "Español peninsular (España), dicción estándar limpia con distinción clara de 'c/z' y 's'.",
+    "timbre": "Medio-grave, cálido, aterciopelado, con cuerpo y ligeramente aireado en los finales de frase.",
+    "tono_emocional": "Didáctico pero íntimo, sereno, con autoridad calmada y un toque de asombro contenido.",
+    "ritmo": "Pausado y deliberado (aprox. 125-135 palabras por minuto), permitiendo que cada concepto visual respire antes de introducir el siguiente.",
+    "uso_de_pausas": "Pausas estratégicas antes y después de los términos técnicos clave ('error', 'pérdida', 'gradiente', 'entrenar') y silencios dramáticos de casi un segundo en el giro ('No ha aprendido... Ha memorizado').",
+    "actuacion": "En 0:10 ('cuanto más alta, peor') baja el tono con gravedad; en 0:12 ('Ahora pregúntate') sube la inflexión invitando a la curiosidad; en 0:34 ('te pasas de largo') alarga las vocales acompañando el vuelo de la esfera; en 0:52-0:54 ('No ha aprendido. Ha memorizado') entrega la frase con sequedad y peso sentencioso; en 1:15 ('una sola predicción') cierra casi en un susurro íntimo.",
+    "humana_o_sintetica": "Sintética de alta gama (probablemente ElevenLabs con modelo Multilingual v2 o voz clonada profesional) o humana muy procesada; la evidencia de síntesis o edición extrema está en la perfección uniforme de las tomas de aire (casi inexistentes), la consistencia absoluta del timbre sin fatiga vocal y cierta cadencia algorítmica sutil al enumerar en 1:04 ('cantidades enormes de datos, modelos gigantes...').",
+    "procesado": "Grabación totalmente seca (sin reverb de sala), efecto de proximidad marcado (muy cercana al micro), compresión firme que nivela los susurros con las frases plenas, y ecualización que realza graves suaves (120-200 Hz) y brillo sedoso en agudos sin sibilancia agresiva.",
+    "direccion_de_locucion": "Quiero que leas este texto como si me estuvieras revelando un secreto fascinante sobre cómo funciona el universo, hablándome a diez centímetros del oído en una habitación en silencio. No proyectes la voz como en un comercial ni aceleres; deja que cada frase caiga por su propio peso. Cuando nombres un concepto técnico, haz una micro-pausa antes y pronúncialo con suavidad, como bautizando lo que el espectador acaba de entender con los ojos. En el momento en que el modelo falla ('No ha aprendido. Ha memorizado'), quítale toda la dulzura a la voz y dilo con frialdad clínica. Al final, cuando todo se desmonte, baja el volumen y la energía para terminar con la misma calma minimalista con la que empezaste."
+  },
+  "narrativa": {
+    "premisa": "Desmitificar la inteligencia artificial moderna demostrando visualmente que, en el fondo, no es más que el cálculo de un error simple repetido millones de veces.",
+    "gancho_primeros_3s": "Texto literal: 'Haz una predicción. Compárala con la respuesta correcta...'. Engancha porque empieza 'in media res' con una orden directa al espectador y una acción física inmediata (una esfera negra cayendo y rebotando sobre un lienzo blanco infinito), sin introducciones innecesarias.",
+    "estructura_por_actos": {
+      "acto_1_el_atomo_0_00_a_0_11": "Definición visual de predicción, respuesta correcta (diana), distancia de error y su cuantificación vertical como 'pérdida' (3,1).",
+      "acto_2_el_mecanismo_0_11_a_0_46": "Aparición de la topografía 3D. Explicación del 'gradiente', 'descenso de gradiente', el ajuste del tamaño del paso (hiperparámetro) y la repetición hasta llegar a pérdida 0,0 ('entrenar').",
+      "acto_3_el_conflicto_y_la_escala_0_47_a_1_11": "El problema del sobreajuste (overfitting) representado como un pozo profundo ('Ha memorizado'), la generalización ('aprendizaje automático') y la explosión masiva de escala hacia la 'inteligencia artificial'.",
+      "acto_4_cierre_circular_1_11_a_1_16": "Deconstrucción de la complejidad para regresar exactamente al plano blanco y la esfera única del segundo 0:00."
+    },
+    "recurso_central": "La analogía topográfica: traducir álgebra lineal y cálculo multivariable abstracto en física intuitiva (gravedad, pendientes, curvas de nivel y una canica que busca el valle más bajo).",
+    "giro": "En 0:47-0:54: cuando creemos que llegar a '0,0 pérdida' es el éxito total, el terreno se deforma en un embudo estrecho e inútil ante datos nuevos, y la pantalla se va a negro absoluto con el texto 'No ha aprendido. Ha memorizado.'",
+    "cierre": "Loop conceptual y visual perfecto ('vuelves al principio: una sola predicción'), dejando la esfera negra en la misma posición inicial, lo que invita a la repetición automática en TikTok.",
+    "por_que_se_ve_hasta_el_final": "Porque aplica el principio de 'primero el fenómeno, luego el nombre': primero ves la animación resolver un problema espacial satisfactorio y un segundo después aparece la etiqueta técnica, generando micro-recompensas de comprensión continua sin sobrecarga cognitiva."
+  },
+  "animacion": {
+    "estilo": "Minimalismo geométrico 3D con renderizado estilo ilustración editorial / línea técnica (shader no-fotorrealista de contornos y oclusión ambiental suave).",
+    "paleta": "Monocromática estricta: blanco puro de fondo, negro sólido para el protagonista (esfera) y textos, y escalas de grises para líneas topográficas y sombras suaves.",
+    "tipografia": "Combinación de dos fuentes: una Sans-Serif geométrica en negrita (tipo Inter o Helvetica Now Bold) para los datos numéricos ('3,1', '2,8', '0,0') y una Serif clásica en cursiva (tipo Garamond o Baskerville Italic) para bautizar los conceptos teóricos ('pérdida', 'gradiente', 'entrenar', 'aprendizaje automático').",
+    "camara": "Cámara virtual 3D con movimientos fluidos y curvas de aceleración suaves (ease-in-out): pasa de planos frontales a ras de suelo (0:06) a vistas isométricas/cenitales para mostrar el mapa de contorno (0:11), hace paneos rápidos siguiendo la física de la bola (0:35) y un gran zoom-out épico para revelar la complejidad global (1:05).",
+    "como_se_sincroniza_con_la_voz": "Sincronización milimétrica por 'Mickey Mousing' conceptual: cada palabra clave dispara una transformación geométrica exacta (al decir 'un número', crece el mástil graduado; al decir 'millones de pesos', los puntos rotan formando un círculo; al decir 'demasiado grande', la bola salta por los aires).",
+    "transiciones": "Continuidad espacial absoluta (sin cortes bruscos, salvo el corte dramático a negro en 0:52). Los elementos emergen orgánicamente del propio suelo mediante deformación de malla (el plano de puntos se ondula para volverse mapa topográfico en 0:10).",
+    "ejemplos_de_tres_momentos_brillantes": [
+      {
+        "tiempo": "0:05 - 0:10",
+        "descripcion": "La línea horizontal de distancia ('error') se levanta físicamente 90 grados como una pértiga vertical para convertirse en el eje Z de altura ('3,1 pérdida'), y de inmediato el suelo plano se deforma en colinas 3D alrededor de esa altura."
+      },
+      {
+        "tiempo": "0:13 - 0:21",
+        "descripcion": "De la esfera salen antenas exploratorias con pequeños triángulos que indican si el terreno sube o baja; luego se multiplican en un anillo de cientos de puntos que colapsan en un solo vector negro sólido ('gradiente')."
+      },
+      {
+        "tiempo": "0:44 - 0:54",
+        "descripcion": "La visualización del 'overfitting' (sobreajuste): el valle suave de pérdida 0,0 se hunde repentinamente como un agujero negro o pozo estrechísimo donde la bola queda atrapada, dejando fuera los nuevos datos (círculos blancos), antes del corte seco a pantalla negra."
+      }
+    ],
+    "como_se_produciria_hoy": "Inferencia técnica fundamentada:Producido en **Blender** (usando **Geometry Nodes** para la deformación paramétrica de las curvas de nivel, la lluvia de datos en 1:04 y las trayectorias sobre superficies) o en **Houdini** / **Cinema 4D**, renderizado con un motor limpio (Cycles/Redshift) y postproducido en **After Effects** para la composición tipográfica 2D/3D rastreada a objetos nulos y el diseño sonoro."
+  },
+  "sonido": {
+    "musica": "Ambient electrónico minimalista y cinemático: empieza con un drone sutil casi imperceptible, introduce un pulso de sintetizador grave y tenso hacia 0:45, se corta en seco en 0:52, y florece con acordes cálidos y expansivos en 0:56 ('aprendizaje automático') hasta disolverse al final.",
+    "efectos": "Foley hiper-detallado y táctil (estilo ASMR de interfaz): golpes graves amortiguados cuando cae la bola, 'ticks' mecánicos de relojería cuando sube el contador numérico (0:06) o aparecen los vectores (0:14), 'whooshes' de aire en los movimientos de cámara, sonido de succión gravitacional en el pozo (0:45) y crepitar de lluvia digital en 1:04.",
+    "relacion_con_la_voz": "Mezcla con 'ducking' perfecto: la voz ocupa el centro absoluto del espectro; los efectos de sonido rellenan los micro-espacios entre palabras puntuando las acciones visuales sin pisar nunca la dicción de la locutora."
+  },
+  "plantilla_creativa": {
+    "nombre_de_la_receta": "De la Canica al Cosmos: Explicación Visual Progresiva",
+    "principios": [
+      "1. Unidad mínima tangible: Empieza reduciendo un sistema hipercomplejo a un solo objeto geométrico simple realizando una acción física elemental en un vacío blanco.",
+      "2. Bautismo tardío (Show, then Name): Nunca definas un término con palabras antes de mostrar su comportamiento físico. Deja que el ojo entienda la mecánica y luego coloca una etiqueta en cursiva elegante como confirmación.",
+      "3. Evolución continua del escenario: No cambies de escena; haz que el propio suelo o entorno evolucione dimensionalmente (de punto a línea, de línea a altura, de altura a paisaje, de paisaje a ecosistema) a medida que la explicación gana complejidad.",
+      "4. Contraste por contraejemplo físico: Para explicar cómo funciona algo correctamente, muestra primero cómo falla en los extremos (demasiado lejos vs. demasiado corto; pozo estrecho vs. valle amplio).",
+      "5. Corte dramático a mitad de camino: Rompe la hipnosis visual del fondo blanco con un único corte a negro absoluto y texto contundente cuando reveles la trampa o paradoja central del tema.",
+      "6. Explosión de escala y retorno al origen: Cerca del final, multiplica el elemento inicial por miles para mostrar el poder real del sistema, e inmediatamente después desmóntalo todo para terminar con el mismo plano y objeto del segundo uno."
+    ]
+  }
+}

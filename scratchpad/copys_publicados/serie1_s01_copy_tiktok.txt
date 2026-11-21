@@ -1,0 +1,11 @@
+Le hice a ChatGPT dos preguntas del mismo tipo. Una la contestó con la fuente y la liga. La otra me dijo que no podía verificarla. Por el tono, las dos sonaban igual de seguras.
+
+Eso es lo que casi nadie te explica: el modelo no guarda datos. Elige la palabra siguiente por probabilidad, una tras otra. En técnico se llama predicción del siguiente token. Por eso completar de memoria y citar una fuente le cuestan exactamente lo mismo: las dos salen como cadenas de palabras probables.
+
+La seguridad con la que te lo dice no mide si es verdad. Mide qué tan común suena.
+
+Yo llegué a esto por vergüenza: le mandé un dato a un cliente porque la respuesta se veía impecable, y cuando me preguntó de dónde salía, no supe. Desde entonces hago una sola cosa antes de pasar cualquier número: pedirle la frase textual de la fuente y la liga. Treinta segundos. Si la tiene, te la pega. Si no, hoy te lo dice.
+
+Un modelo de lenguaje no es una base de datos. Es un predictor que suena a experto.
+
+¿Le crees a la IA por cómo suena o por lo que puede citar?

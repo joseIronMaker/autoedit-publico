@@ -1,0 +1,93 @@
+{
+  "nota": {
+    "hook": 5,
+    "coherencia": 3,
+    "viralidad": 5,
+    "explicabilidad": 3,
+    "marca": 3
+  },
+  "problemas": [
+    {
+      "escena": 1,
+      "eje": "hook",
+      "gravedad": "grave",
+      "que": "La frase tiene 11 palabras, pero abre con el abstracto «un recuadro» y no nombra IA, mamografía ni radiólogo, así que en tres segundos nadie sabe qué está en juego.",
+      "arreglo": "Sustitúyela por «Esta IA superó a seis radiólogos leyendo mamografías. ¿Los reemplaza?», que concreta el objeto, plantea el bucle y promete exactamente la comparación del estudio."
+    },
+    {
+      "escena": 1,
+      "eje": "coherencia",
+      "gravedad": "grave",
+      "que": "El guion declara como tema «asistir o reemplazar», pero la primera escena abre otra cuestión —detectar algo de tres milímetros— que después nunca demuestra.",
+      "arreglo": "Abre explícitamente «¿Los reemplaza?» y elimina los tres milímetros, salvo que muestres una lesión de ese tamaño respaldada por la fuente."
+    },
+    {
+      "escena": 2,
+      "eje": "explicabilidad",
+      "gravedad": "grave",
+      "que": "«Quitar las capas del final», «red toda de ventanas» y «etiqueta por cada pixel» acumulan tres ideas técnicas sin nombrar ni explicar segmentación o mapa de predicciones.",
+      "arreglo": "Di «Esto se llama segmentación: la red produce un mapa que clasifica zonas de la imagen; lo de las ventanas es una metáfora para entenderlo»."
+    },
+    {
+      "escena": 2,
+      "eje": "marca",
+      "gravedad": "grave",
+      "que": "La explicación es técnicamente engañosa: quitar capas finales no convierte por sí solo cualquier red en un sistema que etiqueta cada píxel a resolución original.",
+      "arreglo": "Explica que una red totalmente convolucional genera un mapa espacial y que una arquitectura de segmentación además recupera resolución para asignar clases por píxel."
+    },
+    {
+      "escena": 3,
+      "eje": "coherencia",
+      "gravedad": "grave",
+      "que": "La demo de bajar y subir resolución para contornear una foto ilustra segmentación, pero el estudio citado evalúa un sistema de predicción y detección en mamografías; el guion los presenta como si fueran el mismo modelo.",
+      "arreglo": "Muestra la salida real de localización o puntuación del artículo sobre una mamografía y, si conservas tu demo, rotúlala «analogía de segmentación; no es la arquitectura del estudio»."
+    },
+    {
+      "escena": 4,
+      "eje": "viralidad",
+      "gravedad": "grave",
+      "que": "La captura de Nature es verificable, pero la narración desperdicia la prueba: no enseña ningún resultado medido y deja «marcó cánceres» como afirmación imposible de comprobar en pantalla.",
+      "arreglo": "Haz zoom al resumen y muestra un dato exacto, por ejemplo «en EE. UU. redujo 9.4 puntos los falsos negativos y 5.7 los falsos positivos»."
+    },
+    {
+      "escena": 4,
+      "eje": "marca",
+      "gravedad": "grave",
+      "que": "«Marcó cánceres que los radiólogos no habían marcado» borra que fue una evaluación retrospectiva y transforma resultados agregados de predicción en una conclusión clínica más fuerte.",
+      "arreglo": "Di «En una evaluación retrospectiva, el sistema redujo falsos negativos frente a la lectura humana; el artículo aún pedía ensayos clínicos»."
+    },
+    {
+      "escena": 5,
+      "eje": "coherencia",
+      "gravedad": "grave",
+      "que": "La tesis sólo repite con poesía el giro de la escena 4 y jamás contesta si la IA asiste o reemplaza al experto.",
+      "arreglo": "Cámbiala por «La evidencia apoya usarla como segundo lector; este estudio no probó que pueda reemplazar al radiólogo»."
+    },
+    {
+      "escena": 5,
+      "eje": "marca",
+      "gravedad": "medio",
+      "que": "«Midiendo brillos» reduce una red a una falsedad y «nosotros no vimos» atribuye al narrador experiencia clínica que el guion no acredita; tampoco hay postura propia de ingeniero.",
+      "arreglo": "Usa «Como ingeniero de IA, no llamo reemplazo clínico a una predicción retrospectiva: el modelo aprendió patrones de píxeles, no medicina»."
+    },
+    {
+      "escena": 6,
+      "eje": "coherencia",
+      "gravedad": "grave",
+      "que": "El cierre salta a IA generativa sin resolver la pregunta central y rompe el único hilo que debía sostener los 35–45 segundos.",
+      "arreglo": "Cierra «Aquí asistía como segundo lector; no demostró reemplazo. Después veremos cómo pasó de analizar píxeles a generarlos»."
+    }
+  ],
+  "lo_que_funciona": [
+    "La frase «Esto es el esquema, no un modelo entrenado» distingue con honestidad la demo de una prueba de desempeño.",
+    "La escena 4 usa una fuente real, identificable y con fecha correcta: Nature, 1 de enero de 2020.",
+    "No hay petición de like, seguimiento, comentario ni guardado."
+  ],
+  "_hook_medido": {
+    "palabras": 11,
+    "caracteres": 65,
+    "segundos_aprox": 4.1,
+    "cabe_en_12": true,
+    "primera_frase": "Un recuadro no alcanza cuando lo que buscas mide tres milímetros"
+  }
+}

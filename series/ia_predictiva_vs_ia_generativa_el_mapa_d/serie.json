@@ -1,0 +1,37 @@
+{
+  "slug": "ia_predictiva_vs_ia_generativa_el_mapa_d",
+  "titulo": "IA Predictiva vs. IA Generativa: El mapa definitivo para entender la Inteligencia Artificial",
+  "modo": "corto",
+  "items": [
+    {
+      "tema": "La gran diferencia: ¿Tu IA predice el futuro o crea algo nuevo?",
+      "descripcion": "El espectador aprende a distinguir de forma instantánea entre la IA que analiza datos para tomar decisiones (predictiva) y la que inventa contenido original (generativa) usando un ejemplo cotidiano.",
+      "status": "listo",
+      "video": "videos/gen_dos_tipos_de_ia_final.mp4"
+    },
+    {
+      "tema": "IA Predictiva: El cerebro matemático que adivina tu próximo paso",
+      "descripcion": "El espectador descubre cómo la IA predictiva analiza su historial para anticipar comportamientos, como cuando Netflix le sugiere qué ver o el banco detecta un fraude.",
+      "status": "listo",
+      "video": "videos/gen_ia_predictiva_adivina_final.mp4"
+    },
+    {
+      "tema": "IA Generativa: La máquina que aprendió a ser creativa",
+      "descripcion": "El espectador comprende que la IA generativa no solo busca patrones, sino que los combina para crear textos, imágenes o códigos totalmente nuevos a partir de una simple instrucción.",
+      "status": "listo",
+      "video": "videos/gen_ia_generativa_fabrica_final.mp4"
+    },
+    {
+      "tema": "Duelo de herramientas: Cuándo usar cada IA en tu trabajo",
+      "descripcion": "El espectador aprende a elegir la herramienta correcta según su objetivo: IA predictiva para optimizar presupuestos y predecir ventas, o IA generativa para redactar correos y diseñar campañas.",
+      "status": "listo",
+      "video": "videos/gen_duelo_cual_ia_usar_final.mp4"
+    },
+    {
+      "tema": "El superpoder definitivo: Cómo fusionar ambas IAs para multiplicar tus resultados",
+      "descripcion": "El espectador domina la estrategia avanzada de usar la IA predictiva para identificar una oportunidad de negocio y la IA generativa para crear la solución de forma automática.",
+      "status": "listo",
+      "video": "videos/gen_combo_fusionar_ias_final.mp4"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+¿Diez agentes trabajan mejor que uno? Depende. Y la respuesta sorprende.
+Google midió ciento ochenta configuraciones de agentes.
+Cuando la tarea se podía dividir, un equipo con coordinador mejoró el resultado un ochenta y uno por ciento.
+Tiene lógica. Tres agentes buscando lugar, pastel y música no se estorban.
+Pero cuando la tarea iba paso por paso, todas las versiones con varios agentes empeoraron, entre treinta y nueve y setenta por ciento.
+Como nueve mamás intentando tener un bebé en un mes.
+Y sin coordinador, los errores se multiplicaron hasta por diecisiete. Con coordinador, por cuatro.
+Uno se equivoca, el otro lo toma como verdad, y el error crece.
+Hasta las empresas se contradijeron. Cognition escribió, no construyas multiagentes. Anthropic publicó cómo construyó uno. Y un año después, Cognition ya usaba revisores y delegación.
+Porque los dos tenían razón, en problemas distintos.
+No gana quien tiene más agentes.
+Gana quien sabe qué parte del trabajo...
+se puede partir.

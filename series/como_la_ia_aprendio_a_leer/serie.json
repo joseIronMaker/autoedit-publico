@@ -1,0 +1,105 @@
+{
+ "slug": "como_la_ia_aprendio_a_leer",
+ "titulo": "Cómo la IA aprendió a LEER (de contar palabras a ChatGPT)",
+ "modo": "corto",
+ "_nota_legal": "Serie de divulgacion ORIGINAL de Jose. Conceptos de dominio publico; NO reproduce diapositivas/figuras/texto/marca de ninguna fuente. Ejemplo conductor PROPIO ('Esta increible... para dormirse'), distinto al de cualquier material consultado. Rigor verificado contra la Lecture 2 del MIT 6.S191 (Deep Sequence Modeling) y material de divulgacion sobre la historia del NLP.",
+ "_arco": "CONTINUA la serie 'Deep Learning desde cero' (que termino en overfitting). Hilo conductor UNICO en los 19 videos: una frase de 4 palabras que rompio a la IA durante 25 anios -> 'Esta increible... para dormirse'. Cada epoca intenta clasificarla y falla, hasta que al final se resuelve SIN entrenar nada, solo escribiendo. Bloques: (0) el mapa -> (1) por que el texto es distinto -> (2) memoria/RNN -> (3) el techo de las RNN -> (4) atencion y transformer -> (5) de transformer a LLM y agentes. DISCIPLINA 'ESTO ES PARA ESTO': cada video ata su concepto a para que sirve en una IA real (ver PARA QUE de cada item).",
+ "_ejemplo_conductor": "Esta increible... para dormirse. (elogio + demolicion; rompe diccionarios, exige contexto y orden)",
+ "items": [
+  {
+   "tema": "Una frase de 4 palabras que rompió a la IA durante 25 años",
+   "descripcion": "El mapa completo: de contar palabras buenas y malas (2000) a un modelo que lo resuelve solo escribiendo (hoy). Se presenta la frase conductora 'Esta increible... para dormirse'. PARA QUE: da el mapa antes del recorrido y abre la serie.",
+   "status": "pendiente", "video": null
+  },
+  {
+   "tema": "El orden lo es todo: por qué una red normal no sirve para leer",
+   "descripcion": "'No es bueno, es buenisimo' vs 'No es buenisimo, es bueno': MISMAS palabras, sentido opuesto. Una red feedforward recibe todo de golpe y no tiene noción de orden ni de longitud variable. PARA QUE: por que la red de la serie anterior NO sirve para lenguaje.",
+   "status": "pendiente", "video": null
+  },
+  {
+   "tema": "La IA no lee letras, lee números (tokens y embeddings)",
+   "descripcion": "Vocabulario -> indice -> embedding: cada trozo de texto se vuelve un vector. El one-hot no dice nada; el embedding aprendido pone 'estudiar' cerca de 'aprender' y lejos de 'tenis'. PARA QUE: por que ChatGPT te cobra por TOKENS y no por palabras.",
+   "status": "pendiente", "video": null
+  },
+  {
+   "tema": "La neurona con memoria: el estado oculto (RNN)",
+   "descripcion": "Sin historia, predecir es adivinar. La RNN lee palabra por palabra arrastrando un estado h: h_t = f(x_t, h_(t-1)), con los MISMOS pesos en cada paso. PARA QUE: leer una frase entera sin perder lo que ya se dijo.",
+   "status": "pendiente", "video": null
+  },
+  {
+   "tema": "Entrenar en el tiempo: backpropagation through time",
+   "descripcion": "Una perdida por cada palabra, todas se suman, y el error viaja hacia atras por TODA la frase hasta el primer paso. PARA QUE: como aprende de verdad una red que lee (y por que se vuelve tan cara).",
+   "status": "pendiente", "video": null
+  },
+  {
+   "tema": "Por qué la IA olvidaba el principio de la frase",
+   "descripcion": "El gradiente cruza el mismo W una y otra vez: valores <1 se desvanecen (la red solo aprende lo cercano) y >1 explotan (se recorta con clipping). PARA QUE: por que los chatbots viejos perdian el hilo a las tres frases.",
+   "status": "pendiente", "video": null
+  },
+  {
+   "tema": "LSTM: compuertas que deciden qué recordar y qué olvidar",
+   "descripcion": "Una celda con puertas (sigmoide + multiplicacion punto a punto) que ANIADE o QUITA informacion del estado en cada paso. PARA QUE: memoria larga de verdad — el traductor y el autocorrector de tu telefono.",
+   "status": "pendiente", "video": null
+  },
+  {
+   "tema": "Los 3 defectos que mataron a las redes recurrentes",
+   "descripcion": "Cuello de botella (toda la frase comprimida en un solo vector), lentitud (palabra por palabra, no se puede paralelizar) y memoria corta. PARA QUE: por que con RNN era imposible entrenar con internet entero.",
+   "status": "pendiente", "video": null
+  },
+  {
+   "tema": "ATENCIÓN: la idea que lo cambió todo",
+   "descripcion": "En vez de arrastrar memoria paso a paso, mirar TODA la frase de golpe y aprender que partes importan. Dos pasos: identificar donde mirar y extraer eso. PARA QUE: es el mecanismo exacto que hace funcionar a ChatGPT.",
+   "status": "pendiente", "video": null
+  },
+  {
+   "tema": "Query, Key y Value: la IA hace una búsqueda dentro de la frase",
+   "descripcion": "Del mismo texto salen tres versiones: query (lo que busco), key (la etiqueta de cada palabra) y value (su contenido). Comparas query contra keys y te llevas los values que ganan. PARA QUE: entender el corazon del transformer sin una sola formula.",
+   "status": "pendiente", "video": null
+  },
+  {
+   "tema": "El número que decide a qué palabra mira el modelo",
+   "descripcion": "Producto punto entre query y key = que tan alineados apuntan; se escala y pasa por softmax para dejar pesos entre 0 y 1; esos pesos multiplican al value. PARA QUE: ver con numeros REALES como el modelo conecta 'para dormirse' con 'increible'.",
+   "status": "pendiente", "video": null
+  },
+  {
+   "tema": "Si lees todo de golpe, pierdes el orden (positional encoding)",
+   "descripcion": "La atencion mira toda la frase a la vez, asi que el orden se pierde; hay que re-inyectarlo sumando informacion de POSICION al embedding. PARA QUE: sin esto, 'no es bueno, es buenisimo' se volveria a romper.",
+   "status": "pendiente", "video": null
+  },
+  {
+   "tema": "Varias cabezas a la vez: multi-head attention",
+   "descripcion": "Se apilan varias atenciones en paralelo y cada cabeza aprende un patron distinto: una sigue al sujeto, otra la negacion, otra el tiempo verbal. PARA QUE: por que el modelo capta ironia y no solo palabras sueltas.",
+   "status": "pendiente", "video": null
+  },
+  {
+   "tema": "El Transformer: por fin se puede entrenar con internet entero",
+   "descripcion": "Atencion + capas, todo en paralelo: la GPU procesa la frase completa de una vez en vez de palabra por palabra. Es la T de GPT y de BERT. PARA QUE: la arquitectura que hizo posible el salto de escala.",
+   "status": "pendiente", "video": null
+  },
+  {
+   "tema": "El truco del entrenamiento: tapar una palabra",
+   "descripcion": "Aprendizaje auto-supervisado: borras una palabra de un texto cualquiera y ya tienes pregunta y respuesta. Los datos salen del propio texto: infinitos y gratis. PARA QUE: por que dejamos de pagar a humanos por etiquetar datos.",
+   "status": "pendiente", "video": null
+  },
+  {
+   "tema": "No entrenes desde cero: transfer learning y fine-tuning",
+   "descripcion": "Se parte de un modelo ya entrenado y solo se le da el ajuste final para tu tarea: muchisimos menos datos y menos computo. PARA QUE: como alguien sin GPUs usa un modelo que costo millones.",
+   "status": "pendiente", "video": null
+  },
+  {
+   "tema": "Escala: qué pasa cuando el modelo se vuelve gigante",
+   "descripcion": "Un modelo entrenado SOLO para autocompletar la siguiente palabra, pero con cientos de miles de millones de parametros. Nada mas cambio el tamanio. PARA QUE: el momento exacto en que la IA dejo de ser una herramienta mas.",
+   "status": "pendiente", "video": null
+  },
+  {
+   "tema": "Habilidades emergentes: lo que nadie le enseñó",
+   "descripcion": "Al escalar aparecieron solas capacidades que nadie programo: traducir, escribir codigo y conversar, sin haber sido entrenado para ninguna. PARA QUE: por que ni sus propios creadores predijeron ChatGPT.",
+   "status": "pendiente", "video": null
+  },
+  {
+   "tema": "De LLM a AGENTE: el cambio que estamos viviendo",
+   "descripcion": "Al modelo que autocompleta le das herramientas, memoria y capacidad de actuar paso a paso: deja de ser un chat. Se cierra el circulo resolviendo la frase del video 1 sin entrenar nada, solo escribiendo. PARA QUE: entender lo que esta pasando AHORA.",
+   "status": "pendiente", "video": null
+  }
+ ]
+}

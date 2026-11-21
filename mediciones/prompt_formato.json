@@ -1,0 +1,20 @@
+{
+  "tema": "los ejemplos y el FORMATO de la salida",
+  "modelo": "gemini-flash-latest",
+  "n_por_condicion": 30,
+  "textos": 5,
+  "condiciones": {
+    "solo instrucción": {
+      "cumplen": 30,
+      "de": 30,
+      "pct": 100.0,
+      "corridas_perdidas": 0
+    },
+    "con dos ejemplos": {
+      "cumplen": 30,
+      "de": 30,
+      "pct": 100.0,
+      "corridas_perdidas": 0
+    }
+  }
+}

@@ -1,0 +1,1 @@
+Un correo con letras invisibles puede darle órdenes a tu agente. Se llama inyección de prompt, se conoce desde 2022 y sigue sin resolverse del todo, porque para un modelo todo es texto. A mí es el riesgo que más me importa. Parte 16 de 33 de «Cómo actúa una máquina». ¿Conocías este truco? #agentesdeia #inteligenciaartificial #ia

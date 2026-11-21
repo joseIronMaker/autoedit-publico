@@ -1,0 +1,49 @@
+=== ver02s_no_basta_con_mirar.json  →  gen_ver_no_basta_con_mirar_sc  (tema carmin)
+→ guion guion de Claude (guionista)
+→ estilo generando imagen ancla de marca
+→ voz reutilizo la locución ya pagada (6 escenas)
+→ escena 1/6 animando kinetic_video
+→ escena 2/6 programando animación a medida
+  aviso: animación custom falló (intento 1): NameError: name 'divmod' is not defined
+→ escena 2/6 animando custom
+→ escena 3/6 ejecutando modelo real (sklearn)
+→ escena 3/6 animando código → gráfica
+→ escena 4/6 programando animación a medida
+  aviso: animación custom falló (intento 1): NameError: name 'divmod' is not defined
+→ escena 4/6 animando custom
+→ escena 5/6 animando kinetic_video
+→ escena 6/6 generando imagen
+→ escena 6/6 animando (Ken Burns)
+→ ensamblando 6 escenas → gen_ver_no_basta_con_mirar_sc.mp4
+→ audio audio continuo + SFX de transición
+→ música reutilizo la cama musical de este video
+✔ /home/jose/tiktok/videos/gen_ver_no_basta_con_mirar_sc.mp4
+
+Ahora pásalo por el flujo normal para subtítulos y copys:
+  autoedit gen_ver_no_basta_con_mirar_sc.mp4 --auto   (o desde la web)
+→ Transcribiendo con Whisper (small, CPU)…
+  100 palabras, 36.7s → /home/jose/tiktok/videos/gen_ver_no_basta_con_mirar_sc.autoedit/transcript.json
+→ Gemini analizando la transcripción (cortes + énfasis)…
+
+Plan de edición (3 cortes, −1.7s de 36.7s):
+  ✂    3.50 →    4.34  silencio de 1.1s
+  ✂    9.70 →   10.26  silencio de 0.8s
+  ✂   26.36 →   26.66  silencio de 0.5s
+  ★ 11 palabras enfatizadas en subtítulos
+→ Renderizando gen_ver_no_basta_con_mirar_sc_final.mp4: 4 tramos, 35.0s…
+✔ /home/jose/tiktok/videos/gen_ver_no_basta_con_mirar_sc_final.mp4
+→ Generando copys (TikTok/IG/FB)…
+✔ /home/jose/tiktok/videos/gen_ver_no_basta_con_mirar_sc.autoedit/copys.md
+
+✔ ver02_no_basta_con_mirar_sc.mp4  (35.0s)
+  QC   → /home/jose/tiktok/scratchpad/qc_ver_no_basta_con_mirar_sc.png
+  copy → revisar y reescribir a mano si hace falta:
+Así es como 3 píxeles rompen una red densa al procesar fotos.
+Al aplanar la imagen, el 76 % de los datos cambian y la red pierde de vista a los vecinos.
+Mañana te muestro el truco de los pedacitos de 3x3 para solucionarlo.
+
+Medí el cambio fila por fila y descubrí por qué aplanar destruye la estructura espacial.
+
+¿Aplanar fotos en IA: Error o Acierto? Yo digo que Error.
+
+#RedDensa #Pixeles #VisionPorComputadora #IAconJose #InteligenciaArtificial

@@ -1,0 +1,18 @@
+Una neurona sola solo sabe hacer una cosa: trazar una línea recta.
+De este lado, sí. De este lado, no.
+Y casi nada en el mundo se separa con una recta.
+Mira estos puntos. Negros en medio, rojos alrededor.
+Ninguna línea los separa. Inténtalo.
+Ahora haz esto: agarra la hoja y dóblala.
+Dóblala otra vez.
+De pronto, una sola recta separa todo.
+Eso hace una capa de neuronas: dobla el espacio.
+Cada capa agarra lo que hizo la anterior, y lo vuelve a doblar.
+Y cuando desdoblas la hoja, esa recta ya no es recta.
+Se convirtió en una forma que rodea justo lo que querías.
+Doblez tras doblez, así distingue una red una cara de un perro.
+Por eso se llama aprendizaje profundo.
+No significa que la máquina piense hondo. Significa que tiene muchas capas.
+Y nadie le dice dónde doblar. Los dobleces también salen del error.
+Una recta sola no puede casi nada.
+Pero una recta, doblada suficientes veces, puede casi todo.

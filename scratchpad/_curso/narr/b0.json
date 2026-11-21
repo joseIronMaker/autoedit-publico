@@ -1,0 +1,16 @@
+{
+"py07_tipos_de_datos": [
+"Dos más dos da cuatro. Obvio. Pero comillas dos, más comillas dos, da veintidós. Y no es que Python esté mal de la cabeza ni que tu compu esté poseída: le pediste dos cosas distintas y ni cuenta te diste. Míralo en la terminal.",
+"Cuando pones comillas ya no es un número: es texto. Y sumar dos textos no los suma, los PEGA, uno tras otro. Los tipos básicos son tres y con eso vives el primer mes: números, texto, y verdadero o falso. Cada dato es de un tipo, y el tipo decide qué significa el más. Es como el ahorita en México: la misma palabra, y nunca la misma hora.",
+"Python te dice el tipo si se lo preguntas, y no cobra por la consulta. Le pido al agente un archivo que imprima el tipo de un cinco, de un cinco entre comillas y de un verdadero, y que lo corra. Int es número entero, str es texto, bool es verdadero o falso. Tres palabras que vas a ver toda tu vida, así que ve haciéndoles espacio.",
+"Y aquí está el que te va a morder de verdad: TODO lo que el usuario escribe con input entra como texto. Aunque teclee un número. Aunque lo teclee bien bonito y con ganas. Si no lo conviertes con int, tu suma pega en vez de sumar… y el programa NO se cae: te da un resultado mal y se queda tan tranquilo, silbando.",
+"Número, texto, verdadero o falso. Tres tipos, y el noventa por ciento de tus errores del primer mes son mezclarlos. La que viene: tu programa empieza a hablar y a escuchar. ¿Convertir siempre o confiar en que viene número? Yo convierto siempre: confiar en lo que teclea la gente es deporte extremo."
+],
+"py08_print_input": [
+"Hasta ahora tu programa hablaba solo, como loco de esquina. Con una línea más empieza a preguntarte cosas y a usar lo que le contestas. Le pido al agente que modifique saludo punto pi para que pregunte tu nombre con input y te salude. Mira cómo lo cambia.",
+"Míralo corriendo de verdad: el programa se detiene, espera a que escribas, y sigue con lo que tecleaste. Le doy José y me contesta hola, José. Esa pausa es input: el programa no tiene idea de qué vas a poner, y aun así se compromete a usarlo. Confianza ciega, pues.",
+"Print es la ventana por donde tu programa te enseña lo que está pasando. Input es la puerta por donde entra lo que tú le dices. Y ya, todo programa es eso: algo entra por la puerta, se cuece adentro, y algo sale por la ventana. Desde el saludo este hasta el que le maneja el dinero a un banco.",
+"Y print no es nada más para el usuario: es tu linterna. Cuando algo no jala y no sabes por qué, pones un print antes y otro después de la línea sospechosa, y ves qué traía cada caja en ese momento. Es la técnica más simplona del mundo y la que más veces me ha salvado. Sin pena.",
+"Ya tienes un programa que escucha. La que viene le enseñamos a decidir, y ahí ya empieza a parecer listo. ¿print para depurar o depurador desde el día uno? Yo digo print, hasta que se te quede chico."
+]
+}

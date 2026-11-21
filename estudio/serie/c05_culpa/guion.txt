@@ -1,0 +1,18 @@
+Tu red se equivocó.
+Tiene millones de conexiones, y una sola respuesta mala al final.
+¿De quién fue la culpa?
+Porque el error solo se ve en la salida. Las capas de en medio nunca se enteran.
+Durante años, entrenar esas capas escondidas fue el gran problema.
+La solución suena casi infantil: regresar la culpa por donde vino.
+Empiezas por el final. Esta neurona dijo mal. ¿Quién la empujó a decir eso?
+Estas dos conexiones pesaron mucho: les toca más culpa. A esta otra, casi nada.
+Y cada una reparte su parte hacia atrás, a quienes la alimentaron.
+Capa por capa, hasta el principio.
+Cuando llega, cada conexión sabe exactamente cuánto debe moverse.
+A esto le llamamos retropropagación. En inglés, backpropagation.
+Por debajo es la regla de la cadena, de cálculo de prepa.
+La hizo famosa un artículo de mil novecientos ochenta y seis. Uno de sus autores, Geoffrey Hinton, ganó el Nobel en dos mil veinticuatro.
+Cada vez que una inteligencia artificial aprende algo, pasa esto.
+Nadie la regaña. Nadie le explica.
+Solo una pregunta, viajando hacia atrás: ¿cuánto fue culpa tuya?
+Aprender, para una máquina, es repartir bien la culpa.

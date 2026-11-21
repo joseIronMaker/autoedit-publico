@@ -1,0 +1,113 @@
+{
+  "nivel_vs_listón_0a10": 6.5,
+  "primer_segundo": "Sí detiene por la frase provocadora ('ChatGPT no sabe qué es un perro'), pero visualmente es demasiado estático comparado con el listón. En 00:00 solo hay texto plano; la esfera cae en 00:01 pero sin física convincente, peso ni tridimensionalidad inmediata, a diferencia del espacio 3D instantáneo del Video 1.",
+  "momentos_que_funcionan": [
+    {
+      "t": "00:04-00:09",
+      "que": "La transición de la palabra 'perro' a su token numérico (75031) y su desintegración en partículas hacia la esfera."
+    },
+    {
+      "t": "00:41-00:46",
+      "que": "La visualización de vectores con flechas rojas (hombre->mujer, rey->reina). Es limpia, clara y explica la aritmética vectorial al instante."
+    },
+    {
+      "t": "00:57-01:04",
+      "que": "El cambio a fondo negro para introducir el sesgo algorítmico rompe la monotonía visual y marca un giro de tono efectivo."
+    },
+    {
+      "t": "01:15-01:17",
+      "que": "El estallido radial de ejes para representar 'miles de dimensiones'."
+    },
+    {
+      "t": "01:26-01:28",
+      "que": "El cierre preparado para loop infinito regresando al fotograma inicial."
+    }
+  ],
+  "momentos_donde_se_iria": [
+    {
+      "t": "00:18-00:23",
+      "por_que": "Plano estático y aburrido. Solo se ven dos puntos lejanos mientras aparecen líneas topográficas lentamente durante 5 segundos sin movimiento de cámara.",
+      "arreglo": "Hacer un movimiento de cámara en 3D (zoom out + rotación de perspectiva) mientras el mapa emerge con relieve real, no como un dibujo plano."
+    },
+    {
+      "t": "00:28-00:33",
+      "por_que": "El acercamiento entre 'perro' y 'gato' es extremadamente lento y lineal. Tres segundos viendo una bola moverse en diagonal a velocidad constante mata la retención.",
+      "arreglo": "Usar curvas de animación (ease-in, ease-out) con atracción magnética rápida, deformando las líneas de contorno al acercarse."
+    },
+    {
+      "t": "00:50-00:52",
+      "por_que": "El mapa general con múltiples clusters tiene textos minúsculos superpuestos que parecen errores gráficos o ruido visual.",
+      "arreglo": "Eliminar las etiquetas de texto secundarias ilegibles o hacer un recorrido de cámara rápido en 3D pasando cerca de 2 o 3 clusters legibles."
+    },
+    {
+      "t": "01:05-01:13",
+      "por_que": "Ocho segundos de pantallas negras con texto estático (la cita del paper y la reflexión). En TikTok esto es un valle de retención mortal.",
+      "arreglo": "Mantener el mapa de fondo oscurecido en movimiento lento y mostrar el paper real escaneado/resaltado con dinamismo en 2 segundos máximo."
+    }
+  ],
+  "ritmo_visual": "Demasiado plano y pausado en comparación con el listón. El Video 1 mantiene una cámara 3D en movimiento constante y una física táctil donde el terreno se deforma; el Video 2 abusa de paneos 2D rígidos, curvas de animación lineales y cortes a texto estático. Además, las líneas topográficas en el Video 2 son decorativas (en un espacio de embeddings la cercanía es distancia, no altitud), mientras que en el Video 1 la topografía es funcional (valle = menor pérdida).",
+  "sincronia_voz_imagen": [
+    {
+      "t": "00:05",
+      "problema": "Los números del token cambian a destiempo del efecto sonoro y antes de que la voz termine la idea de 'ni siquiera ha leído esa palabra'."
+    },
+    {
+      "t": "00:21-00:22",
+      "problema": "Dice 'leyendo miles de millones de palabras' y el mapa aparece de golpe con un pop tardío, en lugar de construirse progresivamente con el audio."
+    },
+    {
+      "t": "00:44-00:45",
+      "problema": "El vector rojo y la esfera de 'reina' llegan a su posición final casi un segundo antes de que la locutora diga 'a reina'."
+    }
+  ],
+  "legibilidad_en_celular": [
+    {
+      "t": "00:00-01:28",
+      "problema": "Doble texto constante: hay subtítulos quemados abajo que compiten todo el tiempo con la tipografía principal del centro. El ojo no sabe dónde mirar y los subtítulos entran en la zona sucia de la interfaz de TikTok (descripción del video). El listón no usa subtítulos, integra los conceptos clave dentro de la animación."
+    },
+    {
+      "t": "00:21-00:22",
+      "problema": "Las palabras grises de fondo ('manzana', 'cuchara', 'tenedor') son totalmente ilegibles en pantalla vertical de celular."
+    },
+    {
+      "t": "00:51-00:52",
+      "problema": "Clusters con textos amontonados ('caballo', 'oveja', 'ingeniero', 'maestro') forman una mancha ilegible."
+    },
+    {
+      "t": "01:21",
+      "problema": "El texto '¿qué es un perro?' se desvanece sobre el fondo crema con poquísimo contraste."
+    }
+  ],
+  "sonido": {
+    "musica": "Piano ambiental genérico y melancólico. Le quita energía y ritmo al video; el listón usa un pulso electrónico sutil que da sensación de precisión y avance continuo.",
+    "efectos": " Escasos, repetitivos y desconectados de la física visual. Faltan texturas sonoras para el movimiento de las esferas, el trazado de líneas y los cambios de escala.",
+    "mezcla": "La voz suena un poco encajonada y con menos presencia y cuerpo que la locución limpia y comprimida del Video 1.",
+    "problemas": [
+      {
+        "t": "00:08",
+        "que": "El sonido de desintegración en partículas suena a papel arrugándose o arena gruesa, no corresponde a la delicadeza visual de los puntos."
+      },
+      {
+        "t": "00:15",
+        "que": "Efecto 'pop' caricaturesco y barato al aparecer 'plátano', rompe la estética minimalista y elegante."
+      },
+      {
+        "t": "01:16",
+        "que": "El sonido al aparecer las 'miles' de dimensiones es un estruendo metálico áspero y desagradable."
+      }
+    ]
+  },
+  "guion": {
+    "claridad": "Buena estructura narrativa y gancho claro, pero mezcla conceptos técnicos sin distinguirlos (tokenización al inicio vs embeddings después, y embeddings estáticos de Word2Vec 2013 vs embeddings contextuales modernos).",
+    "afirmaciones_dudosas": [
+      "00:06: Mostrar '75031' cambiando letra por letra sobre 'perro' sugiere que el número codifica letras o que es el embedding mismo, cuando en realidad es solo el ID del token previo al embedding.",
+      "01:16: Decir que el mapa de ChatGPT 'es el mismo truco' que el mapa fijo de 2013 omite que en los modelos actuales (Transformers) la posición de una palabra cambia dinámicamente según el contexto de la frase."
+    ],
+    "final": "El loop ('Y aun así... ChatGPT no sabe qué es un perro') funciona bien como recurso de retención en TikTok, pero deja la conclusión conceptual truncada comparado con el cierre redondo y contundente del Video 1."
+  },
+  "tres_cambios_de_mayor_impacto": [
+    "Eliminar por completo los subtítulos inferiores y rediseñar el ritmo tipográfico para que solo las palabras clave aparezcan integradas en el espacio visual, liberando la pantalla de ruido y de la interfaz de TikTok.",
+    "Rehacer el diseño sonoro desde cero: quitar el piano lento, poner un pulso rítmico minimalista y diseñar foley preciso para cada elemento gráfico (movimiento de esferas, tensión de vectores, aparición de topografía).",
+    "Cambiar la animación 2D plana por cámara y física 3D con curvas de aceleración reales (especialmente entre 00:18-00:33 y 01:05-01:13), eliminando los tiempos muertos de texto sobre fondo negro."
+  ]
+}

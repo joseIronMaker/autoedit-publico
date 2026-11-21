@@ -1,0 +1,18 @@
+El mismo modelo puede ser un genio o un inútil. Depende de su arnés.
+Un modelo es un motor. Muy potente, sobre una mesa, sin ir a ningún lado.
+El arnés es todo lo demás: el volante, los frenos, el tablero.
+En inglés, harness. Es lo que le da herramientas, cuida su mesa, le pone permisos, y decide qué pasa cuando algo falla.
+El ejemplo más famoso apareció en febrero de dos mil veinticinco: Claude Code, de Anthropic.
+No era una página web. Vivía en tu computadora, dentro de tu proyecto, leyendo y cambiando archivos de verdad.
+Después llegaron piezas que hoy imita casi todo el mundo.
+Reglas que se cumplen siempre, le guste o no al modelo.
+Ayudantes con su propia mesa.
+Manuales que solo abre cuando los necesita.
+Y un botón para regresar, si la riega.
+Nada de eso es inteligencia. Es ingeniería aburrida, alrededor de la inteligencia.
+Y por eso importa tanto.
+OpenAI ya le llama ingeniería de arneses, y tiene el suyo: Codex.
+Yo digo esto: los modelos se alcanzan unos a otros cada pocos meses.
+El arnés es lo que sientes todos los días.
+El motor te da la velocidad.
+El arnés decide si llegas.

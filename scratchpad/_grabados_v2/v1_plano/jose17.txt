@@ -1,0 +1,4 @@
+Esto no lo diseñó un ingeniero. Una celda robótica completa —cinta, cámara y un brazo que agarra la lata— la armó una inteligencia artificial sola, en una tarde.
+Y mira cómo, cabrón. Modeló la cinta y el pedestal en FreeCAD, pieza por pieza, listas para fabricar. Escribió el URDF del robot. Levantó la celda en Gazebo con ROS 2. Programó la visión: una cámara cenital que distingue la lata roja de la azul y la sigue por la cinta. Y montó la interfaz con arranque, alarmas y las seis articulaciones a la vista.
+Y cuando algo no jaló, que el amortiguamiento de las juntas estaba tan alto que la base ni giraba, lo detectó ella sola, lo corrigió y volvió a correr el ciclo. Nadie se lo dijo.
+Cinco horas y doce minutos. Eso que estás viendo era un equipo de ingenieros y tres semanas de trabajo. Hoy es una tarde y una computadora. Y esto es lo más torpe que va a estar la inteligencia artificial en tu vida.

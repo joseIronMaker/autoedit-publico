@@ -1,0 +1,16 @@
+En dos mil veintidós, los expertos apostaban que una inteligencia artificial ganaría oro en la Olimpiada de Matemáticas hacia dos mil treinta.
+Pasó en julio de dos mil veinticinco.
+Y a principios de este año, según Stanford, el mejor modelo leía bien un reloj de manecillas solo la mitad de las veces.
+Las dos cosas fueron ciertas al mismo tiempo. Por eso nadie se pone de acuerdo.
+¿Estamos ante la AGI? Depende de quién la defina, y de qué gane con eso.
+Sam Altman dice que ya casi, y que la palabra ya ni importa. Dario Amodei habla de uno o dos años, o bastante más. Yann LeCun dice que llegar a nivel humano con un LLM es una tontería.
+Los tres tienen empresas que dependen de esa respuesta.
+En la prueba ARC-AGI-3, un modelo con un arnés especial llegó a casi cien por ciento. Y sus creadores avisan que eso no prueba que sea AGI.
+Más del ochenta por ciento del código de Anthropic ya lo escribe Claude. Y la propia Anthropic dice que eso todavía no es automejora.
+Lo que sabemos: en tareas acotadas y verificables, esto avanza más rápido de lo que casi todos predijeron.
+Lo que no sabemos: si sale de ahí.
+Empezó adivinando. Aprendió a actuar.
+Tu fiesta ya quedó organizada.
+Yo no sé si esto es la AGI. Nadie lo sabe.
+Pero ya no necesita ese nombre...
+para cambiar lo que haces mañana.

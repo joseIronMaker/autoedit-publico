@@ -1,0 +1,48 @@
+=== ver05s_ve_lo_que_el_radiologo_no.json  →  gen_ver_ve_lo_que_el_radiologo_no_sc  (tema sunset)
+→ guion guion de Claude (guionista)
+→ hook motor de hooks: 4 candidatos + juez de retención
+→ hook cold-open ganador: texto_sobre_video — “Detección de objetos y segmentación: la IA ve.”
+→ voz toma única de 6 escenas
+  voz: 1 toma de 45.5s partida en 6 escenas (prosodia continua, modelo eleven_multilingual_v2)
+→ escena 1/6 generando voz
+→ escena 1/6 animando kinetic_video
+→ escena 2/6 generando voz
+→ escena 2/6 sin cambios: reutilizo el render
+→ escena 3/6 generando voz
+→ escena 3/6 sin cambios: reutilizo el render
+→ escena 4/6 generando voz
+→ escena 4/6 animando receipt
+→ escena 5/6 generando voz
+→ escena 5/6 sin cambios: reutilizo el render
+→ escena 6/6 generando voz
+→ escena 6/6 sin cambios: reutilizo el render
+→ ensamblando 6 escenas → gen_ver_ve_lo_que_el_radiologo_no_sc.mp4
+→ audio audio continuo + SFX de transición
+→ música reutilizo la cama musical de este video
+✔ /home/jose/tiktok/videos/gen_ver_ve_lo_que_el_radiologo_no_sc.mp4
+
+Ahora pásalo por el flujo normal para subtítulos y copys:
+  autoedit gen_ver_ve_lo_que_el_radiologo_no_sc.mp4 --auto   (o desde la web)
+→ Transcribiendo con Whisper (small, CPU)…
+  108 palabras, 44.8s → /home/jose/tiktok/videos/gen_ver_ve_lo_que_el_radiologo_no_sc.autoedit/transcript.json
+→ Gemini analizando la transcripción (cortes + énfasis)…
+  ⚠ descartado (cold-open intocable): Tropiezo / falso comienzo: “la IAB,”
+
+Plan de edición (3 cortes, −1.8s de 44.8s):
+  ✂   13.22 →   13.70  silencio de 0.7s
+  ✂   38.18 →   38.90  silencio de 1.0s
+  ✂   44.20 →   44.80  silencio final
+  ★ 13 palabras enfatizadas en subtítulos
+→ Renderizando gen_ver_ve_lo_que_el_radiologo_no_sc_final.mp4: 3 tramos, 43.0s…
+✔ /home/jose/tiktok/videos/gen_ver_ve_lo_que_el_radiologo_no_sc_final.mp4
+→ Generando copys (TikTok/IG/FB)…
+✔ /home/jose/tiktok/videos/gen_ver_ve_lo_que_el_radiologo_no_sc.autoedit/copys.md
+
+✔ ver05_ve_lo_que_el_radiologo_no_sc.mp4  (43.1s)
+  QC   → /home/jose/tiktok/scratchpad/qc_ver_ve_lo_que_el_radiologo_no_sc.png
+  copy → revisar y reescribir a mano si hace falta:
+La detección de objetos en IA salva vidas al ver lo que el ojo humano pasa por alto.
+Pasamos de analizar medio millón de recuadros por foto a detectar cánceres en mamografías.
+Mañana en @ia.conjose destripamos cómo aprendió a crear. ¿Confías en un diagnóstico por IA? ¿Sí o No? Yo digo que Sí.
+
+#detecciondeobjetos #segmentacion #iamedicina #inteligenciaartificial

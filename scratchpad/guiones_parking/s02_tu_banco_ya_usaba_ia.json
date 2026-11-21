@@ -1,0 +1,69 @@
+{
+  "slug": "ia_tu_banco_ya_la_usaba",
+  "tema": "La IA que te bloquea la tarjeta no es la que escribe: predice, y lleva años decidiendo por ti",
+  "title": "Tu banco lleva quince años usando IA contigo",
+  "theme": "hielo",
+  "hook_locked": true,
+  "quien_decide": "un modelo del banco decide, en milisegundos y sin avisarte, si tu compra parece tuya",
+  "que_cuesta": "tarjeta rechazada en la caja del súper con la fila detrás, y la sensación de que fue un error",
+  "palanca": "en los dos minutos siguientes al rechazo: confirma la compra desde la app del banco antes de reintentar; reintentar primero suele endurecer el bloqueo",
+  "pregunta_ab": "¿Prefieres que te bloqueen de más o que te pasen un cargo que no era tuyo?",
+  "scenes": [
+    {
+      "beat_type": "hook",
+      "visual_type": "image",
+      "narration": "Si alguna vez te rechazaron la tarjeta con la fila detrás, no fue el destino. Fue un modelo decidiendo en milisegundos que esa compra no parecía tuya.",
+      "image_prompt": "Vertical 9:16 cinematic editorial photograph, muted desaturated palette of graphite, ink blue and cold supermarket light. A card reader on a checkout counter at a grocery store, a hand holding a card mid-air, groceries on the belt, blurred queue behind. Documentary photography, shallow depth of field, film grain, no text, no faces, no logos, no brand names."
+    },
+    {
+      "beat_type": "contexto",
+      "visual_type": "custom",
+      "narration": "Y aquí está lo que casi nadie separa. La IA que se volvió famosa en 2022 genera: escribe, dibuja, responde. La que lleva décadas trabajando contigo predice: clasifica, puntúa, decide.",
+      "custom_anim": {
+        "description": "Dos columnas que entran desde los lados. La izquierda dice PREDICE y bajo ella aparecen tres etiquetas una por una: aprueba o rechaza, spam o no spam, riesgo alto o bajo. La derecha dice GENERA y bajo ella: escribe, dibuja, responde. Al final una línea de tiempo horizontal cruza ambas: la izquierda arranca mucho antes que la derecha. Sin cajas de título."
+      }
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "ml_demo",
+      "narration": "Esto es un detector de anomalías de verdad, corriendo. Le doy compras normales para que aprenda tu patrón, y luego meto unas cuantas raras. Mira cuáles marca.",
+      "ml_demo": {
+        "caption": "deteccion_anomalias.py",
+        "editor_frac": 0.22,
+        "code": "from sklearn.ensemble import IsolationForest\nnormales = rng.normal([420, 13], [180, 3], size=(300, 2))\nraras = np.array([[9800, 3], [7400, 4], [8600, 2], [120, 3]])\nX = np.vstack([normales, raras])\nmodelo = IsolationForest(contamination=0.02, random_state=7).fit(normales)\npred = modelo.predict(X)\nfig, ax = plt.subplots(figsize=(9.2, 5.6))\nok = pred == 1\nax.scatter(X[ok, 1], X[ok, 0], s=70, color=CYAN, label='pasa', alpha=0.75)\nax.scatter(X[~ok, 1], X[~ok, 0], s=180, color=RED, marker='X', label='se bloquea')\nax.set_xlabel('hora del dia')\nax.set_ylabel('monto (pesos)')\nax.set_title('lo que el modelo considera raro en TI')\nax.legend(loc='upper left', fontsize=17)\nfig.text(0.5, 0.015, 'IsolationForest de scikit-learn · 300 compras simuladas + 4 atipicas · datos sinteticos', ha='center', fontsize=11, color='#969491')",
+        "display_code": [
+          "modelo = IsolationForest().fit(normales)",
+          "modelo.predict(compra_nueva)   # 1 pasa, -1 bloquea"
+        ]
+      }
+    },
+    {
+      "beat_type": "giro",
+      "visual_type": "custom",
+      "narration": "Y por eso te bloquea a ti, que no hiciste nada. El banco elige a propósito equivocarse por exceso: le cuesta menos molestarte a ti que pagarle el fraude a otro.",
+      "custom_anim": {
+        "description": "Una balanza sencilla en el centro. Del lado izquierdo entra una etiqueta que dice 'te molesto de más' con varias fichas pequeñas apiladas. Del lado derecho, 'pago un fraude' con una sola ficha enorme. La balanza se inclina claramente hacia la ficha enorme. Sin títulos."
+      }
+    },
+    {
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "narration": "No te bloqueó un error. Te bloqueó una decisión de negocio, tomada por un modelo.",
+      "kinetic_video": {
+        "words": [
+          {"text": "NO FUE"},
+          {"text": "UN ERROR"},
+          {"text": "FUE UNA DECISIÓN"}
+        ],
+        "variant": "dark",
+        "video": "videos/gen_dl_por_que_ahora.assets/veo_0.mp4"
+      }
+    },
+    {
+      "beat_type": "cta",
+      "visual_type": "image",
+      "narration": "Así que si te vuelve a pasar, no reintentes de inmediato: entra a la app y confirma la compra tú. Reintentar suele endurecer el bloqueo. ¿Prefieres que te bloqueen de más o que te pasen un cargo que no era tuyo?",
+      "image_prompt": "Vertical 9:16 cinematic editorial photograph, muted desaturated palette of graphite, ink blue and warm amber light. A person's hands holding a phone over a kitchen table at night, a bank card lying beside a set of keys and a paper receipt. Calm, resolved mood. Documentary photography, shallow depth of field, film grain, no text, no faces, no logos, no brand names."
+    }
+  ]
+}

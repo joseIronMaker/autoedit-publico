@@ -1,0 +1,106 @@
+{
+  "title": "Convierte tu app en un .exe para regalarla",
+  "slug": "curso_py19_hacer_exe",
+  "tema": "empaquetar una app de Python en un ejecutable con PyInstaller",
+  "theme": "curso python con ia",
+  "hook_tipo": "demostracion",
+  "keyword": "pyinstaller exe",
+  "hook_headline": [
+    "UN SOLO",
+    "ARCHIVO"
+  ],
+  "pregunta_ab": "¿Regalar el .exe o enseñarles a instalar Python?",
+  "music_prompt": "hard techno bed, dark industrial groove, 150 BPM, rolling kick, restrained under a voice, instrumental, no vocals",
+  "modo": "corto",
+  "hook_locked": true,
+  "scenes": [
+    {
+      "beat_type": "hook",
+      "visual_type": "custom",
+      "narration": "Tu tía no va a instalar Python. Nunca. Ni con pistola. Pero un archivo que se abre con doble clic, ese sí. Y son tres pasos, ninguno difícil: instalas pyinstaller, corres una orden y recoges tu programa de la carpeta dist, ya hecho ejecutable.",
+      "pause_after": 0.35,
+      "custom_anim": {
+        "description": "Tres estaciones en fila unidas por flechas que se encienden en orden. Estación 1: una caja con el texto pip install pyinstaller y una barra de descarga que se llena. Estación 2: una línea de terminal donde se teclea pyinstaller --onefile --windowed ventana.py y debajo una barra de progreso que avanza. Estación 3: una carpeta abierta con la etiqueta dist de la que sale un icono de programa etiquetado ventana.exe; un cursor le da doble clic y del icono se abre una ventanita con un saludo dentro. El icono late suavemente al final. Sin cifras."
+      }
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "terminal",
+      "narration": "Y esto es de verdad: corro pyinstaller sobre ventana punto pi con las dos banderas que importan. Onefile, para que salga UN archivo y no una carpeta con cincuenta cosas que nadie va a entender. Y windowed, para que no se abra la terminal negra detrás de tu ventana como ánima en pena. Tarda un minuto y escupe el archivo en dist.",
+      "terminal": {
+        "title": "el build real",
+        "lines": [
+          {
+            "text": "pyinstaller --onefile --windowed ventana.py"
+          },
+          {
+            "text": "dist/ventana   12 MB",
+            "accent": true
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "/home/jose/tiktok/.venv/bin/python -m PyInstaller --onefile --windowed --name ventana ventana.py 2>&1 | tail -6; echo; echo '$ ls -lh dist/'; ls -lh dist/",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "contexto",
+      "visual_type": "terminal",
+      "narration": "Y aquí está, corriendo solito: sin Python instalado, sin librerías, sin nada. Pesa doce megas porque se lleva adentro tu código, el intérprete de Python y las librerías que usaste. Por eso una app de ocho líneas pesa lo que pesa: no es tu código, cabrón, es la mudanza completa.",
+      "custom_anim": {
+        "description": "Tres cajas separadas en fila: tu código ventana.py, el intérprete Python, y las librerías tkinter. Una flecha etiquetada pyinstaller las empuja y las tres se meten una a una dentro de una sola caja grande etiquetada ventana.exe, que crece de tamaño con cada una. Al final la caja grande recibe un cursor con doble clic y de ella sale una ventanita abierta. Sin cifras."
+      },
+      "terminal": {
+        "title": "el ejecutable corriendo",
+        "lines": [
+          {
+            "text": "./dist/ventana",
+            "accent": true
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "./dist/ventana",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo",
+        "titulo": "Mi primera app"
+      }
+    },
+    {
+      "beat_type": "giro",
+      "visual_type": "mascota",
+      "narration": "Y una advertencia honesta: el ejecutable solo sirve en el sistema donde lo hiciste. Lo compilas en Windows, corre en Windows. ¿Lo quieres para Mac? Necesitas una Mac. No hay atajo, hay dinero. Y algunos antivirus lo van a ver feo la primera vez porque no está firmado: no es que tu programa esté mal, es que es nuevo y nadie lo conoce. Como tú en la fiesta.",
+      "mascota": {
+        "pose": "error",
+        "caption": "Windows → Windows · Mac → Mac"
+      },
+      "foto": {
+        "archivo": "/home/jose/tiktok/branding/perrito/codex_error.png"
+      }
+    },
+    {
+      "beat_type": "cta",
+      "visual_type": "kinetic_video",
+      "narration": "Ya puedes regalar tu programa. En el siguiente módulo: dónde vive de verdad tu código y dónde debería vivir cuando alguien más lo necesite. ¿Regalar el ejecutable o enseñarles a instalar Python? Yo digo el ejecutable: a tu tía no la vas a convertir en programadora, y créeme que lo intenté.",
+      "pause_after": 0.3,
+      "kinetic_video": {
+        "video": "/home/jose/tiktok/videos/_clips_pagados/gen_ln_lo_que_aprendio_solo__veo_0.mp4",
+        "words": [
+          {
+            "text": "doble clic",
+            "serif": true
+          },
+          {
+            "text": "Y YA",
+            "accent": true
+          }
+        ],
+        "variant": "dark"
+      }
+    }
+  ]
+}

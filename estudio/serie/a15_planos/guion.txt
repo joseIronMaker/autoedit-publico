@@ -1,0 +1,15 @@
+El mejor consejo para construir agentes es casi no usarlos.
+Lo dice Anthropic en su guía: empieza con lo más simple que funcione.
+Porque hay dos cosas distintas. En un flujo, tú dibujas el camino, y el modelo lo recorre. En un agente, el camino lo decide él.
+Más libertad, pero más costo, y errores más difíciles de encontrar.
+Y casi todo se arma con cinco piezas, como un juego de canicas.
+Encadenar: la salida de uno entra al siguiente. Primero la lista de invitados, luego las invitaciones.
+Enrutar: alguien mira cada mensaje, y lo manda al especialista correcto.
+Paralelizar: varios trabajan a la vez. Uno busca lugar, otro pastel, otro música.
+Orquestador: uno reparte el trabajo, y junta los resultados.
+Y evaluador: uno hace, otro revisa, y se regresa hasta que quede bien.
+Si entiendes esas cinco, entiendes casi cualquier sistema de agentes que te presuman.
+La mayoría de los problemas se resuelven con una o dos.
+Y antes de armar algo enorme, hazte la pregunta más cara de esta industria.
+¿De verdad necesita decidir solo...
+o solo necesitas que siga los pasos?

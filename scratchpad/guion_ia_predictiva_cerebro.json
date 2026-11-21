@@ -1,0 +1,67 @@
+{
+  "title": "IA Predictiva: el cerebro que adivina tu próximo paso",
+  "slug": "ia_predictiva_cerebro",
+  "hook_tipo": "contraria",
+  "keyword": "IA predictiva",
+  "modo": "corto",
+  "theme": "sunset",
+  "scenes": [
+    {
+      "narration": "Netflix ya sabe qué vas a ver esta noche. Y no es magia: es IA predictiva.",
+      "visual_type": "host",
+      "host_top": {"kind": "duo", "labels": ["MAGIA", "IA"], "title": "TE ADIVINA"}
+    },
+    {
+      "narration": "La IA predictiva no inventa nada: mira tu pasado, detecta un patrón y predice tu siguiente paso.",
+      "visual_type": "diagram",
+      "diagram": {
+        "type": "flow",
+        "title": "Cómo te adivina",
+        "items": ["Analiza tu pasado", "Detecta el patrón", "Predice tu futuro"]
+      }
+    },
+    {
+      "narration": "Por eso Netflix sabe qué ponerte, tu banco frena un fraude al instante y el mapa esquiva el tráfico.",
+      "visual_type": "diagram",
+      "diagram": {
+        "type": "list",
+        "title": "Ya decide por ti",
+        "items": ["Netflix: qué ver", "Banco: frena fraudes", "Mapas: evita el tráfico"]
+      }
+    },
+    {
+      "narration": "Por dentro es una red que aprendió de millones de casos qué suele pasar después.",
+      "visual_type": "diagram",
+      "diagram": {
+        "type": "neural_net",
+        "title": "Aprende de tus datos",
+        "layers": [3, 5, 4, 1],
+        "in_label": "Tu historial",
+        "out_label": "Predicción"
+      }
+    },
+    {
+      "narration": "Y no adivina al azar: calcula la probabilidad de cada opción y elige la más alta.",
+      "visual_type": "diagram",
+      "diagram": {
+        "type": "bars",
+        "title": "Elige lo más probable",
+        "items": [
+          {"label": "Ver acción", "value": 72, "display": "72%"},
+          {"label": "Ver comedia", "value": 21, "display": "21%"},
+          {"label": "Apagarlo", "value": 7, "display": "7%"}
+        ]
+      }
+    },
+    {
+      "narration": "Resúmelo así: la predictiva decide con datos, la generativa crea de cero. No las confundas.",
+      "visual_type": "big_text",
+      "big_text": {"items": ["Predice con DATOS", "Crea de CERO", "no las CONFUNDAS"]}
+    },
+    {
+      "narration": "Guárdalo para no olvidarlo. Y mañana te enseño la IA generativa, la que crea de cero.",
+      "visual_type": "host",
+      "host_top": {"kind": "save", "title": "GUÁRDALO", "subtitle": "MAÑANA: LA GENERATIVA →"}
+    }
+  ]
+}

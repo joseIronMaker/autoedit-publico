@@ -1,0 +1,13 @@
+La IA dejó de leer en orden. Y ahí empezó todo.
+
+Cuando ves una foto no la recorres pixel por pixel: de un golpe ya sabes qué es lo importante. Eso es atención, y en 2017 alguien decidió dársela al lenguaje.
+
+En lugar de arrastrar un resumen palabra por palabra, le entregan la frase completa de una sola vez y el modelo aprende dos cosas: dónde mirar, y qué llevarse de ahí. Como ya no depende de la palabra anterior, todas se procesan al mismo tiempo.
+
+Ahí murió el cuello de botella del video anterior y ahí despertó la tarjeta gráfica. No fue un modelo más listo: fue uno que por fin cabía en el hardware que ya existía.
+
+Mañana: cómo decide dónde mirar.
+
+¿Leer en orden o mirar todo de golpe? Yo digo todo de golpe.
+
+#atencion #transformers #deeplearning #inteligenciaartificial #iaconjose

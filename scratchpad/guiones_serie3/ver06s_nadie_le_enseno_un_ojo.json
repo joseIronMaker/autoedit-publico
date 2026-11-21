@@ -1,0 +1,93 @@
+{
+  "tema": "Nadie le enseñó qué es un ojo y aun así lo encuentra",
+  "modo": "corto",
+  "title": "Nadie le enseñó qué es un ojo y aun así lo encuentra",
+  "slug": "ver_nadie_le_enseno_un_ojo",
+  "hook_tipo": "secreto",
+  "theme": "violeta",
+  "keyword": "jerarquía de características",
+  "hook_headline": [
+    "NADIE LE DIJO",
+    "QUÉ ES UN OJO"
+  ],
+  "pregunta_ab": "¿Aprende conceptos o patrones?",
+  "music_prompt": "cinematic orchestral electronica, rising strings and soft taiko hits, revelation, no vocals, 100 BPM",
+  "scenes": [
+    {
+      "narration": "Esos nueve números nadie los escribió. Salieron del entrenamiento.",
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.45,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "nadie le dijo",
+            "serif": true
+          },
+          {
+            "text": "QUÉ ES UN OJO",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "abstract cinematic shot of scattered fragments of light slowly assembling into one coherent shape inside deep black space, self organizing, slow motion, no faces, no text",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Empiezan al azar. El entrenamiento los va corrigiendo hasta que sirven para la tarea. Y al apilar una ventana sobre otra pasa algo que nadie programó.",
+      "beat_type": "hook",
+      "visual_type": "custom",
+      "custom_anim": {
+        "description": "PROHIBIDO tarjetas o cajas con texto. FRANJAS: título entre y=H*0.06 y y=H*0.16; dibujo entre y=H*0.22 y y=H*0.68. Una cuadrícula de tres por tres celdas GRANDE al centro con los brillos caóticos, parpadeando sin orden, como buscando. Poco a poco, con sacudidas, se estabilizan hasta formar un patrón claro y simétrico: centro muy brillante, bordes apagados. Mientras eso pasa, al costado una imagen borrosa hecha de celdas se va volviendo nítida al mismo ritmo. Una etiqueta grande: se acomodan solos. Sin números."
+      }
+    },
+    {
+      "narration": "Lo hice sobre mi foto con el mismo filtro dos veces. La primera pasada marca bordes sueltos. La segunda, encima de esa salida, responde donde los bordes se cruzan: la montura de mis lentes.",
+      "beat_type": "proof",
+      "visual_type": "ml_demo",
+      "ml_demo": {
+        "code": "import numpy as np\nimport os\nfrom PIL import Image\n_p = 'branding/host_jose.png'\nif not os.path.exists(_p):\n    _p = '/home/jose/tiktok/branding/host_jose.png'\nf = np.asarray(Image.open(_p).convert('RGB')).mean(axis=2)\ncara = f[380:660, 270:530]\nk = np.array([[0,1,0],[1,-4,1],[0,1,0]], dtype=float)\ndef conv(m):\n    a = m.shape[0]-2; b = m.shape[1]-2\n    s = np.zeros((a,b))\n    for i in range(3):\n        for j in range(3):\n            s += k[i,j]*m[i:i+a, j:j+b]\n    return np.abs(s)\nc1 = conv(cara)\nc2 = conv(c1)\nfig, axs = plt.subplots(1, 3, figsize=(9.8, 4.4))\nfor ax, M, t in zip(axs, [cara[2:-2,2:-2], c1[1:-1,1:-1], c2], ['mi cara', 'capa 1: bordes', 'capa 2: esquinas']):\n    ax.imshow(np.clip(M, 0, np.percentile(M, 99)), cmap='magma')\n    ax.set_title(t, fontsize=19)\n    ax.set_xticks([]); ax.set_yticks([])\naxs[1].set_xlabel('la capa 2 ve lo que encontró la capa 1', color=CYAN, fontsize=18, fontweight='bold', labelpad=16)",
+        "display_code": [
+          "c1 = convolver(mi_cara)",
+          "c2 = convolver(c1)"
+        ],
+        "caption": "apilar.py"
+      }
+    },
+    {
+      "narration": "Apila unas cuantas capas más en una red entrenada y las de arriba responden a partes completas: un ojo, una nariz. Nadie escribió qué es un ojo. Salió de apilar.",
+      "beat_type": "giro",
+      "visual_type": "custom",
+      "custom_anim": {
+        "description": "PROHIBIDO tarjetas o cajas con texto. FRANJAS: título entre y=H*0.06 y y=H*0.16; dibujo entre y=H*0.22 y y=H*0.68. Tres bloques luminosos apilados en diagonal hacia arriba, cada uno más pequeño y brillante, unidos por haces de luz que suben. En el primero se ven líneas sueltas y cortas; en el segundo, esas líneas se juntan en arcos y esquinas; en el tercero, los arcos forman una silueta cerrada y reconocible que late. Etiquetas grandes junto a los bloques: bordes, partes, forma. Sin números."
+      }
+    },
+    {
+      "narration": "Las capas no se reparten el trabajo. Se lo heredan.",
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.35,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "no se reparten",
+            "serif": true
+          },
+          {
+            "text": "SE LO HEREDAN",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "layers of translucent glowing planes stacking upward one over another, light passing through each and becoming more concentrated at the top, deep blacks, cinematic, slow motion",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Ya sabe que hay una cara. Ponerle el recuadro encima es otro problema. Mañana.",
+      "beat_type": "cta",
+      "visual_type": "image",
+      "image_prompt": "extreme macro photograph of a human eye in near darkness with one narrow band of light across the iris, every texture detail visible, no face, only the eye, shot on 100mm macro at f/2.8, cinematic"
+    }
+  ],
+  "hook_locked": true
+}

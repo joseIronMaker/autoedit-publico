@@ -1,0 +1,92 @@
+{
+  "tema": "Ponerte el recuadro encima es más difícil que reconocerte",
+  "modo": "corto",
+  "title": "Ponerte el recuadro encima es más difícil que reconocerte",
+  "slug": "ver_de_que_hay_a_donde_esta",
+  "hook_tipo": "resultado",
+  "theme": "cyber",
+  "keyword": "detección de objetos",
+  "hook_headline": [
+    "NO BASTA",
+    "CON SABER QUÉ"
+  ],
+  "pregunta_ab": "¿Buscar en todos lados o aprender dónde?",
+  "music_prompt": "driving cinematic electronica, urgent pulsing bass and bright stabs, forward motion, no vocals, 116 BPM",
+  "scenes": [
+    {
+      "narration": "Reconocerte es fácil. Ponerte el recuadro encima, no.",
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.45,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "reconocerte es fácil",
+            "serif": true
+          },
+          {
+            "text": "SEÑALARTE NO",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "cinematic night shot of a busy street from a low angle with headlights and moving silhouettes, shallow depth of field, everything in motion, no text, no letters",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "El recuadro son cuatro números que la red tiene que producir: dos de la esquina, uno de ancho y uno de alto. Y no sabe por dónde empezar.",
+      "beat_type": "hook",
+      "visual_type": "image",
+      "image_prompt": "ultra realistic photograph of a smartphone screen held up in a dim room, the camera app open and a thin bright yellow focus rectangle locked onto a face in the frame, the rest of the scene soft and out of focus behind it, screen glow lighting the fingers holding the phone, shot on 50mm at f/1.8, photojournalistic, deep blacks, cinematic"
+    },
+    {
+      "narration": "Probar todos los recuadros es inviable. Los conté para una foto de quinientos por quinientos: más de medio millón, y eso con solo seis tamaños.",
+      "beat_type": "proof",
+      "visual_type": "ml_demo",
+      "ml_demo": {
+        "code": "import numpy as np\nalto = ancho = 500\npaso = 2\nescalas = [32, 64, 96, 128, 192, 256]\nproporciones = [(1, 1), (1, 2), (2, 1)]\nconteo = []\nfor L in escalas:\n    n = 0\n    for ph, pw in proporciones:\n        h, w = L * ph, L * pw\n        if h > alto or w > ancho:\n            continue\n        n += ((alto - h) // paso + 1) * ((ancho - w) // paso + 1)\n    conteo.append(n)\ntotal = sum(conteo)\nfig, ax = plt.subplots(figsize=(7.4, 5.2))\nbarras = ax.bar([str(L) for L in escalas], conteo, color=[MAG, MAG, MAG, ORANGE, ORANGE, ORANGE], width=0.6)\nfor b, v in zip(barras, conteo):\n    ax.text(b.get_x() + b.get_width()/2, v + max(conteo)*0.03, format(v, ',').replace(',', ' '), ha='center', fontsize=16, fontweight='bold', color=TXT)\nax.set_ylim(0, max(conteo) * 1.28)\nax.set_ylabel('ventanas por tamaño', fontsize=17)\nax.set_yticks([])\nax.set_xlabel('total: ' + format(total, ',').replace(',', ' ') + ' recuadros', color=CYAN, fontsize=20, fontweight='bold', labelpad=16)\nax.set_title('foto de 500 x 500, 6 tamaños y 3 proporciones')",
+        "display_code": [
+          "for L in escalas:",
+          "  for ph, pw in proporciones:",
+          "    n += ventanas(L*ph, L*pw)"
+        ],
+        "caption": "ventanas.py"
+      }
+    },
+    {
+      "narration": "La salida fue que una parte de la red proponga unas cuantas regiones y solo esas se revisen. De medio millón a unos cientos.",
+      "beat_type": "giro",
+      "visual_type": "custom",
+      "custom_anim": {
+        "description": "PROHIBIDO tarjetas o cajas con texto. FRANJAS: título entre y=H*0.06 y y=H*0.16; dibujo entre y=H*0.22 y y=H*0.68. Arriba, una escena de formas simples sobre la que aparecen MUCHÍSIMOS recuadros delgados y grises, superpuestos, tantos que tapan todo, apareciendo tan rápido que agobian. Abajo, la misma escena pero solo TRES recuadros gruesos y brillantes que aparecen directo sobre las formas importantes, latiendo. Una barra de progreso junto a la escena de arriba avanza lentísimo; la de abajo se llena de golpe. Sin números."
+      }
+    },
+    {
+      "narration": "Dejó de probar todos. Aprendió a proponer unos cuantos.",
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.35,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "dejó de probar todos",
+            "serif": true
+          },
+          {
+            "text": "APRENDIÓ A PROPONER",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "a wide dark field where hundreds of faint search points scatter chaotically and then suddenly converge into three bright focused beams, cinematic, deep blacks, slow motion",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Un recuadro alcanza para una cara. No alcanza cuando lo que buscas mide tres milímetros. Mañana cierra la serie.",
+      "beat_type": "cta",
+      "visual_type": "image",
+      "image_prompt": "photograph of a camera viewfinder frame glowing in a dark room, a small red focus rectangle floating inside it, everything else black, shot on 85mm at f/1.4, cinematic"
+    }
+  ],
+  "hook_locked": true
+}

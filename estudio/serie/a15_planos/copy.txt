@@ -1,0 +1,1 @@
+El mejor consejo para construir agentes es casi no usarlos: empieza con lo más simple que funcione. Casi todo se arma con cinco piezas, y entenderlas te vacuna contra el humo. Parte 18 de 33 de «Cómo actúa una máquina». ¿Tu problema necesita un agente o solo una lista de pasos? #agentesdeia #inteligenciaartificial #ia

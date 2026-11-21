@@ -1,0 +1,11 @@
+Corrí 48 veces el truco de prompt más famoso del mundo para poder decirte si sirve. Terminé sin poder decirte.
+
+Seis problemas de varios pasos, todos con respuesta verificable. Veinticuatro corridas con "piensa paso a paso" y veinticuatro sin ella. Con la línea: 24 de 24. Sin ella: 22. Dos respuestas de diferencia, y con una diferencia así de chica no se distingue del azar.
+
+El problema no es el truco. El problema es que llevamos años decidiendo estas cosas con una sola corrida, y una corrida es una muestra de tamaño uno: el modelo elige cada palabra de una lista con dados cargados, así que la misma pregunta te da respuestas distintas. En técnico, decodificación estocástica.
+
+Yo llegué a esto por vergüenza, no por método: le mandé a un cliente un dato que el modelo se había inventado. Desde entonces, antes de adoptar cualquier truco lo corro diez veces con y diez veces sin, sobre algo que pueda verificar, y cuento los aciertos en una hoja. Dos columnas de palitos. No necesitas saber programar.
+
+¿Tus prompts los eliges por instinto o los cuentas?
+
+Mañana: el dato que pusiste a la mitad del prompt casi no lo leyó.

@@ -1,0 +1,100 @@
+{
+  "tema": "El filtro de nitidez de tu celular es la primera capa de una red",
+  "modo": "corto",
+  "title": "El filtro de nitidez de tu celular es la primera capa de una red",
+  "slug": "ver_filtros_que_ya_usaste",
+  "hook_tipo": "secreto",
+  "theme": "ambar",
+  "keyword": "kernels de imagen",
+  "hook_headline": [
+    "EL MISMO",
+    "FILTRO"
+  ],
+  "pregunta_ab": "¿El filtro adorna o interroga?",
+  "music_prompt": "warm analog electronica, soft arpeggios and tape hiss, nostalgic but forward moving, no vocals, 110 BPM",
+  "scenes": [
+    {
+      "narration": "Tu botón de nitidez hace la misma cuenta que una red.",
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.45,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "el mismo filtro",
+            "serif": true
+          },
+          {
+            "text": "QUE TU CELULAR",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "cinematic macro of a photograph where the edges of every object suddenly ignite into thin lines of white light while flat areas fall into darkness, slow motion, deep blacks",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Esa ventanita de nueve números tiene nombre: filtro. Según qué valores le pongas, resalta bordes, afila o difumina.",
+      "beat_type": "hook",
+      "visual_type": "custom",
+      "custom_anim": {
+        "description": "PROHIBIDO tarjetas o cajas con texto. FRANJAS: título entre y=H*0.06 y y=H*0.16; dibujo entre y=H*0.22 y y=H*0.68. Una cuadrícula de TRES POR TRES celdas MUY GRANDE al centro, cada celda con un número dibujado dentro. Los números cambian de valor con sacudidas: primero un patrón con el centro alto y los lados negativos, luego otro con todos iguales, luego otro. Cada vez que cambian, una imagen hecha de celdas al costado responde: se afila, se difumina, se vuelve solo contornos. Usa SOLO estos valores: 5, 1, 0, -1, -4. No inventes otras cifras."
+      }
+    },
+    {
+      "narration": "Este es el de nitidez, en una página que puedes abrir ahorita: un cinco al centro y menos uno alrededor.",
+      "beat_type": "proof",
+      "visual_type": "receipt",
+      "receipt": {
+        "image": "scratchpad/receipts/kernel_nitidez.png",
+        "url_label": "setosa.io/ev/image-kernels",
+        "title": "EL FILTRO REAL",
+        "highlight": {
+          "y": 0.28,
+          "h": 0.5
+        },
+        "caption": "nitidez · 5 al centro, −1 a los lados"
+      }
+    },
+    {
+      "narration": "Se lo pasé a mi foto con un filtro de bordes. En la piel plana el resultado se apaga; en la montura de mis lentes se dispara.",
+      "beat_type": "giro",
+      "visual_type": "ml_demo",
+      "ml_demo": {
+        "code": "import numpy as np\nimport os\nfrom PIL import Image\n_p = 'branding/host_jose.png'\nif not os.path.exists(_p):\n    _p = '/home/jose/tiktok/branding/host_jose.png'\nf = np.asarray(Image.open(_p).convert('RGB')).mean(axis=2)\ncara = f[400:640, 280:520]\nbordes = np.array([[0,1,0],[1,-4,1],[0,1,0]], dtype=float)\ndef conv(m, k):\n    a = m.shape[0]-2; b = m.shape[1]-2\n    s = np.zeros((a,b))\n    for i in range(3):\n        for j in range(3):\n            s += k[i,j]*m[i:i+a, j:j+b]\n    return np.abs(s)\nsalida = conv(cara, bordes)\nplano = round(float(np.median(salida[:60, :60])))\nborde = round(float(np.percentile(salida, 99.5)))\nfig, axs = plt.subplots(1, 2, figsize=(9.4, 4.8))\naxs[0].imshow(cara, cmap='gray'); axs[0].set_title('mi cara', fontsize=21)\naxs[1].imshow(salida, cmap='inferno'); axs[1].set_title('lo que responde', fontsize=21)\nfor ax in axs:\n    ax.set_xticks([]); ax.set_yticks([])\naxs[0].set_xlabel('zona plana: %d' % plano, color=GREEN, fontsize=20, fontweight='bold', labelpad=14)\naxs[1].set_xlabel('en el borde: %d' % borde, color=MAG, fontsize=20, fontweight='bold', labelpad=14)",
+        "display_code": [
+          "k = [[0,1,0],[1,-4,1],[0,1,0]]",
+          "salida = convolver(mi_cara, k)"
+        ],
+        "caption": "filtro.py"
+      }
+    },
+    {
+      "narration": "El filtro no adorna la foto. Le pregunta dónde cambia el brillo.",
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.35,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "no adorna la foto",
+            "serif": true
+          },
+          {
+            "text": "PREGUNTA DÓNDE CAMBIA",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "extreme close up of a beam of light scanning across a dark textured surface, revealing hidden ridges as it passes while everything else stays dark, cinematic, slow motion",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "En tu celular esos nueve números los escribió una persona. Guardan tanto detalle que si te mueves, la red se pierde. Mañana.",
+      "beat_type": "cta",
+      "visual_type": "image",
+      "image_prompt": "extreme macro photograph of an old camera lens with engraved numbers on its ring, lit by a single narrow beam in a dark room, shot on 100mm macro at f/2.8, deep blacks, cinematic"
+    }
+  ],
+  "hook_locked": true
+}

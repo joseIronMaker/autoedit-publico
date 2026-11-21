@@ -1,0 +1,99 @@
+{
+  "nivel_vs_listón_0a10": 6,
+  "primer_segundo": "No detiene el pulgar con la misma fuerza que el listón. En 00:00 vemos una esfera negra con brazos de caricatura flotando estática sobre un fondo beige plano con una línea negra de horizonte que rompe el minimalismo. El Video 1 abre con una caída física dinámica en un espacio infinito; el Video 2 parece un clip-art esperando a que empiece la locución.",
+  "momentos_que_funcionan": [
+    {
+      "t": "00:04-00:06",
+      "que": "La caída física de la tipografía sobre el personaje aplastándolo y desprendiendo la corona y la banda; integra bien el texto en el entorno físico."
+    },
+    {
+      "t": "00:22-00:26",
+      "que": "La multiplicación de los carteles de 'no' rodeando al personaje como una barrera física traduce visualmente muy bien el concepto de sobre-restricción."
+    },
+    {
+      "t": "00:34-00:45",
+      "que": "La mancha roja expandiéndose como zona prohibida que bloquea tanto a 'mamá' como al 'teléfono/redes' explica visualmente la inferencia contextual sin necesidad de texto extra."
+    },
+    {
+      "t": "01:10-01:12",
+      "que": "El desenrollado del papel largo cayendo por el borde de la mesa para contrastar el prompt excesivo frente a la nota concisa."
+    }
+  ],
+  "momentos_donde_se_iria": [
+    {
+      "t": "00:06-00:12",
+      "por_que": "Seis segundos con el personaje prácticamente estático en el mismo encuadre; solo aparecen dos destellos y una etiqueta minúscula. El ritmo visual cae en picado tras el golpe inicial.",
+      "arreglo": "Hacer un zoom in rápido hacia el calendario 'día 1' al pegarse en el cuerpo, o cambiar de plano mientras el personaje aterriza directamente en el escenario de la fiesta."
+    },
+    {
+      "t": "00:15-00:20",
+      "por_que": "La hoja en blanco ocupa la mitad inferior de la pantalla y la pluma escribe 'Hazlo bonito' a una velocidad lenta y predecible mientras el fondo no cambia.",
+      "arreglo": "Acelerar el trazo de escritura al doble de velocidad y hacer que el personaje reaccione simultáneamente intentando tocar los elementos (pastel, teléfono) con confusión."
+    },
+    {
+      "t": "00:47-01:02",
+      "por_que": "Durante 15 segundos el encuadre es idéntico: la hoja pegada con cinta en primer plano mientras se borra y se escribe una lista numerada del 1 al 3. Es visualmente una diapositiva de PowerPoint.",
+      "arreglo": "No mostrar el acto de escribir toda la lista en el mismo plano; ilustrar cada punto (1, 2, 3) con acciones rápidas del personaje interactuando con el pastel, los invitados y el teléfono."
+    }
+  ],
+  "ritmo_visual": "Estático y teatral frente al dinamismo cinematográfico del listón. Mientras el Video 1 mueve la cámara constantemente a través de un espacio 3D continuo, el Video 2 abusa de un único plano general tipo escenario de mesa (de 00:14 a 01:03 casi sin cortes ni cambios de ángulo), confiando todo el movimiento a una pluma escribiendo sobre un papel.",
+  "sincronia_voz_imagen": [
+    {
+      "t": "00:13-00:14",
+      "problema": "El texto 'la fiesta de mamá' y los elementos aparecen antes de que la locutora termine de decir 'para organizar la fiesta', restando sorpresa al gag visual."
+    },
+    {
+      "t": "00:31-00:33",
+      "problema": "La locutora termina de decir 'así que nada de mensajes a mi mamá' en 00:33, pero la pluma sigue escribiendo de forma mecánica hasta 00:34."
+    },
+    {
+      "t": "00:54-00:59",
+      "problema": "Desfase entre la voz diciendo 'qué quieres lograr, cómo se ve terminado...' y la velocidad a la que aparece el texto escrito por la pluma; se siente arrastrado."
+    }
+  ],
+  "legibilidad_en_celular": [
+    {
+      "t": "00:04",
+      "problema": "La palabra 'EXPERTO' dentro de la banda cruzada es demasiado pequeña y tiene poco grosor de línea."
+    },
+    {
+      "t": "00:10-01:09",
+      "problema": "El texto 'día 1' en el calendario pegado a la esfera negra es microscópico; en la pantalla de un celular es una mancha ilegible durante casi todo el video."
+    },
+    {
+      "t": "00:41-00:45",
+      "problema": "El texto 'Es una sorpresa...' en la hoja se desvanece a un gris clarísimo casi invisible sobre el blanco del papel, ensuciando la imagen sin poderse leer."
+    },
+    {
+      "t": "01:06",
+      "problema": "El cartelito '¡muy importante!' que sale de la ranura de la cabeza es imposible de leer sin pausar y hacer zoom."
+    }
+  ],
+  "sonido": {
+    "musica": "Piano ligero de estilo corporativo/explicativo que le da un tono de tutorial escolar, muy lejos de la atmósfera inmersiva y tensa con diseño sonoro moderno del Video 1.",
+    "efectos": "Excesivamente literales y repetitivos; el sonido de rasgueo de pluma sobre papel domina demasiados segundos del video y los sonidos caricaturescos ('boing', 'pop') abaratan el acabado.",
+    "mezcla": "La voz tiene un procesamiento algo metálico o de sala pequeña, menos cálida, limpia y presente que la locución del listón.",
+    "problemas": [
+      {
+        "t": "00:18-00:23",
+        "que": "El efecto de sonido de escritura a mano es demasiado fuerte y áspero, compitiendo directamente con las frecuencias de la voz."
+      },
+      {
+        "t": "00:54-00:59",
+        "que": "Repetición fatigante del mismo sonido de rasgueo de pluma durante toda la enumeración de la lista."
+      }
+    ]
+  },
+  "guion": {
+    "claridad": "Es claro y fácil de seguir, pero tarda demasiado en llegar al concepto técnico ('prompt de sistema' recién en 00:49) y usa una analogía cotidiana que le quita peso tecnológico frente al listón.",
+    "afirmaciones_dudosas": [
+      "En 00:48: 'A esa nota permanente le llamamos prompt de sistema'. En el ejemplo, organizar la fiesta de mamá es una tarea puntual (prompt de usuario/tarea), no una instrucción permanente de comportamiento o rol del sistema."
+    ],
+    "final": "Pierde fuerza en los últimos 15 segundos (01:03-01:17) porque introduce otra idea más (la máquina tragaperras de frases mágicas y el colega nuevo) después de haber dado ya la estructura de 3 puntos, alargando el cierre en lugar de terminar en un golpe contundente como el bucle perfecto del Video 1."
+  },
+  "tres_cambios_de_mayor_impacto": [
+    "Eliminar el escenario estático con línea de horizonte y mesa: situar al personaje en un espacio infinito limpio (como el listón) y mover la cámara dinámicamente entre los elementos en lugar de dejar un plano fijo de 45 segundos con una hoja de papel.",
+    "Quitar la animación de la pluma escribiendo letra por letra: hacer que el texto aparezca con cortes secos o animaciones tipográficas rápidas sincronizadas al milisegundo con la voz, reduciendo los tiempos muertos a la mitad.",
+    "Rediseñar la escala visual para formato vertical móvil: eliminar textos microscópicos ('día 1', '¡muy importante!') y hacer que la estética del personaje sea geométrica y elegante (solo la esfera expresiva) sin brazos de caricatura ni clip-arts planos de pasteles y teléfonos."
+  ]
+}

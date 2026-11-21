@@ -1,0 +1,18 @@
+A un agente no le das confianza. Le das llaves.
+Y hay tres llaves que nunca debes entregarle juntas.
+El investigador Simon Willison les puso nombre: la trifecta letal.
+Primera: acceso a tus datos privados.
+Segunda: contacto con contenido de extraños.
+Tercera: una forma de mandar cosas hacia afuera.
+Con una o dos, el riesgo es manejable. Con las tres, un simple texto puede sacar tus datos.
+Tu agente lee tus contactos, recibe correos de desconocidos, y puede enviar mensajes. Ahí están las tres.
+Por eso existen los guardrails, las barandillas.
+Filtros que revisan lo que entra, y lo que sale.
+Permisos: puede ver el calendario, pero no borrarlo.
+Una caja cerrada, para que si algo sale mal, no salga de ahí.
+Y lo más simple: antes de pagar, pregúntame.
+Ninguna barandilla es perfecta. Se ponen varias, una tras otra.
+Y hay una trampa muy humana.
+Anthropic midió que, con la experiencia, la gente lo deja aprobar solo el doble de veces.
+La seguridad no se rompe cuando el agente falla.
+Se rompe cuando te cansas de revisarlo.

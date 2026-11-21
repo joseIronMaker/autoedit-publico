@@ -1,0 +1,226 @@
+{
+ "tema": "ambar",
+ "recursos": {
+  "fabrica": "videos/_clips_pagados/gen_ia_generativa_fabrica__veo_0.mp4",
+  "combo": "videos/_clips_pagados/gen_combo_fusionar_ias__veo_0.mp4",
+  "chatgpt": "jose03.assets/shot_chatgpt.png",
+  "generada": "jose03.assets/img_generada.png"
+ },
+ "paneles": [
+  {
+   "t": 0.0,
+   "spec": {
+    "kind": "clip",
+    "video": "@fabrica",
+    "lines": [
+     "LO ESTÁ",
+     "CAMBIANDO TODO"
+    ]
+   }
+  },
+  {
+   "t": 7.71,
+   "spec": {
+    "kind": "headline",
+    "kicker": "cuándo empezó",
+    "lines": [
+     "2022",
+     "CHATGPT"
+    ]
+   }
+  },
+  {
+   "t": 11.73,
+   "spec": {
+    "kind": "shot",
+    "image": "@chatgpt",
+    "title": "captura real",
+    "url_label": "chatgpt.com",
+    "caption": "la primera vez que sentimos que hablábamos con alguien"
+   }
+  },
+  {
+   "t": 21.83,
+   "spec": {
+    "kind": "headline",
+    "kicker": "la pregunta",
+    "lines": [
+     "¿QUÉ ES",
+     "LA GENERATIVA?"
+    ]
+   }
+  },
+  {
+   "t": 25.41,
+   "spec": {
+    "kind": "compare",
+    "title": "la diferencia está en un paso",
+    "left": {
+     "head": "Predictiva",
+     "body": "Dice cuál es la palabra más probable"
+    },
+    "right": {
+     "head": "Generativa",
+     "body": "Además te la escribe"
+    },
+    "verdict": "Predecir y entregar ya es crear"
+   }
+  },
+  {
+   "t": 35.85,
+   "spec": {
+    "kind": "flow",
+    "title": "cómo arma un texto",
+    "steps": [
+     "Predice la siguiente palabra",
+     "Junta muchas predicciones",
+     "Sale algo que no existía"
+    ]
+   }
+  },
+  {
+   "t": 44.37,
+   "spec": {
+    "kind": "define",
+    "label": "hoy además son",
+    "term": "Multimodales",
+    "body": "No solo predicen palabras: también predicen píxeles, audio y video."
+   }
+  },
+  {
+   "t": 53.35,
+   "spec": {
+    "kind": "photo",
+    "images": [
+     "@generada"
+    ],
+    "caption": "El siguiente píxel más probable, muchas veces seguidas"
+   }
+  },
+  {
+   "t": 59.31,
+   "spec": {
+    "kind": "define",
+    "label": "la entrada se llama",
+    "term": "Prompt",
+    "body": "Lo que le pides. De ahí sale todo lo demás."
+   }
+  },
+  {
+   "t": 67.91,
+   "spec": {
+    "kind": "headline",
+    "kicker": "yo, robot · 2004",
+    "lines": [
+     "¿PUEDE UN ROBOT",
+     "ESCRIBIR UNA",
+     "SINFONÍA?"
+    ]
+   }
+  },
+  {
+   "t": 77.17,
+   "spec": {
+    "kind": "headline",
+    "kicker": "veintidós años después",
+    "lines": [
+     "HOY LA MÁQUINA",
+     "SÍ PUEDE"
+    ]
+   }
+  },
+  {
+   "t": 82.71,
+   "spec": {
+    "kind": "clip",
+    "video": "@combo",
+    "lines": [
+     "YA NO ES",
+     "CIENCIA FICCIÓN"
+    ]
+   }
+  },
+  {
+   "t": 92.31,
+   "spec": {
+    "kind": "flow",
+    "title": "de dónde aprendió",
+    "steps": [
+     "Todo el internet",
+     "El conocimiento humano escrito",
+     "Todo el código que subimos"
+    ]
+   }
+  },
+  {
+   "t": 102.07,
+   "spec": {
+    "kind": "define",
+    "label": "definición",
+    "term": "IA generativa",
+    "body": "Crea contenido nuevo a partir de los patrones que aprendió."
+   }
+  },
+  {
+   "t": 113.71,
+   "spec": {
+    "kind": "flow",
+    "title": "lo que le pidas",
+    "steps": [
+     "Una imagen → la genera",
+     "Un video → lo genera",
+     "Un texto → lo genera"
+    ]
+   }
+  },
+  {
+   "t": 122.53,
+   "spec": {
+    "kind": "headline",
+    "kicker": "incluso",
+    "lines": [
+     "UNA PÁGINA WEB",
+     "COMPLETA"
+    ]
+   }
+  },
+  {
+   "t": 125.93,
+   "spec": {
+    "kind": "compare",
+    "title": "de qué patrones sale",
+    "left": {
+     "head": "Los que aprendió",
+     "body": "Del entrenamiento"
+    },
+    "right": {
+     "head": "Los que le das",
+     "body": "En tu prompt, ahora mismo"
+    },
+    "verdict": "Los dos a la vez"
+   }
+  },
+  {
+   "t": 135.01,
+   "spec": {
+    "kind": "headline",
+    "kicker": "y viene de",
+    "lines": [
+     "LOS ALGORITMOS",
+     "CLÁSICOS"
+    ]
+   }
+  },
+  {
+   "t": 143.11,
+   "spec": {
+    "kind": "headline",
+    "kicker": "ia con josé",
+    "lines": [
+     "PREDICE",
+     "Y CON ESO CREA"
+    ]
+   }
+  }
+ ]
+}

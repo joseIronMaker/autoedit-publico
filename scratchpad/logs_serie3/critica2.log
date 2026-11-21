@@ -1,0 +1,136 @@
+
+=== ver01s_galeria_sin_cara.json   hook: 11 palabras, 3.3s ✔
+    hook 7 · coherencia 5 · viralidad 7 · explicabilidad 6 · marca 4   (4 graves de 9)
+      esc 1 [hook] «Nunca ha visto una» es una promesa llamativa pero falsa para un detector entrenado con imágenes de caras, así que el video no puede demostrarla.
+          → Cámbiala por «Tu cámara dibuja este recuadro antes de la foto. ¿Cómo?», que conserva el bucle abierto y promete exactamente la explicación posterior.
+      esc 2 [marca] Decir que cada píxel es un solo valor de 0 a 255 solo describe la imagen en blanco y negro de 8 bits del ejemplo, no lo que registra en general una cámara a color.
+          → Di «En esta versión en blanco y negro de 8 bits, cada píxel es un brillo de 0 a 255» y separa explícitamente al sensor del detector.
+      esc 4 [viralidad] El 87% y el supuesto cero no son verificables si no aparecen el nombre y versión del detector, su umbral y la salida sin editar; además, ausencia de recuadro no equivale a una puntuación de cero.
+          → Muestra en pantalla modelo, versión, umbral y salida cruda, y narra «dio score 0.87 en mi cara y ninguna detección en este recorte» en vez de «confianza» y «cero».
+      esc 5 [coherencia] «No busca tu cara» no responde la pregunta A-o-B y plantea una falsa oposición: un detector mide valores y usa los patrones aprendidos para reconocer una cara.
+          → Reemplázala por «Hace ambas: mide los píxeles y, con ellos, detecta patrones que aprendió a asociar con caras».
+
+=== ver02s_no_basta_con_mirar.json   hook: 10 palabras, 3.7s ✔
+    hook 7 · coherencia 4 · viralidad 7 · explicabilidad 4 · marca 5   (6 graves de 10)
+      esc 0 [coherencia] La pregunta anunciada —si falta tamaño o forma— nunca se formula en voz ni recibe una respuesta explícita.
+          → Haz que el hook pregunte «¿A una red densa le falta tamaño o le falta forma?» y cierra con «Le falta una forma eficiente de reconocer la misma forma cuando se mueve».
+      esc 5 [coherencia] Repite la escena 4 con otra redacción: ambas dicen que el aplanado no expresa la relación espacial entre píxeles.
+          → Sustituye la escena 5 por una consecuencia nueva y visible: compara cuántos parámetros necesita una capa densa frente a un filtro pequeño para la misma entrada.
+      esc 6 [coherencia] El cierre no resuelve tamaño contra forma y cambia a prometer «esa cuenta» para mañana sin identificar qué se calculará.
+          → Cierra el argumento actual con el nombre de la solución: «Una convolución reutiliza el mismo filtro en cada zona; por eso reconoce el patrón aunque se mueva».
+      esc 2 [explicabilidad] «Red densa» aparece sin definición y la escena supone que el público ya sabe por qué esa red exige una fila de números.
+          → Define el término al decirlo: «Una capa densa conecta cada número con cada neurona; para darle la foto solemos convertir su cuadrícula en una fila».
+      esc 4 [marca] Es técnicamente falso que una capa densa trate cada posición como si no tuviera relación con su vecina: puede combinar todas las posiciones, pero no trae incorporadas localidad ni equivalencia a traslaciones.
+          → Cámbialo por «Una capa densa puede aprender esas relaciones, pero no sabe de entrada que el mismo patrón movido sigue siendo el mismo y necesita muchos más parámetros para aprenderlo».
+      esc 5 [marca] «La vecindad se vuelve invisible» también es falso: las coordenadas siguen disponibles y la red puede aprender interacciones entre ellas, solo carece del sesgo local adecuado.
+          → Sustituye la frase por «Aplanar conserva las posiciones, pero no le da a la red la regla de que los vecinos forman patrones locales».
+
+=== ver03s_la_ventanita.json   hook: 12 palabras, 3.9s ✔
+    hook 5 · coherencia 5 · viralidad 4 · explicabilidad 6 · marca 4   (9 graves de 13)
+      esc 1 [hook] La frase sí cabe justo en 12 palabras, pero entrega la respuesta de inmediato y no usa con claridad llamada de identidad, bucle abierto, confesión ni una contradicción que el resto demuestre.
+          → Abrir con «Tu celular no mira toda tu foto a la vez: la recorre en pedacitos» y demostrar esa afirmación con la misma foto durante todo el video.
+      esc 1 [viralidad] «Mirar la foto de a pedacitos» es una abstracción: no nombra el celular, la galería ni el botón de nitidez que el espectador realmente usa.
+          → Poner desde la primera palabra un objeto reconocible —«tu celular» o «tu botón de nitidez»— sobre una foto real en pantalla.
+      esc 1 [marca] «Es multiplicar y sumar. Nada más» simplifica de más y hace parecer que toda la visión por computadora se reduce a esa operación.
+          → Acotar la afirmación a «Una convolución básica calcula cada pedacito multiplicando y sumando» y decir que es una pieza del sistema, no todo el sistema.
+      esc 3 [viralidad] «El primero da cuatro» no es una prueba verificable si no se ven simultáneamente los nueve valores de la imagen, los nueve pesos y la suma que produce cuatro.
+          → Congelar el primer cálculo y mostrar los nueve productos y su suma hasta llegar a 4, además de dejar visible el código ejecutado.
+      esc 4 [marca] «La hace barata» es técnicamente impreciso: compartir pesos reduce parámetros y memoria, pero la ventana todavía exige cómputo en cada posición.
+          → Sustituirlo por «Compartir los mismos pesos reduce cuántos parámetros hay que aprender, aunque el cálculo se repite en cada posición».
+      esc 4 [marca] «Nueve números para toda la foto, no uno por pixel» compara cantidades equivocadas: sin compartir habría nueve pesos por posición de salida, no un peso por píxel.
+          → Decir «Son nueve pesos reutilizados; sin compartirlos necesitarías nueve pesos nuevos por cada posición de salida».
+      esc 5 [coherencia] Repite casi literalmente la escena 4 y desperdicia segundos sin contestar la pregunta central con precisión.
+          → Convertirla en la respuesta explícita: «Entonces: calcula cada salida de a pedacitos, pero al recorrerlos termina cubriendo toda la foto».
+      esc 6 [coherencia] El cierre cambia del ejemplo genérico a «tu botón de nitidez» y pospone la explicación, en vez de rematar la pregunta que abrió el video.
+          → Cerrar primero con la respuesta «la procesa por pedacitos y recorre toda la imagen» y dejar la nitidez como una última consecuencia del mismo ejemplo visual.
+      esc 6 [marca] Afirmar que son «los mismos» nueve números del botón de nitidez promete una equivalencia universal falsa: distintas apps usan kernels, máscara de enfoque, métodos adaptativos o modelos de IA.
+          → Decir «Un filtro clásico de nitidez puede usar un kernel como este; el botón de tu app puede aplicar un método distinto».
+
+=== ver04s_filtros_que_ya_usaste.json   hook: 11 palabras, 3.3s ✔
+    falló: Invalid control character at: line 15 column 182 (char 578)
+
+=== ver05s_tirar_a_proposito.json   hook: 11 palabras, 3.3s ✔
+    hook 6 · coherencia 5 · viralidad 6 · explicabilidad 4 · marca 3   (9 graves de 13)
+      esc 1 [hook] Aunque cabe en 11 palabras y usa contradicción, «la red» es una abstracción y «la hace mejor» promete una mejora general que el video no demuestra.
+          → Abrir con «Tu celular reconoce esto aunque se mueva dos píxeles» y demostrar exactamente esa tolerancia con la misma imagen antes y después.
+      esc 1 [coherencia] La pregunta «¿perder detalle es perder o ganar?» solo está en la ficha: la voz abre con una conclusión y nunca plantea una pregunta concreta que el espectador espere resolver.
+          → Convertir la primera escena en una pregunta visible y hablada —«¿Por qué borrar 75% de estos números ayuda a reconocer la imagen?»— y contestarla en la escena 4.
+      esc 2 [explicabilidad] «Red», «ventana», «negativo» y «cuadrito» aparecen sin referente visual ni definición, así que un principiante no sabe qué objeto cambia ni por qué.
+          → Mostrar una matriz etiquetada «mapa de activaciones» y decir «son puntuaciones de dónde detectó un rasgo; ReLU pone en cero las negativas y max pooling conserva la mayor de cada bloque 2×2».
+      esc 2 [marca] «Después de cada ventana» describe falsamente una regla universal: ReLU y max pooling son operaciones distintas, su orden depende de la arquitectura y muchas redes modernas ni siquiera usan max pooling en cada bloque.
+          → Decir «En este ejemplo de una CNN clásica, aplico ReLU al mapa y después max pooling 2×2» y no presentarlo como comportamiento de toda red.
+      esc 4 [marca] La explicación exagera la invariancia: mover un rasgo unos píxeles puede cambiar la activación o cruzar el borde del bloque, y entonces el máximo sí cambia.
+          → Limitar la afirmación a «puede dar tolerancia a pequeños desplazamientos si la activación sigue dentro del mismo bloque y conserva el máximo» y mostrar también el caso límite al cruzar de bloque.
+      esc 5 [coherencia] La tesis repite las escenas 2 y 3 sin añadir respuesta, costo ni condición, desperdiciando segundos decisivos para la finalización.
+          → Sustituirla por la respuesta «Gana tolerancia a la posición, pero pierde ubicación exacta: sirve cuando importa qué apareció, no el píxel preciso».
+      esc 5 [marca] «Apagar lo débil» es técnicamente falso: ReLU apaga valores negativos, no valores débiles, y max pooling descarta todo valor que no sea el máximo aunque sea alto.
+          → Decir «ReLU elimina activaciones negativas; max pooling conserva solo la activación más alta de cada zona».
+      esc 6 [explicabilidad] «Las tres piezas» y «los nueve números de la ventana» llegan sin antecedente comprensible, y además se pasa de bloques 2×2 a nueve números sin introducir un filtro 3×3.
+          → Presentar antes un filtro 3×3 o cerrar sin esa referencia: «Siguiente: cómo la red aprende los 9 pesos de un filtro 3×3 durante el entrenamiento».
+      esc 0 [marca] No hay ninguna frase de experiencia, criterio o postura propia que identifique a un ingeniero de IA; el texto podría venir de cualquier cuenta genérica.
+          → Añadir una línea honesta de oficio, por ejemplo «Cuando depuro una CNN, comparo el mapa antes y después para comprobar qué información sacrificó».
+
+=== ver06s_nadie_le_enseno_un_ojo.json   hook: 9 palabras, 4.1s ✔
+    hook 5 · coherencia 3 · viralidad 4 · explicabilidad 3 · marca 3   (12 graves de 14)
+      esc 1 [hook] Aunque cabe en nueve palabras y usa una afirmación contraria, «esos nueve números» no significa nada todavía ni nombra algo que el espectador use o reconozca.
+          → Abrir con «Esta IA encontró mis lentes sin que nadie le explicara qué son» mientras aparece la foto y la activación sobre la montura.
+      esc 1 [coherencia] La pregunta «¿aprende conceptos o patrones?» solo existe en la ficha y nunca se formula en la narración.
+          → Rematar el hook con «¿aprendió el concepto de lentes o solo un patrón?» y conservar esa disyuntiva hasta contestarla.
+      esc 1 [viralidad] La prueba prometida son nueve números invisibles sobre un video generado, no un resultado verificable que parezca imposible en los primeros dos segundos.
+          → Mostrar desde el primer cuadro la foto real, el mapa de activación real y el código ejecutándose; después revelar qué produjo esa marca.
+      esc 2 [explicabilidad] «Entrenamiento», «tarea» y «ventana» aparecen sin referente, y «apilar una ventana sobre otra» no describe de forma comprensible una convolución ni una capa.
+          → Enseñar una cuadrícula 3×3 y decir «este filtro, una cuadrícula que recorre la foto, multiplica nueve pixeles y produce una nueva imagen».
+      esc 2 [marca] Afirmar que son nueve parámetros es técnicamente engañoso si la foto es RGB: un filtro 3×3 de entrada suele tener 27 pesos por canal de salida, no nueve.
+          → Usar explícitamente una imagen en escala de grises y un filtro 3×3 de un canal, o mostrar los 27 pesos del filtro RGB y corregir la cifra.
+      esc 3 [marca] Aplicar dos veces el mismo filtro no demuestra que una red entrenada construya cruces ni que reconozca la montura; faltan filtros distintos, canales, no linealidades y pesos aprendidos.
+          → Reemplazar el filtro repetido por activaciones de dos capas reales de una CNN entrenada, identificando modelo, capa, entrada y código reproducible.
+      esc 3 [viralidad] Que el código se ejecute no vuelve verificable la conclusión: la marca sobre los lentes puede ser una coincidencia escogida y no se compara con ninguna intervención.
+          → Ocultar la montura en una segunda ejecución y mostrar que la activación cae, con el valor antes y después visible en pantalla.
+      esc 4 [coherencia] Repite la promesa de la escena 2 —que al apilar aparece algo no programado— sin aportar una prueba nueva y luego salta de una montura a ojos y nariz.
+          → Eliminar la repetición y usar esta escena para comparar, sobre la misma foto, activaciones reales de una capa temprana y una profunda.
+      esc 4 [marca] «Salió de apilar» atribuye el resultado solo a la profundidad e ignora los datos, el objetivo de entrenamiento y el ajuste de pesos; además, una activación no prueba un concepto humano de ojo.
+          → Decir «el entrenamiento ajustó los pesos para combinar patrones; algunas activaciones se alinean con partes como ojos, pero eso no prueba que entienda el concepto».
+      esc 5 [explicabilidad] «Las capas no se reparten el trabajo. Se lo heredan» es una metáfora sin etiqueta, difícil de descifrar y falsa si sugiere que una capa solo recibe en vez de transformar.
+          → Sustituirla por «Cada capa transforma los patrones de la anterior y los combina en patrones más complejos».
+      esc 5 [coherencia] La tesis no elige entre conceptos y patrones, así que el video termina sin responder su única pregunta.
+          → Contestar de forma explícita: «Aprende patrones estadísticos; algunos forman representaciones útiles que nosotros interpretamos como partes, no conceptos humanos garantizados».
+      esc 6 [coherencia] «Ya sabe que hay una cara» no se desprende de detectar bordes o partes y el cierre cambia a cajas delimitadoras antes de resolver conceptos contra patrones.
+          → Cerrar primero con la respuesta sobre patrones y, solo después, decir «localizar la cara requiere otra salida del modelo; eso sigue mañana».
+
+=== ver07s_de_que_hay_a_donde_esta.json   hook: 8 palabras, 3.3s ✔
+    hook 7 · coherencia 5 · viralidad 5 · explicabilidad 4 · marca 4   (7 graves de 12)
+      esc 2 [explicabilidad] «La red» aparece sin explicar qué red es, y «producir cuatro números» no aclara cómo esos números terminan colocando el recuadro.
+          → Decir «El detector de IA debe predecir cuatro coordenadas —posición, ancho y alto— que dibujan el recuadro» y animar cada número moviendo un borde.
+      esc 3 [viralidad] «Más de medio millón» no es una prueba verificable porque no se muestra la fórmula, el número exacto ni qué seis tamaños se contaron.
+          → Fijar seis tamaños concretos, ejecutar en pantalla el conteo de posiciones válidas y mostrar tanto la suma exacta como la fórmula durante la narración.
+      esc 3 [marca] La cifra depende de supuestos omitidos —paso, proporciones, bordes y tamaños—, así que el dato puede ser cierto bajo una configuración y engañoso como afirmación general.
+          → Nombrar el supuesto completo en voz y pantalla, por ejemplo «con seis cajas cuadradas, paso de un píxel y solo posiciones que caben en la imagen», y conservar el resultado exacto del código.
+      esc 4 [marca] Presenta las propuestas de regiones como «la» solución universal, cuando describen una familia concreta de detectores de dos etapas y no a todos los detectores modernos.
+          → Acotarlo con «En detectores de dos etapas como Faster R-CNN, una red de propuestas sugiere regiones candidatas y una segunda etapa las clasifica y ajusta».
+      esc 4 [explicabilidad] «Regiones» y «solo esas se revisen» ocultan quién las propone, quién las revisa y qué significa revisar.
+          → Mostrar dos bloques y narrar «la primera parte propone cajas candidatas; la segunda decide qué contienen y corrige sus bordes».
+      esc 5 [coherencia] Repite exactamente el giro de la escena 4 sin aportar prueba, consecuencia ni respuesta nueva.
+          → Eliminarla y usar ese tiempo para superponer en la misma foto el barrido de todas las cajas frente a las propuestas finales, cerrando «buscar en todos lados o aprender dónde».
+      esc 6 [marca] «Un recuadro no alcanza cuando mide tres milímetros» es técnicamente incorrecto: una caja sí puede rodear un objeto diminuto; el problema es que puede ocupar muy pocos píxeles o perder detalle en las capas del modelo.
+          → Sustituirlo por «La caja sí alcanza; lo difícil es detectar un objeto que ocupa pocos píxeles porque su señal se pierde al reducir la imagen».
+
+=== ver08s_pixel_por_pixel.json   hook: 11 palabras, 4.1s ✔
+    hook 5 · coherencia 3 · viralidad 5 · explicabilidad 3 · marca 3   (9 graves de 10)
+      esc 1 [hook] La frase tiene 11 palabras, pero abre con el abstracto «un recuadro» y no nombra IA, mamografía ni radiólogo, así que en tres segundos nadie sabe qué está en juego.
+          → Sustitúyela por «Esta IA superó a seis radiólogos leyendo mamografías. ¿Los reemplaza?», que concreta el objeto, plantea el bucle y promete exactamente la comparación del estudio.
+      esc 1 [coherencia] El guion declara como tema «asistir o reemplazar», pero la primera escena abre otra cuestión —detectar algo de tres milímetros— que después nunca demuestra.
+          → Abre explícitamente «¿Los reemplaza?» y elimina los tres milímetros, salvo que muestres una lesión de ese tamaño respaldada por la fuente.
+      esc 2 [explicabilidad] «Quitar las capas del final», «red toda de ventanas» y «etiqueta por cada pixel» acumulan tres ideas técnicas sin nombrar ni explicar segmentación o mapa de predicciones.
+          → Di «Esto se llama segmentación: la red produce un mapa que clasifica zonas de la imagen; lo de las ventanas es una metáfora para entenderlo».
+      esc 2 [marca] La explicación es técnicamente engañosa: quitar capas finales no convierte por sí solo cualquier red en un sistema que etiqueta cada píxel a resolución original.
+          → Explica que una red totalmente convolucional genera un mapa espacial y que una arquitectura de segmentación además recupera resolución para asignar clases por píxel.
+      esc 3 [coherencia] La demo de bajar y subir resolución para contornear una foto ilustra segmentación, pero el estudio citado evalúa un sistema de predicción y detección en mamografías; el guion los presenta como si fueran el mismo modelo.
+          → Muestra la salida real de localización o puntuación del artículo sobre una mamografía y, si conservas tu demo, rotúlala «analogía de segmentación; no es la arquitectura del estudio».
+      esc 4 [viralidad] La captura de Nature es verificable, pero la narración desperdicia la prueba: no enseña ningún resultado medido y deja «marcó cánceres» como afirmación imposible de comprobar en pantalla.
+          → Haz zoom al resumen y muestra un dato exacto, por ejemplo «en EE. UU. redujo 9.4 puntos los falsos negativos y 5.7 los falsos positivos».
+      esc 4 [marca] «Marcó cánceres que los radiólogos no habían marcado» borra que fue una evaluación retrospectiva y transforma resultados agregados de predicción en una conclusión clínica más fuerte.
+          → Di «En una evaluación retrospectiva, el sistema redujo falsos negativos frente a la lectura humana; el artículo aún pedía ensayos clínicos».
+      esc 5 [coherencia] La tesis sólo repite con poesía el giro de la escena 4 y jamás contesta si la IA asiste o reemplaza al experto.
+          → Cámbiala por «La evidencia apoya usarla como segundo lector; este estudio no probó que pueda reemplazar al radiólogo».
+      esc 6 [coherencia] El cierre salta a IA generativa sin resolver la pregunta central y rompe el único hilo que debía sostener los 35–45 segundos.
+          → Cierra «Aquí asistía como segundo lector; no demostró reemplazo. Después veremos cómo pasó de analizar píxeles a generarlos».

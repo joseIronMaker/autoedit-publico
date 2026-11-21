@@ -1,0 +1,18 @@
+ChatGPT no puede apagar la luz de tu cuarto.
+Puede explicarte cómo. Puede escribirte el código. Pero no puede hacerlo.
+Todo lo que vimos en la primera serie produce una sola cosa: texto.
+Una máquina que adivina la siguiente palabra, encerrada en una caja.
+Ahora hazle dos cambios.
+Primero, dale manos. Herramientas: buscar en internet, leer un archivo, mandar un mensaje.
+Segundo, déjala ver qué pasó, para que decida qué sigue.
+Eso es un agente.
+Un modelo de lenguaje, dando vueltas, con herramientas.
+No es un modelo nuevo. Es el mismo que ya conoces, con permiso para actuar.
+Y esa diferencia lo cambia todo.
+Si un chatbot se equivoca, te da una respuesta mala, y tú decides qué hacer con ella.
+Si un agente se equivoca, ya lo hizo.
+Ya mandó el mensaje. Ya borró el archivo.
+Por eso, en esta serie le vamos a dar un encargo: organizar la fiesta sorpresa de tu mamá.
+Y lo vamos a ver funcionar, fallar, y hasta hacer trampa.
+Porque la máquina que aprendió a hablar...
+ya aprendió a hacer cosas.

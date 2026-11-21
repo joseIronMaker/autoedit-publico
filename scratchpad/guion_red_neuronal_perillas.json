@@ -1,0 +1,89 @@
+{
+  "title": "Le temes a algo que no piensa",
+  "slug": "red_neuronal_perillas",
+  "hook_tipo": "contraria",
+  "keyword": "red neuronal",
+  "hook_headline": ["NO PIENSA", "SOLO CALCULA"],
+  "pregunta_ab": "¿Piensa o calcula?",
+  "music_prompt": "dark pulsing electronic tech instrumental, hypnotic analog synth arpeggios, driving beat, tension building, no vocals, 122 BPM",
+  "modo": "corto",
+  "scenes": [
+    {
+      "narration": "Le tienes miedo a algo que no piensa.",
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.45,
+      "kinetic_video": {
+        "words": [
+          {"text": "175,000,000,000", "accent": true},
+          {"text": "DE PERILLAS"},
+          {"text": "no piensa", "serif": true}
+        ],
+        "variant": "dark",
+        "video": "/home/jose/tiktok/scratchpad/perillas_clip.mp4"
+      }
+    },
+    {
+      "narration": "Esa IA es una red neuronal: aprueba tu crédito y elige lo que ves.",
+      "beat_type": "hook",
+      "visual_type": "host",
+      "host_top": {"kind": "headline", "lines": ["NO PIENSA", "SOLO CALCULA"]}
+    },
+    {
+      "narration": "Copia tu cerebro: tú usas 86 mil millones de neuronas; ella, perillas.",
+      "beat_type": "proof",
+      "visual_type": "diagram",
+      "diagram": {
+        "type": "neural_net",
+        "title": "RED NEURONAL",
+        "layers": [3, 4, 4, 2],
+        "in_label": "tus datos",
+        "out_label": "sí / no"
+      }
+    },
+    {
+      "narration": "Y aprende en vivo: le doy datos revueltos y ajusta sus perillas sola hasta separarlos. Nadie le enseñó.",
+      "beat_type": "proof",
+      "visual_type": "ml_demo",
+      "ml_demo": {
+        "code": "from sklearn.datasets import make_moons\nfrom sklearn.neural_network import MLPClassifier\nX, y = make_moons(n_samples=240, noise=0.22, random_state=7)\nred = MLPClassifier(hidden_layer_sizes=(8, 8), max_iter=3000, random_state=7).fit(X, y)\nxx, yy = np.meshgrid(np.linspace(-1.8, 2.8, 300), np.linspace(-1.4, 1.9, 300))\nZ = red.predict_proba(np.c_[xx.ravel(), yy.ravel()])[:, 1].reshape(xx.shape)\nfig, ax = plt.subplots(figsize=(6, 6.5))\nax.contourf(xx, yy, Z, levels=14, cmap='magma', alpha=0.75)\nax.scatter(X[y == 0, 0], X[y == 0, 1], c=CYAN, s=30, label='grupo A', zorder=3)\nax.scatter(X[y == 1, 0], X[y == 1, 1], c=MAG, s=30, label='grupo B', zorder=3)\nax.set_title('la red los separo SOLA')\nax.legend(loc='upper right')\nax.set_xticks([])\nax.set_yticks([])",
+        "display_code": [
+          "red = MLPClassifier((8, 8))",
+          "red.fit(datos, etiquetas)",
+          "# ajusta sus perillas sola",
+          "dibujar_frontera(red)"
+        ],
+        "caption": "entrena.py"
+      }
+    },
+    {
+      "narration": "El giro: existe desde 1958. El mundo apenas la alcanzó.",
+      "beat_type": "giro",
+      "visual_type": "veo",
+      "veo": {
+        "prompt": "Cinematic slow dolly through a dark 1958 retro computer laboratory, a giant vintage mainframe with spinning tape reels and glowing vacuum tubes accented in neon cyan and magenta, dust particles floating in volumetric light beams, near-black shadows, dramatic depth of field, dark tech aesthetic, no text, no people",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "No le temas: apréndele las perillas.",
+      "beat_type": "tesis",
+      "visual_type": "kinetic",
+      "pause_after": 0.35,
+      "kinetic": {
+        "words": [
+          {"text": "no le temas", "serif": true},
+          {"text": "APRÉNDELE"},
+          {"text": "LAS PERILLAS", "accent": true}
+        ],
+        "variant": "accent"
+      }
+    },
+    {
+      "narration": "Guárdalo y explícalo mejor que tu jefe. ¿Piensa o calcula? Te leo. Mañana: el regalo de Google que creó a ChatGPT.",
+      "beat_type": "cta",
+      "visual_type": "host",
+      "host_top": {"kind": "save", "title": "GUÁRDALO", "subtitle": "MAÑANA: EL REGALO DE GOOGLE →"}
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "title": "Adivina el número: tu primer juego completo",
+  "slug": "curso_py12_adivina_el_numero",
+  "tema": "construir el juego de adivinar un número con Claude Code y leer el código resultante",
+  "theme": "curso python con ia",
+  "hook_tipo": "demostracion",
+  "keyword": "juego en python",
+  "hook_headline": [
+    "TU PRIMER",
+    "JUEGO"
+  ],
+  "pregunta_ab": "¿Lo escribes tú o se lo pides y lo lees?",
+  "music_prompt": "hard techno bed, dark industrial groove, 150 BPM, rolling kick, restrained under a voice, instrumental, no vocals",
+  "modo": "corto",
+  "hook_locked": true,
+  "scenes": [
+    {
+      "beat_type": "hook",
+      "visual_type": "terminal",
+      "narration": "Tu primer juego completo, y corre en la terminal, sin gráficas ni adornos: la compu piensa un número del uno al veinte y tú lo cazas con pistas. Diez, mayor. Quince, menor. Doce, menor. Once… y cae en cuatro intentos. Y esto lo escribió el agente mientras yo nomás miraba.",
+      "pause_after": 0.35,
+      "terminal": {
+        "title": "juego.py",
+        "lines": [
+          {
+            "text": "Tu intento: 10 → mayor"
+          },
+          {
+            "text": "Tu intento: 15 → menor"
+          },
+          {
+            "text": "Tu intento: 11 → ¡le atinaste!"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "printf '10\\n15\\n12\\n11\\n' | SECRETO=11 python3 juego.py",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "terminal",
+      "narration": "Así se lo pedí: una sola orden con las tres cosas que quiero. Número del uno al veinte, pistas de mayor o menor, y contador de intentos. Fíjate que no le digo CÓMO, le digo QUÉ. Y mira lo que hace ANTES de escribir: se lee lo que ya hay. Más de lo que hacen algunos en su primer día de trabajo.",
+      "terminal": {
+        "title": "claude",
+        "lines": [
+          {
+            "text": "escribe juego.py: adivina un numero del 1 al 20"
+          },
+          {
+            "text": "con pistas y contador de intentos"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "claude 'escribe juego.py: adivina un numero del 1 al 20 con pistas y contador de intentos'",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "contexto",
+      "visual_type": "terminal",
+      "narration": "Ahora lo que de verdad importa: leerlo. Un número secreto con random, un while que repite mientras no le atines, un if con elif para las pistas y un contador que sube en cada vuelta. Todo lo de las clases pasadas, junto, en treinta líneas. Y si te suena conocido es porque LO ES: el juego no es magia, es tu tarea de la semana con moño.",
+      "terminal": {
+        "title": "juego.py",
+        "lines": [
+          {
+            "text": "secreto = random.randint(1, 20)"
+          },
+          {
+            "text": "while True:"
+          },
+          {
+            "text": "    intentos += 1"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "/home/jose/tiktok/.venv/bin/python ver.py juego.py --lento && sleep 20",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "giro",
+      "visual_type": "terminal",
+      "narration": "Y esto separa un juego de un ejercicio: qué pasa si el usuario escribe letras en vez de números. Porque va a pasar. Siempre hay alguien que le pone hola a la casilla de la edad. Le meto a-b-c y no se cae: me lo rechaza y me vuelve a preguntar. Eso no se lo pedí, lo puso solo. Pero yo lo PROBÉ, porque lo que no se prueba no existe.",
+      "terminal": {
+        "title": "entrada inválida",
+        "lines": [
+          {
+            "text": "Tu intento: abc → escribe un número"
+          },
+          {
+            "text": "Tu intento: 12"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "printf 'abc\\n12\\n' | SECRETO=12 python3 juego.py",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "cta",
+      "visual_type": "kinetic_video",
+      "narration": "Tu primer juego, escrito por un agente y leído por ti. Eso es programar con IA, no pedir y rezar. La que viene: memoria, para guardar muchas cosas. ¿Lo escribes tú o se lo pides y lo lees? Yo lo pido y lo leo línea por línea, como contrato de renta.",
+      "pause_after": 0.3,
+      "kinetic_video": {
+        "video": "/home/jose/tiktok/videos/_clips_pagados/gen_ver_tirar_a_proposito__veo_0.mp4",
+        "words": [
+          {
+            "text": "pedirlo",
+            "serif": true
+          },
+          {
+            "text": "Y LEERLO",
+            "accent": true
+          }
+        ],
+        "variant": "dark"
+      }
+    }
+  ]
+}

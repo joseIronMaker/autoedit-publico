@@ -1,0 +1,45 @@
+{
+  "tema": "cuanto varia el mismo prompt segun la temperatura",
+  "modelo": "gemini-flash-latest",
+  "n_por_temperatura": 20,
+  "tarea": "Un tinaco tiene 1200 litros. Una llave lo llena a 25 litros por minuto y un desagüe lo vac",
+  "esperado": "76.8",
+  "temperaturas": {
+    "0.0": {
+      "aciertos": 20,
+      "de": 20,
+      "pct": 100.0,
+      "respuestas_distintas": 1,
+      "top": [
+        [
+          "76.8",
+          20
+        ]
+      ]
+    },
+    "0.3": {
+      "aciertos": 17,
+      "de": 17,
+      "pct": 100.0,
+      "respuestas_distintas": 1,
+      "top": [
+        [
+          "76.8",
+          17
+        ]
+      ]
+    },
+    "1.0": {
+      "aciertos": 20,
+      "de": 20,
+      "pct": 100.0,
+      "respuestas_distintas": 1,
+      "top": [
+        [
+          "76.8",
+          20
+        ]
+      ]
+    }
+  }
+}

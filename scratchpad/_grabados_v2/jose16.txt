@@ -1,0 +1,6 @@
+Este brazo robótico no existía hace cuatro horas. El diseño, las quince piezas y los siete servos en su sitio los hizo una inteligencia artificial sola.
+Le pasé las medidas de un servo y una referencia. Nada más. Ni un plano, ni una junta, ni un oye, ¿cómo vas?
+Y de ahí trabajó dentro de FreeCAD: base fija, plato giratorio, yugo de hombro, dos eslabones, muñeca y pinza. Quince piezas listas para imprimir en tres D, con sus tolerancias y sus alojamientos.
+Después escribió el URDF, que es el archivo que le dice a un robot dónde tiene cada articulación, y levantó la simulación para verlo moverse antes de existir. El robot ya se movía cuando todavía no era ni plástico.
+Y cuando algo no encajaba, lo detectó y lo corrigió ella sola. Sin avisarme y sin echarle la culpa a nadie.
+Diseñar un brazo así era un equipo y varios meses. Hoy son cuatro horas. Y esto es lo más torpe que va a estar la inteligencia artificial en tu vida.

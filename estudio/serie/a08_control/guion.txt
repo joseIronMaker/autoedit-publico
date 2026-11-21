@@ -1,0 +1,15 @@
+Puedes tener al agente más inteligente del mundo, y arruinarlo con una mala herramienta.
+Imagina un control remoto sin etiquetas, con cuarenta botones. Eso le estás dando.
+Un agente no ve tus herramientas. Solo lee su nombre, y una descripción.
+Si tienes una herramienta que se llama enviar, ¿qué envía? ¿A quién?
+Tu agente va a adivinar. Y va a invitar a tu mamá a su propia fiesta sorpresa.
+Ahora llámala enviar invitación a un contacto, y explica cuándo usarla, y cuándo no.
+Mismo modelo. Otro resultado.
+Pasa lo mismo con las respuestas.
+Si algo falla y la herramienta contesta error quinientos, se queda ciego.
+Si contesta, ese día está cerrado, prueba el domingo, sabe qué hacer.
+Y más no es mejor. Cada herramienta ocupa lugar en la mesa, y dos parecidas lo confunden.
+Por eso, diseñar herramientas para un agente es distinto a diseñarlas para un programador.
+Una persona las aprende una vez.
+Un agente las lee por primera vez...
+cada vez.

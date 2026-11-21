@@ -1,0 +1,135 @@
+{
+  "title": "El depurador: ver tu programa por dentro",
+  "slug": "curso_py27_depurador",
+  "tema": "usar breakpoint y pdb para detener el programa y preguntar el valor de cada variable",
+  "theme": "curso python con ia",
+  "hook_tipo": "demostracion",
+  "keyword": "depurador python",
+  "hook_headline": [
+    "PARA",
+    "Y PREGUNTA"
+  ],
+  "pregunta_ab": "¿print o depurador para cazar un bug?",
+  "music_prompt": "hard techno bed, dark industrial groove, 150 BPM, rolling kick, restrained under a voice, instrumental, no vocals",
+  "modo": "corto",
+  "hook_locked": true,
+  "scenes": [
+    {
+      "beat_type": "hook",
+      "visual_type": "terminal",
+      "narration": "Cuando algo no cuadra, no adivines. Detén el programa en esa línea y pregúntale cuánto vale cada cosa. Eso es un depurador, y Python trae uno incluido: se llama con una sola palabra, breakpoint. Léelo, está justo antes de la división. Ahí es donde se pone bueno.",
+      "pause_after": 0.35,
+      "terminal": {
+        "title": "depurar.py",
+        "lines": [
+          {
+            "text": "total = sum(notas)"
+          },
+          {
+            "text": "breakpoint()"
+          },
+          {
+            "text": "print(total / len(notas))"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "/home/jose/tiktok/.venv/bin/python ver.py depurar.py --lento && sleep 20",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "terminal",
+      "narration": "Mira la sesión real: el programa se detiene justo antes de esa línea y me abre una consola. Le pregunto con p cuánto vale total, y me dice veintisiete. Cuánto vale len de notas, y me dice tres. Y con c continúa y termina. Cero adivinanzas. Esto es interrogar a tu programa, y el cabrón no tiene derecho a guardar silencio.",
+      "terminal": {
+        "title": "pdb",
+        "lines": [
+          {
+            "text": "(Pdb) p total"
+          },
+          {
+            "text": "27"
+          },
+          {
+            "text": "(Pdb) p len(notas)"
+          },
+          {
+            "text": "3"
+          },
+          {
+            "text": "(Pdb) c"
+          },
+          {
+            "text": "9.0"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "printf 'p total\\np len(notas)\\nc\\n' | python3 depurar.py",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "contexto",
+      "visual_type": "terminal",
+      "narration": "Son cuatro teclas y con eso te alcanza para todo. P, para ver cuánto vale algo. N, para pasar a la siguiente línea. S, para meterte dentro de una función. Y C, para continuar hasta el final. Otra sesión: pregunto por notas, avanzo una línea con n, y continúo. Cuatro teclas contra media hora poniendo prints por todos lados.",
+      "terminal": {
+        "title": "pdb",
+        "lines": [
+          {
+            "text": "(Pdb) p notas"
+          },
+          {
+            "text": "[8, 9, 10]"
+          },
+          {
+            "text": "(Pdb) n"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "printf 'p notas\\nn\\nc\\n' | python3 depurar.py",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "giro",
+      "visual_type": "mascota",
+      "narration": "En VS Code es lo mismo pero con clic: le picas al lado del número de línea, sale un punto rojo y el programa se para ahí. Yo uso print para cosas chiquitas y el depurador cuando llevo más de diez minutos sin entender nada. Diez minutos: esa es mi regla, y me la pongo porque si no, me quedo dos horas peleando con la pantalla.",
+      "mascota": {
+        "pose": "profesor",
+        "caption": "print < 10 min < depurador"
+      },
+      "foto": {
+        "archivo": "/home/jose/tiktok/branding/perrito/codex_sabio.png"
+      }
+    },
+    {
+      "beat_type": "cta",
+      "visual_type": "kinetic_video",
+      "narration": "Parar, preguntar, continuar. La que viene: aplicamos esto al código que escribió la inteligencia artificial, que es donde más falta hace. ¿print o depurador para cazar un bug? Yo digo print, y depurador en cuanto pasan diez minutos.",
+      "pause_after": 0.3,
+      "kinetic_video": {
+        "video": "/home/jose/tiktok/videos/_clips_pagados/gen_ln_neurona_con_memoria__veo_0.mp4",
+        "words": [
+          {
+            "text": "para",
+            "serif": true
+          },
+          {
+            "text": "Y PREGUNTA",
+            "accent": true
+          }
+        ],
+        "variant": "dark"
+      }
+    }
+  ]
+}

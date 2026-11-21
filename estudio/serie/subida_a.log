@@ -1,0 +1,135 @@
+c01_error: 77.8 s | parados 3.0% | mediana 0.92 | 3 s 2.20 | racha 1.2 s | -14.5 LUFS | final -62 dB
+  ✔ pasa
+######## parte 1 → 2026-11-02 19:00 (intento 1, 02-Nov 15:34:01)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-02", "19:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 2 nov, 19:00 | 01:17 | La inteligencia artificial más poderosa del mundo empezó adivinando al
+   ✔ confirmada
+c02_gradiente: 83.8 s | parados 6.3% | mediana 3.38 | 3 s 16.46 | racha 1.7 s | -14.4 LUFS | final -54 dB
+  ✔ pasa
+######## parte 2 → 2026-11-02 20:00 (intento 1, 02-Nov 15:43:32)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-02", "20:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 2 nov, 20:00 | 01:23 | Miles de millones de perillas y nadie sabe cuál mover. Así que la máqu
+   ✔ confirmada
+c03_neurona: 81.1 s | parados 4.5% | mediana 1.81 | 3 s 13.21 | racha 0.5 s | -15.0 LUFS | final -69 dB
+  ✔ pasa
+######## parte 3 → 2026-11-03 19:00 (intento 1, 02-Nov 15:53:58)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-03", "19:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 3 nov, 19:00 | 01:21 | Todo ChatGPT está hecho de una sola pieza repetida, y esa pieza multip
+   ✔ confirmada
+c04_capas: 76.8 s | parados 4.6% | mediana 1.95 | 3 s 2.13 | racha 0.7 s | -14.0 LUFS | final -63 dB
+  ✔ pasa
+######## parte 4 → 2026-11-03 20:00 (intento 1, 02-Nov 16:03:32)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-03", "20:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 3 nov, 20:00 | 01:16 | «Profundo» no significa que la máquina piense hondo. Significa que dob
+   ✔ confirmada
+c05_culpa: 84.6 s | parados 7.9% | mediana 1.58 | 3 s 10.96 | racha 1.2 s | -14.2 LUFS | final -61 dB
+  ✔ pasa
+######## parte 5 → 2026-11-04 19:00 (intento 1, 02-Nov 16:12:25)
+  File "/usr/lib/python3.12/pathlib.py", line 842, in stat
+    return os.stat(self, follow_symlinks=follow_symlinks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 5] Input/output error: '/mnt/c/Program Files/Google/Chrome/Application/chrome.exe'
+c01_error: 77.8 s | parados 3.0% | mediana 0.92 | 3 s 2.20 | racha 1.2 s | -14.5 LUFS | final -62 dB
+  ✔ pasa
+   c01_error ya está (2 nov, 19:00): sigo
+c02_gradiente: 83.8 s | parados 6.3% | mediana 3.38 | 3 s 16.46 | racha 1.7 s | -14.4 LUFS | final -54 dB
+  ✔ pasa
+   c02_gradiente ya está (2 nov, 20:00): sigo
+c03_neurona: 81.1 s | parados 4.5% | mediana 1.81 | 3 s 13.21 | racha 0.5 s | -15.0 LUFS | final -69 dB
+  ✔ pasa
+   c03_neurona ya está (3 nov, 19:00): sigo
+c04_capas: 76.8 s | parados 4.6% | mediana 1.95 | 3 s 2.13 | racha 0.7 s | -14.0 LUFS | final -63 dB
+  ✔ pasa
+   c04_capas ya está (3 nov, 20:00): sigo
+c05_culpa: 84.6 s | parados 7.9% | mediana 1.58 | 3 s 10.96 | racha 1.2 s | -14.2 LUFS | final -61 dB
+  ✔ pasa
+######## parte 5 → 2026-11-04 19:00 (intento 1, 02-Nov 16:48:06)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-04", "19:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 4 nov, 19:00 | 01:24 | Una red se equivoca y tiene millones de conexiones. ¿De quién fue la c
+   ✔ confirmada
+c06_memoria: 79.4 s | parados 0.1% | mediana 1.27 | 3 s 14.44 | racha 0.1 s | -14.7 LUFS | final -80 dB
+  ✔ pasa
+######## parte 6 → 2026-11-04 20:00 (intento 1, 02-Nov 16:58:19)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-04", "20:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 4 nov, 20:00 | 01:19 | Una IA puede sacar diez en todos sus exámenes y no saber nada. Se llam
+   ✔ confirmada
+c07_comida: 87.2 s | parados 0.2% | mediana 1.90 | 3 s 6.25 | racha 0.1 s | -14.9 LUFS | final -101 dB
+  ✔ pasa
+######## parte 7 → 2026-11-05 19:00 (intento 1, 02-Nov 17:10:05)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-05", "19:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 5 nov, 19:00 | 01:27 | La idea de las redes neuronales ya existía en 1986 y no funcionaba. Lo
+   ✔ confirmada
+c08_perro: 95.5 s | parados 5.7% | mediana 1.41 | 3 s 1.56 | racha 1.3 s | -14.4 LUFS | final -43 dB
+  ✔ pasa
+######## parte 8 → 2026-11-05 20:00 (intento 1, 02-Nov 17:22:39)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-05", "20:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 5 nov, 20:00 | 01:35 | ChatGPT no sabe qué es un perro. Solo sabe dónde vive esa palabra, en 
+   ✔ confirmada
+c09_atencion: 90.4 s | parados 5.4% | mediana 1.96 | 3 s 22.12 | racha 1.6 s | -14.2 LUFS | final -69 dB
+  ✔ pasa
+######## parte 9 → 2026-11-06 19:00 (intento 1, 02-Nov 17:34:30)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-06", "19:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 6 nov, 19:00 | 01:30 | «El trofeo no cabía en la maleta porque era muy chica.» Tú sabes qué e
+   ✔ confirmada
+c10_torre: 85.6 s | parados 9.5% | mediana 1.84 | 3 s 20.06 | racha 1.6 s | -14.9 LUFS | final -62 dB
+  ✔ pasa
+######## parte 10 → 2026-11-06 20:00 (intento 1, 02-Nov 17:47:16)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-06", "20:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 6 nov, 20:00 | 01:25 | GPT son tres letras y casi nadie sabe qué significan. La T es la que c
+   ✔ confirmada
+c11_siguiente: 93.4 s | parados 1.9% | mediana 4.62 | 3 s 12.60 | racha 1.3 s | -14.5 LUFS | final -65 dB
+  ✔ pasa
+######## parte 11 → 2026-11-07 19:00 (intento 1, 02-Nov 17:57:39)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-07", "19:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 7 nov, 19:00 | 01:33 | Todo lo que ChatGPT ha escrito lo hizo con un solo truco: adivinar la 
+   ✔ confirmada
+c12_adivina: 94.0 s | parados 8.1% | mediana 1.72 | 3 s 9.78 | racha 1.8 s | -14.6 LUFS | final -58 dB
+  ✔ pasa
+######## parte 12 → 2026-11-07 20:00 (intento 1, 02-Nov 18:07:55)
+→ c12_adivina.mp4  →  2026-11-07 20:00
+  archivo: OK 517
+  descripcion OK (382 chars)
+FALLO: TikTok marcó algo en las Comprobaciones, NO se publica: Comprobaciones | Las verificaciones solo pueden comenzar después de cargar el archivo. | Derechos de autor de la música | Verificaremos si tu vídeo tiene música no autorizada que pueda hacer que se silencie. | Revisión del contenido simplificada | Comprobaremos si tu contenido es apto para el feed Para ti.
+   Studio dice: NO APARECE
+   hueco vacío: reintento en 15 min
+######## parte 12 → 2026-11-07 20:00 (intento 2, 02-Nov 18:26:49)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-07", "20:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 7 nov, 20:00 | 01:34 | En 2023 un abogado le presentó a un juez seis casos que le dio ChatGPT
+   ✔ confirmada
+== SERIE FIN 02-Nov 18:35

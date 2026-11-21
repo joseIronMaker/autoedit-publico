@@ -1,0 +1,96 @@
+{
+  "slug": "ha_seis_mil_acciones",
+  "tema": "escribí 751 mensajes y el agente hizo 6,391 acciones en mi computadora: qué es un harness y en qué se diferencia de un chat",
+  "title": "Escribí 751 mensajes. Él hizo 6,391 cosas.",
+  "theme": "hielo",
+  "hook_locked": true,
+  "quien_decide": "el harness decide qué archivo abre, qué escribe dentro y qué comando corre en tu máquina; tú solo escribes la frase",
+  "que_cuesta": "sigues de secretario del chat —copiar, pegar, correr, volver a preguntar— y esas son horas cada semana en algo que ya no hay que hacer a mano",
+  "palanca": "una carpeta de prueba y UNA tarea aburrida hoy; quédate viendo qué comandos corre, diez minutos",
+  "pregunta_ab": "¿Prefieres un chat que te dice cómo hacerlo, o un agente que lo hace y tú revisas?",
+  "scenes": [
+    {
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "narration": "Escribí setecientos cincuenta y un mensajes. El agente hizo seis mil trescientas noventa y una cosas dentro de mi computadora. Y ninguna la ejecuté yo.",
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "751 MENSAJES MÍOS"
+          },
+          {
+            "text": "6,391 ACCIONES SUYAS"
+          },
+          {
+            "text": "EN MI MÁQUINA"
+          }
+        ],
+        "variant": "dark",
+        "video": "videos/gen_ln_hacerlo_gigante.assets/veo_0.mp4"
+      }
+    },
+    {
+      "beat_type": "contexto",
+      "visual_type": "image",
+      "narration": "Porque esa es toda la diferencia entre un chat y un harness. Al chat le preguntas y te devuelve texto: el que abre el archivo, pega el código y corre el comando eres tú. El harness es el programa que le da manos al mismo modelo.",
+      "image_prompts": [
+        "A person's hands copying something from a phone screen onto a paper ledger on a dark desk, warm lamp overhead, deep shadows. Documentary photography, muted palette, no readable text.",
+        "The same desk from above, the phone face down and the ledger closed, a cold cup of coffee beside it. Documentary photography, muted palette.",
+        "A workshop wall of hanging hand tools in warm dim light, one empty hook among them. Documentary photography, shallow depth of field."
+      ]
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "ml_demo",
+      "narration": "Conté mi propia bitácora, la de este canal. Dos mil novecientos diecinueve comandos ejecutados. Mil setenta y tres veces que escribió dentro de un archivo. Doscientos ochenta y nueve archivos distintos. Por cada mensaje que yo mandé, él hizo más de ocho acciones.",
+      "ml_demo": {
+        "caption": "medir_harness_trabajo.py",
+        "editor_frac": 0.24,
+        "code": "import json\nd = json.load(open('/home/jose/tiktok/mediciones/harness_trabajo.json'))\nb = d['bitacoras']\netq = ['comandos\\nejecutados', 'escribió en\\nun archivo', 'leyó un\\narchivo', 'otras\\nherramientas']\notras = b['llamadas_a_herramienta'] - b['comandos_ejecutados'] - b['escrituras_en_archivo'] - b['lecturas']\nval = [b['comandos_ejecutados'], b['escrituras_en_archivo'], b['lecturas'], otras]\ncol = [ORANGE, CYAN, MAG, GREEN]\nfig, ax = plt.subplots(figsize=(9.2, 7.0))\ny = np.arange(len(etq))[::-1]\nax.barh(y, val, color=col, height=0.62)\nax.set_yticks(y); ax.set_yticklabels(etq, fontsize=17)\nax.set_xlim(0, max(val) * 1.32)\nax.set_xlabel('veces')\nfor i, v in enumerate(val):\n    ax.text(v + max(val) * 0.03, y[i], '%d' % v, va='center', color=TXT, fontsize=25, fontweight='bold')\nax.set_title('lo que hizo el agente mientras yo escribía %d mensajes' % b['turnos_usuario'], fontsize=17, pad=16)\nfig.text(0.5, 0.028, '%d archivos distintos tocados · %d acciones por cada mensaje mío' % (b['archivos_distintos_escritos'], round(b['llamadas_a_herramienta'] / b['turnos_usuario'])), ha='center', fontsize=13, color=TXT)\nfig.text(0.5, 0.005, 'bitácora real de este canal · 44 días · 16-ago-2026', ha='center', fontsize=11, color='#969491')",
+        "display_code": [
+          "if c['type'] == 'tool_use':",
+          "    llamadas[c['name']] += 1"
+        ]
+      }
+    },
+    {
+      "beat_type": "giro",
+      "visual_type": "image",
+      "narration": "Y por eso el nombre importa más de lo que parece. Un harness no es un modelo más listo: es el mismo modelo con permiso de tocar tu disco. Lo que cambia no es lo que sabe. Es lo que puede hacer sin preguntarte.",
+      "image_prompts": [
+        "A dog harness of worn leather hanging alone on a nail against a dark wooden wall, warm side light. Documentary photography, muted palette.",
+        "Extreme macro of the metal buckle of that harness, scratches visible under raking light, shallow depth of field.",
+        "An open laptop on a dark desk seen from behind, its screen glow spilling onto scattered papers, nobody in the chair. Documentary photography, no readable text."
+      ]
+    },
+    {
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "narration": "Un chat te da la respuesta. Un harness te la aplica.",
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "UN CHAT"
+          },
+          {
+            "text": "TE DA LA RESPUESTA"
+          },
+          {
+            "text": "UN HARNESS LA APLICA"
+          }
+        ],
+        "variant": "dark",
+        "video": "videos/gen_ln_de_llm_a_agente.assets/veo_0.mp4"
+      }
+    },
+    {
+      "beat_type": "cta",
+      "visual_type": "image",
+      "narration": "Mi postura, después de cuarenta y cuatro días trabajando así: no empieces pidiéndole tu proyecto entero. Carpeta de prueba, una tarea aburrida, y te quedas mirando qué comandos corre. En diez minutos entiendes esto mejor que con cualquier hilo que hayas leído. ¿Tú qué prefieres: un chat que te dice cómo, o algo que lo hace y tú revisas?",
+      "image_prompts": [
+        "An empty cardboard box on a clean dark workbench with a single small tool inside it, warm lamp above. Documentary photography, muted palette.",
+        "A hand resting on a closed notebook beside a laptop at night, watching rather than typing, warm rim light. Documentary photography, no readable text."
+      ]
+    }
+  ]
+}

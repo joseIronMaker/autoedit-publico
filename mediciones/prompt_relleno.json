@@ -1,0 +1,45 @@
+{
+  "tema": "el hueco de un prompt incompleto: ¿azar o promedio?",
+  "fecha": "2026-08-16",
+  "modelo": "gemini-flash-latest",
+  "temperature": 1.0,
+  "prompt": "Escribe una historia corta sobre un perro.",
+  "hueco": "el prompt no dice nombre, raza, tono, final ni largo",
+  "corridas": 40,
+  "corridas_perdidas": 0,
+  "nombres": {
+    "con_nombre": 40,
+    "distintos": 5,
+    "top": [
+      {
+        "nombre": "toby",
+        "veces": 19
+      },
+      {
+        "nombre": "bruno",
+        "veces": 10
+      },
+      {
+        "nombre": "max",
+        "veces": 5
+      },
+      {
+        "nombre": "mateo",
+        "veces": 4
+      },
+      {
+        "nombre": "milo",
+        "veces": 2
+      }
+    ],
+    "mas_comun_pct": 47.5
+  },
+  "otros_rellenos": {
+    "muere_o_se_pierde": 0,
+    "de": 40,
+    "narrador_tercera": 40,
+    "palabras_mediana": 98,
+    "palabras_min": 78,
+    "palabras_max": 130
+  }
+}

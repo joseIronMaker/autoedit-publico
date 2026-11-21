@@ -1,0 +1,102 @@
+{
+  "tema": "Escala: qué pasa cuando el modelo se vuelve gigante",
+  "modo": "corto",
+  "title": "Escala: qué pasa cuando el modelo se vuelve gigante",
+  "slug": "ln_hacerlo_gigante",
+  "hook_tipo": "numero",
+  "theme": "violeta",
+  "image_style": "vast cosmic scale photograph of an immense glowing sphere of countless points of light with one tiny lone point beside it for scale, deep violet and white, silent and overwhelming, vertical 9:16 composition, lower third kept simple, no text, no letters, no words, no watermark",
+  "keyword": "escala parámetros modelos de lenguaje",
+  "hook_headline": [
+    "SOLO",
+    "MÁS GRANDE"
+  ],
+  "pregunta_ab": "¿Fue mejor idea o solo más tamaño?",
+  "music_prompt": "vast ambient orchestral drone with slow evolving choir-like synth pads, immense and reverent, no vocals, 84 BPM",
+  "scenes": [
+    {
+      "narration": "No le cambiaron la idea. Solo lo hicieron cien veces más grande.",
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.45,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "misma idea",
+            "serif": true
+          },
+          {
+            "text": "100 VECES MÁS GRANDE",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "cinematic slow motion of a small glowing geometric solid in a dark void scaling up enormously while keeping exactly the same shape, the camera pulling back fast to keep it in frame",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Mismo Transformer, mismo entrenamiento de tapar una palabra. Lo único que cambió fue el tamaño.",
+      "beat_type": "hook",
+      "visual_type": "host",
+      "host_top": {
+        "kind": "headline",
+        "lines": [
+          "SOLO",
+          "MÁS GRANDE"
+        ]
+      }
+    },
+    {
+      "narration": "Hablamos de cientos de miles de millones de parámetros. Y todo ese monstruo entrenado para una sola tarea tontísima: adivinar la palabra que sigue.",
+      "beat_type": "proof",
+      "visual_type": "ml_demo",
+      "ml_demo": {
+        "code": "import numpy as np\nnombres = ['chico', 'mediano', 'grande', 'gigante']\nparams = np.array([1.2e8, 1.5e9, 1.75e11, 5e11])\nfig, ax = plt.subplots(figsize=(7.2, 5.2))\nax.bar(nombres, params, color=[MAG, MAG, CYAN, CYAN], width=0.55)\nax.set_yscale('log')\nax.set_ylabel('parámetros (escala log)', fontsize=17)\nax.tick_params(axis='x', labelsize=19)\nax.set_title('lo único que cambió fue el tamaño')\nax.set_xlabel('misma arquitectura en los cuatro', color=CYAN, fontsize=19, fontweight='bold', labelpad=14)",
+        "display_code": [
+          "arquitectura  ->  la misma",
+          "entrenamiento ->  el mismo (tapar una palabra)",
+          "parámetros    ->  x100"
+        ],
+        "caption": "escala.py"
+      }
+    },
+    {
+      "narration": "Y aquí está lo raro: al pasar cierto tamaño, el modelo empezó a hacer cosas que nadie le pidió. Nadie lo programó para eso.",
+      "beat_type": "giro",
+      "visual_type": "custom",
+      "custom_anim": {
+        "description": "Una curva GRANDE que sube suave y plana de izquierda a derecha ocupando todo el ancho, y de pronto, pasado cierto punto marcado con una línea vertical, se dispara hacia arriba de golpe. En el tramo plano hay puntos apagados; después del salto los puntos se encienden brillantes. Eje horizontal etiquetado 'TAMAÑO', sin números."
+      }
+    },
+    {
+      "narration": "Cambiaron el tamaño. Y cambió la especie.",
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.35,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "cambiaron el tamaño",
+            "serif": true
+          },
+          {
+            "text": "Y CAMBIÓ LA ESPECIE",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "a tiny glowing seed of light in a vast dark space swelling and growing enormously until it dwarfs everything around it, cinematic, slow push out, deep blacks",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Mañana te muestro las tres cosas que aprendió solo, sin que nadie se lo enseñara.",
+      "beat_type": "cta",
+      "visual_type": "host",
+      "host_top": {
+        "kind": "save",
+        "title": "SERIE: CÓMO LA IA LEE",
+        "subtitle": "SIGUIENTE: LO QUE APRENDIÓ SOLO →"
+      }
+    }
+  ]
+}

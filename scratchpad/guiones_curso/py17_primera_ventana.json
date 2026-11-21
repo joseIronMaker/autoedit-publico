@@ -1,0 +1,114 @@
+{
+  "title": "Tu primera ventana con botones",
+  "slug": "curso_py17_primera_ventana",
+  "tema": "las cuatro piezas de una ventana tkinter: raíz, widgets, pack y mainloop, y el botón que llama a una función",
+  "theme": "curso python con ia",
+  "hook_tipo": "demostracion",
+  "keyword": "tkinter python",
+  "hook_headline": [
+    "CUATRO",
+    "PIEZAS"
+  ],
+  "pregunta_ab": "¿Botón que hace el trabajo o botón que llama a una función?",
+  "music_prompt": "hard techno bed, dark industrial groove, 150 BPM, rolling kick, restrained under a voice, instrumental, no vocals",
+  "modo": "corto",
+  "hook_locked": true,
+  "scenes": [
+    {
+      "beat_type": "hook",
+      "visual_type": "terminal",
+      "narration": "Ocho líneas. Eso es lo único que separa a tu programa de una ventana con caja de texto, botón y respuesta. Y esto corre ahorita en mi compu: escribo el nombre, pico saludar, y contesta. No es maqueta, ni dibujo, ni render: es tkinter, que ya venía con Python y nadie te avisó.",
+      "pause_after": 0.35,
+      "terminal": {
+        "title": "ventana",
+        "lines": [
+          {
+            "text": "¿Cómo te llamas?  [ José ]"
+          },
+          {
+            "text": "[ Saludar ] → ¡Hola, José!"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "/home/jose/tiktok/.venv/bin/python ventana.py",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo",
+        "titulo": "Mi primera app"
+      }
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "custom",
+      "narration": "Son cuatro piezas y son las mismas en TODA app de escritorio. La ventana, que es la raíz. Los widgets, que son las cosas de adentro: etiquetas, cajas, botones. Pack, que los acomoda. Y mainloop, el bucle que se queda esperando a que hagas algo. Sin mainloop la ventana se abre y se cierra de volada, como quien se asoma, ve quién tocó, y se arrepiente.",
+      "custom_anim": {
+        "description": "Un diagrama de árbol que se construye de arriba abajo: arriba una caja grande etiquetada raíz: la ventana. De ella cuelgan tres cajas más chicas etiquetadas etiqueta, caja de texto, botón, con el rótulo widgets. Debajo una flecha etiquetada pack los acomoda mueve las tres cajas a su sitio dentro de la ventana. Al final una flecha circular etiquetada mainloop gira sin parar alrededor de la ventana con el texto espera clics. Sin cifras."
+      }
+    },
+    {
+      "beat_type": "contexto",
+      "visual_type": "terminal",
+      "narration": "Léelo conmigo: la raíz, una etiqueta con la pregunta, una caja para escribir, y el botón. Y fíjate bien en el botón: command lleva el NOMBRE de la función, sin paréntesis. Con paréntesis la llamas tú en ese instante y el botón se queda sin chamba. Sin paréntesis le dices a quién llamar cuando alguien pique. Es la diferencia entre dar el teléfono y marcarle tú.",
+      "terminal": {
+        "title": "ventana.py",
+        "lines": [
+          {
+            "text": "tk.Button(ventana, text=\"Saludar\","
+          },
+          {
+            "text": "          command=saludar)"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "/home/jose/tiktok/.venv/bin/python ver.py ventana.py --lento && sleep 20",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "giro",
+      "visual_type": "terminal",
+      "narration": "Y así se lo pido al agente: una sola orden con las cuatro cosas que quiero, qué widgets, qué texto y qué hace el botón. Fíjate que primero LEE lo que hay y luego escribe. Cuando ya sabes leer código, pedir bien es la mitad del trabajo; la otra mitad es no tragarte lo primero que te dan.",
+      "terminal": {
+        "title": "claude",
+        "lines": [
+          {
+            "text": "crea ventana.py con tkinter: una entrada,"
+          },
+          {
+            "text": "un boton Saludar y una etiqueta"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "claude 'crea ventana.py con tkinter: una entrada, un boton Saludar y una etiqueta'",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "cta",
+      "visual_type": "kinetic_video",
+      "narration": "Raíz, widgets, pack, mainloop. Cuatro piezas y ya haces ventanas. La que viene: memoria, que se acuerde de lo que escribiste aunque la cierres. ¿Botón que hace el trabajo o botón que llama a una función? Yo digo que llame: el botón no piensa, el botón avisa.",
+      "pause_after": 0.3,
+      "kinetic_video": {
+        "video": "/home/jose/tiktok/videos/_clips_pagados/gen_ln_neurona_con_memoria__veo_0.mp4",
+        "words": [
+          {
+            "text": "el botón no piensa",
+            "serif": true
+          },
+          {
+            "text": "AVISA",
+            "accent": true
+          }
+        ],
+        "variant": "dark"
+      }
+    }
+  ]
+}

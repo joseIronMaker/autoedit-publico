@@ -1,0 +1,20 @@
+######## jose01
+=== jose01: 11 paneles ===
+  → panel 09 (bar, 418 frames = 13.9s)…
+  → panel 10 (headline, 208 frames = 6.9s)…
+=== ensamblado ===
+  · sin silencio: se usa 1.58s → 87.99s (86.41s)
+  · paneles concatenados: 86.40s
+  · subtítulos anclados bajo la cara
+
+✔ /home/jose/tiktok/jose01_final.mp4  (86.5s)
+######## jose02
+=== jose02: 17 paneles ===
+  → panel 00 (clip, 216 frames = 7.2s)…
+  → panel 16 (mascota, 197 frames = 6.6s)…
+=== ensamblado ===
+  · sin silencio: se usa 1.80s → 106.31s (104.51s)
+  · paneles concatenados: 104.50s
+  · subtítulos anclados bajo la cara
+
+✔ /home/jose/tiktok/jose02_final.mp4  (104.5s)

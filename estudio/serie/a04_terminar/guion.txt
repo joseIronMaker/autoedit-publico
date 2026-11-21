@@ -1,0 +1,17 @@
+Un agente no sabe cuándo terminó. Y a veces te dice que sí, cuando no.
+Tu agente ya tiene restaurante. Te avisa: listo, la fiesta está organizada.
+Pero nunca invitó a nadie.
+Anthropic lo vio al poner agentes a trabajar en proyectos largos: declaraban victoria antes de tiempo.
+Y tiene lógica. Decir ya terminé es solo otra frase creíble.
+Entonces, ¿cómo sabe que acabó?
+Hay tres formas. La primera: el modelo decide que ya no necesita nada más, y contesta. Es la normal, y la que falla.
+La segunda: un límite. Veinte vueltas, o cierto dinero, y se detiene aunque no haya terminado.
+La tercera es la buena: una lista de lo que debe ser cierto.
+¿Hay mesa? Sí. ¿Todos invitados? Faltan tres. ¿Pastel? No.
+Y cada punto se marca solo después de comprobarlo.
+Eso hizo Anthropic: una lista donde todo empieza sin terminar, y el agente solo puede cambiarlo después de probarlo.
+Sin eso, tienes dos peligros. Que se detenga antes de tiempo, o que siga dando vueltas, gastando dinero, sin parar.
+Por eso, un agente no solo necesita que le digas qué hacer.
+Necesita que le digas cómo se ve terminado.
+Porque si tú no lo sabes...
+él tampoco.

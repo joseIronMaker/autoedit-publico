@@ -1,0 +1,44 @@
+Traceback (most recent call last):
+  File "<stdin>", line 10, in <module>
+  File "/usr/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 521, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 630, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 559, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 639, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 401: Unauthorized
+jose15: voz 68.498875s · pantalla 70.19s a 1.16019× → 68.366667s
+→ Transcribiendo con Whisper (small, CPU)…
+  162 palabras, 68.4s → scratchpad/_grabados_v2/jose15b.autoedit/transcript.json
+→ Gemini analizando la transcripción (cortes + énfasis)…
+
+Plan de edición (13 cortes, −4.5s de 68.4s):
+  ✂   14.48 →   14.78  silencio de 0.5s
+  ✂   18.32 →   18.76  silencio de 0.7s
+  ✂   20.20 →   20.56  silencio de 0.6s
+  ✂   31.24 →   31.58  silencio de 0.6s
+  ✂   33.36 →   33.58  silencio de 0.5s
+  ✂   35.90 →   36.12  silencio de 0.5s
+  ✂   37.18 →   37.68  silencio de 0.7s
+  ✂   38.90 →   39.16  silencio de 0.5s
+  ✂   42.04 →   42.28  silencio de 0.5s
+  ✂   49.02 →   49.30  silencio de 0.5s
+  ✂   54.22 →   54.84  silencio de 0.9s
+  ✂   54.91 →   55.29  muletilla: “O sea,”
+  ✂   59.78 →   60.14  silencio de 0.6s
+  ★ 18 palabras enfatizadas en subtítulos
+→ Renderizando jose15b_final.mp4: 13 tramos, 63.8s…
+✔ scratchpad/_grabados_v2/jose15b_final.mp4
+→ Generando copys (TikTok/IG/FB)…
+✔ scratchpad/_grabados_v2/jose15b.autoedit/copys.md

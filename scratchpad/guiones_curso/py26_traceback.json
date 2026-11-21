@@ -1,0 +1,99 @@
+{
+  "title": "Leer un error sin miedo: el traceback",
+  "slug": "curso_py26_traceback",
+  "tema": "cómo leer un traceback de Python de abajo hacia arriba y los tres errores del primer mes",
+  "theme": "curso python con ia",
+  "hook_tipo": "demostracion",
+  "keyword": "traceback python",
+  "hook_headline": [
+    "MURO ROJO",
+    "SE LEE"
+  ],
+  "pregunta_ab": "¿Leer el error o pegárselo a la IA?",
+  "music_prompt": "hard techno bed, dark industrial groove, 150 BPM, rolling kick, restrained under a voice, instrumental, no vocals",
+  "modo": "corto",
+  "hook_locked": true,
+  "scenes": [
+    {
+      "beat_type": "hook",
+      "visual_type": "terminal",
+      "narration": "Este muro rojo asusta al principio, y es lo más amable que Python hace por ti: te está diciendo el archivo, la línea y qué pasó. Corro malo punto pi y se cae. No lo cierres, no lo tapes, no te vayas: léelo conmigo, que en treinta segundos deja de dar miedo.",
+      "pause_after": 0.35,
+      "terminal": {
+        "title": "python3 malo.py",
+        "lines": [
+          {
+            "text": "NameError: name 'Print' is not defined."
+          },
+          {
+            "text": "Did you mean: 'print'?"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "cat malo.py; echo; echo '$ python3 malo.py'; python3 malo.py",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "custom",
+      "narration": "Se lee de ABAJO hacia arriba, al revés de todo lo demás en esta vida. La última línea es el QUÉ: qué tipo de error y qué pasó. La de arriba es el DÓNDE: archivo y número de línea. Y lo de más arriba es el camino que siguió Python para llegar ahí, que casi nunca necesitas. Empieza por abajo y sube solo si te hace falta.",
+      "custom_anim": {
+        "description": "Un bloque de traceback dibujado como cuatro renglones apilados: arriba Traceback (most recent call last), luego File malo.py, line 1, luego una línea de código, y abajo NameError: name 'Print' is not defined. Un puntero grande empieza en el renglón de abajo, que se ilumina con la etiqueta QUÉ; sube al renglón del archivo, que se ilumina con la etiqueta DÓNDE; y una flecha punteada sube hasta arriba con la etiqueta el camino, más tenue. Sin cifras."
+      }
+    },
+    {
+      "beat_type": "contexto",
+      "visual_type": "terminal",
+      "narration": "Y desde la versión tres punto once hasta te sugiere: aquí escribí Print con mayúscula y me pregunta si quise decir print con minúscula. Lo corrijo y corre. La mitad de tus errores del primer mes van a ser esto: UNA letra. Y vas a pasar veinte minutos culpando a Python, a la computadora y a tu maestro.",
+      "terminal": {
+        "title": "corregido",
+        "lines": [
+          {
+            "text": "sed -i 's/Print/print/' malo.py"
+          },
+          {
+            "text": "Hola, mundo"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "echo '$ sed -i s/Print/print/ malo.py'; sed -i 's/Print/print/' malo.py; echo; cat malo.py; echo; echo '$ python3 malo.py'; python3 malo.py",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "giro",
+      "visual_type": "custom",
+      "narration": "Los tres que te vas a encontrar el primer mes. NameError: un nombre mal escrito o una variable que no existe. TypeError: mezclar texto con número, el de la clase de tipos. E IndentationError: un espacio de más o de menos al principio de la línea. Sí, un espacio. Y sí, importa. Los tres se leen igual: abajo el qué, arriba el dónde.",
+      "custom_anim": {
+        "description": "Tres tarjetas de error que se muestran una a una, cada una con su nombre grande y debajo una línea de código donde se ve el fallo y se corrige. Primera: NameError, y la línea muestra Print con la P mayúscula subrayada en rojo que se convierte en print minúscula en verde. Segunda: TypeError, y la línea muestra un 2 entre comillas sumándose a un 2 sin comillas, marcado en rojo; luego las comillas desaparecen y queda verde. Tercera: IndentationError, y la línea muestra un espacio de más al principio marcado con una regla roja que se recorta y la línea se alinea en verde. Sin cifras nuevas."
+      }
+    },
+    {
+      "beat_type": "cta",
+      "visual_type": "kinetic_video",
+      "narration": "Antes de pegarle el error a una IA, léelo. La mitad de las veces la respuesta ya estaba ahí, escrita, en rojo, gritándotela en la cara. La que viene: cómo ver tu programa por dentro mientras corre. ¿Leer el error o pegárselo a la IA? Yo lo leo primero; a la IA le llevo lo que no entendí.",
+      "pause_after": 0.3,
+      "kinetic_video": {
+        "video": "/home/jose/tiktok/videos/_clips_pagados/gen_ln_olvidaba_el_principio__veo_4.mp4",
+        "words": [
+          {
+            "text": "abajo el qué",
+            "serif": true
+          },
+          {
+            "text": "ARRIBA EL DÓNDE",
+            "accent": true
+          }
+        ],
+        "variant": "dark"
+      }
+    }
+  ]
+}

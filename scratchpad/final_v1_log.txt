@@ -1,0 +1,16 @@
+########## RAMA B: gen_dl_neurona_recta
+→ Transcribiendo con Whisper (small, CPU)…
+  107 palabras, 33.9s → videos/gen_dl_neurona_recta.autoedit/transcript.json
+→ Gemini analizando la transcripción (cortes + énfasis)…
+
+Plan de edición (3 cortes, −2.3s de 33.9s):
+  ✂    2.10 →    2.58  silencio de 0.7s
+  ✂    6.24 →    7.22  silencio de 1.2s
+  ✂   12.63 →   13.51  repetición redundante: “aún sin activación.”
+  ★ 12 palabras enfatizadas en subtítulos
+→ Renderizando gen_dl_neurona_recta_final.mp4: 4 tramos, 31.6s…
+✔ videos/gen_dl_neurona_recta_final.mp4
+→ Generando copys (TikTok/IG/FB)…
+✔ videos/gen_dl_neurona_recta.autoedit/copys.md
+==> gen_dl_neurona_recta_final.mp4  31.700000s
+RAMA B COMPLETA

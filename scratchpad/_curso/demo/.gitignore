@@ -1,0 +1,36 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# entornos virtuales
+.venv/
+venv/
+env/
+
+# secretos y config local
+.env
+.env.local
+
+# herramientas
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# editores / SO
+.vscode/
+.idea/
+.DS_Store
+
+# --- Lo que generan los ejemplos al correr ---
+# se rehacen solos ejecutando el script, no se versionan
+# (ojo: en .gitignore el # solo abre comentario al inicio de la línea)
+*.db
+marcador.json
+datos.json
+*.png
+_cap_*.sh

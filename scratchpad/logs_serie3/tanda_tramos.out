@@ -1,0 +1,43 @@
+=== ver01s  22:03 ===
+  FALLÓ (ver ver01s.log)
+        subprocess.run([str(PY / "autoedit"), str(base), "--auto"], cwd=RAIZ, check=True,
+      File "/usr/lib/python3.12/subprocess.py", line 571, in run
+        raise CalledProcessError(retcode, process.args,
+    subprocess.CalledProcessError: Command '['/home/jose/tiktok/.venv/bin/autoedit', '/home/jose/tiktok/videos/gen_ver_galeria_sin_cara.mp4', '--auto']' returned non-zero exit status 1.
+=== ver02s  22:13 ===
+  FALLÓ (ver ver02s.log)
+        subprocess.run([str(PY / "autoedit"), str(base), "--auto"], cwd=RAIZ, check=True,
+      File "/usr/lib/python3.12/subprocess.py", line 571, in run
+        raise CalledProcessError(retcode, process.args,
+    subprocess.CalledProcessError: Command '['/home/jose/tiktok/.venv/bin/autoedit', '/home/jose/tiktok/videos/gen_ver_no_basta_con_mirar_sc.mp4', '--auto']' returned non-zero exit status 1.
+=== ver03s  22:32 ===
+  FALLÓ (ver ver03s.log)
+        subprocess.run([str(PY / "autoedit"), str(base), "--auto"], cwd=RAIZ, check=True,
+      File "/usr/lib/python3.12/subprocess.py", line 571, in run
+        raise CalledProcessError(retcode, process.args,
+    subprocess.CalledProcessError: Command '['/home/jose/tiktok/.venv/bin/autoedit', '/home/jose/tiktok/videos/gen_ver_la_ventanita.mp4', '--auto']' returned non-zero exit status 1.
+=== ver04s  22:47 ===
+  FALLÓ (ver ver04s.log)
+        subprocess.run([str(PY / "autoedit"), str(base), "--auto"], cwd=RAIZ, check=True,
+      File "/usr/lib/python3.12/subprocess.py", line 571, in run
+        raise CalledProcessError(retcode, process.args,
+    subprocess.CalledProcessError: Command '['/home/jose/tiktok/.venv/bin/autoedit', '/home/jose/tiktok/videos/gen_ver_filtros_que_ya_usaste.mp4', '--auto']' returned non-zero exit status 1.
+=== ver05s  22:58 ===
+  FALLÓ (ver ver05s.log)
+        subprocess.run([str(PY / "autoedit"), str(base), "--auto"], cwd=RAIZ, check=True,
+      File "/usr/lib/python3.12/subprocess.py", line 571, in run
+        raise CalledProcessError(retcode, process.args,
+    subprocess.CalledProcessError: Command '['/home/jose/tiktok/.venv/bin/autoedit', '/home/jose/tiktok/videos/gen_ver_tirar_a_proposito.mp4', '--auto']' returned non-zero exit status 1.
+=== ver06s  23:13 ===
+  FALLÓ (ver ver06s.log)
+        subprocess.run([str(PY / "autoedit"), str(base), "--auto"], cwd=RAIZ, check=True,
+      File "/usr/lib/python3.12/subprocess.py", line 571, in run
+        raise CalledProcessError(retcode, process.args,
+    subprocess.CalledProcessError: Command '['/home/jose/tiktok/.venv/bin/autoedit', '/home/jose/tiktok/videos/gen_ver_nadie_le_enseno_un_ojo.mp4', '--auto']' returned non-zero exit status 1.
+=== ver07s  23:27 ===
+  FALLÓ (ver ver07s.log)
+        subprocess.run([str(PY / "autoedit"), str(base), "--auto"], cwd=RAIZ, check=True,
+      File "/usr/lib/python3.12/subprocess.py", line 571, in run
+        raise CalledProcessError(retcode, process.args,
+    subprocess.CalledProcessError: Command '['/home/jose/tiktok/.venv/bin/autoedit', '/home/jose/tiktok/videos/gen_ver_de_que_hay_a_donde_esta.mp4', '--auto']' returned non-zero exit status 1.
+=== ver08s  23:35 ===

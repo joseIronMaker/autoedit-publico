@@ -1,0 +1,19 @@
+Le pregunté a un modelo cuántas piezas me quedaban de un pedido. Y esto es TODO lo que escribió:
+
+{"name": "consultar_inventario", "args": {"folio": "B-2208"}}
+
+Ni buscó, ni abrió nada, ni contestó la pregunta. Escribió un pedido.
+
+Porque un modelo de lenguaje no puede hacer nada. Literalmente nada. Lo único que sabe hacer es escribir el siguiente pedazo de texto. No tiene manos: no toca tu disco, no manda un correo, no entra a ningún sistema. Cuando oyes que "usó una herramienta", lo que hizo fue escribir un pedido.
+
+Así que alguien más tiene que leerlo. Y ese alguien es un programa: lee lo que el modelo escribió, reconoce que pidió la herramienta, la ejecuta de verdad contra el almacén, y le devuelve el resultado. Hasta ese momento el modelo no sabía la respuesta. Con el dato en la mano, la escribe.
+
+Ese es el agente. No es una inteligencia artificial más lista: es el modelo metido en un bucle, con su lista de herramientas. Las tres cosas juntas — el modelo que pide, las herramientas que puede pedir, y el bucle que las ejecuta y le devuelve el resultado.
+
+Lo corrí noventa veces: en las 45 que traían el folio pidió la herramienta las 45, y en las otras 45 no se inventó ni un folio. Decide bien cuándo pedirla. Ejecutarla, nunca.
+
+El modelo pide. El agente ejecuta.
+
+Y por eso mi manera de saber qué tengo enfrente, que te puedes robar hoy: le pido que haga la cosa, no que me la explique. Si me devuelve el texto para que yo lo mande, es un modelo. Si me devuelve que ya está hecho, hay un programa atrás ejecutando con los permisos de alguien.
+
+Lo que usas a diario, ¿te describe las cosas o te las hace?

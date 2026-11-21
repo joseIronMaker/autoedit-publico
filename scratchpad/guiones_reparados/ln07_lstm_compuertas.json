@@ -1,0 +1,103 @@
+{
+  "tema": "LSTM: compuertas que deciden qué recordar y qué olvidar",
+  "modo": "corto",
+  "title": "LSTM: compuertas que deciden qué recordar y qué olvidar",
+  "slug": "ln_lstm_compuertas",
+  "hook_tipo": "secreto",
+  "theme": "violeta",
+  "image_style": "sleek cinematic 3D render of polished machined metal gates and valves opening and closing, deep violet and electric purple rim light on near-black, industrial and premium, single mechanism, vertical 9:16 composition, lower third kept simple, no text, no letters, no words, no watermark",
+  "keyword": "LSTM compuertas memoria",
+  "hook_headline": [
+    "DECIDE",
+    "QUÉ OLVIDAR"
+  ],
+  "pregunta_ab": "¿Recordar todo o elegir qué recordar?",
+  "music_prompt": "dark progressive house instrumental, filtered analog arpeggio and deep sub bass, hypnotic build, no vocals, 122 BPM",
+  "scenes": [
+    {
+      "narration": "Una LSTM borra todo multiplicando por cero.",
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.45,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "MULTIPLIAR POR",
+            "accent": false
+          },
+          {
+            "text": "0",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "Abstract digital data stream flowing through obsidian conduit, glowing neon cyan particles dissolving under a magenta energy field, near-black dark tech aesthetic, cinematic, high contrast, 8k, no text, no people",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Una red normal reescribe su memoria entera en cada palabra. La LSTM le puso compuertas para no hacerlo.",
+      "beat_type": "hook",
+      "visual_type": "host",
+      "host_top": {
+        "kind": "headline",
+        "lines": [
+          "DECIDE",
+          "QUÉ OLVIDAR"
+        ]
+      }
+    },
+    {
+      "narration": "Son tres decisiones aprendidas: qué borro de lo que traía, qué guardo de lo nuevo, y qué dejo salir hacia afuera.",
+      "beat_type": "proof",
+      "visual_type": "custom",
+      "custom_anim": {
+        "description": "PROHIBIDO usar tarjetas, listas, viñetas o cajas con texto: esto se DIBUJA. Un tubo grueso y luminoso cruza la pantalla de izquierda a derecha: es la memoria. Sobre el tubo hay TRES válvulas circulares grandes, separadas. Cada válvula gira y abre o cierra su paso; cuando una se cierra, el flujo que venía se corta ahí y se apaga; cuando se abre, la luz pasa intacta y el tubo brilla más adelante. La primera válvula deja escapar parte del flujo hacia abajo (lo que se borra); la segunda deja entrar un chorro nuevo desde arriba (lo que se guarda); la tercera manda un ramal hacia afuera (lo que sale). Una etiqueta GRANDE debajo de cada válvula: 'borro', 'guardo', 'saco'. Nada de cifras."
+      }
+    },
+    {
+      "narration": "Cada compuerta es un número entre cero y uno que multiplica la memoria. Cero borra, uno deja pasar intacto. Y como deja pasar intacto, la señal ya no se apaga a los diez pasos.",
+      "beat_type": "giro",
+      "visual_type": "ml_demo",
+      "ml_demo": {
+        "code": "import numpy as np\npasos = np.arange(0, 25)\nrnn = 0.75 ** pasos\nlstm = np.clip(0.985 ** pasos, 0, 1)\nfig, ax = plt.subplots(figsize=(7.4, 5.2))\nax.plot(pasos, rnn, color=RED, lw=5, label='sin compuertas')\nax.plot(pasos, lstm, color=GREEN, lw=5, label='con compuertas')\nax.fill_between(pasos, rnn, lstm, color=GREEN, alpha=0.12)\nax.set_xlabel('palabras hacia atrás', fontsize=19)\nax.set_ylabel('memoria que sobrevive', fontsize=19)\nax.set_yticks([])\nax.legend(loc='center right', fontsize=18)\nax.set_title('la compuerta deja pasar intacto')",
+        "display_code": [
+          "olvido  = sigmoid(...)      # 0 = borra, 1 = conserva",
+          "memoria = olvido * memoria + guardo * nuevo"
+        ],
+        "caption": "lstm.py",
+        "esquema": true
+      }
+    },
+    {
+      "narration": "Recordar de verdad es saber qué tirar.",
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.35,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "recordar de verdad",
+            "serif": true
+          },
+          {
+            "text": "ES SABER QUÉ TIRAR",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "cinematic macro of a row of gates opening and closing in sequence, some glowing particles allowed through while others are pushed aside and dissolve, dramatic light, dark background",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Con esto llegaron los traductores que sí funcionaban. Pero seguían teniendo tres defectos de fábrica. Mañana.",
+      "beat_type": "cta",
+      "visual_type": "host",
+      "host_top": {
+        "kind": "save",
+        "title": "SERIE: CÓMO LA IA LEE",
+        "subtitle": "SIGUIENTE: LOS 3 DEFECTOS →"
+      }
+    }
+  ],
+  "hook_locked": true
+}

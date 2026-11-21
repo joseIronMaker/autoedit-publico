@@ -1,0 +1,78 @@
+{
+  "title": "La activación: la no-linealidad (y por qué una no basta)",
+  "slug": "dl_activacion_no_basta",
+  "hook_tipo": "contraria",
+  "keyword": "función de activación",
+  "hook_headline": ["NO", "LINEAL"],
+  "pregunta_ab": "¿Una o muchas?",
+  "music_prompt": "dark curious electronic instrumental, pulsing synth, subtle tension, tech, no vocals, 121 BPM",
+  "modo": "corto",
+  "scenes": [
+    {
+      "narration": "Le pones una curva y sigue siendo una recta.",
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.45,
+      "kinetic_video": {
+        "words": [
+          {"text": "le pones una curva", "serif": true},
+          {"text": "SIGUE RECTA", "accent": true}
+        ],
+        "variant": "dark",
+        "veo_prompt": "Cinematic shot of a rigid straight neon cyan line, and a magenta wave curve trying to bend it, but the line snaps back perfectly straight each time, tension between curve and straight, near-black void, volumetric glow, dark tech aesthetic, no text, no people",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "La función de activación le mete la no-linealidad a la red.",
+      "beat_type": "hook",
+      "visual_type": "host",
+      "host_top": {"kind": "headline", "lines": ["NO", "LINEAL"]}
+    },
+    {
+      "narration": "Sigmoide, tanh y ReLU: las tres son no lineales. Pero una sola neurona, con la que sea, en datos curvos sigue cortando con una recta.",
+      "beat_type": "proof",
+      "visual_type": "ml_demo",
+      "ml_demo": {
+        "code": "import torch, torch.nn as nn, numpy as np\nfrom sklearn.datasets import make_moons\ntorch.manual_seed(0)\nz = np.linspace(-5,5,200)\nsig = 1/(1+np.exp(-z)); tanhv = np.tanh(z); relu = np.maximum(0,z)\nX, y = make_moons(250, noise=0.2, random_state=0)\nXt = torch.tensor(X, dtype=torch.float32); yt = torch.tensor(y, dtype=torch.float32).view(-1,1)\nneuron = nn.Linear(2,1)\nopt = torch.optim.Adam(neuron.parameters(), 0.05); lf = nn.BCEWithLogitsLoss()\nfor _ in range(300):\n    opt.zero_grad(); loss = lf(neuron(Xt), yt); loss.backward(); opt.step()\nxx, yy = np.meshgrid(np.linspace(-2,3,300), np.linspace(-1.5,2,300))\ngrid = torch.tensor(np.c_[xx.ravel(), yy.ravel()], dtype=torch.float32)\nwith torch.no_grad(): Z = torch.sigmoid(neuron(grid)).numpy().reshape(xx.shape)\nfig, axs = plt.subplots(1,2, figsize=(9.5,5.2))\naxs[0].plot(z, sig, color=CYAN, lw=4, label='sigmoide'); axs[0].plot(z, tanhv, color=MAG, lw=4, label='tanh'); axs[0].plot(z, relu, color=GREEN, lw=4, label='ReLU')\naxs[0].set_title('3 activaciones NO lineales'); axs[0].legend(loc='upper left'); axs[0].set_xticks([]); axs[0].set_yticks([])\naxs[1].contourf(xx, yy, Z, levels=[0,0.5,1.01], colors=[CYAN,MAG], alpha=0.45); axs[1].contour(xx, yy, Z, levels=[0.5], colors='white', linewidths=3.5)\naxs[1].scatter(X[y==0,0],X[y==0,1],c=CYAN,s=12,zorder=3); axs[1].scatter(X[y==1,0],X[y==1,1],c=MAG,s=12,zorder=3)\naxs[1].set_title('1 neurona = una RECTA (falla)'); axs[1].set_xticks([]); axs[1].set_yticks([])",
+        "display_code": [
+          "sigmoid, tanh, relu   # no lineales",
+          "neuron = nn.Linear(2, 1)",
+          "# 1 sola -> frontera RECTA (falla)"
+        ],
+        "caption": "activacion.py"
+      }
+    },
+    {
+      "narration": "La no-linealidad es el ingrediente secreto. Solo falta combinar muchas.",
+      "beat_type": "giro",
+      "visual_type": "kinetic",
+      "kinetic": {
+        "words": [
+          {"text": "el ingrediente", "serif": true},
+          {"text": "FALTA COMBINAR", "accent": true}
+        ],
+        "variant": "dark"
+      }
+    },
+    {
+      "narration": "Una sola activación no basta.",
+      "beat_type": "tesis",
+      "visual_type": "kinetic",
+      "pause_after": 0.35,
+      "kinetic": {
+        "words": [
+          {"text": "una sola", "serif": true},
+          {"text": "NO BASTA", "accent": true}
+        ],
+        "variant": "accent"
+      }
+    },
+    {
+      "narration": "Por sí sola no curva; su magia aparece al juntarlas. ¿Cuántas hacen falta? Mañana apilamos neuronas y nacen las curvas.",
+      "beat_type": "cta",
+      "visual_type": "host",
+      "host_top": {"kind": "save", "title": "FALTA COMBINAR", "subtitle": "MAÑANA: APILAR NEURONAS →"}
+    }
+  ]
+}

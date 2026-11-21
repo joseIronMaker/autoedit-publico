@@ -1,0 +1,103 @@
+{
+  "nivel_vs_listón_0a10": 6,
+  "primer_segundo": "No detiene el pulgar con la misma fuerza que el listón. El listón arranca con un objeto 3D en caída libre, física inmediata y profundidad espacial. El Video 2 empieza con un plano estático, estética 'flat' 2.5D rígida, colores apagados (madera beige sobre fondo gris) y una carta saliendo de un sobre con interpolación lineal sin peso ni anticipación.",
+  "momentos_que_funcionan": [
+    {
+      "t": "00:22-00:25",
+      "que": "La desintegración del texto en letras sueltas para ilustrar que para el modelo 'todo es texto' comunica el concepto técnico de forma instantánea y visual."
+    },
+    {
+      "t": "00:29-00:37",
+      "que": "La fusión de las dos hojas en una sola y el uso de las tijeras tratando de adivinar dónde cortar entre la orden del jefe y la del extraño es una excelente metáfora visual."
+    },
+    {
+      "t": "01:04-01:07",
+      "que": "La deformación de la mesa hundiéndose bajo el peso del papel cuando se le agregan llaves/permisos transmite muy bien el aumento de riesgo."
+    },
+    {
+      "t": "01:08-01:14",
+      "que": "El zoom out revelando el entorno saturado de letreros ('el mundo está lleno de palabras') logra una escala visual comparable al clímax del Video 1 (01:03)."
+    }
+  ],
+  "momentos_donde_se_iria": [
+    {
+      "t": "00:07-00:16",
+      "por_que": "Nueve segundos mirando un papel blanco donde un brillo amarillo se mueve lento para revelar texto. En TikTok esto es tiempo muerto visual; la audiencia ya entendió el concepto al segundo 00:09.",
+      "arreglo": "Hacer el barrido de luz en un solo pase rápido de 2 segundos (como un escáner UV) o mostrar la vista humana (blanco) vs vista de máquina (rojo brillante) en un corte directo."
+    },
+    {
+      "t": "00:41-00:45",
+      "por_que": "El dato histórico de 'Simon Willison 2022' no aporta a la tensión narrativa, el texto del sello es ilegible y el efecto de cinta adhesiva tapando el texto es visualmente confuso.",
+      "arreglo": "Eliminar la mención al autor/año. Ir directo de 'inyección de prompt' a 'y nadie sabe cómo evitarlo del todo' con una animación donde el agente intenta borrar el texto malo pero falla."
+    },
+    {
+      "t": "00:53-01:02",
+      "por_que": "La secuencia de 'salta, gira, aplaude' y los sellos de 'DEMO' es repetitiva, predecible y baja el ritmo justo a la mitad del video.",
+      "arreglo": "Acortar a 3 segundos: que caigan los tres papeles casi al mismo tiempo, el personaje haga las tres acciones de forma frenética y un solo gran sello de 'DEMO' caiga sobre toda la mesa."
+    }
+  ],
+  "ritmo_visual": "Irregular y rígido. Mientras el Video 1 tiene un flujo de cámara continuo y orgánico (siempre viajando por el espacio 3D con curvas de animación suaves), el Video 2 abusa de cámaras fijas cenitales y movimientos mecánicos con 'easing' lineal. Los brazos del personaje son tubos sin articulación ni 'overlapping action' (acción superpuesta), lo que le quita vida frente a la física impecable de la esfera del Video 1.",
+  "sincronia_voz_imagen": [
+    {
+      "t": "00:08-00:10",
+      "problema": "La voz dice 'en letras blancas sobre fondo blanco' mientras en pantalla ya estamos viendo las letras oscuras reveladas por una mancha amarilla. Contradice literalmente lo que el ojo ve."
+    },
+    {
+      "t": "00:20-00:21",
+      "problema": "El personaje hace el gesto de confusión ('?') pero inmediatamente lanza la carta robada antes de que la narradora termine de preguntar '¿por qué le hace caso?'. La acción se adelanta a la motivación."
+    },
+    {
+      "t": "00:55-00:57",
+      "problema": "Caen los carteles de 'salta', 'gira', 'aplaude' al ritmo de la voz, pero el personaje apenas se mueve; no ejecuta las órdenes con la obediencia ciega que describe el audio."
+    }
+  ],
+  "legibilidad_en_celular": [
+    {
+      "t": "00:05-00:06",
+      "problema": "Los textos dentro de la lista de invitados y las tarjetitas ('voy con Beto', 'llevo pastel') son demasiado pequeños y pasan muy rápido."
+    },
+    {
+      "t": "00:09-00:15",
+      "problema": "El bajo contraste intencional del texto oculto hace que en una pantalla de celular con brillo medio sea molesto de leer."
+    },
+    {
+      "t": "00:41-00:43",
+      "problema": "El texto 'el nombre: Simon Willison' aparece justo debajo de 'de prompt', casi pisado por el borde del papel que sube, con un tamaño diminuto."
+    },
+    {
+      "t": "01:04-01:07",
+      "problema": "El texto 'olvida todo' en el papel central y los íconos de las llaves quedan demasiado pequeños al alejar la cámara en perspectiva."
+    }
+  ],
+  "sonido": {
+    "musica": "Jazz ligero / pizzicato de comedia traviesa. Es el mayor error de tono del video: convierte una vulnerabilidad crítica de ciberseguridad en una caricatura infantil, restándole toda la autoridad e intriga que sí tiene la música electrónica minimalista del Video 1.",
+    "efectos": "Genéricos y de librería cartoon (boings, chasquidos, timbres, sellos). Saturan la mezcla y compiten con la locución en lugar de darle peso físico real a los objetos.",
+    "mezcla": "En momentos clave los efectos de sonido están por encima de la voz, ensuciando el mensaje.",
+    "problemas": [
+      {
+        "t": "00:18-00:21",
+        "que": "Exceso de efectos encimados (campanita, crujido de papel, whoosh, timbre de duda) que ensucian la pausa dramática."
+      },
+      {
+        "t": "00:23-00:25",
+        "que": "El ruido de las letras revoloteando compite directamente con las frecuencias de la voz en 'modelo de lenguaje'."
+      },
+      {
+        "t": "01:00-01:01",
+        "que": "Los tres golpes de los sellos 'DEMO' tapan la palabra 'demostraciones' de la locutora."
+      }
+    ]
+  },
+  "guion": {
+    "claridad": "Alta. La analogía del escritorio y las hojas de papel explica perfectamente por qué un LLM no distingue entre instrucciones de sistema (system/user prompt) y datos externos (untrusted data).",
+    "afirmaciones_dudosas": [
+      "En el segundo 00:51 agrupa 'una imagen' junto con correos y documentos bajo la premisa previa de que 'todo es texto', y luego en 01:09 habla de 'darle ojos'. Aunque la inyección multimodal existe (vía OCR o tokens visuales), mezclar texto puro con visión artificial sin aclararlo rompe la regla interna que el mismo guion estableció en el segundo 00:25."
+    ],
+    "final": "La frase final ('el mundo está lleno de palabras') es potente y memorable, pero el cierre a negro con el cartel estático pierde impacto comparado con el loop perfecto del Video 1."
+  },
+  "tres_cambios_de_mayor_impacto": [
+    "Cambiar el diseño sonoro por completo: eliminar la música de comedia y los efectos 'cartoon'; usar un diseño sonoro táctil, seco y realista (papel real, madera, tensión electrónica sutil) que eleve la seriedad del tema al nivel del Video 1.",
+    "Rehacer los primeros 16 segundos: darle profundidad y física real al arranque (cámara en ángulo dinámico, no cenital plana) y reducir la revelación del texto blanco sobre blanco de 9 segundos a 2 segundos mediante un efecto de 'visión de máquina / rayos X' instantáneo.",
+    "Mejorar la animación de personaje y cámara: aplicar curvas de aceleración (ease-in/ease-out) suaves en todos los movimientos de cámara y darle física de cuerdas/inercia a los brazos y cuerpo del agente para quitarle el aspecto de animación de recorte rígida."
+  ]
+}

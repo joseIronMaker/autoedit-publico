@@ -1,0 +1,107 @@
+{
+  "tema": "Transfer learning: usar un modelo de millones de dólares sin tener una GPU",
+  "modo": "corto",
+  "title": "Transfer learning: usar un modelo de millones de dólares sin tener una GPU",
+  "slug": "ln_sin_gpu_fine_tuning",
+  "hook_tipo": "resultado",
+  "theme": "selva",
+  "image_style": "photographic still life of a single mature tree seedling being transplanted into new soil with roots intact, luminous green rim light and warm orange key on very dark background, hopeful and tactile, vertical 9:16 composition, lower third kept simple, no text, no letters, no words, no watermark",
+  "keyword": "transfer learning fine tuning",
+  "hook_headline": [
+    "SIN GPU",
+    "SIN MILLONES"
+  ],
+  "pregunta_ab": "¿Entrenar desde cero o afinar?",
+  "music_prompt": "acoustic-electronic folktronica, plucked guitar loops and soft analog bass, warm and encouraging, no vocals, 102 BPM",
+  "scenes": [
+    {
+      "narration": "Nadie entrena un modelo desde cero. Ni las empresas grandes.",
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.45,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "nadie entrena",
+            "serif": true
+          },
+          {
+            "text": "DESDE CERO",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "cinematic shot of a tall structure of stacked glowing blocks already built and standing in a dark space, and one single new block being lowered gently onto the very top, dramatic light",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Entrenar uno grande cuesta millones y semanas de cómputo. Y aun así tú puedes usarlo hoy, en tu laptop.",
+      "beat_type": "hook",
+      "visual_type": "host",
+      "host_top": {
+        "kind": "headline",
+        "lines": [
+          "SIN GPU",
+          "SIN MILLONES"
+        ]
+      }
+    },
+    {
+      "narration": "Porque lo que aprendió sirve para otras tareas. Partes de ese modelo ya entrenado y le das solo el ajuste final con tus datos. Eso es fine-tuning.",
+      "beat_type": "proof",
+      "visual_type": "terminal",
+      "terminal": {
+        "lines": [
+          "modelo = cargar_preentrenado(\"modelo-base\")",
+          "modelo.ajustar(mis_datos)     # unos cientos de ejemplos",
+          "listo en minutos, no en semanas"
+        ],
+        "caption": "fine-tuning"
+      }
+    },
+    {
+      "narration": "La diferencia es brutal: donde antes necesitabas cientos de miles de ejemplos etiquetados, ahora te alcanza con unos cientos.",
+      "beat_type": "giro",
+      "visual_type": "ml_demo",
+      "ml_demo": {
+        "code": "import numpy as np\nn = np.array([50, 200, 800, 3200, 12800])\ndesde_cero = 1 - np.exp(-n / 9000.0)\nafinado = 1 - 0.55 * np.exp(-n / 400.0)\nfig, ax = plt.subplots(figsize=(7.4, 5.2))\nax.plot(n, desde_cero, color=RED, lw=5, marker='o', ms=9, label='desde cero')\nax.plot(n, afinado, color=GREEN, lw=5, marker='o', ms=9, label='afinando uno ya entrenado')\nax.set_xscale('log')\nax.set_xlabel('ejemplos que TÚ pones', fontsize=18)\nax.set_ylabel('qué tan bien queda', fontsize=18)\nax.set_yticks([])\nax.legend(loc='lower right', fontsize=17)\nax.set_title('el conocimiento se transfiere')",
+        "display_code": [
+          "desde cero   ->  cientos de miles de ejemplos",
+          "afinando     ->  unos cientos"
+        ],
+        "caption": "transfer.py",
+        "esquema": true
+      }
+    },
+    {
+      "narration": "No empiezas de cero. Empiezas de alguien más.",
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.35,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "no empiezas de cero",
+            "serif": true
+          },
+          {
+            "text": "EMPIEZAS DE ALGUIEN MÁS",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "a tall structure already built standing in a dark space, and a single small glowing piece being carefully set on top of it, cinematic, dramatic low light",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Y entonces a alguien se le ocurrió algo bruto: ¿y si lo hacemos gigante? Mañana.",
+      "beat_type": "cta",
+      "visual_type": "host",
+      "host_top": {
+        "kind": "save",
+        "title": "SERIE: CÓMO LA IA LEE",
+        "subtitle": "SIGUIENTE: HACERLO GIGANTE →"
+      }
+    }
+  ]
+}

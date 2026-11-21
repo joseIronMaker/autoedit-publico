@@ -1,0 +1,20 @@
+Medí los cuatro trucos de prompting más famosos que existen. Doscientas corridas. Ninguno cambió una sola respuesta.
+
+Seis problemas de varios pasos, con respuesta verificable por código, cada condición corrida decenas de veces:
+
+"Piensa paso a paso": 48 de 48 sin el truco, 48 de 48 con él.
+"Actúa como un experto": 36 de 36 contra 36 de 36.
+Dos ejemplos antes de la tarea: 36 de 36 contra 36 de 36.
+Y pidiéndole un formato exacto de salida, que es donde los ejemplos sí deberían servir: 30 de 30 contra 30 de 30.
+
+Cuatro empates perfectos.
+
+Y hay algo peor para el mito. Corrí el mismo prompt noventa veces seguidas y las noventa dieron exactamente la misma respuesta. Subí la temperatura al máximo, veinte corridas más, idénticas. Ni siquiera hay azar que un truco pueda acomodar.
+
+Mi límite honesto: esto lo medí en tareas con respuesta verificable —aritmética de varios pasos y extracción con formato— sobre un modelo de 2026. No lo medí en redacción larga, y ahí no puedo afirmar nada.
+
+Lo que sí cambió el resultado fue otra cosa, y va en el siguiente video.
+
+Mi postura: deja de coleccionar frases y mide la tuya. La misma tarea con y sin el truco, diez veces cada una, y cuentas. Es una tarde, una sola vez, y dejas de repetir consejos prestados.
+
+¿Coleccionas trucos de prompting o ya mides cuáles sirven?

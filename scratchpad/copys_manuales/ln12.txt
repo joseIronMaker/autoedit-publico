@@ -1,0 +1,13 @@
+Al mirar toda la frase de golpe, la IA volvió a perder el orden.
+
+Es el mismo problema del inicio de la serie: "perro muerde hombre" no es "hombre muerde perro". Y la atención, sola, no ve la diferencia.
+
+La solución es de una elegancia tremenda: si el orden no viene en los datos, se lo sumas. A cada palabra se le suma un patrón de ondas —senos y cosenos de distinta frecuencia— que codifica su posición. Cada posición recibe una huella distinta, así que la palabra 3 nunca se confunde con la palabra 10 aunque sean la misma palabra.
+
+Me sigue pareciendo la idea más bonita del Transformer: no se aprende el orden, se inyecta con aritmética.
+
+Mañana: varias atenciones mirando cosas distintas a la vez.
+
+¿El orden se aprende o se inyecta? Yo digo que se inyecta.
+
+#transformers #positionalencoding #deeplearning #nlp #iaconjose

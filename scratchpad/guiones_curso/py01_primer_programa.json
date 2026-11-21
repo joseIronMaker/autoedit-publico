@@ -1,0 +1,191 @@
+{
+ "title": "Tu primer programa de Python (y la IA lo teclea)",
+ "slug": "curso_py01_primer_programa",
+ "tema": "clase 1 del curso: qué es un programa y cómo correr el primero en Python con Claude Code",
+ "theme": "curso python con ia",
+ "hook_tipo": "demostracion",
+ "keyword": "primer programa en Python",
+ "hook_headline": [
+  "DOS",
+  "LÍNEAS"
+ ],
+ "pregunta_ab": "¿Tecleas tú o le dictas a la IA?",
+ "music_prompt": "hard techno bed, dark industrial groove, 150 BPM, rolling kick, restrained under a voice, instrumental, no vocals",
+ "modo": "corto",
+ "scenes": [
+  {
+   "beat_type": "hook",
+   "visual_type": "terminal",
+   "narration": "Esto son dos líneas: una la escribes tú, la otra la escribe la computadora. En dos minutos vas a saber exactamente qué pasó en medio.",
+   "pause_after": 0.35,
+   "terminal": {
+    "title": "hola.py",
+    "lines": [
+     {
+      "prompt": true,
+      "text": "cat hola.py"
+     },
+     {
+      "text": "print(\"Hola, mundo\")"
+     },
+     {
+      "prompt": true,
+      "text": "python3 hola.py"
+     },
+     {
+      "text": "Hola, mundo",
+      "accent": true
+     }
+    ]
+   },
+   "captura": {
+    "cmd": "cat hola.py && sleep 1.5 && python3 hola.py",
+    "cols": 46,
+    "filas": 30
+   }
+  },
+  {
+   "beat_type": "contexto",
+   "visual_type": "image",
+   "narration": "Un programa es una lista de órdenes escritas en un archivo de texto. Nada más. Python es quien abre ese archivo, lee las órdenes de arriba abajo, una por una, y las ejecuta.",
+   "image_prompts": [
+    "editorial photograph of a handwritten numbered checklist on paper under a desk lamp, muted graphite and warm ochre palette, shallow depth of field, documentary style, no text legible",
+    "editorial photograph of an open laptop on a wooden desk showing a plain text editor with a few lines, warm dim light, documentary style, muted colors"
+   ]
+  },
+  {
+   "beat_type": "proceso",
+   "visual_type": "terminal",
+   "narration": "Son tres pasos y ya. Creas un archivo que termine en punto p y. Adentro escribes una orden: print, y entre paréntesis lo que quieres que diga. Y en la terminal escribes python tres, espacio, el nombre del archivo. Python lo lee y contesta.",
+   "terminal": {
+    "title": "los tres pasos",
+    "lines": [
+     {
+      "prompt": true,
+      "text": "python3 --version"
+     },
+     {
+      "text": "Python 3.12.3"
+     },
+     {
+      "prompt": true,
+      "text": "echo 'print(\"Hola, mundo\")' > hola.py"
+     },
+     {
+      "prompt": true,
+      "text": "python3 hola.py"
+     },
+     {
+      "text": "Hola, mundo",
+      "accent": true
+     }
+    ],
+    "progress": {
+     "label": "tu primer programa"
+    }
+   },
+   "captura": {
+    "cmd": "/home/jose/tiktok/.venv/bin/python ver.py hola.py --lento && sleep 20",
+    "cols": 46,
+    "filas": 30
+   }
+  },
+  {
+   "beat_type": "giro",
+   "visual_type": "terminal",
+   "narration": "Y aquí está lo que cambió. No tienes que teclear cada línea. En la misma terminal le pides a Claude Code lo que quieres, en español, y él escribe el archivo. Le pedí un juego de adivinar un número: lo escribió, lo corrí, y jaló a la primera.",
+   "terminal": {
+    "title": "claude code escribiendo el juego",
+    "lines": [
+     {
+      "prompt": true,
+      "text": "claude -p \"crea juego.py: adivinar un numero del 1 al 20\""
+     },
+     {
+      "text": "# Creé juego.py: elige un número al azar, lee tu intento",
+      "accent": true
+     },
+     {
+      "text": "# y te dice Mayor o Menor hasta que le atinas."
+     },
+     {
+      "prompt": true,
+      "text": "python3 juego.py"
+     },
+     {
+      "text": "Tu intento: 10 → Mayor.   15 → Menor.   12 → Menor."
+     },
+     {
+      "text": "11 → Correcto! Era 11. Lo lograste en 4 intentos.",
+      "accent": true
+     }
+    ]
+   },
+   "captura": {
+    "cmd": "claude 'escribe juego.py: adivina un numero del 1 al 20 con pistas mayor o menor y contador de intentos'",
+    "cols": 46,
+    "filas": 30
+   }
+  },
+  {
+   "beat_type": "tesis",
+   "visual_type": "mascota",
+   "narration": "Ojo con esto, porque es lo importante del curso: la IA teclea, tú decides. Si no entiendes lo que escribió, tampoco lo vas a poder corregir.",
+   "mascota": {
+    "pose": "profesor",
+    "caption": "la IA teclea, tú decides"
+   }
+  },
+  {
+   "beat_type": "proof",
+   "visual_type": "terminal",
+   "narration": "Y te va a fallar. El error número uno del primer día es escribir Print con mayúscula. Python te dice el archivo, la línea, y hasta te sugiere qué quisiste decir. Leer eso es la mitad de programar.",
+   "terminal": {
+    "title": "el error del primer día",
+    "lines": [
+     {
+      "prompt": true,
+      "text": "python3 malo.py"
+     },
+     {
+      "text": "  File \"malo.py\", line 1, in <module>"
+     },
+     {
+      "text": "    Print(\"Hola, mundo\")"
+     },
+     {
+      "text": "NameError: name 'Print' is not defined. Did you mean: 'print'?",
+      "accent": true
+     }
+    ]
+   },
+   "captura": {
+    "cmd": "cat malo.py && sleep 2.5 && python3 malo.py && sleep 1",
+    "cols": 46,
+    "filas": 30
+   }
+  },
+  {
+   "beat_type": "cta",
+   "visual_type": "kinetic",
+   "narration": "Ya tienes lo único que importa hoy: un archivo, una orden, un resultado. En la siguiente clase, qué es Python en realidad y por qué es el primero que se aprende.",
+   "kinetic": {
+    "words": [
+     {
+      "text": "un archivo",
+      "serif": true
+     },
+     {
+      "text": "una orden",
+      "serif": true
+     },
+     {
+      "text": "UN RESULTADO",
+      "accent": true
+     }
+    ],
+    "variant": "dark"
+   }
+  }
+ ]
+}

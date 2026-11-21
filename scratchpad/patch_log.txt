@@ -1,0 +1,42 @@
+
+=== gen_dl_apilar_curvas (tema neon)
+  escena 3: nueva voz (180 chars)
+  escena 3: render ml_demo (12.1s)
+  ENSAMBLADO videos/gen_dl_apilar_curvas.mp4 (33.3s)
+
+=== gen_dl_gradient_descent (tema neon)
+  escena 3: nueva voz (127 chars)
+  escena 3: render ml_demo (8.2s)
+  ENSAMBLADO videos/gen_dl_gradient_descent.mp4 (32.4s)
+
+=== gen_dl_backpropagation (tema cyber)
+  escena 3: nueva voz (154 chars)
+  escena 3: render ml_demo (9.8s)
+  ENSAMBLADO videos/gen_dl_backpropagation.mp4 (35.4s)
+
+=== gen_dl_learning_rate (tema sunset)
+  escena 2: nueva voz (172 chars)
+  escena 2: render ml_demo (10.9s)
+  ENSAMBLADO videos/gen_dl_learning_rate.mp4 (29.9s)
+
+=== gen_dl_loss_error (tema neon)
+  escena 2: nueva voz (188 chars)
+  escena 2: render ml_demo (12.1s)
+  escena 3: voz reusada
+  escena 3: render showcase (5.2s)
+    imagen 0 con codex ($0)...
+    reducida a 1280px: showcase_3_0.png
+    imagen 1 con codex ($0)...
+    reducida a 1280px: showcase_3_1.png
+  ENSAMBLADO videos/gen_dl_loss_error.mp4 (32.5s)
+
+=== gen_dl_overfitting (tema sunset)
+  escena 2: nueva voz (180 chars)
+  escena 2: render ml_demo (11.7s)
+  escena 3: voz reusada
+  escena 3: render showcase (6.2s)
+    imagen 0 con codex ($0)...
+    reducida a 1280px: showcase_3_0.png
+    imagen 1 con codex ($0)...
+    reducida a 1280px: showcase_3_1.png
+  ENSAMBLADO videos/gen_dl_overfitting.mp4 (33.5s)

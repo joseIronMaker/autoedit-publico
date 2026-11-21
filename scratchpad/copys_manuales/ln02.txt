@@ -1,0 +1,13 @@
+"No es bueno, es buenísimo" y "no es buenísimo, es bueno". Mismas palabras, sentido opuesto.
+
+Se lo das a un modelo de bolsa de palabras —el que cuenta cuántas veces aparece cada una— y las dos frases producen EXACTAMENTE el mismo vector. Para ese modelo son la misma frase.
+
+El problema no es el tamaño de la red: es de fábrica. Una red normal recibe todas las entradas de golpe y no tiene forma de saber qué palabra vino antes.
+
+Es el primer muro con el que me topé cuando empecé con NLP: puedes agrandar el modelo todo lo que quieras y el orden sigue sin existir.
+
+Mañana: cómo la IA convierte palabras en números.
+
+¿Manda la palabra o manda el orden? Yo digo el orden.
+
+#nlp #inteligenciaartificial #redesneuronales #machinelearning #iaconjose

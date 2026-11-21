@@ -1,0 +1,103 @@
+{
+ "title": "Claude Code y Codex: qué hace cada uno",
+ "slug": "curso_py05_claude_vs_codex",
+ "tema": "qué hacen Claude Code y Codex, los dos agentes de terminal, y en qué se diferencian",
+ "theme": "curso python con ia",
+ "hook_tipo": "demostracion",
+ "keyword": "claude code y codex",
+ "hook_headline": [
+  "DOS",
+  "AGENTES"
+ ],
+ "pregunta_ab": "¿Agente que pide permiso o agente que se avienta?",
+ "music_prompt": "hard techno bed, dark industrial groove, 150 BPM, rolling kick, restrained under a voice, instrumental, no vocals",
+ "modo": "corto",
+ "hook_locked": true,
+ "scenes": [
+  {
+   "beat_type": "hook",
+   "visual_type": "terminal",
+   "narration": "¿Qué pedo, banda? Estas son las dos herramientas que van a escribir contigo todo el curso: Claude Code y Codex. Los dos viven en la terminal, y a los dos les pides lo mismo, en español y sin ceremonia: escríbeme una función que saque el promedio. Y mira cómo trabaja el primero.",
+   "pause_after": 0.35,
+   "terminal": {
+    "title": "dos agentes de terminal",
+    "lines": [
+     {
+      "text": "claude 'escribe promedio.py'"
+     },
+     {
+      "text": "codex 'escribe promedio.py'"
+     }
+    ]
+   },
+   "captura": {
+    "cmd": "claude 'escribe promedio.py con una funcion promedio(notas)'",
+    "cols": 46,
+    "filas": 30,
+    "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+   }
+  },
+  {
+   "beat_type": "proof",
+   "visual_type": "terminal",
+   "narration": "Y este es el que escribió Codex, cabrón: dos líneas, sin red. Suma y divide y ya. Funciona con tus notas de siempre, pero fíjate que no pregunta qué pasa si la lista viene vacía. Los dos escriben código que jala; la diferencia está en lo que se atreven a hacer.",
+   "terminal": {
+    "title": "promedio_codex.py",
+    "lines": [
+     {
+      "text": "def promedio(notas):"
+     },
+     {
+      "text": "    return sum(notas) / len(notas)"
+     }
+    ]
+   },
+   "captura": {
+    "cmd": "/home/jose/tiktok/.venv/bin/python ver.py promedio_codex.py --lento && sleep 20",
+    "cols": 46,
+    "filas": 30,
+    "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+   }
+  },
+  {
+   "beat_type": "contexto",
+   "visual_type": "custom",
+   "narration": "Los dos son agentes de terminal, mi chavo: leen tu proyecto, escriben archivos y corren comandos, ellos solitos. La diferencia práctica está en los permisos: uno te pregunta antes de tocar algo delicado, y el otro se avienta. Ninguno es mejor; son dos formas de manejar el mismo riesgo.",
+   "custom_anim": {
+    "description": "Dos columnas iguales, cada una con una caja de agente arriba etiquetada Claude Code y Codex. Debajo de cada agente, una carpeta etiquetada tu proyecto. De cada agente salen tres flechas animadas hacia la carpeta con etiquetas: lee, escribe, corre. En la columna de Claude Code, antes de la flecha escribe aparece una compuerta con un signo de interrogación y el texto ¿permiso?, que se abre con una palomita; en la de Codex la flecha pasa directa sin compuerta. Sin cifras."
+   }
+  },
+  {
+   "beat_type": "giro",
+   "visual_type": "mascota",
+   "narration": "Mi regla después de usarlos todos los días: el que te pide permiso te hace perder tiempo, y el que no te lo pide te puede borrar algo, cabrón. Los dos sirven. Yo uso el que pregunta cuando el proyecto vale dinero, y el que se avienta cuando estoy jugando.",
+   "mascota": {
+    "pose": "profesor",
+    "caption": "permiso = lento · sin permiso = riesgo"
+   },
+   "foto": {
+    "archivo": "/home/jose/tiktok/branding/perrito/codex_sabio.png"
+   }
+  },
+  {
+   "beat_type": "cta",
+   "visual_type": "kinetic_video",
+   "narration": "Dos agentes, una regla: tú decides cuánto se avientan. En la que sigue empezamos con lo primero de verdad: las variables. ¿Agente que pide permiso o agente que se avienta? Yo digo que depende de cuánto te duela perderlo.",
+   "pause_after": 0.3,
+   "kinetic_video": {
+    "video": "/home/jose/tiktok/videos/_clips_pagados/gen_ln_tres_defectos__veo_0.mp4",
+    "words": [
+     {
+      "text": "dos agentes",
+      "serif": true
+     },
+     {
+      "text": "UNA REGLA",
+      "accent": true
+     }
+    ],
+    "variant": "dark"
+   }
+  }
+ ]
+}

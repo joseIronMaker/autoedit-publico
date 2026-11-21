@@ -1,0 +1,40 @@
+=== ver07s_de_que_hay_a_donde_esta.json  →  gen_ver_de_que_hay_a_donde_esta  (tema cyber)
+→ guion guion de Claude (guionista)
+→ estilo generando imagen ancla de marca
+→ voz reutilizo la locución ya pagada (6 escenas)
+→ escena 1/6 animando kinetic_video
+→ escena 2/6 generando imagen
+→ escena 2/6 animando (Ken Burns)
+→ escena 3/6 ejecutando modelo real (sklearn)
+→ escena 3/6 animando código → gráfica
+→ escena 4/6 programando animación a medida
+→ escena 4/6 animando custom
+→ escena 5/6 animando kinetic_video
+→ escena 6/6 generando imagen
+→ escena 6/6 animando (Ken Burns)
+→ ensamblando 6 escenas → gen_ver_de_que_hay_a_donde_esta.mp4
+→ audio audio continuo + SFX de transición
+→ música reutilizo la cama musical de este video
+✔ /home/jose/tiktok/videos/gen_ver_de_que_hay_a_donde_esta.mp4
+
+Ahora pásalo por el flujo normal para subtítulos y copys:
+  autoedit gen_ver_de_que_hay_a_donde_esta.mp4 --auto   (o desde la web)
+→ Transcribiendo con Whisper (small, CPU)…
+  113 palabras, 45.8s → /home/jose/tiktok/videos/gen_ver_de_que_hay_a_donde_esta.autoedit/transcript.json
+→ Gemini analizando la transcripción (cortes + énfasis)…
+
+Plan de edición (0 cortes, −0.0s de 45.8s):
+  ★ 13 palabras enfatizadas en subtítulos
+→ Renderizando gen_ver_de_que_hay_a_donde_esta_final.mp4: 1 tramos, 45.8s…
+✔ /home/jose/tiktok/videos/gen_ver_de_que_hay_a_donde_esta_final.mp4
+→ Generando copys (TikTok/IG/FB)…
+✔ /home/jose/tiktok/videos/gen_ver_de_que_hay_a_donde_esta.autoedit/copys.md
+
+✔ ver07_de_que_hay_a_donde_esta.mp4  (45.8s)
+  QC   → /home/jose/tiktok/scratchpad/qc_ver_de_que_hay_a_donde_esta.png
+  copy → revisar y reescribir a mano si hace falta:
+Mañana cerramos la serie, pero así es como la IA procesa el recuadro en fotos sin colapsar.
+En lugar de evaluar medio millón de combinaciones, la red propone unas cuantas regiones clave.
+Pasamos de 500,000 cálculos a solo unos cientos en milisegundos.
+Yo digo que este filtro inteligente es una joya. ¿Brillante o exagerado?
+#recuadro #foto #redesneuronales #inteligenciaartificial #ia

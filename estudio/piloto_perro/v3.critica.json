@@ -1,0 +1,118 @@
+{
+  "nivel_vs_listón_0a10": 6.5,
+  "primer_segundo": "No detiene el pulgar con la fuerza del listón. Aunque el texto 'ChatGPT no sabe qué es un perro' es un buen gancho intelectual, visualmente es plano (2D). La esfera rebotando sobre la tipografía parece un motion graphic de los años 2000 (rollo Pixar/pelota de karaoke), mientras que el Video 1 te mete desde el frame 0 en un espacio tridimensional con profundidad, perspectiva y física atractiva.",
+  "momentos_que_funcionan": [
+    {
+      "t": "00:05-00:10",
+      "que": "La transición de la palabra 'perro' al token '96439' y cómo este se desintegra en partículas para formar la esfera 3D. Es una excelente traducción visual de tokenización a embedding."
+    },
+    {
+      "t": "00:41-00:45",
+      "que": "El paralelismo vectorial (hombre->mujer, rey->reina) con la flecha roja desplazándose. Explica álgebra lineal de forma intuitiva y limpia."
+    },
+    {
+      "t": "00:57-01:08",
+      "que": "El cambio a fondo negro para introducir el sesgo del modelo. Rompe la monotonía visual justo a la mitad del video y cambia el tono emocional de forma efectiva."
+    },
+    {
+      "t": "01:23-01:25",
+      "que": "La barra de prompt ('¿qué es un perro?') desintegrándose en partículas que viajan hacia la esfera mientras aparece 'no te lee / te ubica'. Muy buena metáfora visual."
+    }
+  ],
+  "momentos_donde_se_iria": [
+    {
+      "t": "00:00-00:04",
+      "por_que": "Demasiado estático y plano. Cuatro segundos viendo la palabra 'perro' con una bolita encima es una eternidad en TikTok.",
+      "arreglo": "Arrancar directamente con una cámara en movimiento 3D o hacer que la transformación a número ('96439') ocurra en el segundo 1.5, no en el 5."
+    },
+    {
+      "t": "00:18-00:22",
+      "por_que": "La pantalla queda casi vacía con dos esferas minúsculas ('perro' y 'plátano') mientras las líneas topográficas aparecen con una lentitud exasperante.",
+      "arreglo": "Usar un movimiento de cámara dramático (zoom out con rotación 3D real, como en el 00:10 del Video 1) y que el mapa se forme de golpe con impacto sonoro."
+    },
+    {
+      "t": "00:24-00:32",
+      "por_que": "Se vuelve repetitivo. Cuatro ejemplos seguidos de frases ('Le di de comer...', 'mi ___ duerme...', 'llevé a mi...', 'mi ___ me despertó') mientras las bolas apenas se acercan milímetros.",
+      "arreglo": "Dejar solo el primer ejemplo completo y luego hacer una ráfaga rápida (montaje de 1.5 segundos) de 5 frases pasando a toda velocidad mientras las esferas son atraídas con fuerza magnética evidente."
+    },
+    {
+      "t": "00:50-00:52",
+      "por_que": "Muerte visual. Las esferas desaparecen y nos quedamos viendo líneas topográficas vacías durante 3 segundos mientras dice 'Lo sacó de cómo hablamos'.",
+      "arreglo": "Nunca dejar el lienzo vacío sin acción. Mostrar miles de puntos (otras palabras) encendiéndose alrededor para poblar el mapa antes de hacer zoom a 'perro'."
+    },
+    {
+      "t": "01:18-01:21",
+      "por_que": "El ejemplo de polisemia ('me senté en el banco / el banco me cobró') pasa tan rápido y con tan poco contexto visual que el espectador no entiende por qué la bola se duplica o se mueve entre el erizo de líneas.",
+      "arreglo": "O le das 4 segundos claros mostrando dos regiones distintas del mapa (ej. zona 'finanzas' vs zona 'parque') hacia donde viaja la bola, o eliminas la polisemia para no saturar de conceptos."
+    }
+  ],
+  "ritmo_visual": "Irregular y excesivamente contemplativo. El Video 1 mantiene una cámara viva que panea, rota e inclina el plano 3D constantemente, guiando el ojo sin cortes bruscos. El Video 2 abusa de una vista cenital/isométrica rígida; parece una presentación de diapositivas animada en After Effects más que un mundo tridimensional continuo.",
+  "sincronia_voz_imagen": [
+    {
+      "t": "00:05",
+      "problema": "Los números '662' y '96439' aparecen mientras la locutora dice 'ni siquiera ha leído esa palabra'. El espectador no sabe qué es ese número hasta el segundo 00:06 que sale el subtítulo pequeño."
+    },
+    {
+      "t": "00:33-00:36",
+      "problema": "Aparece un '2013' gigante en el centro del mapa y las palabras 'rey, hombre, mujer' antes de que la voz explique el hallazgo de Google. El texto '2013' estorba visualmente dentro del espacio topográfico."
+    },
+    {
+      "t": "01:16-01:17",
+      "problema": "El estallido de miles de ejes ocurre en el 01:16 (con el golpe de sonido), pero la voz dice 'miles' hasta el 01:17. El impacto visual y sonoro se adelanta un segundo a la palabra clave."
+    }
+  ],
+  "legibilidad_en_celular": [
+    {
+      "t": "00:06",
+      "problema": "El texto en cursiva 'para GPT-4o, «perro» es esto' es demasiado pequeño y delgado. Además, dura apenas 1 segundo en pantalla mientras la vista está distraída con el número gigante."
+    },
+    {
+      "t": "00:18-00:22",
+      "problema": "Al hacer zoom out, las etiquetas 'perro' y 'plátano' quedan minúsculas y pegadas a los bordes laterales (zona de riesgo de recorte en pantallas 9:16 o tapadas por la interfaz de TikTok)."
+    },
+    {
+      "t": "01:07-01:08",
+      "problema": "La cita 'Bolukbasi et al. · NeurIPS 2016' tiene un contraste bajísimo (gris oscuro sobre negro) y un tamaño ilegible en móvil."
+    },
+    {
+      "t": "01:18-01:20",
+      "problema": "Cuando 'me senté en el banco' se atenúa en gris claro sobre fondo crema mientras resalta 'el banco me cobró', la primera frase pierde todo el contraste."
+    }
+  ],
+  "sonido": {
+    "musica": "Un piano melancólico y repetitivo (estilo 'ciencia triste') que adormece el ritmo. Al Video 1 le funciona un diseño sonoro ambiental/sintético que genera tensión y curiosidad sin imponer una melodía cansina.",
+    "efectos": "Genéricos y mal calibrados. Hay abusos de 'whooshes' y 'pops' de librería que suenan desconectados de la física de los objetos.",
+    "mezcla": "La voz es clara y cálida, pero en momentos clave los efectos de sonido compiten agresivamente con ella.",
+    "problemas": [
+      {
+        "t": "00:00-00:04",
+        "que": "El sonido de rebote de la esfera sobre las letras suena a plástico hueco/cartoon, restándole seriedad al tema desde el inicio."
+      },
+      {
+        "t": "00:11-00:16",
+        "que": "Los sonidos de 'pop/gota' cuando caen perro, gato y plátano son demasiado secos y repetitivos."
+      },
+      {
+        "t": "01:14",
+        "que": "Hay un corte o artefacto extraño en la voz/música justo entre 'Este que ves tiene...' y '...dos dimensiones' (como un hipo de edición o un golpe de bajo fuera de lugar)."
+      },
+      {
+        "t": "01:16",
+        "que": "El efecto de sonido cuando salen las 'miles' de dimensiones es un estruendo metálico sucio que tapa por completo la voz ('El de ChatGPT tiene...')."
+      }
+    ]
+  },
+  "guion": {
+    "claridad": "Muy buena estructura narrativa y excelente puente hacia el sesgo ético, pero usa un recurso visual engañoso: las curvas de nivel (topografía). En el Video 1 las curvas de nivel tienen sentido matemático real porque el eje Z es la 'pérdida' (altitud = error, buscamos el valle). En nuestro Video 2, como hablamos de embeddings (distancias semánticas), las curvas de nivel alrededor de las palabras no significan nada (¿altitud de qué?), solo se usaron para imitar la estética del Video 1.",
+    "afirmaciones_dudosas": [
+      "00:06: Decir que para GPT-4o 'perro' es el número 96439 sin aclarar que es un ID arbitrario (token) antes de decir que 'se convierte en un punto' puede confundir al espectador sobre si el número 96439 ya tiene valor matemático de cercanía (no lo tiene, el token ID es arbitrario, el vector viene después).",
+      "01:18: Mezclar los embeddings estáticos clásicos (Word2Vec de 2013, donde cada palabra es un punto fijo) con los embeddings contextuales (Transformers/ChatGPT, donde 'banco' se mueve según la frase) en una sola línea de 2 segundos sin explicar el salto tecnológico confunde la mecánica del mapa fijo que habías construido."
+    ],
+    "final": "El cierre ('Y aún así, ChatGPT no sabe qué es un perro') funciona bien como estructura circular y deja pensando, pero el corte de audio y video en el 01:33 es demasiado abrupto; no deja ni medio segundo para que resuene la frase final o haga un loop limpio como el Video 1."
+  },
+  "tres_cambios_de_mayor_impacto": [
+    "Rehacer los primeros 5 segundos en 3D real: eliminar el texto plano con la bolita rebotando. Empezar dentro del espacio tridimensional o con una transición inmediata (segundo 1) de la palabra 'perro' rompiéndose en el código numérico y cayendo al plano 3D con perspectiva real.",
+    "Justificar o cambiar las líneas topográficas: dado que aquí importa la distancia y agrupación semántica (clustering) y no la 'profundidad/altitud' de una función de pérdida, usar redes de nodos conectándose, constelaciones o campos gravitatorios en un plano con perspectiva 3D dinámica, moviendo la cámara con inclinación (tilt/pan) en lugar de la vista cenital plana.",
+    "Rediseñar el audio por completo: quitar el piano melódico repetitivo, limpiar el corte sucio del minuto 01:14-01:16, y usar diseño sonoro sutil y orgánico (texturas granulares para las partículas, zumbidos graves para las distancias vectoriales) que acompañe la física sin tapar la locución."
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "title": "Backpropagation: la regla de la cadena que calcula el gradiente",
+  "slug": "dl_backpropagation",
+  "hook_tipo": "secreto",
+  "keyword": "backpropagation",
+  "hook_headline": ["HACIA", "ATRÁS"],
+  "pregunta_ab": "¿Adelante o atrás?",
+  "music_prompt": "dark intriguing electronic instrumental, reverse-sounding synth swells, mystery, tech, no vocals, 121 BPM",
+  "modo": "corto",
+  "scenes": [
+    {
+      "narration": "El gradiente se calcula al revés.",
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.45,
+      "kinetic_video": {
+        "words": [
+          {"text": "el gradiente", "serif": true},
+          {"text": "AL REVÉS", "accent": true}
+        ],
+        "variant": "dark",
+        "veo_prompt": "Cinematic shot of streams of neon light flowing backward from right to left through a glowing network of nodes in a near-black void, reverse motion, cyan turning to magenta, sense of tracing back, volumetric glow, dark tech aesthetic, no text, no people",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Y hay un truco elegante para sacarlo en toda la red.",
+      "beat_type": "hook",
+      "visual_type": "host",
+      "host_top": {"kind": "headline", "lines": ["HACIA", "ATRÁS"]}
+    },
+    {
+      "narration": "Primero la red predice hacia adelante. Del error, la culpa viaja hacia atrás por cada conexión, repartiendo cuánto la movió. Esa es la regla de la cadena.",
+      "beat_type": "proof",
+      "visual_type": "backprop"
+    },
+    {
+      "narration": "En código, una sola línea, punto backward, calcula el gradiente de todos los pesos.",
+      "beat_type": "proof",
+      "visual_type": "ml_demo",
+      "ml_demo": {
+        "code": "import torch, torch.nn as nn\ntorch.manual_seed(0)\nnet = nn.Sequential(nn.Linear(2,4), nn.ReLU(), nn.Linear(4,1))\nx = torch.randn(16,2); y = torch.randn(16,1)\nloss = ((net(x) - y)**2).mean()\nloss.backward()\ngrads = [p.grad.abs().mean().item() for p in net.parameters() if p.grad is not None]\nfig, ax = plt.subplots(figsize=(6,6.5))\ncols = [CYAN, MAG, GREEN, ORANGE][:len(grads)]\nax.bar(range(len(grads)), grads, color=cols)\nax.set_title('loss.backward(): gradiente de cada peso')\nax.set_xlabel('parametros de la red'); ax.set_xticks([]); ax.set_yticks([])",
+        "display_code": [
+          "loss = criterio(pred, y)",
+          "loss.backward()   # 1 linea",
+          "# = gradiente de TODOS los pesos"
+        ],
+        "caption": "backprop.py"
+      }
+    },
+    {
+      "narration": "Backprop calcula el gradiente; gradient descent lo aplica.",
+      "beat_type": "giro",
+      "visual_type": "kinetic",
+      "kinetic": {
+        "words": [
+          {"text": "calcula", "serif": true},
+          {"text": "VS"},
+          {"text": "APLICA", "accent": true}
+        ],
+        "variant": "dark"
+      }
+    },
+    {
+      "narration": "El error viaja hacia atrás.",
+      "beat_type": "tesis",
+      "visual_type": "kinetic",
+      "pause_after": 0.35,
+      "kinetic": {
+        "words": [
+          {"text": "el error", "serif": true},
+          {"text": "HACIA ATRÁS", "accent": true}
+        ],
+        "variant": "accent"
+      }
+    },
+    {
+      "narration": "Con esto ya aprende sola. Pero entrenarla en el mundo real tiene trucos. Mañana.",
+      "beat_type": "cta",
+      "visual_type": "host",
+      "host_top": {"kind": "save", "title": "YA APRENDE SOLA", "subtitle": "MAÑANA: TRUCOS PARA ENTRENAR →"}
+    }
+  ]
+}

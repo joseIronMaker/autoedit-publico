@@ -1,0 +1,80 @@
+{
+  "slug": "ia_detector_te_acuso",
+  "tema": "Los detectores de IA acusan a quien escribe simple, y eso golpea a los no nativos",
+  "title": "El detector dijo que lo escribiste con IA. Lo escribiste tú.",
+  "theme": "hielo",
+  "hook_locked": true,
+  "quien_decide": "un clasificador decide si copiaste, y tú cargas con probar que no",
+  "que_cuesta": "tu calificación, tu materia o tu entrega, por escribir simple y correcto",
+  "palanca": "escribe en un documento con historial de versiones; ese historial es la prueba de autoría que ningún porcentaje te va a dar",
+  "pregunta_ab": "¿Confías más en el porcentaje del detector o en el historial de tu documento?",
+  "scenes": [
+    {
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "narration": "Seis de cada diez textos escritos por gente que no es nativa del idioma fueron marcados como hechos con inteligencia artificial. Los escribieron ellos.",
+      "kinetic_video": {
+        "words": [
+          {"text": "6 DE CADA 10"},
+          {"text": "MARCADOS"},
+          {"text": "COMO IA"}
+        ],
+        "variant": "dark",
+        "video": "videos/gen_ver_de_que_hay_a_donde_esta.assets/veo_0.mp4"
+      }
+    },
+    {
+      "beat_type": "contexto",
+      "visual_type": "image",
+      "narration": "Y si alguna vez te devolvieron un trabajo con esa acusación, sabes lo que se siente. La carga se voltea: tú tienes que probar que lo escribiste, no ellos que lo copiaste.",
+      "image_prompts": [
+        "A returned handwritten-marked essay lying on a school desk under a fluorescent classroom light, a red mark across the top of the first page, a backpack strap in the corner. Documentary photography, muted palette, no readable text.",
+        "A young person's hands holding a printed page under a desk lamp at night, shoulders slumped, the rest of the room dark. Shot from behind, no face visible.",
+        "An empty institutional corridor with a closed office door at the end, worn floor tiles, cold daylight from a high window. Deep perspective, nobody in frame."
+      ]
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "receipt",
+      "narration": "Esto no es anécdota. Un estudio de Stanford probó siete detectores contra noventa y un ensayos de estudiantes no nativos, y el promedio de falsos positivos fue de sesenta y uno punto tres por ciento. Dieciocho de esos ensayos fueron acusados por los siete detectores a la vez.",
+      "receipt": {
+        "url": "https://arxiv.org/abs/2304.02819",
+        "title": "EL ESTUDIO",
+        "caption": "Liang et al., Patterns (Cell Press) 2023 · arXiv 2304.02819"
+      }
+    },
+    {
+      "beat_type": "giro",
+      "visual_type": "image",
+      "narration": "Siendo justo: se midió en dos mil veintitrés, sobre ensayos de TOEFL. Pero el motivo de fondo te va a dar coraje. El detector no busca copia. Mide qué tan predecible suena lo que escribes. En técnico, perplejidad. Y escribir simple y correcto, que es justo como escribe alguien que aprendió el idioma, se parece a como escribe una máquina.",
+      "image_prompts": [
+        "A worn dirt path trodden across a patch of grass beside untouched grass, seen from above at dusk, muted green and graphite tones. Documentary photography, no people.",
+        "Extreme macro of a typewritten page where every line is perfectly even and uniform, raking side light showing the paper fibres. Shallow depth of field, no readable words.",
+        "A worn rubber stamp being pressed onto a sheet of paper on a wooden desk, a hand pressing down, ink pad beside it. Warm lamplight, deep shadows, no readable text."
+      ]
+    },
+    {
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "narration": "No mide si copiaste. Mide si suenas común.",
+      "kinetic_video": {
+        "words": [
+          {"text": "NO MIDE"},
+          {"text": "SI COPIASTE"},
+          {"text": "SI SUENAS COMÚN"}
+        ],
+        "variant": "dark",
+        "video": "videos/gen_ln_neurona_con_memoria.assets/veo_4.mp4"
+      }
+    },
+    {
+      "beat_type": "cta",
+      "visual_type": "image",
+      "narration": "Mi postura: mientras un porcentaje decida por ti, la evidencia la tienes que dejar tú. Escribir en un documento con historial de versiones deja rastro de cómo nació el texto, y eso sí se puede enseñar. ¿Confías más en el porcentaje del detector o en el historial de tu documento?",
+      "image_prompts": [
+        "A laptop open on a wooden table at night beside a notebook full of handwritten crossed-out drafts and a pencil, warm desk lamp. The laptop screen is dark and unreadable. Documentary photography, film grain.",
+        "A stack of printed drafts with pencil corrections and dated margins, fanned out on a dark desk, morning light through a window. Shallow depth of field, no readable text."
+      ]
+    }
+  ]
+}

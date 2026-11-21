@@ -1,0 +1,7 @@
+# n | fecha | hora | texto para filtrar la publicación programada actual
+12|2026-09-17|19:00|Y si esto es lo más torpe, un agente
+13|2026-09-17|20:00|Si así de torpe es el diseño CAD
+14|2026-09-18|19:00|Si esto es lo más torpe, generar planos
+15|2026-09-18|20:00|Da miedo pensar que la inteligencia artificial hoy
+16|2026-09-19|19:00|Y da miedo lo que viene: armar un brazo
+17|2026-09-19|20:00|Y si esto es lo más torpe, ver una celda

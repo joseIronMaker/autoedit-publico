@@ -1,0 +1,22 @@
+=== BEAT 3 · LO CORRÍ: nitidez = identidad + medidor de bordes ===
+nitidez - identidad = [[0.0, -1.0, 0.0], [-1.0, 4.0, -1.0], [0.0, -1.0, 0.0]] | suma = 0.0
+identidad + 4*(identidad - promedio de los 4 vecinos) = [[0.0, -1.0, 0.0], [-1.0, 5.0, -1.0], [0.0, -1.0, 0.0]] | ¿== nitidez? True
+PIL ImageFilter.SHARPEN = ((3, 3), 16, 0, (-2, -2, -2, -2, 32, -2, -2, -2, -2))
+¿SHARPEN de Pillow == identidad + (identidad - promedio de los 8 vecinos)? True
+error máximo 'resta el borroso y suma la diferencia' sobre la cara: 0.0
+mapa de bordes -> zona plana (p10 de |r|): 0.0 | borde (p99): 76.0
+
+=== BEAT 4 · LA PRUEBA JUSTA: misma red, mismo código, solo cambian los 9 números ===
+semilla 0: a mano 97.2% | al azar 94.5% | aprendidos 97.0%
+semilla 1: a mano 97.5% | al azar 94.0% | aprendidos 97.2%
+semilla 2: a mano 96.7% | al azar 95.0% | aprendidos 97.2%
+semilla 3: a mano 96.2% | al azar 94.0% | aprendidos 97.5%
+semilla 4: a mano 96.5% | al azar 95.2% | aprendidos 97.0%
+8 filtros clásicos escritos a mano: acierto 96.8% | error 3.2% = 13 de 398 dígitos de prueba
+8 kernels al azar, congelados: acierto 94.5% | error 5.5% = 22 de 398 dígitos de prueba
+8 kernels aprendidos: acierto 97.2% | error 2.8% = 11 de 398 dígitos de prueba
+entrenamiento: [0.17, 0.21, 0.23, 0.23, 0.22] s (CPU, sin GPU)
+
+--- CONTROLES QUE MATARON CIFRAS (no se narran, se documentan) ---
+centro positivo + 8 vecinos negativos: 0/40 aprendidos (al azar da ~0.2% -> la métrica NO discrimina; se tira)
+'filtro direccional': aprendidos 33/40 vs 71% al azar -> NO discrimina; se tira

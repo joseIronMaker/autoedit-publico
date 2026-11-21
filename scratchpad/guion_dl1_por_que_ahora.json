@@ -1,0 +1,82 @@
+{
+  "title": "La IA nació en 1958",
+  "slug": "dl_por_que_ahora",
+  "hook_tipo": "contraria",
+  "keyword": "deep learning",
+  "hook_headline": ["POR QUÉ", "AHORA"],
+  "pregunta_ab": "¿Curiosidad o miedo?",
+  "music_prompt": "dark curious documentary electronic instrumental, building tension, tech pulse, subtle wonder, no vocals, 120 BPM",
+  "modo": "corto",
+  "scenes": [
+    {
+      "narration": "La inteligencia artificial nació en 1958.",
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.45,
+      "kinetic_video": {
+        "words": [
+          {"text": "la IA", "serif": true},
+          {"text": "NACIÓ EN"},
+          {"text": "1958", "accent": true}
+        ],
+        "variant": "dark",
+        "video": "/home/jose/tiktok/scratchpad/lab_1958.mp4"
+      }
+    },
+    {
+      "narration": "¿Y por qué explotó apenas ahora? Tres cosas cambiaron todo.",
+      "beat_type": "hook",
+      "visual_type": "host",
+      "host_top": {"kind": "headline", "lines": ["POR QUÉ", "AHORA"]}
+    },
+    {
+      "narration": "Uno: datos masivos. Dos: las GPU que entrenan en paralelo. Tres: software abierto.",
+      "beat_type": "proof",
+      "visual_type": "diagram",
+      "diagram": {
+        "type": "list",
+        "title": "POR QUÉ AHORA",
+        "items": ["Datos masivos", "GPUs en paralelo", "Software abierto"]
+      }
+    },
+    {
+      "narration": "Y eso es deep learning: aprende sola de los datos, sin reglas programadas.",
+      "beat_type": "proof",
+      "visual_type": "veo",
+      "veo": {
+        "prompt": "Cinematic macro shot of thousands of scattered raw glowing data points slowly self-organizing into a structured luminous neural lattice, neon cyan and magenta light, order emerging from chaos, near-black void, volumetric glow, dramatic depth of field, dark tech aesthetic, no text, no people",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "El giro: la misma idea de hace décadas. Solo le faltaba el combustible.",
+      "beat_type": "giro",
+      "visual_type": "diagram",
+      "diagram": {
+        "type": "flow",
+        "title": "LA IDEA ES VIEJA",
+        "items": ["1958 Perceptrón", "1986 Backprop", "1995 Redes profundas"]
+      }
+    },
+    {
+      "narration": "No es magia: son datos, chips y software.",
+      "beat_type": "tesis",
+      "visual_type": "kinetic",
+      "pause_after": 0.35,
+      "kinetic": {
+        "words": [
+          {"text": "no es magia", "serif": true},
+          {"text": "DATOS, CHIPS"},
+          {"text": "Y SOFTWARE", "accent": true}
+        ],
+        "variant": "accent"
+      }
+    },
+    {
+      "narration": "Cuando digan que la IA salió de la nada, ya sabes la verdad. ¿Curiosidad o miedo? Yo, curiosidad. Mañana: la neurona que lo mueve todo.",
+      "beat_type": "cta",
+      "visual_type": "host",
+      "host_top": {"kind": "save", "title": "LA VERDAD", "subtitle": "MAÑANA: LA NEURONA →"}
+    }
+  ]
+}

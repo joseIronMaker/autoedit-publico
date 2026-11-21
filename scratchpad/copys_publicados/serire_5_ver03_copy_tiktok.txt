@@ -1,0 +1,7 @@
+Tu cámara mira tu foto en pedacitos de tres por tres.
+Una ventanita de nueve números se pone sobre cada pedacito, multiplica valor por valor y suma todo en uno. Lo corrí de verdad: recorre nueve posiciones y deja un mapa nuevo.
+Y el detalle que la hace posible: son los MISMOS nueve números en todas las posiciones.
+
+¿La convolución es simple o complicada? Yo digo que es simple y por eso funciona.
+
+#convolucion #inteligenciaartificial #vision #ia #programacion

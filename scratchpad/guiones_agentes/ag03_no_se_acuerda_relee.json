@@ -1,0 +1,96 @@
+{
+  "slug": "ag_no_se_acuerda_relee",
+  "tema": "el contexto: un modelo no recuerda nada entre mensajes; el programa le vuelve a mandar toda la conversacion completa en cada vuelta y el la relee desde el principio",
+  "title": "No se acuerda de nada. Vuelve a leer todo, cada vez.",
+  "theme": "hielo",
+  "hook_locked": true,
+  "concepto": "contexto: todo el texto que el modelo tiene enfrente en una vuelta, porque entre vuelta y vuelta no guarda nada",
+  "en_una_frase": "El modelo no tiene memoria: tiene un texto que alguien le vuelve a poner enfrente completo cada vez, y ese texto se llama el contexto.",
+  "quien_decide": "cuando ese texto ya no cabe, el programa decide qué se recorta y qué se queda — y tú no ves cuál de tus mensajes desapareció",
+  "que_cuesta": "le explicas algo importante al principio, veinte mensajes después contesta como si nunca se lo hubieras dicho, y crees que se equivocó cuando lo que pasó es que ya no lo tenía enfrente",
+  "palanca": "lo importante se repite tarde, no temprano: si algo tiene que seguir vivo, vuelve a escribirlo cerca del final",
+  "pregunta_ab": "Cuando se te pierde en una conversación larga, ¿abres un chat nuevo, o le repites lo importante?",
+  "scenes": [
+    {
+      "beat_type": "cold_open",
+      "visual_type": "terminal",
+      "narration": "Cuando le contestas a una IA, tu mensaje no le llega solo. Le llega otra vez la conversación entera.",
+      "terminal": {
+        "title": "lo que se manda en cada vuelta",
+        "lines": [
+          {
+            "prompt": true,
+            "text": "vuelta 1  →  [ tu primer mensaje ]"
+          },
+          {
+            "prompt": true,
+            "text": "vuelta 2  →  [ tu primer mensaje + su respuesta + lo nuevo ]"
+          },
+          {
+            "prompt": true,
+            "text": "vuelta 3  →  [ todo lo anterior + lo nuevo ]"
+          },
+          {
+            "text": "cada vez, desde el principio.",
+            "accent": true
+          }
+        ]
+      }
+    },
+    {
+      "beat_type": "definicion",
+      "visual_type": "image",
+      "narration": "Porque entre un mensaje y el siguiente, el modelo no guarda nada. Nada. Eso que se le vuelve a poner enfrente completo es el contexto: todo el texto que tiene delante en ese momento. No es una memoria. Es una hoja que alguien vuelve a dejar sobre la mesa.",
+      "image_prompts": [
+        "A single sheet of paper left on an empty desk under one lamp at night, nobody in frame. Documentary photography, muted palette, no readable text.",
+        "The same desk with a thicker stack of papers in the same spot, same light. Documentary photography, muted palette.",
+        "Extreme macro of the edge of that stack, raking warm light, deep shadow. Documentary photography, shallow depth of field."
+      ]
+    },
+    {
+      "beat_type": "mecanismo",
+      "visual_type": "image",
+      "narration": "Y por eso el ciclo es este, cada vez, sin excepción: el programa arma la hoja con todo lo que llevan, se la pasa, el modelo la lee entera desde arriba, escribe lo que sigue, y suelta. No guarda. A la siguiente vuelta el programa vuelve a armar la hoja, ahora con lo nuevo pegado abajo, y se la pasa otra vez.",
+      "image_prompts": [
+        "Hands stacking one more printed page onto a pile on a dark desk, warm lamp above. Documentary photography, muted palette, no readable text.",
+        "A close side view of that growing pile, shallow depth of field, warm light from the left. Documentary photography.",
+        "An overhead shot of the same desk, the pile now spilling past the edge of the lamp's light. Documentary photography, muted palette."
+      ]
+    },
+    {
+      "beat_type": "que_cuesta",
+      "visual_type": "image",
+      "narration": "Así que ahí está el problema que tú ya viviste sin saber por qué, y a mí me costó años entenderlo. La hoja tiene un tamaño máximo. Cuando ya no cabe, algo se recorta — y lo que se recorta primero es lo de arriba, o sea lo que le explicaste al principio. Por eso te contesta como si nunca se lo hubieras dicho: no se le olvidó, es que ya no lo tenía enfrente.",
+      "image_prompts": [
+        "A cardboard box packed to the brim with folded papers, the lid not closing, warm dim light. Documentary photography, muted palette.",
+        "A hand pulling one folded paper out from the bottom of that box, extreme macro, raking light. Documentary photography."
+      ]
+    },
+    {
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "narration": "No recuerda. Relee.",
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "NO RECUERDA"
+          },
+          {
+            "text": "RELEE"
+          }
+        ],
+        "variant": "dark",
+        "video": "videos/gen_ln_query_key_value.assets/veo_4.mp4"
+      }
+    },
+    {
+      "beat_type": "cierre",
+      "visual_type": "image",
+      "narration": "Entonces lo que yo hago en conversaciones largas es al revés de lo que parece lógico: lo importante lo repito tarde, no temprano. Si algo tiene que seguir vivo, lo vuelvo a escribir cerca del final, donde sí lo va a tener enfrente. Cuando se te pierde en una conversación larga, ¿abres un chat nuevo, o le repites lo importante?",
+      "image_prompts": [
+        "A handwritten note clipped to the top of a paper stack, warm lamp light, nobody in frame. Documentary photography, muted palette, no readable text.",
+        "A hand moving that clipped note from the bottom of the stack to the top, seen close. Documentary photography, shallow depth of field."
+      ]
+    }
+  ]
+}

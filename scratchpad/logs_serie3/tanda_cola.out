@@ -1,0 +1,13 @@
+=== ver01s  07:01 ===
+  FALLÓ (ver ver01s.log)
+        subprocess.run([str(PY / "autoedit"), str(base), "--auto"], cwd=RAIZ, check=True,
+      File "/usr/lib/python3.12/subprocess.py", line 571, in run
+        raise CalledProcessError(retcode, process.args,
+    subprocess.CalledProcessError: Command '['/home/jose/tiktok/.venv/bin/autoedit', '/home/jose/tiktok/videos/gen_ver_galeria_sin_cara.mp4', '--auto']' returned non-zero exit status 1.
+=== ver02s  07:03 ===
+  FALLÓ (ver ver02s.log)
+        subprocess.run([str(PY / "autoedit-gen"), g["tema"], "--guion", str(gpath),
+      File "/usr/lib/python3.12/subprocess.py", line 571, in run
+        raise CalledProcessError(retcode, process.args,
+    subprocess.CalledProcessError: Command '['/home/jose/tiktok/.venv/bin/autoedit-gen', 'Por qué tu computadora no puede simplemente mirar la foto', '--guion', '/home/jose/tiktok/scratchpad/guiones_serie3/ver02s_no_basta_con_mirar.json', '--dir', '/home/jose/tiktok/videos']' returned non-zero exit status 1.
+=== ver03s  07:04 ===

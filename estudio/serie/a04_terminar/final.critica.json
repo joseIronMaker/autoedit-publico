@@ -1,0 +1,108 @@
+{
+  "nivel_vs_listón_0a10": 6,
+  "primer_segundo": "A medias. La explosión de confeti y el personaje rebotando con la bandera '¡ya terminé!' llaman la atención por el color y el movimiento, pero el encuadre es demasiado estático comparado con la inmersión espacial y el movimiento de cámara inmediato del Video 1.",
+  "momentos_que_funcionan": [
+    {
+      "t": "00:13-00:15",
+      "que": "El pull-back de cámara revelando la mesa larga y vacía. Es el primer momento donde el espacio 3D se usa narrativamente para generar comedia y contraste."
+    },
+    {
+      "t": "00:25-00:29",
+      "que": "El corte a fondo negro con tipografía rápida. Rompe la monotonía del escenario blanco y explica visualmente cómo funciona un LLM (predicción de texto) sin sobreexplicar."
+    },
+    {
+      "t": "00:48-00:50",
+      "que": "El golpe físico de la barrera de límite deteniendo al personaje en seco. Buen timing cómico y sonoro."
+    },
+    {
+      "t": "01:21-01:25",
+      "que": "El plano cenital con el agente escupiendo monedas rojas en bucle. Es una metáfora visual instantánea y visceral del gasto de tokens/dinero."
+    },
+    {
+      "t": "01:30-01:33",
+      "que": "Los wireframes rojos punteados mostrando 'cómo se ve terminado'. Excelente traducción visual del concepto de criterios de aceptación."
+    }
+  ],
+  "momentos_donde_se_iria": [
+    {
+      "t": "00:02-00:12",
+      "por_que": "Diez segundos en el mismo encuadre frontal. Solo caen objetos (check, cartel, globo de texto) mientras la bola rebota en el mismo sitio. Visualmente perezoso; en TikTok esto mata la retención inicial.",
+      "arreglo": "Empezar cerradísimo en el personaje celebrando y hacer un movimiento continuo de cámara, o cortar a distintos ángulos rápidos cuando caen el cartel de 'RESERVADO' y el globo de 'listo'."
+    },
+    {
+      "t": "00:17-00:24",
+      "por_que": "Cuando menciona a Anthropic y 'proyectos largos', la cámara hace un zoom in lento pero la escena es exactamente la misma (mesa vacía). Se siente redundante tras la revelación del 00:14.",
+      "arreglo": "Multiplicar las mesas hasta el infinito o estirar la mesa brutalmente hacia el horizonte para visualizar 'proyectos largos', haciendo que el festejo solitario se vea aún más absurdo."
+    },
+    {
+      "t": "00:34-00:42",
+      "por_que": "El punto '1' desde arriba es demasiado lento. Ver a la bola dar una vuelta entera a la mesa a velocidad baja sin que pase nada más aburre.",
+      "arreglo": "Acelerar el recorrido un 50% o hacer que la cámara siga al personaje de cerca mientras ignora activamente las sillas vacías antes de decir 'listo'."
+    },
+    {
+      "t": "00:55-01:15",
+      "por_que": "Veinte segundos clavados en el mismo plano de la lista de verificación. Aunque el personaje interactúa con la cloche y el lápiz, la composición no cambia y pierde dinamismo.",
+      "arreglo": "Meter cortes a primeros planos extremos: la mano levantando la cloche vacía, el lápiz chocando contra la barrera roja del checkbox, la mordida al pastel."
+    }
+  ],
+  "ritmo_visual": "Irregular y demasiado teatral. El Video 1 fluye porque la cámara nunca deja de viajar por un espacio continuo; el Video 2 abusa de plantar un escenario (la mesa) y dejar la cámara fija mientras entran y salen props como si fuera teatro de marionetas. Faltan cortes de cámara o transiciones espaciales más agresivas.",
+  "sincronia_voz_imagen": [
+    {
+      "t": "00:03-00:05",
+      "problema": "Dice 'te dice que sí, cuando no' y cae un checkmark rojo gigante. En casi cualquier interfaz, un checkmark (aunque sea rojo) se lee como 'sí/correcto', lo que contradice el 'cuando no'. Debería ser un checkmark que se rompe o se transforma en cruz."
+    },
+    {
+      "t": "00:58-01:00",
+      "problema": "Pregunta '¿todos invitados? Faltan 3', pero visualmente aparecen 3 sobres en sillas y 3 círculos rojos vacíos en una mesa de 12 sillas. La matemática visual confunde en lugar de apoyar el dato rápido."
+    },
+    {
+      "t": "01:14-01:15",
+      "problema": "Dice 'después de probarlo' (refiriéndose a verificar/testing en software) y el personaje muerde el pastel ('probar' de degustar). El juego de palabras es simpático, pero si el objetivo es rigor técnico como el Video 1, distrae del concepto real de unit testing/verificación."
+    }
+  ],
+  "legibilidad_en_celular": [
+    {
+      "t": "00:01-00:13",
+      "problema": "El texto '¡ya terminé!' en la bandera roja tiene poco contraste (rojo oscuro sobre rojo) y al ondear y estar inclinado cuesta leerlo rápido."
+    },
+    {
+      "t": "00:14-00:16",
+      "problema": "El cartel 'RESERVADO' se vuelve minúsculo al alejar la cámara, aunque ya se leyó antes, ensucia el centro de la imagen."
+    },
+    {
+      "t": "01:10-01:12",
+      "problema": "Cuando la lista crece hacia arriba en perspectiva, el sello 'SIN TERMINAR' cae demasiado arriba, justo en la zona donde la interfaz de TikTok/Reels pone elementos o donde el ojo no está mirando (la acción está abajo)."
+    }
+  ],
+  "sonido": {
+    "musica": "Jazz ligero/pizzicato cómico. Funciona para el tono de 'fiesta fallida', pero le resta la seriedad e hipnosis que tiene el diseño sonoro ambiental del Video 1.",
+    "efectos": "Demasiado caricaturescos (sonidos de 'boing', trompeta triste en 00:15, mordisco en 01:14). Compiten con la voz y bajan el nivel percibido de 'video ensayo inteligente' a 'animación infantil'.",
+    "mezcla": "La voz tiene demasiada dinámica (susurros muy bajos frente a palabras fuertes) y en momentos los efectos de sonido pisan las consonantes.",
+    "problemas": [
+      {
+        "t": "00:15",
+        "que": "El quejido/trompeta triste tras 'a nadie' es un cliché sonoro que abarata el remate visual."
+      },
+      {
+        "t": "00:24-00:25",
+        "que": "El corte brusco de la música con efecto de 'scratch/golpe' para ir a negro se siente forzado."
+      },
+      {
+        "t": "01:03-01:06",
+        "que": "Los sonidos de error (buzzers) al intentar marcar la lista están demasiado altos respecto a la voz en 'solo después de comprobar'."
+      }
+    ]
+  },
+  "guion": {
+    "claridad": "Clara y bien estructurada en problema -> causa -> 3 soluciones -> conclusión. Sin embargo, abusa de las pausas dramáticas y el tono susurrado/actuado, lo que ralentiza el ritmo frente a la precisión quirúrgica de la locución del Video 1.",
+    "afirmaciones_dudosas": [
+      "En 00:35 dice 'La primera: el modelo decide... es la normal, y la que falla'. En realidad, la forma 3 (usar listas/tests) también depende de que el modelo o el arnés decida, no son mutuamente excluyentes como mecanismos de parada sino de arquitectura del agente."
+    ],
+    "final": "El remate 'Porque si tú no lo sabes... él tampoco' es excelente conceptualmente, pero la pausa de silencio entre el 01:33 y 01:35 es medio segundo demasiado larga y pierde punch."
+  },
+  "tres_cambios_de_mayor_impacto": [
+    "Romper el plano fijo de los primeros 13 segundos y del bloque 00:52-01:16 usando movimientos de cámara continuos y cortes a detalle; la cámara debe narrar tanto como los objetos.",
+    "Limpiar el diseño sonoro: eliminar efectos de caricatura (quejidos, boings) y reemplazarlos por sonidos físicos secos, táctiles y minimalistas (papel, madera, clicks mecánicos) que eleven la sofisticación al nivel del Video 1.",
+    "Dirigir la locución con menos teatralidad/susurro y más ritmo continuo; recortar los silencios entre frases para ganar al menos 10-12 segundos de duración total y apretar la retención."
+  ]
+}

@@ -1,0 +1,7 @@
+Yo elijo dejarlo suelto en una copia: así configuro los permisos de la IA sin frenar mi flujo.
+El modelo nunca ejecuta solo; pide permiso contra una lista en cada paso del bucle.
+Trabajar dentro de una carpeta con control de versiones te salva de borrar archivos sin vuelta atrás.
+
+¿Lento o Copia? Yo siempre digo copia.
+
+#permisos #agentesdeia #programacion #inteligenciaartificial #iaconjose

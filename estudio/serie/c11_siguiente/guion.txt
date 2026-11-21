@@ -1,0 +1,18 @@
+Todo lo que ChatGPT ha escrito lo hizo con un solo truco.
+Adivinar la siguiente palabra.
+Escribes: el cielo es...
+Por dentro aparece una lista. Azul, setenta por ciento. Gris, diez. Hermoso, cinco.
+Elige una. Y vuelve a empezar, ahora con: el cielo es azul...
+Palabra por palabra. Cada una, sin saber cómo termina la frase.
+Tu teléfono hace algo parecido cuando te sugiere palabras.
+La diferencia es la escala: esto leyó una parte enorme de lo escrito en internet.
+¿Y cómo aprendió? Igual que todo en esta serie.
+Le tapaban la siguiente palabra. Adivinaba. Medían el error. Repartían la culpa. Y ajustaban las perillas.
+Una cantidad absurda de veces.
+Por eso se le llama modelo de lenguaje grande. En inglés, LLM.
+Y no siempre elige la más probable. Si lo hiciera, sonaría a robot.
+Le dejan un poco de azar, y a eso le llaman temperatura.
+Por eso la misma pregunta te da dos respuestas distintas.
+Un poema, un programa, un consejo de pareja.
+Nadie escribió nada de eso. Salió de apostar, una palabra a la vez.
+Y cada apuesta fue, nada más, la más creíble.

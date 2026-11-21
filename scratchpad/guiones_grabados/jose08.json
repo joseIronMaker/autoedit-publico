@@ -1,0 +1,727 @@
+{
+  "tema": "menta",
+  "ratio_clip": 0.45,
+  "recursos": {
+    "letras": "videos/_clips_pagados/gen_ln_palabras_a_numeros__veo_0.mp4",
+    "cumulos": "videos/_clips_pagados/gen_ln_palabras_a_numeros__veo_4.mp4",
+    "atencion": "videos/_clips_pagados/gen_ln_query_key_value__veo_0.mp4",
+    "cadena": "videos/_clips_pagados/gen_ln_backprop_en_el_tiempo__veo_4.mp4",
+    "lista": "jose08.assets/plot_lista.png",
+    "temperatura": "jose08.assets/plot_temperatura.png",
+    "img_token": "jose08.assets/img_token.png",
+    "img_latente": "jose08.assets/img_espacio_latente.png",
+    "img_dados": "jose08.assets/img_variabilidad.png",
+    "img_cine": "jose08.assets/img_accion_pelicula.png",
+    "img_palanca": "jose08.assets/img_accion_palanca.png",
+    "img_bucle": "jose08.assets/img_bucle.png",
+    "topk": "jose08.assets/plot_topk.png"
+  },
+  "paneles": [
+    {
+      "t": 0.0,
+      "spec": {
+        "kind": "headline",
+        "kicker": "ia con josé",
+        "lines": [
+          "CÓMO ADIVINA",
+          "LA SIGUIENTE",
+          "PALABRA"
+        ]
+      }
+    },
+    {
+      "t": 8.2,
+      "spec": {
+        "kind": "completa",
+        "modo": "simple",
+        "prompt": "explícame qué es un token ",
+        "tokens": [
+          "→",
+          " un",
+          " token",
+          " es",
+          " el",
+          " pedazo",
+          " más",
+          " pequeño",
+          " de",
+          " texto",
+          " que",
+          " el",
+          " modelo",
+          " procesa"
+        ],
+        "label": "inferencia",
+        "caption": "le metes texto, te devuelve texto"
+      }
+    },
+    {
+      "t": 15.3,
+      "spec": {
+        "kind": "reveal",
+        "mode": "cortina",
+        "before": {
+          "text": "busca en una base de datos",
+          "label": "lo que se cree"
+        },
+        "after": {
+          "text": "predice la siguiente palabra",
+          "label": "lo que hace"
+        },
+        "caption": "no consulta nada: adivina"
+      }
+    },
+    {
+      "t": 26.5,
+      "spec": {
+        "kind": "headline",
+        "lines": [
+          "ES UN PROCESO",
+          "SECUENCIAL"
+        ]
+      }
+    },
+    {
+      "t": 28.8,
+      "spec": {
+        "kind": "flow",
+        "title": "los cuatro pasos",
+        "steps": [
+          "1 · Tokenizar",
+          "2 · Volverlo vectores",
+          "3 · Atención",
+          "4 · Adivinar y repetir"
+        ]
+      }
+    },
+    {
+      "t": 35.2,
+      "spec": {
+        "kind": "define",
+        "label": "paso 1",
+        "term": "Tokenización",
+        "body": "Tu texto se parte en pedacitos."
+      }
+    },
+    {
+      "t": 40.5,
+      "spec": {
+        "kind": "code",
+        "caption": "cada empresa tiene el suyo",
+        "lines": [
+          "texto  = \"hola como estás\"",
+          "tokens = [\"hola\", \" como\", \" est\", \"ás\"]",
+          "ids    = [15339, 8112, 1826, 1996]"
+        ]
+      }
+    },
+    {
+      "t": 46.7,
+      "spec": {
+        "kind": "clip",
+        "video": "@letras",
+        "lines": [
+          "PALABRAS",
+          "A NÚMEROS"
+        ]
+      }
+    },
+    {
+      "t": 56.3,
+      "spec": {
+        "kind": "photo",
+        "images": [
+          "@img_token"
+        ],
+        "caption": "la unidad mínima que procesa"
+      }
+    },
+    {
+      "t": 67.0,
+      "spec": {
+        "kind": "code",
+        "caption": "eso es un embedding",
+        "lines": [
+          "token  = \"perro\"",
+          "id     = 15339",
+          "vector = [ 0.42, -1.07,  0.88,",
+          "           0.15,  0.63, -0.29,",
+          "          ... 1536 números ]"
+        ]
+      }
+    },
+    {
+      "t": 78.8,
+      "spec": {
+        "kind": "latente",
+        "fase": "mapa",
+        "tokens": [
+          {
+            "t": "perro",
+            "x": 0.3,
+            "y": 0.38,
+            "g": 0
+          },
+          {
+            "t": "gato",
+            "x": 0.44,
+            "y": 0.24,
+            "g": 0
+          },
+          {
+            "t": "conejo",
+            "x": 0.22,
+            "y": 0.2,
+            "g": 0
+          },
+          {
+            "t": "pan",
+            "x": 0.7,
+            "y": 0.62,
+            "g": 1
+          },
+          {
+            "t": "queso",
+            "x": 0.82,
+            "y": 0.72,
+            "g": 1
+          },
+          {
+            "t": "sopa",
+            "x": 0.64,
+            "y": 0.78,
+            "g": 1
+          },
+          {
+            "t": "lunes",
+            "x": 0.74,
+            "y": 0.18,
+            "g": 2
+          },
+          {
+            "t": "marzo",
+            "x": 0.86,
+            "y": 0.32,
+            "g": 2
+          },
+          {
+            "t": "correr",
+            "x": 0.2,
+            "y": 0.72,
+            "g": 3
+          },
+          {
+            "t": "saltar",
+            "x": 0.34,
+            "y": 0.84,
+            "g": 3
+          }
+        ],
+        "title": "el espacio vectorial",
+        "caption": "cada token es un punto con coordenadas"
+      }
+    },
+    {
+      "t": 90.6,
+      "spec": {
+        "kind": "latente",
+        "fase": "vecinos",
+        "tokens": [
+          {
+            "t": "perro",
+            "x": 0.3,
+            "y": 0.38,
+            "g": 0
+          },
+          {
+            "t": "gato",
+            "x": 0.44,
+            "y": 0.24,
+            "g": 0
+          },
+          {
+            "t": "conejo",
+            "x": 0.22,
+            "y": 0.2,
+            "g": 0
+          },
+          {
+            "t": "pan",
+            "x": 0.7,
+            "y": 0.62,
+            "g": 1
+          },
+          {
+            "t": "queso",
+            "x": 0.82,
+            "y": 0.72,
+            "g": 1
+          },
+          {
+            "t": "sopa",
+            "x": 0.64,
+            "y": 0.78,
+            "g": 1
+          },
+          {
+            "t": "lunes",
+            "x": 0.74,
+            "y": 0.18,
+            "g": 2
+          },
+          {
+            "t": "marzo",
+            "x": 0.86,
+            "y": 0.32,
+            "g": 2
+          },
+          {
+            "t": "correr",
+            "x": 0.2,
+            "y": 0.72,
+            "g": 3
+          },
+          {
+            "t": "saltar",
+            "x": 0.34,
+            "y": 0.84,
+            "g": 3
+          }
+        ],
+        "foco": "perro",
+        "title": "la regla del mapa",
+        "caption": "lo que cae al lado significa parecido"
+      }
+    },
+    {
+      "t": 98.8,
+      "spec": {
+        "kind": "latente",
+        "fase": "pareja",
+        "tokens": [
+          {
+            "t": "perro",
+            "x": 0.3,
+            "y": 0.38,
+            "g": 0
+          },
+          {
+            "t": "gato",
+            "x": 0.44,
+            "y": 0.24,
+            "g": 0
+          },
+          {
+            "t": "conejo",
+            "x": 0.22,
+            "y": 0.2,
+            "g": 0
+          },
+          {
+            "t": "pan",
+            "x": 0.7,
+            "y": 0.62,
+            "g": 1
+          },
+          {
+            "t": "queso",
+            "x": 0.82,
+            "y": 0.72,
+            "g": 1
+          },
+          {
+            "t": "sopa",
+            "x": 0.64,
+            "y": 0.78,
+            "g": 1
+          },
+          {
+            "t": "lunes",
+            "x": 0.74,
+            "y": 0.18,
+            "g": 2
+          },
+          {
+            "t": "marzo",
+            "x": 0.86,
+            "y": 0.32,
+            "g": 2
+          },
+          {
+            "t": "correr",
+            "x": 0.2,
+            "y": 0.72,
+            "g": 3
+          },
+          {
+            "t": "saltar",
+            "x": 0.34,
+            "y": 0.84,
+            "g": 3
+          }
+        ],
+        "par": [
+          "perro",
+          "gato"
+        ],
+        "title": "por ejemplo",
+        "caption": "los dos son mascotas"
+      }
+    },
+    {
+      "t": 106.7,
+      "spec": {
+        "kind": "headline",
+        "lines": [
+          "DOS TOKENS",
+          "PEGADOS"
+        ]
+      }
+    },
+    {
+      "t": 113.4,
+      "spec": {
+        "kind": "photo",
+        "images": [
+          "@img_latente"
+        ],
+        "caption": "espacio latente"
+      }
+    },
+    {
+      "t": 127.0,
+      "spec": {
+        "kind": "define",
+        "label": "paso 3",
+        "term": "Mecanismo de atención",
+        "body": "Cada token mide su relación con todos los demás de la frase."
+      }
+    },
+    {
+      "t": 134.1,
+      "spec": {
+        "kind": "clip",
+        "video": "@atencion",
+        "lines": [
+          "NO LEE",
+          "AISLADO"
+        ]
+      }
+    },
+    {
+      "t": 148.2,
+      "spec": {
+        "kind": "latente",
+        "fase": "vecinos",
+        "tokens": [
+          {
+            "t": "perro",
+            "x": 0.3,
+            "y": 0.38,
+            "g": 0
+          },
+          {
+            "t": "gato",
+            "x": 0.44,
+            "y": 0.24,
+            "g": 0
+          },
+          {
+            "t": "conejo",
+            "x": 0.22,
+            "y": 0.2,
+            "g": 0
+          },
+          {
+            "t": "pan",
+            "x": 0.7,
+            "y": 0.62,
+            "g": 1
+          },
+          {
+            "t": "queso",
+            "x": 0.82,
+            "y": 0.72,
+            "g": 1
+          },
+          {
+            "t": "sopa",
+            "x": 0.64,
+            "y": 0.78,
+            "g": 1
+          },
+          {
+            "t": "lunes",
+            "x": 0.74,
+            "y": 0.18,
+            "g": 2
+          },
+          {
+            "t": "marzo",
+            "x": 0.86,
+            "y": 0.32,
+            "g": 2
+          },
+          {
+            "t": "correr",
+            "x": 0.2,
+            "y": 0.72,
+            "g": 3
+          },
+          {
+            "t": "saltar",
+            "x": 0.34,
+            "y": 0.84,
+            "g": 3
+          }
+        ],
+        "foco": "gato",
+        "title": "lo que calcula la atención",
+        "caption": "qué tan cerca está de todos los demás"
+      }
+    },
+    {
+      "t": 159.9,
+      "spec": {
+        "kind": "define",
+        "label": "para qué sirve",
+        "term": "La ambigüedad",
+        "body": "Una palabra no significa lo mismo en dos frases."
+      }
+    },
+    {
+      "t": 165.9,
+      "spec": {
+        "kind": "photo",
+        "images": [
+          "@img_cine",
+          "@img_palanca"
+        ],
+        "caption": "la misma palabra: acción"
+      }
+    },
+    {
+      "t": 178.6,
+      "spec": {
+        "kind": "define",
+        "label": "paso 4",
+        "term": "Generación autoregresiva",
+        "body": "Adivinar token por token, no de golpe."
+      }
+    },
+    {
+      "t": 185.0,
+      "spec": {
+        "kind": "reveal",
+        "mode": "persiana",
+        "before": {
+          "text": "todo el texto de golpe",
+          "label": "lo que se cree"
+        },
+        "after": {
+          "text": "un token a la vez",
+          "label": "lo que pasa"
+        }
+      }
+    },
+    {
+      "t": 192.2,
+      "spec": {
+        "kind": "completa",
+        "modo": "candidatos",
+        "prompt": "mi perro es ",
+        "tokens": [
+          " grande",
+          " y",
+          " le",
+          " gusta",
+          " correr",
+          " en"
+        ],
+        "candidatos": [
+          [
+            "grande 62%",
+            "negro 17%",
+            "muy 10%"
+          ],
+          [
+            "y 41%",
+            ", 33%",
+            "pero 12%"
+          ],
+          [
+            "le 38%",
+            "que 22%",
+            "siempre 14%"
+          ],
+          [
+            "gusta 71%",
+            "encanta 18%",
+            "molesta 5%"
+          ],
+          [
+            "correr 44%",
+            "dormir 26%",
+            "comer 19%"
+          ],
+          [
+            "en 55%",
+            "por 21%",
+            "hacia 9%"
+          ]
+        ],
+        "label": "el bucle",
+        "caption": "adivina uno, lo pega, y vuelve a leerlo todo"
+      }
+    },
+    {
+      "t": 204.7,
+      "spec": {
+        "kind": "photo",
+        "images": [
+          "@img_bucle"
+        ],
+        "caption": "cada token alimenta el siguiente"
+      }
+    },
+    {
+      "t": 217.7,
+      "spec": {
+        "kind": "clip",
+        "video": "@cadena",
+        "lines": [
+          "CADA TOKEN",
+          "ALIMENTA EL SIGUIENTE"
+        ]
+      }
+    },
+    {
+      "t": 231.0,
+      "spec": {
+        "kind": "headline",
+        "kicker": "y entonces",
+        "lines": [
+          "¿CUÁL",
+          "ELIGE?"
+        ]
+      }
+    },
+    {
+      "t": 238.6,
+      "spec": {
+        "kind": "plot",
+        "image": "@lista",
+        "title": "la lista real",
+        "caption": "No devuelve una palabra: devuelve una probabilidad para cada token."
+      }
+    },
+    {
+      "t": 249.3,
+      "spec": {
+        "kind": "stat",
+        "value": 62,
+        "unit": "%",
+        "label": "el más probable",
+        "sub": "y aun así no siempre lo elige"
+      }
+    },
+    {
+      "t": 261.8,
+      "spec": {
+        "kind": "completa",
+        "modo": "candidatos",
+        "prompt": "mi perro es ",
+        "tokens": [
+          " grande",
+          " y",
+          " le",
+          " gusta",
+          " correr",
+          " en"
+        ],
+        "candidatos": [
+          [
+            "grande 62%",
+            "negro 17%",
+            "muy 10%"
+          ],
+          [
+            "y 41%",
+            ", 33%",
+            "pero 12%"
+          ],
+          [
+            "le 38%",
+            "que 22%",
+            "siempre 14%"
+          ],
+          [
+            "gusta 71%",
+            "encanta 18%",
+            "molesta 5%"
+          ],
+          [
+            "correr 44%",
+            "dormir 26%",
+            "comer 19%"
+          ],
+          [
+            "en 55%",
+            "por 21%",
+            "hacia 9%"
+          ]
+        ],
+        "label": "lo que devuelve de verdad",
+        "caption": "una lista con la probabilidad de cada una"
+      }
+    },
+    {
+      "t": 277.2,
+      "spec": {
+        "kind": "define",
+        "label": "el regulador",
+        "term": "La temperatura",
+        "body": "Cuánto se le permite salirse del más probable."
+      }
+    },
+    {
+      "t": 288.1,
+      "spec": {
+        "kind": "plot",
+        "image": "@temperatura",
+        "title": "el mismo cálculo",
+        "caption": "Baja: casi siempre el mismo. Alta: se reparte."
+      }
+    },
+    {
+      "t": 307.4,
+      "spec": {
+        "kind": "photo",
+        "images": [
+          "@img_dados"
+        ],
+        "caption": "por eso no te repite la misma respuesta"
+      }
+    },
+    {
+      "t": 318.3,
+      "spec": {
+        "kind": "plot",
+        "image": "@topk",
+        "title": "las otras dos perillas",
+        "caption": "top-k corta por cantidad, top-p por probabilidad acumulada"
+      }
+    },
+    {
+      "t": 324.0,
+      "spec": {
+        "kind": "cita",
+        "text": "El modelo no busca. Adivina el siguiente token.",
+        "highlight": [
+          "Adivina"
+        ],
+        "source": "ia con josé"
+      }
+    }
+  ]
+}

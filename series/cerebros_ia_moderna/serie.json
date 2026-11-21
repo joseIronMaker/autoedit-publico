@@ -1,0 +1,37 @@
+{
+  "slug": "cerebros_ia_moderna",
+  "titulo": "Los cerebros de la IA moderna: de la neurona al monstruo que razona",
+  "modo": "corto",
+  "items": [
+    {
+      "tema": "Qué es una red neuronal: el cerebro de perillas de la IA",
+      "descripcion": "",
+      "status": "listo",
+      "video": "videos/gen_red_neuronal_perillas_final.mp4"
+    },
+    {
+      "tema": "El Transformer: el invento que Google publicó en 2017 y regaló al mundo",
+      "descripcion": "",
+      "status": "listo",
+      "video": "videos/gen_transformer_google_final.mp4"
+    },
+    {
+      "tema": "Qué es un LLM: la máquina que adivina la siguiente palabra",
+      "descripcion": "",
+      "status": "listo",
+      "video": "videos/gen_llm_siguiente_palabra_final.mp4"
+    },
+    {
+      "tema": "Modelos fundacionales: una base, mil trabajos",
+      "descripcion": "",
+      "status": "listo",
+      "video": "videos/gen_modelos_fundacionales_final.mp4"
+    },
+    {
+      "tema": "Los monstruos que razonan: la IA que piensa antes de hablar",
+      "descripcion": "",
+      "status": "listo",
+      "video": "videos/gen_ia_que_razona_final.mp4"
+    }
+  ]
+}

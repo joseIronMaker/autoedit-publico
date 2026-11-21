@@ -1,0 +1,7 @@
+Tu botón de nitidez hace la misma cuenta que una red neuronal.
+Un cinco al centro y menos uno alrededor: eso es un filtro. Se lo pasé a mi foto y en la piel plana el resultado se apaga, en la montura de mis lentes se dispara.
+El filtro no adorna la foto. Le pregunta dónde cambia el brillo.
+
+¿Los filtros de tu celular son magia o matemáticas? Yo digo matemáticas de los años setenta.
+
+#filtros #fotografia #inteligenciaartificial #ia #tecnologia

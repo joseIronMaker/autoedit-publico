@@ -1,0 +1,36 @@
+######## pro06
+    subprocess.run([str(PY / "autoedit-gen"), g["tema"], "--guion", str(gpath),
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/jose/tiktok/.venv/bin/autoedit-gen', 'aprendizaje en contexto: el modelo copia la FORMA de los ejemplos que le pones, y por eso dos ejemplos ordenan mejor la respuesta que un parrafo describiendo el formato', '--guion', '/home/jose/tiktok/scratchpad/guiones_serie15/pro06_dos_ejemplos.json', '--dir', '/home/jose/tiktok/videos']' returned non-zero exit status 1.
+######## h01
+
+¿Copiar o directo? Yo digo directo.
+
+#harness #agentesdeia #programacion #ia
+######## h02
+
+¿Explicar o Escribir? Yo digo que escribir siempre.
+
+#inteligenciaartificial #programacion #desarrollo #claudecode
+######## h03
+
+¿Lento o Copia? Yo siempre digo copia.
+
+#permisos #agentesdeia #programacion #inteligenciaartificial #iaconjose
+######## h04
+
+Para programar en el día a día, ¿prefieres Suscripción o API?
+
+#claudecode #asistentedecodigo #programacionia #iaenespañol #tecnologia
+######## h05
+El secreto está en no pedirle reportes y abrir el archivo en 10 segundos.
+¿Confías o revisas? Yo digo que revisar.
+
+#agentesdeia #programacion #codigo #inteligenciaartificial
+######## verificación final
+gen_h_cual_para_que_final.mp4: 88.100000
+gen_h_el_archivo_que_le_ensena_final.mp4: 85.400000
+gen_h_lo_que_aprendi_final.mp4: 81.700000
+gen_h_manos_en_tu_maquina_final.mp4: 79.400000
+gen_h_no_deja_que_rompa_final.mp4: 85.700000

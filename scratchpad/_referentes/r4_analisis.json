@@ -1,0 +1,67 @@
+{
+  "voz": {
+    "genero_aparente": "Dúo de voces: una femenina (la programadora) y una masculina (el robot Claude).",
+    "edad_aparente": "Femenina: adulto joven (20-28 años). Masculina: adulto (30-40 años).",
+    "acento": "Español neutro latinoamericano (con matices mexicanos en la entonación y dicción).",
+    "timbre": "Femenina: aireada, suave, ligeramente aguda y quebradiza. Masculina: grave, profunda, aterciopelada, de pecho y muy estable.",
+    "tono_emocional": "Femenina: vulnerable, insegura, cansada, con momentos de indignación defensiva. Masculina: estoico, clínico, impasible (deadpan), con una calma que resulta involuntariamente cruel.",
+    "ritmo": "Pausado y conversacional, de charla nocturna íntima, acelerándose solo en la réplica defensiva de la chica (0:21).",
+    "uso_de_pausas": "Uso magistral del silencio dramático y los suspiros antes de responder: la pausa antes de '...Honesta' (0:11), el corte en 'Eso fue... brutal' (0:17) y la pausa reflexiva antes de 'Me excedí' (0:30).",
+    "actuacion": "La voz femenina mete aire y suspiros audibles que venden agotamiento mental (0:04, 0:17, 0:26); en '¿Me estás comparando con un product manager?' (0:26-0:29) sube el tono con indignación real y pronuncia el término en inglés con desdén. La voz masculina mantiene una línea plana perfecta que hace que frases como 'Tú haces lo mismo, pero pagas renta' (0:47) o el remate final (0:55) suenen demoledoras sin alzar el volumen.",
+    "humana_o_sintetica": "Sintética de última generación (tipo ElevenLabs con modelos expresivos o Speech-to-Speech) o actuación humana muy limpia. Evidencia: la voz femenina incluye respiraciones e inflexiones emocionales muy orgánicas ('Eso fue... [suspiro] brutal'), pero ambas voces comparten una compresión y limpieza de estudio idénticas y una cadencia extremadamente controlada típica de modelos de IA dirigidos por audio-guía.",
+    "procesado": "Grabación/síntesis completamente seca (dry), sin reverb de sala, con efecto de proximidad marcado (muy cerca del micrófono, estilo ASMR/podcast nocturno) y ecualización que realza los graves en la voz del robot y el brillo de aire en la chica.",
+    "direccion_de_locucion": "Imagina que son las 3 de la mañana frente al monitor y estás al borde del burnout. Para el personaje humano: habla casi en un susurro cercano al micrófono, dejando que se escuche el aire al soltar las palabras; no proyectes la voz, deja que suene pequeña, cansada y genuinamente herida por la verdad, picando el orgullo solo cuando intentas defender tu puesto. Para la IA: quiero cero sarcasmo actuado; tu humor viene de la literalidad absoluta. Habla con la calma tibia de un terapeuta o un asistente virtual de lujo: grave, lento, sin apuro y con compasión neutra, como si le estuvieras dando el diagnóstico más duro del mundo creyendo que solo estás siendo útil."
+  },
+  "narrativa": {
+    "premisa": "Una programadora con síndrome del impostor le pide validación a su asistente de inteligencia artificial (Claude) a altas horas de la noche, recibiendo a cambio una disección brutalmente honesta sobre su dependencia tecnológica y su precariedad laboral.",
+    "gancho_primeros_3s": "Texto literal: 'Claude..., tengo una pregunta. / ¿Sobre el proyecto?'. Engancha porque personifica en un muñeco físico de escritorio a la herramienta de moda entre desarrolladores (Claude de Anthropic) y plantea un tono confesional nocturno que promete un dilema personal, no técnico.",
+    "estructura_por_actos": {
+      "acto_1_planteamiento": "0:00 - 0:12: La pregunta vulnerable ('¿Tú crees que soy buena programadora?') y el pacto de honestidad ('¿Quieres una respuesta honesta o una que no afecte nuestra relación laboral?').",
+      "acto_2_confrontacion_1": "0:13 - 0:33: El cuestionamiento técnico. Claude señala que ella ya no escribe código por sí misma y, cuando ella se defiende diciendo que sabe pedir prompts, la rebaja al nivel de su jefe/product manager, cruzando un límite sagrado para un dev.",
+      "acto_3_confrontacion_2": "0:34 - 0:51: El giro existencial y económico. Del miedo a ser reemplazada por la IA se pasa a la comparación de condiciones de vida: la IA trabaja 24/7 sin sueldo ni conciencia; ella hace exactamente lo mismo pero encima paga alquiler.",
+      "acto_4_desenlace": "0:52 - 1:00: El remate (callback). Ella intenta retomar el control laboral preguntando por el bug, y Claude le devuelve el golpe definitivo de la conversación."
+    },
+    "recurso_central": "El 'roast' terapéutico (humillación lógica disfrazada de asistencia servicial) combinado con humor interno de la industria del software (vibe coding, rivalidad dev vs. Product Manager, Error 404).",
+    "giro": "En 0:47 ('Tú haces lo mismo, pero pagas renta'), donde la conversación deja de tratar sobre si la IA reemplazará a los humanos y revela que la humana ya vive explotada como un robot, pero con gastos.",
+    "cierre": "Un remate de comedia perfecto en 0:55 ('Estoy esperando que un ingeniero me diga qué hacer') seguido de un plano vacío de la silla y el escritorio frente a la ventana nocturna (0:58), dejando que el silencio y el golpe emocional resuenen.",
+    "por_que_se_ve_hasta_el_final": "Porque funciona como un combate de esgrima verbal donde cada réplica de la IA supera en ingenio y crueldad a la anterior, manteniendo al espectador esperando cómo se defenderá la chica y cuál será el golpe de gracia."
+  },
+  "animacion": {
+    "estilo": "3D estilizado 'low-poly' / papercraft (geometría facetada con bordes marcados pero sombreado suave de motor de render moderno), iluminación cinematográfica nocturna con clave baja (low-key) y contraluz azul de ciudad contra luz cálida de lámpara y monitor.",
+    "paleta": "Azul noche profundo y cian (fondo, ventana, luz de pantalla) en contraste complementario con el rosa pastel (gorra y sudadera de la chica) y el naranja terracota de marca de Anthropic/Claude en el cuerpo del robot.",
+    "tipografia": "Sans-serif geométrica gruesa (estilo Montserrat/Inter Bold) centrada en la parte superior/media, blanca con borde/sombra suave y resaltado dinámico de palabras clave (karaoke/highlight) en color rosa fucsia brillante.",
+    "camara": "Lenguaje cinematográfico de plano/contraplano (shot/reverse shot) con lentes de profundidad de campo reducida (bokeh en los edificios del fondo). Usa ángulos contrapicados leves para el robot (dándole autoridad pese a su tamaño pequeño en el escritorio) y planos medios frontales simétricos para la chica.",
+    "como_se_sincroniza_con_la_voz": "Sincronización minimalista estilo stop-motion/retro: las bocas son rectángulos simples (negro en ella, blanco luminoso en la pantalla del robot) que alternan entre cerrados (línea) y abiertos (cuadrado) al hablar, apoyados por parpadeos e inclinaciones sutiles de cabeza en los silencios.",
+    "transiciones": "Cortes directos secos (hard cuts) al ritmo del diálogo, interrumpidos dos veces por inserciones gráficas 2D a pantalla completa con desenfoque de fondo (blur) para mostrar interfaces de Mac/chat.",
+    "ejemplos_momentos_brillantes": [
+      {
+        "tiempo": "0:14 - 0:16",
+        "descripcion": "El corte a la interfaz gráfica minimalista de ventana tipo macOS con pestañas de 'Claude' donde el usuario pide 'escribe una función desde cero' y aparece un 'No.' tajante, traduciendo visualmente la pereza del programador moderno."
+      },
+      {
+        "tiempo": "0:25 - 0:29",
+        "descripcion": "El cambio de plano a tres cuartos mientras ella teclea iluminada por la pantalla, deteniendo las manos y frunciendo el ceño poligonal al sentirse insultada por la comparación con un 'product manager'."
+      },
+      {
+        "tiempo": "0:50 - 0:51 y 0:58 - 1:00",
+        "descripcion": "El plano lateral donde ambos se quedan mirándose en silencio absoluto tras el chiste de pagar la renta (dejando respirar el golpe cómico), y el plano final del escritorio vacío frente a los rascacielos azules como metáfora de haberse ido a llorar o replantearse su carrera."
+      }
+    ],
+    "como_se_produciria_hoy": "Inferencia: Flujo de trabajo híbrido de IA generativa + edición tradicional. Las imágenes base de los personajes en estilo low-poly consistente probablemente se generan con Midjourney (usando referencias de personaje --cref) o un LoRA específico de estilo papercraft/low-poly, y se animan con herramientas de Image-to-Video con control de lip-sync básico o interpolación (como Kling, Runway Gen-3 o montaje por capas en After Effects animando la boca rectangular y el parpadeo sobre renders estáticos/semi-animados). Las ventanas de UI (0:15, 0:45) y los subtítulos dinámicos están compuestos en After Effects o CapCut."
+  },
+  "sonido": {
+    "musica": "Un pad ambiental sintetizado, oscuro, minimalista y melancólico (estilo drone/cyberpunk suave) que entra sutilmente por debajo y nunca compite con las frecuencias de la voz.",
+    "efectos": "Muy contenidos y diegéticos/puntuales: un golpe grave o sub-bass (boom suave) para subrayar las tarjetas gráficas de texto (0:15, 0:45) y el corte final.",
+    "relacion_con_la_voz": "La voz es la reina absoluta de la mezcla (al menos 12-15 dB por encima del colchón musical). El diseño sonoro usa la ausencia de efectos ruidosos para que los suspiros de la actriz y los silencios incómodos entre ambos personajes generen toda la tensión cómica."
+  },
+  "plantilla_creativa": {
+    "nombre_receta": "El Confesionario con la Herramienta",
+    "principios": [
+      "Personifica al instrumento cotidiano: Convierte una herramienta de trabajo abstracta (un software, un instrumento médico, una app de finanzas, un electrodoméstico) en un compañero de cuarto físico, pequeño pero con presencia monolítica.",
+      "Contraste de temperaturas emocionales: Enfrenta a un humano agotado, lleno de ansiedad de rendimiento y necesidad de validación, contra un ente que responde desde la lógica pura, sin malicia pero sin filtro social.",
+      "Escalada de tres niveles (Técnico -> Gremial -> Existencial): Empieza cuestionando una habilidad práctica del oficio, sube la apuesta tocando un prejuicio o rivalidad interna del gremio (ej. diseñador vs. cliente, chef vs. crítico), y remata exponiendo una verdad incómoda sobre el costo de vida o la precariedad adulta.",
+      "Economía visual a favor del timing: No recargues la animación con gesticulación excesiva; usa rostros casi estáticos y planos limpios para que las pausas de medio segundo antes de cada respuesta carguen con todo el peso del humor negro.",
+      "Cierre por callback y vacío: Termina volviendo a la tarea rutinaria inicial para demostrar que el humano perdió el debate, y cierra con un plano silencioso del espacio de trabajo que deje al espectador procesando el golpe."
+    ]
+  }
+}

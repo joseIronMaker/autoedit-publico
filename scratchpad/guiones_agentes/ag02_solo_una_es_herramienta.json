@@ -1,0 +1,93 @@
+{
+  "slug": "ag_solo_una_es_herramienta",
+  "tema": "que es una herramienta para un modelo de IA: no una app que se instala, sino una descripcion escrita de tres partes que alguien le pego arriba de tu mensaje",
+  "title": "En este menú hay cinco cosas. Solo una es una herramienta.",
+  "theme": "hielo",
+  "hook_locked": true,
+  "concepto": "herramienta: la descripción escrita (nombre, para qué sirve, qué datos pide) que el programa le pone al modelo antes de tu mensaje",
+  "en_una_frase": "Una herramienta no se instala: se escribe, y el modelo la escoge leyendo su descripción, igual que tú escoges un contacto leyendo el nombre.",
+  "quien_decide": "quién escribió esa lista decide qué puede pedir el modelo: lo que no está escrito ahí no existe para él, aunque exista en el mundo",
+  "que_cuesta": "le pides cosas que no puede hacer y crees que es tonto, cuando lo que pasa es que nadie se las puso en la lista",
+  "palanca": "pregúntale qué herramientas tiene disponibles antes de encargarle algo: si te contesta con una lista corta, esa lista es su mundo entero",
+  "pregunta_ab": "Cuando algo no te lo hace, ¿piensas que la IA es limitada, o que le faltó la herramienta?",
+  "scenes": [
+    {
+      "beat_type": "cold_open",
+      "visual_type": "receipt",
+      "narration": "Este es el menú de ChatGPT. Cinco cosas. Solo una es una herramienta.",
+      "receipt": {
+        "image": "/mnt/c/autoedit-bridge/menu_plus.png",
+        "highlight": "Búsqueda en Internet",
+        "nota": "captura REAL del menú, tomada hoy sin iniciar sesión"
+      }
+    },
+    {
+      "beat_type": "definicion",
+      "visual_type": "image",
+      "narration": "Porque las otras cuatro son otra cosa: subir una foto y subir un archivo los haces tú, GPT-5 es quién escribe, y piénsalo más es cuánto se tarda. Una herramienta es algo distinto: es una cosa que el modelo puede PEDIR que se ejecute afuera de él. Y no se instala. Se escribe.",
+      "image_prompts": [
+        "A single index card pinned above a workbench, hand tools hanging out of reach below it, warm dim light. Documentary photography, muted palette, no readable text.",
+        "Extreme macro of the card's edge and the pin, raking warm light, deep shadow behind. Documentary photography, shallow depth of field.",
+        "A narrow shelf holding five identical unlabeled boxes, one pulled slightly forward, warm side light. Documentary photography, muted palette."
+      ]
+    },
+    {
+      "beat_type": "prueba_real",
+      "visual_type": "receipt",
+      "narration": "Y por eso pasa esto, que se ve en pantalla si te fijas. Yo le escribí: busca quién va primero en la tabla de la Liga MX. Y lo que salió en gris no fueron mis palabras. Fue otra frase, escrita por él, con la fecha de hoy metida adentro.",
+      "receipt": {
+        "image": "/home/jose/tiktok/scratchpad/bucle_pasos/paso1_busca_ligamx_5.5s.jpg",
+        "highlight": "Buscando Liga MX tabla",
+        "nota": "captura REAL: la línea gris es la búsqueda que armó el modelo, no la del usuario"
+      }
+    },
+    {
+      "beat_type": "mecanismo",
+      "visual_type": "image",
+      "narration": "Así que el orden es este, y es más simple de lo que parece. Antes de que tú escribas nada, el programa le pega arriba una lista: cómo se llama cada herramienta, para qué sirve y qué datos necesita. El modelo lee esa lista, compara tu encargo contra las descripciones, decide cuál sirve, arma los datos que le faltan y escribe el pedido. Nada más escribe.",
+      "image_prompts": [
+        "A typed list pinned to a corkboard above a desk, seen at an angle in warm lamp light. Documentary photography, muted palette, no readable text.",
+        "A hand running a finger down that pinned list, extreme macro, raking light. Documentary photography, shallow depth of field.",
+        "An old switchboard panel with labeled ports, one cable being lifted toward it, warm side light. Documentary photography, nobody's face in frame."
+      ]
+    },
+    {
+      "beat_type": "quien_decide",
+      "visual_type": "image",
+      "narration": "Y por eso mismo hay algo que a mí me cambió la forma de encargarle cosas: esa lista no la escribiste tú. La escribió quien hizo el producto. Lo que no está en la lista no existe para el modelo, aunque exista en el mundo y aunque tú se lo pidas con todas sus letras.",
+      "image_prompts": [
+        "A restaurant menu board with only three lines left on it, the rest of the board blank, warm dim light. Documentary photography, muted palette, no readable text.",
+        "A hand chalking one more line onto that board, seen close from the side, warm light. Documentary photography."
+      ]
+    },
+    {
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "narration": "No aprieta botones. Lee una lista.",
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "NO APRIETA"
+          },
+          {
+            "text": "BOTONES"
+          },
+          {
+            "text": "LEE UNA LISTA"
+          }
+        ],
+        "variant": "dark",
+        "video": "videos/gen_ln_atencion.assets/veo_4.mp4"
+      }
+    },
+    {
+      "beat_type": "cierre",
+      "visual_type": "image",
+      "narration": "Entonces lo que yo hago antes de encargarle algo serio: le pregunto qué herramientas tiene disponibles. Si me contesta con una lista corta, esa lista es su mundo entero, y ya sé qué puedo pedirle y qué no. Cuando algo no te lo hace, ¿piensas que la IA es limitada, o que le faltó la herramienta?",
+      "image_prompts": [
+        "A key rack by a door with four hooks and two keys hanging, warm evening light. Documentary photography, muted palette, no readable text.",
+        "A hand reaching for one of the keys, seen from behind at night, shallow depth of field. Documentary photography."
+      ]
+    }
+  ]
+}

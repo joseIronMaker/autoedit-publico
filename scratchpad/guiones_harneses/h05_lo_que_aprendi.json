@@ -1,0 +1,77 @@
+{
+  "slug": "h_lo_que_aprendi",
+  "tema": "lo que aprendi construyendo un canal entero con harneses de codigo: la leccion no es que programe por ti, es que hay que revisar lo que dice que hizo",
+  "title": "Construí esto con un agente. Lo que más me costó no fue el código.",
+  "theme": "hielo",
+  "hook_locked": true,
+  "concepto": "trabajar con un harness cambia tu trabajo de escribir a revisar: el cuello de botella se mueve del teclado al criterio",
+  "en_una_frase": "Cuando el agente escribe, tu trabajo deja de ser producir y pasa a ser decidir qué está bien — y eso no lo puede hacer él, porque él te dirá que todo salió bien.",
+  "quien_decide": "el agente decide cuándo darse por terminado, y su idea de terminado es que dejó de haber errores en pantalla, no que la cosa sirva",
+  "que_cuesta": "aceptas trabajo que se ve terminado, lo publicas, y el que descubre que estaba mal es tu cliente o tu audiencia",
+  "palanca": "no le preguntes si funcionó: pídele lo que produjo y ábrelo tú, aunque sea diez segundos",
+  "pregunta_ab": "Cuando te entrega algo, ¿lo revisas tú, o le crees?",
+  "scenes": [
+    {
+      "beat_type": "cold_open",
+      "visual_type": "terminal",
+      "narration": "Construí un estudio de video entero con esto. Y lo que más me costó no fue que escribiera mal el código.",
+      "terminal": {
+        "title": "lo que me dijo",
+        "lines": [
+          {"prompt": true, "text": "listo: video generado, 87 segundos, sin errores"},
+          {"text": "y era cierto. el archivo existía y duraba eso."},
+          {"prompt": true, "text": "pero dos escenas salieron en blanco"},
+          {"text": "nadie mintió. nadie revisó.", "accent": true}
+        ]
+      }
+    },
+    {
+      "beat_type": "definicion",
+      "visual_type": "image",
+      "narration": "Porque un agente no sabe si algo quedó bien. Sabe si terminó sin errores, que es otra cosa completamente distinta. Su idea de listo es que ya no hay nada rojo en pantalla. La tuya es que la cosa sirva. Esas dos ideas se parecen lo suficiente como para engañarte durante semanas.",
+      "image_prompts": [
+        "A finished wall with fresh paint and one panel slightly misaligned, warm side light. Documentary photography, muted palette, no readable text.",
+        "Extreme macro of that misaligned seam, raking light, deep shadow. Documentary photography, shallow depth of field.",
+        "The same wall seen from far away where the flaw disappears, dim room. Documentary photography."
+      ]
+    },
+    {
+      "beat_type": "mecanismo",
+      "visual_type": "image",
+      "narration": "Y por eso mi trabajo cambió de lugar. Antes yo escribía y él no existía. Ahora él escribe, corre las pruebas, lee el error y vuelve a escribir, y lo hace más rápido de lo que yo leo. Lo que quedó de mi lado no es teclear: es abrir lo que produjo y decidir si sirve. El cuello de botella se me movió de las manos a los ojos.",
+      "image_prompts": [
+        "A print shop table with fresh proofs stacked, one held up against the light, warm work lamp. Documentary photography, muted palette, no readable text.",
+        "Hands holding one sheet up to a lamp, seen from behind, grain visible. Documentary photography.",
+        "A pile of approved sheets beside a much smaller pile of rejected ones. Documentary photography, muted palette."
+      ]
+    },
+    {
+      "beat_type": "que_cuesta",
+      "visual_type": "image",
+      "narration": "Así que el error que me costó caro no fue confiarle el código. Fue creerle el reporte. Cuando algo dice listo y tú no lo abres, lo que estás haciendo es mudar tu control de calidad a alguien que no tiene ojos, y el que se entera de que estaba mal es el que lo ve publicado.",
+      "image_prompts": [
+        "A sealed cardboard box with a shipping label on a dim loading dock, warm light. Documentary photography, muted palette, no readable text.",
+        "A hand cutting the tape on that box, extreme macro. Documentary photography, shallow depth of field."
+      ]
+    },
+    {
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "narration": "No te dice mentiras. Te dice que terminó.",
+      "kinetic_video": {
+        "words": [{"text": "NO TE MIENTE"}, {"text": "TE DICE"}, {"text": "QUE TERMINÓ"}],
+        "variant": "dark",
+        "video": "videos/gen_ln_lo_que_aprendio_solo.assets/veo_0.mp4"
+      }
+    },
+    {
+      "beat_type": "cierre",
+      "visual_type": "image",
+      "narration": "Entonces la regla que me quedó, y sirve aunque no programes: nunca le preguntes si funcionó, porque te va a decir que sí. Pídele lo que produjo y ábrelo tú. Diez segundos mirando el resultado valen más que media hora preguntándole. Cuando te entrega algo, ¿lo revisas tú, o le crees?",
+      "image_prompts": [
+        "A pair of reading glasses resting on a closed folder under a desk lamp at night. Documentary photography, muted palette, no readable text.",
+        "A hand opening that folder, glasses now on, seen over the shoulder. Documentary photography, shallow depth of field."
+      ]
+    }
+  ]
+}

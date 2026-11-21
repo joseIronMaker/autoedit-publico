@@ -1,0 +1,54 @@
+=== ver03s_la_ventanita.json  →  gen_ver_la_ventanita  (tema menta)
+→ guion guion de Claude (guionista)
+→ estilo generando imagen ancla de marca
+→ voz reutilizo la locución ya pagada (6 escenas)
+→ escena 1/6 animando kinetic_video
+→ escena 1/6 QC visual rechazó: El texto en pantalla ('multiplicar Y SUMAR') no coincide con
+→ escena 1/6 animando kinetic_video
+→ escena 2/6 programando animación a medida
+  aviso: animación custom falló (intento 1): NameError: name 'divmod' is not defined
+→ escena 2/6 animando custom
+→ escena 3/6 ejecutando modelo real (sklearn)
+→ escena 3/6 animando código → gráfica
+→ escena 4/6 programando animación a medida
+→ escena 4/6 animando custom
+→ escena 5/6 animando kinetic_video
+→ escena 6/6 generando imagen
+→ escena 6/6 animando (Ken Burns)
+  aviso: gemini-flash-latest falló (503 UNAVAILABLE. {'error': {'code': 503, 'message': 'Unable to process input image. Please retry or report in https://developers.generativeai.google/guide/troubleshooting', 'status': 'UNAVAILABLE'}}); probando fallback…
+→ ensamblando 6 escenas → gen_ver_la_ventanita.mp4
+→ audio audio continuo + SFX de transición
+→ música reutilizo la cama musical de este video
+✔ /home/jose/tiktok/videos/gen_ver_la_ventanita.mp4
+
+Ahora pásalo por el flujo normal para subtítulos y copys:
+  autoedit gen_ver_la_ventanita.mp4 --auto   (o desde la web)
+→ Transcribiendo con Whisper (small, CPU)…
+  117 palabras, 47.8s → /home/jose/tiktok/videos/gen_ver_la_ventanita.autoedit/transcript.json
+→ Gemini analizando la transcripción (cortes + énfasis)…
+
+Plan de edición (12 cortes, −6.3s de 47.8s):
+  ✂   12.18 →   12.50  silencio de 0.6s
+  ✂   12.57 →   14.29  divagación fuera de contexto que interrumpe la explicación: “lo corrí de verdad,”
+  ✂   17.08 →   17.44  silencio de 0.6s
+  ✂   19.22 →   19.44  silencio de 0.5s
+  ✂   22.28 →   22.70  silencio de 0.7s
+  ✂   26.70 →   27.06  silencio de 0.6s
+  ✂   30.14 →   30.64  silencio de 0.7s
+  ✂   33.22 →   33.66  silencio de 0.7s
+  ✂   34.92 →   35.62  silencio de 0.9s
+  ✂   37.46 →   37.80  silencio de 0.6s
+  ✂   40.60 →   41.16  silencio de 0.8s
+  ✂   43.88 →   44.26  silencio de 0.6s
+  ★ 14 palabras enfatizadas en subtítulos
+→ Renderizando gen_ver_la_ventanita_final.mp4: 12 tramos, 41.4s…
+✔ /home/jose/tiktok/videos/gen_ver_la_ventanita_final.mp4
+→ Generando copys (TikTok/IG/FB)…
+✔ /home/jose/tiktok/videos/gen_ver_la_ventanita.autoedit/copys.md
+
+✔ ver03_la_ventanita.mp4  (41.5s)
+  QC   → /home/jose/tiktok/scratchpad/qc_ver_la_ventanita.png
+  copy → revisar y reescribir a mano si hace falta:
+Así funciona el botón de nitidez de tu teléfono por dentro.
+Una ventana de 3x3 con solo 9 números recorre toda tu foto procesando pixel por pixel.
+Mañana te muestro la fórmula exacta en @ia.conjose, pero antes: ¿Entender o Usar? Yo digo entender.

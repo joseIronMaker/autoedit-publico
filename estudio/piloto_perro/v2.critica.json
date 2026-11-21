@@ -1,0 +1,104 @@
+{
+  "nivel_vs_listón_0a10": 6.5,
+  "primer_segundo": "No detiene el pulgar con la fuerza del Video 1. El gancho textual ('ChatGPT no sabe qué es un perro') es excelente, pero visualmente es una lámina estática durante casi 4 segundos. En el Video 1, la esfera cae con física y perspectiva 3D desde el fotograma cero. Aquí parece una diapositiva de presentación hasta el segundo 00:05.",
+  "momentos_que_funcionan": [
+    {
+      "t": "00:05 - 00:12",
+      "que": "La transición de la palabra 'perro' a números (tokenización), su desintegración en partículas y la caída al plano 3D para formar el mapa."
+    },
+    {
+      "t": "00:40 - 00:46",
+      "que": "La visualización de álgebra vectorial (hombre -> mujer = rey -> reina) con flechas rojas. Es clara, limpia y explica el concepto sin sobrecargar."
+    },
+    {
+      "t": "00:57 - 01:08",
+      "que": "El cambio a fondo negro para introducir el sesgo algorítmico. Rompe la monotonía visual exactamente cuando el tono del guion se vuelve serio."
+    },
+    {
+      "t": "01:23 - 01:25",
+      "que": "La barra de prompt ('¿qué es un perro?') desintegrándose en partículas hacia la esfera para ilustrar 'no te lee, te ubica'."
+    }
+  ],
+  "momentos_donde_se_iria": [
+    {
+      "t": "00:00 - 00:04",
+      "por_que": " Cero movimiento real. Tres segundos y medio con una imagen fija en TikTok es muerte por scroll.",
+      "arreglo": "Hacer que la cámara esté en movimiento desde el 00:00 o que la esfera negra caiga y rebote sobre la palabra 'perro' al instante."
+    },
+    {
+      "t": "00:28 - 00:32",
+      "por_que": "El acercamiento entre 'perro' y 'gato' es mecánico y plano. Las frases arriba ('llevé a mi ___ al veterinario') cambian tan rápido que el ojo no puede leerlas y ver las esferas moverse al mismo tiempo.",
+      "arreglo": "Conectar las frases con las esferas mediante líneas de tensión que tiren de ellas físicamente con cada oración, dando sensación de fuerza magnética."
+    },
+    {
+      "t": "01:16 - 01:21",
+      "por_que": "La representación de 'miles de dimensiones' es un erizo de líneas 2D estático sobre el plano, y el ejemplo de polisemia ('banco') pasa sin pena ni gloria visualmente.",
+      "arreglo": "Rotar la cámara en 3D alrededor de esa explosión de ejes para que se sienta el volumen espacial, y hacer que el punto 'banco' viaje dramáticamente de un extremo a otro del mapa según el contexto."
+    }
+  ],
+  "ritmo_visual": "Irregular y demasiado plano en su uso de la cámara. Mientras el Video 1 mantiene una cámara 3D viva con cambios constantes de ángulo, rasantes, zooms dramáticos y profundidad de campo (desenfoque), el Video 2 abusa de una vista isométrica/cenital fija que lo hace sentir como un mapa 2D inclinado en After Effects en lugar de un mundo tridimensional.",
+  "sincronia_voz_imagen": [
+    {
+      "t": "00:21 - 00:22",
+      "problema": "Aparecen las etiquetas 'días', 'oficios', 'lugares' en el mapa, pero la voz solo dice 'leyendo miles de millones de palabras'. Obligas al cerebro a leer categorías que no estás mencionando mientras intenta procesar la locución."
+    },
+    {
+      "t": "00:30 - 00:32",
+      "problema": "Desfase de atención: muestras tres frases escritas completas en 2 segundos mientras la voz dice 'se van acercando un poquito cada vez'. Es imposible leer las tres frases a esa velocidad sin perder el hilo de lo que dice la narradora."
+    },
+    {
+      "t": "01:18 - 01:20",
+      "problema": "La voz dice 'y cada punto se mueve según la frase', mientras en pantalla aparecen dos frases complejas ('me senté en el banco' / 'el banco me cobró') que no se leen en voz alta. El espectador no alcanza a entender la dualidad de la palabra 'banco' en 2 segundos."
+    }
+  ],
+  "legibilidad_en_celular": [
+    {
+      "t": "00:21 - 00:22",
+      "problema": "Los textos secundarios del mapa ('días', 'oficios', 'lugares') son pequeños, finos y están en zonas donde en TikTok estorban los iconos de la interfaz o requieren mucho esfuerzo visual."
+    },
+    {
+      "t": "00:30 - 00:32",
+      "problema": "Las palabras en gris claro dentro de los huecos ('perro', 'gato' en 'llevé a mi ___ al veterinario') tienen pésimo contraste sobre el fondo crema."
+    },
+    {
+      "t": "01:07 - 01:08",
+      "problema": "La cita 'Bolukbasi et al. - NeurIPS 2016' es diminuta y gris oscuro sobre negro."
+    },
+    {
+      "t": "01:18 - 01:20",
+      "problema": "La frase inferior 'el banco me cobró' en gris pálido sobre fondo claro apenas se distingue."
+    }
+  ],
+  "sonido": {
+    "musica": "Demasiado presente y rítmica (base con beat marcado). Compite con la voz en lugar de subrayar la narrativa. El Video 1 usa un diseño ambiental minimalista que deja todo el espacio a los efectos y la voz.",
+    "efectos": "Flojos y genéricos. Les falta peso físico, subgraves y textura táctil. En el Video 1 cada línea, punto y movimiento suena como un mecanismo de precisión; aquí suenan como 'whooshes' y 'clicks' de librería estándar puestos con timidez.",
+    "mezcla": "Sucia en el arranque y desbalanceada entre música y SFX.",
+    "problemas": [
+      {
+        "t": "00:05 - 00:07",
+        "que": "Se cuela una voz de fondo o vocal sample en la pista musical (suena como alguien hablando en otro idioma detrás de la locutora) justo cuando dice 'ni siquiera ha leído esa palabra'. Ensucia muchísimo la mezcla."
+      },
+      {
+        "t": "00:11 - 00:12",
+        "que": "Cuando la esfera cae y genera ondas en el mapa, el impacto sonoro es débil; pide un golpe grave (sub-bass) que dé peso a la bola."
+      },
+      {
+        "t": "01:16",
+        "que": "Cuando se despliegan las 'miles' de dimensiones, el sonido es un soplido suave. Debería sonar expansivo y abrumador."
+      }
+    ]
+  },
+  "guion": {
+    "claridad": "Alta hasta el minuto 01:15. La explicación de tokenización, embeddings, aritmética vectorial y sesgo en los datos es impecable. Se atropella en el 01:18 al querer meter los embeddings contextuales ('banco') sin darles tiempo de respirar.",
+    "afirmaciones_dudosas": [
+      "00:05: Mostrar que 'perro' se convierte en 5 dígitos sueltos ('96439') y que cada dígito se desintegra da a entender que se codifica carácter por carácter, cuando en realidad la palabra entera (el token) recibe un único ID numérico.",
+      "01:18: Mezclar el mapa estático de Word2Vec (2013) con el funcionamiento contextual de ChatGPT ('cada punto se mueve según la frase') en una sola frase rápida confunde dos arquitecturas distintas sin explicarlo bien."
+    ],
+    "final": "Excelente cierre circular a nivel de guion y locución ('Y aún así...'), pero visualmente anticlimático porque simplemente reaparece el texto del inicio sobre el mismo plano estático que ya llevamos viendo 10 segundos."
+  },
+  "tres_cambios_de_mayor_impacto": [
+    "1. CÁMARA 3D Y PROFUNDIDAD DE CAMPO: Eliminar la sensación de 'lámina 2D inclinada'. Mover la cámara a ras de suelo en momentos clave (como en el Video 1 en 00:05 y 00:12), rotar en el espacio durante las 'miles de dimensiones' (01:16) y añadir desenfoque de lente (DoF) para que la esfera negra se sienta un objeto físico real.",
+    "2. LIMPIEZA Y DISEÑO SONORO FÍSICO: Quitar la pista musical con beat y voces de fondo (especialmente el ruido vocal del 00:06). Reemplazarla por un drone ambiental sutil y diseñar foley/SFX precisos, graves y táctiles para cada aparición de texto, tensión de vectores y movimiento de las esferas.",
+    "3. SINCRONÍA VISUAL-VERBAL (NO HACER LEER MIENTRAS SE ESCUCHA): En 00:30 (frases de veterinario/comida) y 01:18 (frases de 'banco'), no obligar al espectador a leer oraciones en silencio mientras la locutora dice otra cosa. O la locutora lee el ejemplo ('me senté en el banco vs el banco me cobró'), o se reemplaza el texto por iconografía/animación pura."
+  ]
+}

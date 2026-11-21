@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>autoedit</title>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div id="app">
+  <aside class="sidebar">
+    <h1>🎬 autoedit</h1>
+    <p class="hint" v-if="costs">💰 API hoy: ${{ costs.today_usd }} · total: ${{ costs.total_usd }}</p>
+
+    <!-- ══ CREAR ══ -->
+    <div class="section">
+      <h2>✨ Crear</h2>
+      <textarea v-model="tema" rows="2" :disabled="genBusy"
+                placeholder="Tema para un video con IA…"></textarea>
+      <div class="modes">
+        <button :class="{active: genModo === 'corto'}" @click="genModo = 'corto'" :disabled="genBusy"
+                title="~35 s · máxima retención y alcance (formato base del canal)">📈 Corto · crecimiento</button>
+        <button :class="{active: genModo === 'largo'}" @click="genModo = 'largo'" :disabled="genBusy"
+                title="~90 s · tema a fondo, supera el minuto que exige monetización en TikTok">💰 Largo · monetización</button>
+      </div>
+      <button class="primary full" @click="generateVideo" :disabled="genBusy || !tema.trim()">
+        {{ genBusy ? '⏳ ' + genJob.step + '…' : '✨ Generar video' }}
+      </button>
+      <p v-if="genBusy" class="hint">{{ genJob.detail }}</p>
+      <p v-if="genJob && genJob.step === 'error'" class="genstatus error">✖ {{ genJob.detail }}</p>
+      <p v-if="genJob && genJob.step === 'listo'" class="genstatus done">✔ {{ genJob.detail }}</p>
+
+      <button class="full" @click="$refs.file.click()" :disabled="uploading">
+        {{ uploading ? '⏳ Subiendo…' : '⬆ Subir video grabado' }}
+      </button>
+      <input type="file" ref="file" accept="video/mp4,video/quicktime,video/x-matroska,video/webm"
+             style="display:none" @change="uploadVideo">
+    </div>
+
+    <!-- ══ TEMAS DEL DÍA ══ -->
+    <div class="section">
+      <h2>📰 Temas del día
+        <label class="switch mini" title="agente diario: busca temas cada mañana">
+          <input type="checkbox" :checked="topicsAgent.enabled" @change="toggleAgent"><span></span>
+        </label>
+      </h2>
+      <p class="hint">Agente diario {{ topicsAgent.enabled ? 'activado (~' + topicsAgent.hour + ':00)' : 'apagado' }}</p>
+      <button class="small full" @click="refreshTopics" :disabled="topicsBusy">
+        {{ topicsBusy ? '⏳ buscando…' : '🔄 Buscar temas ahora' }}
+      </button>
+      <p v-if="topicsJob && topicsJob.step === 'error'" class="genstatus error">✖ {{ topicsJob.detail }}</p>
+      <div v-for="(t, i) in topics" :key="i" class="topic" :title="t.angulo + ' · ' + t.fuente">
+        <span class="badge">{{ t.pilar }}</span>
+        <span class="topic-text">{{ t.tema }}</span>
+        <button class="small use" @click="tema = t.tema" title="usar como tema">✨</button>
+      </div>
+    </div>
+
+    <!-- ══ SERIES ══ -->
+    <div class="section">
+      <h2>📚 Series <span class="count">{{ series.length }}</span></h2>
+      <input v-model="serieTitulo" :disabled="creatingSerie"
+             placeholder="p. ej. Curso de prompt engineering">
+      <div class="modes">
+        <button :class="{active: serieModo === 'corto'}" @click="serieModo = 'corto'" :disabled="creatingSerie"
+                title="videos de ~35 s para crecer">📈 Corto</button>
+        <button :class="{active: serieModo === 'largo'}" @click="serieModo = 'largo'" :disabled="creatingSerie"
+                title="videos de ~90 s, a fondo, aptos para monetización">💰 Largo</button>
+      </div>
+      <div class="row">
+        <input type="number" v-model.number="serieN" min="2" max="12" class="num"> videos
+        <label class="chk"><input type="checkbox" v-model="serieAuto"> auto</label>
+        <button class="small" @click="createSeries" :disabled="creatingSerie || !serieTitulo.trim()">
+          {{ creatingSerie ? '⏳…' : (serieAuto ? '✨ Crear y generar' : 'Crear') }}
+        </button>
+      </div>
+      <div v-for="s in series" :key="s.slug"
+           :class="['item', {active: s.slug === selectedSerie}]" @click="selectSerie(s.slug)">
+        <span class="name">{{ s.titulo }}</span>
+        <span class="hint">{{ doneCount(s) }}/{{ s.items.length }}</span>
+      </div>
+      <p v-if="seriesBusy" class="genstatus working">⏳ {{ seriesJob.step }}</p>
+    </div>
+
+    <!-- ══ VIDEOS ══ -->
+    <div class="section">
+      <h2>🎞 Videos <span class="count">{{ videos.length }}</span></h2>
+      <div v-for="v in videos" :key="v.stem"
+           :class="['item', {active: v.stem === selected}]" @click="select(v.stem)">
+        <span class="name">{{ v.file }}</span>
+        <span v-if="v.job && v.job.step !== 'listo' && v.job.step !== 'error'" class="badge working">⏳ {{ v.job.step }}</span>
+        <span v-else-if="v.job && v.job.step === 'error'" class="badge error">error</span>
+        <span v-else-if="v.rendered" class="badge done">listo</span>
+        <span v-else-if="v.analyzed" class="badge analyzed">analizado</span>
+        <span v-else class="badge">nuevo</span>
+      </div>
+      <p v-if="!videos.length" class="hint">Genera o sube tu primer video ↑</p>
+    </div>
+  </aside>
+
+  <!-- ══════════ VISTA DE SERIE ══════════ -->
+  <main class="main" v-if="serieView">
+    <header>
+      <h2>📚 {{ serieView.titulo }}</h2>
+      <div class="actions">
+        <span class="hint">{{ doneCount(serieView) }}/{{ serieView.items.length }} listos</span>
+        <button v-if="!seriesBusy && doneCount(serieView) < serieView.items.length"
+                class="primary" @click="startSeries(serieView.slug)">▶ Generar pendientes</button>
+        <button v-if="seriesBusy" @click="stopSeries(serieView.slug)">⏸ Detener</button>
+        <button v-if="serieJunk(serieView) > 1" class="danger" @click="cleanSerie(serieView)">
+          🧹 Limpiar origen ({{ serieJunk(serieView).toFixed(0) }} MB)
+        </button>
+        <button class="danger" @click="deleteSerie(serieView)">🗑 Eliminar serie</button>
+      </div>
+    </header>
+    <div v-if="seriesBusy" class="status working">⏳ {{ seriesJob.step }} — <small>{{ seriesJob.detail }}</small></div>
+
+    <div class="cards">
+      <div v-for="(it, i) in serieView.items" :key="i" class="card">
+        <h4><span :class="'dot ' + it.status"></span> {{ i + 1 }}. {{ it.tema }}</h4>
+        <p class="hint">{{ it.descripcion }}</p>
+        <template v-if="it.final_path">
+          <video :src="'/files/' + it.final_path" controls preload="metadata"></video>
+          <div class="row filerow">
+            <a class="btn-dl" :href="'/files/' + it.final_path" :download="it.final">
+              ⬇ Descargar ({{ it.final_mb }} MB)</a>
+            <button v-if="it.junk_mb > 0.5" class="small danger"
+                    @click="cleanStem(it.video, it.junk_mb)">🧹 {{ it.junk_mb }} MB</button>
+          </div>
+          <template v-if="it.copys">
+            <div class="tabs">
+              <button v-for="red in ['tiktok','instagram','facebook']" :key="red"
+                      :class="{active: (tab[it.final] || 'tiktok') === red}"
+                      @click="tab[it.final] = red">{{ red }}</button>
+            </div>
+            <pre class="copy">{{ it.copys[tab[it.final] || 'tiktok'] }}</pre>
+            <button class="small" @click="copyText(it.copys[tab[it.final] || 'tiktok'])">📋 Copiar copy</button>
+          </template>
+        </template>
+        <p v-else-if="it.status === 'error'" class="genstatus error">✖ {{ it.error }}</p>
+        <p v-else-if="it.status === 'generando'" class="genstatus working">⏳ generando…</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- ══════════ VISTA DE VIDEO ══════════ -->
+  <main class="main" v-else-if="detail">
+    <header>
+      <h2>{{ detail.file }}</h2>
+      <div class="actions">
+        <template v-if="!detail.cleaned">
+          <label class="chk"><input type="checkbox" v-model="wantClips"> proponer clips</label>
+          <button @click="analyze" :disabled="busy">Analizar</button>
+          <button @click="render" :disabled="busy || !detail.edl" class="primary">Renderizar</button>
+        </template>
+        <span v-else class="hint">origen limpiado — quedan el final y los copys</span>
+        <button v-if="detail.junk_mb > 0.5" class="danger"
+                @click="cleanStem(detail.stem, detail.junk_mb)">🧹 {{ detail.junk_mb }} MB</button>
+        <button class="danger" @click="deleteVideo(detail)">🗑 Eliminar</button>
+      </div>
+    </header>
+
+    <div v-if="job && job.step !== 'listo' && job.step !== 'error'" class="status working">
+      ⏳ {{ job.step }}… <small>{{ job.detail }}</small>
+    </div>
+    <div v-if="job && job.step === 'error'" class="status error">✖ {{ job.detail }}</div>
+
+    <section class="cols" v-if="!detail.cleaned">
+      <div class="col">
+        <h3>Original</h3>
+        <video :src="'/files/' + detail.path" controls preload="metadata"></video>
+        <div v-if="detail.transcript" class="transcript">
+          <h3>Transcripción <small>({{ detail.transcript.n_words }} palabras, {{ detail.transcript.duration.toFixed(1) }}s)</small></h3>
+          <p>{{ detail.transcript.text }}</p>
+        </div>
+      </div>
+
+      <div class="col">
+        <template v-if="detail.edl">
+          <h3>Cortes propuestos <small>(apaga los que no quieras)</small></h3>
+          <div v-for="(c, i) in detail.edl.cuts" :key="i" :class="['cut', {off: c.disabled}]">
+            <label class="switch">
+              <input type="checkbox" :checked="!c.disabled" @change="toggleCut(i)">
+              <span></span>
+            </label>
+            <span class="time">{{ c.start.toFixed(1) }}s → {{ c.end.toFixed(1) }}s</span>
+            <span class="reason">{{ c.reason }}</span>
+          </div>
+          <button v-if="edlDirty" @click="saveEdl" class="primary small">Guardar cambios</button>
+        </template>
+
+        <template v-if="detail.clips && detail.clips.length">
+          <h3>Clips propuestos</h3>
+          <div v-for="(c, k) in detail.clips" :key="'c'+k" class="clip">
+            <strong>{{ c.title }}</strong>
+            <span class="time">{{ c.start.toFixed(0) }}s–{{ c.end.toFixed(0) }}s</span>
+            <p class="hint">{{ c.hook }}</p>
+          </div>
+        </template>
+      </div>
+    </section>
+
+    <section v-if="detail.outputs && detail.outputs.length" class="outputs">
+      <h3>Resultados</h3>
+      <div class="cards">
+        <div v-for="o in detail.outputs" :key="o.file" class="card">
+          <h4>{{ o.title }}</h4>
+          <video :src="'/files/' + o.path" controls preload="metadata"></video>
+          <a class="btn-dl" :href="'/files/' + o.path" :download="o.file">⬇ Descargar</a>
+          <template v-if="o.copys">
+            <div class="tabs">
+              <button v-for="red in ['tiktok','instagram','facebook']" :key="red"
+                      :class="{active: (tab[o.file] || 'tiktok') === red}"
+                      @click="tab[o.file] = red">{{ red }}</button>
+            </div>
+            <pre class="copy">{{ o.copys[tab[o.file] || 'tiktok'] }}</pre>
+            <button class="small" @click="copyText(o.copys[tab[o.file] || 'tiktok'])">📋 Copiar copy</button>
+          </template>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <main class="main empty" v-else>
+    <div>
+      <p>Elige un video o una serie a la izquierda,</p>
+      <p>o escribe un tema y pulsa <strong>✨ Generar video</strong>.</p>
+    </div>
+  </main>
+</div>
+<script src="/vue.js"></script>
+<script src="/app.js"></script>
+</body>
+</html>

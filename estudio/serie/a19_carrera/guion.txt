@@ -1,0 +1,14 @@
+¿ChatGPT le copió a Claude?
+La respuesta corta es que todos se copian. Y las fechas cuentan mejor historia que los fans.
+Primera carrera: el agente programador en la nube. Devin lo enseñó en marzo del veinticuatro. Codex de OpenAI llegó en mayo del veinticinco. Claude Code en la web, en octubre.
+Segunda: el agente en tu computadora. Claude Code, en febrero del veinticinco. Codex CLI, dos meses después.
+Tercera: usar una pantalla. Anthropic, en octubre del veinticuatro. OpenAI, con Operator, en enero del veinticinco.
+Y la cuarta, la grande: el agente para todos.
+Manus sorprendió en marzo del veinticinco. ChatGPT agent salió en julio. Anthropic lanzó Cowork en enero del veintiséis, para quien nunca abrió una terminal.
+Seis meses después llegó ChatGPT Work.
+Entonces, ¿le copió? En ese formato, Claude llegó antes. Pero OpenAI ya tenía su agente general, y Manus llegó antes que los dos.
+Y también va al revés: Anthropic creó las skills, y Codex las adoptó. OpenAI propuso AGENTS.md, y Claude Code lo lee.
+Nadie copió todo. Todos copiaron algo.
+Mientras discutimos quién fue primero, ya pasó lo importante.
+La inteligencia artificial salió de la ventana de chat.
+Y entró a tu computadora.

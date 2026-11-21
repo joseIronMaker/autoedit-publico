@@ -1,0 +1,83 @@
+{
+  "title": "Estás usando la IA equivocada",
+  "slug": "duelo_cual_ia_usar",
+  "hook_tipo": "error",
+  "keyword": "cuál IA usar",
+  "hook_headline": ["CUÁL SÍ", "CUÁL NO"],
+  "pregunta_ab": "¿Números o ideas?",
+  "music_prompt": "dark competitive electronic instrumental, dueling synth lines answering each other, driving percussion, tension and release, no vocals, 124 BPM",
+  "modo": "corto",
+  "scenes": [
+    {
+      "narration": "Estás usando la IA equivocada para tu chamba.",
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.45,
+      "kinetic_video": {
+        "words": [
+          {"text": "la IA", "serif": true},
+          {"text": "EQUIVOCADA", "accent": true}
+        ],
+        "variant": "dark",
+        "veo_prompt": "Cinematic shot of two parallel rivers of glowing light racing through a near-black void, one neon cyan and one neon magenta, separated by darkness, never touching, volumetric glow, dramatic perspective, dark tech aesthetic, no text, no people",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Son dos herramientas distintas, y hoy te doy el mapa: cuál IA usar para cada cosa.",
+      "beat_type": "hook",
+      "visual_type": "host",
+      "host_top": {"kind": "headline", "lines": ["CUÁL SÍ", "CUÁL NO"]}
+    },
+    {
+      "narration": "La predictiva decide con números: riesgos, ventas, lo que sigue. La generativa fabrica borradores.",
+      "beat_type": "proof",
+      "visual_type": "diagram",
+      "diagram": {
+        "type": "compare",
+        "title": "EL DUELO",
+        "items": ["Cifras con generativa", "Números: predictiva", "Textos con predictiva", "Crear: generativa"]
+      }
+    },
+    {
+      "narration": "En tu chamba: el reporte y el correo, generativa; el pronóstico y el inventario, predictiva.",
+      "beat_type": "proof",
+      "visual_type": "diagram",
+      "diagram": {
+        "type": "list",
+        "title": "TU CHAMBA",
+        "items": ["Reporte → generativa", "Pronóstico → predictiva", "Correo → generativa", "Inventario → predictiva"]
+      }
+    },
+    {
+      "narration": "El giro: los que más crecen no eligen una. Alternan según la tarea.",
+      "beat_type": "giro",
+      "visual_type": "veo",
+      "veo": {
+        "prompt": "Cinematic macro shot of a giant glowing toggle switch flipping back and forth between a cyan side and a magenta side, sparks of light at each flip, near-black background, volumetric neon glow, dark tech aesthetic, no text, no people",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Una decide. La otra crea.",
+      "beat_type": "tesis",
+      "visual_type": "kinetic",
+      "pause_after": 0.35,
+      "kinetic": {
+        "words": [
+          {"text": "una", "serif": true},
+          {"text": "DECIDE"},
+          {"text": "la otra", "serif": true},
+          {"text": "CREA", "accent": true}
+        ],
+        "variant": "accent"
+      }
+    },
+    {
+      "narration": "Cuando dudes cuál abrir, este mapa te salva. ¿Números o ideas? Yo, números. Mañana: el combo que las fusiona.",
+      "beat_type": "cta",
+      "visual_type": "host",
+      "host_top": {"kind": "save", "title": "EL MAPA", "subtitle": "MAÑANA: EL COMBO →"}
+    }
+  ]
+}

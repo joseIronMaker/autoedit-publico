@@ -1,0 +1,103 @@
+{
+  "title": "Tu compu contra un servidor: dónde corre tu programa",
+  "slug": "curso_py20_compu_vs_servidor",
+  "tema": "qué es un servidor y la diferencia entre correr un programa en tu computadora o en uno",
+  "theme": "curso python con ia",
+  "hook_tipo": "demostracion",
+  "keyword": "servidor vs computadora",
+  "hook_headline": [
+    "CIERRAS",
+    "LA LAPTOP"
+  ],
+  "pregunta_ab": "¿Aprender en tu compu o directo en la nube?",
+  "music_prompt": "hard techno bed, dark industrial groove, 150 BPM, rolling kick, restrained under a voice, instrumental, no vocals",
+  "modo": "corto",
+  "hook_locked": true,
+  "scenes": [
+    {
+      "beat_type": "hook",
+      "visual_type": "terminal",
+      "narration": "Cierras la laptop y tu programa deja de existir. Y no es un error: estaba corriendo en TU máquina, y tu máquina se fue a dormir. Mira: levanto un servidor de prueba con Python en un renglón, le pregunto con curl y me contesta doscientos. Está vivo… mientras esta terminal esté viva.",
+      "pause_after": 0.35,
+      "terminal": {
+        "title": "http.server",
+        "lines": [
+          {
+            "text": "python3 -m http.server 8000"
+          },
+          {
+            "text": "HTTP/1.0 200 OK"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "timeout 6 python3 -m http.server 8000 & sleep 2 && curl -s -I http://localhost:8000 | head -3",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "custom",
+      "narration": "Un servidor no es una cosa mágica flotando en el cielo, cabrón: es una computadora que alguien dejó prendida todo el tiempo, con una dirección para que los demás la encuentren. Ya. Esa es toda la brujería. La diferencia con tu laptop es que no se cierra, no se duerme y tiene nombre en internet. Y la nube, para que nos entendamos, es la computadora de alguien más.",
+      "custom_anim": {
+        "description": "A la izquierda una laptop dibujada con un programa corriendo adentro; la tapa se cierra y el programa se apaga con una X roja y el texto se apagó. A la derecha una torre de computadora con una luz encendida que no se apaga, una etiqueta con una dirección tipo mi-app.com encima, y tres personitas pequeñas que le mandan flechas y reciben respuesta. Un reloj gira al lado de la torre con el texto siempre encendida. Sin cifras."
+      }
+    },
+    {
+      "beat_type": "contexto",
+      "visual_type": "terminal",
+      "narration": "Y por eso hay dos mundos. Lo que corre en tu máquina lo tienes ahí, va rápido y no lo ve nadie más que tú y tu conciencia. Lo que corre en un servidor lo ve todo el mundo a cualquier hora, pero te toca subirlo y cuidarlo. Se lo pregunto al agente en tres líneas y mira cómo lo resume.",
+      "terminal": {
+        "title": "dos mundos",
+        "lines": [
+          {
+            "text": "tu compu: rápido, privado, se apaga"
+          },
+          {
+            "text": "servidor: siempre encendido, público"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "claude 'explica en 3 lineas la diferencia entre correr un programa en mi compu y en un servidor'",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "giro",
+      "visual_type": "mascota",
+      "narration": "Mi consejo después de ver a un montón de gente atorarse justo aquí: no subas nada a un servidor hasta que el programa te sirva a TI en tu máquina. Casi todo lo que falla en la nube ya fallaba en tu laptop; nomás que ahí no lo probaste, y allá sí cobran.",
+      "mascota": {
+        "pose": "profesor",
+        "caption": "primero en tu compu · luego en la nube"
+      },
+      "foto": {
+        "archivo": "/home/jose/tiktok/branding/perrito/codex_sabio.png"
+      }
+    },
+    {
+      "beat_type": "cta",
+      "visual_type": "kinetic_video",
+      "narration": "Tu máquina para aprender, un servidor cuando alguien más lo necesite. La que viene: dónde deberían vivir los datos cuando ya no caben en un archivo. ¿Aprender en tu compu o directo en la nube? Yo digo en tu compu: la nube te cobra por cada error, y errores vas a cometer un chorro.",
+      "pause_after": 0.3,
+      "kinetic_video": {
+        "video": "/home/jose/tiktok/videos/_clips_pagados/gen_ln_frase_rompio_ia__veo_5.mp4",
+        "words": [
+          {
+            "text": "tu compu para aprender",
+            "serif": true
+          },
+          {
+            "text": "EL SERVIDOR PARA LOS DEMÁS",
+            "accent": true
+          }
+        ],
+        "variant": "dark"
+      }
+    }
+  ]
+}

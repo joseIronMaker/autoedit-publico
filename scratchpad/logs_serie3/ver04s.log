@@ -1,0 +1,42 @@
+=== ver04s_filtros_que_ya_usaste.json  →  gen_ver_filtros_que_ya_usaste  (tema ambar)
+→ guion guion de Claude (guionista)
+→ estilo generando imagen ancla de marca
+→ voz reutilizo la locución ya pagada (6 escenas)
+→ escena 1/6 animando kinetic_video
+→ escena 2/6 programando animación a medida
+→ escena 2/6 animando custom
+→ escena 3/6 animando receipt
+→ escena 4/6 ejecutando modelo real (sklearn)
+→ escena 4/6 animando código → gráfica
+→ escena 5/6 animando kinetic_video
+→ escena 6/6 generando imagen
+→ escena 6/6 animando (Ken Burns)
+→ ensamblando 6 escenas → gen_ver_filtros_que_ya_usaste.mp4
+→ audio audio continuo + SFX de transición
+→ música reutilizo la cama musical de este video
+✔ /home/jose/tiktok/videos/gen_ver_filtros_que_ya_usaste.mp4
+
+Ahora pásalo por el flujo normal para subtítulos y copys:
+  autoedit gen_ver_filtros_que_ya_usaste.mp4 --auto   (o desde la web)
+→ Transcribiendo con Whisper (small, CPU)…
+  110 palabras, 38.8s → /home/jose/tiktok/videos/gen_ver_filtros_que_ya_usaste.autoedit/transcript.json
+→ Gemini analizando la transcripción (cortes + énfasis)…
+
+Plan de edición (3 cortes, −1.1s de 38.8s):
+  ✂    2.90 →    3.14  silencio de 0.5s
+  ✂   10.74 →   11.06  silencio de 0.6s
+  ✂   17.30 →   17.80  silencio de 0.7s
+  ★ 12 palabras enfatizadas en subtítulos
+→ Renderizando gen_ver_filtros_que_ya_usaste_final.mp4: 4 tramos, 37.7s…
+✔ /home/jose/tiktok/videos/gen_ver_filtros_que_ya_usaste_final.mp4
+→ Generando copys (TikTok/IG/FB)…
+✔ /home/jose/tiktok/videos/gen_ver_filtros_que_ya_usaste.autoedit/copys.md
+
+✔ ver04_filtros_que_ya_usaste.mp4  (37.8s)
+  QC   → /home/jose/tiktok/scratchpad/qc_ver_filtros_que_ya_usaste.png
+  copy → revisar y reescribir a mano si hace falta:
+Así funciona el filtro de nitidez de tu celular por dentro.
+9 números calculan dónde cambia el brillo de tu foto al instante.
+Mañana te enseño qué pasa cuando una red neuronal toma el control.
+¿Prefieres fotos afiladas o naturales? Yo digo que el exceso arruina la piel.
+#filtrodenitidez #fotografiamovil #inteligenciaartificial #tech

@@ -1,0 +1,98 @@
+{
+  "slug": "h_el_archivo_que_le_ensena",
+  "tema": "el archivo de contexto de un harness de codigo (Claude Code, Codex): que es, por que existe y por que se escribe con reglas y no con descripciones del proyecto",
+  "title": "Le expliqué mi proyecto veinte veces. Hasta que lo escribí en un archivo.",
+  "theme": "hielo",
+  "hook_locked": true,
+  "concepto": "el archivo de contexto: un texto del proyecto que el harness le pega al modelo antes de cada sesión, para que no empiece de cero",
+  "en_una_frase": "Como el modelo no recuerda nada entre sesiones, el harness le pega un archivo tuyo arriba de todo: ahí van las reglas del proyecto, no su descripción.",
+  "quien_decide": "lo que no está en ese archivo lo decide él con lo más común que vio, así que cada regla que no escribiste es una decisión que le regalaste",
+  "que_cuesta": "repites las mismas correcciones cada sesión, y cada sesión nueva vuelve a romper lo mismo que arreglaste ayer",
+  "palanca": "cada vez que lo corrijas por segunda vez, esa corrección no va en el chat: va en el archivo, escrita como orden",
+  "pregunta_ab": "Cuando te repite un error, ¿se lo vuelves a explicar, o lo dejas escrito?",
+  "scenes": [
+    {
+      "beat_type": "cold_open",
+      "visual_type": "terminal",
+      "narration": "Le corregí lo mismo en tres sesiones seguidas. No es que no me hiciera caso: es que cada sesión empieza sin acordarse de nada.",
+      "terminal": {
+        "title": "lunes, martes, miércoles",
+        "lines": [
+          {
+            "prompt": true,
+            "text": "lunes:     los mensajes van en español"
+          },
+          {
+            "prompt": true,
+            "text": "martes:    los mensajes van en español"
+          },
+          {
+            "prompt": true,
+            "text": "miércoles: los mensajes van en español"
+          },
+          {
+            "text": "misma corrección. tres veces.",
+            "accent": true
+          }
+        ]
+      }
+    },
+    {
+      "beat_type": "definicion",
+      "visual_type": "image",
+      "narration": "Porque un modelo no guarda nada de una sesión a la siguiente. Por eso los harneses inventaron un archivo: un texto tuyo, dentro del proyecto, que el programa le pega arriba de todo antes de que tú escribas la primera palabra. En Claude Code se llama CLAUDE punto eme de. En Codex, AGENTS punto eme de.",
+      "image_prompts": [
+        "A single sheet of house rules taped inside a workshop door, warm work light. Documentary photography, muted palette, no readable text.",
+        "Extreme macro of the tape corner peeling on that sheet, raking light. Documentary photography, shallow depth of field.",
+        "A dim workshop seen from the doorway with that sheet in the foreground, out of focus tools behind. Documentary photography."
+      ]
+    },
+    {
+      "beat_type": "mecanismo",
+      "visual_type": "image",
+      "narration": "Y por eso el orden importa tanto. Antes de tu primer mensaje el harness abre ese archivo, lo lee, lo pega arriba y luego pega lo que tú escribiste. El modelo lee todo junto y de ahí decide qué hacer. No hay magia: lo que está en ese archivo pesa porque llegó primero y porque llega siempre.",
+      "image_prompts": [
+        "A stack of paper with one page deliberately placed on top, warm lamp light, dark desk. Documentary photography, muted palette, no readable text.",
+        "A hand squaring that top page against the stack, extreme macro. Documentary photography, shallow depth of field."
+      ]
+    },
+    {
+      "beat_type": "el_error_comun",
+      "visual_type": "image",
+      "narration": "Ahora, el error que yo cometí un año entero: llenarlo describiendo el proyecto. Qué carpeta hace qué, qué librería uso. Eso no cambia casi nada, porque el modelo lo puede ver solo abriendo el código. Lo que sí cambia todo son las REGLAS: lo que no debe hacer, lo que ya se intentó y falló, y por qué. Eso no lo puede adivinar de ningún lado.",
+      "image_prompts": [
+        "A hand-lettered sign of prohibitions on a factory wall, warm dim light. Documentary photography, muted palette, no readable text.",
+        "A second smaller sign below it, newer, less faded. Documentary photography, shallow depth of field."
+      ]
+    },
+    {
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "narration": "No le describas el proyecto. Escríbele las reglas.",
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "NO LO DESCRIBAS"
+          },
+          {
+            "text": "ESCRIBE"
+          },
+          {
+            "text": "LAS REGLAS"
+          }
+        ],
+        "variant": "dark",
+        "video": "videos/gen_ln_hacerlo_gigante.assets/veo_0.mp4"
+      }
+    },
+    {
+      "beat_type": "cierre",
+      "visual_type": "image",
+      "narration": "Entonces mi regla, y te la puedes robar hoy aunque no programes: la primera vez que lo corrijo, lo corrijo en el chat. La segunda vez que tengo que corregir lo mismo, ya no lo escribo en el chat: lo escribo en el archivo, como orden, con el motivo. Y esa corrección no vuelve. Cuando te repite un error, ¿se lo vuelves a explicar, o lo dejas escrito?",
+      "image_prompts": [
+        "A pen resting on an open notebook with a short handwritten list, warm evening lamp. Documentary photography, muted palette, no readable words.",
+        "A hand adding one more line to that list, seen over the shoulder at night. Documentary photography, shallow depth of field."
+      ]
+    }
+  ]
+}

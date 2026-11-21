@@ -1,0 +1,18 @@
+Un modelo como ChatGPT tiene miles de millones de perillas.
+Cada una cambia un poquito lo que responde. ¿Cómo sabe cuál mover?
+Probar combinaciones no acabaría jamás.
+Mejor imagina esto. Cada combinación de perillas es un lugar en un terreno.
+Donde el error es grande, hay montaña. Donde es chico, hay valle.
+Y tú estás parado ahí, de noche, en medio de la niebla.
+No ves el valle. Nadie lo ve. Ni la máquina, ni quienes la construyeron.
+Pero tus pies sienten algo: hacia dónde se inclina el suelo.
+A esa inclinación le llamamos gradiente.
+Y lo mejor: las matemáticas la calculan para todas las perillas al mismo tiempo, de un solo jalón.
+Das un paso hacia abajo. Vuelves a sentir el suelo. Otro paso.
+Si tus pasos son muy cortos, nunca llegas.
+Si son muy largos, te brincas el valle y acabas más arriba que antes.
+Ese tamaño se llama tasa de aprendizaje, y elegirlo sigue teniendo algo de arte.
+A todo esto le llamamos descenso de gradiente. Así se entrenan casi todas las inteligencias artificiales que usas.
+Y ninguna ha visto nunca el mapa.
+Ninguna sabe a dónde va.
+Solo sabe dónde es abajo.

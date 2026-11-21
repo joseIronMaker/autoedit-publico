@@ -1,0 +1,17 @@
+Abre el menú del + en ChatGPT. Hay cinco cosas ahí. Solo una es una herramienta.
+
+Subir una foto y subir un archivo los haces tú. GPT-5 es quién escribe. Piénsalo más es cuánto se tarda. La única herramienta es Búsqueda en Internet: lo único que el modelo puede PEDIR que se ejecute afuera de él.
+
+Y una herramienta no se instala. Se escribe.
+
+Antes de que tú escribas nada, el programa le pega arriba una lista: cómo se llama cada herramienta, para qué sirve y qué datos necesita. El modelo lee esa lista, compara tu encargo contra las descripciones, decide cuál sirve, arma los datos que le faltan y escribe el pedido. Nada más escribe.
+
+Se ve en pantalla si te fijas: yo le pedí "busca quién va primero en la tabla de la Liga MX", y la línea gris que salió no eran mis palabras. Era otra frase, escrita por él, con la fecha de hoy metida adentro.
+
+Esa lista no la escribiste tú. La escribió quien hizo el producto. Lo que no está en la lista no existe para el modelo, aunque exista en el mundo y aunque se lo pidas con todas sus letras.
+
+No aprieta botones. Lee una lista.
+
+Lo que yo hago antes de encargarle algo serio: le pregunto qué herramientas tiene disponibles. Si contesta con una lista corta, esa lista es su mundo entero.
+
+Cuando algo no te lo hace, ¿piensas que la IA es limitada, o que le faltó la herramienta?

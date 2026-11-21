@@ -1,0 +1,1 @@
+a12_trampa {"cortes":[],"tapa_la_voz":[],"limpio":true}

@@ -1,0 +1,9 @@
+Yo prefiero que escriba directo, pero entendiendo qué es un harness de IA.
+Un chat solo te da texto; el harness entra a tu terminal y modifica tus archivos reales.
+La clave no es si sabe programar, sino qué permisos tiene en tu computadora.
+
+Para probarlo solo mira tu carpeta tras pedirle algo: si no cambió nada, era un chat.
+
+¿Copiar o directo? Yo digo directo.
+
+#harness #agentesdeia #programacion #ia

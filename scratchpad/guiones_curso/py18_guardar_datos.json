@@ -1,0 +1,100 @@
+{
+  "title": "Guardar datos: archivos y JSON",
+  "slug": "curso_py18_guardar_datos",
+  "tema": "guardar y leer datos en un archivo JSON desde Python",
+  "theme": "curso python con ia",
+  "hook_tipo": "demostracion",
+  "keyword": "guardar datos json python",
+  "hook_headline": [
+    "CIERRAS",
+    "Y SE VA"
+  ],
+  "pregunta_ab": "¿JSON o base de datos para tu primera app?",
+  "music_prompt": "hard techno bed, dark industrial groove, 150 BPM, rolling kick, restrained under a voice, instrumental, no vocals",
+  "modo": "corto",
+  "hook_locked": true,
+  "scenes": [
+    {
+      "beat_type": "hook",
+      "visual_type": "terminal",
+      "narration": "Tu app funciona… hasta que la cierras. Todo lo que escribiste vivía en la memoria, y la memoria se borra al cerrar, sin despedirse siquiera. Para que sobreviva hay que escribirlo en un archivo. Le pido al agente que memoria punto pi guarde el marcador en datos punto json, y mira lo que le agrega.",
+      "pause_after": 0.35,
+      "terminal": {
+        "title": "memoria.py",
+        "lines": [
+          {
+            "text": "json.dump(marcador, archivo)"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "claude 'haz que memoria.py guarde el marcador en datos.json'",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "custom",
+      "narration": "Podrías guardarlo como texto suelto, sí. Y luego te toca a TI separar los campos y volverlos a armar al leer, como armar un mueble sin instructivo y con tornillos de sobra. JSON hace eso solo: guarda listas y diccionarios tal cual, con sus llaves y sus corchetes, y al leer te los devuelve armaditos. Y es el mismo formato con el que las páginas web se hablan entre ellas todo el día.",
+      "custom_anim": {
+        "description": "A la izquierda una ficha de diccionario con dos renglones: jugador: Ana y puntos: 15. Una flecha etiquetada json.dump la lleva hacia un archivo dibujado a la derecha con el nombre datos.json, donde el contenido se reescribe con llaves y comillas como texto. Luego una flecha de vuelta etiquetada json.load convierte el texto otra vez en la ficha armada, con una palomita. Sin más cifras que 15."
+      }
+    },
+    {
+      "beat_type": "contexto",
+      "visual_type": "terminal",
+      "narration": "Mira el ciclo completo: guardo un diccionario con el marcador. Cierro el programa. Lo abro otra vez en modo leer… y ahí sigue. Y míralo con cat: es texto plano, lo puedes abrir con el bloc de notas. Nada de magia, cabrón: un archivo en tu carpeta, como el recibo de la luz.",
+      "terminal": {
+        "title": "python3 memoria.py",
+        "lines": [
+          {
+            "text": "guardado en datos.json"
+          },
+          {
+            "text": "leído: {\"jugador\": \"Ana\", \"puntos\": 15}"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "python3 memoria.py && echo && echo '$ python3 memoria.py --leer' && python3 memoria.py --leer && echo && echo '$ cat datos.json' && cat datos.json",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "giro",
+      "visual_type": "mascota",
+      "narration": "Dos trampas. La primera: si el archivo todavía no existe, tu programa se cae la PRIMERA vez que alguien lo abre, o sea justo cuando se lo estás presumiendo a alguien. Hay que preguntar si existe antes de leer. La segunda: si guardas mientras el usuario sigue escribiendo, guardas a medias, y un archivo a medias miente peor que uno vacío.",
+      "mascota": {
+        "pose": "error",
+        "caption": "¿existe? · guarda completo"
+      },
+      "foto": {
+        "archivo": "/home/jose/tiktok/branding/perrito/codex_error.png"
+      }
+    },
+    {
+      "beat_type": "cta",
+      "visual_type": "kinetic_video",
+      "narration": "Guardar, cerrar, abrir, y ahí sigue. Con eso tu app ya tiene memoria. La que viene: la convertimos en un ejecutable para regalarla. ¿JSON o base de datos para tu primera app? Yo digo JSON hasta los mil registros; antes de eso, una base de datos es traje de gala para ir por el pan.",
+      "pause_after": 0.3,
+      "kinetic_video": {
+        "video": "/home/jose/tiktok/videos/_clips_pagados/gen_ln_neurona_con_memoria__veo_4.mp4",
+        "words": [
+          {
+            "text": "cierras",
+            "serif": true
+          },
+          {
+            "text": "Y SIGUE AHÍ",
+            "accent": true
+          }
+        ],
+        "variant": "dark"
+      }
+    }
+  ]
+}

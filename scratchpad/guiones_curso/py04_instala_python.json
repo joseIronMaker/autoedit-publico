@@ -1,0 +1,93 @@
+{
+ "title": "Instala Python, VS Code y abre tu terminal",
+ "slug": "curso_py04_instala_python",
+ "tema": "instalar Python, un editor y abrir la terminal para empezar a programar",
+ "theme": "curso python con ia",
+ "hook_tipo": "demostracion",
+ "keyword": "instalar python",
+ "hook_headline": [
+  "TRES",
+  "GRATIS"
+ ],
+ "pregunta_ab": "¿Windows o Mac para aprender?",
+ "music_prompt": "hard techno bed, dark industrial groove, 150 BPM, rolling kick, restrained under a voice, instrumental, no vocals",
+ "modo": "corto",
+ "hook_locked": true,
+ "scenes": [
+  {
+   "beat_type": "hook",
+   "visual_type": "diagram",
+   "pause_after": 0.35,
+   "narration": "Para arrancar necesitas tres cosas, banda, y las tres son gratis, ni un peso: Python, un editor, y la terminal, que ya la traes instalada aunque nunca la hayas abierto, cabrón.",
+   "diagram": {
+    "type": "list",
+    "title": "Tres cosas, gratis",
+    "items": [
+     "Python",
+     "Un editor: VS Code",
+     "La terminal: ya la traes"
+    ]
+   }
+  },
+  {
+   "beat_type": "proof",
+   "visual_type": "custom",
+   "narration": "Python lo bajas de python punto org, barra downloads. Y ojo con esto en Windows: la casilla que dice Add Python to PATH no es opcional. Si no la marcas, la terminal no va a saber ni dónde quedó Python y vas a pasar media hora mentándole la madre a la compu.",
+   "custom_anim": {
+    "description": "Un flujo de instalación de cuatro pasos que se van encendiendo de arriba abajo unidos por flechas: 1) una caja con el texto python.org/downloads, 2) un botón grande que dice Descargar, 3) una ventana de instalador con una casilla y el texto Add Python to PATH: la casilla parpadea, se marca con una palomita y se queda encendida, es el paso importante, 4) un botón que dice Instalar. Al final una palomita verde grande. Sin cifras."
+   }
+  },
+  {
+   "beat_type": "contexto",
+   "visual_type": "terminal",
+   "narration": "El editor es Visual Studio Code, también gratis. Y la terminal es esa ventana negra que da miedo: le escribes una orden y te contesta. Mira, le pido al agente un archivo que diga listo, lo crea, lo corre, y ahí está: listo. Así de simple, sin drama.",
+   "terminal": {
+    "title": "tu primera orden",
+    "lines": [
+     {
+      "prompt": true,
+      "text": "python3 prueba.py"
+     },
+     {
+      "text": "listo",
+      "accent": true
+     }
+    ]
+   },
+   "captura": {
+    "cmd": "claude 'crea prueba.py con un print que diga listo y ejecutalo'",
+    "cols": 46,
+    "filas": 30,
+    "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+   }
+  },
+  {
+   "beat_type": "giro",
+   "visual_type": "custom",
+   "narration": "Y si te sale command not found, no se rompió nada, tranquilo: es que Windows busca a Python en una lista que se llama PATH y no lo encuentra. Se arregla en un minuto: reinstalas con la casilla marcada, Python entra a la lista, y la orden pasa.",
+   "custom_anim": {
+    "description": "Arriba una línea de terminal donde se teclea la palabra python. Debajo una lista vertical etiquetada PATH con tres cajas: Windows, Archivos de programa, Usuario. Un puntero recorre las cajas una por una buscando Python y no lo encuentra; entonces en la terminal aparece en rojo el texto command not found. Después ese texto rojo SE BORRA POR COMPLETO (la línea queda vacía) y solo entonces una caja nueva con el texto Python entra deslizándose a la lista, el puntero la encuentra, y en la terminal, en la misma línea ya vacía, aparece una palomita verde grande. Nunca dos textos encimados en la misma línea. Sin cifras."
+   }
+  },
+  {
+   "beat_type": "cta",
+   "visual_type": "kinetic_video",
+   "pause_after": 0.3,
+   "narration": "Python, editor, terminal. Con eso ya tienes taller, cabrón. En la que sigue conectamos las dos herramientas que van a escribir contigo. ¿Windows o Mac para aprender? Yo digo que el que ya tengas.",
+   "kinetic_video": {
+    "video": "/home/jose/tiktok/videos/_clips_pagados/gen_ver_la_ventanita__veo_4.mp4",
+    "words": [
+     {
+      "text": "python · editor",
+      "serif": true
+     },
+     {
+      "text": "TERMINAL",
+      "accent": true
+     }
+    ],
+    "variant": "dark"
+   }
+  }
+ ]
+}

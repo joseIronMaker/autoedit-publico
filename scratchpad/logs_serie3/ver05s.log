@@ -1,0 +1,44 @@
+=== ver05s_tirar_a_proposito.json  →  gen_ver_tirar_a_proposito  (tema selva)
+→ guion guion de Claude (guionista)
+→ estilo generando imagen ancla de marca
+→ voz reutilizo la locución ya pagada (6 escenas)
+→ escena 1/6 animando kinetic_video
+→ escena 2/6 programando animación a medida
+→ escena 2/6 animando custom
+→ escena 3/6 ejecutando modelo real (sklearn)
+→ escena 3/6 animando código → gráfica
+→ escena 4/6 programando animación a medida
+→ escena 4/6 animando custom
+→ escena 5/6 animando kinetic_video
+→ escena 6/6 generando imagen
+→ escena 6/6 animando (Ken Burns)
+→ ensamblando 6 escenas → gen_ver_tirar_a_proposito.mp4
+→ audio audio continuo + SFX de transición
+→ música reutilizo la cama musical de este video
+✔ /home/jose/tiktok/videos/gen_ver_tirar_a_proposito.mp4
+
+Ahora pásalo por el flujo normal para subtítulos y copys:
+  autoedit gen_ver_tirar_a_proposito.mp4 --auto   (o desde la web)
+→ Transcribiendo con Whisper (small, CPU)…
+  118 palabras, 46.1s → /home/jose/tiktok/videos/gen_ver_tirar_a_proposito.autoedit/transcript.json
+→ Gemini analizando la transcripción (cortes + énfasis)…
+  ⚠ descartado (cold-open intocable): frase confusa o error de locución: “por tirar detalle.”
+
+Plan de edición (7 cortes, −2.0s de 46.1s):
+  ✂    3.78 →    4.02  silencio de 0.5s
+  ✂   13.84 →   14.20  silencio de 0.6s
+  ✂   24.64 →   24.92  silencio de 0.5s
+  ✂   35.22 →   35.48  silencio de 0.5s
+  ✂   38.48 →   38.84  silencio de 0.6s
+  ✂   40.94 →   41.20  silencio de 0.5s
+  ✂   43.66 →   43.94  silencio de 0.5s
+  ★ 14 palabras enfatizadas en subtítulos
+→ Renderizando gen_ver_tirar_a_proposito_final.mp4: 8 tramos, 44.1s…
+✔ /home/jose/tiktok/videos/gen_ver_tirar_a_proposito_final.mp4
+→ Generando copys (TikTok/IG/FB)…
+✔ /home/jose/tiktok/videos/gen_ver_tirar_a_proposito.autoedit/copys.md
+
+✔ ver05_tirar_a_proposito.mp4  (44.2s)
+  QC   → /home/jose/tiktok/scratchpad/qc_ver_tirar_a_proposito.png
+  copy → revisar y reescribir a mano si hace falta:
+Por esto el reconocimiento facial de tu cámara te reconoce aunque te muevas. Apaga los números negativos y rescata solo el valor más alto de cada cuadrito de 2x2 píxeles. Mañana vemos quién escribe la matriz, pero hoy: ¿sorprendente o lógico? Yo digo lógico. #camara #pixeles #numeros #ia #tecnologia

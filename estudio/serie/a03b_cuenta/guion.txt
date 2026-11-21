@@ -1,0 +1,20 @@
+Cada vuelta de tu agente se paga. ¿Pero qué te cobran, exactamente?
+No minutos. No preguntas. Tokens: los pedacitos de texto en que la máquina corta todo.
+Y hay tres precios distintos.
+El primero, lo que lee. Tokens de entrada.
+Tu mensaje, sus instrucciones, todo lo que ya platicaron.
+El segundo, lo que escribe. Tokens de salida.
+Y escribir cuesta más. En los modelos de Anthropic, cinco veces más.
+Ahora mira lo que pasa en el bucle.
+Vuelta uno: lee tu petición. Vuelta dos: la relee, más lo que encontró. Vuelta diez: relee todo, desde el principio.
+En un agente, casi siempre, lo que más pagas no es lo que escribe. Es lo que relee.
+Para eso existe el tercer precio: la caché.
+Si el principio es idéntico al de la vuelta anterior, no lo procesa otra vez. Lo tiene guardado, y te lo cobra a una décima parte, o menos.
+Pero tiene trampa.
+Tiene que ser idéntico, desde el primer token. Cambias algo al principio, y se pierde el descuento.
+Y se enfría. Si pasan unos minutos sin usarse, se borra.
+Si usas una suscripción, no ves esta cuenta. Pero alguien la paga, y de ahí salen tus límites.
+Yo, cuando una conversación se alarga demasiado, abro una nueva con un resumen.
+Porque en una IA, lo caro casi nunca es la pregunta.
+Es todo lo que tiene que releer...
+para contestarla.

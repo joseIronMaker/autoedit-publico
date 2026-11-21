@@ -1,0 +1,5 @@
+Esta pieza mecánica no la dibujó un humano. Un cigüeñal completo, con sus cotas y listo para tornear o imprimir, lo modeló una inteligencia artificial sola. Y no cobró horas extra.
+Y mira cómo lo hizo, porque aquí está el detalle: no te escribe instrucciones para que TÚ le piques. Entra a FreeCAD y ejecuta los comandos ella misma. Abre el archivo, crea el cuerpo, aplica las cotas.
+Le pasé el plano del cigüeñal con sus secciones A-A y B-B. Me preguntó qué nivel de detalle quería y qué entregable necesitaba —más de lo que preguntan algunos proveedores— y salió un archivo paramétrico listo para imprimir en tres D, tornear o mandar a CNC.
+El puente se llama MCP, y es lo que convierte a la IA de asistente que opina en operario que ejecuta. La diferencia entre el que te dice cómo se hace y el que lo hace.
+Dibujar en CAD era una carrera. Hoy es un plano, una orden y una tarde. Y esto es lo más torpe que va a estar la inteligencia artificial en tu vida.

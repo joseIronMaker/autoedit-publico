@@ -1,0 +1,99 @@
+{
+  "tema": "Atención: la idea que cambió todo en la IA",
+  "modo": "corto",
+  "title": "Atención: la idea que cambió todo en la IA",
+  "slug": "ln_atencion",
+  "hook_tipo": "secreto",
+  "theme": "cyber",
+  "image_style": "high-contrast cinematic photograph of a single spotlight beam picking one object out of a crowded dark room, electric blue and magenta haze, volumetric light, dramatic and premium, vertical 9:16 composition, lower third kept simple, no text, no letters, no words, no watermark",
+  "keyword": "mecanismo de atención transformers",
+  "hook_headline": [
+    "DEJÓ",
+    "DE LEER"
+  ],
+  "pregunta_ab": "¿Leer en orden o mirar todo de golpe?",
+  "music_prompt": "epic hybrid trailer instrumental, wide synth swells and a single hit that opens into space, awe and revelation, no vocals, 110 BPM",
+  "scenes": [
+    {
+      "narration": "La IA dejó de leer en orden. Y ahí empezó todo.",
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.45,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "dejó de leer en orden",
+            "serif": true
+          },
+          {
+            "text": "Y CAMBIÓ TODO",
+            "accent": true
+          }
+        ],
+        "variant": "dark",
+        "veo_prompt": "Cinematic shot: hundreds of small glowing blue fragments float frozen in a dark void, then a single sharp beam of white light sweeps through and three of them ignite bright magenta while the rest dim, volumetric haze, shallow depth of field, premium tech aesthetic, no text, no people",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Cuando ves esta foto no la recorres pixel por pixel: de un golpe ya sabes qué es lo importante. Eso es atención.",
+      "beat_type": "hook",
+      "visual_type": "host",
+      "host_top": {
+        "kind": "headline",
+        "lines": [
+          "DEJÓ",
+          "DE LEER"
+        ]
+      }
+    },
+    {
+      "narration": "Entonces le dieron la frase completa de una sola vez, y en lugar de arrastrar memoria, el modelo aprende dos cosas: dónde mirar, y qué llevarse de ahí.",
+      "beat_type": "proof",
+      "visual_type": "custom",
+      "custom_anim": {
+        "description": "PROHIBIDO usar tarjetas, listas, viñetas o cajas con texto: esto se DIBUJA. Arriba, una frase entera escrita en palabras grandes y separadas, todas visibles al mismo tiempo. Un haz de luz cónico barre la frase de un lado a otro; las palabras que toca se encienden con distinta intensidad y las demás quedan apagadas. Desde las dos o tres palabras más encendidas bajan hilos luminosos que convergen en un punto grueso abajo al centro, que late al recibirlos. El haz no recorre en orden: salta directo a las que importan. Una etiqueta grande junto al haz: 'dónde mirar', y otra junto al punto de abajo: 'qué me llevo'. Sin números, sin porcentajes."
+      }
+    },
+    {
+      "narration": "Y como ya no depende de la palabra anterior, todas se procesan al mismo tiempo. Ahí murió el cuello de botella y ahí despertó la tarjeta gráfica.",
+      "beat_type": "giro",
+      "visual_type": "custom",
+      "custom_anim": {
+        "description": "PROHIBIDO cajas con texto adentro, tarjetas o filas de rectangulos etiquetados. El TITULO va en DOS palabras como maximo y tiene que caber entero entre x=W*0.08 y x=W*0.92: si no cabe, acortalo, jamas lo dejes salirse.\nDos carriles horizontales, uno arriba y otro abajo, cada uno con cinco puntos luminosos GRANDES (sin texto dentro). Arriba: un solo pulso recorre los puntos UNO POR UNO, encendiendo el siguiente solo cuando el anterior se apago; avanza lento y se nota que falta mucho. Abajo: los cinco puntos se encienden TODOS DE GOLPE en el primer instante y se quedan latiendo juntos. Debajo de cada carril, una barra de progreso que avanza: la de arriba apenas se mueve, la de abajo se llena de inmediato y su carril queda brillando mientras el de arriba sigue a medias. Una etiqueta grande a la izquierda de cada carril: una por una arriba, todas a la vez abajo. Sin numeros.",
+        "code": "def draw(L, D, t, W, H):\n    izq, der = W * 0.08, W * 0.92\n    ft, tl, tlh = fit(D, \"UNA POR UNA, O TODAS\", int(W * 0.84), int(H * 0.07),\n                      int(H * 0.040), 34, True)\n    for k, ln in enumerate(tl):\n        L.text((W * 0.5 - D.textlength(ln, font=ft) / 2, H * 0.085 + k * tlh),\n               ln, font=ft, fill=TEXT)\n\n    n = 5\n    paso = (der - izq) / (n - 1)\n    rad = int(W * 0.048)\n    fe = font(int(H * 0.030), True)\n\n    def carril(y, etiqueta, color, encendido, avance):\n        # etiqueta ARRIBA del carril, centrada: nunca debajo ni al lado de los puntos\n        L.text((W * 0.5 - D.textlength(etiqueta, font=fe) / 2, y - rad - H * 0.055),\n               etiqueta, font=fe, fill=(*color, 240))\n        L.line([(izq, y), (der, y)], fill=(*MUTED, 90), width=5)\n        for i in range(n):\n            x = izq + paso * i\n            on = encendido(i)\n            if on > 0:\n                L.ellipse([x - rad - 14, y - rad - 14, x + rad + 14, y + rad + 14],\n                          fill=(*color, int(48 * on)))\n            L.ellipse([x - rad, y - rad, x + rad, y + rad],\n                      fill=(*CARD, 255), outline=(*color, int(70 + 185 * on)),\n                      width=int(5 + 5 * on))\n        # barra de progreso debajo, del mismo ancho que el carril\n        by = y + rad + H * 0.032\n        L.rounded_rectangle([izq, by, der, by + 18], radius=9, fill=(*MUTED, 70))\n        if avance > 0:\n            L.rounded_rectangle([izq, by, izq + (der - izq) * avance, by + 18],\n                                radius=9, fill=(*color, 255))\n\n    # arriba: un pulso que avanza de uno en uno (lento)\n    y1 = H * 0.265\n    p1 = smooth(t, 0.4, 6.2)\n    pos = p1 * (n - 1)\n    carril(y1, \"UNA POR UNA\", ACCENT,\n           lambda i: max(0.0, 1 - abs(i - pos) * 1.4), p1)\n\n    # abajo: todas de golpe y se quedan latiendo\n    y2 = H * 0.555\n    golpe = smooth(t, 1.2, 0.35)\n    late = 0.75 + 0.25 * math.sin(t * 3.2)\n    carril(y2, \"TODAS A LA VEZ\", ACCENT2,\n           lambda i: golpe * late, golpe)\n"
+      }
+    },
+    {
+      "narration": "No es memoria. Es saber dónde mirar.",
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.35,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "no es memoria",
+            "serif": true
+          },
+          {
+            "text": "ES SABER DÓNDE MIRAR",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "a wide beam of light sweeping across a dark field of scattered dim objects and locking onto just three of them, which flare bright while everything else stays dark, cinematic",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "¿Y cómo decide dónde mirar? Hace una búsqueda dentro de tu propia frase. Mañana te enseño cómo.",
+      "beat_type": "cta",
+      "visual_type": "host",
+      "host_top": {
+        "kind": "save",
+        "title": "SERIE: CÓMO LA IA LEE",
+        "subtitle": "SIGUIENTE: LA BÚSQUEDA INTERNA →"
+      }
+    }
+  ],
+  "hook_locked": true
+}

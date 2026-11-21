@@ -1,0 +1,13 @@
+Si ibas a pagar un ajuste fino para meterle tus datos a un modelo, párale. OpenAI ya está cerrando esa plataforma: en su propia documentación dice que no acepta usuarios nuevos, y la sección ya vive bajo "Legacy".
+
+Y ahí mismo está lo que casi nadie leyó. Sus docs dicen para qué sirve el fine-tuning: clasificar, traducir con matiz, generar en un formato específico y corregir fallas de obediencia. Ninguna de esas cuatro dice meterle tu información.
+
+Porque el ajuste fino no guarda datos en ningún lado: mueve los pesos del modelo. Es afinar un piano —y lo digo como metáfora—: cambia cómo suena, no cambia la partitura. La partitura se la pones enfrente cada vez que tocas.
+
+La regla que te ahorra el proyecto, antes de gastar un peso: pregúntate qué le falta. ¿Conocimiento o comportamiento? Si le falta conocimiento, eso se le pasa en el momento de preguntar. Si le falta comportamiento, se le enseña con ejemplos.
+
+Mi postura, y me ha ahorrado meses: casi siempre lo que falta es conocimiento, y eso se resuelve pasándole el documento, no reentrenando nada.
+
+El ajuste fino cambia cómo se comporta. No cambia lo que sabe.
+
+Lo que te falla, ¿es falta de conocimiento o de comportamiento?

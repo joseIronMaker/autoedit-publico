@@ -1,0 +1,124 @@
+{
+  "tema": "Una frase de 4 palabras que rompió a la IA durante 25 años",
+  "modo": "corto",
+  "title": "Una frase de 4 palabras que rompió a la IA durante 25 años",
+  "slug": "ln_frase_rompio_ia",
+  "hook_tipo": "contraria",
+  "keyword": "cómo entiende el texto la inteligencia artificial",
+  "hook_headline": [
+    "25 AÑOS",
+    "SIN LEERLA"
+  ],
+  "pregunta_ab": "¿La IA entiende o solo predice?",
+  "music_prompt": "dark cinematic electronic instrumental, tense minimal pulse that opens into a wide rising synth, sense of a locked door finally opening, tech, no vocals, 118 BPM",
+  "scenes": [
+    {
+      "narration": "Esta frase rompió a la inteligencia artificial durante veinticinco años.",
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.45,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "está increíble…",
+            "serif": true
+          },
+          {
+            "text": "PARA DORMIRSE",
+            "accent": true
+          }
+        ],
+        "variant": "dark",
+        "veo_prompt": "Cinematic shot: a smooth glowing neon ribbon of light travels forward through a near-black void, then slams into an invisible wall and shatters into thousands of frozen cyan and magenta shards hanging in the air, volumetric glow, shallow depth of field, dark tech aesthetic, no text, no people",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Un elogio y una demolición en cuatro palabras. Ninguna máquina la entendía, y yo llevo años trabajando con ellas.",
+      "beat_type": "hook",
+      "visual_type": "host",
+      "host_top": {
+        "kind": "headline",
+        "lines": [
+          "25 AÑOS",
+          "SIN LEERLA"
+        ]
+      }
+    },
+    {
+      "narration": "En el año dos mil se contaban palabras: las buenas suman, las malas restan. Increíble suma uno y la frase sale positiva.",
+      "beat_type": "proof",
+      "visual_type": "ml_demo",
+      "ml_demo": {
+        "code": "palabras = ['está', 'increíble', 'para', 'dormirse']\nbuenas = {'increíble', 'genial', 'excelente', 'recomiendo'}\nmalas = {'horrible', 'pésimo', 'aburrido', 'fatal'}\npuntos = [1 if p in buenas else (-1 if p in malas else 0) for p in palabras]\ntotal = sum(puntos)\nfig, ax = plt.subplots(figsize=(7, 5.5))\ncols = [GREEN if p > 0 else (RED if p < 0 else '#3a3a4a') for p in puntos]\nax.bar(palabras, puntos, color=cols, width=0.55)\nax.axhline(0, color=TXT, lw=2)\nax.set_ylim(-1.5, 1.9)\nax.set_yticks([])\nax.tick_params(axis='x', labelsize=21)\nax.set_title('diccionario del año 2000')\nax.text(1.5, 1.42, 'total %+d  ->  POSITIVO' % total, ha='center', color=GREEN, fontsize=25, fontweight='bold')\nax.text(1.5, -1.15, 'y en realidad era una burla', ha='center', color=RED, fontsize=22, fontweight='bold')",
+        "display_code": [
+          "buenas = {'increíble', 'genial'}",
+          "puntos = [+1, 0, 0, 0]",
+          "total = +1  ->  POSITIVO  (mal)"
+        ],
+        "caption": "diccionario2000.py"
+      }
+    },
+    {
+      "narration": "Después vinieron tres saltos: las redes con memoria, la atención que mira la frase completa, y la escala brutal.",
+      "beat_type": "proof",
+      "visual_type": "showcase",
+      "showcase": {
+        "items": [
+          {
+            "label": "2012 · MEMORIA",
+            "image_prompt": "a chain of glowing neon spheres connected in a line, a single bright pulse of light being passed from one sphere to the next leaving a light trail behind it, floating in a dark void"
+          },
+          {
+            "label": "2017 · ATENCIÓN",
+            "image_prompt": "a wide beam of cyan light sweeping across a cloud of scattered floating glass shards and locking onto just three of them, which glow hot magenta while the rest stay dark, dark void"
+          },
+          {
+            "label": "2020 · ESCALA",
+            "image_prompt": "a colossal glowing sphere built from millions of tiny points of neon light, dwarfing one single tiny glowing dot beside it for scale, dark void"
+          }
+        ]
+      }
+    },
+    {
+      "narration": "Y el patrón nunca cambió: menos reglas escritas a mano, más escala.",
+      "beat_type": "giro",
+      "visual_type": "custom",
+      "custom_anim": {
+        "description": "Dos barras horizontales GRANDES, una encima de otra, que ocupan casi todo el ancho. La de arriba dice 'REGLAS A MANO' y se va ENCOGIENDO hasta quedar mínima. La de abajo dice 'ESCALA' y crece hasta llenar el ancho. Las dos se mueven al mismo tiempo. PROHIBIDO escribir números, porcentajes o multiplicadores: el tamaño de las barras es toda la comparación. Un título corto arriba. Solo esos dos elementos, enormes y separados; nada más en pantalla."
+      }
+    },
+    {
+      "narration": "No aprendió reglas. Aprendió escala.",
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.35,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "no aprendió reglas",
+            "serif": true
+          },
+          {
+            "text": "APRENDIÓ ESCALA",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "an immense dark void slowly filling with countless tiny points of light that keep multiplying and spreading outward until they overwhelm the frame, cinematic, slow push in, deep blacks",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Hoy cualquier modelo la lee bien. Mañana: por qué una red normal no puede leer.",
+      "beat_type": "cta",
+      "visual_type": "host",
+      "host_top": {
+        "kind": "save",
+        "title": "LA SERIE EMPIEZA AQUÍ",
+        "subtitle": "SIGUIENTE: POR QUÉ NO PUEDE LEER →"
+      }
+    }
+  ],
+  "theme": "neon",
+  "hook_locked": true
+}

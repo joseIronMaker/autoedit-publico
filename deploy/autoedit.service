@@ -1,0 +1,20 @@
+# Servicio systemd para autoedit-web (servidor + agente diario de temas).
+# Instalación (una vez, requiere sudo):
+#   sudo cp deploy/autoedit.service /etc/systemd/system/
+#   sudo systemctl daemon-reload
+#   sudo systemctl enable --now autoedit
+# Ver logs:  journalctl -u autoedit -f
+[Unit]
+Description=autoedit — estudio de video del canal IA con José
+After=network.target
+
+[Service]
+Type=simple
+User=jose
+WorkingDirectory=/home/jose/tiktok
+ExecStart=/home/jose/tiktok/.venv/bin/autoedit-web --port 8765
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

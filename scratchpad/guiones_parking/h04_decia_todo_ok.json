@@ -1,0 +1,96 @@
+{
+  "slug": "ha_decia_todo_ok",
+  "tema": "mi propio validador imprimía TODO OK sin haber revisado un solo archivo: la falla silenciosa del código que escribe un agente",
+  "title": "Decía TODO OK. No había revisado ni un archivo.",
+  "theme": "hielo",
+  "hook_locked": true,
+  "quien_decide": "el agente decide qué hacer cuando algo le falla dentro del código que te escribió, y casi siempre decide seguir de largo",
+  "que_cuesta": "das por bueno lo que nunca se revisó: publicas, entregas o mandas algo que ningún chequeo tocó, y te enteras cuando ya lo vio alguien más",
+  "palanca": "haz que tu chequeo truene cuando no encuentre nada que revisar; son dos líneas y hoy mismo te dice si te ha estado mintiendo",
+  "pregunta_ab": "Cuando algo le falla a tu agente, ¿prefieres que se detenga o que lo resuelva solo?",
+  "scenes": [
+    {
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "narration": "Mi propio validador me dijo: todo bien, cero errores. Llevaba semanas diciéndomelo sin haber abierto un solo archivo.",
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "\"TODO OK\""
+          },
+          {
+            "text": "CERO ARCHIVOS"
+          },
+          {
+            "text": "REVISADOS"
+          }
+        ],
+        "variant": "dark",
+        "video": "videos/gen_ver_tirar_a_proposito.assets/veo_0.mp4"
+      }
+    },
+    {
+      "beat_type": "contexto",
+      "visual_type": "image",
+      "narration": "Le pasabas la ruta de un guion en vez de la carpeta, la búsqueda no encontraba nada, la lista salía vacía… y como no había errores que reportar, imprimía que todo estaba en orden. Cero de cero es cien por ciento aprobado.",
+      "image_prompts": [
+        "An empty metal inspection tray on a dark workbench with a green stamp lying beside it, warm lamp overhead. Documentary photography, muted palette, no readable text.",
+        "Extreme macro of the rubber face of that stamp, worn and inked, raking light. Documentary photography, shallow depth of field.",
+        "A conveyor belt in a dim workshop running completely empty past an inspection station. Documentary photography, muted palette, nobody in frame."
+      ]
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "ml_demo",
+      "narration": "Así que conté cuántos caminos así hay en todo el código de este canal, leyéndolo con el analizador del propio Python. Cien lugares donde algo puede fallar. Ochenta y nueve siguen de largo. Cincuenta y dos ni siquiera imprimen nada. Once se detienen.",
+      "ml_demo": {
+        "caption": "medir_falla_silenciosa.py",
+        "editor_frac": 0.24,
+        "code": "import json\nd = json.load(open('/home/jose/tiktok/mediciones/falla_silenciosa.json'))\nmudos = d['siguen_sin_avisar']\navisan = d['siguen_de_largo'] - mudos\npara = d['detienen_el_programa']\nfig, ax = plt.subplots(figsize=(9.2, 6.6))\ntramos = [(mudos, RED, 'siguen y NO avisan'), (avisan, ORANGE, 'siguen pero avisan'), (para, GREEN, 'se detienen')]\nizq = 0\nfor v, c, et in tramos:\n    ax.barh([0], [v], left=izq, color=c, height=0.5)\n    ax.text(izq + v / 2.0, 0, '%d' % v, ha='center', va='center', color='#121318', fontsize=30, fontweight='bold')\n    ax.text(izq + v / 2.0, 0.42, et, ha='center', va='bottom', color=TXT, fontsize=14)\n    izq += v\nax.set_ylim(-0.75, 0.95); ax.set_xlim(0, izq)\nax.set_yticks([]); ax.set_xticks([])\nfor s in ax.spines.values():\n    s.set_visible(False)\nax.set_title('%d lugares donde este código puede fallar' % d['manejadores_de_error'], fontsize=20, pad=22)\nfig.text(0.5, 0.10, '%d de cada 100 siguen como si nada' % round(d['pct_siguen']), ha='center', fontsize=17, color=TXT)\nfig.text(0.5, 0.03, '%s líneas de Python de este canal, leídas con el AST · 16-ago-2026' % format(d['lineas_python'], ',d').replace(',', ' '), ha='center', fontsize=11, color='#969491')",
+        "display_code": [
+          "for n in ast.walk(manejador):",
+          "    if isinstance(n, ast.Raise): detiene = True"
+        ]
+      }
+    },
+    {
+      "beat_type": "giro",
+      "visual_type": "image",
+      "narration": "Y por eso la falla que de verdad te muerde no es la que truena. Es la que no truena. El motor que arma estos videos degrada solo: si no puede hacer la animación, dibuja un letrero; si no puede el letrero, pone texto. Nunca se queja. Te entrega el video y te dice listo.",
+      "image_prompts": [
+        "A smoke detector on a dark ceiling with its battery compartment hanging open and empty, warm side light from a window. Documentary photography, muted palette.",
+        "Extreme macro of a dashboard warning lamp that is switched off, dust on the plastic, raking light. Documentary photography, shallow depth of field.",
+        "A finished parcel sealed with tape on a dark counter, an unopened inspection form lying under it. Documentary photography, no readable text."
+      ]
+    },
+    {
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "narration": "El error que te muerde no es el que truena.",
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "EL ERROR"
+          },
+          {
+            "text": "QUE TE MUERDE"
+          },
+          {
+            "text": "NO TRUENA"
+          }
+        ],
+        "variant": "dark",
+        "video": "videos/gen_ver_nadie_le_enseno_un_ojo.assets/veo_0.mp4"
+      }
+    },
+    {
+      "beat_type": "cta",
+      "visual_type": "image",
+      "narration": "Mi regla desde ese día, y me la pagó caro aprenderla: un chequeo que aprueba en vacío es peor que no tener chequeo, porque te quita las ganas de mirar. Si no encontró nada que revisar, que truene. Son dos líneas y hoy mismo te dice si te ha estado mintiendo. ¿Tú qué prefieres: que se detenga y te moleste, o que lo resuelva solo y te avise al final?",
+      "image_prompts": [
+        "A hand pulling the red emergency stop cord on an industrial machine in a dim workshop, warm work light. Documentary photography, muted palette.",
+        "A single line written in a nearly empty notebook on a dark desk beside a laptop, warm lamp at night. Documentary photography, no readable writing."
+      ]
+    }
+  ]
+}

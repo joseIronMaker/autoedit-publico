@@ -1,0 +1,91 @@
+{
+  "tema": "Por qué la IA olvidaba el principio de la frase",
+  "modo": "corto",
+  "title": "Por qué la IA olvidaba el principio de la frase",
+  "slug": "ln_olvidaba_el_principio",
+  "hook_tipo": "problema",
+  "theme": "selva",
+  "image_style": "lush botanical illustration in the style of a vintage scientific plate, luminous green and warm orange inks on very dark paper, fine engraved linework, single specimen centered high, vertical 9:16 composition, lower third kept simple, no text, no letters, no words, no watermark",
+  "keyword": "vanishing gradient redes recurrentes",
+  "hook_headline": [
+    "OLVIDA",
+    "EL PRINCIPIO"
+  ],
+  "pregunta_ab": "¿Memoria corta o pasos cortos?",
+  "music_prompt": "downtempo organic electronica, kalimba and dusty breakbeat, warm and slightly melancholic, no vocals, 92 BPM",
+  "scenes": [
+    {
+      "narration": "Multiplicar por decimales destruye la memoria IA.",
+      "beat_type": "hook",
+      "visual_type": "custom",
+      "pause_after": 0.45,
+      "custom_anim": {
+        "description": "Un impulso neón cian fluye de izquierda a derecha; al atravesar matrices verticales magenta, el haz se reduce a la mitad en cada paso hasta desaparecer por completo en un fondo negro."
+      }
+    },
+    {
+      "narration": "Para completar esa frase hay que acordarse de la primera palabra. Y eso es justo lo que las redes con memoria no lograban.",
+      "beat_type": "hook",
+      "visual_type": "host",
+      "host_top": {
+        "kind": "headline",
+        "lines": [
+          "OLVIDA",
+          "EL PRINCIPIO"
+        ]
+      }
+    },
+    {
+      "narration": "Al corregir hacia atrás, el gradiente se multiplica por la misma matriz en cada paso. Si esos números son menores que uno, se encoge hasta desaparecer.",
+      "beat_type": "proof",
+      "visual_type": "ml_demo",
+      "ml_demo": {
+        "code": "import numpy as np\npasos = np.arange(0, 25)\nsenal = 0.75 ** pasos\nfig, ax = plt.subplots(figsize=(7.4, 5.0))\ncols = [GREEN if s > 0.05 else RED for s in senal]\nax.bar(pasos, senal, color=cols)\nax.axhline(0.05, color=TXT, lw=2, ls='--')\nax.text(12, 0.30, 'aquí ya no aprende nada', color=RED, fontsize=21, fontweight='bold')\nax.set_xlabel('palabras hacia atrás', fontsize=19)\nax.set_ylabel('señal que llega', fontsize=19)\nax.set_yticks([])\nax.set_title('la señal se apaga sola')",
+        "display_code": [
+          "senal = factor ** pasos",
+          "0.75 ** 20  =  0.003   # prácticamente cero"
+        ],
+        "caption": "gradiente.py"
+      }
+    },
+    {
+      "narration": "Resultado: solo aprende de lo que acaba de leer. Y al revés: si pasan de uno, el gradiente explota y hay que recortarlo.",
+      "beat_type": "giro",
+      "visual_type": "custom",
+      "custom_anim": {
+        "description": "PROHIBIDO tarjetas, listas, barras con etiquetas o cajas de texto: esto se DIBUJA. Dos escenas apiladas que ocurren AL MISMO TIEMPO. Arriba: una hilera de puntos luminosos que representa una frase, de izquierda a derecha. Desde el ultimo punto sale un pulso que viaja HACIA ATRAS saltando de punto en punto; en cada salto el pulso se hace mas chico y mas tenue, y el punto que deja atras se apaga a gris. Al llegar a los primeros puntos ya no queda nada: esa parte de la hilera esta muerta. Abajo: la misma hilera y el mismo pulso hacia atras, pero aqui CRECE en cada salto hasta volverse enorme, desbordar la hilera y hacer temblar todo. Una etiqueta GRANDE junto a cada hilera: se apaga arriba, revienta abajo. Sin numeros, sin porcentajes."
+      }
+    },
+    {
+      "narration": "Memoria corta por construcción, no por descuido.",
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.35,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "memoria corta",
+            "serif": true
+          },
+          {
+            "text": "POR CONSTRUCCIÓN",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "a bright spark travelling down a very long chain of nodes and growing dimmer at every step until it fades out entirely before reaching the end, cinematic, deep blacks",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "La primera solución fue ponerle compuertas. Mañana: qué recordar y qué olvidar.",
+      "beat_type": "cta",
+      "visual_type": "host",
+      "host_top": {
+        "kind": "save",
+        "title": "SERIE: CÓMO LA IA LEE",
+        "subtitle": "SIGUIENTE: QUÉ RECORDAR Y QUÉ OLVIDAR →"
+      }
+    }
+  ],
+  "hook_locked": true
+}

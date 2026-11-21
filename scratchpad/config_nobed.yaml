@@ -1,0 +1,114 @@
+branding:
+  canal: IA con José
+  handle: '@iaconjose'
+  outro: false
+  outro_sub: Sígueme para más IA en español
+  outro_text: ¿Te sirvió? Sígueme. Soy IA con José.
+clips:
+  max_clips: 4
+  max_len: 60
+  min_len: 15
+edit:
+  min_segment: 0.2
+  min_silence: 0.7
+  padding: 0.12
+gemini:
+  fallbacks:
+  - gemini-flash-lite-latest
+  image_fallbacks:
+  - gemini-3.1-flash-image
+  - gemini-2.5-flash-image
+  image_model: gemini-3-pro-image
+  model: gemini-flash-latest
+  prices:
+    image: 0.12
+  temperature: 0.3
+  tts_fallbacks:
+  - gemini-2.5-flash-preview-tts
+  tts_model: gemini-3.1-flash-tts-preview
+  voice: Charon
+generate:
+  anchor: true
+  fps: 30
+  height: 1920
+  image_style: Bold cinematic 3D render, vertical 9:16, made to STOP THE SCROLL on
+    TikTok. A single hero subject in OFF-CENTER asymmetric composition (rule of thirds,
+    entering from an edge — NEVER centered or symmetric), floating in a near-black
+    void (#0A0A0F, never pure black). Electric cyan (#00E5FF) and hot magenta (#FF2DAA)
+    neon as the dramatic rim/side key light, deep shadows, high REAL contrast (dark
+    base plus one screaming neon accent, NOT flat saturation), volumetric haze, subtle
+    bloom and glow, shallow depth of field, fine film grain to kill plastic smoothness.
+    Premium tech-keynote aesthetic (Apple keynote but saturated), glossy reflections.
+    Subject UPRIGHT and level, horizon horizontal, NEVER rotated or tilted. Lower
+    30% kept simple for subtitles. No text, no letters, no words, no watermark, no
+    logo, no flat uniform lighting, no centered symmetric composition, no oversaturated
+    flat colors, no warped faces, no cluttered background.
+  ken_burns_zoom: 1.13
+  n_scenes: 7
+  transition_dur: 0.15
+  transitions: true
+  tts_style: 'Narra en español mexicano, acento natural de Ciudad de México, como
+    un creador de contenido joven hablándole a su audiencia: cercano, con energía
+    y un toque de emoción. RITMO ÁGIL Y RÁPIDO, sin pausas largas ni arrastrar las
+    palabras (habla a velocidad natural de conversación, no dramático ni lento):'
+  validate_scenes: true
+  width: 1080
+  zoom_max: 1.13
+render:
+  audio_bitrate: 192k
+  crf: 18
+  finish: true
+  grain: 6
+  loudnorm: I=-16:TP=-1.5:LRA=11
+  music: ''
+  music_gain: 0.08
+  preset: medium
+  vignette: true
+screen_demo:
+  capture_seconds: 11
+  dsf: 2.5
+  enabled: true
+  max_speed: 1.15
+  port: 9222
+  vh: 768
+  vw: 432
+subtitles:
+  base_color: FFFFFF
+  bold: false
+  font: Anton
+  highlight_color: 04C2F7
+  margin_v_ratio: 0.24
+  max_duration: 1.6
+  max_gap: 0.6
+  max_words: 3
+  outline: 7
+  outline_color: '000000'
+  pop: true
+  shadow: 3
+  size_ratio: 0.06
+  uppercase: true
+tts:
+  elevenlabs:
+    master: true
+    model_id: eleven_multilingual_v2
+    output_format: mp3_44100_128
+    price_per_1k_chars: 0.3
+    similarity_boost: 0.9
+    speaker_boost: true
+    speed: 1.06
+    stability: 0.45
+    style: 0.45
+    voice_id: JXJizDZeZ1VEyaHJQIYE
+  provider: elevenlabs
+  xtts:
+    language: es
+    model: tts_models/multilingual/multi-dataset/xtts_v2
+    speaker_wav: branding/voz_ref.wav
+    speed: 1.0
+whisper:
+  compute_type: int8
+  language: es
+  model: small
+zoom:
+  enabled: true
+  factor: 1.06

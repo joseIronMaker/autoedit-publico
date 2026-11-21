@@ -1,0 +1,13 @@
+Dejamos de pagarle a gente por etiquetar datos. Y fue por una idea de primaria.
+
+Antes, para enseñarle algo a un modelo había que marcarle miles de ejemplos a mano. Cambiabas de tarea y a empezar de nuevo.
+
+El truco fue el examen de llenar el hueco: agarras cualquier texto, tapas una palabra y ya tienes pregunta y respuesta. La etiqueta estaba dentro del propio texto. Se llama aprendizaje autosupervisado, y como sirve cualquier texto, el material pasó a ser casi todo lo escrito en internet.
+
+Ese es el momento exacto en que el cuello de botella dejó de ser el dinero y pasó a ser el cómputo.
+
+Mañana: cómo usas uno de esos modelos sin tener ni una GPU.
+
+¿El límite eran los datos o el dinero? Yo digo que era el dinero.
+
+#autosupervisado #datos #deeplearning #nlp #iaconjose

@@ -1,0 +1,199 @@
+{
+ "tema": "hielo",
+ "recursos": {
+  "mosaico": "videos/_clips_pagados/gen_ver_galeria_sin_cara__veo_0.mp4",
+  "brotes": "videos/_clips_pagados/gen_ln_lo_que_aprendio_solo__veo_0.mp4",
+  "gatitos": "jose02.assets/crop_shot_gatitos.png",
+  "prog": "jose02.assets/crop_shot_prog.png",
+  "risa": "jose02.assets/crop_shot_risa.png",
+  "segmenta": "jose02.assets/plot_segmenta.png",
+  "predice": "jose02.assets/plot_predice.png",
+  "mascota": "branding/mascota/profesor.png"
+ },
+ "paneles": [
+  {
+   "t": 0.0,
+   "spec": {
+    "kind": "clip",
+    "video": "@mosaico",
+    "lines": [
+     "YA SABE",
+     "QUÉ TE GUSTA"
+    ]
+   }
+  },
+  {
+   "t": 9.0,
+   "spec": {
+    "kind": "headline",
+    "kicker": "sin que se lo pidas",
+    "lines": [
+     "PREDICE TU GUSTO",
+     "Y TE LO SIRVE"
+    ]
+   }
+  },
+  {
+   "t": 16.32,
+   "spec": {
+    "kind": "headline",
+    "kicker": "el ejemplo",
+    "lines": [
+     "INSTALAS",
+     "Y EMPIEZAS",
+     "A DESLIZAR"
+    ]
+   }
+  },
+  {
+   "t": 23.2,
+   "spec": {
+    "kind": "shot",
+    "image": "@gatitos",
+    "title": "captura real",
+    "url_label": "tiktok.com/search?q=gatitos"
+   }
+  },
+  {
+   "t": 28.9,
+   "spec": {
+    "kind": "shot",
+    "image": "@prog",
+    "title": "captura real",
+    "url_label": "tiktok.com/search?q=programacion"
+   }
+  },
+  {
+   "t": 33.38,
+   "spec": {
+    "kind": "shot",
+    "image": "@risa",
+    "title": "captura real",
+    "url_label": "tiktok.com/search?q=videos de risa"
+   }
+  },
+  {
+   "t": 38.7,
+   "spec": {
+    "kind": "plot",
+    "image": "@segmenta",
+    "title": "esto es real: KMeans",
+    "caption": "Solo ve dos números por video. Los grupos los descubre."
+   }
+  },
+  {
+   "t": 44.6,
+   "spec": {
+    "kind": "flow",
+    "title": "la siguiente vuelta",
+    "steps": [
+     "Mide dónde te quedas",
+     "Te agrupa con quien se queda igual",
+     "Te sirve más de eso"
+    ]
+   }
+  },
+  {
+   "t": 50.92,
+   "spec": {
+    "kind": "headline",
+    "kicker": "y desde ahí",
+    "lines": [
+     "YA PREDICE",
+     "QUÉ TE GUSTA"
+    ]
+   }
+  },
+  {
+   "t": 56.9,
+   "spec": {
+    "kind": "headline",
+    "kicker": "no es solo tiktok",
+    "lines": [
+     "FACEBOOK",
+     "INSTAGRAM",
+     "EL MISMO MOTOR"
+    ]
+   }
+  },
+  {
+   "t": 61.34,
+   "spec": {
+    "kind": "compare",
+    "title": "el trato que nadie te explicó",
+    "left": {
+     "head": "Tú das",
+     "body": "Tiempo, pausas, reacciones"
+    },
+    "right": {
+     "head": "Te devuelve",
+     "body": "Lo siguiente que vas a ver"
+    },
+    "verdict": "Y el trato se renueva cada scroll"
+   }
+  },
+  {
+   "t": 67.74,
+   "spec": {
+    "kind": "clip",
+    "video": "@brotes",
+    "lines": [
+     "TÚ LO ALIMENTAS"
+    ]
+   }
+  },
+  {
+   "t": 73.3,
+   "spec": {
+    "kind": "code",
+    "caption": "esto es literalmente entrenar un modelo",
+    "lines": [
+     "# lo que tú generas al deslizar",
+     "X = [segundos_visto, repeticiones]",
+     "y = [le_gusto]",
+     "",
+     "modelo = LogisticRegression()",
+     "modelo.fit(X, y)   # entrenar"
+    ]
+   }
+  },
+  {
+   "t": 80.18,
+   "spec": {
+    "kind": "plot",
+    "image": "@predice",
+    "title": "esto es real: regresión logística",
+    "caption": "Le das permanencia, te devuelve probabilidad."
+   }
+  },
+  {
+   "t": 87.12,
+   "spec": {
+    "kind": "define",
+    "label": "esa es la palabra",
+    "term": "IA predictiva",
+    "body": "No crea nada: estima lo que viene a partir de lo que ya hiciste."
+   }
+  },
+  {
+   "t": 93.02,
+   "spec": {
+    "kind": "headline",
+    "kicker": "de qué familia es",
+    "lines": [
+     "MACHINE LEARNING",
+     "CLÁSICO"
+    ]
+   }
+  },
+  {
+   "t": 99.72,
+   "spec": {
+    "kind": "mascota",
+    "image": "@mascota",
+    "sign_text": "SIGUE: LA GENERATIVA",
+    "caption": "La que sí crea cosas nuevas — y funciona distinto."
+   }
+  }
+ ]
+}

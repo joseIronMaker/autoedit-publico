@@ -1,0 +1,47 @@
+{
+  "candidatas": {
+    "mx_commercial6": {
+      "naturalidad_0a10": 6,
+      "calidez_0a10": 6,
+      "intimidad_0a10": 7,
+      "nivel_vs_referencia_0a10": 6,
+      "acento": "Mexicano / Latinoamericano neutro",
+      "artefactos": "Respiración forzada en 00:08 y ligera fritura vocal sintética en los cierres de frase.",
+      "pronuncia_mal": "Ninguna",
+      "ritmo": "Pausado y constante, aunque algo lento frente a la fluidez de la referencia."
+    },
+    "mx_training7": {
+      "naturalidad_0a10": 5,
+      "calidez_0a10": 6,
+      "intimidad_0a10": 6,
+      "nivel_vs_referencia_0a10": 5,
+      "acento": "Mexicano",
+      "artefactos": "Risa o suspiro antinatural en 00:03 y estiramiento artificial con aire en 00:22 ('hasta allá').",
+      "pronuncia_mal": "Ninguna",
+      "ritmo": "Irregular, con pausas teatrales que rompen la naturalidad documental."
+    },
+    "mx_assistant6": {
+      "naturalidad_0a10": 4,
+      "calidez_0a10": 5,
+      "intimidad_0a10": 7,
+      "nivel_vs_referencia_0a10": 4,
+      "acento": "Mexicano",
+      "artefactos": "Exceso de aire sintético constante (efecto ASMR exagerado) y alargamiento artificial en 00:30 ('miles').",
+      "pronuncia_mal": "Ninguna",
+      "ritmo": "Demasiado lento y arrastrado, carece del dinamismo explicativo de la referencia."
+    },
+    "disenada": {
+      "naturalidad_0a10": 5,
+      "calidez_0a10": 5,
+      "intimidad_0a10": 6,
+      "nivel_vs_referencia_0a10": 4,
+      "acento": "Latinoamericano neutro",
+      "artefactos": "Fritura vocal (vocal fry) robótica al inicio (00:00-00:02) y jadeo artificial en 00:22.",
+      "pronuncia_mal": "Ninguna",
+      "ritmo": "Entrecortado y excesivamente dramático."
+    }
+  },
+  "ganadora": "mx_commercial6",
+  "por_que": "Mantiene la mayor estabilidad técnica y naturalidad, logrando un tono íntimo sin caer en las exageraciones teatrales, jadeos falsos o estiramientos de palabras que afectan a las demás.",
+  "que_ajustar": "Reducir el nivel de susurro para proyectar una voz más limpia y firme, y aumentar ligeramente la velocidad de lectura para ganar la agilidad narrativa de la referencia."
+}

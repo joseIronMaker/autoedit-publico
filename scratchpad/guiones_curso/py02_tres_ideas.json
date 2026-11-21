@@ -1,0 +1,123 @@
+{
+ "title": "Las tres ideas que usan todos los lenguajes",
+ "slug": "curso_py02_tres_ideas",
+ "tema": "las tres ideas base de cualquier lenguaje de programación explicadas en Python",
+ "theme": "curso python con ia",
+ "hook_tipo": "demostracion",
+ "keyword": "guardar, decidir y repetir",
+ "hook_headline": [
+  "TRES",
+  "IDEAS"
+ ],
+ "pregunta_ab": "¿Aprendes sintaxis o aprendes a pensar?",
+ "music_prompt": "hard techno bed, dark industrial groove, 150 BPM, rolling kick, restrained under a voice, instrumental, no vocals",
+ "modo": "corto",
+ "hook_locked": true,
+ "scenes": [
+  {
+   "beat_type": "hook",
+   "visual_type": "terminal",
+   "pause_after": 0.3,
+   "narration": "Los lenguajes de programación son como cincuenta. Y todos hacen las mismas tres cosas. En cuanto las ves, puedes leer código que jamás habías visto.",
+   "terminal": {
+    "title": "las tres ideas",
+    "lines": [
+     {
+      "text": "nombre = \"José\"        # 1 · guardar"
+     },
+     {
+      "text": "if edad >= 18:          # 2 · decidir"
+     },
+     {
+      "text": "for i in range(3):      # 3 · repetir"
+     },
+     {
+      "text": "con eso lees cualquier programa",
+      "accent": true
+     }
+    ]
+   },
+   "captura": {
+    "cmd": "claude 'escribe tres_ideas.py: guarda nombre y edad, decide con if si puede votar, y repite 3 veces con for'",
+    "cols": 46,
+    "filas": 30,
+    "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+   }
+  },
+  {
+   "beat_type": "contexto",
+   "visual_type": "image",
+   "narration": "La primera es guardar. Le pones un nombre a un dato y la computadora lo recuerda mientras el programa corre. La segunda es decidir: si pasa esto, haz aquello; si no, haz esta otra cosa. La tercera es repetir, para no copiar y pegar la misma línea cuarenta veces.",
+   "image_prompts": [
+    "editorial photograph of three labeled wooden boxes on a workbench, warm dim light, muted graphite and ochre palette, documentary style, no legible text",
+    "editorial photograph of a fork in a path seen from above, two directions, muted colors, documentary style"
+   ]
+  },
+  {
+   "beat_type": "proof",
+   "visual_type": "terminal",
+   "narration": "Míralo corriendo. Guardo el nombre y la edad. Decido si puede votar. Y repito tres veces. Ocho líneas, y ahí están las tres ideas completas.",
+   "terminal": {
+    "title": "tres_ideas.py",
+    "lines": [
+     {
+      "prompt": true,
+      "text": "python3 tres_ideas.py"
+     },
+     {
+      "text": "José puede votar"
+     },
+     {
+      "text": "intento 1"
+     },
+     {
+      "text": "intento 2"
+     },
+     {
+      "text": "intento 3",
+      "accent": true
+     }
+    ],
+    "progress": {
+     "label": "guardar · decidir · repetir"
+    }
+   },
+   "captura": {
+    "cmd": "python3 tres_ideas.py",
+    "cols": 46,
+    "filas": 30
+   }
+  },
+  {
+   "beat_type": "giro",
+   "visual_type": "mascota",
+   "narration": "Y esto es lo que casi nadie te dice: cambia el lenguaje y cambian las palabras, no las ideas. En JavaScript el bucle se escribe distinto, pero sigue siendo repetir.",
+   "mascota": {
+    "pose": "profesor",
+    "caption": "cambian las palabras, no las ideas"
+   }
+  },
+  {
+   "beat_type": "cta",
+   "visual_type": "kinetic",
+   "narration": "Guardar, decidir, repetir. Si le pides algo a la IA y en el código no encuentras ninguna de las tres, seguro está haciendo otra cosa. En la que sigue, por qué programar importa más hoy que hace tres años.",
+   "kinetic": {
+    "words": [
+     {
+      "text": "guardar",
+      "serif": true
+     },
+     {
+      "text": "decidir",
+      "serif": true
+     },
+     {
+      "text": "REPETIR",
+      "accent": true
+     }
+    ],
+    "variant": "dark"
+   }
+  }
+ ]
+}

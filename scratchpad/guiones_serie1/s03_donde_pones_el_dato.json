@@ -1,0 +1,96 @@
+{
+  "slug": "ia_donde_pones_el_dato",
+  "tema": "El consejo de poner lo importante al principio del prompt: lo medí y hoy no cambia nada",
+  "title": "Medí el consejo de prompting más repetido. Ya no aplica.",
+  "theme": "hielo",
+  "hook_locked": true,
+  "quien_decide": "un consejo de 2023 decide cómo escribes tus prompts y cuánto tiempo pierdes reordenándolos",
+  "que_cuesta": "horas moviendo párrafos de lugar mientras el problema real está en otro lado",
+  "palanca": "córrelo en tu caso: el mismo dato al inicio y al final, cinco veces cada uno, y cuenta los aciertos; si no cambia, deja de gastar tiempo ahí",
+  "pregunta_ab": "¿Sigues moviendo tus prompts de lugar o ya mides si sirve?",
+  "scenes": [
+    {
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "narration": "Escondí un dato entre dos mil quinientos registros parecidos y se lo pedí noventa y seis veces, cambiándolo de lugar. Noventa y seis aciertos.",
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "96 PREGUNTAS"
+          },
+          {
+            "text": "96 ACIERTOS"
+          },
+          {
+            "text": "DA IGUAL DÓNDE"
+          }
+        ],
+        "variant": "dark",
+        "video": "videos/gen_ln_olvidaba_el_principio.assets/veo_4.mp4"
+      }
+    },
+    {
+      "beat_type": "contexto",
+      "visual_type": "image",
+      "narration": "Te lo han dicho mil veces: pon lo importante al principio del prompt, porque lo de en medio se le pierde. Yo lo repetí también. Y nunca lo había medido.",
+      "image_prompts": [
+        "A thick stack of printed pages on a dark desk with one single page pulled slightly out from the middle of the stack, lit by a desk lamp from the side. Documentary photography, muted palette, no readable text.",
+        "Extreme macro of the edge of a thick document, hundreds of page edges in sharp perspective, one page edge marked with a thin pencil line. Warm raking light.",
+        "A hand sliding one page back into the middle of a thick stack on a wooden table at night. Shallow depth of field, warm lamp, deep shadows."
+      ]
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "ml_demo",
+      "narration": "Así que lo medí. El mismo dato al inicio, a la mitad y al final de un contexto de sesenta y cinco mil tokens. Cien por ciento en las tres. Y por si acaso, le pedí uno, cuatro y ocho datos de un jalón: ciento treinta claves, ciento treinta correctas.",
+      "ml_demo": {
+        "caption": "medir_atencion.py",
+        "editor_frac": 0.24,
+        "code": "import json\np1 = json.load(open('/home/jose/tiktok/mediciones/atencion_posicion_300.json'))['posiciones']\np2 = json.load(open('/home/jose/tiktok/mediciones/atencion_posicion_2500.json'))['posiciones']\nmul = json.load(open('/home/jose/tiktok/mediciones/atencion_multi.json'))['condiciones']\npos = ['inicio', 'medio', 'final']\naciertos = [p1[k]['aciertos'] + p2[k]['aciertos'] for k in pos]\nde = [p1[k]['de'] + p2[k]['de'] for k in pos]\npct = [100.0 * a / d for a, d in zip(aciertos, de)]\nmk = list(mul.keys())\npct2 = [mul[k]['pct'] for k in mk]\nfig, (ax, bx) = plt.subplots(2, 1, figsize=(9.2, 7.4))\nax.bar(pos, pct, color=CYAN, width=0.5)\nax.set_ylim(0, 118)\nax.set_ylabel('% de aciertos')\nax.set_title('¿dónde escondo el dato?')\nfor i, (a, d) in enumerate(zip(aciertos, de)):\n    ax.text(i, pct[i] + 4, '%d/%d' % (a, d), ha='center', color=TXT, fontsize=22, fontweight='bold')\nbx.bar(['1 dato', '4 datos', '8 datos'], pct2, color=ORANGE, width=0.5)\nbx.set_ylim(0, 118)\nbx.set_ylabel('% de claves correctas')\nbx.set_title('¿y si le pido varios de un jalón?')\nfor i, k in enumerate(mk):\n    bx.text(i, pct2[i] + 4, '%d/%d' % (mul[k]['claves_correctas'], mul[k]['de']), ha='center', color=TXT, fontsize=22, fontweight='bold')\nfig.text(0.5, 0.012, '2,500 registros distractores · ~65 mil tokens · gemini-flash · medido 12-ago-2026', ha='center', fontsize=11, color='#969491')",
+        "display_code": [
+          "for pos in ('inicio', 'medio', 'final'):",
+          "    aciertos += (respuesta(pos) == CLAVE)"
+        ]
+      }
+    },
+    {
+      "beat_type": "giro",
+      "visual_type": "receipt",
+      "narration": "Y no es que el consejo fuera mentira. Salió de un estudio real de dos mil veintitrés que sí encontró esa curva: lo de en medio se perdía. Lo que cambió no es el consejo, son los modelos. El consejo se quedó y nadie volvió a medirlo.",
+      "receipt": {
+        "url": "https://arxiv.org/abs/2307.03172",
+        "title": "DE DÓNDE SALIÓ",
+        "caption": "Liu et al., 'Lost in the Middle', TACL 2023 · arXiv 2307.03172"
+      }
+    },
+    {
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "narration": "Un consejo de prompting sin medición es una superstición con buena reputación.",
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "UN CONSEJO"
+          },
+          {
+            "text": "SIN MEDICIÓN"
+          },
+          {
+            "text": "ES SUPERSTICIÓN"
+          }
+        ],
+        "variant": "dark",
+        "video": "videos/gen_ln_de_llm_a_agente.assets/veo_0.mp4"
+      }
+    },
+    {
+      "beat_type": "cta",
+      "visual_type": "image",
+      "narration": "Mi postura: yo también lo repetí sin medirlo, y por eso ahora mido antes de repetir. Tú puedes hacer lo mismo en cinco minutos: el mismo dato al inicio y al final, cinco corridas cada uno, y cuentas. Si no cambia, el problema está en otro lado. ¿Sigues moviendo tus prompts de lugar o ya mides si sirve?",
+      "image_prompts": [
+        "A notebook page on a dark desk with two columns of hand-drawn tally marks, a pencil resting across it, warm lamp light at night. Documentary photography, shallow depth of field.",
+        "Hands closing a laptop on a wooden desk beside a used coffee cup and a notebook, early morning light through a window. Shot from the side, film grain."
+      ]
+    }
+  ]
+}

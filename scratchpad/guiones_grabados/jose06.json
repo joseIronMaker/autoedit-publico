@@ -1,0 +1,240 @@
+{
+ "tema": "violeta",
+ "recursos": {
+  "transformer": "videos/_clips_pagados/gen_ln_el_transformer__veo_0.mp4",
+  "atencion_clip": "videos/_clips_pagados/gen_ln_atencion__veo_0.mp4",
+  "olvidaba": "videos/_clips_pagados/gen_ln_olvidaba_el_principio__veo_4.mp4",
+  "qkv": "videos/_clips_pagados/gen_ln_query_key_value__veo_0.mp4",
+  "gigante": "videos/_clips_pagados/gen_ln_hacerlo_gigante__veo_0.mp4",
+  "paper": "jose06.assets/shot_paper.png",
+  "atencion": "jose06.assets/plot_atencion.png"
+ },
+ "paneles": [
+  {
+   "t": 0.0,
+   "spec": {
+    "kind": "headline",
+    "kicker": "ia con josé",
+    "lines": [
+     "¿QUÉ LO",
+     "CAMBIÓ TODO?"
+    ]
+   }
+  },
+  {
+   "t": 9.06,
+   "spec": {
+    "kind": "headline",
+    "kicker": "ya existían",
+    "lines": [
+     "TRADUCTORES",
+     "SIRI, ALEXA"
+    ]
+   }
+  },
+  {
+   "t": 17.6,
+   "spec": {
+    "kind": "define",
+    "label": "lo que había antes",
+    "term": "Redes recurrentes",
+    "body": "Arquitectura secuencial: leían de a un elemento por vez."
+   }
+  },
+  {
+   "t": 32.84,
+   "spec": {
+    "kind": "code",
+    "caption": "carácter por carácter",
+    "lines": [
+     "entrada: 'hola mi perro es'",
+     "predice: 'g'",
+     "predice: 'r'",
+     "predice: 'a'",
+     "→ 'hola mi perro es grande'"
+    ]
+   }
+  },
+  {
+   "t": 46.42,
+   "spec": {
+    "kind": "headline",
+    "kicker": "y funcionaba",
+    "lines": [
+     "PERO SOLO",
+     "EN FRASES",
+     "CORTAS"
+    ]
+   }
+  },
+  {
+   "t": 57.94,
+   "spec": {
+    "kind": "clip",
+    "video": "@olvidaba",
+    "lines": [
+     "EN FRASES LARGAS",
+     "SE PERDÍA"
+    ]
+   }
+  },
+  {
+   "t": 76.38,
+   "spec": {
+    "kind": "flow",
+    "title": "tres problemas",
+    "steps": [
+     "Lento: uno por uno",
+     "No escalaba",
+     "Olvidaba el principio"
+    ]
+   }
+  },
+  {
+   "t": 90.18,
+   "spec": {
+    "kind": "headline",
+    "kicker": "hacía falta otra cosa",
+    "lines": [
+     "NO ERA",
+     "EL CAMINO"
+    ]
+   }
+  },
+  {
+   "t": 101.02,
+   "spec": {
+    "kind": "shot",
+    "image": "@paper",
+    "title": "el paper real",
+    "url_label": "arxiv.org/abs/1706.03762",
+    "caption": "Google, 2017 — Attention Is All You Need"
+   }
+  },
+  {
+   "t": 118.34,
+   "spec": {
+    "kind": "headline",
+    "kicker": "aunque lo famoso fue chatgpt",
+    "lines": [
+     "SE LO DEBEMOS",
+     "A GOOGLE"
+    ]
+   }
+  },
+  {
+   "t": 131.46,
+   "spec": {
+    "kind": "define",
+    "label": "lo que crearon",
+    "term": "El transformer",
+    "body": "Una arquitectura que lee toda la frase de golpe, en paralelo."
+   }
+  },
+  {
+   "t": 146.2,
+   "spec": {
+    "kind": "define",
+    "label": "la pieza clave",
+    "term": "Atención",
+    "body": "Cada palabra mira a todas las demás y decide a cuáles hacer caso."
+   }
+  },
+  {
+   "t": 157.72,
+   "spec": {
+    "kind": "plot",
+    "image": "@atencion",
+    "title": "esto es real: el cálculo",
+    "caption": "Cada fila es una palabra mirando a todas las otras."
+   }
+  },
+  {
+   "t": 174.68,
+   "spec": {
+    "kind": "clip",
+    "video": "@qkv",
+    "lines": [
+     "CONSULTA",
+     "CLAVE",
+     "VALOR"
+    ]
+   }
+  },
+  {
+   "t": 184.66,
+   "spec": {
+    "kind": "code",
+    "caption": "así lo entrenaron",
+    "lines": [
+     "texto: 'el día está soleado'",
+     "le tapan: 'el día está ____'",
+     "predice:  'soleado'",
+     "# millones de veces"
+    ]
+   }
+  },
+  {
+   "t": 198.74,
+   "spec": {
+    "kind": "flow",
+    "title": "y ahora sí entendía",
+    "steps": [
+     "De qué habla la frase",
+     "Qué palabra pesa más",
+     "En qué orden van"
+    ]
+   }
+  },
+  {
+   "t": 213.08,
+   "spec": {
+    "kind": "clip",
+    "video": "@atencion_clip",
+    "lines": [
+     "LA ATENCIÓN",
+     "LO CAMBIÓ TODO"
+    ]
+   }
+  },
+  {
+   "t": 231.44,
+   "spec": {
+    "kind": "clip",
+    "video": "@gigante",
+    "lines": [
+     "YA SE PODÍA",
+     "ENTRENAR",
+     "GIGANTE"
+    ]
+   }
+  },
+  {
+   "t": 240.06,
+   "spec": {
+    "kind": "compare",
+    "title": "el antes y el después",
+    "left": {
+     "head": "Recurrente",
+     "body": "Una a una · olvidaba · no escalaba"
+    },
+    "right": {
+     "head": "Transformer",
+     "body": "Todo de golpe · recuerda · escala"
+    },
+    "verdict": "Y por eso hoy hablas con una máquina"
+   }
+  },
+  {
+   "t": 255.41,
+   "spec": {
+    "kind": "clip",
+    "video": "@transformer",
+    "lines": [
+     "ESO",
+     "LO CAMBIÓ TODO"
+    ]
+   }
+  }
+ ]
+}

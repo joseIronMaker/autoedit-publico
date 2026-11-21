@@ -1,0 +1,38 @@
+{
+  "tema": "cuantos caminos hay para fallar y seguir como si nada",
+  "codigo": "el de este proyecto, escrito con un agente",
+  "archivos_python": 76,
+  "lineas_python": 11784,
+  "manejadores_de_error": 100,
+  "detienen_el_programa": 11,
+  "siguen_de_largo": 89,
+  "siguen_sin_avisar": 52,
+  "pct_siguen": 89.0,
+  "pct_mudos": 52.0,
+  "archivos_con_mas": [
+    [
+      "autoedit/generate.py",
+      18
+    ],
+    [
+      "autoedit/model_router.py",
+      12
+    ],
+    [
+      "autoedit/web/server.py",
+      12
+    ],
+    [
+      "autoedit/diagrams.py",
+      9
+    ],
+    [
+      "autoedit/screen_demo.py",
+      9
+    ],
+    [
+      "scratchpad/validar_guiones.py",
+      4
+    ]
+  ]
+}

@@ -1,0 +1,4 @@
+Esta placa no la ruteó un ingeniero. Una fuente regulada con LM317, con su esquema y sus pistas, la diseñó una inteligencia artificial sola.
+Y mira lo que hizo antes de empezar, cabrón: me preguntó cuatro cosas que preguntaría un ingeniero. El divisor de ajuste. La corriente máxima de salida. Si la quería de agujero pasante o de montaje superficial. Y hasta dónde debía llegar el ruteo automático.
+Después entró a KiCad por MCP: abrió el proyecto, colocó el esquema, situó las huellas y ruteó las pistas. Pasó el chequeo de diseño, encontró seis avisos, y me explicó cuáles eran cosméticos y cuáles no: cuatro huellas rotadas y un relleno de cobre que no conectaba con tierra.
+Diseñar una placa era un oficio de años. Y esto es lo más torpe que va a estar la inteligencia artificial en tu vida.

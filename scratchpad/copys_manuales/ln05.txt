@@ -1,0 +1,13 @@
+La red se equivoca en la última palabra, pero la culpa puede estar en la primera.
+
+Una red que lee no falla una vez: falla en cada palabra, y todos esos errores se suman en uno solo. Para corregir, ese error viaja hacia atrás paso por paso hasta el principio de la frase. Eso es backpropagation en el tiempo.
+
+Aquí está la trampa, y es pura aritmética: en cada paso hacia atrás se vuelve a multiplicar por la MISMA matriz de pesos. Multiplica veinte veces por 0.8 y te queda 0.012. Multiplica veinte veces por 1.2 y te da 38.
+
+Es el momento en que el álgebra deja de ser teoría y se vuelve el motivo por el que tu modelo no aprende.
+
+Mañana: por qué la IA olvidaba el principio de la frase.
+
+¿El error viaja o se queda? Yo digo que viaja, y que ahí está el problema.
+
+#backpropagation #deeplearning #redesneuronales #gradientes #iaconjose

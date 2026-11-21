@@ -1,0 +1,91 @@
+{
+  "title": "Apilando neuronas: de la recta a las curvas",
+  "slug": "dl_apilar_curvas",
+  "hook_tipo": "resultado",
+  "keyword": "red neuronal",
+  "hook_headline": ["DE RECTA", "A CURVA"],
+  "pregunta_ab": "¿Simple o profunda?",
+  "music_prompt": "dark uplifting electronic instrumental, rising synth layers building energy, tech, no vocals, 123 BPM",
+  "modo": "corto",
+  "scenes": [
+    {
+      "narration": "Junta muchas neuronas y aparece la curva.",
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.45,
+      "kinetic_video": {
+        "words": [
+          {"text": "muchas neuronas", "serif": true},
+          {"text": "LA CURVA", "accent": true}
+        ],
+        "variant": "dark",
+        "veo_prompt": "Cinematic shot of dozens of short straight neon light segments assembling and blending together into one smooth glowing curved ribbon that wraps around, order emerging from many pieces, cyan and magenta, near-black void, volumetric glow, dark tech aesthetic, no text, no people",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Las apilas en capas: eso es una red neuronal.",
+      "beat_type": "hook",
+      "visual_type": "host",
+      "host_top": {"kind": "headline", "lines": ["DE RECTA", "A CURVA"]}
+    },
+    {
+      "narration": "Cada neurona traza su recta; la siguiente capa las combina, y la frontera empieza a doblarse.",
+      "beat_type": "proof",
+      "visual_type": "diagram",
+      "diagram": {
+        "type": "neural_net",
+        "title": "RED NEURONAL",
+        "layers": [2, 5, 5, 2],
+        "in_label": "datos",
+        "out_label": "sí / no"
+      }
+    },
+    {
+      "narration": "Con una sola capa oculta, mira: la frontera ya se curva y separa las lunas que una neurona no pudo.",
+      "beat_type": "proof",
+      "visual_type": "ml_demo",
+      "ml_demo": {
+        "code": "import torch, torch.nn as nn, numpy as np\nfrom sklearn.datasets import make_moons\ntorch.manual_seed(0)\nX, y = make_moons(300, noise=0.2, random_state=0)\nXt = torch.tensor(X, dtype=torch.float32); yt = torch.tensor(y, dtype=torch.float32).view(-1,1)\nnet = nn.Sequential(nn.Linear(2,16), nn.ReLU(), nn.Linear(16,1))\nopt = torch.optim.Adam(net.parameters(), 0.05); lf = nn.BCEWithLogitsLoss()\nfor _ in range(400):\n    opt.zero_grad(); loss = lf(net(Xt), yt); loss.backward(); opt.step()\nxx, yy = np.meshgrid(np.linspace(-2,3,300), np.linspace(-1.5,2,300))\ngrid = torch.tensor(np.c_[xx.ravel(), yy.ravel()], dtype=torch.float32)\nwith torch.no_grad(): Z = torch.sigmoid(net(grid)).numpy().reshape(xx.shape)\nfig, ax = plt.subplots(figsize=(6,6.5))\nax.contourf(xx, yy, Z, levels=12, cmap='magma', alpha=0.7)\nax.scatter(X[y==0,0], X[y==0,1], c=CYAN, s=14, zorder=3); ax.scatter(X[y==1,0], X[y==1,1], c=MAG, s=14, zorder=3)\nax.set_title('1 capa oculta: la frontera se CURVA'); ax.set_xticks([]); ax.set_yticks([])",
+        "display_code": [
+          "net = nn.Sequential(",
+          "  nn.Linear(2,16), nn.ReLU(),  # capa oculta",
+          "  nn.Linear(16,1))",
+          "# muchas neuronas -> frontera CURVA"
+        ],
+        "caption": "red.py"
+      }
+    },
+    {
+      "narration": "Con suficientes neuronas, aproximas cualquier forma.",
+      "beat_type": "giro",
+      "visual_type": "kinetic",
+      "kinetic": {
+        "words": [
+          {"text": "cualquier", "serif": true},
+          {"text": "FORMA", "accent": true}
+        ],
+        "variant": "dark"
+      }
+    },
+    {
+      "narration": "Muchas juntas: cualquier curva.",
+      "beat_type": "tesis",
+      "visual_type": "kinetic",
+      "pause_after": 0.35,
+      "kinetic": {
+        "words": [
+          {"text": "muchas juntas:", "serif": true},
+          {"text": "CUALQUIER CURVA", "accent": true}
+        ],
+        "variant": "accent"
+      }
+    },
+    {
+      "narration": "Ya predice de todo. ¿Pero predice bien? Mañana medimos su error.",
+      "beat_type": "cta",
+      "visual_type": "host",
+      "host_top": {"kind": "save", "title": "CUALQUIER CURVA", "subtitle": "MAÑANA: MEDIR EL ERROR →"}
+    }
+  ]
+}

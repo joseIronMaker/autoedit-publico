@@ -1,0 +1,19 @@
+Le hice la misma pregunta a ChatGPT dos veces: "explícame qué es una API".
+
+Sin truco, contestó: "una API es un puente de comunicación entre aplicaciones".
+
+Con el truco más repetido de internet pegado adelante —"actúa como un ingeniero de software experto"— contestó: "una interfaz/contrato", y me soltó GraphQL, gRPC, SOAP y WebSockets.
+
+Mismo modelo. Misma pregunta. Mismo conocimiento.
+
+Porque un rol no le agrega nada que no supiera. Un rol es una instrucción de registro: con qué palabras contestar, a quién le está hablando, y sobre todo qué puede dar por sabido sin explicarlo.
+
+El modelo lee todo lo que tiene enfrente y de ahí decide el tono. Si arriba dice "experto", arma la respuesta para alguien que ya sabe: mete los términos, se salta los pasos obvios y va directo. No es que sepa más. Es que decidió explicar menos.
+
+Y ahí se te voltea el truco. Si le pusiste "experto" porque querías una respuesta buena, lo que hiciste fue pedirle que diera por obvio justo lo que tú no sabías. Sale una explicación impecable que no te sirve, y te queda la sensación de que el tema es difícil. El tema no era difícil. El rol lo era.
+
+No le digas quién es él. Dile para quién es.
+
+Lo que yo escribo ahora en vez del rol es una línea sobre mí: soy ingeniero pero no de esto, explícamelo como si me lo contaras en una comida, y dime qué término tengo que buscar después.
+
+¿Tú qué le pones al prompt: quién es él, o para quién es la respuesta?

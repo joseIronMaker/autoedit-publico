@@ -1,0 +1,37 @@
+
+=== gen_dl_activacion_no_basta (tema sunset)
+  escena 2: voz reusada
+  escena 2: render ml_demo (11.4s)
+  ENSAMBLADO videos/gen_dl_activacion_no_basta.mp4 (32.1s)
+
+=== gen_dl_apilar_curvas (tema neon)
+  escena 3: voz reusada
+  escena 3: render ml_demo (12.1s)
+  ENSAMBLADO videos/gen_dl_apilar_curvas.mp4 (33.3s)
+
+=== gen_dl_loss_error (tema neon)
+  escena 2: voz reusada
+  escena 2: render ml_demo (12.1s)
+  escena 3: omitida (showcase)
+  ENSAMBLADO videos/gen_dl_loss_error.mp4 (32.5s)
+
+=== gen_dl_gradient_descent (tema neon)
+  escena 3: voz reusada
+  escena 3: render ml_demo (8.2s)
+  ENSAMBLADO videos/gen_dl_gradient_descent.mp4 (32.4s)
+
+=== gen_dl_backpropagation (tema cyber)
+  escena 3: voz reusada
+  escena 3: render ml_demo (9.8s)
+  ENSAMBLADO videos/gen_dl_backpropagation.mp4 (35.4s)
+
+=== gen_dl_learning_rate (tema sunset)
+  escena 2: voz reusada
+  escena 2: render ml_demo (10.9s)
+  ENSAMBLADO videos/gen_dl_learning_rate.mp4 (29.9s)
+
+=== gen_dl_overfitting (tema sunset)
+  escena 2: voz reusada
+  escena 2: render ml_demo (11.7s)
+  escena 3: omitida (showcase)
+  ENSAMBLADO videos/gen_dl_overfitting.mp4 (33.5s)

@@ -1,0 +1,102 @@
+{
+  "tema": "Si la IA lee todo de golpe, ¿dónde quedó el orden?",
+  "modo": "corto",
+  "title": "Si la IA lee todo de golpe, ¿dónde quedó el orden?",
+  "slug": "ln_donde_quedo_el_orden",
+  "hook_tipo": "contraria",
+  "theme": "ambar",
+  "image_style": "warm analog long-exposure photograph of light trails forming rhythmic waves in a dark space, amber and golden tones, film grain, elegant and organic, vertical 9:16 composition, lower third kept simple, no text, no letters, no words, no watermark",
+  "keyword": "positional encoding transformers",
+  "hook_headline": [
+    "PERDIÓ",
+    "EL ORDEN"
+  ],
+  "pregunta_ab": "¿El orden se aprende o se inyecta?",
+  "music_prompt": "warm neo-soul instrumental, wurlitzer chords and live drums with brushes, laid-back groove, no vocals, 98 BPM",
+  "scenes": [
+    {
+      "narration": "Al mirar toda la frase de golpe, la IA volvió a perder el orden.",
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.45,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "mira todo de golpe",
+            "serif": true
+          },
+          {
+            "text": "Y PIERDE EL ORDEN",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "cinematic macro of carved letter blocks floating weightless in a dark void, slowly rotating and drifting apart with no line and no order between them, shallow depth of field",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Es el mismo problema del principio de la serie: perro muerde hombre no es hombre muerde perro. Y atención, sola, no ve la diferencia.",
+      "beat_type": "hook",
+      "visual_type": "host",
+      "host_top": {
+        "kind": "headline",
+        "lines": [
+          "PERDIÓ",
+          "EL ORDEN"
+        ]
+      }
+    },
+    {
+      "narration": "La solución es de una elegancia tremenda: si el orden no viene en los datos, se lo sumamos. A cada palabra se le suma un patrón de ondas que codifica su posición.",
+      "beat_type": "proof",
+      "visual_type": "ml_demo",
+      "ml_demo": {
+        "code": "import numpy as np\npos = np.arange(40)[:, None]\ni = np.arange(32)[None, :]\nang = pos / np.power(10000, (2 * (i // 2)) / 32)\nPE = np.where(i % 2 == 0, np.sin(ang), np.cos(ang))\nfig, ax = plt.subplots(figsize=(7.4, 5.2))\nax.imshow(PE, cmap='twilight_shifted', aspect='auto')\nax.set_xlabel('dimensiones del vector', fontsize=18)\nax.set_ylabel('posición en la frase', fontsize=18)\nax.set_title('cada posición, una huella única')",
+        "display_code": [
+          "PE[pos, 2i]   = sin(pos / 10000**(2i/d))",
+          "PE[pos, 2i+1] = cos(pos / 10000**(2i/d))",
+          "entrada = embedding + PE"
+        ],
+        "caption": "posicion.py"
+      }
+    },
+    {
+      "narration": "Cada posición recibe una huella distinta, así que la palabra tres nunca se confunde con la palabra diez, aunque sean la misma palabra.",
+      "beat_type": "giro",
+      "visual_type": "custom",
+      "custom_anim": {
+        "description": "Una fila de cinco casillas grandes y bien separadas, numeradas del 1 al 5, que ocupan todo el ancho. Sobre cada casilla cae una onda distinta, con distinta frecuencia y color, y se queda ondulando ahí. Al final las cinco ondulan a la vez, cada una con su ritmo propio, sin tocarse nunca."
+      }
+    },
+    {
+      "narration": "El orden no se aprende. Se suma.",
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.35,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "el orden no se aprende",
+            "serif": true
+          },
+          {
+            "text": "SE SUMA",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "a smooth glowing wave being layered on top of an evenly spaced row of identical objects, giving each one a slightly different height, cinematic, dark background",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Y una sola atención se queda corta. Mañana: varias mirando cosas distintas a la vez.",
+      "beat_type": "cta",
+      "visual_type": "host",
+      "host_top": {
+        "kind": "save",
+        "title": "SERIE: CÓMO LA IA LEE",
+        "subtitle": "SIGUIENTE: VARIAS CABEZAS →"
+      }
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "title": "No elijas: combina",
+  "slug": "combo_fusionar_ias",
+  "hook_tipo": "secreto",
+  "keyword": "combinar IAs",
+  "hook_headline": ["EL COMBO", "FINAL"],
+  "pregunta_ab": "¿Predictiva o generativa?",
+  "music_prompt": "euphoric dark electronic instrumental, two synth themes merging into one anthem, rising fusion build, cinematic energy, no vocals, 126 BPM",
+  "modo": "corto",
+  "scenes": [
+    {
+      "narration": "El secreto no es elegir: es combinar.",
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.45,
+      "kinetic_video": {
+        "words": [
+          {"text": "no elijas", "serif": true},
+          {"text": "COMBINA", "accent": true}
+        ],
+        "variant": "dark",
+        "veo_prompt": "Cinematic shot of two rivers of glowing light, one neon cyan and one neon magenta, spiraling toward each other and fusing into a single brilliant white-hot vortex of energy, particles orbiting the fusion point, near-black void, volumetric glow, dark tech aesthetic, no text, no people",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Las empresas grandes fusionan las dos IAs. Tú también puedes combinar.",
+      "beat_type": "hook",
+      "visual_type": "host",
+      "host_top": {"kind": "headline", "lines": ["EL COMBO", "FINAL"]}
+    },
+    {
+      "narration": "El flujo: la predictiva detecta al cliente que va a cancelar; la generativa le escribe la oferta.",
+      "beat_type": "proof",
+      "visual_type": "diagram",
+      "diagram": {
+        "type": "flow",
+        "title": "EL COMBO",
+        "items": ["Predictiva detecta", "Generativa redacta", "Tú apruebas"]
+      }
+    },
+    {
+      "narration": "Mira el combo real: le paso el riesgo calculado y fabrica la oferta lista para enviar.",
+      "beat_type": "proof",
+      "visual_type": "screen_demo",
+      "screen_demo": {
+        "tool": "chatgpt",
+        "prompt": "Mi modelo predice que este cliente tiene 78% de riesgo de cancelar. Escríbele un mensaje breve y cálido con una oferta para quedarse"
+      }
+    },
+    {
+      "narration": "El giro: ese combo ya corre solo. Se llama agente, y es el siguiente nivel.",
+      "beat_type": "giro",
+      "visual_type": "veo",
+      "veo": {
+        "prompt": "Cinematic scene of a luminous autonomous orb of fused cyan and magenta energy moving by itself through a dark futuristic corridor, leaving a trail of light, doors of light opening as it passes, near-black shadows, volumetric neon glow, dark tech aesthetic, no text, no people",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "No es una u otra: es juntas.",
+      "beat_type": "tesis",
+      "visual_type": "kinetic",
+      "pause_after": 0.35,
+      "kinetic": {
+        "words": [
+          {"text": "no es", "serif": true},
+          {"text": "UNA U OTRA"},
+          {"text": "ES JUNTAS", "accent": true}
+        ],
+        "variant": "accent"
+      }
+    },
+    {
+      "narration": "Cuando alguien te pregunte de IA, esta serie es tu respuesta. ¿Predictiva o generativa? Yo digo: juntas. Y esto apenas empieza.",
+      "beat_type": "cta",
+      "visual_type": "host",
+      "host_top": {"kind": "save", "title": "TU RESPUESTA", "subtitle": "LA SERIE COMPLETA →"}
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+Lo dejo escrito para darle memoria de la IA a cada sesión.
+Si un modelo te repite un fallo, no le describas el proyecto: dale reglas fijas.
+Lo que pones en ese archivo entra primero y evita que tropiece dos veces.
+
+Primera vez se corrige en el chat, la segunda va directo al archivo de contexto.
+
+¿Explicar o Escribir? Yo digo que escribir siempre.
+
+#inteligenciaartificial #programacion #desarrollo #claudecode

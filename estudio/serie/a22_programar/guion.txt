@@ -1,0 +1,13 @@
+Programar es lo que mejor hacen los agentes. Y aun así, casi nadie sabe cuánto ayudan.
+Google dice que tres cuartas partes de su código nuevo ya lo genera la IA, aprobado por ingenieros. Es su propia cifra.
+Dieciséis agentes de Anthropic escribieron un compilador de C, de cien mil líneas, que arranca Linux.
+¿Por qué aquí sí? Por las cuatro preguntas. El código se prueba, se deshace, y se delimita.
+Ahora lo incómodo.
+En dos mil veinticinco, METR hizo un experimento serio con programadores expertos. Con IA tardaron diecinueve por ciento más. Y ellos creían que habían ido más rápido.
+Un año después lo repitió, y ahora parece que van más rápido. Pero el resultado no es concluyente, y METR ya lo está rediseñando.
+Porque medir esto es dificilísimo.
+Y mira qué tan autónomos son en la vida real: en Claude Code, el turno típico dura unos cuarenta y cinco segundos.
+No es un robot trabajando toda la noche. Es una persona, conversando con él, revisando.
+Sí pueden escribir programas enormes.
+Lo que todavía no pueden es saber solos...
+si eso era lo que necesitabas.

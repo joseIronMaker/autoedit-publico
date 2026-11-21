@@ -1,0 +1,20 @@
+{
+  "truco": "paso_a_paso",
+  "n_por_condicion": 48,
+  "tareas": 6,
+  "modelo": "gemini-flash-latest",
+  "condiciones": {
+    "sin el truco": {
+      "aciertos": 48,
+      "de": 48,
+      "pct": 100.0,
+      "corridas_perdidas": 0
+    },
+    "con 'piensa paso a paso'": {
+      "aciertos": 48,
+      "de": 48,
+      "pct": 100.0,
+      "corridas_perdidas": 0
+    }
+  }
+}

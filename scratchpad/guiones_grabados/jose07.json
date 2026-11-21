@@ -1,0 +1,453 @@
+{
+  "tema": "hielo",
+  "ratio_clip": 0.45,
+  "recursos": {
+    "imprenta": "videos/_clips_pagados/gen_ln_el_transformer__veo_0.mp4",
+    "fibras": "videos/_clips_pagados/gen_ln_tres_defectos__veo_4.mp4",
+    "caos": "videos/_clips_pagados/gen_ln_donde_quedo_el_orden__veo_0.mp4",
+    "mano": "videos/_clips_pagados/gen_ln_sin_gpu_fine_tuning__veo_4.mp4",
+    "openai": "jose07.assets/shot_openai.png",
+    "anthropic": "jose07.assets/shot_anthropic.png",
+    "gemini": "jose07.assets/shot_gemini.png",
+    "deepseek": "jose07.assets/shot_deepseek.png",
+    "prediccion": "jose07.assets/img_prediccion.png",
+    "preentrenamiento": "jose07.assets/img_preentrenamiento.png",
+    "ajuste_fino": "jose07.assets/img_ajuste_fino.png",
+    "refuerzo": "jose07.assets/img_refuerzo.png",
+    "produccion": "jose07.assets/img_produccion.png",
+    "entrenados": "jose07.assets/img_entrenados.png",
+    "planos": "jose07.assets/img_planos.png",
+    "motor": "jose07.assets/img_motor.png"
+  },
+  "paneles": [
+    {
+      "t": 0.0,
+      "spec": {
+        "kind": "headline",
+        "kicker": "ia con josé",
+        "lines": [
+          "CHATGPT",
+          "ES UN LLM"
+        ]
+      }
+    },
+    {
+      "t": 5.4,
+      "spec": {
+        "kind": "define",
+        "label": "las siglas",
+        "term": "Large Language Model",
+        "body": "Un modelo de lenguaje, y grande."
+      }
+    },
+    {
+      "t": 9.9,
+      "spec": {
+        "kind": "clip",
+        "video": "@imprenta",
+        "lines": [
+          "EL TRANSFORMER",
+          "SON LOS PLANOS"
+        ]
+      }
+    },
+    {
+      "t": 13.6,
+      "spec": {
+        "kind": "reveal",
+        "mode": "cortina",
+        "before": {
+          "image": "@planos",
+          "label": "transformer"
+        },
+        "after": {
+          "image": "@motor",
+          "label": "LLM"
+        },
+        "caption": "los planos y el motor no son lo mismo"
+      }
+    },
+    {
+      "t": 17.9,
+      "spec": {
+        "kind": "define",
+        "label": "el corazón del transformer",
+        "term": "La atención",
+        "body": "Cada palabra mira a todas las demás sin perder el contexto."
+      }
+    },
+    {
+      "t": 24.5,
+      "spec": {
+        "kind": "completa",
+        "modo": "candidatos",
+        "prompt": "mi perro es ",
+        "tokens": [
+          "grande",
+          " y",
+          " le",
+          " gusta",
+          " correr",
+          " en",
+          " el",
+          " parque"
+        ],
+        "candidatos": [
+          [
+            "grande 62%",
+            "negro 17%",
+            "muy 10%"
+          ],
+          [
+            "y 41%",
+            ", 33%",
+            "pero 12%"
+          ],
+          [
+            "le 38%",
+            "que 22%",
+            "siempre 14%"
+          ],
+          [
+            "gusta 71%",
+            "encanta 18%",
+            "molesta 5%"
+          ],
+          [
+            "correr 44%",
+            "dormir 26%",
+            "comer 19%"
+          ],
+          [
+            "en 55%",
+            "por 21%",
+            "hacia 9%"
+          ],
+          [
+            "el 68%",
+            "la 17%",
+            "un 8%"
+          ],
+          [
+            "parque 51%",
+            "jardín 22%",
+            "campo 14%"
+          ]
+        ],
+        "label": "lo que hace la atención",
+        "caption": "mira la frase entera y predice lo que sigue"
+      }
+    },
+    {
+      "t": 33.5,
+      "spec": {
+        "kind": "photo",
+        "images": [
+          "@prediccion"
+        ],
+        "caption": "predecir la siguiente palabra"
+      }
+    },
+    {
+      "t": 40.5,
+      "spec": {
+        "kind": "stat",
+        "value": 3,
+        "label": "fases para crear un LLM",
+        "sub": "y solo la primera usa internet entero"
+      }
+    },
+    {
+      "t": 45.0,
+      "spec": {
+        "kind": "flow",
+        "title": "cómo se construye",
+        "steps": [
+          "1 · Preentrenamiento",
+          "2 · Ajuste fino",
+          "3 · Refuerzo humano"
+        ]
+      }
+    },
+    {
+      "t": 48.9,
+      "spec": {
+        "kind": "photo",
+        "images": [
+          "@preentrenamiento"
+        ],
+        "caption": "fase 1: leerse medio internet"
+      }
+    },
+    {
+      "t": 56.0,
+      "spec": {
+        "kind": "clip",
+        "video": "@fibras",
+        "lines": [
+          "TODO INTERNET",
+          "DE GOLPE"
+        ]
+      }
+    },
+    {
+      "t": 60.5,
+      "spec": {
+        "kind": "completa",
+        "modo": "simple",
+        "prompt": "había una vez ",
+        "tokens": [
+          "un",
+          " reino",
+          " donde",
+          " nadie",
+          " sabía",
+          " qué",
+          " era",
+          " verdad",
+          " y",
+          " todos",
+          " escribían",
+          " sin",
+          " parar"
+        ],
+        "label": "lo que sale de ahí",
+        "caption": "una máquina que completa texto"
+      }
+    },
+    {
+      "t": 66.1,
+      "spec": {
+        "kind": "clip",
+        "video": "@caos",
+        "lines": [
+          "PODEROSO",
+          "PERO CAÓTICO"
+        ]
+      }
+    },
+    {
+      "t": 73.3,
+      "spec": {
+        "kind": "photo",
+        "images": [
+          "@ajuste_fino"
+        ],
+        "caption": "fase 2: ajuste fino"
+      }
+    },
+    {
+      "t": 79.2,
+      "spec": {
+        "kind": "flow",
+        "title": "qué cambia el ajuste fino",
+        "steps": [
+          "Ejemplos escogidos",
+          "Respuestas más precisas",
+          "Meses y mucho dinero"
+        ]
+      }
+    },
+    {
+      "t": 89.6,
+      "spec": {
+        "kind": "headline",
+        "lines": [
+          "CONSTRUIRLOS",
+          "ES CARÍSIMO"
+        ]
+      }
+    },
+    {
+      "t": 91.4,
+      "spec": {
+        "kind": "photo",
+        "images": [
+          "@refuerzo"
+        ],
+        "caption": "fase 3: un humano corrige"
+      }
+    },
+    {
+      "t": 99.0,
+      "spec": {
+        "kind": "clip",
+        "video": "@mano",
+        "lines": [
+          "UN HUMANO",
+          "CORRIGE"
+        ]
+      }
+    },
+    {
+      "t": 107.6,
+      "spec": {
+        "kind": "completa",
+        "modo": "candidatos",
+        "prompt": "la respuesta correcta es ",
+        "tokens": [
+          "la",
+          " segunda",
+          " opción"
+        ],
+        "candidatos": [
+          [
+            "la 58%",
+            "una 21%",
+            "esa 12%"
+          ],
+          [
+            "segunda 47%",
+            "primera 29%",
+            "tercera 16%"
+          ],
+          [
+            "opción 74%",
+            "idea 13%",
+            "forma 7%"
+          ]
+        ],
+        "label": "el bucle del refuerzo",
+        "caption": "y un experto dice cuál estuvo bien"
+      }
+    },
+    {
+      "t": 121.4,
+      "spec": {
+        "kind": "cita",
+        "text": "Le estamos enseñando con un aprendizaje humano.",
+        "highlight": [
+          "humano."
+        ],
+        "source": "ia con josé"
+      }
+    },
+    {
+      "t": 130.1,
+      "spec": {
+        "kind": "photo",
+        "images": [
+          "@produccion"
+        ],
+        "caption": "listo para producción"
+      }
+    },
+    {
+      "t": 139.0,
+      "spec": {
+        "kind": "headline",
+        "kicker": "fin de las tres fases",
+        "lines": [
+          "UN MODELO",
+          "LISTO PARA TRABAJAR"
+        ]
+      }
+    },
+    {
+      "t": 144.1,
+      "spec": {
+        "kind": "photo",
+        "images": [
+          "@entrenados",
+          "@motor"
+        ],
+        "caption": "tú no entrenas nada: ya vienen entrenados"
+      }
+    },
+    {
+      "t": 159.9,
+      "spec": {
+        "kind": "shot",
+        "image": "@openai",
+        "title": "OpenAI",
+        "url_label": "openai.com/chatgpt",
+        "caption": "ChatGPT"
+      }
+    },
+    {
+      "t": 168.5,
+      "spec": {
+        "kind": "shot",
+        "image": "@anthropic",
+        "title": "Anthropic",
+        "url_label": "anthropic.com/claude",
+        "caption": "Claude"
+      }
+    },
+    {
+      "t": 174.5,
+      "spec": {
+        "kind": "shot",
+        "image": "@gemini",
+        "title": "Google",
+        "url_label": "gemini.google.com",
+        "caption": "Gemini"
+      }
+    },
+    {
+      "t": 182.2,
+      "spec": {
+        "kind": "headline",
+        "kicker": "las chinas",
+        "lines": [
+          "KIMI K2",
+          "MOONSHOT"
+        ]
+      }
+    },
+    {
+      "t": 184.6,
+      "spec": {
+        "kind": "shot",
+        "image": "@deepseek",
+        "title": "DeepSeek",
+        "url_label": "deepseek.com",
+        "caption": "la china más famosa"
+      }
+    },
+    {
+      "t": 193.5,
+      "spec": {
+        "kind": "photo",
+        "images": [
+          "@planos",
+          "@motor"
+        ],
+        "caption": "planos ≠ motor"
+      }
+    },
+    {
+      "t": 204.0,
+      "spec": {
+        "kind": "completa",
+        "modo": "simple",
+        "prompt": "lo que devuelve es ",
+        "tokens": [
+          "un",
+          " token",
+          ":",
+          " el",
+          " pedazo",
+          " de",
+          " texto",
+          " más",
+          " probable"
+        ],
+        "label": "un token",
+        "caption": "no una palabra entera: un pedazo"
+      }
+    },
+    {
+      "t": 210.5,
+      "spec": {
+        "kind": "cita",
+        "text": "El transformer son los planos. El LLM es el motor.",
+        "highlight": [
+          "planos.",
+          "motor."
+        ],
+        "source": "ia con josé"
+      }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "estudio-ia",
+  "version": "1.0.0",
+  "description": "Estudio de video viral para el canal de IA de José (@iaconjose). Claude Code es el cerebro (escribe guiones con estructura viral 2026 + anima con código Python); delega imágenes a Gemini, voz clonada a ElevenLabs y demos reales a ChatGPT. Comandos: /crear-video, /crear-serie, /crear-serie-desde.",
+  "author": {
+    "name": "Jose Balbuena"
+  },
+  "keywords": ["tiktok", "video", "ia", "faceless", "viral", "elevenlabs", "gemini"]
+}

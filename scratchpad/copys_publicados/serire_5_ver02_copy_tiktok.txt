@@ -1,0 +1,5 @@
+Por qué una red densa falla al reconocer tu foto con solo moverla 3 píxeles.
+Al aplanar la imagen en una fila larguísima de números, el 76% de los datos cambian de lugar.
+Mañana en @ia.conjose vemos la solución. ¿Aplanar o pedacitos? Yo digo pedacitos.
+
+#reddensa #pixeles #inteligenciaartificial #iaconjose

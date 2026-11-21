@@ -1,0 +1,120 @@
+{
+  "title": "Un juego con ventana: pygame en tres minutos",
+  "slug": "curso_py15_pygame",
+  "tema": "qué es una librería y cómo pygame da ventana, formas y teclas para un juego",
+  "theme": "curso python con ia",
+  "hook_tipo": "demostracion",
+  "keyword": "pygame python",
+  "hook_headline": [
+    "VENTANA",
+    "BUCLE · DIBUJO"
+  ],
+  "pregunta_ab": "¿pygame para aprender o directo a un motor grande?",
+  "music_prompt": "hard techno bed, dark industrial groove, 150 BPM, rolling kick, restrained under a voice, instrumental, no vocals",
+  "modo": "corto",
+  "hook_locked": true,
+  "scenes": [
+    {
+      "beat_type": "hook",
+      "visual_type": "terminal",
+      "narration": "Hasta ahora tus juegos vivían en la terminal, en blanco y negro, como película de los cuarenta. Con una librería que se instala en UN renglón aparecen ventana, colores y movimiento. Le pido al agente que instale pygame y me diga la versión, y fíjate que el pip lo corre él; yo nomás superviso.",
+      "pause_after": 0.35,
+      "terminal": {
+        "title": "pip",
+        "lines": [
+          {
+            "text": "pip install pygame"
+          },
+          {
+            "text": "pygame 2.6.1"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "claude 'instala pygame en el venv y dime la version'",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "custom",
+      "narration": "Una librería es código que otra gente ya escribió y tú usas sin pedir permiso y sin entenderlo entero. Sí: programar es, en buena parte, pararse en hombros ajenos y no decir nada. Pygame te da tres cosas: una ventana donde dibujar, formas para pintar, y una manera de saber qué tecla apretaste. Tú pones el juego, ellos ponen la plomería.",
+      "custom_anim": {
+        "description": "A la izquierda una caja etiquetada tu programa. A la derecha un bloque grande etiquetado pygame con tres enchufes marcados ventana, formas y teclas. Tres cables salen de tu programa y se conectan uno a uno a cada enchufe; al conectarse, en el bloque se dibuja una ventanita, un círculo y un rectángulo, y una tecla con flecha. Al final, un letrero: ellos la plomería, tú el juego. Sin cifras."
+      }
+    },
+    {
+      "beat_type": "contexto",
+      "visual_type": "terminal",
+      "narration": "Todo juego con ventana tiene la misma forma: un bucle que no para nunca. En cada vuelta mira si apretaste algo, mueve las cosas un poquito, borra la pantalla y vuelve a dibujar. Sesenta veces por segundo. Sí, sesenta: tu juego se borra entero y se repinta más veces de las que tú parpadeas. Y es un while, el mismo de los intentos, pero con dibujitos.",
+      "terminal": {
+        "title": "pong.py",
+        "lines": [
+          {
+            "text": "while True:"
+          },
+          {
+            "text": "    for e in pygame.event.get(): ..."
+          },
+          {
+            "text": "    pantalla.fill(...)"
+          },
+          {
+            "text": "    pygame.display.flip()"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "/home/jose/tiktok/.venv/bin/python ver.py pong.py --lento && sleep 20",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "giro",
+      "visual_type": "terminal",
+      "narration": "Y este cuadro no es una imagen que yo haya bajado de internet: lo está dibujando pygame ahorita, con dos paletas, una pelota y un marcador que sube solo. Cuarenta líneas de Python. Y si te parece poquito, acuérdate de que hace cinco clases tu programa nomás sabía decir hola.",
+      "terminal": {
+        "title": "pong",
+        "lines": [
+          {
+            "text": "ventana 640x420"
+          },
+          {
+            "text": "dos paletas · una pelota · marcador"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "/home/jose/tiktok/.venv/bin/python pong.py",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo",
+        "titulo": "Mi primer juego"
+      }
+    },
+    {
+      "beat_type": "cta",
+      "visual_type": "kinetic_video",
+      "narration": "Ventana, bucle y dibujo. Con eso ya te sale un pong, que es el abuelito de todos los videojuegos. En el siguiente módulo cambiamos de terreno: apps de escritorio, de las que sí usa tu familia. ¿pygame para aprender o directo a un motor grande? Yo digo pygame: el motor sin entender el bucle es un coche sin llantas, bien bonito y bien parado.",
+      "pause_after": 0.3,
+      "kinetic_video": {
+        "video": "/home/jose/tiktok/videos/_clips_pagados/gen_ver_tirar_a_proposito__veo_4.mp4",
+        "words": [
+          {
+            "text": "ventana, bucle",
+            "serif": true
+          },
+          {
+            "text": "DIBUJO",
+            "accent": true
+          }
+        ],
+        "variant": "dark"
+      }
+    }
+  ]
+}

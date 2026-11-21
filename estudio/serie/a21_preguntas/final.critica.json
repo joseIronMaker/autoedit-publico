@@ -1,0 +1,100 @@
+{
+  "nivel_vs_listón_0a10": 5.5,
+  "primer_segundo": "No detiene el pulgar. La composición es débil (mucho espacio muerto arriba), el movimiento de los brazos de la esfera es lento y robótico, y el cartel dice 'HACEN TODO' sin dar contexto visual de que hablamos de Inteligencia Artificial o Agentes. El Video 1 tiene una física impecable y un impacto sonoro desde el frame cero; aquí parece una diapositiva animada.",
+  "momentos_que_funcionan": [
+    {
+      "t": "00:08-00:11",
+      "que": "La revelación en perspectiva de las cuatro esclusas sobre el canal establece una metáfora espacial clara para estructurar el video."
+    },
+    {
+      "t": "00:40-00:43",
+      "que": "La explosión visual del polígono irregular con flechas que rompe el encuadre para ilustrar un problema 'no delimitado' ('haz crecer mi negocio')."
+    },
+    {
+      "t": "00:54-01:05",
+      "que": "El cambio a plano cenital/isométrico para aplicar el framework de forma rápida con luces verdes y rojas."
+    }
+  ],
+  "momentos_donde_se_iria": [
+    {
+      "t": "00:00-00:06",
+      "por_que": "Seis segundos enteros en el mismo plano estático viendo dos carteles. En TikTok esto es una eternidad.",
+      "arreglo": "Cortar a 3 segundos. Que el barco avance rápido rompiendo o esquivando físicamente ambos carteles mientras entra directo a las compuertas."
+    },
+    {
+      "t": "00:19-00:21",
+      "por_que": "La transición por disolvencia (cross-fade) donde el barco desaparece y reaparece más atrás rompe toda la ilusión espacial y el flujo continuo que hace hipnótico al Video 1.",
+      "arreglo": "No resetees al mismo personaje con disolvencias. Haz que venga un segundo barco inmediatamente detrás con la galleta de la suerte, o que el mismo barco suelte el ícono anterior y saque el nuevo sin cortes de cámara."
+    },
+    {
+      "t": "00:25-00:34",
+      "por_que": "El barco se hunde bajo el agua con el documento (00:28) y luego se hunde con el correo quemándose (00:32). No tiene sentido físico con la metáfora de una compuerta que se abre o se cierra, es confuso de leer.",
+      "arreglo": "En 00:28 la compuerta debe abrirse y cuando el archivo se mancha de rojo, el agua fluye hacia atrás (rebobinado físico). En 00:32 la compuerta debe bajar de golpe aplastando o bloqueando el barco en seco."
+    },
+    {
+      "t": "01:11-01:16",
+      "por_que": "Un 'teaser' de próximos capítulos justo antes de la conclusión mata la retención final. La gente hace swipe en cuanto oye 'en los siguientes capítulos'.",
+      "arreglo": "Eliminar por completo de este lugar. Ve directo del segundo 01:10 al cierre de 01:16. Si quieres anunciar serie, ponlo en una línea de 1.5 segundos después de la frase final."
+    }
+  ],
+  "ritmo_visual": "Rígido y segmentado. Mientras el Video 1 es un plano secuencia continuo donde la cámara fluye con elegancia matemática, el Video 2 abusa de paradas en seco en cada estación, interpolaciones lineales (falta easing/curvas de animación en el barco y las compuertas) y cortes por disolvencia que destruyen la continuidad espacial.",
+  "sincronia_voz_imagen": [
+    {
+      "t": "00:01-00:02",
+      "problema": "La voz dice 'los agentes', pero en pantalla solo hay una bola negra en un barco de papel y el texto 'HACEN TODO'. Falta anclar visualmente la palabra 'Agentes de IA'."
+    },
+    {
+      "t": "00:31-00:34",
+      "problema": "La voz enumera tres cosas ('un pago, un correo a tu jefe, o borrar un respaldo'), pero la animación se queda atascada mostrando solo un sobre quemándose lentamente."
+    },
+    {
+      "t": "00:46-00:49",
+      "problema": "Dice 'si se equivoca en tu fiesta, se enojan tus tías', y el pastel desaparece por corte mágico en vez de caer o arruinarse, mientras aparecen tres caras diminutas en la balanza un segundo tarde."
+    }
+  ],
+  "legibilidad_en_celular": [
+    {
+      "t": "00:30-00:33",
+      "problema": "La moneda con el signo '$' y el ícono del sobre son demasiado pequeños y de trazo muy fino; además quedan tapados por la estructura de madera de la compuerta."
+    },
+    {
+      "t": "00:48-00:52",
+      "problema": "Las tres caras de las 'tías enojadas' en el plato izquierdo de la balanza son microscópicas. En una pantalla de teléfono vertical no se distinguen las expresiones."
+    },
+    {
+      "t": "00:55-01:00",
+      "problema": "En el plano cenital lejano, el ícono del insecto (bug) rojo dentro del documento que lleva el barco es casi invisible."
+    }
+  ],
+  "sonido": {
+    "musica": "Pista de marimba/pizzicato demasiado genérica, repetitiva y con tono de 'video corporativo explicativo'. Le resta tensión y modernidad comparado con el diseño sonoro atmosférico del Video 1.",
+    "efectos": "Efectos de sonido de librería tipo caricatura (el 'boing' de error en 00:34, el fuego, los 'dings') que se sienten baratos y desconectados de un diseño minimalista.",
+    "mezcla": "El loop constante de agua chapoteando compite con las frecuencias medias de la voz y ensucia toda la pista.",
+    "problemas": [
+      {
+        "t": "00:03-00:05",
+        "que": "El sonido de interferencia/megáfono ensucia la voz en un momento clave del hook."
+      },
+      {
+        "t": "00:20",
+        "que": "Falta diseño sonoro que acompañe la transición; el sonido del agua sigue igual mientras la imagen se disuelve."
+      },
+      {
+        "t": "00:34",
+        "que": "El efecto de sonido de error ('buzzer' cómico) rompe la seriedad del análisis."
+      }
+    ]
+  },
+  "guion": {
+    "claridad": "Alta. El marco mental de las 4 preguntas es excelente, concreto y muy útil para la audiencia.",
+    "afirmaciones_dudosas": [
+      "En 00:16: 'Un programa corre o no corre'. Es una simplificación excesiva; el mayor riesgo con código generado por IA es cuando el programa sí corre (compila sin errores) pero tiene fallos lógicos silenciosos o vulnerabilidades."
+    ],
+    "final": "La frase final ('no es qué tan inteligente es, es qué tan caro sale cuando se equivoca') es brillante, pero pierde toda su fuerza porque está precedida por el relleno de 'en los siguientes capítulos...' (01:11) y porque visualmente el barco hundiéndose de lado a cámara lenta durante 5 segundos (01:20-01:25) carece de impacto dramático."
+  },
+  "tres_cambios_de_mayor_impacto": [
+    "Eliminar todas las disolvencias (cross-fades) y hacer un movimiento de cámara continuo y fluido con curvas de aceleración (easing) reales; si muestras un contraejemplo en la misma compuerta, que sea un segundo barco que choca por detrás o un cambio directo de objeto sin reiniciar la escena.",
+    "Rehacer los primeros 5 segundos: poner 'AGENTES DE IA' gigante en el segundo 0, eliminar la pausa estática de los dos carteles y arrancar con el barco ya en movimiento rápido hacia la primera compuerta.",
+    "Cambiar el diseño sonoro completo: quitar la música de marimba corporativa y el loop constante de agua; usar una base minimalista con tensión creciente y efectos de sonido secos, táctiles y precisos (madera, clics mecánicos, sub-bajos) que acentúen cada corte visual como en el Video 1."
+  ]
+}

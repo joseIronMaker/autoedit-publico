@@ -1,0 +1,40 @@
+{
+  "titulo": "Cómo la IA aprendió a ver",
+  "slug": "serie_ia_aprendio_a_ver",
+  "n": 5,
+  "por_que_cinco": "El material se cierra a sí mismo en tres bloques: representación, la CNN y sus aplicaciones. Cinco es el mínimo donde cada video carga UNA idea que no se puede fusionar con la de al lado y además tiene un anclaje que el espectador usa a diario. Los 'filtros' no son un video aparte: son la convolución con otros números. Detección y segmentación cierran juntas porque comparten el mismo mensaje.",
+  "patron": "Copiado del video con más vistas del canal (ln03, 595 vistas, el doble que cualquier otro): 1) el hook nombra un producto que el espectador usa y le hace una afirmación absoluta y contraintuitiva; 2) la prueba es un RECIBO real de una herramienta pública que él puede abrir y reproducir en diez segundos; 3) hay una cifra propia calculada en pantalla; 4) el ejemplo lo toca a él, no a la máquina.",
+  "videos": [
+    {
+      "n": 1,
+      "guion": "ver01_galeria_solo_ve_numeros.json",
+      "ancla": "tu galería",
+      "recibo": "sí"
+    },
+    {
+      "n": 2,
+      "guion": "ver02_no_basta_con_mirar.json",
+      "ancla": "la foto de tu celular",
+      "recibo": "no"
+    },
+    {
+      "n": 3,
+      "guion": "ver03_filtro_de_tu_camara.json",
+      "ancla": "el filtro de nitidez",
+      "recibo": "sí"
+    },
+    {
+      "n": 4,
+      "guion": "ver04_nadie_le_enseno_un_ojo.json",
+      "ancla": "tu teléfono encuentra caras",
+      "recibo": "no"
+    },
+    {
+      "n": 5,
+      "guion": "ver05_ve_lo_que_el_radiologo_no.json",
+      "ancla": "el recuadro de la cámara",
+      "recibo": "no"
+    }
+  ],
+  "_nota_legal": "Los CONCEPTOS provienen de una clase universitaria pública de introducción a deep learning (visión por computadora, ene-2026) que José aportó como referencia. NO se copia su texto, diapositivas ni figuras. Los recibos son capturas de una página pública de terceros (setosa.io, Victor Powell) recortadas para NO mostrar la cara del autor, y se citan en pantalla con su URL. El título de la serie no usa la marca de la fuente."
+}

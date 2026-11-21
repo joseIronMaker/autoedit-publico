@@ -1,0 +1,112 @@
+{
+  "slug": "ag_que_escribio_de_verdad",
+  "tema": "Qué es un agente: el modelo no ejecuta nada, escribe un pedido en texto y otro programa lo ejecuta — el ciclo completo capturado de verdad",
+  "title": "Le pregunté por mi inventario. Esto es TODO lo que escribió.",
+  "theme": "hielo",
+  "hook_locked": true,
+  "concepto": "agente: el programa que ejecuta lo que el modelo solo pide en texto",
+  "en_una_frase": "Un agente no es una IA más lista: es un programa que lee el pedido que el modelo escribió, lo ejecuta de verdad y le devuelve el resultado para que siga.",
+  "quien_decide": "el modelo decide QUÉ pedir, pero quien lo ejecuta es un programa que alguien más configuró — y ese alguien decide qué se ejecuta sin preguntarte",
+  "que_cuesta": "le confías tareas creyendo que las hace él, y no distingues cuándo te está describiendo algo y cuándo alguien lo está ejecutando de verdad con tus permisos",
+  "palanca": "antes de confiarle una tarea, pregúntale si puede hacerla o solo describirla; si te contesta con el texto en vez del resultado, es un modelo, no un agente",
+  "pregunta_ab": "Lo que usas a diario, ¿te describe las cosas o te las hace?",
+  "scenes": [
+    {
+      "beat_type": "captura_cruda",
+      "visual_type": "terminal",
+      "narration": "Le pregunté cuántas piezas me quedaban de un pedido. Y esto es todo lo que el modelo escribió: una línea pidiendo una herramienta. Ni buscó, ni abrió nada, ni contestó la pregunta.",
+      "terminal": {
+        "title": "lo que salió del modelo",
+        "lines": [
+          {
+            "prompt": true,
+            "text": "¿Cuántas piezas me quedan del pedido B-2208?"
+          },
+          {
+            "text": "el modelo escribe:"
+          },
+          {
+            "text": "{\"name\": \"consultar_inventario\", \"args\": {\"folio\": \"B-2208\"}}",
+            "accent": true
+          },
+          {
+            "text": "no ejecutó nada. pidió."
+          }
+        ]
+      }
+    },
+    {
+      "beat_type": "definicion",
+      "visual_type": "image",
+      "narration": "Porque un modelo de lenguaje no puede hacer nada. Literalmente nada. Lo único que sabe hacer es escribir el siguiente pedazo de texto. No tiene manos, no toca tu disco, no manda un correo, no entra a ningún sistema. Y cuando te dicen que usó una herramienta, lo que hizo fue escribir un pedido.",
+      "image_prompts": [
+        "A single sheet of paper with a handwritten note pinned to a workshop wall, hand tools hanging beside it out of reach, warm dim light. Documentary photography, muted palette, no readable text.",
+        "Extreme macro of the pinned note's edge curling, the wall grain behind it, raking warm light. Documentary photography, shallow depth of field.",
+        "A closed roll-up shutter of a storeroom seen from a dim corridor, one paper slip on the floor in front of it. Documentary photography, nobody in frame."
+      ]
+    },
+    {
+      "beat_type": "mecanismo",
+      "visual_type": "terminal",
+      "narration": "Entonces alguien más tiene que leer ese pedido. Y ese alguien es un programa: lee lo que el modelo escribió, reconoce que pidió la herramienta, la ejecuta de verdad contra el almacén, y le devuelve el resultado. Hasta ahí el modelo no sabía la respuesta. Con el dato en la mano, la escribe.",
+      "terminal": {
+        "title": "lo que hace el programa",
+        "lines": [
+          {
+            "prompt": true,
+            "text": "el agente lo ejecuta → {\"folio\": \"B-2208\", \"piezas\": 0}"
+          },
+          {
+            "text": "y se lo devuelve al modelo"
+          },
+          {
+            "text": "No quedan piezas del pedido B-2208 (0 en almacén).",
+            "accent": true
+          }
+        ],
+        "progress": {
+          "label": "pedir · ejecutar · devolver · contestar"
+        }
+      }
+    },
+    {
+      "beat_type": "el_nombre",
+      "visual_type": "image",
+      "narration": "Y por eso un agente no es una inteligencia artificial más lista. Un agente es el modelo metido en ese bucle, con su lista de herramientas: las tres cosas juntas. El modelo decide bien qué pedir. Pero ejecutarlo, nunca: eso lo hace el bucle.",
+      "image_prompts": [
+        "A brass pneumatic tube capsule sitting on a counter beside its receiving slot, warm overhead lamp, deep shadows. Documentary photography, muted palette, no text.",
+        "The same capsule half inserted into the tube slot, extreme macro, raking light on the brass. Documentary photography, shallow depth of field.",
+        "An old switchboard with cables patched between two ports, seen close, warm side light. Documentary photography, muted palette, nobody in frame."
+      ]
+    },
+    {
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "narration": "El modelo pide. El agente ejecuta.",
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "EL MODELO"
+          },
+          {
+            "text": "PIDE"
+          },
+          {
+            "text": "EL AGENTE EJECUTA"
+          }
+        ],
+        "variant": "dark",
+        "video": "videos/gen_ln_de_llm_a_agente.assets/veo_4.mp4"
+      }
+    },
+    {
+      "beat_type": "cierre",
+      "visual_type": "image",
+      "narration": "Así que mi manera de saber qué tengo enfrente, y te la robas hoy mismo: le pido que haga la cosa, no que me la explique. Si me devuelve el texto para que yo lo mande, es un modelo. Si me devuelve que ya está hecho, hay un programa atrás ejecutando con los permisos de alguien. Y ahí la pregunta deja de ser si es listo. Lo que usas a diario, ¿te describe las cosas o te las hace?",
+      "image_prompts": [
+        "Two identical envelopes on a dark desk, one sealed and stamped, the other still open and blank, warm lamp above. Documentary photography, muted palette, no readable text.",
+        "A hand dropping the sealed envelope into a mail slot, seen from inside the dim room, daylight through the slot. Documentary photography."
+      ]
+    }
+  ]
+}

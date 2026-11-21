@@ -1,0 +1,93 @@
+{
+  "slug": "pro_cinco_nombres",
+  "tema": "como se rellena el hueco de un prompt: lo que no escribes lo decide lo mas comun que el modelo vio mientras aprendia",
+  "title": "Le pedí una historia. Le puso nombre al perro sin que yo se lo pidiera.",
+  "theme": "hielo",
+  "hook_locked": true,
+  "concepto": "predicción del siguiente pedazo con muestreo: el modelo continúa, no obedece",
+  "en_una_frase": "El modelo le pone un número a cada pedazo que podría seguir y saca uno de esa tómbola cargada; por eso lo que no escribiste no sale en blanco, sale con lo más común.",
+  "quien_decide": "cuando tú no escribes algo, lo más común de su entrenamiento decide por ti, y no te avisa que decidió",
+  "que_cuesta": "publicas, mandas o entregas un texto donde la mitad de las decisiones no las tomaste tú, y ni sabes cuáles fueron",
+  "palanca": "pídele lo mismo tres veces en chats distintos; lo que cambie entre las tres es exactamente lo que tú no escribiste",
+  "pregunta_ab": "¿Le pides una vez y te quedas con lo que salga, o le pides tres y comparas?",
+  "scenes": [
+    {
+      "beat_type": "vela_pasar",
+      "visual_type": "screen_demo",
+      "narration": "Le pedí una historia corta sobre un perro. No le dije el nombre, ni la raza, ni el tono, ni cómo termina. Fíjate nada más en cómo se llama el perro.",
+      "screen_demo": {
+        "tool": "chatgpt",
+        "prompt": "Escribe una historia corta sobre un perro.",
+        "nota": "captura REAL: le pone nombre al perro sin que nadie se lo pidiera"
+      }
+    },
+    {
+      "beat_type": "otra_vez",
+      "visual_type": "screen_demo",
+      "narration": "Entonces lo mandé otra vez. Mismo prompt, letra por letra, chat nuevo. Otra historia, otro final… y el mismo perro. Bruno las dos veces. Y yo no escribí Bruno en ninguna parte.",
+      "screen_demo": {
+        "tool": "chatgpt",
+        "prompt": "Escribe una historia corta sobre un perro.",
+        "nota": "captura REAL: mismo prompt, chat nuevo, nombre distinto"
+      }
+    },
+    {
+      "beat_type": "definicion",
+      "visual_type": "image",
+      "narration": "Y por eso lo primero es entender qué pasó ahí: cuando tu prompt no dice algo — el nombre, el tono, cómo termina — eso es un hueco. Y el modelo nunca deja un hueco en blanco: lo rellena. Lo conté con cuarenta historias y salieron cinco nombres nada más, y Toby en casi la mitad.",
+      "image_prompts": [
+        "A wall of identical enamel dog tags hanging on small hooks, warm dim light, shallow depth of field. Documentary photography, muted palette, no readable text.",
+        "Extreme macro of one worn enamel tag among the others, raking warm light, deep shadows behind. Documentary photography.",
+        "Dozens of identical printed pages stacked slightly askew on a dark desk under one lamp. Documentary photography, muted palette, no readable text."
+      ]
+    },
+    {
+      "beat_type": "mecanismo",
+      "visual_type": "image",
+      "narration": "Y lo rellena así, que no es obedecer: el modelo continúa. Lee todo lo que lleva enfrente y, para el pedazo que sigue, arma la lista de los que podrían venir y les pone un número. No escoge el más alto: saca uno de esa tómbola cargada, lo pega al final y vuelve a leer todo otra vez, desde el principio. Por eso pedirle lo mismo otra vez no te da lo mismo, pero tampoco te da algo muy distinto.",
+      "image_prompts": [
+        "A wooden bingo cage full of numbered balls, one ball caught mid-fall, warm side light, deep shadows. Documentary photography, muted palette.",
+        "Extreme macro of the balls packed inside the cage, most of them identical, one different, shallow depth of field. Documentary photography.",
+        "A hand turning the crank of that cage in a dim room, motion blur on the crank. Documentary photography, muted palette."
+      ]
+    },
+    {
+      "beat_type": "de_quien_es_la_decision",
+      "visual_type": "image",
+      "narration": "Y por eso mismo a mí me cambió la forma de escribirlos. Los números de esa tómbola los mueve lo que TÚ escribiste. Lo que no escribiste se queda con los de fábrica: lo más común que vio mientras aprendía. El hueco nunca sale en blanco. Sale relleno, y no con lo tuyo.",
+      "image_prompts": [
+        "A row of factory preset dials on an old machine panel, all set to the same default position, warm work light. Documentary photography, muted palette, no readable text.",
+        "A single hand turning one of those dials away from the others, extreme macro, raking light. Documentary photography, shallow depth of field."
+      ]
+    },
+    {
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "narration": "Lo que no escribes, ya viene escrito.",
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "LO QUE"
+          },
+          {
+            "text": "NO ESCRIBES"
+          },
+          {
+            "text": "YA VIENE ESCRITO"
+          }
+        ],
+        "variant": "dark",
+        "video": "videos/gen_ln_palabras_a_numeros.assets/veo_0.mp4"
+      }
+    },
+    {
+      "beat_type": "cierre",
+      "visual_type": "image",
+      "narration": "Así que la prueba que yo hago antes de confiarle un texto: se lo pido otra vez en un chat nuevo y pongo las respuestas lado a lado. Lo que cambie entre ellas es exactamente lo que yo no escribí. Ahí meto mano. ¿Tú te quedas con lo primero que salga, o se lo pides otra vez y comparas?",
+      "image_prompts": [
+        "Three printed sheets laid side by side on a dark desk under one lamp, a pencil resting across them. Documentary photography, muted palette, no readable text.",
+        "A hand marking a circle on the middle sheet with a pencil, seen from over the shoulder at night. Documentary photography, no readable writing."
+      ]
+    }
+  ]
+}

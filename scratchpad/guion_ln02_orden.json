@@ -1,0 +1,82 @@
+{
+  "tema": "El orden lo es todo: por qué una red normal no sirve para leer",
+  "modo": "corto",
+  "title": "El orden lo es todo: por qué una red normal no sirve para leer",
+  "slug": "ln_orden_lo_es_todo",
+  "hook_tipo": "contraria",
+  "hook_locked": true,
+  "theme": "ambar",
+  "image_style": "clean technical blueprint illustration drafted on deep indigo paper, precise thin white and warm amber line-work, drafting-compass and schematic aesthetic, subtle paper grain, vertical 9:16 composition, generous empty space in the lower third, no text, no letters, no words, no watermark",
+  "keyword": "por qué una red neuronal no entiende el orden de las palabras",
+  "hook_headline": ["MISMAS", "PALABRAS"],
+  "pregunta_ab": "¿Manda la palabra o manda el orden?",
+  "music_prompt": "warm analog synthwave instrumental, hand-played fretless bass and soft vinyl crackle, curious and playful, mid-tempo groove, no vocals, 104 BPM",
+  "scenes": [
+    {
+      "narration": "Dos frases con exactamente las mismas palabras y significados opuestos.",
+      "beat_type": "hook",
+      "visual_type": "kinetic",
+      "pause_after": 0.45,
+      "kinetic": {
+        "words": [
+          {"text": "mismas palabras", "serif": true},
+          {"text": "SENTIDO OPUESTO", "accent": true}
+        ]
+      }
+    },
+    {
+      "narration": "No es bueno, es buenísimo. Ahora al revés: no es buenísimo, es bueno. Cambió todo, y la red ni se entera.",
+      "beat_type": "hook",
+      "visual_type": "host",
+      "host_top": {"kind": "headline", "lines": ["MISMAS", "PALABRAS"]}
+    },
+    {
+      "narration": "Se lo damos a un modelo clásico, de los que cuentan cuántas veces aparece cada palabra. Las dos frases producen el mismo vector, idéntico. Para el modelo son la misma frase.",
+      "beat_type": "proof",
+      "visual_type": "ml_demo",
+      "ml_demo": {
+        "code": "import numpy as np\nfrom sklearn.feature_extraction.text import CountVectorizer\na = 'no es bueno es buenisimo'\nb = 'no es buenisimo es bueno'\ncv = CountVectorizer(token_pattern=r'(?u)\\\\b\\\\w+\\\\b').fit([a, b])\nX = cv.transform([a, b]).toarray()\nvocab = cv.get_feature_names_out()\nfig, ax = plt.subplots(figsize=(7.5, 4.2))\nax.imshow(X, cmap='cividis', aspect='auto', vmin=0, vmax=2)\nax.set_xticks(range(len(vocab)))\nax.set_xticklabels(vocab, fontsize=19)\nax.set_yticks([0, 1])\nax.set_yticklabels(['frase A', 'frase B'], fontsize=19)\nfor i in range(X.shape[0]):\n    for j in range(X.shape[1]):\n        ax.text(j, i, str(X[i, j]), ha='center', va='center', color=TXT, fontsize=26, fontweight='bold')\nigual = bool((X[0] == X[1]).all())\nax.set_title('vector identico' if igual else 'vectores distintos')\nfig.text(0.5, 0.02, 'para el modelo son LA MISMA frase', ha='center', color=RED, fontsize=22, fontweight='bold')",
+        "display_code": [
+          "cv.transform(['no es bueno es buenisimo'])",
+          "cv.transform(['no es buenisimo es bueno'])",
+          "(A == B).all()  ->  True"
+        ],
+        "caption": "bolsa_de_palabras.py"
+      }
+    },
+    {
+      "narration": "El problema es de fábrica: una red normal recibe todo de golpe, en un solo bloque. No tiene forma de saber qué palabra vino antes.",
+      "beat_type": "giro",
+      "visual_type": "diagram",
+      "diagram": {
+        "type": "neural_net",
+        "title": "TODO DE GOLPE",
+        "layers": [5, 4, 4, 1],
+        "in_label": "las palabras, sin orden",
+        "out_label": "una respuesta"
+      }
+    },
+    {
+      "narration": "Sin orden no hay significado.",
+      "beat_type": "tesis",
+      "visual_type": "kinetic",
+      "pause_after": 0.35,
+      "kinetic": {
+        "words": [
+          {"text": "sin orden", "serif": true},
+          {"text": "NO HAY SIGNIFICADO", "accent": true}
+        ]
+      }
+    },
+    {
+      "narration": "Por eso el lenguaje necesitó otra arquitectura. Mañana: cómo la IA convierte las palabras en números.",
+      "beat_type": "cta",
+      "visual_type": "host",
+      "host_top": {
+        "kind": "save",
+        "title": "SERIE: CÓMO LA IA LEE",
+        "subtitle": "SIGUIENTE: PALABRAS → NÚMEROS →"
+      }
+    }
+  ]
+}

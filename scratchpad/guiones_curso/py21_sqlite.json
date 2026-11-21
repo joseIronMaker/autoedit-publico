@@ -1,0 +1,105 @@
+{
+  "title": "Dónde viven los datos: del archivo a una base de datos",
+  "slug": "curso_py21_sqlite",
+  "tema": "por qué una base de datos SQLite en vez de un archivo, y cómo se guarda y se pregunta",
+  "theme": "curso python con ia",
+  "hook_tipo": "demostracion",
+  "keyword": "sqlite python",
+  "hook_headline": [
+    "10.000",
+    "PARTIDAS"
+  ],
+  "pregunta_ab": "¿Archivo JSON o base de datos desde el principio?",
+  "music_prompt": "hard techno bed, dark industrial groove, 150 BPM, rolling kick, restrained under a voice, instrumental, no vocals",
+  "modo": "corto",
+  "hook_locked": true,
+  "scenes": [
+    {
+      "beat_type": "hook",
+      "visual_type": "custom",
+      "narration": "Guardar en un archivo funciona… hasta que tienes diez mil partidas y quieres las tres mejores. Ahí andas leyendo el archivo completo para encontrar tres renglones, como buscar una llave vaciando la casa entera. Para eso existen las bases de datos, y Python trae una gratis: SQLite. Tres pasos: te conectas a un archivo, creas una tabla y le preguntas.",
+      "pause_after": 0.35,
+      "custom_anim": {
+        "description": "Tres momentos encadenados. Primero, un montón desordenado de fichas cayendo en una pila alta con la etiqueta diez mil partidas y un signo de interrogación encima. Después, un cable sale de una caja etiquetada tu programa y se enchufa a un cilindro de base de datos con el nombre juego.db, que se enciende; dentro del cilindro se dibuja una tabla con dos columnas etiquetadas jugador e intentos y se llenan cinco filas. Al final, una lupa con el texto SELECT recorre la tabla, las filas se reordenan de menor a mayor por intentos y las dos primeras salen del cilindro flotando y se quedan iluminadas. Sin más cifras que 5."
+      }
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "terminal",
+      "narration": "Le pido al agente que escriba base punto pi: que guarde partidas en SQLite y consulte las dos mejores. Y mira lo que hace: crea la tabla si no existe, mete cinco partidas y arma la pregunta ordenada por intentos. Léelo con calma, porque esta vez la respuesta la da la base, no un for tuyo.",
+      "terminal": {
+        "title": "base.py",
+        "lines": [
+          {
+            "text": "con.execute(\"CREATE TABLE IF NOT EXISTS partidas...\")"
+          },
+          {
+            "text": "SELECT jugador, intentos FROM partidas"
+          },
+          {
+            "text": "ORDER BY intentos LIMIT 2"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "claude 'escribe base.py: guarda partidas en sqlite y consulta las 2 mejores'",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "contexto",
+      "visual_type": "terminal",
+      "narration": "Y esta es la pregunta corriendo de verdad: dame jugador e intentos, ordenados de menor a mayor, y nada más dos. Cinco partidas guardadas, y la base contesta: Ana con dos, José con tres. Tú no recorriste NADA. Ella fue, buscó, ordenó y regresó. Y ni propina pide.",
+      "terminal": {
+        "title": "python3 base.py",
+        "lines": [
+          {
+            "text": "guardadas 5 partidas en juego.db"
+          },
+          {
+            "text": "1. Ana: 2 intentos"
+          },
+          {
+            "text": "2. Jose: 3 intentos"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "cat base.py; echo; echo '$ python3 base.py'; python3 base.py",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "giro",
+      "visual_type": "custom",
+      "narration": "Ahora el error que se paga caro: pegar el dato del usuario dentro de la consulta con un más. Así se cuelan las inyecciones: alguien escribe un pedazo de consulta en tu caja de texto y tu programa, bien obediente, lo ejecuta. Es dejar la puerta abierta con un letrero de no hay nadie. Se usan los signos de interrogación y la base pone el dato. Tú, jamás.",
+      "custom_anim": {
+        "description": "Arriba una caja de texto de usuario donde se escribe un valor sospechoso con comillas y punto y coma. Debajo, a la izquierda, una consulta armada con un signo + que absorbe ese texto tal cual; la consulta se pone roja, se parte, y aparece el rótulo inyección con una X. A la derecha la misma consulta con un ? en lugar del dato; el valor del usuario entra por un canal aparte etiquetado parámetro y la consulta se queda verde con una palomita. Sin cifras."
+      }
+    },
+    {
+      "beat_type": "cta",
+      "visual_type": "kinetic_video",
+      "narration": "Conectar, crear, preguntar. Con una base de datos tu app deja de leer archivos a mano como quien hojea el directorio telefónico. La que viene: qué es una API y por qué casi ninguna app guarda sus propios datos. ¿Archivo JSON o base de datos desde el principio? Yo digo JSON hasta que la pregunta se ponga difícil.",
+      "pause_after": 0.3,
+      "kinetic_video": {
+        "video": "/home/jose/tiktok/videos/_clips_pagados/gen_ln_donde_quedo_el_orden__veo_4.mp4",
+        "words": [
+          {
+            "text": "la base busca",
+            "serif": true
+          },
+          {
+            "text": "TÚ PREGUNTAS",
+            "accent": true
+          }
+        ],
+        "variant": "dark"
+      }
+    }
+  ]
+}

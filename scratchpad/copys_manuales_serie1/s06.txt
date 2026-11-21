@@ -1,0 +1,15 @@
+Seis de cada diez textos escritos por gente que no es nativa del idioma fueron marcados como hechos con IA. Los escribieron ellos.
+
+Un estudio de Stanford probó siete detectores contra 91 ensayos de estudiantes no nativos: 61.3% de falsos positivos en promedio. Y 18 de esos 91 fueron acusados por los siete detectores a la vez. Está publicado en Patterns, de Cell Press, y el preprint es el arXiv 2304.02819.
+
+Mi límite honesto: se midió en 2023, sobre ensayos de TOEFL. La cifra es de ese estudio, no de tus tareas ni de los detectores de hoy.
+
+Pero el motivo de fondo sigue igual, y te va a dar coraje. El detector no busca copia. Mide qué tan predecible suena lo que escribes: en técnico, perplejidad. Y escribir simple y correcto —que es justo como escribe alguien que aprendió el idioma— se parece a como escribe una máquina.
+
+Es decir: entre mejor aprendiste a escribir claro, más sospechoso te ve.
+
+Mientras un porcentaje decida por ti, la evidencia la tienes que dejar tú. Escribir en un documento con historial de versiones deja rastro de cómo nació el texto, y eso sí se puede enseñar. Un porcentaje no.
+
+No mide si copiaste. Mide si suenas común.
+
+¿Confías más en el porcentaje del detector o en el historial de tu documento?

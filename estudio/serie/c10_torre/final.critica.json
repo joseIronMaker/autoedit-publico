@@ -1,0 +1,113 @@
+{
+  "nivel_vs_listón_0a10": 6.5,
+  "primer_segundo": "No detiene el pulgar con la fuerza del listón. Tres letras 3D negras estáticas girando sobre fondo crema parecen una intro corporativa o académica. El Video 1 abre con una esfera cayendo en un espacio tridimensional infinito con física inmediata; el nuestro abre con tipografía apilada sin tensión ni promesa visual.",
+  "momentos_que_funcionan": [
+    {
+      "t": "00:21-00:24",
+      "que": "La desintegración en partículas de las palabras 'mi' y 'perro' mientras la esfera roja avanza. Traduce visualmente el concepto de 'olvidar' sin necesidad de sobreexplicar."
+    },
+    {
+      "t": "00:33-00:37",
+      "que": "Los arcos de conexión (atención) entre las esferas y cómo estas se reacomodan físicamente en la cuadrícula. Es el momento más cercano a la elegancia cinética del Video 1."
+    },
+    {
+      "t": "00:48-00:53",
+      "que": "El despliegue vertical de las decenas de capas translúcidas con los nodos conectados en vertical. Da escala y complejidad real de forma limpia."
+    },
+    {
+      "t": "01:02-01:06",
+      "que": "El cambio brusco a fondo negro y los bloques de 'gramática' y 'lógica' siendo expulsados lateralmente. Rompe la monotonía visual justo cuando el ritmo empezaba a caer."
+    }
+  ],
+  "momentos_donde_se_iria": [
+    {
+      "t": "00:05-00:13",
+      "por_que": "Las letras G y P abriéndose como puertas con hojas de papel clipart (casitas, gráficos simples) saliendo de adentro. Se siente infantil, plano y estéticamente desconectado del resto del video que usa abstracción geométrica.",
+      "arreglo": "Eliminar las puertas y los papeles ilustrados. Si el lenguaje del video son esferas, cuadrículas y planos (como a partir del 0:18), usar ese mismo lenguaje abstracto desde el inicio para representar generación y preentrenamiento."
+    },
+    {
+      "t": "00:26-00:29",
+      "por_que": "La letra 'T' gigante empujando el plano desde abajo para decir 'de un jalón' es torpe mecánicamente y ensucia la composición.",
+      "arreglo": "Hacer que todas las palabras de la frase se iluminen o se eleven en esferas simultáneamente con un golpe seco de cámara, contrastando directamente con el movimiento secuencial lento anterior."
+    },
+    {
+      "t": "00:41-00:44",
+      "por_que": "La esfera roja 'perro' con tentáculos/raíces orgánicas y letras flotando en su superficie. Rompe por completo el estilo limpio y geométrico del resto de la pieza; parece una célula o un virus.",
+      "arreglo": "Mantener la geometría limpia: que la esfera negra absorba pulsos de luz o anillos concéntricos provenientes de las otras esferas hasta cambiar de color o densidad."
+    },
+    {
+      "t": "01:12-01:18",
+      "por_que": "Seis segundos viendo una pila de líneas horizontales estáticas donde solo sube una franja roja. Visualmente es tiempo muerto comparado con el clímax del Video 1 (01:03-01:11).",
+      "arreglo": "Viajar con la cámara por dentro o al ras de la torre en un movimiento vertiginoso hacia la cima siguiendo el pulso rojo, hasta que emerja la esfera final."
+    }
+  ],
+  "ritmo_visual": "Irregular y fragmentado. El Video 1 es un único plano secuencia continuo donde la cámara fluye y la topología se transforma sin cortes bruscos. El nuestro abusa de cortes invisibles o cambios de escenario (letras gigantes -> planos flotantes -> zoom a esfera -> matriz de chips -> torre de papel -> letrero sobre pedestal). Además, las curvas de animación (easing) en las cámaras y objetos (ej. 0:00-0:04, 0:28, 1:20) se sienten lineales y rígidas, les falta la inercia y suavidad física del listón.",
+  "sincronia_voz_imagen": [
+    {
+      "t": "00:13",
+      "problema": "Aparece una esfera roja con la etiqueta 'tú' mientras la voz dice '...antes de hablar contigo', pero la esfera no interactúa con la 'P' ni hace nada; queda colgada como un elemento huérfano hasta que cae la 'T'."
+    },
+    {
+      "t": "00:27-00:28",
+      "problema": "La voz dice 'de un jalón' y la animación muestra un empuje lento y pesado de la letra T desde abajo, contradiciendo la velocidad que sugiere la frase."
+    },
+    {
+      "t": "01:08-01:09",
+      "problema": "Cuando dice 'pesos', aparecen unos diales/relojes debajo de las esferas que apenas se ven durante un segundo antes de alejar la cámara. No da tiempo a procesarlos ni se explica por qué son relojes."
+    }
+  ],
+  "legibilidad_en_celular": [
+    {
+      "t": "00:13",
+      "problema": "El texto 'tú' debajo de la esfera roja está demasiado a la derecha, justo en la zona muerta donde TikTok/Reels coloca los botones de like, comentarios y compartir."
+    },
+    {
+      "t": "00:41-00:44",
+      "problema": "Las letras blancas ('l', 'i', 'r', 'm', 'a') incrustadas sobre la esfera roja alrededor de la palabra 'perro' son confusas, no se leen bien y generan ruido visual."
+    },
+    {
+      "t": "00:55-00:56",
+      "problema": "La cuadrícula de 'miles de chips' crea un efecto moiré y parpadeo en pantallas pequeñas por la densidad de líneas y puntos diminutos."
+    },
+    {
+      "t": "01:21-01:25",
+      "problema": "La nota aclaratoria 'números de ejemplo' en gris cursiva es pequeña y compite con la interfaz derecha de la app; además, añade texto innecesario en el remate visual."
+    }
+  ],
+  "sonido": {
+    "musica": "Demasiado presente y rítmica (estilo corporativo/tech con percusión marcada). El Video 1 usa un diseño sonoro ambiental/drone casi imperceptible que deja todo el espacio a la voz y los efectos físicos.",
+    "efectos": "Excesivos, literales y por momentos caricaturescos. Los sonidos de papel revoloteando (0:07, 0:11), los 'swooshes' genéricos y los golpes metálicos ensucian la pieza en lugar de darle peso físico sutil.",
+    "mezcla": "Recargada. La voz compite constantemente con la base rítmica y con efectos de sonido que están demasiado altos en dB.",
+    "problemas": [
+      {
+        "t": "00:07-00:12",
+        "que": "El efecto de hojas de papel suena a librería de sonido barata y satura debajo de la voz."
+      },
+      {
+        "t": "00:27",
+        "que": "El golpe grave cuando sube la 'T' tapa la palabra 'jalón' de la locutora."
+      },
+      {
+        "t": "01:00",
+        "que": "Hay una transición sonora con un artefacto agudo/chirrido extraño justo cuando dice 'Y eso es...'."
+      },
+      {
+        "t": "01:23-01:25",
+        "que": "El sonido final de tamborileo/construcción de la base negra suena a efecto cómico de dibujo animado, matando la seriedad del cierre."
+      }
+    ]
+  },
+  "guion": {
+    "claridad": "Buena estructura general, pero tropieza en la mitad al introducir jerga sin puente ('atención', 'pesos') asumiendo que la metáfora visual lo explica todo.",
+    "afirmaciones_dudosas": [
+      "00:36: 'cada una mira a las demás y se acomoda' (en los modelos GPT generativos la atención es causal/enmascarada: una palabra solo puede mirar a las anteriores, no a las que vienen después; decir que todas se miran entre sí describe a BERT, no a GPT).",
+      "01:08: Mencionar 'neuronas, pesos y atención' de golpe al final cuando en todo el video jamás se explicó ni visualizó qué es una neurona ni qué es un peso."
+    ],
+    "final": "Anticlimático. Terminar diciendo 'una lista de qué palabra podría seguir' y quedarse 3 segundos en silencio viendo un cartel estático hace que el video muera sin fuerza. El Video 1 cierra con un bucle conceptual y visual perfecto que regresa al plano inicial."
+  },
+  "tres_cambios_de_mayor_impacto": [
+    "Unificar el lenguaje visual y eliminar el 'clipart' (0:00-0:17 y 0:42): Rehacer los primeros 15 segundos sin letras puertas ni papeles con dibujos de casitas, y quitar los tentáculos del 0:42. Todo el video debe habitar el mismo universo abstracto de esferas, planos y cuadrículas en un flujo continuo de cámara.",
+    "Limpiar el diseño sonoro radicalmente: Quitar la música rítmica de fondo y dejar un colchón ambiental mínimo. Bajar los efectos de sonido un 50% y cambiar los ruidos literales (papeles, golpes toscos, tamborileo final) por clics, pulsos y texturas sutiles que acompañen la física sin competir con la voz.",
+    "Rehacer el clímax y el final (01:12-01:25): Eliminar la pausa eterna viendo la torre de rayas y el cartel tipo pancarta del final. Hacer que la cámara suba a toda velocidad junto con el pulso rojo a través de las capas y que al salir a la superficie la esfera proyecte en el propio suelo las palabras 'cartero / gato / vecino' como caminos posibles, cerrando con una frase final que conecte cómo repetir ese único paso palabra por palabra crea todo el texto que leemos."
+  ]
+}

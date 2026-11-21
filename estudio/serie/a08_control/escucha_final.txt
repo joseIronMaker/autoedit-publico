@@ -1,0 +1,1 @@
+a08_control {"cortes":[],"tapa_la_voz":[],"limpio":true}

@@ -1,0 +1,18 @@
+######## ag05 escena 0
+escena 0 · terminal · voz 3.42s + cola 0.18 = 3.60s
+✔ videos/gen_ag_el_bucle.assets/seg_0.mp4 (0.2 MB)
+✔ videos/gen_ag_el_bucle.mp4 · 95.64s
+######## ag05 escena 2
+escena 2 · terminal · voz 22.55s + cola 0.18 = 22.73s
+✔ videos/gen_ag_el_bucle.assets/seg_2.mp4 (1.0 MB)
+✔ videos/gen_ag_el_bucle.mp4 · 95.64s
+######## ag05 escena 4
+escena 4 · kinetic_video · voz 4.89s + cola 0.18 = 5.07s
+✔ videos/gen_ag_el_bucle.assets/seg_4.mp4 (2.7 MB)
+✔ videos/gen_ag_el_bucle.mp4 · 95.64s
+######## ag05 render final
+✔ /home/jose/tiktok/videos/gen_ag_el_bucle_final.mp4
+→ Generando copys (TikTok/IG/FB)…
+✔ /home/jose/tiktok/videos/gen_ag_el_bucle.autoedit/copys.md
+######## listo
+87.400000

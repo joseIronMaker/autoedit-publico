@@ -1,0 +1,17 @@
+En mil novecientos ochenta y seis ya sabíamos casi todo lo que has visto aquí.
+Neuronas. Capas. Error. Repartir la culpa.
+Y no funcionaba.
+Las redes eran chiquitas, lentas, y otros métodos les ganaban.
+La idea era correcta. Le faltaban dos cosas.
+La primera: comida. Una red aprende de ejemplos, y casi no había.
+Hasta que internet llenó el mundo de fotos, y un equipo de investigadores etiquetó millones, con ayuda de miles de personas, foto por foto.
+La segunda: músculo. Entrenar es multiplicar números, una y otra vez.
+Y resulta que eso mismo hacen las tarjetas de video para pintar los videojuegos.
+En dos mil doce se juntó todo. Una red llamada AlexNet, dos tarjetas de video de las que vendían en cualquier tienda, y más de un millón de fotos.
+En el concurso mundial de reconocer imágenes, el segundo lugar falló el veintiséis por ciento.
+AlexNet, el quince.
+Nadie había visto un salto así.
+Y no traía una gran idea nueva. Era casi la misma de los ochenta, en grande.
+Por eso la inteligencia artificial llegó de golpe, aunque tenía décadas esperando.
+A la idea nunca le faltó inteligencia.
+Le faltó comida.

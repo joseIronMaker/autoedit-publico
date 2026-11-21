@@ -1,0 +1,102 @@
+{
+  "title": "App del clima: API y ventana, funcionando",
+  "slug": "curso_py25_app_del_clima",
+  "tema": "juntar la API del clima con la ventana tkinter: el botón llama a una función que pide el dato",
+  "theme": "curso python con ia",
+  "hook_tipo": "demostracion",
+  "keyword": "app del clima python",
+  "hook_headline": [
+    "TODO",
+    "JUNTO"
+  ],
+  "pregunta_ab": "¿Pedirle la app entera al agente o en dos pedazos?",
+  "music_prompt": "hard techno bed, dark industrial groove, 150 BPM, rolling kick, restrained under a voice, instrumental, no vocals",
+  "modo": "corto",
+  "hook_locked": true,
+  "scenes": [
+    {
+      "beat_type": "hook",
+      "visual_type": "terminal",
+      "narration": "Esta es la clase donde todo el curso se junta en un solo programa: una ventana, un botón, una petición a internet y el dato en pantalla. Le pido al agente que junte clima punto pi y ventana punto pi, y fíjate cómo primero LEE los dos archivos antes de tocar nada. Ya quisiera yo esa paciencia.",
+      "pause_after": 0.35,
+      "terminal": {
+        "title": "app del clima",
+        "lines": [
+          {
+            "text": "boton → pedir_clima() → etiqueta"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "claude 'junta clima.py y ventana.py: un boton que pide el clima y lo muestra en la etiqueta'",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "custom",
+      "narration": "El botón no hace el trabajo: llama a una función que pide el clima y devuelve un número. Y esa función es la de la clase de requests, tal cual, sin moverle una coma. Y la etiqueta nada más muestra lo que la función devolvió. Tres piezas que ya conocías, formaditas en fila como para la foto.",
+      "custom_anim": {
+        "description": "Tres cajas en fila unidas por flechas que se encienden en orden: un botón dibujado con el texto Ver clima; una caja etiquetada pedir_clima() con un engranaje; y una nube etiquetada API. Un cursor pulsa el botón, la flecha viaja a la función, la función manda una ficha a la nube y recibe 21.3 de vuelta, y el número viaja a una cuarta caja etiquetada etiqueta donde se escribe 21.3 grados. Bucle continuo. Sin más cifras que 21.3."
+      }
+    },
+    {
+      "beat_type": "contexto",
+      "visual_type": "terminal",
+      "narration": "Y aquí está corriendo de verdad: una ventana, un botón que dice ver clima, y al picarle sale la temperatura real de la Ciudad de México en este momento. No es maqueta ni número que yo tecleé: cada vez que le picas, tu programa sale a internet, pregunta y regresa con el dato. Tu programa ya sale más que tú.",
+      "terminal": {
+        "title": "la app corriendo",
+        "lines": [
+          {
+            "text": "[ Ver clima ]"
+          },
+          {
+            "text": "18.0 grados en CDMX",
+            "accent": true
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "/home/jose/tiktok/.venv/bin/python app_clima.py",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo",
+        "titulo": "Clima CDMX"
+      }
+    },
+    {
+      "beat_type": "giro",
+      "visual_type": "mascota",
+      "narration": "Cuando le pidas esto al agente, pídelo en dos pedazos: primero la función que trae el dato, la pruebas en la terminal, y ya que sirve, la ventana. Si lo pides todo junto y falla, no sabes si falló internet, la función o el botón, y acabas culpando a los tres. Pedazos chicos, errores chicos.",
+      "mascota": {
+        "pose": "profesor",
+        "caption": "primero el dato · luego la ventana"
+      },
+      "foto": {
+        "archivo": "/home/jose/tiktok/branding/perrito/codex_sabio.png"
+      }
+    },
+    {
+      "beat_type": "cta",
+      "visual_type": "kinetic_video",
+      "narration": "Ya tienes una app tuya que trae datos del mundo. En el último módulo, lo que separa a quien programa de quien copia: leer errores, depurar y guardar tu trabajo. ¿Pedirle la app entera al agente o en dos pedazos? Yo digo en dos, siempre.",
+      "pause_after": 0.3,
+      "kinetic_video": {
+        "video": "/home/jose/tiktok/videos/_clips_pagados/gen_ver_tirar_a_proposito__veo_0.mp4",
+        "words": [
+          {
+            "text": "piezas que ya conoces",
+            "serif": true
+          },
+          {
+            "text": "CONECTADAS",
+            "accent": true
+          }
+        ],
+        "variant": "dark"
+      }
+    }
+  ]
+}

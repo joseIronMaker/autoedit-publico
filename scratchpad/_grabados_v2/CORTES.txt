@@ -1,0 +1,8 @@
+# segundo donde acaba José en cada grabado (argumento 2 de rehace.sh).
+# Recuperado de los logs: pantalla = duración_fuente - corte.
+12 0
+13 34
+14 72
+15 36
+16 96
+17 142

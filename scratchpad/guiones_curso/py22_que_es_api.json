@@ -1,0 +1,100 @@
+{
+  "title": "Qué es una API y por qué todo la usa",
+  "slug": "curso_py22_que_es_api",
+  "tema": "qué es una API: la ventanilla donde otro programa atiende, y las cuatro partes de una petición",
+  "theme": "curso python con ia",
+  "hook_tipo": "demostracion",
+  "keyword": "qué es una api",
+  "hook_headline": [
+    "UNA",
+    "VENTANILLA"
+  ],
+  "pregunta_ab": "¿API pública gratis o tus propios datos desde el día uno?",
+  "music_prompt": "hard techno bed, dark industrial groove, 150 BPM, rolling kick, restrained under a voice, instrumental, no vocals",
+  "modo": "corto",
+  "hook_locked": true,
+  "scenes": [
+    {
+      "beat_type": "hook",
+      "visual_type": "terminal",
+      "narration": "Tu programa acaba de preguntarle la temperatura de la Ciudad de México a una computadora que está en otro país… y la computadora le contestó. Sin conocerse, sin presentarse, sin pedirle permiso a nadie. Eso es una API. Mira: corro clima punto pi y me da los grados que hay ahorita, no un número inventado.",
+      "pause_after": 0.35,
+      "terminal": {
+        "title": "python3 clima.py",
+        "lines": [
+          {
+            "text": "En la Ciudad de México hay 21.3 grados a las 23:00."
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "cat clima.py; echo; echo '$ python3 clima.py'; python3 clima.py",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "custom",
+      "narration": "API quiere decir interfaz de programación de aplicaciones. En cristiano: una ventanilla donde otro programa atiende. Llegas con una pregunta en el formato acordado y te devuelven la respuesta en el formato acordado. No ves la cocina, ves la ventanilla. Igualito que en la tortillería: pides un kilo, te lo dan, y a nadie dejan pasar a la máquina. Y qué bueno, porque tú y yo ahí adentro quemamos la tortillería.",
+      "custom_anim": {
+        "description": "A la izquierda una caja etiquetada tu programa. Al centro una ventanilla dibujada como un mostrador con una persona detrás y el rótulo API. A la derecha, detrás de la ventanilla, una cocina cerrada etiquetada sus datos, tapada. Tu programa manda una ficha con el texto ¿temperatura CDMX? que viaja hasta la ventanilla; la ventanilla se la pasa a la cocina y regresa una ficha con 21 grados hasta tu programa. El recorrido se repite en bucle. Sin más cifras que 21."
+      }
+    },
+    {
+      "beat_type": "contexto",
+      "visual_type": "terminal",
+      "narration": "La conversación tiene cuatro partes, y se las pido al agente separadas con una petición de verdad. La dirección, que dice a quién le preguntas. Los parámetros, que son la pregunta. La respuesta, que son los datos. Y el código de estado, que dice si salió bien o si te mandaron por un tubo. Mira cómo las imprime.",
+      "terminal": {
+        "title": "cuatro partes",
+        "lines": [
+          {
+            "text": "dirección · parámetros"
+          },
+          {
+            "text": "respuesta · código de estado"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "claude 'muestra las 4 partes de una peticion a open-meteo: direccion, parametros, respuesta y codigo de estado'",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "giro",
+      "visual_type": "mascota",
+      "narration": "Y por esto importa: casi ninguna app que usas guarda todos sus datos. Tu app del clima le pregunta a un servicio meteorológico; la de mapas, a uno de mapas; la del banco, al banco… ojalá. Programar hoy es, en buena parte, saber pedir bien en ventanillas ajenas.",
+      "mascota": {
+        "pose": "profesor",
+        "caption": "tu app pregunta · otro contesta"
+      },
+      "foto": {
+        "archivo": "/home/jose/tiktok/branding/perrito/codex_sabio.png"
+      }
+    },
+    {
+      "beat_type": "cta",
+      "visual_type": "kinetic_video",
+      "narration": "Una ventanilla, una pregunta, unos datos. La que viene la haces tú desde Python, con tres líneas. ¿API pública gratis o tus propios datos desde el día uno? Yo digo API pública: primero aprende a pedir, luego a cocinar.",
+      "pause_after": 0.3,
+      "kinetic_video": {
+        "video": "/home/jose/tiktok/videos/_clips_pagados/gen_ver_la_ventanita__veo_0.mp4",
+        "words": [
+          {
+            "text": "una ventanilla",
+            "serif": true
+          },
+          {
+            "text": "UNA PREGUNTA",
+            "accent": true
+          }
+        ],
+        "variant": "dark"
+      }
+    }
+  ]
+}

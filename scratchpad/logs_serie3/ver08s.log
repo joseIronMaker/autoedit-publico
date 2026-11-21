@@ -1,0 +1,43 @@
+=== ver08s_pixel_por_pixel.json  →  gen_ver_pixel_por_pixel  (tema sunset)
+→ guion guion de Claude (guionista)
+→ estilo generando imagen ancla de marca
+→ voz reutilizo la locución ya pagada (6 escenas)
+→ escena 1/6 animando kinetic_video
+→ escena 2/6 programando animación a medida
+→ escena 2/6 animando custom
+→ escena 3/6 ejecutando modelo real (sklearn)
+→ escena 3/6 animando código → gráfica
+→ escena 4/6 animando receipt
+→ escena 5/6 animando kinetic_video
+→ escena 6/6 generando imagen
+→ escena 6/6 animando (Ken Burns)
+→ ensamblando 6 escenas → gen_ver_pixel_por_pixel.mp4
+→ audio audio continuo + SFX de transición
+→ música reutilizo la cama musical de este video
+✔ /home/jose/tiktok/videos/gen_ver_pixel_por_pixel.mp4
+
+Ahora pásalo por el flujo normal para subtítulos y copys:
+  autoedit gen_ver_pixel_por_pixel.mp4 --auto   (o desde la web)
+→ Transcribiendo con Whisper (small, CPU)…
+  121 palabras, 47.2s → /home/jose/tiktok/videos/gen_ver_pixel_por_pixel.autoedit/transcript.json
+→ Gemini analizando la transcripción (cortes + énfasis)…
+
+Plan de edición (6 cortes, −2.6s de 47.2s):
+  ✂    3.74 →    4.18  silencio de 0.7s
+  ✂    8.70 →    8.98  silencio de 0.5s
+  ✂    9.62 →    9.84  silencio de 0.5s
+  ✂   14.14 →   14.74  silencio de 0.8s
+  ✂   16.76 →   17.06  silencio de 0.5s
+  ✂   39.96 →   40.68  silencio de 1.0s
+  ★ 13 palabras enfatizadas en subtítulos
+→ Renderizando gen_ver_pixel_por_pixel_final.mp4: 7 tramos, 44.7s…
+✔ /home/jose/tiktok/videos/gen_ver_pixel_por_pixel_final.mp4
+→ Generando copys (TikTok/IG/FB)…
+✔ /home/jose/tiktok/videos/gen_ver_pixel_por_pixel.autoedit/copys.md
+
+✔ ver08_pixel_por_pixel.mp4  (44.7s)
+  QC   → /home/jose/tiktok/scratchpad/qc_ver_pixel_por_pixel.png
+  copy → revisar y reescribir a mano si hace falta:
+Antes de ver cómo la IA aprende a crear, mira cómo la **IA en medicina** aprendió a ver lo que el ojo humano no nota.
+Al quitar las capas finales, la red analiza píxel por píxel y encuentra detalles de 3 milímetros en mamografías.
+¿En quién confiarías un diagnóstico difícil: Algoritmo o Médico?

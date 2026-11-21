@@ -1,0 +1,1414 @@
+[
+ {
+  "start": 0.0,
+  "end": 3.04,
+  "text": " La evolución de los gatos, para no perder la racha.",
+  "words": [
+   {
+    "w": " La",
+    "s": 0.0,
+    "e": 0.3
+   },
+   {
+    "w": " evolución",
+    "s": 0.3,
+    "e": 0.88
+   },
+   {
+    "w": " de",
+    "s": 0.88,
+    "e": 1.06
+   },
+   {
+    "w": " los",
+    "s": 1.06,
+    "e": 1.26
+   },
+   {
+    "w": " gatos,",
+    "s": 1.26,
+    "e": 1.5
+   },
+   {
+    "w": " para",
+    "s": 1.68,
+    "e": 1.82
+   },
+   {
+    "w": " no",
+    "s": 1.82,
+    "e": 1.98
+   },
+   {
+    "w": " perder",
+    "s": 1.98,
+    "e": 2.24
+   },
+   {
+    "w": " la",
+    "s": 2.24,
+    "e": 2.48
+   },
+   {
+    "w": " racha.",
+    "s": 2.48,
+    "e": 3.04
+   }
+  ]
+ },
+ {
+  "start": 3.2,
+  "end": 7.52,
+  "text": " Para entender cómo evolucionaron los gatos hay que viajar millones de años atrás.",
+  "words": [
+   {
+    "w": " Para",
+    "s": 3.2,
+    "e": 3.32
+   },
+   {
+    "w": " entender",
+    "s": 3.32,
+    "e": 3.78
+   },
+   {
+    "w": " cómo",
+    "s": 3.78,
+    "e": 4.12
+   },
+   {
+    "w": " evolucionaron",
+    "s": 4.12,
+    "e": 4.94
+   },
+   {
+    "w": " los",
+    "s": 4.94,
+    "e": 5.2
+   },
+   {
+    "w": " gatos",
+    "s": 5.2,
+    "e": 5.44
+   },
+   {
+    "w": " hay",
+    "s": 5.44,
+    "e": 5.64
+   },
+   {
+    "w": " que",
+    "s": 5.64,
+    "e": 5.82
+   },
+   {
+    "w": " viajar",
+    "s": 5.82,
+    "e": 6.2
+   },
+   {
+    "w": " millones",
+    "s": 6.2,
+    "e": 6.66
+   },
+   {
+    "w": " de",
+    "s": 6.66,
+    "e": 6.92
+   },
+   {
+    "w": " años",
+    "s": 6.92,
+    "e": 7.22
+   },
+   {
+    "w": " atrás.",
+    "s": 7.22,
+    "e": 7.52
+   }
+  ]
+ },
+ {
+  "start": 7.94,
+  "end": 15.1,
+  "text": " Desde el pequeño Michi de tu casa hasta un león, un tigre o un jaguar, todos los felinos actuales comparten antiguos antepasados.",
+  "words": [
+   {
+    "w": " Desde",
+    "s": 7.94,
+    "e": 8.2
+   },
+   {
+    "w": " el",
+    "s": 8.2,
+    "e": 8.4
+   },
+   {
+    "w": " pequeño",
+    "s": 8.4,
+    "e": 8.8
+   },
+   {
+    "w": " Michi",
+    "s": 8.8,
+    "e": 9.1
+   },
+   {
+    "w": " de",
+    "s": 9.1,
+    "e": 9.28
+   },
+   {
+    "w": " tu",
+    "s": 9.28,
+    "e": 9.44
+   },
+   {
+    "w": " casa",
+    "s": 9.44,
+    "e": 9.68
+   },
+   {
+    "w": " hasta",
+    "s": 9.68,
+    "e": 10.0
+   },
+   {
+    "w": " un",
+    "s": 10.0,
+    "e": 10.22
+   },
+   {
+    "w": " león,",
+    "s": 10.22,
+    "e": 10.46
+   },
+   {
+    "w": " un",
+    "s": 10.66,
+    "e": 10.82
+   },
+   {
+    "w": " tigre",
+    "s": 10.82,
+    "e": 11.02
+   },
+   {
+    "w": " o",
+    "s": 11.02,
+    "e": 11.1
+   },
+   {
+    "w": " un",
+    "s": 11.1,
+    "e": 11.32
+   },
+   {
+    "w": " jaguar,",
+    "s": 11.32,
+    "e": 11.62
+   },
+   {
+    "w": " todos",
+    "s": 11.98,
+    "e": 12.0
+   },
+   {
+    "w": " los",
+    "s": 12.0,
+    "e": 12.3
+   },
+   {
+    "w": " felinos",
+    "s": 12.3,
+    "e": 12.7
+   },
+   {
+    "w": " actuales",
+    "s": 12.7,
+    "e": 13.28
+   },
+   {
+    "w": " comparten",
+    "s": 13.28,
+    "e": 13.8
+   },
+   {
+    "w": " antiguos",
+    "s": 13.8,
+    "e": 14.4
+   },
+   {
+    "w": " antepasados.",
+    "s": 14.4,
+    "e": 15.1
+   }
+  ]
+ },
+ {
+  "start": 15.42,
+  "end": 20.6,
+  "text": " Uno de los géneros importantes en esta historia fuese Odaelurus, que vivió hace millones de años.",
+  "words": [
+   {
+    "w": " Uno",
+    "s": 15.42,
+    "e": 15.66
+   },
+   {
+    "w": " de",
+    "s": 15.66,
+    "e": 15.82
+   },
+   {
+    "w": " los",
+    "s": 15.82,
+    "e": 16.0
+   },
+   {
+    "w": " géneros",
+    "s": 16.0,
+    "e": 16.48
+   },
+   {
+    "w": " importantes",
+    "s": 16.48,
+    "e": 17.02
+   },
+   {
+    "w": " en",
+    "s": 17.02,
+    "e": 17.34
+   },
+   {
+    "w": " esta",
+    "s": 17.34,
+    "e": 17.52
+   },
+   {
+    "w": " historia",
+    "s": 17.52,
+    "e": 17.9
+   },
+   {
+    "w": " fuese",
+    "s": 17.9,
+    "e": 18.22
+   },
+   {
+    "w": " Odaelurus,",
+    "s": 18.22,
+    "e": 18.84
+   },
+   {
+    "w": " que",
+    "s": 18.98,
+    "e": 19.14
+   },
+   {
+    "w": " vivió",
+    "s": 19.14,
+    "e": 19.32
+   },
+   {
+    "w": " hace",
+    "s": 19.32,
+    "e": 19.62
+   },
+   {
+    "w": " millones",
+    "s": 19.62,
+    "e": 20.04
+   },
+   {
+    "w": " de",
+    "s": 20.04,
+    "e": 20.36
+   },
+   {
+    "w": " años.",
+    "s": 20.36,
+    "e": 20.6
+   }
+  ]
+ },
+ {
+  "start": 20.9,
+  "end": 24.64,
+  "text": " Con el tiempo, los felinos se dividieron en diferentes linajes.",
+  "words": [
+   {
+    "w": " Con",
+    "s": 20.9,
+    "e": 21.16
+   },
+   {
+    "w": " el",
+    "s": 21.16,
+    "e": 21.36
+   },
+   {
+    "w": " tiempo,",
+    "s": 21.36,
+    "e": 21.66
+   },
+   {
+    "w": " los",
+    "s": 21.94,
+    "e": 22.04
+   },
+   {
+    "w": " felinos",
+    "s": 22.04,
+    "e": 22.44
+   },
+   {
+    "w": " se",
+    "s": 22.44,
+    "e": 22.76
+   },
+   {
+    "w": " dividieron",
+    "s": 22.76,
+    "e": 23.18
+   },
+   {
+    "w": " en",
+    "s": 23.18,
+    "e": 23.5
+   },
+   {
+    "w": " diferentes",
+    "s": 23.5,
+    "e": 23.9
+   },
+   {
+    "w": " linajes.",
+    "s": 23.9,
+    "e": 24.64
+   }
+  ]
+ },
+ {
+  "start": 24.64,
+  "end": 33.74,
+  "text": " Algunos, como los leones y tigres, desarrollaron la capacidad de rugir, mientras que otros, como los gatos domésticos, no pueden rugir pero sí pueden ronronear.",
+  "words": [
+   {
+    "w": " Algunos,",
+    "s": 24.64,
+    "e": 25.34
+   },
+   {
+    "w": " como",
+    "s": 25.34,
+    "e": 25.58
+   },
+   {
+    "w": " los",
+    "s": 25.58,
+    "e": 25.86
+   },
+   {
+    "w": " leones",
+    "s": 25.86,
+    "e": 26.16
+   },
+   {
+    "w": " y",
+    "s": 26.16,
+    "e": 26.4
+   },
+   {
+    "w": " tigres,",
+    "s": 26.4,
+    "e": 26.8
+   },
+   {
+    "w": " desarrollaron",
+    "s": 27.06,
+    "e": 27.52
+   },
+   {
+    "w": " la",
+    "s": 27.52,
+    "e": 27.78
+   },
+   {
+    "w": " capacidad",
+    "s": 27.78,
+    "e": 28.28
+   },
+   {
+    "w": " de",
+    "s": 28.28,
+    "e": 28.5
+   },
+   {
+    "w": " rugir,",
+    "s": 28.5,
+    "e": 28.84
+   },
+   {
+    "w": " mientras",
+    "s": 29.0,
+    "e": 29.26
+   },
+   {
+    "w": " que",
+    "s": 29.26,
+    "e": 29.56
+   },
+   {
+    "w": " otros,",
+    "s": 29.56,
+    "e": 29.8
+   },
+   {
+    "w": " como",
+    "s": 30.04,
+    "e": 30.16
+   },
+   {
+    "w": " los",
+    "s": 30.16,
+    "e": 30.38
+   },
+   {
+    "w": " gatos",
+    "s": 30.38,
+    "e": 30.72
+   },
+   {
+    "w": " domésticos,",
+    "s": 30.72,
+    "e": 31.44
+   },
+   {
+    "w": " no",
+    "s": 31.54,
+    "e": 31.7
+   },
+   {
+    "w": " pueden",
+    "s": 31.7,
+    "e": 32.0
+   },
+   {
+    "w": " rugir",
+    "s": 32.0,
+    "e": 32.34
+   },
+   {
+    "w": " pero",
+    "s": 32.34,
+    "e": 32.54
+   },
+   {
+    "w": " sí",
+    "s": 32.54,
+    "e": 32.78
+   },
+   {
+    "w": " pueden",
+    "s": 32.78,
+    "e": 33.14
+   },
+   {
+    "w": " ronronear.",
+    "s": 33.14,
+    "e": 33.74
+   }
+  ]
+ },
+ {
+  "start": 34.26,
+  "end": 38.78,
+  "text": " Y nuestro gato doméstico desciende principalmente del gato montés africano.",
+  "words": [
+   {
+    "w": " Y",
+    "s": 34.26,
+    "e": 34.34
+   },
+   {
+    "w": " nuestro",
+    "s": 34.34,
+    "e": 34.68
+   },
+   {
+    "w": " gato",
+    "s": 34.68,
+    "e": 35.02
+   },
+   {
+    "w": " doméstico",
+    "s": 35.02,
+    "e": 35.62
+   },
+   {
+    "w": " desciende",
+    "s": 35.62,
+    "e": 36.14
+   },
+   {
+    "w": " principalmente",
+    "s": 36.14,
+    "e": 36.96
+   },
+   {
+    "w": " del",
+    "s": 36.96,
+    "e": 37.18
+   },
+   {
+    "w": " gato",
+    "s": 37.18,
+    "e": 37.48
+   },
+   {
+    "w": " montés",
+    "s": 37.48,
+    "e": 37.92
+   },
+   {
+    "w": " africano.",
+    "s": 37.92,
+    "e": 38.78
+   }
+  ]
+ },
+ {
+  "start": 38.92,
+  "end": 45.2,
+  "text": " Durante miles de años, estos pequeños depredadores desarrollaron características que todavía conserva tu gato,",
+  "words": [
+   {
+    "w": " Durante",
+    "s": 38.92,
+    "e": 39.36
+   },
+   {
+    "w": " miles",
+    "s": 39.36,
+    "e": 39.62
+   },
+   {
+    "w": " de",
+    "s": 39.62,
+    "e": 39.9
+   },
+   {
+    "w": " años,",
+    "s": 39.9,
+    "e": 40.16
+   },
+   {
+    "w": " estos",
+    "s": 40.46,
+    "e": 40.66
+   },
+   {
+    "w": " pequeños",
+    "s": 40.66,
+    "e": 41.2
+   },
+   {
+    "w": " depredadores",
+    "s": 41.2,
+    "e": 41.84
+   },
+   {
+    "w": " desarrollaron",
+    "s": 41.84,
+    "e": 42.6
+   },
+   {
+    "w": " características",
+    "s": 42.6,
+    "e": 43.36
+   },
+   {
+    "w": " que",
+    "s": 43.36,
+    "e": 43.74
+   },
+   {
+    "w": " todavía",
+    "s": 43.74,
+    "e": 44.2
+   },
+   {
+    "w": " conserva",
+    "s": 44.2,
+    "e": 44.74
+   },
+   {
+    "w": " tu",
+    "s": 44.74,
+    "e": 44.86
+   },
+   {
+    "w": " gato,",
+    "s": 44.86,
+    "e": 45.2
+   }
+  ]
+ },
+ {
+  "start": 45.38,
+  "end": 51.38,
+  "text": " visión adaptada para poca luz, una columna extremadamente flexible y una gran capacidad para conservar agua.",
+  "words": [
+   {
+    "w": " visión",
+    "s": 45.38,
+    "e": 45.7
+   },
+   {
+    "w": " adaptada",
+    "s": 45.7,
+    "e": 46.18
+   },
+   {
+    "w": " para",
+    "s": 46.18,
+    "e": 46.46
+   },
+   {
+    "w": " poca",
+    "s": 46.46,
+    "e": 46.74
+   },
+   {
+    "w": " luz,",
+    "s": 46.74,
+    "e": 46.92
+   },
+   {
+    "w": " una",
+    "s": 47.12,
+    "e": 47.32
+   },
+   {
+    "w": " columna",
+    "s": 47.32,
+    "e": 47.82
+   },
+   {
+    "w": " extremadamente",
+    "s": 47.82,
+    "e": 48.6
+   },
+   {
+    "w": " flexible",
+    "s": 48.6,
+    "e": 49.14
+   },
+   {
+    "w": " y",
+    "s": 49.14,
+    "e": 49.34
+   },
+   {
+    "w": " una",
+    "s": 49.34,
+    "e": 49.54
+   },
+   {
+    "w": " gran",
+    "s": 49.54,
+    "e": 49.72
+   },
+   {
+    "w": " capacidad",
+    "s": 49.72,
+    "e": 50.3
+   },
+   {
+    "w": " para",
+    "s": 50.3,
+    "e": 50.68
+   },
+   {
+    "w": " conservar",
+    "s": 50.68,
+    "e": 51.18
+   },
+   {
+    "w": " agua.",
+    "s": 51.18,
+    "e": 51.38
+   }
+  ]
+ },
+ {
+  "start": 51.78,
+  "end": 53.6,
+  "text": " Pero entonces ocurrió algo curioso.",
+  "words": [
+   {
+    "w": " Pero",
+    "s": 51.78,
+    "e": 52.04
+   },
+   {
+    "w": " entonces",
+    "s": 52.04,
+    "e": 52.5
+   },
+   {
+    "w": " ocurrió",
+    "s": 52.5,
+    "e": 52.88
+   },
+   {
+    "w": " algo",
+    "s": 52.88,
+    "e": 53.08
+   },
+   {
+    "w": " curioso.",
+    "s": 53.08,
+    "e": 53.6
+   }
+  ]
+ },
+ {
+  "start": 53.6,
+  "end": 61.66,
+  "text": " Los gatos comenzaron a acercarse a los asentamientos humanos, probablemente atraídos por los roedores que vivían cerca de nuestros graneros.",
+  "words": [
+   {
+    "w": " Los",
+    "s": 53.6,
+    "e": 54.22
+   },
+   {
+    "w": " gatos",
+    "s": 54.22,
+    "e": 54.52
+   },
+   {
+    "w": " comenzaron",
+    "s": 54.52,
+    "e": 55.22
+   },
+   {
+    "w": " a",
+    "s": 55.22,
+    "e": 55.44
+   },
+   {
+    "w": " acercarse",
+    "s": 55.44,
+    "e": 55.84
+   },
+   {
+    "w": " a",
+    "s": 55.84,
+    "e": 56.02
+   },
+   {
+    "w": " los",
+    "s": 56.02,
+    "e": 56.22
+   },
+   {
+    "w": " asentamientos",
+    "s": 56.22,
+    "e": 57.04
+   },
+   {
+    "w": " humanos,",
+    "s": 57.04,
+    "e": 57.48
+   },
+   {
+    "w": " probablemente",
+    "s": 57.74,
+    "e": 58.44
+   },
+   {
+    "w": " atraídos",
+    "s": 58.44,
+    "e": 58.94
+   },
+   {
+    "w": " por",
+    "s": 58.94,
+    "e": 59.2
+   },
+   {
+    "w": " los",
+    "s": 59.2,
+    "e": 59.42
+   },
+   {
+    "w": " roedores",
+    "s": 59.42,
+    "e": 59.82
+   },
+   {
+    "w": " que",
+    "s": 59.82,
+    "e": 60.04
+   },
+   {
+    "w": " vivían",
+    "s": 60.04,
+    "e": 60.36
+   },
+   {
+    "w": " cerca",
+    "s": 60.36,
+    "e": 60.66
+   },
+   {
+    "w": " de",
+    "s": 60.66,
+    "e": 60.88
+   },
+   {
+    "w": " nuestros",
+    "s": 60.88,
+    "e": 61.28
+   },
+   {
+    "w": " graneros.",
+    "s": 61.28,
+    "e": 61.66
+   }
+  ]
+ },
+ {
+  "start": 62.06,
+  "end": 69.26,
+  "text": " Y en lugar de domesticarlos completamente desde el principio, los humanos y los gatos simplemente comenzaron a convivir.",
+  "words": [
+   {
+    "w": " Y",
+    "s": 62.06,
+    "e": 62.24
+   },
+   {
+    "w": " en",
+    "s": 62.24,
+    "e": 62.36
+   },
+   {
+    "w": " lugar",
+    "s": 62.36,
+    "e": 62.6
+   },
+   {
+    "w": " de",
+    "s": 62.6,
+    "e": 62.86
+   },
+   {
+    "w": " domesticarlos",
+    "s": 62.86,
+    "e": 63.68
+   },
+   {
+    "w": " completamente",
+    "s": 63.68,
+    "e": 64.44
+   },
+   {
+    "w": " desde",
+    "s": 64.44,
+    "e": 64.88
+   },
+   {
+    "w": " el",
+    "s": 64.88,
+    "e": 65.1
+   },
+   {
+    "w": " principio,",
+    "s": 65.1,
+    "e": 65.5
+   },
+   {
+    "w": " los",
+    "s": 65.8,
+    "e": 65.98
+   },
+   {
+    "w": " humanos",
+    "s": 65.98,
+    "e": 66.28
+   },
+   {
+    "w": " y",
+    "s": 66.28,
+    "e": 66.46
+   },
+   {
+    "w": " los",
+    "s": 66.46,
+    "e": 66.72
+   },
+   {
+    "w": " gatos",
+    "s": 66.72,
+    "e": 67.0
+   },
+   {
+    "w": " simplemente",
+    "s": 67.0,
+    "e": 67.72
+   },
+   {
+    "w": " comenzaron",
+    "s": 67.72,
+    "e": 68.36
+   },
+   {
+    "w": " a",
+    "s": 68.36,
+    "e": 68.56
+   },
+   {
+    "w": " convivir.",
+    "s": 68.56,
+    "e": 69.26
+   }
+  ]
+ },
+ {
+  "start": 69.36,
+  "end": 80.18,
+  "text": " Mucho tiempo después, los humanos empezamos a seleccionar características específicas y, especialmente durante los últimos siglos, aparecieron muchas de las razas que conocemos hoy.",
+  "words": [
+   {
+    "w": " Mucho",
+    "s": 69.36,
+    "e": 69.76
+   },
+   {
+    "w": " tiempo",
+    "s": 69.76,
+    "e": 70.04
+   },
+   {
+    "w": " después,",
+    "s": 70.04,
+    "e": 70.46
+   },
+   {
+    "w": " los",
+    "s": 70.8,
+    "e": 70.92
+   },
+   {
+    "w": " humanos",
+    "s": 70.92,
+    "e": 71.24
+   },
+   {
+    "w": " empezamos",
+    "s": 71.24,
+    "e": 71.96
+   },
+   {
+    "w": " a",
+    "s": 71.96,
+    "e": 72.18
+   },
+   {
+    "w": " seleccionar",
+    "s": 72.18,
+    "e": 72.86
+   },
+   {
+    "w": " características",
+    "s": 72.86,
+    "e": 73.8
+   },
+   {
+    "w": " específicas",
+    "s": 73.8,
+    "e": 74.7
+   },
+   {
+    "w": " y,",
+    "s": 74.7,
+    "e": 74.92
+   },
+   {
+    "w": " especialmente",
+    "s": 75.16,
+    "e": 75.68
+   },
+   {
+    "w": " durante",
+    "s": 75.68,
+    "e": 76.18
+   },
+   {
+    "w": " los",
+    "s": 76.18,
+    "e": 76.42
+   },
+   {
+    "w": " últimos",
+    "s": 76.42,
+    "e": 76.9
+   },
+   {
+    "w": " siglos,",
+    "s": 76.9,
+    "e": 77.34
+   },
+   {
+    "w": " aparecieron",
+    "s": 77.64,
+    "e": 78.04
+   },
+   {
+    "w": " muchas",
+    "s": 78.04,
+    "e": 78.42
+   },
+   {
+    "w": " de",
+    "s": 78.42,
+    "e": 78.66
+   },
+   {
+    "w": " las",
+    "s": 78.66,
+    "e": 78.9
+   },
+   {
+    "w": " razas",
+    "s": 78.9,
+    "e": 79.24
+   },
+   {
+    "w": " que",
+    "s": 79.24,
+    "e": 79.54
+   },
+   {
+    "w": " conocemos",
+    "s": 79.54,
+    "e": 79.98
+   },
+   {
+    "w": " hoy.",
+    "s": 79.98,
+    "e": 80.18
+   }
+  ]
+ },
+ {
+  "start": 80.18,
+  "end": 86.98,
+  "text": " Desde el enorme mainecón, hasta el aspecto de pequeño leopardo del bengali o el curioso cuerpo sin pelo del esfinge.",
+  "words": [
+   {
+    "w": " Desde",
+    "s": 80.18,
+    "e": 80.94
+   },
+   {
+    "w": " el",
+    "s": 80.94,
+    "e": 81.14
+   },
+   {
+    "w": " enorme",
+    "s": 81.14,
+    "e": 81.48
+   },
+   {
+    "w": " mainecón,",
+    "s": 81.48,
+    "e": 82.1
+   },
+   {
+    "w": " hasta",
+    "s": 82.34,
+    "e": 82.5
+   },
+   {
+    "w": " el",
+    "s": 82.5,
+    "e": 82.7
+   },
+   {
+    "w": " aspecto",
+    "s": 82.7,
+    "e": 83.2
+   },
+   {
+    "w": " de",
+    "s": 83.2,
+    "e": 83.4
+   },
+   {
+    "w": " pequeño",
+    "s": 83.4,
+    "e": 83.62
+   },
+   {
+    "w": " leopardo",
+    "s": 83.62,
+    "e": 84.08
+   },
+   {
+    "w": " del",
+    "s": 84.08,
+    "e": 84.24
+   },
+   {
+    "w": " bengali",
+    "s": 84.24,
+    "e": 84.66
+   },
+   {
+    "w": " o",
+    "s": 84.66,
+    "e": 84.88
+   },
+   {
+    "w": " el",
+    "s": 84.88,
+    "e": 85.08
+   },
+   {
+    "w": " curioso",
+    "s": 85.08,
+    "e": 85.52
+   },
+   {
+    "w": " cuerpo",
+    "s": 85.52,
+    "e": 85.8
+   },
+   {
+    "w": " sin",
+    "s": 85.8,
+    "e": 86.04
+   },
+   {
+    "w": " pelo",
+    "s": 86.04,
+    "e": 86.24
+   },
+   {
+    "w": " del",
+    "s": 86.24,
+    "e": 86.52
+   },
+   {
+    "w": " esfinge.",
+    "s": 86.52,
+    "e": 86.98
+   }
+  ]
+ },
+ {
+  "start": 87.3,
+  "end": 94.7,
+  "text": " Pero a pesar de todos estos cambios, tu gato doméstico sigue conservando gran parte de las características de sus parientes salvajes.",
+  "words": [
+   {
+    "w": " Pero",
+    "s": 87.3,
+    "e": 87.48
+   },
+   {
+    "w": " a",
+    "s": 87.48,
+    "e": 87.66
+   },
+   {
+    "w": " pesar",
+    "s": 87.66,
+    "e": 87.88
+   },
+   {
+    "w": " de",
+    "s": 87.88,
+    "e": 88.14
+   },
+   {
+    "w": " todos",
+    "s": 88.14,
+    "e": 88.36
+   },
+   {
+    "w": " estos",
+    "s": 88.36,
+    "e": 88.72
+   },
+   {
+    "w": " cambios,",
+    "s": 88.72,
+    "e": 89.24
+   },
+   {
+    "w": " tu",
+    "s": 89.36,
+    "e": 89.4
+   },
+   {
+    "w": " gato",
+    "s": 89.4,
+    "e": 89.72
+   },
+   {
+    "w": " doméstico",
+    "s": 89.72,
+    "e": 90.32
+   },
+   {
+    "w": " sigue",
+    "s": 90.32,
+    "e": 90.58
+   },
+   {
+    "w": " conservando",
+    "s": 90.58,
+    "e": 91.3
+   },
+   {
+    "w": " gran",
+    "s": 91.3,
+    "e": 91.5
+   },
+   {
+    "w": " parte",
+    "s": 91.5,
+    "e": 91.8
+   },
+   {
+    "w": " de",
+    "s": 91.8,
+    "e": 92.0
+   },
+   {
+    "w": " las",
+    "s": 92.0,
+    "e": 92.28
+   },
+   {
+    "w": " características",
+    "s": 92.28,
+    "e": 93.02
+   },
+   {
+    "w": " de",
+    "s": 93.02,
+    "e": 93.36
+   },
+   {
+    "w": " sus",
+    "s": 93.36,
+    "e": 93.54
+   },
+   {
+    "w": " parientes",
+    "s": 93.54,
+    "e": 94.04
+   },
+   {
+    "w": " salvajes.",
+    "s": 94.04,
+    "e": 94.7
+   }
+  ]
+ },
+ {
+  "start": 94.98,
+  "end": 100.26,
+  "text": " Porque debajo de ese pequeño animal que duerme 16 horas al día, sigue existiendo un depredador.",
+  "words": [
+   {
+    "w": " Porque",
+    "s": 94.98,
+    "e": 95.36
+   },
+   {
+    "w": " debajo",
+    "s": 95.36,
+    "e": 95.72
+   },
+   {
+    "w": " de",
+    "s": 95.72,
+    "e": 95.94
+   },
+   {
+    "w": " ese",
+    "s": 95.94,
+    "e": 96.08
+   },
+   {
+    "w": " pequeño",
+    "s": 96.08,
+    "e": 96.48
+   },
+   {
+    "w": " animal",
+    "s": 96.48,
+    "e": 96.86
+   },
+   {
+    "w": " que",
+    "s": 96.86,
+    "e": 97.08
+   },
+   {
+    "w": " duerme",
+    "s": 97.08,
+    "e": 97.36
+   },
+   {
+    "w": " 16",
+    "s": 97.36,
+    "e": 97.82
+   },
+   {
+    "w": " horas",
+    "s": 97.82,
+    "e": 98.12
+   },
+   {
+    "w": " al",
+    "s": 98.12,
+    "e": 98.34
+   },
+   {
+    "w": " día,",
+    "s": 98.34,
+    "e": 98.54
+   },
+   {
+    "w": " sigue",
+    "s": 98.84,
+    "e": 99.0
+   },
+   {
+    "w": " existiendo",
+    "s": 99.0,
+    "e": 99.6
+   },
+   {
+    "w": " un",
+    "s": 99.6,
+    "e": 99.78
+   },
+   {
+    "w": " depredador.",
+    "s": 99.78,
+    "e": 100.26
+   }
+  ]
+ }
+]

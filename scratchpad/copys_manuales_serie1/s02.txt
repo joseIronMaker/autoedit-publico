@@ -1,0 +1,11 @@
+Medí cuánto cuesta escribirle a la IA en español. Corrí el tokenizador real de OpenAI sobre cuatro pares de frases que dicen exactamente lo mismo: 90 tokens en español, 73 en inglés. 23% más por la misma pregunta.
+
+El motivo no es el idioma, es cómo te lee. Antes de entenderte, un tokenizador parte tu texto en pedazos, y ese pedazo es la unidad que te cobran y la que ocupa lugar en la ventana de contexto. En español los pedazos salen más chicos, así que salen más.
+
+Y ahí está la parte que casi nadie cuenta: tampoco ve tus palabras completas. Cuauhtémoc son cinco pedazos: Cu, au, ht, ém, oc. Balbuena, mi apellido, son tres. Por eso falla cuando le pides contar las letras de un nombre. Nunca las tuvo.
+
+Siendo justos: mejoró. Con el tokenizador de 2023 la diferencia era del 43%. Se redujo, no desapareció.
+
+Mi postura: escribir en español no es el problema. El problema es no saber que el cobro no es por palabra. En lo que repites mucho, instrucciones de sistema y plantillas, la instrucción va en inglés y la respuesta te la pides en español.
+
+¿Tus prompts en español o en inglés?

@@ -1,0 +1,43 @@
+=== rehace 06-Sep 11:44 ===
+--- jose13 (corte 34s) 11:44
+    montaje falló
+        File "/usr/lib/python3.12/urllib/request.py", line 639, in http_error_default
+          raise HTTPError(req.full_url, code, msg, hdrs, fp)
+      urllib.error.HTTPError: HTTP Error 401: Unauthorized
+--- jose14 (corte 72s) 11:44
+    montaje falló
+        File "/usr/lib/python3.12/urllib/request.py", line 639, in http_error_default
+          raise HTTPError(req.full_url, code, msg, hdrs, fp)
+      urllib.error.HTTPError: HTTP Error 401: Unauthorized
+--- jose15 (corte 36s) 11:44
+    montaje falló
+        File "/usr/lib/python3.12/urllib/request.py", line 639, in http_error_default
+          raise HTTPError(req.full_url, code, msg, hdrs, fp)
+      urllib.error.HTTPError: HTTP Error 401: Unauthorized
+--- jose16 (corte 96s) 11:44
+    montaje falló
+        File "/usr/lib/python3.12/urllib/request.py", line 639, in http_error_default
+          raise HTTPError(req.full_url, code, msg, hdrs, fp)
+      urllib.error.HTTPError: HTTP Error 401: Unauthorized
+--- jose17 (corte 142s) 11:44
+    montaje falló
+        File "/usr/lib/python3.12/urllib/request.py", line 639, in http_error_default
+          raise HTTPError(req.full_url, code, msg, hdrs, fp)
+      urllib.error.HTTPError: HTTP Error 401: Unauthorized
+=== fin 06-Sep 11:44 ===
+=== rehace 06-Sep 13:39 ===
+--- jose13 (corte 34s) 13:39
+    OK jose13_cad_con_ia.mp4  66.500000s  13:45
+--- jose14 (corte 72s) 13:45
+    OK jose14_planos_con_ia.mp4  55.400000s  13:50
+--- jose15 (corte 36s) 13:50
+    OK jose15_pcb_con_ia.mp4  63.900000s  13:56
+--- jose16 (corte 96s) 13:56
+    OK jose16_brazo_robotico_con_ia.mp4  62.600000s  14:03
+--- jose17 (corte 142s) 14:03
+    OK jose17_simulacion_robot_con_ia.mp4  69.300000s  14:10
+=== fin 06-Sep 14:10 ===
+=== rehace 06-Sep 14:35 ===
+--- jose12 (corte 0s) 14:35
+    OK jose12_tres_formas_chatgpt.mp4  64.200000s  14:42
+=== fin 06-Sep 14:42 ===

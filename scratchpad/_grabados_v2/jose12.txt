@@ -1,0 +1,5 @@
+Esto ya no es un chat. Es un agente que abre una carpeta de tu computadora, encuentra tu Excel, lo lee y te devuelve el informe hecho. Sin quejarse, sin pedir aumento y sin ir por café.
+Desde dos mil veintidós lo has usado igual: preguntar, copiar, pegar. Preguntar, copiar, pegar. Le estás pidiendo la receta a un tipo que se puede meter a tu cocina y hacerte de comer.
+Lo que cambió tiene nombre. Le das acceso a una carpeta y entra. Te arma el Excel, la presentación, el PDF. Le conectas el correo o el diseñador. Le dejas tareas programadas para que a las nueve de la mañana el informe ya esté hecho, sin ti, mientras tú sigues dormido con la boca abierta.
+Y la tercera forma no es para programadores. Le pides la página web de una pastelería y no te explica cómo hacerla en doce pasos: la escribe, la instala y te la enseña funcionando.
+Son tres formas y la que usas tú es la primera. La más lenta. Y esto es lo más torpe que va a estar la inteligencia artificial en tu vida.

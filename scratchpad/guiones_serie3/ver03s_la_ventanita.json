@@ -1,0 +1,93 @@
+{
+  "tema": "La ventanita que recorre tu foto",
+  "modo": "corto",
+  "title": "La ventanita que recorre tu foto",
+  "slug": "ver_la_ventanita",
+  "hook_tipo": "secreto",
+  "theme": "menta",
+  "keyword": "operación de convolución",
+  "hook_headline": [
+    "UNA VENTANA",
+    "QUE RECORRE"
+  ],
+  "pregunta_ab": "¿Mira todo o de a pedacitos?",
+  "music_prompt": "clean minimal techno, plucked glassy synths and precise clicks, methodical, no vocals, 112 BPM",
+  "scenes": [
+    {
+      "narration": "Tu cámara mira tu foto en pedacitos de tres por tres.",
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.45,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "multiplicar",
+            "serif": true
+          },
+          {
+            "text": "Y SUMAR",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "extreme macro of a small square window of light sliding slowly across a dark textured surface, leaving a faint glowing trail, shallow depth of field, deep blacks, slow motion",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Se toma una ventanita de nueve números, se pone sobre un pedacito de la foto, se multiplica valor por valor y se suma todo en uno.",
+      "beat_type": "hook",
+      "visual_type": "custom",
+      "custom_anim": {
+        "description": "PROHIBIDO tarjetas o cajas con texto. FRANJAS: título SOLO entre y=H*0.06 y y=H*0.16 en una línea corta; dibujo SOLO entre y=H*0.22 y y=H*0.68. Una cuadrícula grande de celdas ocupa la franja. Encima se mueve un CUADRO brillante y grueso del tamaño de tres por tres celdas que salta de posición en posición recorriendo la cuadrícula en zigzag. Cada vez que se detiene, las celdas de abajo destellan y sale un hilo de luz hacia una cuadrícula más chica al costado donde se enciende una celda nueva. El cuadro es SIEMPRE el mismo: conserva color y brillo en todas las posiciones. Sin números."
+      }
+    },
+    {
+      "narration": "Lo corrí de verdad: imagen de cinco por cinco, ventana de tres por tres. Recorre nueve posiciones y deja un mapa nuevo. El primero da cuatro.",
+      "beat_type": "proof",
+      "visual_type": "ml_demo",
+      "ml_demo": {
+        "code": "import numpy as np\nimagen = np.array([[1,1,1,0,0],[0,1,1,1,0],[0,0,1,1,1],[0,0,1,1,0],[0,1,1,0,0]])\nfiltro = np.array([[1,0,1],[0,1,0],[1,0,1]])\nmapa = np.zeros((3,3), dtype=int)\nfor i in range(3):\n    for j in range(3):\n        mapa[i,j] = (imagen[i:i+3, j:j+3] * filtro).sum()\nfig, axs = plt.subplots(1, 3, figsize=(9.6, 4.2))\nfor ax, M, t, c in zip(axs, [imagen, filtro, mapa], ['imagen 5x5', 'ventana 3x3', 'mapa 3x3'], ['Blues', 'Oranges', 'spring']):\n    ax.imshow(M, cmap=c)\n    for a in range(M.shape[0]):\n        for b in range(M.shape[1]):\n            ax.text(b, a, str(int(M[a,b])), ha='center', va='center', fontsize=24, fontweight='bold', color='#0A0A0F')\n    ax.set_title(t, fontsize=20)\n    ax.set_xticks([]); ax.set_yticks([])\naxs[1].set_xlabel('multiplica y suma en cada posición', color=CYAN, fontsize=18, fontweight='bold', labelpad=16)",
+        "display_code": [
+          "parche = imagen[i:i+3, j:j+3]",
+          "mapa[i,j] = (parche * filtro).sum()"
+        ],
+        "caption": "convolucion.py"
+      }
+    },
+    {
+      "narration": "Y el detalle que la hace posible: es la MISMA ventana en todas las posiciones. Nueve números que aprender para toda la foto, no uno por pixel.",
+      "beat_type": "giro",
+      "visual_type": "custom",
+      "custom_anim": {
+        "description": "PROHIBIDO tarjetas o cajas con texto. FRANJAS: título entre y=H*0.06 y y=H*0.16; dibujo entre y=H*0.22 y y=H*0.68. Tres cuadrículas idénticas y grandes, una junto a otra en fila, cada una con un patrón distinto de brillos. Sobre las TRES, al mismo tiempo, se posa el MISMO cuadro brillante de tres por tres, del mismo color y grosor en las tres. Los tres cuadros laten sincronizados y de cada uno baja un hilo de luz que converge en un solo punto abajo. Una etiqueta grande: el mismo, en todos lados. Sin números."
+      }
+    },
+    {
+      "narration": "Una ventana que recorre. Los mismos nueve números en todas las posiciones.",
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.35,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "una ventana que recorre",
+            "serif": true
+          },
+          {
+            "text": "LOS MISMOS NUEVE",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "a single square of light methodically sweeping across a vast dark surface in a grid pattern, leaving behind a second smaller grid of glowing points, cinematic, deep blacks",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "¿Y qué nueve números lleva esa ventana? Los mismos que tu botón de nitidez. Mañana.",
+      "beat_type": "cta",
+      "visual_type": "image",
+      "image_prompt": "extreme macro photograph of a small square glass filter held between fingers in a dark room, one edge catching a thin line of light, shot on 100mm macro at f/2.8, deep blacks, cinematic"
+    }
+  ],
+  "hook_locked": true
+}

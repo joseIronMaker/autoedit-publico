@@ -1,0 +1,37 @@
+[
+  {
+    "tema": "Tu WhatsApp podría dejar de funcionar por culpa de la Inteligencia Artificial",
+    "angulo": "Explica a la gente común por qué sus teléfonos antiguos se están quedando sin WhatsApp debido a los requisitos de potencia que exige la nueva Meta AI.",
+    "hook_tipo": "problema",
+    "pilar": "noticia",
+    "fuente": "Mediotiempo / A24"
+  },
+  {
+    "tema": "Alerta de seguridad: El peligro de descargar aplicaciones falsas de ChatGPT y Claude",
+    "angulo": "Advierte a los usuarios sobre el aumento del 500% en virus que se hacen pasar por herramientas de IA para robar contraseñas y datos bancarios.",
+    "hook_tipo": "problema",
+    "pilar": "noticia",
+    "fuente": "eSemanal"
+  },
+  {
+    "tema": "Cómo saber si alguien está usando tu cuenta de ChatGPT sin tu permiso",
+    "angulo": "Enseña a usar la nueva función de 'Sesiones activas' para auditar qué dispositivos tienen abierta tu cuenta y cerrarlos de forma remota.",
+    "hook_tipo": "beneficio",
+    "pilar": "usable",
+    "fuente": "OpenAI Help Center"
+  },
+  {
+    "tema": "La nueva IA de Google que crea imágenes en menos de 4 segundos",
+    "angulo": "Muestra cómo aprovechar 'Nano Banana 2 Lite' para generar y editar imágenes ultra rápido mediante texto de forma gratuita.",
+    "hook_tipo": "novedad",
+    "pilar": "usable",
+    "fuente": "Google Blog / YouTube (Julian Goldie SEO)"
+  },
+  {
+    "tema": "El error en TikTok que está destruyendo el alcance de los creadores",
+    "angulo": "Explica la nueva penalización (shadowban) a cuentas que suben videos editados o creados con IA sin activar la etiqueta correspondiente.",
+    "hook_tipo": "error",
+    "pilar": "noticia",
+    "fuente": "Actualidad Marketing"
+  }
+]

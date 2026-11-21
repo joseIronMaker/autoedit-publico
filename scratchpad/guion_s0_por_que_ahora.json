@@ -1,0 +1,76 @@
+{
+  "title": "El cerebro de la IA es de 1958: por qué explotó hasta ahora",
+  "slug": "dl_por_que_ahora",
+  "hook_tipo": "contraria",
+  "keyword": "por qué ahora deep learning",
+  "hook_headline": ["ES DE", "1958"],
+  "pregunta_ab": "¿IA nueva o idea vieja?",
+  "music_prompt": "dark cinematic electronic instrumental, vintage-to-modern rising synth, sense of awakening and momentum, tech, no vocals, 120 BPM",
+  "modo": "corto",
+  "scenes": [
+    {
+      "narration": "ChatGPT parece nuevo. Su cerebro se inventó en 1958.",
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.45,
+      "kinetic_video": {
+        "words": [
+          {"text": "su cerebro es de", "serif": true},
+          {"text": "1958", "accent": true}
+        ],
+        "variant": "dark",
+        "veo_prompt": "Cinematic shot: a vintage 1950s room-sized machine with blinking lights and tangled wires slowly morphs and dissolves into a glowing modern neon neural network floating in a near-black void, cyan and magenta light, volumetric glow, sense of an old idea awakening, dark tech aesthetic, no text, no people",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "La neurona artificial tiene casi setenta años. Entonces, ¿por qué la inteligencia artificial explotó apenas ahora?",
+      "beat_type": "hook",
+      "visual_type": "host",
+      "host_top": {"kind": "headline", "lines": ["ES DE", "1958"]}
+    },
+    {
+      "narration": "El modelo ya existía. Faltaban tres cosas: datos, con el internet llegaron millones de ejemplos; las GPUs de los videojuegos, que hacen millones de cuentas en paralelo; y las herramientas para entrenar redes en pocas líneas.",
+      "beat_type": "proof",
+      "visual_type": "showcase",
+      "showcase": {
+        "items": [
+          {"label": "1. DATOS", "query_fotos": "ImageNet dataset grid thousands of tiny photos"},
+          {"label": "2. GPUs", "query_fotos": "NVIDIA GPU graphics card product photo dark"},
+          {"label": "3. HERRAMIENTAS", "query_fotos": "PyTorch deep learning python code on screen"}
+        ]
+      }
+    },
+    {
+      "narration": "Junta las tres y mira: en 2012 una sola red aplastó el récord mundial de reconocer imágenes. Ahí explotó todo.",
+      "beat_type": "giro",
+      "visual_type": "kinetic",
+      "kinetic": {
+        "words": [
+          {"text": "2012:", "serif": true},
+          {"text": "EXPLOTÓ TODO", "accent": true}
+        ],
+        "variant": "dark"
+      }
+    },
+    {
+      "narration": "La IA no es magia nueva. Es una idea vieja con poder nuevo.",
+      "beat_type": "tesis",
+      "visual_type": "kinetic",
+      "pause_after": 0.35,
+      "kinetic": {
+        "words": [
+          {"text": "idea vieja,", "serif": true},
+          {"text": "PODER NUEVO", "accent": true}
+        ],
+        "variant": "accent"
+      }
+    },
+    {
+      "narration": "Esa idea de 1958 es una sola neurona. En el próximo video la abrimos por dentro: es más simple de lo que crees.",
+      "beat_type": "cta",
+      "visual_type": "host",
+      "host_top": {"kind": "save", "title": "EMPIEZA AQUÍ", "subtitle": "SIGUIENTE: LA NEURONA →"}
+    }
+  ]
+}

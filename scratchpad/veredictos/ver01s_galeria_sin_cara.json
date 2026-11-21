@@ -1,0 +1,86 @@
+{
+  "nota": {
+    "hook": 7,
+    "coherencia": 5,
+    "viralidad": 7,
+    "explicabilidad": 6,
+    "marca": 4
+  },
+  "problemas": [
+    {
+      "escena": 1,
+      "eje": "hook",
+      "gravedad": "grave",
+      "que": "«Nunca ha visto una» es una promesa llamativa pero falsa para un detector entrenado con imágenes de caras, así que el video no puede demostrarla.",
+      "arreglo": "Cámbiala por «Tu cámara dibuja este recuadro antes de la foto. ¿Cómo?», que conserva el bucle abierto y promete exactamente la explicación posterior."
+    },
+    {
+      "escena": 2,
+      "eje": "marca",
+      "gravedad": "grave",
+      "que": "Decir que cada píxel es un solo valor de 0 a 255 solo describe la imagen en blanco y negro de 8 bits del ejemplo, no lo que registra en general una cámara a color.",
+      "arreglo": "Di «En esta versión en blanco y negro de 8 bits, cada píxel es un brillo de 0 a 255» y separa explícitamente al sensor del detector."
+    },
+    {
+      "escena": 3,
+      "eje": "explicabilidad",
+      "gravedad": "medio",
+      "que": "«Foto en crudo» sugiere un archivo RAW del sensor, pero la página citada muestra una imagen en blanco y negro convertida en una matriz de brillos.",
+      "arreglo": "Sustituye la frase por «Esta página convierte una imagen en blanco y negro en una matriz: cada número es el brillo de un píxel»."
+    },
+    {
+      "escena": 4,
+      "eje": "viralidad",
+      "gravedad": "grave",
+      "que": "El 87% y el supuesto cero no son verificables si no aparecen el nombre y versión del detector, su umbral y la salida sin editar; además, ausencia de recuadro no equivale a una puntuación de cero.",
+      "arreglo": "Muestra en pantalla modelo, versión, umbral y salida cruda, y narra «dio score 0.87 en mi cara y ninguna detección en este recorte» en vez de «confianza» y «cero»."
+    },
+    {
+      "escena": 4,
+      "eje": "marca",
+      "gravedad": "medio",
+      "que": "«Le pasé mi foto a un detector» suena a usuario de una app, no a un ingeniero que controla y puede reproducir la prueba.",
+      "arreglo": "Abre la escena con «En mi prueba con [modelo y versión], usando un umbral de [valor]» y deja esos datos visibles junto al código ejecutándose."
+    },
+    {
+      "escena": 5,
+      "eje": "coherencia",
+      "gravedad": "grave",
+      "que": "«No busca tu cara» no responde la pregunta A-o-B y plantea una falsa oposición: un detector mide valores y usa los patrones aprendidos para reconocer una cara.",
+      "arreglo": "Reemplázala por «Hace ambas: mide los píxeles y, con ellos, detecta patrones que aprendió a asociar con caras»."
+    },
+    {
+      "escena": 5,
+      "eje": "explicabilidad",
+      "gravedad": "medio",
+      "que": "«La tela» aparece sin haber sido identificada en la narración, por lo que el espectador no sabe qué recorte se comparó ni por qué importa.",
+      "arreglo": "Presenta desde la escena 4 dos recortes del mismo tamaño, rotulados «mi cara» y «mi playera», y conserva ambos en pantalla durante la conclusión."
+    },
+    {
+      "escena": 6,
+      "eje": "coherencia",
+      "gravedad": "medio",
+      "que": "El cierre salta a una cuenta misteriosa antes de rematar la respuesta y «una cuenta que ya usas» no queda demostrada en este video.",
+      "arreglo": "Cierra primero con «Por eso la respuesta es: mide y reconoce» y, solo si el detector mostrado realmente la usa, añade «Mañana calculamos la convolución que recorre la imagen»."
+    },
+    {
+      "escena": 0,
+      "eje": "coherencia",
+      "gravedad": "medio",
+      "que": "No hay un único ejemplo visual de principio a fin: el guion cambia de una cámara genérica a la cara de Setosa y luego a otra foto y otro recorte.",
+      "arreglo": "Usa la misma foto propia desde el recuadro inicial hasta la matriz, la ejecución del detector y la comparación final, dejando claro cuándo Setosa solo ilustra la conversión a números."
+    }
+  ],
+  "lo_que_funciona": [
+    "La estructura del hook cabe en 11 palabras, nombra un objeto concreto del espectador y abre una contradicción inmediata.",
+    "La captura de Setosa sí permite comprobar visualmente la correspondencia entre brillos de 0 a 255 y píxeles en una imagen en blanco y negro.",
+    "No hay petición de like, follow, comentario ni guardado."
+  ],
+  "_hook_medido": {
+    "palabras": 11,
+    "caracteres": 53,
+    "segundos_aprox": 3.3,
+    "cabe_en_12": true,
+    "primera_frase": "Tu cámara te encuentra la cara"
+  }
+}

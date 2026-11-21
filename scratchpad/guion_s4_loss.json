@@ -1,0 +1,76 @@
+{
+  "title": "El error: cómo se mide que la red se equivoca",
+  "slug": "dl_loss_error",
+  "hook_tipo": "problema",
+  "keyword": "función de pérdida",
+  "hook_headline": ["MIDE", "EL ERROR"],
+  "pregunta_ab": "¿Clasificar o predecir?",
+  "music_prompt": "dark focused electronic instrumental, steady pulse, analytical tension, tech, no vocals, 120 BPM",
+  "modo": "corto",
+  "scenes": [
+    {
+      "narration": "Sin entrenar, tu red predice puro error.",
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.45,
+      "kinetic_video": {
+        "words": [
+          {"text": "puro", "serif": true},
+          {"text": "ERROR", "accent": true}
+        ],
+        "variant": "dark",
+        "veo_prompt": "Cinematic shot of a glowing neon dartboard in a near-black void with several darts of cyan light missing the bullseye, scattered wide, sense of error and distance, magenta accents, volumetric glow, dark tech aesthetic, no text, no people",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Para mejorar, primero mide cuánto se equivoca: eso es la loss.",
+      "beat_type": "hook",
+      "visual_type": "host",
+      "host_top": {"kind": "headline", "lines": ["MIDE", "EL ERROR"]}
+    },
+    {
+      "narration": "El error es la distancia entre lo que predice y la verdad. La loss lo resume en una sola cifra: al cuadrado y promediado.",
+      "beat_type": "proof",
+      "visual_type": "ml_demo",
+      "ml_demo": {
+        "code": "import numpy as np\nrng = np.random.default_rng(3)\nx = np.linspace(0,10,14); y = 2.2*x + 4 + rng.normal(0,4,14)\nm, b = 1.4, 9.0\npred = m*x + b\nfig, ax = plt.subplots(figsize=(6,6.5))\nfor xi, yi, pi in zip(x, y, pred):\n    ax.plot([xi,xi],[yi,pi], color=RED, lw=2.6, alpha=0.85, zorder=2)\nax.scatter(x, y, c=CYAN, s=70, zorder=4, label='real')\nax.plot(x, pred, color=MAG, lw=3.5, zorder=3, label='predicción')\nmse = np.mean((y-pred)**2)\nax.set_title('error (MSE) = %.0f' % mse)\nax.legend(loc='upper left'); ax.set_xticks([]); ax.set_yticks([])",
+        "display_code": [
+          "error = real - predicción",
+          "loss = promedio(error**2)   # MSE",
+          "# una cifra: qué tan mal está"
+        ],
+        "caption": "loss.py"
+      }
+    },
+    {
+      "narration": "Para clasificar sí o no se usa cross-entropy; para predecir números, el error cuadrático.",
+      "beat_type": "proof",
+      "visual_type": "diagram",
+      "diagram": {
+        "type": "list",
+        "title": "DOS PÉRDIDAS",
+        "items": ["Clasificar sí/no → cross-entropy", "Predecir números → MSE"]
+      }
+    },
+    {
+      "narration": "Sin medir el error, no aprende.",
+      "beat_type": "tesis",
+      "visual_type": "kinetic",
+      "pause_after": 0.35,
+      "kinetic": {
+        "words": [
+          {"text": "sin medir,", "serif": true},
+          {"text": "NO APRENDE", "accent": true}
+        ],
+        "variant": "accent"
+      }
+    },
+    {
+      "narration": "Ya sabe qué tan mal está. ¿Cómo baja ese error? Mañana bajamos la montaña de la pérdida.",
+      "beat_type": "cta",
+      "visual_type": "host",
+      "host_top": {"kind": "save", "title": "MIDE Y MEJORA", "subtitle": "MAÑANA: BAJAR EL ERROR →"}
+    }
+  ]
+}

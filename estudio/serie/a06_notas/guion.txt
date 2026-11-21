@@ -1,0 +1,17 @@
+Si tu agente olvida todo, ¿cómo puede trabajar durante días?
+Igual que tú después de un lunes terrible: dejándose notas.
+Un modelo no aprende de platicar contigo. Lo que aprendió quedó fijo cuando lo entrenaron.
+Entonces, cuando una aplicación dice que te recuerda, en realidad hizo otra cosa.
+Guardó una nota en un archivo. Y cuando regresas, la vuelve a poner sobre la mesa.
+Tu mamá no come mariscos. Le gustan los boleros.
+No lo recuerda. Lo lee.
+Anthropic lo hizo con agentes de proyectos largos: cada uno empieza sin saber nada, y lo primero que hace es leer un archivo de avances, para ver qué dejó el anterior.
+Como turnos en un hospital. Cada enfermera lee el expediente.
+Y esto tiene consecuencias.
+Si la nota está mal, se equivoca con toda seguridad.
+Si alguien más escribe en sus notas, cambia lo que cree.
+Y si guarda demasiado, vuelve a llenar la mesa.
+Así que la memoria de un agente no se parece a la tuya. Se parece más a un cuaderno.
+No recuerda quién eres.
+Lee lo que alguien escribió...
+sobre ti.

@@ -1,0 +1,100 @@
+{
+  "title": "Qué es una app de escritorio (y por qué tkinter)",
+  "slug": "curso_py16_app_escritorio",
+  "tema": "qué es una app de escritorio y por qué tkinter, y el cambio de mando entre terminal y ventana",
+  "theme": "curso python con ia",
+  "hook_tipo": "demostracion",
+  "keyword": "app de escritorio python",
+  "hook_headline": [
+    "VENTANA",
+    "PROPIA"
+  ],
+  "pregunta_ab": "¿tkinter feo pero incluido, o una librería bonita que hay que instalar?",
+  "music_prompt": "hard techno bed, dark industrial groove, 150 BPM, rolling kick, restrained under a voice, instrumental, no vocals",
+  "modo": "corto",
+  "hook_locked": true,
+  "scenes": [
+    {
+      "beat_type": "hook",
+      "visual_type": "terminal",
+      "narration": "Tu programa funciona, pero tu mamá no lo va a usar jamás si para abrirlo tiene que entrar a una terminal y escribir python. Para eso existen las apps de escritorio. Le pido al agente una ventana con tkinter que salude, y fíjate que no instala nada: tkinter ya venía adentro, como la llave de cruz en la cajuela.",
+      "pause_after": 0.35,
+      "terminal": {
+        "title": "ventana.py",
+        "lines": [
+          {
+            "text": "import tkinter as tk"
+          },
+          {
+            "text": "ventana = tk.Tk()"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "claude 'crea ventana.py con tkinter: una ventana con un saludo'",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "custom",
+      "narration": "Una app de escritorio es un programa con ventana propia, en tu computadora, sin navegador y sin internet. Y te cambia el chip: en la terminal mandas TÚ, el programa va de arriba abajo y se acaba. En una ventana manda el usuario: el programa se queda ahí, esperando a que alguien le pique. Pasa de jefe a mesero, y ni se queja.",
+      "custom_anim": {
+        "description": "Dos columnas. Izquierda, etiquetada terminal: un archivo de código con una flecha que baja línea por línea de arriba abajo y al final el texto termina. Derecha, etiquetada ventana: un rectángulo con un botón; un cursor da clic y sale una flecha hacia una función, luego el programa vuelve a esperar con el texto espera... y otro clic dispara otra flecha; ciclo continuo. Abajo el rótulo: terminal, tú mandas; ventana, manda el usuario. Sin cifras."
+      }
+    },
+    {
+      "beat_type": "contexto",
+      "visual_type": "terminal",
+      "narration": "Y esta es la app corriendo de verdad: una pregunta, una caja de texto, un botón y una respuesta. Escribo mi nombre, le pico a saludar, y me contesta. Ocho líneas de tkinter. Nada de esto vive en la terminal: es una ventana de Windows como cualquier otra, con su equis para cerrar y todo.",
+      "terminal": {
+        "title": "ventana",
+        "lines": [
+          {
+            "text": "¿Cómo te llamas?  [ José ]"
+          },
+          {
+            "text": "[ Saludar ]  → ¡Hola, José!"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "/home/jose/tiktok/.venv/bin/python ventana.py",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo",
+        "titulo": "Mi primera app"
+      }
+    },
+    {
+      "beat_type": "giro",
+      "visual_type": "custom",
+      "narration": "Y aquí está el error más famoso de las apps con ventana: si metes un trabajo largo DENTRO del botón, la ventana se congela y Windows te avisa que no responde. No se rompió, cabrón: está ocupado. Es el compa que se queda viendo el celular mientras le hablas. Los trabajos largos van aparte, en otro hilo.",
+      "custom_anim": {
+        "description": "Una ventana con un botón. Un cursor da clic y dentro de la ventana aparece una barra de progreso larga etiquetada trabajo largo que avanza despacio; mientras avanza, la ventana se vuelve gris, el cursor intenta hacer clic y no pasa nada, y arriba aparece un rótulo rojo: No responde. Luego la barra sale de la ventana y avanza en una caja aparte etiquetada aparte, la ventana vuelve a color y los clics vuelven a responder con una palomita. Sin cifras."
+      }
+    },
+    {
+      "beat_type": "cta",
+      "visual_type": "kinetic_video",
+      "narration": "Ventana propia, sin instalar nada, y el usuario al mando. La que viene: la construimos pieza por pieza, la raíz, los widgets y el botón que llama a tu función. ¿tkinter feo pero incluido, o una librería bonita que hay que instalar? Yo digo tkinter para aprender: primero que sirva, luego que se vea guapa.",
+      "pause_after": 0.3,
+      "kinetic_video": {
+        "video": "/home/jose/tiktok/videos/_clips_pagados/gen_pro_una_corrida_no_prueba__veo_0.mp4",
+        "words": [
+          {
+            "text": "el usuario",
+            "serif": true
+          },
+          {
+            "text": "AL MANDO",
+            "accent": true
+          }
+        ],
+        "variant": "dark"
+      }
+    }
+  ]
+}

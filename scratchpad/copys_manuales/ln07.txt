@@ -1,0 +1,13 @@
+El truco de la LSTM no fue recordar más. Fue aprender a olvidar.
+
+Una red recurrente normal reescribe su memoria entera en cada palabra. La LSTM le puso compuertas para no hacerlo: qué borro de lo que traía, qué guardo de lo nuevo, y qué dejo salir hacia afuera.
+
+Cada compuerta es un número entre 0 y 1 que multiplica la memoria. Cero borra, uno deja pasar intacto. Y como puede dejar pasar intacto, la señal ya no se apaga a los diez pasos: ahí está la diferencia con lo del video anterior.
+
+En producción esto se nota en algo muy concreto: el modelo deja de perder el sujeto de la oración a media traducción.
+
+Mañana: los tres defectos que ni las compuertas arreglaron.
+
+¿Recordar todo o elegir qué recordar? Yo digo elegir.
+
+#lstm #redesneuronales #deeplearning #nlp #iaconjose

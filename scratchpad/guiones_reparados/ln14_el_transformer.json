@@ -1,0 +1,103 @@
+{
+  "tema": "El Transformer: la arquitectura que hizo posible entrenar con internet entero",
+  "modo": "corto",
+  "title": "El Transformer: la arquitectura que hizo posible entrenar con internet entero",
+  "slug": "ln_el_transformer",
+  "hook_tipo": "resultado",
+  "theme": "carmin",
+  "image_style": "monumental architectural render of a vast symmetrical hall of identical stacked arches receding into darkness, deep crimson and warm amber light, awe-inspiring scale, vertical 9:16 composition, lower third kept simple, no text, no letters, no words, no watermark",
+  "keyword": "arquitectura transformer",
+  "hook_headline": [
+    "LA T",
+    "DE GPT"
+  ],
+  "pregunta_ab": "¿Fue la idea o fue la GPU?",
+  "music_prompt": "monumental cinematic techno, huge reverberant drums and a rising brass-like synth, grand and mechanical, no vocals, 124 BPM",
+  "scenes": [
+    {
+      "narration": "La T de GPT no es de tecnología. Es de Transformer.",
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.45,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "la T de GPT",
+            "serif": true
+          },
+          {
+            "text": "ES DE TRANSFORMER",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "cinematic macro of a heavy metal letterpress block being lifted out of a tray of type by tweezers and turned slowly to face the camera, dramatic low key light, deep black background",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Y un Transformer no es magia: es el bloque de atención que ya viste, apilado muchas veces.",
+      "beat_type": "hook",
+      "visual_type": "host",
+      "host_top": {
+        "kind": "headline",
+        "lines": [
+          "LA T",
+          "DE GPT"
+        ]
+      }
+    },
+    {
+      "narration": "Cada bloque hace lo mismo: suma la posición, deja que las palabras se miren entre sí con varias cabezas, y pasa el resultado a una capa normal. Y otra vez, y otra.",
+      "beat_type": "proof",
+      "visual_type": "custom",
+      "custom_anim": {
+        "description": "PROHIBIDO usar tarjetas, listas, viñetas o cajas con texto: esto se DIBUJA. Un bloque rectangular grande y luminoso en el centro, con textura interna de líneas que se cruzan. Un pulso de luz entra por abajo, lo recorre y sale por arriba. Entonces el bloque se DUPLICA: aparece otro idéntico encima, y el pulso vuelve a recorrerlo. Y otro, y otro, apilándose hacia arriba mientras la pila entera se encoge un poco para que siempre quepa. Al final hay una torre de bloques idénticos con el pulso subiendo por todos ellos sin detenerse. Una etiqueta grande abajo: 'el mismo bloque', y otra arriba: 'muchas veces'. Sin números."
+      }
+    },
+    {
+      "narration": "Y lo decisivo: nada espera a la palabra anterior. Todo se calcula al mismo tiempo, y miles de núcleos trabajan en paralelo.",
+      "beat_type": "giro",
+      "visual_type": "ml_demo",
+      "ml_demo": {
+        "code": "import numpy as np\nn = np.array([50, 200, 800, 3200])\nsecuencial = n / 50.0\nparalelo = np.log2(n) / np.log2(50)\nfig, ax = plt.subplots(figsize=(7.4, 5.2))\nx = np.arange(len(n))\nax.bar(x - 0.2, secuencial, width=0.4, color=RED, label='palabra por palabra')\nax.bar(x + 0.2, paralelo, width=0.4, color=GREEN, label='todo en paralelo')\nax.set_xticks(x)\nax.set_xticklabels([str(v) + ' palabras' for v in n], fontsize=16)\nax.set_ylabel('tiempo relativo', fontsize=18)\nax.legend(fontsize=17)\nax.set_title('por qué sí cabe internet entero')",
+        "display_code": [
+          "# sin recurrencia = sin esperar a la palabra anterior",
+          "salida = bloque(toda_la_frase)   # de una sola vez"
+        ],
+        "caption": "paralelo.py",
+        "esquema": true
+      }
+    },
+    {
+      "narration": "La idea era vieja. Lo nuevo fue que cabía en una GPU.",
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.35,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "la idea era vieja",
+            "serif": true
+          },
+          {
+            "text": "CABÍA EN UNA GPU",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "cinematic macro of dust being blown off an old yellowed technical blueprint, and underneath the paper circuit traces suddenly ignite with light, dramatic, dark",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Ya se puede entrenar rapidísimo. ¿Pero con qué datos, si etiquetar a mano cuesta una fortuna? Mañana, el truco.",
+      "beat_type": "cta",
+      "visual_type": "host",
+      "host_top": {
+        "kind": "save",
+        "title": "SERIE: CÓMO LA IA LEE",
+        "subtitle": "SIGUIENTE: DATOS GRATIS →"
+      }
+    }
+  ],
+  "hook_locked": true
+}

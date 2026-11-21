@@ -1,0 +1,103 @@
+{
+  "tema": "Query, Key y Value: la IA hace una búsqueda dentro de tu frase",
+  "modo": "corto",
+  "title": "Query, Key y Value: la IA hace una búsqueda dentro de tu frase",
+  "slug": "ln_query_key_value",
+  "hook_tipo": "secreto",
+  "theme": "matrix",
+  "image_style": "clean editorial 3D illustration of labeled card catalog drawers and index tabs floating in space, luminous green and cyan accents on deep teal-black, soft studio light, organized and tactile, vertical 9:16 composition, lower third kept simple, no text, no letters, no words, no watermark",
+  "keyword": "query key value atención",
+  "hook_headline": [
+    "BUSCA",
+    "DENTRO DE TI"
+  ],
+  "pregunta_ab": "¿La atención busca o adivina?",
+  "music_prompt": "lo-fi jazz-hop instrumental, upright bass, brushed drums and rhodes chords, relaxed and clever, no vocals, 88 BPM",
+  "scenes": [
+    {
+      "narration": "Cada palabra de tu frase hace una búsqueda contra todas las demás.",
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.45,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "cada palabra",
+            "serif": true
+          },
+          {
+            "text": "BUSCA A LAS DEMÁS",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "cinematic orbit around a dark space where a dozen points of light each shoot thin bright beams to every other point at the same time, weaving a dense glowing web, slow motion",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Piensa en cuando buscas algo: escribes lo que quieres, lees los títulos que salen, y abres el que encaja. Atención hace exactamente eso.",
+      "beat_type": "hook",
+      "visual_type": "host",
+      "host_top": {
+        "kind": "headline",
+        "lines": [
+          "BUSCA",
+          "DENTRO DE TI"
+        ]
+      }
+    },
+    {
+      "narration": "Lo que escribes es la query. El título de cada resultado es la key. Y lo que te llevas al abrirlo es el value.",
+      "beat_type": "proof",
+      "visual_type": "custom",
+      "custom_anim": {
+        "description": "PROHIBIDO: tarjetas, listas, columnas de cajas, pastillas apiladas una debajo de otra o cualquier cosa que parezca un menu. Si terminas dibujando una columna de rectangulos con texto adentro, esta MAL. Esto se dibuja como una ESCENA CON ESPACIO, no como una lista.\nComposicion: una palabra GRANDE abajo al centro, dentro de un circulo brillante. Otras cuatro palabras flotan repartidas ARRIBA, en arco, bien separadas entre si y sin caja alrededor (solo el texto grande). De la palabra de abajo sale un haz de luz que se abre en abanico y barre el arco de arriba. Cada palabra del arco, al ser rozada por el haz, se ilumina con una intensidad distinta y muestra una pequena llave dibujada (una forma de llave, no un rectangulo con la palabra KEY). La palabra que mas se ilumina crece al doble, late, y desde ella baja un CHORRO grueso de luz hasta el circulo de abajo, que se hincha al recibirlo. Las otras devuelven un hilo delgado y apagado. Tres etiquetas grandes, cada una PEGADA a su elemento y sin cruzarse con ninguna linea: pregunto junto al haz, ofrece junto a las llaves, me llevo junto al chorro grueso. Sin numeros.",
+        "code": "def draw(L, D, t, W, H):\n    izq, der = W * 0.06, W * 0.94\n    cx, cy = W * 0.5, H * 0.575\n    r = int(W * 0.130)\n\n    ft, tl, tlh = fit(D, \"DE PREGUNTA A RESPUESTA\", int(W * 0.84), int(H * 0.07),\n                      int(H * 0.040), 34, True)\n    ty = H * 0.085\n    for k, ln in enumerate(tl):\n        L.text((cx - D.textlength(ln, font=ft) / 2, ty + k * tlh), ln, font=ft, fill=TEXT)\n\n    palabras = [\"GUÍA\", \"CLAVE\", \"RESUMEN\"]\n    xs = [W * 0.20, W * 0.50, W * 0.80]\n    wy = H * 0.205\n    gana = 1\n    aparece = [smooth(t, 0.15 + i * 0.22, 0.5) for i in range(3)]\n    elegido = smooth(t, 2.0, 0.7)\n    late = 1.0 + 0.035 * math.sin(t * 2.4)\n\n    # haces de ida: salen del círculo hacia cada palabra\n    for i in range(3):\n        av = smooth(t, 1.1 + i * 0.15, 0.55)\n        if av <= 0:\n            continue\n        x0, y0 = cx, cy - r\n        x1, y1 = xs[i], wy + H * 0.035\n        ex, ey = x0 + (x1 - x0) * av, y0 + (y1 - y0) * av\n        col = ACCENT if i == gana else MUTED\n        alpha = int(90 + 90 * av) if i != gana else int(120 + 120 * av)\n        L.line([(x0, y0), (ex, ey)], fill=(*col, alpha), width=6 if i != gana else 9)\n\n    # chorro de vuelta desde la palabra elegida\n    if elegido > 0:\n        x1, y1 = xs[gana], wy + H * 0.045\n        ex = x1 + (cx - x1) * elegido\n        ey = y1 + (cy - r - y1) * elegido\n        for grosor, a in ((34, 60), (22, 120), (12, 235)):\n            L.line([(x1, y1), (ex, ey)], fill=(*ACCENT2, a), width=int(grosor * late))\n\n    # círculo de la pregunta\n    rr = int(r * (1 + 0.10 * elegido) * late)\n    for k in range(3):\n        L.ellipse([cx - rr - k * 16, cy - rr - k * 16, cx + rr + k * 16, cy + rr + k * 16],\n                  fill=(*ACCENT, 26 - k * 7))\n    L.ellipse([cx - rr, cy - rr, cx + rr, cy + rr], fill=(*CARD, 255), outline=ACCENT, width=7)\n    fq = font(int(H * 0.034), True)\n    L.text((cx - D.textlength(\"PREGUNTA\", font=fq) / 2, cy - fq.size * 0.62),\n           \"PREGUNTA\", font=fq, fill=TEXT)\n\n    # palabras del arco (sin caja: solo el texto) + su llave\n    for i, p in enumerate(palabras):\n        if aparece[i] <= 0:\n            continue\n        base = int(H * 0.042) if i != gana else int(H * 0.042 + H * 0.026 * elegido)\n        f, li, lh = fit(D, p, int(W * 0.26), int(H * 0.09), base, 34, True)\n        anch = D.textlength(li[0], font=f)\n        x = min(max(xs[i], izq + anch / 2), der - anch / 2)\n        y = wy - (1 - aparece[i]) * H * 0.05\n        col = TEXT if (i == gana or elegido < 0.4) else MUTED\n        L.text((x - anch / 2, y), li[0], font=f, fill=(*col, int(255 * aparece[i])))\n        # llave dibujada debajo (aro + vástago), nunca un rectángulo con texto\n        ky = y + f.size * 1.45\n        kr = int(H * 0.013)\n        kc = ACCENT2 if i == gana else MUTED\n        L.ellipse([x - kr, ky - kr, x + kr, ky + kr], outline=(*kc, int(230 * aparece[i])), width=5)\n        L.line([(x + kr, ky), (x + kr * 3.4, ky)], fill=(*kc, int(230 * aparece[i])), width=5)\n        L.line([(x + kr * 2.6, ky), (x + kr * 2.6, ky + kr)], fill=(*kc, int(230 * aparece[i])), width=5)\n\n    fl = font(int(H * 0.028), True)\n    L.text((cx - D.textlength(\"lo que pregunto\", font=fl) / 2, cy + rr + H * 0.020),\n           \"lo que pregunto\", font=fl, fill=(*ACCENT, int(235 * smooth(t, 0.9, 0.5))))\n    L.text((izq, wy + H * 0.125), \"lo que ofrece\", font=fl,\n           fill=(*MUTED, int(235 * smooth(t, 1.5, 0.5))))\n    if elegido > 0.3:\n        L.text((der - D.textlength(\"lo que me llevo\", font=fl), cy - r - H * 0.055),\n               \"lo que me llevo\", font=fl, fill=(*ACCENT2, int(235 * elegido)))\n"
+      }
+    },
+    {
+      "narration": "Y el detalle fino: las tres salen de la MISMA palabra, pasada por tres capas distintas que el modelo aprendió. La misma palabra pregunta, se anuncia y aporta contenido.",
+      "beat_type": "giro",
+      "visual_type": "ml_demo",
+      "ml_demo": {
+        "code": "import numpy as np\nrng2 = np.random.default_rng(5)\nemb = rng2.normal(0, 1, (4, 6))\nWq = rng2.normal(0, 1, (6, 6))\nWk = rng2.normal(0, 1, (6, 6))\nWv = rng2.normal(0, 1, (6, 6))\nQ, K, V = emb @ Wq, emb @ Wk, emb @ Wv\nfig, axs = plt.subplots(1, 3, figsize=(9.6, 4.4))\nfor ax, M, t, c in zip(axs, [Q, K, V], ['QUERY', 'KEY', 'VALUE'], ['viridis', 'plasma', 'cividis']):\n    ax.imshow(M, cmap=c, aspect='auto')\n    ax.set_title(t)\n    ax.set_xticks([])\n    ax.set_yticks([])\naxs[1].set_xlabel('mismo texto, tres transformaciones aprendidas', color=CYAN, fontsize=20, fontweight='bold', labelpad=16)",
+        "display_code": [
+          "Q = emb @ Wq      # que busco",
+          "K = emb @ Wk      # que ofrezco",
+          "V = emb @ Wv      # que aporto"
+        ],
+        "caption": "qkv.py"
+      }
+    },
+    {
+      "narration": "Preguntar, anunciarse y aportar. Al mismo tiempo.",
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.35,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "preguntar, anunciarse",
+            "serif": true
+          },
+          {
+            "text": "Y APORTAR",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "three separate streams of glowing particles flowing from different directions and converging into a single bright point at the exact same instant, cinematic, dark background",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Falta el número que decide quién gana esa búsqueda. Mañana lo calculamos.",
+      "beat_type": "cta",
+      "visual_type": "host",
+      "host_top": {
+        "kind": "save",
+        "title": "SERIE: CÓMO LA IA LEE",
+        "subtitle": "SIGUIENTE: EL NÚMERO QUE DECIDE →"
+      }
+    }
+  ]
+}

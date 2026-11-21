@@ -1,0 +1,112 @@
+{
+ "title": "Variables: cajas con nombre",
+ "slug": "curso_py06_variables",
+ "tema": "qué es una variable en Python y por qué el signo igual no es igualdad",
+ "theme": "curso python con ia",
+ "hook_tipo": "demostracion",
+ "keyword": "variables en python",
+ "hook_headline": [
+  "CAJA",
+  "CON NOMBRE"
+ ],
+ "pregunta_ab": "¿Nombres cortos o nombres que se explican solos?",
+ "music_prompt": "hard techno bed, dark industrial groove, 150 BPM, rolling kick, restrained under a voice, instrumental, no vocals",
+ "modo": "corto",
+ "hook_locked": true,
+ "scenes": [
+  {
+   "beat_type": "hook",
+   "visual_type": "terminal",
+   "narration": "¿Qué pedo, banda? Una variable es una caja con nombre: metes un dato y la compu lo recuerda mientras el programa corre. Se lo pido al agente en una línea: una variable puntos que empiece en cero, le sume diez, luego cinco, y la imprima. Mira cómo la escribe.",
+   "pause_after": 0.35,
+   "terminal": {
+    "title": "marcador.py",
+    "lines": [
+     {
+      "text": "puntos = 0"
+     },
+     {
+      "text": "puntos = puntos + 10"
+     },
+     {
+      "text": "puntos += 5"
+     },
+     {
+      "text": "print(puntos)"
+     }
+    ]
+   },
+   "captura": {
+    "cmd": "claude 'escribe marcador.py: una variable puntos que empieza en 0, le suma 10, luego 5, y la imprime'",
+    "cols": 46,
+    "filas": 30,
+    "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+   }
+  },
+  {
+   "beat_type": "proof",
+   "visual_type": "custom",
+   "narration": "Ojo con esto, cabrón, porque aquí se atora medio mundo: el signo igual no significa igualdad como en la escuela. Significa guarda esto aquí. Por eso puedes escribir puntos igual a puntos más diez, que en matemáticas sería una pendejada: la compu calcula lo de la derecha y lo mete en la caja de la izquierda.",
+   "custom_anim": {
+    "description": "En el centro una caja grande con la etiqueta puntos encima y el valor 0 adentro. A la derecha un recuadro donde aparece la expresión puntos + 10; el resultado 10 viaja por una flecha hacia la caja y REEMPLAZA al 0. Después el recuadro de la derecha SE VACÍA POR COMPLETO antes de escribir la siguiente expresión puntos += 5; el 15 viaja y reemplaza al 10. Sobre la flecha, el signo = dibujado grande con el texto guarda aquí, nunca es igual a. Nunca dos textos encimados en el mismo recuadro. Sin más cifras que 0, 10 y 15."
+   }
+  },
+  {
+   "beat_type": "contexto",
+   "visual_type": "terminal",
+   "narration": "Míralo corriendo de verdad, mi chavo: empiezas con cero, le sumo diez y lleva diez, le sumo cinco más con la forma corta y ya son quince. Tres cambios a la misma caja, y la caja siempre se queda con el último. Eso es todo lo que hace una variable: guardar el último valor.",
+   "terminal": {
+    "title": "python3 marcador.py",
+    "lines": [
+     {
+      "text": "empiezas con 0"
+     },
+     {
+      "text": "ahora llevas 10"
+     },
+     {
+      "text": "y ahora 15"
+     }
+    ]
+   },
+   "captura": {
+    "cmd": "cat marcador.py; echo; echo '$ python3 marcador.py'; python3 marcador.py",
+    "cols": 46,
+    "filas": 30,
+    "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+   }
+  },
+  {
+   "beat_type": "giro",
+   "visual_type": "mascota",
+   "narration": "El error del principiante no es la sintaxis, cabrón: es ponerle a la caja un nombre que no dice nada. Si le pones equis, en dos semanas ni tú vas a saber qué guardaba. Ponle puntos, ponle edad, ponle nombre del jugador. La compu no lo necesita; tú sí.",
+   "mascota": {
+    "pose": "profesor",
+    "caption": "x = ? · puntos = 15"
+   },
+   "foto": {
+    "archivo": "/home/jose/tiktok/branding/perrito/codex_sabio.png"
+   }
+  },
+  {
+   "beat_type": "cta",
+   "visual_type": "kinetic_video",
+   "narration": "Un nombre, un dato, y el último valor manda. En la siguiente clase, por qué dos más dos a veces da veintidós, y no es broma. ¿Nombres cortos o nombres que se explican solos? Yo digo que se expliquen solos, aunque tecleés más.",
+   "pause_after": 0.3,
+   "kinetic_video": {
+    "video": "/home/jose/tiktok/videos/_clips_pagados/gen_ver_la_ventanita__veo_0.mp4",
+    "words": [
+     {
+      "text": "el último valor",
+      "serif": true
+     },
+     {
+      "text": "MANDA",
+      "accent": true
+     }
+    ],
+    "variant": "dark"
+   }
+  }
+ ]
+}

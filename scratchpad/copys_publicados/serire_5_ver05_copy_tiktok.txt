@@ -1,0 +1,7 @@
+Tu cámara te reconoce aunque te muevas. Por tirar detalle a propósito.
+Lo negativo se vuelve cero y de cada cuadrito de dos por dos sobrevive el valor más alto. Termina con la cuarta parte de los números. Si el mismo rasgo cae unos píxeles más allá, el máximo no cambia.
+Apagar lo débil y quedarse con el máximo de cada zona.
+
+¿Perder detalle es perder o ganar? Yo digo que ahí se gana.
+
+#inteligenciaartificial #redesneuronales #vision #ia #tecnologia

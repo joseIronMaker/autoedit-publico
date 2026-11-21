@@ -1,0 +1,13 @@
+Cada palabra de tu frase hace una búsqueda contra todas las demás.
+
+Piensa en cómo buscas algo: escribes lo que quieres, lees los títulos que salen, y abres el que encaja. La atención hace exactamente eso, y cada parte tiene nombre.
+
+Lo que escribes es la QUERY. El título con el que se anuncia cada palabra es la KEY. Lo que te llevas al abrirla es el VALUE.
+
+El detalle fino que casi nadie explica: las tres salen de la MISMA palabra, pasada por tres capas distintas que el modelo aprendió durante el entrenamiento. La misma palabra pregunta, se anuncia y aporta contenido, todo a la vez.
+
+Mañana: el número que decide quién gana esa búsqueda.
+
+¿La atención busca o adivina? Yo digo que busca — y es literal, no metáfora.
+
+#atencion #transformers #querykeyvalue #deeplearning #iaconjose

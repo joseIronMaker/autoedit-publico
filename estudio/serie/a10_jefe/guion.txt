@@ -1,0 +1,16 @@
+Nadie le debería decir a un agente eres el mejor experto del mundo.
+No sirve de mucho. Lo que sirve es hablarle como a alguien brillante, que empezó hoy.
+Imagina que contratas a un genio para organizar la fiesta, y le dejas una nota.
+Si escribes, hazlo bonito, no sabe qué hacer.
+Si escribes una regla para cada cosa que podría pasar, se atora en la primera que no previste.
+El punto medio es explicar para qué.
+Es una sorpresa, así que nada de mensajes a mi mamá. Con eso, también sabe que no debe publicarlo en redes, aunque nadie se lo dijo.
+Una regla sin razón se obedece. Una regla con razón se entiende.
+A esa nota permanente le llamamos prompt de sistema.
+Y un buen prompt de agente tiene tres cosas.
+Qué quieres lograr. Cómo se ve terminado. Y qué no debe hacer sin preguntarte.
+Lo demás, déjaselo a él.
+El error común es tratarlo como una máquina de frases mágicas.
+Yo lo trato como a un colega nuevo.
+Un buen prompt no le dice todo.
+Le dice lo que no podría adivinar.

@@ -1,0 +1,20 @@
+Al final de esta serie te dije que la máquina aprendió a adivinar con nuestras palabras.
+Te simplifiqué algo.
+No ve palabras.
+Antes de leer nada, corta todo en pedazos.
+Fiesta es un pedazo. Inolvidable son tres: inol, vid, able. Otorrinolaringólogo, cinco.
+A cada pedazo le llamamos token.
+Y no los ve como letras. Cada token es un número, de una lista fija.
+En ge pe te cuatro o, de Open ei ai, la lista tiene unas doscientas mil piezas. Perro es la noventa y seis mil cuatrocientos treinta y nueve.
+Lo que el modelo adivina, en realidad, es el siguiente token. Después se traduce otra vez a texto.
+¿Y quién decidió dónde cortar? Nadie, a mano.
+Un programa leyó montañas de texto, y fue pegando los pedazos que más se repetían juntos. Se llama be pe e, codificación por pares de bytes.
+Por eso lo común queda entero, y lo raro se rompe.
+Y por eso, por años, a los modelos les costó contar letras.
+¿Cuántas erres tiene ferrocarril? Él ve cuatro pedazos. Las letras quedan escondidas adentro.
+Esto importa más de lo que parece.
+En la siguiente serie, la máquina empieza a actuar, y todo se mide en tokens: cuánto cabe en su mesa, cuánto cuesta cada paso.
+Así que ese es el último secreto.
+No aprendió con nuestras palabras.
+Aprendió con pedacitos...
+que nosotros nunca vemos.

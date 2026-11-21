@@ -1,0 +1,1 @@
+a20_enchufe {"cortes":[],"tapa_la_voz":[],"limpio":true}

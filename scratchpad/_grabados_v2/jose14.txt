@@ -1,0 +1,5 @@
+Los planos de esta casa salieron de un garabato a mano en una hoja. Todo lo demás lo hizo una inteligencia artificial sola.
+Y no es un render bonito para presumir: es el proyecto completo. Planta arquitectónica. Cortes A-A y B-B. Elevaciones norte, sur y oeste. Plano de techos. Cuadro de vanos con medidas y cuadro de áreas. Todo lo que un despacho te entrega en tres semanas y dos juntas.
+Después el modelo BIM paramétrico en FreeCAD, y de ahí los renders interiores y exteriores en Blender.
+El puente es el MCP: la IA no te dicta los pasos para que tú los sigas. Le habla al programa directo y lo opera. Que para ti es peor.
+Eso que ves era un despacho entero y varias semanas de trabajo. Hoy es un boceto en una hoja y una tarde. Y esto es lo más torpe que va a estar la inteligencia artificial en tu vida.

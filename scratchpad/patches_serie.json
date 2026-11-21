@@ -1,0 +1,57 @@
+{
+ "_nota": "Parche 'ESTO ES PARA ESTO' (mandato José 23-jul). Solo escenas NO-host: los segmentos host (D-ID) se REUSAN tal cual. Cada video gana una conexión práctica explícita; las tarjetas de solo texto (list) pasan a showcase con imágenes.",
+
+ "gen_dl_neurona_recta": [
+  {"scene": 3,
+   "narration": "Sin ninguna activación, la frontera donde la suma vale cero es una línea recta: de un lado sí, del otro no. Con esa sola raya ya separas un correo spam de uno normal."}
+ ],
+
+ "gen_dl_activacion_no_basta": [
+  {"scene": 2,
+   "narration": "Sigmoide, tanh y ReLU: las tres doblan la salida. Ese doblez es el ingrediente que después deja separar un gato de un perro. Pero una sola neurona, con la que sea, sigue cortando con una recta."}
+ ],
+
+ "gen_dl_apilar_curvas": [
+  {"scene": 3,
+   "narration": "Con una sola capa oculta, mira: la frontera ya se curva y separa las lunas que una neurona no pudo. Apila más capas y esa misma curva reconoce tu cara para desbloquear tu teléfono."}
+ ],
+
+ "gen_dl_loss_error": [
+  {"scene": 2,
+   "narration": "El error es la distancia entre lo que predice y la verdad; al cuadrado y promediado, la loss lo resume en una sola cifra. Es la calificación de la red: sin esa nota, no sabría qué mejorar."},
+  {"scene": 3,
+   "showcase": {"items": [
+     {"label": "SÍ/NO → CROSS-ENTROPY",
+      "image_prompt": "a single glowing neon two-way switch splitting a beam of light into a bright green checkmark on one side and a red cross on the other, binary yes-no decision, floating in a dark void"},
+     {"label": "NÚMEROS → MSE",
+      "image_prompt": "a single glowing neon line chart of a continuous curve with a floating luminous numeric value above it, predicting a quantity, floating in a dark void"}
+   ]}}
+ ],
+
+ "gen_dl_gradient_descent": [
+  {"scene": 3,
+   "narration": "En código es esto: mira la pérdida bajar en cada paso hasta casi cero. Eso que ves bajando es, literalmente, tu IA aprendiendo."}
+ ],
+
+ "gen_dl_backpropagation": [
+  {"scene": 3,
+   "narration": "En código, una sola línea, punto backward, calcula el gradiente de todos los pesos. Así una red de millones de pesos sabe cuál mover, sin tocarlos a mano."}
+ ],
+
+ "gen_dl_learning_rate": [
+  {"scene": 2,
+   "narration": "El learning rate es el tamaño del paso. Muy chico, se atora; muy grande, explota; el justo baja suave hasta el fondo. Ese número decide si entrenas en horas o pierdes días."}
+ ],
+
+ "gen_dl_overfitting": [
+  {"scene": 2,
+   "narration": "Mira: en los datos de entrenamiento acierta cada vez más, pero en datos nuevos empeora. Memorizó en vez de aprender. Y una IA que solo acierta en lo que ya vio, no sirve para nada."},
+  {"scene": 3,
+   "showcase": {"items": [
+     {"label": "DROPOUT",
+      "image_prompt": "a glowing neon network of nodes where half of the nodes are switched off and dark while the rest glow bright, connections fading, floating in a dark void"},
+     {"label": "EARLY STOPPING",
+      "image_prompt": "a glowing neon descending curve with a bright luminous stop marker planted at its lowest point just before the curve turns back upward, floating in a dark void"}
+   ]}}
+ ]
+}

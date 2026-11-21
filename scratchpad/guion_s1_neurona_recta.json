@@ -1,0 +1,77 @@
+{
+  "title": "La neurona es una recta disfrazada",
+  "slug": "dl_neurona_recta",
+  "hook_tipo": "contraria",
+  "keyword": "perceptrón",
+  "hook_headline": ["UNA", "RECTA"],
+  "pregunta_ab": "¿Recta o curva?",
+  "music_prompt": "dark curious electronic instrumental, minimal pulsing synth, building intrigue, tech, no vocals, 120 BPM",
+  "modo": "corto",
+  "scenes": [
+    {
+      "narration": "Una neurona de IA solo dibuja una recta.",
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.45,
+      "kinetic_video": {
+        "words": [
+          {"text": "una neurona", "serif": true},
+          {"text": "UNA RECTA", "accent": true}
+        ],
+        "variant": "dark",
+        "veo_prompt": "Cinematic macro shot of a single glowing artificial neuron in a near-black void, and one clean straight beam of neon cyan light cutting across the darkness like a blade, minimal, elegant, magenta accents, volumetric glow, dark tech aesthetic, no text, no people",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Se llama perceptrón, y es el ladrillo de toda la IA que usas hoy.",
+      "beat_type": "hook",
+      "visual_type": "host",
+      "host_top": {"kind": "headline", "lines": ["UNA", "RECTA"]}
+    },
+    {
+      "narration": "Multiplica cada dato por su peso, los suma con el sesgo, y según el signo cae de un lado o del otro. Aún sin activación.",
+      "beat_type": "proof",
+      "visual_type": "perceptron",
+      "perceptron": {
+        "inputs": ["x₁", "x₂", "x₃"],
+        "weights": [0.8, -0.5, 1.2],
+        "activation": "sigmoide",
+        "output": "decisión"
+      }
+    },
+    {
+      "narration": "Sin ninguna activación, la frontera donde la suma vale cero es una línea recta: de un lado sí, del otro no.",
+      "beat_type": "proof",
+      "visual_type": "ml_demo",
+      "ml_demo": {
+        "code": "import numpy as np\nw0, w1, w2 = 1.0, 3.0, -2.0\nxx, yy = np.meshgrid(np.linspace(-3,3,400), np.linspace(-3,3,400))\nz = w0 + w1*xx + w2*yy\nlado = (z > 0).astype(float)\nfig, ax = plt.subplots(figsize=(6,6.5))\nax.contourf(xx, yy, lado, levels=[-0.1,0.5,1.1], colors=[MAG, CYAN], alpha=0.4)\nax.contour(xx, yy, z, levels=[0], colors='white', linewidths=4)\nax.scatter([-1],[2], c='white', s=170, zorder=6, edgecolor='black', linewidth=2)\nax.annotate('X=(-1, 2)\\n z = -6  ->  lado NO', (-1,2), xytext=(-2.85,-1.4), color='white', fontsize=14, fontweight='bold')\nax.set_title('z = 1 + 3x1 - 2x2 = 0:  una RECTA')\nax.set_xlim(-3,3); ax.set_ylim(-3,3); ax.set_xticks([]); ax.set_yticks([])",
+        "display_code": [
+          "z = 1 + 3*x1 - 2*x2   # solo suma y pesos",
+          "lado = signo(z)       # + sí / - no",
+          "# frontera z=0 -> RECTA (sin activación)"
+        ],
+        "caption": "perceptron.py"
+      }
+    },
+    {
+      "narration": "Una neurona es una recta disfrazada.",
+      "beat_type": "tesis",
+      "visual_type": "kinetic",
+      "pause_after": 0.35,
+      "kinetic": {
+        "words": [
+          {"text": "una neurona:", "serif": true},
+          {"text": "UNA RECTA", "accent": true}
+        ],
+        "variant": "accent"
+      }
+    },
+    {
+      "narration": "Por eso una sola no separa lo complejo. ¿Cómo llega entonces a las curvas? Mañana te muestro la función de activación.",
+      "beat_type": "cta",
+      "visual_type": "host",
+      "host_top": {"kind": "save", "title": "SOLO RECTAS", "subtitle": "MAÑANA: LA ACTIVACIÓN →"}
+    }
+  ]
+}

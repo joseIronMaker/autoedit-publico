@@ -1,0 +1,137 @@
+{
+ "tema": "hielo",
+ "recursos": {
+  "fabrica": "jose01.assets/panel_fabrica.png",
+  "datacenter": "jose01.assets/panel_datacenter.png"
+ },
+ "paneles": [
+  {
+   "t": 0.0,
+   "spec": {
+    "kind": "headline",
+    "kicker": "ia con josé",
+    "lines": [
+     "¿SIN TRABAJO?",
+     "NO COMO CREES"
+    ],
+    "strike": 0
+   }
+  },
+  {
+   "t": 8.52,
+   "spec": {
+    "kind": "photo",
+    "images": [
+     "@fabrica",
+     "@datacenter"
+    ],
+    "caption": "El mayor cambio desde la revolución industrial"
+   }
+  },
+  {
+   "t": 17.02,
+   "spec": {
+    "kind": "define",
+    "label": "definición",
+    "term": "Inteligencia artificial",
+    "body": "Un sistema cibernético capaz de realizar tareas…"
+   }
+  },
+  {
+   "t": 23.36,
+   "spec": {
+    "kind": "headline",
+    "kicker": "qué tareas",
+    "lines": [
+     "TAREAS",
+     "QUE ANTES SOLO",
+     "HACÍA UN HUMANO"
+    ]
+   }
+  },
+  {
+   "t": 30.44,
+   "spec": {
+    "kind": "flow",
+    "title": "qué hace por dentro",
+    "steps": [
+     "Observa cómo resuelve un humano",
+     "Aprende el patrón",
+     "Imita la tarea"
+    ]
+   }
+  },
+  {
+   "t": 37.72,
+   "spec": {
+    "kind": "define",
+    "label": "la que más me gusta",
+    "term": "Simulación",
+    "body": "No es exactamente nuestra inteligencia: la imita."
+   }
+  },
+  {
+   "t": 45.94,
+   "spec": {
+    "kind": "compare",
+    "title": "qué simula y qué no",
+    "left": {
+     "head": "Sí",
+     "body": "Las capacidades y las tareas"
+    },
+    "right": {
+     "head": "No",
+     "body": "Ser nuestra inteligencia"
+    },
+    "verdict": "Imita lo que hace, no lo que es"
+   }
+  },
+  {
+   "t": 52.56,
+   "spec": {
+    "kind": "compare",
+    "title": "el resultado, no el proceso",
+    "left": {
+     "head": "Humano",
+     "body": "Resuelve el problema"
+    },
+    "right": {
+     "head": "Simulación",
+     "body": "Resuelve el problema"
+    }
+   }
+  },
+  {
+   "t": 60.1,
+   "spec": {
+    "kind": "headline",
+    "kicker": "en algunos casos",
+    "lines": [
+     "YA NO HAY",
+     "DIFERENCIA"
+    ]
+   }
+  },
+  {
+   "t": 67.1,
+   "spec": {
+    "kind": "bar",
+    "label": "Programación y matemáticas",
+    "value": 90,
+    "scale": "frente a humanos",
+    "caption": "Mi postura: en esos dos terrenos ya está por encima de la gran mayoría."
+   }
+  },
+  {
+   "t": 81.04,
+   "spec": {
+    "kind": "headline",
+    "kicker": "ia con josé",
+    "lines": [
+     "ENTENDERLA",
+     "O QUEDARTE ATRÁS"
+    ]
+   }
+  }
+ ]
+}

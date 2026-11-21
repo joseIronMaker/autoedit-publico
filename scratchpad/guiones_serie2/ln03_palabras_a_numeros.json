@@ -1,0 +1,103 @@
+{
+  "tema": "La IA no lee letras, lee números: tokens y embeddings",
+  "modo": "corto",
+  "title": "La IA no lee letras, lee números: tokens y embeddings",
+  "slug": "ln_palabras_a_numeros",
+  "hook_tipo": "secreto",
+  "theme": "menta",
+  "image_style": "ultra realistic photograph, shot on a 50mm lens at f/1.8, natural window light, true-to-life colors and textures, photojournalistic, sharp focus, no illustration, no 3D render, vertical 9:16 composition, lower third kept simple, no text, no letters, no words, no watermark",
+  "keyword": "tokens y embeddings",
+  "hook_headline": [
+    "NUNCA VE",
+    "TU TEXTO"
+  ],
+  "pregunta_ab": "¿Te cobran por palabras o por pedazos?",
+  "music_prompt": "clean minimal techno instrumental, glassy plucked synths and soft clicks, precise and curious, no vocals, 112 BPM",
+  "scenes": [
+    {
+      "narration": "ChatGPT nunca ve tu texto. Ni una sola letra.",
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.45,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "nunca ve tu texto",
+            "serif": true
+          },
+          {
+            "text": "NI UNA LETRA",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "extreme macro cinematic shot of a printed page of text on a dark desk, the black letters physically peel off the paper one by one and rise into the air, dissolving into a slow drifting stream of faint glowing numbers, shallow depth of field, dramatic low side light, deep black background, slow motion",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Antes de entrar al modelo, tu frase se parte en pedazos y cada pedazo se cambia por un número.",
+      "beat_type": "hook",
+      "visual_type": "host",
+      "host_top": {
+        "kind": "headline",
+        "lines": [
+          "NUNCA VE",
+          "TU TEXTO"
+        ]
+      }
+    },
+    {
+      "narration": "Esos pedazos se llaman tokens, y no siempre son palabras completas. Por eso te cobran por tokens y no por palabras.",
+      "beat_type": "proof",
+      "visual_type": "receipt",
+      "receipt": {
+        "image": "scratchpad/receipts/tokenizer_es.png",
+        "url_label": "tiktokenizer.vercel.app",
+        "title": "LO QUE SÍ VE",
+        "highlight": {
+          "y": 0.62,
+          "h": 0.34
+        },
+        "caption": "tokenizador real de GPT-4o · 2 palabras = 4 pedazos"
+      }
+    },
+    {
+      "narration": "Pero un número suelto no dice nada. Así que cada token se vuelve un vector, y el modelo aprende a colocar cerca lo que significa parecido: aprender queda junto a estudiar, y lejos de tenis.",
+      "beat_type": "proof",
+      "visual_type": "custom",
+      "custom_anim": {
+        "description": "Un mapa de significados que OCUPA TODA LA FRANJA VISIBLE, de borde a borde, sin recuadro contenedor y sin aire negro alrededor. Las palabras son GRANDES y legibles a un brazo de distancia: cada una es una pastilla redondeada de al menos 300 px de ancho con el texto en negritas dentro. Caen desde arriba una por una y aterrizan con rebote. Primero 'aprender', arriba a la izquierda. Luego 'estudiar', que aterriza PEGADA a ella; al tocar, una línea GRUESA y brillante de 8 px las une y las dos laten juntas. Después 'tenis', que cae hasta abajo a la derecha, lo más lejos posible; la línea hacia ella es larga, delgada y apagada. Al final aparecen seis palabras más y todas se reacomodan formando tres racimos bien separados, cada racimo con su propio color. Las pastillas nunca se quedan quietas: laten y flotan suavemente todo el tiempo. Título arriba, grande. Sin ejes, sin números, sin marco."
+      }
+    },
+    {
+      "narration": "Un número por pedazo, un lugar por significado.",
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.35,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "un número por pedazo",
+            "serif": true
+          },
+          {
+            "text": "UN LUGAR POR SIGNIFICADO",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "drifting points of light scattered in a dark volume slowly gathering into three distinct glowing clusters separated by empty space, slow camera drift, cinematic, deep blacks",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Ya tenemos números. Falta lo difícil: leerlos en orden. Mañana, la neurona con memoria.",
+      "beat_type": "cta",
+      "visual_type": "host",
+      "host_top": {
+        "kind": "save",
+        "title": "SERIE: CÓMO LA IA LEE",
+        "subtitle": "SIGUIENTE: LA NEURONA CON MEMORIA →"
+      }
+    }
+  ]
+}

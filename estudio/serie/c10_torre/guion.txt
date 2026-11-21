@@ -1,0 +1,16 @@
+GPT son tres letras, y casi nadie sabe qué significan.
+La G es de generativo: produce cosas nuevas.
+La P es de preentrenado: ya leyó muchísimo antes de hablar contigo.
+Y la T, la importante, es de transformer.
+Antes, las redes leían como tú: una palabra tras otra. Lento, y olvidando.
+Un transformer lee la frase completa, de un jalón.
+Primero, cada palabra se vuelve un punto.
+Luego pasa por la atención: cada una mira a las demás, y se acomoda.
+Y sale transformada. Ya no es perro a secas. Es este perro, en esta frase.
+Entonces pasa a la siguiente capa, y a la otra. Decenas de capas, y cada una afina lo que hizo la anterior.
+Como todo ocurre al mismo tiempo, se puede repartir entre miles de chips. Por eso pudo crecer tanto.
+Y eso es prácticamente todo lo que hay.
+No hay un módulo de gramática. No hay otro de lógica.
+Neuronas, pesos y atención, apilados.
+Una torre de la misma idea, repetida.
+Y de esa torre, por arriba, sale una sola cosa: una lista de qué palabra podría seguir.

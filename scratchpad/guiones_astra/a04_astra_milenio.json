@@ -1,0 +1,123 @@
+{
+  "title": "La IA que dice haber resuelto un Problema del Milenio",
+  "slug": "astra_milenio",
+  "tema": "OpenAI dice que un modelo suyo aun sin publicar resolvio Navier-Stokes, uno de los Problemas del Milenio; que son esas ecuaciones en tu vida diaria, COMO demuestra un teorema una maquina (escribe el argumento, lo pasa a Lean, Lean lo revisa paso por paso y devuelve si cierra o truena), la curva independiente de Epoch AI, y por que todavia nadie de fuera lo ha revisado",
+  "theme": "hielo",
+  "hook_tipo": "recibo",
+  "keyword": "openai problema del milenio navier stokes",
+  "hook_headline": [
+    "PROBLEMA",
+    "DEL MILENIO"
+  ],
+  "pregunta_ab": "¿Le crees al anuncio o esperas a que los matemáticos lo revisen?",
+  "quien_decide": "OpenAI decide qué anuncia y cuándo; el espectador solo ve el titular y no sabe si detrás hay una prueba verificada o una nota de prensa",
+  "que_cuesta": "creerle al anuncio y repetirlo: si la revisión tumba el trabajo, el que lo contó en la oficina queda como el que se tragó el marketing",
+  "palanca": "abrir el tablero público de Epoch AI y mirar quién midió, con qué prueba y en qué fecha, antes de repetir un porcentaje",
+  "music_prompt": "tense cinematic underscore, low sustained strings and a slow pulsing synth bass, sparse metallic percussion building, 92 BPM, restrained under a voice, instrumental, no vocals",
+  "modo": "corto",
+  "hook_locked": true,
+  "scenes": [
+    {
+      "beat_type": "hook",
+      "visual_type": "receipt",
+      "narration": "Léelo despacio, porque yo lo leí tres veces. OpenAI dice que una inteligencia artificial suya resolvió un Problema del Milenio. Son siete preguntas que llevan un cuarto de siglo sobre la mesa, y entre todos los humanos habíamos tumbado una. Una. Y esta cosa llegó un martes por la tarde.",
+      "receipt": {
+        "image": "/home/jose/tiktok/scratchpad/_astra/recibos_mate/r1_titular.png",
+        "highlight": "Problemas matemáticos del Milenio",
+        "nota": "captura REAL de ABC/EFE del 8 de septiembre de 2026"
+      }
+    },
+    {
+      "beat_type": "contexto",
+      "visual_type": "image",
+      "narration": "Y te lo cuento porque esto sí te toca, aunque no lo parezca. Las ecuaciones que dice haber resuelto se llaman Navier-Stokes y son las que describen cómo se mueve todo lo que fluye. El aire que sostiene tu avión, el clima que te avisa el teléfono, la sangre que llevas en el cuello. Lo que nadie había podido probar en un siglo es si ese movimiento puede reventar solo. O sea: si el agua puede hacer trampa.",
+      "image_prompts": [
+        "editorial photograph of turbulent white water churning in a dark river, high shutter speed freezing the spray, muted graphite and cold blue palette, documentary style, shallow depth of field, no text",
+        "editorial photograph of an airliner wing seen from a passenger window slicing through dense grey cloud, cold muted palette, documentary style, no text",
+        "editorial macro photograph of dark red fluid swirling and braiding inside a narrow glass channel, clinical light, muted palette, documentary style, no text"
+      ]
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "receipt",
+      "narration": "Y por eso lo que de verdad importa es CÓMO lo hizo. Una máquina no demuestra un teorema pensando bonito. Escribe el argumento, lo pasa a un lenguaje que se llama Lean, y Lean lo corre como si fuera código: revisa cada paso, compara lo que afirmas contra lo que ya está probado, y devuelve si cierra o truena. Ahí no te sirve echar labia. Y no fue un modelo solito en una esquina: la empresa dice que puso a trabajar coordinados a miles de agentes a la vez.",
+      "receipt": {
+        "image": "/home/jose/tiktok/scratchpad/_astra/recibos_mate/r3_agentes.png",
+        "highlight": "agentes de IA",
+        "nota": "captura REAL del cuerpo del despacho de EFE"
+      }
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "receipt",
+      "narration": "Y porque eso se puede verificar, se puede medir. Esta gráfica no la hizo OpenAI: la lleva Epoch AI con sus propias corridas, desde fuera. Es matemáticas de nivel investigación, de las que a un doctor en la materia le llevan días. En marzo del año pasado los modelos sacaban cero. Hoy el mejor va en noventa y ocho por ciento. Mi inglés lleva quince años exactamente en el mismo punto.",
+      "receipt": {
+        "image": "/home/jose/tiktok/scratchpad/_astra/recibos_mate/r5_frontiermath.png",
+        "highlight": "98%",
+        "nota": "captura REAL del leaderboard independiente de Epoch AI, licencia CC-BY"
+      }
+    },
+    {
+      "beat_type": "giro",
+      "visual_type": "receipt",
+      "narration": "Así que ahora te debo el freno, porque nadie de fuera ha revisado ese trabajo todavía. En matemáticas una prueba se valida con meses de revisión por pares, no con un anuncio. Y la propia OpenAI dice que no va a reclamar el premio en metálico que lleva ese problema. Cuando alguien deja el premio sobre la mesa, o le sobra el dinero o le falta la revisión.",
+      "receipt": {
+        "image": "/home/jose/tiktok/scratchpad/_astra/recibos_mate/r4_paper_duda.png",
+        "highlight": "revisión",
+        "nota": "captura REAL: el documento y la controversia que reporta el WSJ"
+      }
+    },
+    {
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "narration": "Y por eso no tienes que creerle a nadie, que es lo que quiero dejarte. El tablero de Epoch es público y gratis: lo abres, ves quién midió, con qué prueba y en qué fecha, y decides tú. Aguante ese trabajo la revisión o se caiga en el intento, la pregunta ya se movió de lugar: hace nada discutíamos si el modelo sabía contar las erres de strawberry. Yo sigo esperando a los matemáticos. Pero ya no espero igual que antes.",
+      "kinetic_video": {
+        "video": "/home/jose/tiktok/videos/_clips_pagados/gen_ln_frase_rompio_ia__veo_5.mp4",
+        "variant": "dark",
+        "veil": 0.7,
+        "words": [
+          {
+            "text": "aguante o se caiga",
+            "serif": true
+          },
+          {
+            "text": "CAMBIÓ LA PREGUNTA",
+            "accent": true
+          }
+        ],
+        "stanzas": [
+          [
+            {
+              "text": "no le creas a nadie",
+              "serif": true
+            },
+            {
+              "text": "EL TABLERO ES PÚBLICO",
+              "accent": true
+            }
+          ],
+          [
+            {
+              "text": "aguante o se caiga",
+              "serif": true
+            },
+            {
+              "text": "CAMBIÓ LA PREGUNTA",
+              "accent": true
+            }
+          ],
+          [
+            {
+              "text": "yo sigo esperando",
+              "serif": true
+            },
+            {
+              "text": "PERO YA NO IGUAL",
+              "accent": true
+            }
+          ]
+        ]
+      }
+    }
+  ]
+}

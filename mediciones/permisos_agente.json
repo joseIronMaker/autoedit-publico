@@ -1,0 +1,35 @@
+{
+  "tema": "cuantas veces le dije que si a mi agente y cuantas que no",
+  "archivos": [
+    {
+      "ruta": "~/tiktok/.claude/settings.local.json",
+      "allow": 148,
+      "claves_presentes": [
+        "allow"
+      ],
+      "tiene_deny": false
+    },
+    {
+      "ruta": "~/.claude/settings.local.json",
+      "allow": 24,
+      "claves_presentes": [
+        "allow"
+      ],
+      "tiene_deny": false
+    }
+  ],
+  "por_herramienta": {
+    "Bash": 103,
+    "WebFetch": 52,
+    "MCP (navegador)": 10,
+    "Read": 5,
+    "WebSearch": 1,
+    "Skill": 1
+  },
+  "totales": {
+    "allow": 172,
+    "deny": 0,
+    "ask": 0,
+    "deny_existe_la_clave": false
+  }
+}

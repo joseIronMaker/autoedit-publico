@@ -1,0 +1,64 @@
+{
+  "voz": {
+    "genero_aparente": "Femenino",
+    "edad_aparente": "30 a 45 años",
+    "acento": "Español neutro latinoamericano con marcadas inflexiones peninsulares (uso ocasional de 'z'/'c' interdental o seseo muy suave y cadencia de doblaje internacional).",
+    "timbre": "Cálido, aterciopelado, con abundante aire (breathy), registro medio-grave.",
+    "tono_emocional": "Místico, íntimo, compasivo, ligeramente melancólico pero esperanzador.",
+    "ritmo": "Pausado, deliberado y solemne (alrededor de 110-120 palabras por minuto), permitiendo que cada concepto filosófico decante.",
+    "uso_de_pausas": "Dramáticas y estructurales. Usa silencios de 0.5 a 1 segundo antes de las revelaciones clave (ej. antes de 'Literalmente' en 00:08, o entre los tres 'tú' en 00:54-00:56).",
+    "actuacion": "Usa suspiros audibles e inhalaciones emocionales antes de frases reveladoras (00:28, 00:59, 01:40). En 00:54-00:56 ejecuta un crescendo dramático en la palabra 'tú': el primero es un susurro quebrado, el segundo gana cuerpo y el tercero es una exclamación abierta con dolor/asombro. En 01:02 ('Todas') rompe la solemnidad con un matiz casi conversacional e irónico.",
+    "humana_o_sintetica": "Sintética de última generación (tipo ElevenLabs con modelo de control emocional o Speech-to-Speech) o actuación humana hiperprocesada. Evidencia de IA avanzada: las inhalaciones/suspiros en 00:28, 00:59 y 01:40 tienen exactamente la misma textura espectral de aire blanco; la transición del susurro al grito en 00:55-00:56 tiene un pequeño artefacto metálico en los agudos de la 'u', aunque la prosodia general es extraordinariamente orgánica.",
+    "procesado": "Efecto de proximidad extremo (close-miking), compresión fuerte para mantener los susurros al mismo nivel que la voz plena, realce en graves (150Hz) y agudos sedosos (10kHz+), con una reverberación corta y húmeda que la sitúa 'dentro de la cabeza' del espectador.",
+    "direccion_de_locucion": "Quiero que leas este texto como si fueras una entidad maternal y omnisciente que le revela el secreto del universo a alguien que acaba de morir, hablándole a dos centímetros del oído. No proyectes la voz hacia afuera; mantenla íntima, con mucho aire, casi al borde del susurro. Regálame pausas reales después de cada punto para que la imagen respire. Necesito que uses tu respiración como herramienta actoral: deja que se escuche cómo tomas aire con asombro o compasión antes de las revelaciones fuertes. Cuando enumeres las vidas pasadas, hazlo con ternura, pero cuando llegues a la repetición de 'tú, tú, ¡tú!', construye una escalada real desde un secreto doloroso hasta un despertar urgente. El final debe sentirse como un abrazo cálido y una advertencia suave."
+  },
+  "narrativa": {
+    "premisa": "Adaptación libre del relato corto 'El Huevo' (The Egg) de Andy Weir: toda la humanidad es una única alma reencarnándose a través del tiempo para experimentarse a sí misma.",
+    "gancho_primeros_3s": "Texto literal: 'Cada vez que lastimas a alguien, te lastimas a ti.' Engancha porque plantea una paradoja moral universal de forma directa en segunda persona, acompañada de una imagen de opresión (soldados romanos arrancando a una niña de su madre) y un detalle visual magnético: lágrimas doradas brillando en los rostros.",
+    "estructura_por_actos": {
+      "acto_1_tesis_y_detonante": "00:00 - 00:17. Planteamiento de la ley kármica ('literalmente') e introducción del protagonista: un hombre de 43 años muere atropellado por un camión bajo la lluvia.",
+      "acto_2_el_encuentro_y_revelacion": "00:17 - 01:07. Despertar en el limbo púrpura, encuentro con la entidad sin rostro y revelación de sus vidas pasadas (niña en Roma, campesino en China, enfermera en 1918, padre ausente) hasta descubrir que ha vivido TODAS las vidas.",
+      "acto_3_la_sombra_y_sintesis": "01:08 - 01:33. El giro oscuro: no solo fue las víctimas, también fue los verdugos (el soldado romano, el abusador escolar). Comprensión de la unidad total ('solo tú, viviéndote desde todos los ángulos').",
+      "acto_4_llamado_a_la_accion": "01:34 - 01:46. Regreso al mundo cotidiano (el plano terrenal) con una moraleja práctica sobre la empatía inmediata."
+    },
+    "recurso_central": "La segunda persona del singular ('tú') combinada con un motivo visual recurrente: una lágrima/marca dorada luminosa bajo el ojo izquierdo que identifica a todos los personajes como la misma alma.",
+    "giro": "En 01:08, cuando pasa de generar empatía por haber sido las víctimas (la niña romana) a revelar que también fue el perpetrador ('Y el soldado que mató a esa niña en Roma... también eras tú').",
+    "cierre": "Circular y ético. Cierra en 01:42-01:46 con el hombre del impermeable amarillo (vivo o en otra iteración) entregando su termo caliente (el objeto que cayó cuando murió en 00:15) a un niño sin hogar bajo la lluvia, cerrando con la frase: 'estás a punto de decidir cómo te van a tratar a ti'.",
+    "por_que_se_ve_hasta_el_final": "Porque convierte una máxima moral cliché en un misterio metafísico de ciencia ficción a los 8 segundos ('Literalmente'), abre un bucle de intriga con la muerte del hombre (00:15) y mantiene un ritmo constante de micro-revelaciones visuales cada 3-4 segundos."
+  },
+  "animacion": {
+    "estilo": "Ilustración digital 2D con estética de animación occidental contemporánea (híbrido entre largometraje 2D moderno tipo Cartoon Saloon/Disney y novela gráfica), con líneas limpias, sombreado cel-shading suave y fondos atmosféricos pintados.",
+    "paleta": "Alto contraste simbólico: azul frío/grisáceo para el mundo terrenal lluvioso; púrpura/violeta místico para el más allá; y amarillo/dorado cálido como color acento constante (el impermeable del protagonista, las luces del camión, las esferas de vidas y las lágrimas luminosas que conectan las almas).",
+    "tipografia": "Subtítulos palabra por palabra (estilo karaoke dinámico) en el centro absoluto del encuadre. Fuente sans-serif geométrica en negrita itálica, color blanco con sombra paralela suave, y una marca de agua fija ('wil lab official') justo debajo.",
+    "camara": "Lenguaje cinematográfico muy dinámico a pesar de ser animación limitada: usa zooms lentos constantes (push-in) hacia los ojos, planos detalle de objetos simbólicos (el termo, el cascabel), paneos laterales de transición y planos generales simétricos para mostrar la inmensidad del limbo.",
+    "como_se_sincroniza_con_la_voz": "Sincronización rítmica y semántica milimétrica: cada cambio de plano coincide con el inicio de una frase o una palabra clave. Cuando la voz dice 'tú, tú, ¡tú!' (00:54-00:56), la edición hace cortes rápidos de acercamiento al rostro del hombre y enciende el brillo dorado de su mejilla exactamente en el tercer '¡tú!'.",
+    "transiciones": "Usa 'match cuts' temáticos y transiciones por movimiento en primer plano: un soldado cruzando la pantalla sirve de cortinilla (00:01), una gota de agua contiene el camión del accidente (00:20), y las fotografías flotantes girando alrededor del protagonista (01:29-01:31) funcionan como cortinillas para cambiar las facciones de su rostro.",
+    "momentos_brillantes": [
+      {
+        "tiempo": "00:13 - 00:16",
+        "descripcion": "El hombre dibuja medio corazón en el vidrio empañado de la parada de autobús; las luces del camión lo iluminan en amarillo, suelta el termo en cámara lenta salpicando gotas luminosas y el corte a su despertar es directo."
+      },
+      {
+        "tiempo": "00:25 - 00:31",
+        "descripcion": "El rostro vacío y cósmico de la entidad blanca refleja como un espejo la cara del protagonista, que luego muta en distintas caras humanas mientras de las cuencas vacías de la entidad cae una lágrima de luz dorada."
+      },
+      {
+        "tiempo": "01:28 - 01:33",
+        "descripcion": "La cámara gira alrededor del protagonista sentado mientras fotografías polaroid pasan frente al lente; cada vez que una foto tapa y destapa su cara, su etnia, género y edad cambian por una fracción de segundo antes de volver a ser él."
+      }
+    ],
+    "como_se_produciria_hoy": "Flujo de trabajo híbrido con IA generativa (Inferencia basada en artefactos visuales). Se generan imágenes clave (keyframes) con un modelo de difusión (Midjourney v6 con --sref o Flux con LoRA de estilo de ilustración 2D) manteniendo consistencia de estilo y el motivo de la lágrima dorada. Luego se animan con modelos de Image-to-Video (como Runway Gen-3, Kling o Luma Dream Machine). Evidencia de IA: en 00:13 el trazo del corazón en el vidrio aparece de forma antinatural respecto al dedo; en 00:27-00:30 el rostro dentro de la capucha blanca sufre un 'morphing' típico de difusión de video; en 01:08 el cascabel rueda por la nieve deformando ligeramente su geometría. Finalmente, se edita en CapCut o Premiere añadiendo efectos de partículas, sonido y subtítulos automáticos."
+  },
+  "sonido": {
+    "musica": "Pista instrumental minimalista y emotiva de piano con acordes lentos y abiertos, acompañada de pads sintetizados cálidos y cuerdas suaves que entran en el segundo acto (00:34) para elevar la carga épica y espiritual.",
+    "efectos": "Diseño sonoro (Foley y SFX) sutil pero inmersivo: lluvia constante al inicio, frenazo y claxon distante de camión (00:14), caída metálica/plástica del termo (00:16), gotas de agua con reverberación mística (00:20), tintineo del cascabel de la niña romana (00:37, 01:08), crepitar de fuego (00:39) y murmullos o golpes secos atenuados.",
+    "relacion_con_la_voz": "Mezcla centrada totalmente en la voz (voice-first). La música y los efectos están al menos 12-15 dB por debajo de la locución, aplicando 'sidechain/ducking' suave para que ninguna frecuencia compita con los susurros ni las respiraciones de la narradora."
+  },
+  "plantilla_creativa": {
+    "principio_1_paradoja_cotidiana_a_cosmica": "Comienza con una regla moral o emocional que todos conocen (ej. 'trata bien a los demás'), pero en menos de 10 segundos añade la palabra 'literalmente' y rompe la realidad con un evento drástico (muerte, viaje en el tiempo, despertar) que fuerce a explicar esa regla desde una perspectiva fantástica o metafísica.",
+    "principio_2_hilo_visual_identitario": "Diseña un único elemento gráfico mínimo y luminoso (como una marca de nacimiento brillante, un color de ojos, un objeto pequeño que pasa de mano en mano) que aparezca en todos los personajes del video para que el espectador entienda visualmente la conexión antes de que el narrador la explique.",
+    "principio_3_escalada_de_dualidad_moral": "Al ejemplificar tu tesis con micro-historias, presenta primero escenarios donde el espectador sienta compasión por ser la víctima o el héroe silencioso; una vez ganada su empatía, dale la vuelta mostrándole en el rol del villano o agresor para generar un choque de conciencia.",
+    "principio_4_voz_intima_en_segunda_persona": "Escribe todo el guion hablándole de 'tú' al espectador. La dirección vocal debe prohibir el tono de locutor comercial: exige cercanía extrema al micrófono, uso dramático del aire/suspiros y pausas que respeten el peso de cada revelación.",
+    "principio_5_aterrizaje_en_un_gesto_minimo": "Después de llevar la escala visual al infinito (multitudes, cosmos, todas las vidas), regresa abruptamente a la calle cotidiana del inicio y cierra con una acción física pequeña y silenciosa (dar algo, mirar a los ojos, soltar la ira) que conecte el viaje cósmico con una decisión que el espectador pueda tomar hoy mismo."
+  }
+}

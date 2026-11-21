@@ -1,0 +1,107 @@
+{
+  "nota": {
+    "hook": 7,
+    "coherencia": 5,
+    "viralidad": 5,
+    "explicabilidad": 4,
+    "marca": 4
+  },
+  "problemas": [
+    {
+      "escena": 1,
+      "eje": "hook",
+      "gravedad": "medio",
+      "que": "Aunque cabe en 12 palabras y plantea una contradicción, abre con «reconocerte» y «recuadro» sin mostrar todavía un objeto que el espectador use o una cara concreta.",
+      "arreglo": "Abrir con «Tu celular reconoce esta cara, pero colocar este recuadro es más difícil» mientras se ve una foto de la galería y el recuadro falla antes del segundo 2."
+    },
+    {
+      "escena": 2,
+      "eje": "explicabilidad",
+      "gravedad": "grave",
+      "que": "«La red» aparece sin explicar qué red es, y «producir cuatro números» no aclara cómo esos números terminan colocando el recuadro.",
+      "arreglo": "Decir «El detector de IA debe predecir cuatro coordenadas —posición, ancho y alto— que dibujan el recuadro» y animar cada número moviendo un borde."
+    },
+    {
+      "escena": 2,
+      "eje": "marca",
+      "gravedad": "medio",
+      "que": "«No sabe por dónde empezar» humaniza al modelo y sustituye la explicación técnica por una frase falsa.",
+      "arreglo": "Cambiarla por «Sin un método de búsqueda, tendría que evaluar demasiadas posiciones y tamaños posibles»."
+    },
+    {
+      "escena": 3,
+      "eje": "viralidad",
+      "gravedad": "grave",
+      "que": "«Más de medio millón» no es una prueba verificable porque no se muestra la fórmula, el número exacto ni qué seis tamaños se contaron.",
+      "arreglo": "Fijar seis tamaños concretos, ejecutar en pantalla el conteo de posiciones válidas y mostrar tanto la suma exacta como la fórmula durante la narración."
+    },
+    {
+      "escena": 3,
+      "eje": "marca",
+      "gravedad": "grave",
+      "que": "La cifra depende de supuestos omitidos —paso, proporciones, bordes y tamaños—, así que el dato puede ser cierto bajo una configuración y engañoso como afirmación general.",
+      "arreglo": "Nombrar el supuesto completo en voz y pantalla, por ejemplo «con seis cajas cuadradas, paso de un píxel y solo posiciones que caben en la imagen», y conservar el resultado exacto del código."
+    },
+    {
+      "escena": 4,
+      "eje": "marca",
+      "gravedad": "grave",
+      "que": "Presenta las propuestas de regiones como «la» solución universal, cuando describen una familia concreta de detectores de dos etapas y no a todos los detectores modernos.",
+      "arreglo": "Acotarlo con «En detectores de dos etapas como Faster R-CNN, una red de propuestas sugiere regiones candidatas y una segunda etapa las clasifica y ajusta»."
+    },
+    {
+      "escena": 4,
+      "eje": "explicabilidad",
+      "gravedad": "grave",
+      "que": "«Regiones» y «solo esas se revisen» ocultan quién las propone, quién las revisa y qué significa revisar.",
+      "arreglo": "Mostrar dos bloques y narrar «la primera parte propone cajas candidatas; la segunda decide qué contienen y corrige sus bordes»."
+    },
+    {
+      "escena": 5,
+      "eje": "coherencia",
+      "gravedad": "grave",
+      "que": "Repite exactamente el giro de la escena 4 sin aportar prueba, consecuencia ni respuesta nueva.",
+      "arreglo": "Eliminarla y usar ese tiempo para superponer en la misma foto el barrido de todas las cajas frente a las propuestas finales, cerrando «buscar en todos lados o aprender dónde»."
+    },
+    {
+      "escena": 6,
+      "eje": "marca",
+      "gravedad": "grave",
+      "que": "«Un recuadro no alcanza cuando mide tres milímetros» es técnicamente incorrecto: una caja sí puede rodear un objeto diminuto; el problema es que puede ocupar muy pocos píxeles o perder detalle en las capas del modelo.",
+      "arreglo": "Sustituirlo por «La caja sí alcanza; lo difícil es detectar un objeto que ocupa pocos píxeles porque su señal se pierde al reducir la imagen»."
+    },
+    {
+      "escena": 6,
+      "eje": "coherencia",
+      "gravedad": "medio",
+      "que": "El cierre abandona la pregunta sobre buscar o aprender dónde y abre el tema de objetos diminutos sin rematar el ejemplo de la cara.",
+      "arreglo": "Cerrar primero con la misma foto: «Por eso este detector aprende dónde proponer antes de clasificar»; después dejar como avance «El siguiente problema: qué pasa cuando el objeto ocupa cuatro píxeles»."
+    },
+    {
+      "escena": 0,
+      "eje": "coherencia",
+      "gravedad": "medio",
+      "que": "El ejemplo no se sigue de principio a fin: salta entre video generado, otra fotografía, código, animación y tipografía, así que nunca vemos que el mismo rostro pase de medio millón de candidatos a las cajas elegidas.",
+      "arreglo": "Usar una sola foto de una cara en las escenas 1 a 5 y superponer sobre ella los cuatro números, el conteo ejecutado y las regiones propuestas."
+    },
+    {
+      "escena": 0,
+      "eje": "marca",
+      "gravedad": "medio",
+      "que": "No hay una frase de experiencia o postura propia que distinga a un ingeniero de IA de cualquier narrador que resumió el concepto.",
+      "arreglo": "Añadir una línea comprobable en primera persona, como «Cuando implemento un detector, este conteo es la primera prueba que corro», junto al código real."
+    }
+  ],
+  "lo_que_funciona": [
+    "La primera frase tiene menos de 12 palabras y usa una afirmación contraria a la intuición.",
+    "La escena 4 sí contiene la respuesta central: dejar la búsqueda exhaustiva y aprender propuestas candidatas.",
+    "No pide likes, comentarios, guardados ni follows."
+  ],
+  "_hook_medido": {
+    "palabras": 8,
+    "caracteres": 53,
+    "segundos_aprox": 3.3,
+    "cabe_en_12": true,
+    "primera_frase": "Reconocerte es fácil"
+  }
+}

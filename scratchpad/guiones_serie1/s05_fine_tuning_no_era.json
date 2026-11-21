@@ -1,0 +1,98 @@
+{
+  "slug": "ia_fine_tuning_no_era",
+  "tema": "Fine-tuning no es donde metes tus datos: ajusta comportamiento, y OpenAI ya está cerrando su plataforma",
+  "title": "Ibas a pagar fine-tuning. OpenAI ya lo está cerrando.",
+  "theme": "hielo",
+  "hook_locked": true,
+  "quien_decide": "tú decides gastar semanas y dinero en el camino equivocado, creyendo que el ajuste fino mete tus datos",
+  "que_cuesta": "el proyecto entero: semanas de trabajo y el presupuesto en algo que nunca iba a saber tus datos",
+  "palanca": "la regla de una línea antes de gastar: ¿le falta CONOCIMIENTO o le falta COMPORTAMIENTO? Conocimiento se le pasa en el contexto; comportamiento se le enseña con ejemplos",
+  "pregunta_ab": "Lo que te falla, ¿es falta de conocimiento o de comportamiento?",
+  "scenes": [
+    {
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "narration": "Si ibas a pagar un ajuste fino para meterle tus datos a un modelo, párale. OpenAI ya está cerrando esa plataforma.",
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "EL FINE-TUNING"
+          },
+          {
+            "text": "DE OPENAI"
+          },
+          {
+            "text": "YA LO CIERRAN"
+          }
+        ],
+        "variant": "dark",
+        "video": "videos/gen_dl_por_que_ahora.assets/veo_0.mp4"
+      }
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "receipt",
+      "narration": "Está en su propia documentación: la plataforma de ajuste fino ya no acepta usuarios nuevos, y la sección vive bajo Legacy. Y ahí mismo dice para qué sirve: clasificar, traducir con matiz, generar en un formato específico y corregir fallas de obediencia. Ninguna de esas cuatro dice meterle tu información.",
+      "receipt": {
+        "url": "https://platform.openai.com/docs/guides/supervised-fine-tuning",
+        "title": "SU PROPIA DOC",
+        "caption": "platform.openai.com · guía de supervised fine-tuning"
+      },
+      "image_prompts_extra": [
+        "Two hands sorting printed cards into three separate stacks on a dark wooden table, one card mid-air, warm side lamplight, deep shadows. Documentary photography, no readable text.",
+        "A tailor's hands pinning the shoulder of a jacket on a dress form, a tape measure hanging around it, dim workshop with a window behind. Documentary photography, muted palette, no faces.",
+        "A metal lettering stencil lying on a sheet of paper on a dark desk with a stencil brush beside it, warm raking light. Macro, shallow depth of field, no readable letters."
+      ],
+      "_nota_corte": "el recibo dura 9.5s y el resto de la locucion va sobre estas placas: 19s de screenshot con zoom lento es demasiado quieto (feedback 12-ago). Se aplica con scratchpad/partir_visual.py"
+    },
+    {
+      "beat_type": "giro",
+      "visual_type": "image",
+      "narration": "Y esta es la regla que te ahorra el proyecto, antes de gastar un peso. Pregúntate qué le falta: ¿conocimiento o comportamiento? Si le falta conocimiento, eso se le pasa en el momento de preguntar. Si le falta comportamiento, se le enseña con ejemplos.",
+      "image_prompts": [
+        "A worn dirt road splitting into two paths in an open field at dusk, a wooden signpost with two blank arms at the fork. Muted palette, documentary photography, no readable text.",
+        "A hand placing a folder of papers into an open briefcase on a wooden table, warm side light, deep shadows. Shallow depth of field, no readable text.",
+        "An apprentice's hands being guided by an older pair of hands over a workbench with tools, warm workshop light, sawdust in the air. Documentary photography, no faces."
+      ]
+    },
+    {
+      "beat_type": "contexto",
+      "visual_type": "image",
+      "narration": "Porque el ajuste fino no guarda datos en ningún lado: mueve los pesos del modelo. Es afinar un piano, y lo digo como metáfora: cambia cómo suena, no cambia la partitura. La partitura se la pones enfrente cada vez que tocas.",
+      "image_prompts": [
+        "Extreme macro of a piano tuner's wrench turning a tuning pin inside an upright piano, felt and copper strings around it, warm workshop light. Shallow depth of field.",
+        "Macro of the felt hammers inside a piano, a row of them caught in warm side light, deep shadows behind. Documentary photography.",
+        "Hands placing a sheet of music on a music stand in a dim room, light from a window falling across the page. Shot from the side, no readable notes."
+      ]
+    },
+    {
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "narration": "El ajuste fino cambia cómo se comporta. No cambia lo que sabe.",
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "CAMBIA"
+          },
+          {
+            "text": "CÓMO SE COMPORTA"
+          },
+          {
+            "text": "NO LO QUE SABE"
+          }
+        ],
+        "variant": "dark",
+        "video": "videos/gen_ln_tres_defectos.assets/veo_0.mp4"
+      }
+    },
+    {
+      "beat_type": "cta",
+      "visual_type": "image",
+      "narration": "Mi postura, y me ha ahorrado meses: casi siempre lo que falta es conocimiento, y eso se resuelve pasándole el documento, no reentrenando nada. Antes de cotizar un ajuste fino, contesta la pregunta. Lo que te falla, ¿es falta de conocimiento o de comportamiento?",
+      "image_prompts": [
+        "A printed quote or estimate lying face down on a dark desk beside a calculator and a pen, warm lamp at night. Documentary photography, no readable text.",
+        "Hands closing a folder of documents on a wooden desk, a laptop dark beside it, morning light through blinds. Shallow depth of field, film grain."
+      ]
+    }
+  ]
+}

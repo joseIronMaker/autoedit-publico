@@ -1,0 +1,15 @@
+A esto le llaman agente. Y son tres cosas, no una.
+
+El modelo, que escribe texto y nada más. Las herramientas, que son la lista de lo que puede pedir. Y el bucle, que ejecuta lo que pidió y se lo devuelve. Las tres juntas. Una sola no es un agente.
+
+Porque la palabra agente no nombra un programa ni un modelo más listo. Un agente es un modelo de lenguaje metido dentro de un bucle, con una lista de herramientas que puede pedir. Quítale las herramientas y te queda un chat. Quítale el bucle y te queda un chat que pide cosas que nadie ejecuta.
+
+Y por eso el bucle se llama bucle: no pasa una vez. El modelo lee todo lo que tiene enfrente y escribe. Si lo que escribió trae un pedido adentro, el bucle lo ejecuta, le pega el resultado abajo y le vuelve a pasar todo. El modelo lo lee otra vez, ahora con el dato, y vuelve a escribir. Y otra vez.
+
+¿Y cuándo para? Cuando lo que el modelo escribió ya no trae ningún pedido adentro. Ahí el bucle deja de dar vueltas y eso último es lo que te llega a ti. Todo lo demás pasó sin que lo vieras.
+
+No es más listo. Es el mismo, con manos y con vueltas.
+
+Mi prueba para saber qué tengo enfrente no es preguntarle si es un agente, porque te va a decir que sí. Es fijarme si algo se movió de verdad entre mi mensaje y su respuesta: un archivo, un correo, una búsqueda. Si nada se movió, era un modelo escribiendo bonito.
+
+Lo que usas a diario, ¿te contesta de una, o va y viene varias veces antes de contestarte?

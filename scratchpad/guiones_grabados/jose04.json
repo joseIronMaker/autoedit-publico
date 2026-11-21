@@ -1,0 +1,324 @@
+{
+ "tema": "hielo",
+ "recursos": {
+  "perceptron": "videos/_clips_pagados/gen_dl_perceptron_neurona__veo_0.mp4",
+  "porque_ahora": "videos/_clips_pagados/gen_dl_por_que_ahora__veo_0.mp4",
+  "perillas": "videos/_clips_pagados/gen_red_neuronal_perillas__veo_4.mp4",
+  "activacion": "videos/_clips_pagados/gen_dl_activacion_doblar_linea__veo_0.mp4",
+  "nvidia": "jose04.assets/crop_nvidia.png",
+  "gatoperro": "jose04.assets/plot_gatoperro.png"
+ },
+ "paneles": [
+  {
+   "t": 0.0,
+   "spec": {
+    "kind": "clip",
+    "video": "@perceptron",
+    "lines": [
+     "TODA LA IA",
+     "UN SOLO",
+     "ALGORITMO"
+    ]
+   }
+  },
+  {
+   "t": 10.5,
+   "spec": {
+    "kind": "define",
+    "label": "la familia",
+    "term": "Deep learning",
+    "body": "Las redes neuronales, dentro del machine learning."
+   }
+  },
+  {
+   "t": 18.28,
+   "spec": {
+    "kind": "compare",
+    "title": "las dos condiciones",
+    "left": {
+     "head": "Datos",
+     "body": "Con qué aprende"
+    },
+    "right": {
+     "head": "Cómputo",
+     "body": "Con qué los procesa"
+    },
+    "verdict": "Sin las dos, no hay red que sirva"
+   }
+  },
+  {
+   "t": 26.1,
+   "spec": {
+    "kind": "define",
+    "label": "qué son los datos",
+    "term": "Ejemplos etiquetados",
+    "body": "La información con la que aprende a predecir o a categorizar."
+   }
+  },
+  {
+   "t": 34.44,
+   "spec": {
+    "kind": "flow",
+    "title": "el ejemplo del gato y el perro",
+    "steps": [
+     "Foto de gato → etiqueta «gato»",
+     "Foto de perro → etiqueta «perro»",
+     "Repetir un millón de veces"
+    ]
+   }
+  },
+  {
+   "t": 50.58,
+   "spec": {
+    "kind": "plot",
+    "image": "@gatoperro",
+    "title": "esto es real: random forest",
+    "caption": "Con las etiquetas encuentra la frontera él solo."
+   }
+  },
+  {
+   "t": 58.06,
+   "spec": {
+    "kind": "headline",
+    "kicker": "y aquí el problema",
+    "lines": [
+     "SON",
+     "MUCHÍSIMOS",
+     "DATOS"
+    ]
+   }
+  },
+  {
+   "t": 64.62,
+   "spec": {
+    "kind": "shot",
+    "image": "@nvidia",
+    "title": "captura real",
+    "url_label": "nvidia.com",
+    "caption": "nacieron para videojuegos"
+   }
+  },
+  {
+   "t": 78.36,
+   "spec": {
+    "kind": "define",
+    "label": "por qué sirvieron",
+    "term": "Multiplicar matrices",
+    "body": "Dibujar gráficos y entrenar una red son la misma operación."
+   }
+  },
+  {
+   "t": 86.98,
+   "spec": {
+    "kind": "clip",
+    "video": "@porque_ahora",
+    "lines": [
+     "POR ESO",
+     "LA MINA DE ORO"
+    ]
+   }
+  },
+  {
+   "t": 92.78,
+   "spec": {
+    "kind": "headline",
+    "kicker": "por qué importa",
+    "lines": [
+     "ES LO QUE MÁS",
+     "SE USA HOY"
+    ]
+   }
+  },
+  {
+   "t": 100.06,
+   "spec": {
+    "kind": "headline",
+    "kicker": "entonces",
+    "lines": [
+     "¿QUÉ ES",
+     "UNA RED?"
+    ]
+   }
+  },
+  {
+   "t": 104.32,
+   "spec": {
+    "kind": "define",
+    "label": "empecemos por lo pequeño",
+    "term": "Neurona artificial",
+    "body": "Un modelo matemático que imita a una neurona biológica."
+   }
+  },
+  {
+   "t": 117.14,
+   "spec": {
+    "kind": "neural",
+    "mode": "neurona",
+    "title": "por dentro",
+    "caption": "Entradas que se multiplican y dan un valor. Pero sale lineal."
+   }
+  },
+  {
+   "t": 133.76,
+   "spec": {
+    "kind": "clip",
+    "video": "@activacion",
+    "lines": [
+     "FALTA",
+     "DOBLAR LA RECTA"
+    ]
+   }
+  },
+  {
+   "t": 144.22,
+   "spec": {
+    "kind": "define",
+    "label": "y falta una pieza más",
+    "term": "Bias",
+    "body": "Un valor que se suma. Sin él, multiplicar no alcanza para mover el resultado."
+   }
+  },
+  {
+   "t": 156.74,
+   "spec": {
+    "kind": "flow",
+    "title": "la neurona completa",
+    "steps": [
+     "Entra y se multiplica",
+     "Se le suma el bias",
+     "Pasa por la activación"
+    ]
+   }
+  },
+  {
+   "t": 173.84,
+   "spec": {
+    "kind": "neural",
+    "mode": "neurona",
+    "title": "ya está: una neurona",
+    "caption": "Imagínala como un circulito."
+   }
+  },
+  {
+   "t": 178.2,
+   "spec": {
+    "kind": "neural",
+    "mode": "red",
+    "layers": [
+     3,
+     3
+    ],
+    "title": "la primera capa",
+    "caption": "Tres neuronas juntas forman una capa.",
+    "labels": [
+     "entrada",
+     "capa 1"
+    ]
+   }
+  },
+  {
+   "t": 189.66,
+   "spec": {
+    "kind": "neural",
+    "mode": "red",
+    "layers": [
+     3,
+     3,
+     3
+    ],
+    "title": "y una segunda",
+    "caption": "Lo que sale de una entra a TODAS las de la capa siguiente.",
+    "labels": [
+     "entrada",
+     "capa 1",
+     "capa 2"
+    ]
+   }
+  },
+  {
+   "t": 201.1,
+   "spec": {
+    "kind": "neural",
+    "mode": "red",
+    "layers": [
+     3,
+     3,
+     3
+    ],
+    "title": "una a una",
+    "caption": "La salida de la neurona 1 va a la entrada de las tres de enfrente.",
+    "labels": [
+     "entrada",
+     "capa 1",
+     "capa 2"
+    ]
+   }
+  },
+  {
+   "t": 210.52,
+   "spec": {
+    "kind": "neural",
+    "mode": "red",
+    "layers": [
+     3,
+     3,
+     3
+    ],
+    "title": "y así con cada una",
+    "caption": "Cada neurona se conecta con las tres de enfrente.",
+    "labels": [
+     "entrada",
+     "capa 1",
+     "capa 2"
+    ]
+   }
+  },
+  {
+   "t": 224.16,
+   "spec": {
+    "kind": "neural",
+    "mode": "red",
+    "layers": [
+     3,
+     3,
+     3,
+     1
+    ],
+    "title": "hasta la salida",
+    "caption": "La última capa lo reduce todo a un solo valor."
+   }
+  },
+  {
+   "t": 241.48,
+   "spec": {
+    "kind": "headline",
+    "kicker": "y esa es una red",
+    "lines": [
+     "PERO ESTA",
+     "ES DIMINUTA"
+    ]
+   }
+  },
+  {
+   "t": 247.2,
+   "spec": {
+    "kind": "bar",
+    "label": "Parámetros de una red real",
+    "value": 100,
+    "scale": "millones · billones",
+    "caption": "Millones de neuronas, no nueve. Por eso hace falta tanto cómputo."
+   }
+  },
+  {
+   "t": 260.86,
+   "spec": {
+    "kind": "clip",
+    "video": "@perillas",
+    "lines": [
+     "ESO ES",
+     "UNA RED NEURONAL"
+    ]
+   }
+  }
+ ]
+}

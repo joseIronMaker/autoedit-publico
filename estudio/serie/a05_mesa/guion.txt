@@ -1,0 +1,17 @@
+Tu agente tiene la memoria de un pez.
+Cada vez que da un paso, le vuelven a entregar todo, y lo lee desde cero.
+Imagínalo como un empleado brillante, que despierta sin recuerdos cada pocos segundos, frente a una mesa.
+Lo único que sabe es lo que hay encima de esa mesa.
+Sus instrucciones. Sus herramientas. Lo que ya platicaron. Los archivos que abrió.
+A eso le llamamos contexto.
+Y la mesa tiene un tamaño fijo.
+Cada mensaje ocupa espacio. Cada resultado ocupa espacio.
+Va a buscar restaurantes, y trae veinte páginas. La mesa se llena.
+Y aquí pasa algo raro: no falla de golpe. Se vuelve torpe.
+Se le olvida que tu mamá no come mariscos, porque esa nota quedó hasta abajo.
+Cuando ya no cabe nada, hay que resumir. Y al resumir, algo se pierde.
+Por eso un agente puede empezar brillante, y acabar confundido, aunque el modelo sea el mismo.
+Hoy casi nadie habla de escribir prompts mágicos. Se habla de ingeniería de contexto: qué entra, qué sale, y cuándo.
+No gana quien le da más información.
+Gana quien le deja sobre la mesa...
+solo lo que importa.

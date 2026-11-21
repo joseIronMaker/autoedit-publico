@@ -1,0 +1,84 @@
+{
+  "slug": "ia_chatbot_no_sabe_de_ti",
+  "tema": "Por qué tu chatbot no sabe nada de tu empresa: no es el modelo, es el trozo que le llega",
+  "title": "Por qué tu chatbot no sabe nada de tu empresa",
+  "theme": "hielo",
+  "hook_locked": true,
+  "quien_decide": "un buscador decide qué trozo de TU documento le pasa al modelo, y el modelo solo ve ese trozo",
+  "que_cuesta": "contesta con datos genéricos delante de un cliente, y tú quedas como el que no sabe",
+  "palanca": "antes de culpar al modelo, imprime el trozo que le llegó: si tu documento se cortó a la mitad de una frase, el dato correcto nunca entró",
+  "pregunta_ab": "¿Le echas la culpa al modelo o al trozo que le llegó?",
+  "scenes": [
+    {
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "narration": "Le conectaste tus documentos y contesta como si no los hubiera leído. No es el modelo. Es el trozo que le llegó.",
+      "kinetic_video": {
+        "words": [
+          {"text": "NO ES"},
+          {"text": "EL MODELO"},
+          {"text": "ES EL TROZO"}
+        ],
+        "variant": "dark",
+        "video": "videos/gen_ln_lstm_compuertas.assets/veo_4.mp4"
+      }
+    },
+    {
+      "beat_type": "contexto",
+      "visual_type": "image",
+      "narration": "Porque un modelo no lee tu documento entero. Alguien más lo parte en trozos, guarda cada trozo, y cuando preguntas, busca los que más se parecen a tu pregunta y solo esos se los pasa. El modelo contesta con lo que le dieron.",
+      "image_prompts": [
+        "A thick bound document on a dark desk with dozens of coloured paper tabs sticking out of its pages, a desk lamp raking across it. Documentary photography, muted palette, no readable text.",
+        "A library card catalogue drawer pulled open, a hand pulling out three index cards from among hundreds. Warm side light, deep shadows, macro, no readable text.",
+        "Three loose index cards laid side by side on a dark wooden table under a single lamp, the rest of the catalogue drawer closed in the background. Shallow depth of field."
+      ]
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "ml_demo",
+      "narration": "Y aquí está lo que casi nadie revisa: cómo lo cortaste. Corrí el buscador dos veces sobre el mismo documento real, el que documenta este canal. Cortado por párrafos, el trozo que tiene la respuesta queda en el lugar dos. Cortado a ciegas cada doscientos veinte caracteres, el mismo dato se hunde hasta el lugar cincuenta y nueve.",
+      "ml_demo": {
+        "caption": "recuperar.py",
+        "editor_frac": 0.26,
+        "code": "from sklearn.feature_extraction.text import TfidfVectorizer\ntexto = open('/home/jose/tiktok/CLAUDE.md', encoding='utf-8').read()\npregunta = 'que modelo genera la musica de los videos'\nparrafos = [p.strip() for p in texto.split('\\n\\n') if len(p.strip()) > 120]\nciegos = [texto[i:i + 220] for i in range(0, len(texto), 220)]\n\ndef puesto(trozos, clave='lyria'):\n    v = TfidfVectorizer().fit(trozos + [pregunta])\n    sim = (v.transform(trozos) @ v.transform([pregunta]).T).toarray().ravel()\n    orden = np.argsort(-sim)\n    for lugar, k in enumerate(orden):\n        if clave in trozos[k].lower():\n            return lugar + 1, len(trozos)\n    return len(trozos), len(trozos)\n\np1, n1 = puesto(parrafos)\np2, n2 = puesto(ciegos)\nfig, ax = plt.subplots(figsize=(9.2, 5.6))\nbarras = ax.barh(['cortado por párrafos', 'cortado cada 220 letras'], [p1, p2],\n                 color=[GREEN, RED], height=0.45)\nax.invert_yaxis()\nax.set_xlim(0, max(p1, p2) * 1.25)\nax.set_xlabel('lugar en que queda el trozo que SÍ tiene la respuesta')\nax.set_title('el mismo documento, cortado de dos formas')\nfor b, (p, n) in zip(barras, [(p1, n1), (p2, n2)]):\n    ax.text(b.get_width() + max(p1, p2) * 0.03, b.get_y() + b.get_height() / 2,\n            'lugar %d de %d' % (p, n), va='center', color=TXT, fontsize=24,\n            fontweight='bold')\nfig.text(0.5, 0.015, 'TF-IDF sobre el CLAUDE.md real de este proyecto · pregunta: qué modelo genera la música',\n         ha='center', fontsize=11, color='#969491')",
+        "display_code": [
+          "trozos = texto.split('\\n\\n')      # por párrafos",
+          "trozos = [texto[i:i+220] ...]     # a ciegas"
+        ]
+      }
+    },
+    {
+      "beat_type": "giro",
+      "visual_type": "image",
+      "narration": "Y por eso te contesta genérico. Nunca vio el dato. Le llegó media frase, sin el sujeto o sin el número, y con media frase el modelo hace lo único que sabe hacer: rellenar con lo más probable.",
+      "image_prompts": [
+        "A sheet of printed paper torn straight across the middle of a paragraph, the two halves lying apart on a dark table, torn fibres lit from the side. Macro, no readable text.",
+        "A single torn half-page held up against a dark background by two fingers, the missing half absent, warm rim of lamplight along the tear. Shallow depth of field.",
+        "A meeting table seen from one end with an open laptop turned toward an empty chair, cold daylight through blinds, nobody in the frame. Documentary photography."
+      ]
+    },
+    {
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "narration": "Tu chatbot no sabe menos. Le estás dando de leer menos.",
+      "kinetic_video": {
+        "words": [
+          {"text": "NO SABE MENOS"},
+          {"text": "LE DAS"},
+          {"text": "DE LEER MENOS"}
+        ],
+        "variant": "dark",
+        "video": "videos/gen_ver_galeria_sin_cara.assets/veo_0.mp4"
+      }
+    },
+    {
+      "beat_type": "cta",
+      "visual_type": "image",
+      "narration": "Mi postura, después de montar varios de estos: casi todo lo que le achacan al modelo se arregla mirando el trozo que le llegó, no cambiando de modelo. Imprímelo antes de tocar nada más. ¿Le echas la culpa al modelo o al trozo que le llegó?",
+      "image_prompts": [
+        "A printed page pinned to a corkboard beside a laptop on a home-office desk, one paragraph outlined in pencil, warm lamp at night. Documentary photography, no readable text.",
+        "Hands laying three printed pages in a row on a wooden table, comparing them, morning light through a window, dust in the air. Shot from above, shallow depth of field."
+      ]
+    }
+  ]
+}

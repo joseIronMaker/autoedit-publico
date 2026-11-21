@@ -1,0 +1,37 @@
+{
+  "slug": "guia_modelos_2026",
+  "titulo": "Guía de modelos de IA — julio 2026",
+  "modo": "corto",
+  "items": [
+    {
+      "tema": "¿Quién fabrica las IAs? El mapa de los proveedores en 2026",
+      "descripcion": "",
+      "status": "listo",
+      "video": "videos/gen_mapa_proveedores_ia_final.mp4"
+    },
+    {
+      "tema": "Solo dos países fabrican toda la IA del mundo",
+      "descripcion": "",
+      "status": "listo",
+      "video": "videos/gen_dos_paises_ia_final.mp4"
+    },
+    {
+      "tema": "El top 3 de la IA hoy: GPT-5.6 Sol, Claude Fable 5 y Kimi K3",
+      "descripcion": "",
+      "status": "listo",
+      "video": "videos/gen_top3_ia_jul2026_final.mp4"
+    },
+    {
+      "tema": "Qué modelo de IA usar para cada cosa",
+      "descripcion": "",
+      "status": "listo",
+      "video": "videos/gen_cual_modelo_usar_final.mp4"
+    },
+    {
+      "tema": "Cuánto cuesta la IA: de gratis a miles",
+      "descripcion": "",
+      "status": "listo",
+      "video": "videos/gen_costos_ia_2026_final.mp4"
+    }
+  ]
+}

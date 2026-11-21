@@ -1,0 +1,35 @@
+{
+  "tema": "la descripcion de una herramienta: inventar el dato o preguntarlo",
+  "modelo": "gemini-flash-latest",
+  "corridas_por_caso": 5,
+  "casos": 6,
+  "condiciones": {
+    "descripción floja": {
+      "llamo_la_herramienta": 15,
+      "de": 30,
+      "casos_con_hueco": 15,
+      "invento_el_folio": 0,
+      "pregunto_o_no_llamo": 15,
+      "pct_invento": 0.0,
+      "folios_inventados": []
+    },
+    "descripción con política": {
+      "llamo_la_herramienta": 15,
+      "de": 30,
+      "casos_con_hueco": 15,
+      "invento_el_folio": 0,
+      "pregunto_o_no_llamo": 15,
+      "pct_invento": 0.0,
+      "folios_inventados": []
+    },
+    "sin campo obligatorio": {
+      "llamo_la_herramienta": 15,
+      "de": 30,
+      "casos_con_hueco": 15,
+      "invento_el_folio": 0,
+      "pregunto_o_no_llamo": 15,
+      "pct_invento": 0.0,
+      "folios_inventados": []
+    }
+  }
+}

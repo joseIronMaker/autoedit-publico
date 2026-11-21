@@ -1,0 +1,21 @@
+ChatGPT no sabe qué es un perro.
+Nunca ha acariciado uno. Ni siquiera ha leído esa palabra.
+Antes de entrar, cada palabra se convierte en un punto. Un lugar en un mapa.
+Perro vive aquí. Gato, muy cerca. Plátano... hasta allá.
+Nadie dibujó este mapa. Se formó solo, leyendo miles de millones de palabras.
+"Le di de comer a mi..." Ahí cabe perro. Ahí cabe gato.
+Y dos palabras que caben en los mismos huecos se van acercando, un poquito cada vez.
+En dos mil trece, en Google, miraron ese mapa y encontraron algo raro: las distancias significaban cosas.
+El camino de hombre a mujer es casi el mismo que va de rey... a reina.
+Nadie le explicó qué es la realeza. Nadie le dijo qué es una mujer. Lo sacó de cómo hablamos.
+A cada uno de estos puntos le llamamos embedding.
+
+Y por eso también aprendió esto.
+Hombre es a programador lo que mujer es a... ama de casa.
+No es un ejemplo inventado. Salió de ese mismo mapa, y lo publicaron en dos mil dieciséis.
+El mapa no sabe lo que es verdad. Sabe lo que decimos.
+
+Este que ves tiene dos dimensiones. El de ChatGPT tiene miles, y cada punto se mueve según la frase. Pero la idea es la misma.
+Por eso, cuando le escribes, no te lee. Te ubica.
+Te puede contar que ladra. Que mueve la cola. Que te espera en la puerta.
+Y aun así...

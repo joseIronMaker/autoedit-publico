@@ -1,0 +1,108 @@
+{
+  "title": "El coche sin volante que quiere tronar una industria entera",
+  "slug": "cybercab_sin_volante",
+  "tema": "el Cybercab conduce sin lidar dos días después de que Waymo dijera que las cámaras no bastan, Uber mueve regulación, y el empleo de conducir es de los más grandes del mundo",
+  "theme": "ambar",
+  "hook_tipo": "demostracion",
+  "keyword": "cybercab conduccion autonoma",
+  "hook_headline": [
+    "SIN",
+    "VOLANTE"
+  ],
+  "pregunta_ab": "¿Te subes hoy a un coche sin volante o esperas a que lo prueben otros?",
+  "music_prompt": "hard techno bed, dark industrial groove, 150 BPM, rolling kick, restrained under a voice, instrumental, no vocals",
+  "modo": "corto",
+  "hook_locked": true,
+  "scenes": [
+    {
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.4,
+      "narration": "Búscale el volante. No le busques mucho: no hay. Tampoco pedales ni espejos laterales. El cuate va con los pies arriba y el coche se mueve solo por la ciudad. Y no es un render de presentación: es un Cybercab y ya está cobrando viajes en Austin, Dallas y Houston.",
+      "kinetic_video": {
+        "video": "/home/jose/tiktok/scratchpad/_astra/cybercab/sin_volante.mp4",
+        "words": [
+          {
+            "text": "búscale el volante",
+            "serif": true
+          },
+          {
+            "text": "NO HAY",
+            "accent": true
+          }
+        ],
+        "variant": "dark",
+        "veil": 0.55
+      }
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "receipt",
+      "narration": "Y mira el detalle sabroso. Dos días antes de que Tesla lo presentara, Waymo salió a decir esto en público: las cámaras son increíbles, pero no bastan. Ellos usan cámaras, radar y lidar —ese aparato que gira en el techo y mide la distancia con láser—. Tesla lleva años apostando a puras cámaras. Uno de los dos está equivocado, y se están jugando la industria en esa apuesta.",
+      "receipt": {
+        "image": "/home/jose/tiktok/scratchpad/_astra/recibos/r_waymo_ofensiva.png",
+        "highlight": "Cybercab launch",
+        "nota": "captura REAL del artículo del 1 de septiembre, dos días antes del evento"
+      }
+    },
+    {
+      "beat_type": "contexto",
+      "visual_type": "kinetic_video",
+      "narration": "Y aquí te voy a ser honesto, porque el asunto todavía no está cerrado. Tesla ya cobra viajes sin lidar: eso es real y es enorme. Pero Waymo mueve medio millón de viajes sin conductor cada semana, y a Tesla le cuentan catorce choques en unas ochocientas mil millas, con una persona pagada sentada adelante. O sea: Tesla llegó más barato, Waymo llegó más probado. Quien te jure hoy quién ganó, te está vendiendo algo.",
+      "kinetic_video": {
+        "video": "/home/jose/tiktok/scratchpad/_astra/cybercab/ciudad_noche.mp4",
+        "words": [
+          {
+            "text": "más barato",
+            "serif": true
+          },
+          {
+            "text": "CONTRA MÁS PROBADO",
+            "accent": true
+          }
+        ],
+        "variant": "dark",
+        "veil": 0.55
+      }
+    },
+    {
+      "beat_type": "giro",
+      "visual_type": "receipt",
+      "narration": "Y cuando algo amenaza de verdad, no lo frenan los ingenieros: lo frenan los abogados. Uber está empujando en Washington que las plataformas con robotaxis pongan conductores humanos en el ochenta y cinco por ciento de los viajes, más un millón de dólares de cuota y quince centavos de impuesto por milla. Su propio argumento lo dice todo: cada robotaxi desplaza a cuatro conductores. Eso no es preocupación por la seguridad, mi chavo. Eso es aritmética.",
+      "receipt": {
+        "image": "/home/jose/tiktok/scratchpad/_astra/recibos/r_uber_lobby.png",
+        "highlight": "collision course",
+        "nota": "captura REAL del reporte sobre el cabildeo de Uber"
+      }
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "custom",
+      "narration": "Porque manejar es de los trabajos más grandes que existen. Solo en Estados Unidos hay más de dos millones de traileros, sin contar taxistas, repartidores ni choferes. Es de los pocos oficios que sigue dando de comer a millones sin pedirte un título. Y no es la primera vez que una máquina llega a tocar eso: en mil ochocientos sesenta y cinco, en Inglaterra, un señor tenía que caminar sesenta metros delante del automóvil ondeando una bandera roja. Esa ley aguantó treinta y un años. Treinta y uno.",
+      "custom_anim": {
+        "description": "Sobre fondo grafito, una retícula de siluetas humanas pequeñas y ordenadas que va llenándose de izquierda a derecha hasta cubrir la pantalla, con un contador grande arriba que sube hasta 2 MILLONES y se queda fijo. Debajo, la etiqueta SOLO TRAILEROS, SOLO EE.UU. en tipografía menor. Al final, una franja inferior donde una silueta camina con una banderita ondeando y detrás avanza un automóvil antiguo, con el rótulo 1865 al lado. Grises con un solo acento cálido apagado, look documental, sin brillos."
+      }
+    },
+    {
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.5,
+      "narration": "Y este es el punto que casi nadie dice. Lo que rompe una industria no es el coche más listo: es el más barato que se pueda fabricar en línea. El Cybercab está diseñado desde cero para eso, sin volante que instalar y con precio objetivo debajo de treinta mil dólares. Ahí está la amenaza, no en el software. ¿Te subes hoy a un coche sin volante o esperas a que lo prueben otros? Yo me subo, pero de día y en ciudad conocida. Valiente, no pendejo.",
+      "kinetic_video": {
+        "video": "/home/jose/tiktok/scratchpad/_astra/cybercab/calle_dia.mp4",
+        "words": [
+          {
+            "text": "no gana el más listo",
+            "serif": true
+          },
+          {
+            "text": "GANA EL QUE SE FABRICA",
+            "accent": true
+          }
+        ],
+        "variant": "dark",
+        "veil": 0.55
+      }
+    }
+  ]
+}

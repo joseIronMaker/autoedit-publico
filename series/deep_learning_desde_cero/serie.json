@@ -1,0 +1,63 @@
+{
+  "slug": "deep_learning_desde_cero",
+  "titulo": "Deep Learning desde cero (cómo funciona la IA por dentro)",
+  "modo": "corto",
+  "_nota_legal": "Serie de divulgación ORIGINAL de José. Conceptos de dominio público; NO reproduce diapositivas/figuras/texto/marca de ninguna fuente. Verificado contra la Lecture 1 abierta del MIT 6.S191 como referencia; guion/voz/ejemplos/visuales propios. NO usar la marca MIT en el video.",
+  "_arco": "COHERENTE 9 videos (re-analisis 23-jul con el 'video 0' que pidio Jose): por-que-ahora(1958+datos+GPUs+herramientas) -> 1 neurona=recta -> activacion (no basta una) -> red apilada=curvas -> loss -> gradient descent -> backprop -> learning rate/mini-batches -> overfitting. DISCIPLINA 'ESTO ES PARA ESTO': cada video ata su concepto a para que sirve en una IA real (ver PARA QUE de cada item). Rigor verificado contra la Lecture 1 del MIT 6.S191.",
+  "items": [
+    {
+      "tema": "¿Por qué la IA explotó AHORA si nació en 1958?",
+      "descripcion": "La primera neurona artificial es de 1958; faltaban DATOS (internet), GPUs (computo paralelo) y HERRAMIENTAS para entrenarla. PARA QUE: da el porque antes del como y arranca la serie.",
+      "status": "listo",
+      "video": "videos/gen_dl_por_que_ahora_final.mp4"
+    },
+    {
+      "tema": "La neurona: una recta disfrazada (el perceptrón)",
+      "descripcion": "El perceptrón multiplica cada dato por su peso, suma el sesgo y decide por el signo; SIN activación su frontera es una RECTA (z=w0+sum(xi*wi)). La activación llega en el V2. PARA QUE: con esa sola raya ya separas un correo spam de uno normal.",
+      "status": "listo",
+      "video": "videos/gen_dl_neurona_recta_final.mp4"
+    },
+    {
+      "tema": "La función de activación y por qué UNA no basta",
+      "descripcion": "La activacion agrega no-linealidad, pero una sola neurona sigue dando una recta; para curvar hacen falta muchas. PARA QUE: ese doblez es el ingrediente que despues deja separar un gato de un perro.",
+      "status": "listo",
+      "video": "videos/gen_dl_activacion_no_basta_final.mp4"
+    },
+    {
+      "tema": "Apilando neuronas: de la recta a las curvas",
+      "descripcion": "Capas densas apiladas + no-linealidad = fronteras curvas que aproximan cualquier funcion. PARA QUE: apilando capas, esa misma curva reconoce tu cara y desbloquea el telefono.",
+      "status": "listo",
+      "video": "videos/gen_dl_apilar_curvas_final.mp4"
+    },
+    {
+      "tema": "El error: cómo se mide que la red se equivoca (loss)",
+      "descripcion": "Empirical loss; cross-entropy para clasificar, MSE para numeros; ejemplo predice 0.1 y era 1. PARA QUE: es la CALIFICACION de la red; sin esa nota no sabria que mejorar.",
+      "status": "listo",
+      "video": "videos/gen_dl_loss_error_final.mp4"
+    },
+    {
+      "tema": "Gradient descent: bajar la montaña de la pérdida",
+      "descripcion": "W <- W - eta * gradiente: un pasito en direccion opuesta al error hasta el minimo. PARA QUE: ver la perdida bajar es, literalmente, la IA aprendiendo.",
+      "status": "listo",
+      "video": "videos/gen_dl_gradient_descent_final.mp4"
+    },
+    {
+      "tema": "Backpropagation: la regla de la cadena que enseña a la red",
+      "descripcion": "Backprop CALCULA el gradiente (regla de la cadena hacia atras); gradient descent lo APLICA. PARA QUE: una red de millones de pesos sabe cual mover, sin tocarlos a mano.",
+      "status": "listo",
+      "video": "videos/gen_dl_backpropagation_final.mp4"
+    },
+    {
+      "tema": "SGD, mini-batches y learning rate: entrenar en el mundo real",
+      "descripcion": "Learning rate adaptativo; mini-batches = gradiente mas preciso y GPU en paralelo. PARA QUE: ese numero decide si entrenas en horas o pierdes dias.",
+      "status": "listo",
+      "video": "videos/gen_dl_learning_rate_final.mp4"
+    },
+    {
+      "tema": "Overfitting y regularización: que la red generalice",
+      "descripcion": "Si memoriza no generaliza; dropout apaga activaciones y early stopping para a tiempo. PARA QUE: que funcione con datos NUNCA vistos; si solo acierta en lo que ya vio, no sirve.",
+      "status": "listo",
+      "video": "videos/gen_dl_overfitting_final.mp4"
+    }
+  ]
+}

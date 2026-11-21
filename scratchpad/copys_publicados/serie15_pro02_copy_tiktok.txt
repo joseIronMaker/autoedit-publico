@@ -1,0 +1,21 @@
+Le pedí a ChatGPT un correo para avisar de un retraso. Nada más. Y me salió un correo perfecto para nadie: inventó a quién iba dirigido, por qué era el retraso, el tono y hasta el formato.
+
+No lo hizo por listo. Cuando a un modelo le llega un hueco no se detiene a preguntarte: lee lo que sí le diste, busca lo más parecido que vio mientras aprendía, y devuelve eso. Rellenar el hueco no es una falla suya. Es literalmente su trabajo.
+
+Llevo años dando estas clases a gente que no programa, y el patrón es siempre el mismo. Nadie escribe un prompt malo por flojera. Lo escribe incompleto.
+
+Son cinco piezas y se cuentan con los dedos:
+
+Contexto — quién eres tú y quién va a leer.
+Tarea — el verbo exacto de lo que quieres.
+Formato — en qué te lo tiene que entregar.
+Ejemplos — una muestra de cómo se ve bien.
+Restricciones — el largo, el tono, y lo que no debe hacer.
+
+Mandé el mismo encargo con las cinco puestas. Mismo modelo, mismo día. Otro correo.
+
+Un prompt no se escribe. Se arma.
+
+Y por eso, cuando te salga mal, no lo reescribas entero: vas a volver a dejar fuera la misma pieza que dejaste fuera la primera vez. Busca cuál de las cinco faltó y pon esa.
+
+Cuando te sale mal, ¿reescribes el prompt entero o buscas qué pieza faltó?

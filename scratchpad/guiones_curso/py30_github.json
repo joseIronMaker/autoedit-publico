@@ -1,0 +1,109 @@
+{
+  "title": "Sube tu proyecto a GitHub y compártelo",
+  "slug": "curso_py30_github",
+  "tema": "subir un repositorio a GitHub como portafolio: gitignore, README y lo que jamás se sube",
+  "theme": "curso python con ia",
+  "hook_tipo": "demostracion",
+  "keyword": "subir a github",
+  "hook_headline": [
+    "TU CÓDIGO",
+    "EN INTERNET"
+  ],
+  "pregunta_ab": "¿Al subir código prefieres README o nada?",
+  "music_prompt": "hard techno bed, dark industrial groove, 150 BPM, rolling kick, restrained under a voice, instrumental, no vocals",
+  "modo": "corto",
+  "hook_locked": true,
+  "scenes": [
+    {
+      "beat_type": "hook",
+      "visual_type": "terminal",
+      "narration": "Tu proyecto vive en tu computadora, o sea que existe para ti y para nadie más. Con tres órdenes vive también en internet, con un enlace que le mandas a quien tú quieras. Le pregunto al agente cuáles son esas tres para este repositorio, y mira que me las explica una por una.",
+      "pause_after": 0.35,
+      "terminal": {
+        "title": "subir",
+        "lines": [
+          {
+            "text": "git remote add origin ..."
+          },
+          {
+            "text": "git branch -M main"
+          },
+          {
+            "text": "git push -u origin main"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "bash _git_setup.sh && cd ~/curso_git && claude 'dame los 3 comandos para subir este repositorio a GitHub y explica cada uno en una linea'",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "custom",
+      "narration": "GitHub es donde vive el código del mundo. Guardas tu proyecto ahí y de pasada te queda de portafolio: quien entre ve tus archivos, tus mensajes de commit y cómo trabajas. Push manda tus fotos a la nube, pull las trae de vuelta. Y otros pueden ver, copiar y proponerte cambios. Sí: gente que no conoces arreglándote el código gratis. Así funciona esto.",
+      "custom_anim": {
+        "description": "A la izquierda una laptop con tres fotos apiladas etiquetadas tu repositorio. Una flecha ancha etiquetada push las manda a una nube grande a la derecha con el rótulo GitHub, donde aparecen las mismas tres fotos. Desde la nube salen flechas hacia tres personitas con lupa etiquetadas ven tu trabajo. Una flecha de vuelta etiquetada pull regresa una foto a la laptop. Sin cifras."
+      }
+    },
+    {
+      "beat_type": "contexto",
+      "visual_type": "terminal",
+      "narration": "Dos archivos hacen la diferencia entre parecer principiante o no. El punto gitignore, que le dice a Git qué NO subir: cachés, bases de datos, contraseñas. Y el README, que explica qué es esto y cómo se corre. Le pido los dos al agente y mira qué pone en cada uno.",
+      "terminal": {
+        "title": "gitignore + README",
+        "lines": [
+          {
+            "text": "__pycache__/"
+          },
+          {
+            "text": "*.db"
+          },
+          {
+            "text": ".env"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "bash _git_setup.sh && cd ~/curso_git && claude 'crea un .gitignore para un proyecto de python y un README corto'",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "giro",
+      "visual_type": "mascota",
+      "narration": "Y la advertencia más importante de todo el curso: jamás subas una contraseña o una llave de API. Aunque borres el archivo después queda en el historial, y hay bots que se pasan el día rastreando GitHub buscando llaves. Encuentran la tuya en minutos y te gastan el saldo mientras duermes. Las llaves van en un archivo punto env, y punto env va en el gitignore.",
+      "mascota": {
+        "pose": "error",
+        "caption": ".env en .gitignore · SIEMPRE"
+      },
+      "foto": {
+        "archivo": "/home/jose/tiktok/branding/perrito/codex_error.png"
+      }
+    },
+    {
+      "beat_type": "cta",
+      "visual_type": "kinetic_video",
+      "narration": "Con esto cierras el curso: sabes pedir, leer, probar, corregir y guardar. Lo que sigue ya no lo doy yo, es tu primer proyecto, el tuyo, subido con tu nombre. ¿Al subir código, README o nada? Yo digo README: sin él nadie lo prueba, ni tú en tres meses.",
+      "pause_after": 0.3,
+      "kinetic_video": {
+        "video": "/home/jose/tiktok/videos/_clips_pagados/gen_ln_lo_que_aprendio_solo__veo_0.mp4",
+        "words": [
+          {
+            "text": "tu primer proyecto",
+            "serif": true
+          },
+          {
+            "text": "CON TU NOMBRE",
+            "accent": true
+          }
+        ],
+        "variant": "dark"
+      }
+    }
+  ]
+}

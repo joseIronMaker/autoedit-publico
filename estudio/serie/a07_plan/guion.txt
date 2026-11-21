@@ -1,0 +1,15 @@
+Si le pides todo de golpe, tu agente lo va a arruinar.
+Organiza la fiesta. Lugar, invitados, pastel, música, sorpresa.
+Empieza con todo a la vez. A la mitad del trabajo, su mesa ya está llena. Y te deja todo a medias.
+Anthropic describió exactamente eso: el agente intentaba hacer demasiado de una vez, y se quedaba sin espacio a mitad del trabajo.
+La solución es la misma que te enseñaron para estudiar: partir el problema.
+Antes de hacer nada, escribe un plan. Una lista de pendientes.
+Uno: lugar. Dos: fecha. Tres: invitados.
+Y hace uno a la vez.
+Pero el plan de un agente no es un mapa. Es una hipótesis.
+Llama al restaurante: el sábado está cerrado. Cambia la fecha, y eso cambia a los invitados.
+Un buen agente reescribe su plan en cada vuelta.
+Y hay un truco más. Si el pendiente es enorme, se lo pasa a un ayudante, con su propia mesa limpia, que regresa solo con el resultado.
+Así la mesa principal sigue despejada.
+Planear no es adivinar el futuro.
+Es saber qué sigue, cuando todo cambia.

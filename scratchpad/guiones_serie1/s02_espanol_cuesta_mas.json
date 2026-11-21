@@ -1,0 +1,100 @@
+{
+  "slug": "ia_espanol_cuesta_mas",
+  "tema": "Escribirle a la IA en español cuesta 23% más que en inglés, y el motivo es el tokenizador",
+  "title": "La misma pregunta en español te cuesta 23% más",
+  "theme": "cyber",
+  "hook_locked": true,
+  "quien_decide": "el tokenizador decide en cuántos pedazos se parte lo que escribes, y el pedazo es la unidad que te cobran",
+  "que_cuesta": "pagas 23% más por la misma pregunta y te cabe menos texto en la misma ventana",
+  "palanca": "en lo que repites mucho (instrucciones de sistema, plantillas), escribe la instrucción en inglés y pide la respuesta en español",
+  "pregunta_ab": "¿Tus prompts los escribes en español o en inglés?",
+  "scenes": [
+    {
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "narration": "La misma pregunta, escrita en español, te cuesta veintitrés por ciento más que en inglés. Lo acabo de medir.",
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "EN ESPAÑOL"
+          },
+          {
+            "text": "PAGAS 23%"
+          },
+          {
+            "text": "MÁS"
+          }
+        ],
+        "variant": "dark",
+        "video": "videos/gen_ln_palabras_a_numeros.assets/veo_0.mp4"
+      }
+    },
+    {
+      "beat_type": "contexto",
+      "visual_type": "image",
+      "narration": "Y no es por el idioma en sí. Antes de leerte, un tokenizador parte tu texto en pedazos, y el pedazo es lo que te cobran. En español los pedazos salen más chicos, así que salen más.",
+      "image_prompts": [
+        "A worn brass market scale on a dark counter, a paper bag resting on the pan, a hand steadying the pan. Warm side lamplight, deep shadows, dusty air.",
+        "Extreme macro of two hands tearing a printed sheet of paper into narrow strips over a dark wooden table, torn fibrous edges catching the light, a few strips already fallen.",
+        "Two piles of torn paper strips side by side on a dark wooden table under a single lamp: the left pile is clearly bigger and made of many more, much smaller strips; the right pile is small, with fewer and longer strips. Low camera angle, strong side light."
+      ]
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "ml_demo",
+      "narration": "Esto es el tokenizador real de los modelos de OpenAI, corriendo con cuatro pares de frases que dicen exactamente lo mismo. Noventa pedazos en español contra setenta y tres en inglés. Y sí, mejoró: en dos mil veintitrés la diferencia era del cuarenta y tres por ciento. Se redujo, no desapareció.",
+      "ml_demo": {
+        "caption": "costo_espanol.py",
+        "editor_frac": 0.3,
+        "code": "import tiktoken\npares = [\n  (\"Necesito que me ayudes a redactar un correo para mi jefe explicando por qué el proyecto se retrasó dos semanas.\",\n   \"I need you to help me write an email to my boss explaining why the project was delayed by two weeks.\"),\n  (\"Los desarrolladores mexicanos que trabajan con inteligencia artificial enfrentan dificultades para acceder a computadoras potentes.\",\n   \"Mexican developers working with artificial intelligence face difficulties accessing powerful computers.\"),\n  (\"Explícame como si tuviera diez años qué es una red neuronal y por qué se llama así.\",\n   \"Explain to me like I am ten years old what a neural network is and why it is called that.\"),\n  (\"El murciélago comió cuatro sandías del jardín de Cuauhtémoc antes del amanecer.\",\n   \"The bat ate four watermelons from Cuauhtemoc's garden before dawn.\"),\n]\ndef cuenta(nombre):\n    e = tiktoken.get_encoding(nombre)\n    return sum(len(e.encode(a)) for a, _ in pares), sum(len(e.encode(b)) for _, b in pares)\nhoy_es, hoy_en = cuenta('o200k_base')\nayer_es, ayer_en = cuenta('cl100k_base')\nfig, ax = plt.subplots(figsize=(9.2, 5.6))\ny = np.arange(2)\nalto = 0.34\nax.barh(y + alto / 2, [hoy_es, ayer_es], alto, color=ORANGE, label='español')\nax.barh(y - alto / 2, [hoy_en, ayer_en], alto, color=CYAN, label='inglés')\nax.set_yticks(y)\nax.set_yticklabels(['modelos de hoy', 'GPT-4 (2023)'])\nfor i, (a, b) in enumerate([(hoy_es, hoy_en), (ayer_es, ayer_en)]):\n    ax.text(a + 2, i + alto / 2, str(a), va='center', color=TXT, fontsize=20)\n    ax.text(b + 2, i - alto / 2, str(b), va='center', color=TXT, fontsize=20)\n    ax.text(152, i, '+%.0f%%' % ((a / b - 1) * 100), va='center', ha='right', color=RED, fontsize=32, fontweight='bold')\nax.set_xlim(0, 155)\nax.set_xlabel('tokens para decir LO MISMO')\nax.set_title('lo que cuesta escribirle en español')\nax.legend(loc='lower right', fontsize=17)\nfig.text(0.5, 0.015, 'tiktoken · 4 pares de frases equivalentes · medido 8-ago-2026', ha='center', fontsize=11, color='#969491')",
+        "display_code": [
+          "enc = tiktoken.get_encoding('o200k_base')",
+          "len(enc.encode(frase_es)) / len(enc.encode(frase_en))"
+        ]
+      }
+    },
+    {
+      "beat_type": "giro",
+      "visual_type": "ml_demo",
+      "narration": "Y aquí está lo que casi nadie te dice: el modelo tampoco ve tus palabras completas. Cuauhtémoc son cinco pedazos. Balbuena, mi apellido, son tres. Por eso te falla cuando le pides contar las letras de un nombre: nunca las tuvo.",
+      "ml_demo": {
+        "caption": "como_te_parte.py",
+        "editor_frac": 0.16,
+        "code": "import tiktoken\nenc = tiktoken.get_encoding('o200k_base')\npalabras = ['Cuauhtémoc', 'murciélago', 'Balbuena', 'Oaxaca']\nfig, ax = plt.subplots(figsize=(9.2, 5.6))\nax.set_xlim(0, 15.2)\nax.set_ylim(0, len(palabras) + 0.2)\nax.axis('off')\nfor i, w in enumerate(palabras):\n    piezas = [enc.decode([t]) for t in enc.encode(w)]\n    yy = len(palabras) - i - 0.6\n    ax.text(0.1, yy, w, fontsize=25, color=TXT, va='center', ha='left', fontweight='bold')\n    x = 5.1\n    for p in piezas:\n        ancho = 0.5 + 0.44 * len(p)\n        ax.add_patch(plt.Rectangle((x, yy - 0.28), ancho, 0.56, facecolor='#23242b', edgecolor=ORANGE, lw=2.4))\n        ax.text(x + ancho / 2, yy, p, fontsize=22, color=ORANGE, va='center', ha='center', fontweight='bold')\n        x += ancho + 0.18\n    ax.text(15.0, yy, str(len(piezas)), fontsize=28, color=RED, va='center', ha='right', fontweight='bold')\nax.set_title('lo que el modelo ve, no lo que tú escribes', pad=16)\nfig.text(0.5, 0.015, 'tiktoken o200k_base · el número de la derecha son los pedazos', ha='center', fontsize=11, color='#969491')",
+        "display_code": [
+          "[enc.decode([t]) for t in enc.encode('Cuauhtémoc')]",
+          "# ['Cu', 'au', 'ht', 'ém', 'oc']"
+        ]
+      }
+    },
+    {
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "narration": "No le pagas por palabras. Le pagas por pedazos. Y tu idioma decide cuántos.",
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "NO PAGAS"
+          },
+          {
+            "text": "POR PALABRAS"
+          },
+          {
+            "text": "POR PEDAZOS"
+          }
+        ],
+        "variant": "dark",
+        "video": "videos/gen_ln_orden_lo_es_todo.assets/veo_0.mp4"
+      }
+    },
+    {
+      "beat_type": "cta",
+      "visual_type": "image",
+      "narration": "Mi postura: escribir en español no es el problema. El problema es no saber que el cobro no es por palabra. En lo que repites mucho, la instrucción va en inglés y la respuesta te la pides en español. ¿Tus prompts en español o en inglés?",
+      "image_prompts": [
+        "Hands typing on a laptop keyboard at night in a small home office, warm desk lamp, a cup of coffee beside it, seen over the shoulder. The screen is dark and unreadable. Documentary photography, film grain.",
+        "A printed itemised invoice lying face down on a dark wooden desk beside a phone and a pen, morning light through window blinds, dust in the air. Shallow depth of field."
+      ]
+    }
+  ]
+}

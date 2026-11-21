@@ -1,0 +1,23 @@
+=== ver02s_no_basta_con_mirar.json  →  gen_ver_no_basta_con_mirar_sc  (tema carmin)
+(ya existía el mp4 base; salto la generación)
+→ Transcribiendo con Whisper (small, CPU)…
+  100 palabras, 36.7s → /home/jose/tiktok/videos/gen_ver_no_basta_con_mirar_sc.autoedit/transcript.json
+→ Gemini analizando la transcripción (cortes + énfasis)…
+
+Plan de edición (3 cortes, −1.7s de 36.7s):
+  ✂    3.50 →    4.34  silencio de 1.1s
+  ✂    9.70 →   10.26  silencio de 0.8s
+  ✂   26.36 →   26.66  silencio de 0.5s
+  ★ 12 palabras enfatizadas en subtítulos
+→ Renderizando gen_ver_no_basta_con_mirar_sc_final.mp4: 4 tramos, 35.0s…
+✔ /home/jose/tiktok/videos/gen_ver_no_basta_con_mirar_sc_final.mp4
+→ Generando copys (TikTok/IG/FB)…
+✔ /home/jose/tiktok/videos/gen_ver_no_basta_con_mirar_sc.autoedit/copys.md
+
+✔ ver02_no_basta_con_mirar_sc.mp4  (35.0s)
+  QC   → /home/jose/tiktok/scratchpad/qc_ver_no_basta_con_mirar_sc.png
+  copy → revisar y reescribir a mano si hace falta:
+Mañana vemos los pedacitos, pero hoy entiende por qué una red densa no sirve para fotos.
+Al aplanar una imagen, mover 3 píxeles cambia el 76% de los valores y la red pierde toda noción de vecindad.
+¿Red densa o convolución? Yo digo que las densas fallan con imágenes.
+#reddensa #pixeles #capadensa #ia

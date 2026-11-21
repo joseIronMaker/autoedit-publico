@@ -1,0 +1,97 @@
+{
+  "tema": "El truco que hizo gratis los datos: tapar una palabra",
+  "modo": "corto",
+  "title": "El truco que hizo gratis los datos: tapar una palabra",
+  "slug": "ln_datos_gratis",
+  "hook_tipo": "secreto",
+  "theme": "hielo",
+  "image_style": "clean flat-lay photograph of a printed page with one word physically cut out, pale icy blue light and deep navy shadows, minimal and graphic, shot from directly above, vertical 9:16 composition, lower third kept simple, no text, no letters, no words, no watermark",
+  "keyword": "aprendizaje autosupervisado",
+  "hook_headline": [
+    "DATOS",
+    "INFINITOS"
+  ],
+  "pregunta_ab": "¿El límite eran los datos o el dinero?",
+  "music_prompt": "crystalline ambient pop instrumental, glassy bells and a wide airy pad, hopeful and clean, no vocals, 106 BPM",
+  "scenes": [
+    {
+      "narration": "Tapar una palabra creó la IA moderna.",
+      "beat_type": "hook",
+      "visual_type": "custom",
+      "pause_after": 0.45,
+      "custom_anim": {
+        "description": "Línea de código en neón cian sobre fondo negro; un bloque magenta brillante cubre una palabra central y emite destellos binarios radiantes."
+      }
+    },
+    {
+      "narration": "Antes, para enseñarle algo había que marcarle miles de ejemplos a mano. Y si cambiabas la tarea, a empezar de nuevo.",
+      "beat_type": "hook",
+      "visual_type": "host",
+      "host_top": {
+        "kind": "headline",
+        "lines": [
+          "DATOS",
+          "INFINITOS"
+        ]
+      }
+    },
+    {
+      "narration": "El truco fue el examen de llenar el hueco: agarras cualquier texto, tapas una palabra, y ya tienes pregunta y respuesta. La respuesta estaba en el propio texto.",
+      "beat_type": "proof",
+      "visual_type": "terminal",
+      "terminal": {
+        "lines": [
+          "texto     = \"el gato se subió al ___\"",
+          "respuesta = \"tejado\"      # estaba en el mismo texto",
+          "costo de etiquetar = $0"
+        ],
+        "caption": "autosupervisado"
+      }
+    },
+    {
+      "narration": "Y como sirve cualquier texto, el material pasó a ser casi todo lo escrito en internet. Sin pagarle a nadie.",
+      "beat_type": "giro",
+      "visual_type": "ml_demo",
+      "ml_demo": {
+        "code": "import numpy as np\ntexto = ('El gato se subió al tejado. La lluvia empezó temprano esa tarde. '\n         'Nadie encendió las luces de la calle. El vecino cerró la ventana. '\n         'Un perro ladró dos veces y todo volvió a quedar en silencio.')\npalabras = texto.split()\n# etiquetar a mano: UNA etiqueta por frase, puesta por una persona\na_mano = texto.count('.')\n# tapar una palabra: CADA palabra es un ejemplo, y la respuesta ya está en el texto\ngratis = len(palabras) - 1\nfig, ax = plt.subplots(figsize=(7.2, 5.2))\nbarras = ax.bar(['etiquetado\\na mano', 'tapando\\nuna palabra'], [a_mano, gratis],\n                color=[RED, GREEN], width=0.5)\nfor b, v in zip(barras, [a_mano, gratis]):\n    ax.text(b.get_x() + b.get_width() / 2, v + gratis * 0.03, str(v), ha='center',\n            fontsize=26, fontweight='bold', color=TXT)\nax.set_ylim(0, gratis * 1.24)   # aire para que el número no toque el título\nax.set_ylabel('ejemplos de entrenamiento', fontsize=18)\nax.set_yticks([])\nax.set_title('del MISMO párrafo de 5 frases')\nax.set_xlabel('la respuesta ya estaba dentro del texto', color=CYAN, fontsize=18,\n              fontweight='bold', labelpad=14)",
+        "display_code": [
+          "a_mano = texto.count('.')",
+          "gratis = len(palabras) - 1",
+          "# el mismo párrafo, dos formas de contar"
+        ],
+        "caption": "datos.py"
+      }
+    },
+    {
+      "narration": "La respuesta siempre estuvo dentro del texto.",
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.35,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "la respuesta",
+            "serif": true
+          },
+          {
+            "text": "YA ESTABA EN EL TEXTO",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "cinematic macro of a dense page of printed text where one single word slowly lifts up off the paper and floats, glowing, while the rest of the page stays flat and dark",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Pero entrenar uno de esos cuesta millones. Mañana: cómo lo usas tú sin tener ni una GPU.",
+      "beat_type": "cta",
+      "visual_type": "host",
+      "host_top": {
+        "kind": "save",
+        "title": "SERIE: CÓMO LA IA LEE",
+        "subtitle": "SIGUIENTE: SIN GPU Y SIN MILLONES →"
+      }
+    }
+  ],
+  "hook_locked": true
+}

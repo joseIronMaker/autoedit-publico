@@ -1,0 +1,113 @@
+{
+  "title": "Piedra, papel o tijera con reglas de verdad",
+  "slug": "curso_py14_piedra_papel_tijera",
+  "tema": "programar piedra papel o tijera con un diccionario de reglas en vez de una escalera de ifs",
+  "theme": "curso python con ia",
+  "hook_tipo": "demostracion",
+  "keyword": "piedra papel tijera python",
+  "hook_headline": [
+    "9 REGLAS",
+    "1 DICCIONARIO"
+  ],
+  "pregunta_ab": "¿Escalera de ifs o diccionario de reglas?",
+  "music_prompt": "hard techno bed, dark industrial groove, 150 BPM, rolling kick, restrained under a voice, instrumental, no vocals",
+  "modo": "corto",
+  "hook_locked": true,
+  "scenes": [
+    {
+      "beat_type": "hook",
+      "visual_type": "terminal",
+      "narration": "Piedra, papel o tijera parece juego de niños… hasta que lo programas: tres jugadas, nueve combinaciones y un marcador. Se lo pido al agente con las reglas en un diccionario, y fíjate que le doy la ESTRUCTURA, no el código. Es como pedir tacos: si no dices de qué, te los dan de lo que sobró.",
+      "pause_after": 0.35,
+      "terminal": {
+        "title": "ppt.py",
+        "lines": [
+          {
+            "text": "GANA_A = {\"piedra\": \"tijera\", ...}"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "claude 'escribe ppt.py: piedra papel o tijera con reglas en un diccionario'",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "custom",
+      "narration": "La forma torpe es encadenar ifs: si yo saqué piedra y la máquina tijera, gano; piedra y papel, pierdo… y así nueve veces. Te sale una escalera que nadie quiere leer, ni tú, ni el que la escribió, o sea tú de la semana pasada. La forma buena es un diccionario de reglas: cada jugada apunta a la que le gana. Tres líneas.",
+      "custom_anim": {
+        "description": "A la izquierda se apilan una a una nueve barras etiquetadas if, if, if... formando una escalera cada vez más alta y torcida, con una X roja al final y el texto nueve ifs. A la derecha aparece una ficha compacta con tres renglones: piedra → tijera, papel → piedra, tijera → papel, con una palomita verde y el texto tres reglas. La escalera se desvanece y la ficha se queda al centro. Sin más cifras que nueve y tres."
+      }
+    },
+    {
+      "beat_type": "contexto",
+      "visual_type": "terminal",
+      "narration": "Léelo conmigo: piedra le gana a tijera, papel a piedra, tijera a papel. Ese es TODO el diccionario. Y la decisión es UNA línea: si lo que le gana a mi jugada es la de la máquina, gano. Nueve casos convertidos en una pregunta. Ese, cabrón, es el momento en que dejas de escribir código y empiezas a pensarlo.",
+      "terminal": {
+        "title": "ppt.py",
+        "lines": [
+          {
+            "text": "GANA_A = {\"piedra\": \"tijera\","
+          },
+          {
+            "text": "          \"papel\": \"piedra\","
+          },
+          {
+            "text": "          \"tijera\": \"papel\"}"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "/home/jose/tiktok/.venv/bin/python ver.py ppt.py --lento && sleep 20",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "giro",
+      "visual_type": "terminal",
+      "narration": "El marcador son dos variables: una sube cuando ganas, otra cuando pierdes, y el empate no paga, igual que en la vida. Cinco jugadas contra la máquina, que elige al azar, y al final el conteo. Corre distinto cada vez porque random es random. Si te sale racha mala no es el código, es tu suerte, y esa no la arregla Python.",
+      "terminal": {
+        "title": "python3 ppt.py",
+        "lines": [
+          {
+            "text": "piedra contra tijera: ganas"
+          },
+          {
+            "text": "marcador: ganaste 1, perdiste 2"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "cat ppt.py; echo; echo '$ python3 ppt.py'; python3 ppt.py",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "cta",
+      "visual_type": "kinetic_video",
+      "narration": "Nueve reglas en tres líneas: eso hace un diccionario. La que viene: le ponemos ventana al juego, y ya se ve como juego de verdad y no como cita a ciegas por terminal. ¿Escalera de ifs o diccionario de reglas? Yo digo diccionario en cuanto pasas de tres casos.",
+      "pause_after": 0.3,
+      "kinetic_video": {
+        "video": "/home/jose/tiktok/videos/_clips_pagados/gen_ver_filtros_que_ya_usaste__veo_4.mp4",
+        "words": [
+          {
+            "text": "nueve reglas",
+            "serif": true
+          },
+          {
+            "text": "TRES LÍNEAS",
+            "accent": true
+          }
+        ],
+        "variant": "dark"
+      }
+    }
+  ]
+}

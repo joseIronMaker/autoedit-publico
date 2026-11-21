@@ -1,0 +1,16 @@
+Puede que una inteligencia artificial acabe de resolver un problema de un millón de dólares.
+Y casi nadie puede comprobarlo.
+En septiembre, OpenAI anunció un resultado sobre Navier-Stokes, las ecuaciones de cómo se mueven los fluidos, uno de los Problemas del Milenio.
+Dice que usó un modelo interno, unos diez mil agentes y ochenta y ocho horas, con humanos dirigiendo.
+¿Es verdad? Esto es lo que se sabe.
+El Instituto Clay, que da el premio, habla de que aparentemente quedó resuelto, y dice que revisará sin prisa.
+Unos matemáticos señalaron que la versión formal y el texto no dicen exactamente lo mismo.
+Y un experto aclara que el resultado usa una fuerza externa. La pregunta de fondo, sin ella, sigue abierta.
+Hasta hoy, nadie ha encontrado un error. Pero tampoco está confirmado.
+Lo demostrado es más modesto, y aun así brutal.
+En julio de dos mil veinticinco, Gemini alcanzó nivel de oro en la Olimpiada de Matemáticas.
+En mayo de este año, un modelo de OpenAI refutó una conjetura de Erdős, y nueve matemáticos verificaron la prueba.
+Y también hay papelones: se presumió que GPT-5 había resuelto diez problemas, y solo los había encontrado ya resueltos.
+Producir una prueba ya no es lo difícil.
+Lo difícil es que alguien pueda decirte...
+si es cierta.

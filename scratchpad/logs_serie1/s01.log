@@ -1,0 +1,31 @@
+→ guion guion de Claude (guionista)
+→ estilo generando imagen ancla de marca
+→ voz toma única de 7 escenas
+  voz: 1 toma de 66.4s partida en 7 escenas (prosodia continua, modelo eleven_multilingual_v2)
+→ escena 1/7 generando voz
+→ escena 1/7 grabando herramienta REAL
+→ escena 2/7 generando voz
+→ escena 2/7 generando imagen
+→ escena 2/7 animando (Ken Burns)
+→ escena 3/7 generando voz
+→ escena 3/7 programando animación a medida
+→ escena 3/7 animando custom
+→ escena 3/7 QC visual rechazó: Texto corrupto e ilegible en la primera opción de la lista (
+→ escena 3/7 programando animación a medida
+→ escena 3/7 animando custom
+→ escena 4/7 generando voz
+→ escena 4/7 programando animación a medida
+→ escena 4/7 animando custom
+→ escena 5/7 generando voz
+→ escena 5/7 grabando herramienta REAL
+→ escena 6/7 generando voz
+→ escena 6/7 animando kinetic
+→ escena 7/7 generando voz
+→ escena 7/7 generando imagen
+→ escena 7/7 animando (Ken Burns)
+→ ensamblando 7 escenas → gen_ia_citar_o_adivinar.mp4
+→ audio audio continuo + SFX de transición
+✔ /home/jose/tiktok/videos/gen_ia_citar_o_adivinar.mp4
+
+Ahora pásalo por el flujo normal para subtítulos y copys:
+  autoedit gen_ia_citar_o_adivinar.mp4 --auto   (o desde la web)

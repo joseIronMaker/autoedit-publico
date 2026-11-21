@@ -1,0 +1,128 @@
+{
+  "tema": "los tres nombres del selector de Gemini, mismo prompt",
+  "corridas_por_tarea": 4,
+  "tareas": 6,
+  "fuente_menu": "https://support.google.com/gemini/answer/13275745",
+  "modelos": {
+    "gemini-flash-lite-latest": {
+      "etiqueta_en_el_menu": "Flash-Lite",
+      "aciertos": 12,
+      "de": 24,
+      "pct": 50.0,
+      "tareas_resueltas": 3,
+      "corridas_perdidas": 0,
+      "detalle": [
+        {
+          "tarea": 1,
+          "aciertos": 0,
+          "de": 4
+        },
+        {
+          "tarea": 2,
+          "aciertos": 0,
+          "de": 4
+        },
+        {
+          "tarea": 3,
+          "aciertos": 4,
+          "de": 4
+        },
+        {
+          "tarea": 4,
+          "aciertos": 0,
+          "de": 4
+        },
+        {
+          "tarea": 5,
+          "aciertos": 4,
+          "de": 4
+        },
+        {
+          "tarea": 6,
+          "aciertos": 4,
+          "de": 4
+        }
+      ]
+    },
+    "gemini-flash-latest": {
+      "etiqueta_en_el_menu": "Flash",
+      "aciertos": 24,
+      "de": 24,
+      "pct": 100.0,
+      "tareas_resueltas": 6,
+      "corridas_perdidas": 0,
+      "detalle": [
+        {
+          "tarea": 1,
+          "aciertos": 4,
+          "de": 4
+        },
+        {
+          "tarea": 2,
+          "aciertos": 4,
+          "de": 4
+        },
+        {
+          "tarea": 3,
+          "aciertos": 4,
+          "de": 4
+        },
+        {
+          "tarea": 4,
+          "aciertos": 4,
+          "de": 4
+        },
+        {
+          "tarea": 5,
+          "aciertos": 4,
+          "de": 4
+        },
+        {
+          "tarea": 6,
+          "aciertos": 4,
+          "de": 4
+        }
+      ]
+    },
+    "gemini-pro-latest": {
+      "etiqueta_en_el_menu": "Pro",
+      "aciertos": 24,
+      "de": 24,
+      "pct": 100.0,
+      "tareas_resueltas": 6,
+      "corridas_perdidas": 0,
+      "detalle": [
+        {
+          "tarea": 1,
+          "aciertos": 4,
+          "de": 4
+        },
+        {
+          "tarea": 2,
+          "aciertos": 4,
+          "de": 4
+        },
+        {
+          "tarea": 3,
+          "aciertos": 4,
+          "de": 4
+        },
+        {
+          "tarea": 4,
+          "aciertos": 4,
+          "de": 4
+        },
+        {
+          "tarea": 5,
+          "aciertos": 4,
+          "de": 4
+        },
+        {
+          "tarea": 6,
+          "aciertos": 4,
+          "de": 4
+        }
+      ]
+    }
+  }
+}

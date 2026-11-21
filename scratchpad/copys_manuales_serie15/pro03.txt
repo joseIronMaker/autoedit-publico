@@ -1,0 +1,17 @@
+Tomé un prompt y no le cambié ni una letra. Solo cambié el modelo que lo contesta.
+
+Seis problemas de varios pasos, cada uno corrido cuatro veces, contra dos modelos de la misma familia. El grande resolvió los seis. El chico resolvió tres.
+
+Mismo texto. Mismas tareas. Mismo día. 6 de 6 contra 3 de 6.
+
+Y el detalle que lo vuelve útil: el chico falla siempre las mismas tres. No es mala suerte ni una corrida rara — es que ese modelo no puede con esas, y ninguna redacción se lo va a arreglar.
+
+Ahí se cae el negocio de los packs de prompts. Compras el que le funcionó a alguien, lo pegas igualito, te sale mal, y concluyes que lo escribiste mal tú. El prompt estaba bien. Lo que cambió fue quién lo contestó.
+
+Yo vengo de medir los cuatro trucos famosos y ninguno movió nada. Este sí: es la única variable que en mis mediciones cambió el resultado.
+
+Mi postura, y me ahorra tardes enteras: cuando un prompt falla, antes de reescribirlo lo corro tal cual en el modelo bueno. Si ahí sale, el texto nunca fue el problema.
+
+Un prompt no es bueno o malo. Es bueno o malo con un modelo.
+
+Cuando te falla un prompt, ¿lo reescribes o cambias de modelo?

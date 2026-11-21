@@ -1,0 +1,288 @@
+{
+ "tema": "menta",
+ "recursos": {
+  "backprop": "videos/_clips_pagados/gen_dl_backpropagation__veo_0.mp4",
+  "descenso": "videos/_clips_pagados/gen_dl_gradient_descent__veo_0.mp4",
+  "loss": "videos/_clips_pagados/gen_dl_loss_error__veo_0.mp4",
+  "lr": "videos/_clips_pagados/gen_dl_learning_rate__veo_0.mp4",
+  "error": "jose05.assets/plot_error.png",
+  "gradiente": "jose05.assets/plot_gradiente.png"
+ },
+ "paneles": [
+  {
+   "t": 0.0,
+   "spec": {
+    "kind": "headline",
+    "kicker": "redes neuronales",
+    "lines": [
+     "¿CÓMO",
+     "APRENDEN?"
+    ]
+   }
+  },
+  {
+   "t": 4.58,
+   "spec": {
+    "kind": "define",
+    "label": "el encargo",
+    "term": "Predecir el precio",
+    "body": "De una casa, a partir de sus características."
+   }
+  },
+  {
+   "t": 15.72,
+   "spec": {
+    "kind": "flow",
+    "title": "las entradas",
+    "steps": [
+     "Habitaciones y baños",
+     "Metros cuadrados",
+     "La ubicación"
+    ]
+   }
+  },
+  {
+   "t": 28.68,
+   "spec": {
+    "kind": "compare",
+    "title": "un ejemplo",
+    "left": {
+     "head": "Entra",
+     "body": "4 baños · 3 habitaciones · 180 m²"
+    },
+    "right": {
+     "head": "Sale",
+     "body": "Un precio"
+    },
+    "verdict": "Un número, no una categoría"
+   }
+  },
+  {
+   "t": 39.32,
+   "spec": {
+    "kind": "headline",
+    "kicker": "y no una casa",
+    "lines": [
+     "MILES",
+     "DE CASAS",
+     "CON SU PRECIO"
+    ]
+   }
+  },
+  {
+   "t": 50.16,
+   "spec": {
+    "kind": "headline",
+    "kicker": "la pregunta de hoy",
+    "lines": [
+     "¿CÓMO SE",
+     "AJUSTA SOLA?"
+    ]
+   }
+  },
+  {
+   "t": 60.92,
+   "spec": {
+    "kind": "flow",
+    "title": "son cuatro pasos",
+    "steps": [
+     "Paso hacia adelante",
+     "Medir el error",
+     "Backpropagation",
+     "Optimizar"
+    ]
+   }
+  },
+  {
+   "t": 71.3,
+   "spec": {
+    "kind": "neural",
+    "mode": "red",
+    "layers": [
+     4,
+     4,
+     3,
+     1
+    ],
+    "title": "paso 1 · hacia adelante",
+    "caption": "Entran los datos de la casa por la izquierda."
+   }
+  },
+  {
+   "t": 83.88,
+   "spec": {
+    "kind": "code",
+    "caption": "los pesos que tiene AHORA mismo",
+    "lines": [
+     "# paso hacia adelante",
+     "z = X @ W + b",
+     "a = activacion(z)",
+     "# ...capa tras capa",
+     "prediccion = a_final"
+    ]
+   }
+  },
+  {
+   "t": 94.64,
+   "spec": {
+    "kind": "define",
+    "label": "porque una red es",
+    "term": "Multiplicar y sumar",
+    "body": "Y pasar el resultado por una función de activación. Nada más."
+   }
+  },
+  {
+   "t": 106.08,
+   "spec": {
+    "kind": "headline",
+    "kicker": "y al final",
+    "lines": [
+     "SALE",
+     "UN NÚMERO"
+    ]
+   }
+  },
+  {
+   "t": 113.06,
+   "spec": {
+    "kind": "define",
+    "label": "paso 2",
+    "term": "El error",
+    "body": "La distancia entre el precio real y el que adivinó."
+   }
+  },
+  {
+   "t": 124.1,
+   "spec": {
+    "kind": "compare",
+    "title": "midiendo",
+    "left": {
+     "head": "Real",
+     "body": "5 000"
+    },
+    "right": {
+     "head": "Predijo",
+     "body": "10 000"
+    },
+    "verdict": "Error: 5 000"
+   }
+  },
+  {
+   "t": 135.62,
+   "spec": {
+    "kind": "clip",
+    "video": "@loss",
+    "lines": [
+     "ESA DIFERENCIA",
+     "ES EL ERROR"
+    ]
+   }
+  },
+  {
+   "t": 146.5,
+   "spec": {
+    "kind": "define",
+    "label": "paso 3",
+    "term": "Backpropagation",
+    "body": "El error viaja hacia atrás por la red. Es la regla de la cadena, cálculo puro."
+   }
+  },
+  {
+   "t": 162.46,
+   "spec": {
+    "kind": "clip",
+    "video": "@backprop",
+    "lines": [
+     "DE REGRESO",
+     "POR LA RED"
+    ]
+   }
+  },
+  {
+   "t": 166.2,
+   "spec": {
+    "kind": "define",
+    "label": "y de ahí sale",
+    "term": "El gradiente",
+    "body": "Cuánto está afectando cada peso al error, y hacia dónde."
+   }
+  },
+  {
+   "t": 178.8,
+   "spec": {
+    "kind": "clip",
+    "video": "@descenso",
+    "lines": [
+     "PASO 4",
+     "OPTIMIZAR"
+    ]
+   }
+  },
+  {
+   "t": 193.14,
+   "spec": {
+    "kind": "plot",
+    "image": "@gradiente",
+    "title": "esto es real: descenso ejecutado",
+    "caption": "El gradiente dice hacia dónde mover cada peso."
+   }
+  },
+  {
+   "t": 202.68,
+   "spec": {
+    "kind": "flow",
+    "title": "y vuelta a empezar",
+    "steps": [
+     "Pesos nuevos",
+     "Otra vez los datos",
+     "Otra predicción"
+    ]
+   }
+  },
+  {
+   "t": 214.46,
+   "spec": {
+    "kind": "compare",
+    "title": "la misma casa, otra vuelta",
+    "left": {
+     "head": "Real",
+     "body": "5 000"
+    },
+    "right": {
+     "head": "Predijo",
+     "body": "4 998"
+    },
+    "verdict": "Error: 2"
+   }
+  },
+  {
+   "t": 233.34,
+   "spec": {
+    "kind": "clip",
+    "video": "@lr",
+    "lines": [
+     "Y OTRA VEZ",
+     "HASTA CASI CERO"
+    ]
+   }
+  },
+  {
+   "t": 242.96,
+   "spec": {
+    "kind": "plot",
+    "image": "@error",
+    "title": "esto es real: entrenamiento",
+    "caption": "El error de verdad, bajando época tras época."
+   }
+  },
+  {
+   "t": 260.64,
+   "spec": {
+    "kind": "define",
+    "label": "cada vuelta se llama",
+    "term": "Época",
+    "body": "Una pasada completa a los datos. Así aprende una red neuronal."
+   }
+  }
+ ]
+}

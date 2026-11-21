@@ -1,0 +1,24 @@
+{
+  "tema": "posicion del dato dentro de un prompt largo",
+  "replica_de": "Liu et al., 'Lost in the Middle', TACL 2023 (arXiv 2307.03172)",
+  "modelo": "gemini-flash-latest",
+  "n_por_posicion": 20,
+  "registros_distractores": 300,
+  "posiciones": {
+    "inicio": {
+      "aciertos": 20,
+      "de": 20,
+      "pct": 100.0
+    },
+    "medio": {
+      "aciertos": 20,
+      "de": 20,
+      "pct": 100.0
+    },
+    "final": {
+      "aciertos": 20,
+      "de": 20,
+      "pct": 100.0
+    }
+  }
+}

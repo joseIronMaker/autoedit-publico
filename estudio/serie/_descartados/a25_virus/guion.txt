@@ -1,0 +1,17 @@
+Una inteligencia artificial escribió el genoma de un virus. Y el virus funcionó.
+Un equipo del Instituto Arc y Stanford entrenó a Evo, un modelo que no lee palabras, sino letras de ADN.
+Le pidieron diseñar fagos: virus que atacan bacterias, no personas.
+Escribió genomas que no existían en la naturaleza.
+Los científicos construyeron cerca de trescientos en el laboratorio.
+Dieciséis funcionaron. Y mataban a la bacteria.
+Se publicó este agosto en la revista Science.
+Pero fíjate quién hizo qué.
+Evo es un modelo, no un agente. Quienes eligieron el objetivo, sintetizaron y probaron fueron personas.
+Lo mismo con Co-Scientist de Google, publicado en Nature: un sistema de agentes que propone hipótesis, con humanos eligiendo el problema y haciendo los experimentos.
+Y aquí vuelven las cuatro preguntas.
+En software, un agente corre la prueba y sabe en segundos si falló.
+En biología, la prueba es una célula, un ratón, o una persona. Toma meses, o años.
+Científicos de varios laboratorios lo resumen así: el problema ya no es generar un descubrimiento. Es verificarlo.
+La inteligencia artificial ya puede proponer vida.
+Quien todavía decide si funciona...
+es el laboratorio.

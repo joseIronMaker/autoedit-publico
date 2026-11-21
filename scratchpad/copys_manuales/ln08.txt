@@ -1,0 +1,16 @@
+Las redes recurrentes funcionaban. Y aun así se murieron en cinco años.
+
+Tres defectos que ningún truco arregló:
+1. Todo lo leído se comprime en un solo resumen, y ahí se pierde información.
+2. Lee de a una palabra: la GPU se queda esperando su turno.
+3. La memoria larga nunca terminó de funcionar del todo.
+
+El tercero duele, pero la que la mató fue la segunda. Si no puedes usar miles de núcleos a la vez, no puedes entrenar con internet entero — y ese, no la memoria, era el cuello de botella.
+
+Es la lección que más me ha servido como ingeniero: el modelo que gana no siempre es el más listo, es el que se puede entrenar en paralelo.
+
+Mañana: la idea que quitó la memoria por completo.
+
+¿La mató la memoria o la lentitud? Yo digo la lentitud.
+
+#redesneuronales #gpu #deeplearning #transformers #iaconjose

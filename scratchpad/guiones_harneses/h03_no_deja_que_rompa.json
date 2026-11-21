@@ -1,0 +1,83 @@
+{
+  "slug": "h_no_deja_que_rompa",
+  "tema": "permisos y sandbox en un harness de codigo: la lista de lo que puede ejecutar sin preguntarte, por que el modo que aprueba todo es el peligroso y como se acota",
+  "title": "Le di permiso una vez. Borró lo que no debía.",
+  "theme": "hielo",
+  "hook_locked": true,
+  "concepto": "el modo de permisos de un harness: la regla escrita de qué acciones ejecuta solo, cuáles te pregunta y en qué carpeta puede tocar",
+  "en_una_frase": "El harness no pide permiso por acción: consulta una lista que tú aprobaste al principio, y todo lo que esté en esa lista se ejecuta sin volver a preguntarte.",
+  "quien_decide": "tú decides esa lista una sola vez, casi siempre sin leerla, y después el bucle ejecuta contra ella cientos de veces",
+  "que_cuesta": "un comando destructivo aprobado sin querer se ejecuta en tu carpeta real, no en una copia, y no hay deshacer",
+  "palanca": "córrelo dentro de una carpeta con git y con el trabajo ya guardado: no es que no rompa, es que puedas volver atrás",
+  "pregunta_ab": "Tú qué prefieres: aprobar cada paso y ser lento, o dejarlo suelto en una copia?",
+  "scenes": [
+    {
+      "beat_type": "cold_open",
+      "visual_type": "terminal",
+      "narration": "Le di permiso una vez, al principio, para no estar aprobando cada paso. Doscientas acciones después, una borró algo que no debía.",
+      "terminal": {
+        "title": "lo que aprobé sin leer",
+        "lines": [
+          {"prompt": true, "text": "¿permitir escribir archivos?      [ sí, siempre ]"},
+          {"prompt": true, "text": "¿permitir correr comandos?        [ sí, siempre ]"},
+          {"text": "…y ese 'siempre' vale para todo lo que venga."},
+          {"text": "no vuelve a preguntar.", "accent": true}
+        ]
+      }
+    },
+    {
+      "beat_type": "definicion",
+      "visual_type": "image",
+      "narration": "Porque un permiso, aquí, no es un candado que se abre cada vez. Es una lista: qué puede ejecutar solo, qué te tiene que preguntar, y en qué carpeta puede meter la mano. Esa lista la apruebas al principio, casi siempre sin leerla, y después el bucle ejecuta contra ella todo el rato.",
+      "image_prompts": [
+        "A clipboard with a checklist hanging beside a heavy workshop door, warm work light. Documentary photography, muted palette, no readable text.",
+        "A hand ticking one box on that clipboard, extreme macro, raking light. Documentary photography.",
+        "The heavy door standing open into a dim room, nobody in frame. Documentary photography, muted palette."
+      ]
+    },
+    {
+      "beat_type": "mecanismo",
+      "visual_type": "terminal",
+      "narration": "Y por eso la vuelta tiene un paso más que casi nadie ve. El modelo pide correr algo. El harness recibe el pedido, lo compara contra la lista y decide: si está permitido, lo ejecuta y le devuelve la salida; si no, se detiene y te pregunta a ti. El modelo nunca ejecuta. Solo pide.",
+      "terminal": {
+        "title": "el paso que nadie ve",
+        "lines": [
+          {"prompt": true, "text": "el modelo pide:  borrar build/"},
+          {"text": "         el harness lo compara contra la lista"},
+          {"prompt": true, "text": "permitido    →  se ejecuta, sin avisarte"},
+          {"prompt": true, "text": "no permitido →  se detiene y te pregunta"},
+          {"text": "la lista decide. no el modelo.", "accent": true}
+        ],
+        "progress": {"label": "pedir · comparar · ejecutar o preguntar"}
+      }
+    },
+    {
+      "beat_type": "que_cuesta",
+      "visual_type": "image",
+      "narration": "Así que el modo cómodo, ese que aprueba todo para no interrumpirte, es justo el que te puede costar caro. No porque el modelo sea malo: porque tu carpeta real no es una copia, y un comando que borra no tiene deshacer. A mí me pasó una vez y desde entonces trabajo distinto.",
+      "image_prompts": [
+        "An open trash bin beside a desk with crumpled paper inside, warm dim light. Documentary photography, muted palette, no readable text.",
+        "A hand reaching into that bin, extreme macro at night. Documentary photography, shallow depth of field."
+      ]
+    },
+    {
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "narration": "No confíes en que no rompa. Haz que se pueda deshacer.",
+      "kinetic_video": {
+        "words": [{"text": "NO CONFÍES"}, {"text": "EN QUE NO ROMPA"}, {"text": "HAZ QUE SE DESHAGA"}],
+        "variant": "dark",
+        "video": "videos/gen_ln_lstm_compuertas.assets/veo_4.mp4"
+      }
+    },
+    {
+      "beat_type": "cierre",
+      "visual_type": "image",
+      "narration": "Entonces lo que yo hago no es acotarle los permisos hasta que sea inútil. Es correrlo siempre dentro de una carpeta con control de versiones y con mi trabajo ya guardado antes de empezar. Así lo peor que puede pasar es volver atrás. Tú qué prefieres: aprobar cada paso y ser lento, o dejarlo suelto en una copia?",
+      "image_prompts": [
+        "A key hanging on a hook beside a spare key on the next hook, warm evening light. Documentary photography, muted palette, no readable text.",
+        "A hand taking only the spare key, seen close from the side. Documentary photography, shallow depth of field."
+      ]
+    }
+  ]
+}

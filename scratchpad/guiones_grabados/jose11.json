@@ -1,0 +1,179 @@
+{
+  "tema": "hielo",
+  "ratio_clip": 0.45,
+  "recursos": {
+    "herramientas": "jose11.assets/img_herramientas.png",
+    "manos": "jose11.assets/img_manos.png",
+    "informe": "jose11.assets/img_informe.png",
+    "engranaje": "videos/_clips_pagados/gen_ln_tres_defectos__veo_0.mp4",
+    "cadena": "videos/_clips_pagados/gen_ln_backprop_en_el_tiempo__veo_4.mp4",
+    "cerebro": "jose11.assets/img_cerebro.png"
+  },
+  "paneles": [
+    {
+      "t": 0.0,
+      "spec": {
+        "kind": "headline",
+        "kicker": "ia con josé",
+        "lines": [
+          "QUÉ ES",
+          "UN AGENTE"
+        ]
+      }
+    },
+    {
+      "t": 6.9,
+      "spec": {
+        "kind": "define",
+        "label": "la definición",
+        "term": "Un agente",
+        "body": "Software que hace tareas por ti, solo."
+      }
+    },
+    {
+      "t": 11.9,
+      "spec": {
+        "kind": "flow",
+        "title": "son tres cosas, no una",
+        "steps": [
+          "1 · El cerebro: un LLM",
+          "2 · Las herramientas",
+          "3 · El bucle agéntico"
+        ]
+      }
+    },
+    {
+      "t": 25.8,
+      "spec": {
+        "kind": "photo",
+        "images": [
+          "@cerebro"
+        ],
+        "caption": "pieza 1: el cerebro es un LLM"
+      }
+    },
+    {
+      "t": 34.2,
+      "spec": {
+        "kind": "clip",
+        "video": "@engranaje",
+        "lines": [
+          "UN CEREBRO",
+          "SIN MANOS",
+          "NO HACE NADA"
+        ]
+      }
+    },
+    {
+      "t": 52.9,
+      "spec": {
+        "kind": "photo",
+        "images": [
+          "@herramientas"
+        ],
+        "caption": "pieza 2: las herramientas"
+      }
+    },
+    {
+      "t": 64.1,
+      "spec": {
+        "kind": "flow",
+        "title": "qué le damos",
+        "steps": [
+          "Buscar en internet",
+          "Editar un documento",
+          "Programar y ejecutar"
+        ]
+      }
+    },
+    {
+      "t": 71.1,
+      "spec": {
+        "kind": "photo",
+        "images": [
+          "@manos"
+        ],
+        "caption": "brazos y piernas del cerebro"
+      }
+    },
+    {
+      "t": 83.6,
+      "spec": {
+        "kind": "reveal",
+        "mode": "cortina",
+        "before": {
+          "text": "lo hace una vez",
+          "label": "un chat"
+        },
+        "after": {
+          "text": "lo repite hasta lograrlo",
+          "label": "un agente"
+        },
+        "caption": "eso es el bucle agéntico"
+      }
+    },
+    {
+      "t": 94.7,
+      "spec": {
+        "kind": "clip",
+        "video": "@cadena",
+        "lines": [
+          "ITERA",
+          "HASTA LOGRARLO"
+        ]
+      }
+    },
+    {
+      "t": 105.8,
+      "spec": {
+        "kind": "photo",
+        "images": [
+          "@informe"
+        ],
+        "caption": "«hazme el informe de estas ventas»"
+      }
+    },
+    {
+      "t": 121.9,
+      "spec": {
+        "kind": "flow",
+        "title": "la vuelta del bucle",
+        "steps": [
+          "No salió a la primera",
+          "Vuelve a intentar",
+          "Hasta la condición de parada"
+        ]
+      }
+    },
+    {
+      "t": 133.1,
+      "spec": {
+        "kind": "completa",
+        "modo": "simple",
+        "prompt": "informe de ventas ",
+        "tokens": [
+          "→",
+          " leyendo",
+          " Excel…",
+          " → ",
+          " redactando…",
+          " → ",
+          " listo."
+        ],
+        "label": "condición de parada",
+        "caption": "cuando la tarea está hecha, para"
+      }
+    },
+    {
+      "t": 144.5,
+      "spec": {
+        "kind": "cita",
+        "text": "Un cerebro, unas manos y un bucle.",
+        "highlight": [
+          "bucle."
+        ],
+        "source": "ia con josé"
+      }
+    }
+  ]
+}

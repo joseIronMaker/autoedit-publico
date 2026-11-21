@@ -1,0 +1,96 @@
+{
+  "slug": "ag_le_dije_que_si",
+  "tema": "Le dije que sí 172 veces a mi agente y ni una vez le dije que no: la lista de permisos que nadie revisa",
+  "title": "Le dije que sí 172 veces. Ninguna vez le dije que no.",
+  "theme": "hielo",
+  "hook_locked": true,
+  "quien_decide": "tu lista de permisos decide qué puede hacer el agente sin preguntarte, y esa lista la escribes tú a puros clics de 'permitir siempre'",
+  "que_cuesta": "un comando destructivo aprobado por inercia sobre tus archivos, tu rama de git o tu base de datos, con tus mismos permisos de usuario",
+  "palanca": "abre tu archivo de permisos y escribe la PRIMERA regla de prohibición: borrar y mover fuera de la carpeta del proyecto. Si la lista de prohibidos está vacía, todo tu control es la ventanita que aceptas sin leer",
+  "pregunta_ab": "¿El botón de permitir lo aprietas leyendo, o ya lo aprietas por inercia?",
+  "scenes": [
+    {
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "narration": "Conté las veces que le dije que sí a mi agente sin leer. Ciento setenta y dos. Y las veces que le dije que no: la lista ni siquiera existe.",
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "172 VECES SÍ"
+          },
+          {
+            "text": "NINGUNA"
+          },
+          {
+            "text": "VEZ NO"
+          }
+        ],
+        "variant": "dark",
+        "video": "videos/gen_ln_lstm_compuertas.assets/veo_4.mp4"
+      }
+    },
+    {
+      "beat_type": "contexto",
+      "visual_type": "image",
+      "narration": "Porque así se construye esa lista: una ventanita a la vez. Te pregunta si puede correr un comando, tú tienes prisa, le das a permitir siempre, y esa decisión se queda escrita para todas las veces que vienen.",
+      "image_prompts": [
+        "A stack of signed paper permission slips spiked on a metal desk spike, seen from a low angle under a single lamp, the pile tall and leaning. Documentary photography, muted palette, no readable text.",
+        "A hand adding one more slip to the top of the spike without looking, motion blur on the hand, warm side light. Macro, shallow depth of field.",
+        "The full spike of slips beside an empty second spike with nothing on it, both on the dark desk, side light raking across. Documentary photography, no readable text."
+      ]
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "ml_demo",
+      "narration": "Así que los conté, en mi propia máquina y con código. Ciento setenta y dos permisos concedidos entre los dos archivos de configuración. Ciento tres de ellos son comandos de terminal. Y prohibiciones: cero. La sección de prohibidos no está vacía, es que no existe.",
+      "ml_demo": {
+        "caption": "medir_permisos.py",
+        "editor_frac": 0.26,
+        "code": "import json\nd = json.load(open('/home/jose/tiktok/mediciones/permisos_agente.json'))\nph = d['por_herramienta']\ntot = d['totales']\nnoms = list(ph.keys())\nvals = [ph[k] for k in noms]\nfig, (ax, bx) = plt.subplots(2, 1, figsize=(9.2, 7.4), gridspec_kw={'height_ratios': [1.5, 1]})\nb = ax.barh(noms[::-1], vals[::-1], color=[CYAN, ORANGE, MAG, GREEN, CYAN, ORANGE][:len(noms)][::-1], height=0.6)\nax.set_xlim(0, max(vals) * 1.28)\nax.set_xlabel('permisos concedidos')\nax.set_title('a qué le dije que sí')\nfor r, v in zip(b, vals[::-1]):\n    ax.text(r.get_width() + max(vals) * 0.03, r.get_y() + r.get_height() / 2, str(v), va='center', color=TXT, fontsize=21, fontweight='bold')\nbx.bar(['permitido', 'prohibido'], [tot['allow'], tot['deny']], color=[RED, GREEN], width=0.45)\nbx.set_ylim(0, tot['allow'] * 1.3)\nbx.set_title('permitido contra prohibido')\nfor i, v in enumerate([tot['allow'], tot['deny']]):\n    bx.text(i, v + tot['allow'] * 0.05, str(v), ha='center', color=TXT, fontsize=30, fontweight='bold')\nif not tot['deny_existe_la_clave']:\n    bx.text(1, tot['allow'] * 0.42, 'la sección\\nni existe', ha='center', va='center', color=MAG, fontsize=17, fontweight='bold')\nfig.text(0.5, 0.012, 'reglas contadas en los dos settings.local.json de esta máquina · 14-ago-2026 · solo se cuentan, no se muestran', ha='center', fontsize=11, color='#969491')",
+        "display_code": [
+          "d = json.load(open('permisos_agente.json'))",
+          "d['totales']['allow'], d['totales']['deny']"
+        ]
+      }
+    },
+    {
+      "beat_type": "giro",
+      "visual_type": "image",
+      "narration": "Porque el agente corre con tus permisos de usuario, no con unos suyos. Todo lo que tú puedes borrar, él lo puede borrar. Por eso la ventanita no es un candado: es la única puerta, y lleva ciento setenta y dos veces abierta.",
+      "image_prompts": [
+        "A single door left ajar in a dark corridor with warm light spilling through the gap onto the floor. Documentary photography, muted palette, nobody in frame.",
+        "Extreme macro of an old lock plate on that door with no key in it and no bolt thrown, warm raking light, deep shadows.",
+        "The same corridor seen from inside the lit room looking out at the dark, the door still ajar. Shallow depth of field, film grain."
+      ]
+    },
+    {
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "narration": "Por eso tu lista de permitidos crece sola. La de prohibidos la escribes tú, o no existe.",
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "LA LISTA"
+          },
+          {
+            "text": "DE PROHIBIDOS"
+          },
+          {
+            "text": "LA ESCRIBES TÚ"
+          }
+        ],
+        "variant": "dark",
+        "video": "videos/gen_ver_pixel_por_pixel.assets/veo_0.mp4"
+      }
+    },
+    {
+      "beat_type": "cta",
+      "visual_type": "image",
+      "narration": "Así que mi postura, y la digo habiendo sido yo el de los ciento setenta y dos: el problema no es darle permisos, es no haber escrito nunca un no. Hoy mismo abre tu configuración y escribe la primera prohibición: borrar y salir de la carpeta del proyecto. Dos minutos. ¿El botón de permitir lo aprietas leyendo, o ya por inercia?",
+      "image_prompts": [
+        "A hand writing a single short line in a nearly empty notebook page on a dark desk, warm lamp at night, a laptop closed beside it. Documentary photography, no readable writing.",
+        "The second desk spike now holding one single paper slip, beside the tall stack, both lit from the side on the dark desk. Macro, shallow depth of field, no readable text."
+      ]
+    }
+  ]
+}

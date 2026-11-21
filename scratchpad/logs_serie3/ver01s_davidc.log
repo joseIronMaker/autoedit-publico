@@ -1,0 +1,58 @@
+=== ver01s_galeria_sin_cara.json  →  gen_ver_galeria_sin_cara  (tema hielo)
+→ guion guion de Claude (guionista)
+→ hook motor de hooks: 4 candidatos + juez de retención
+  ⚠ hook descartado: introduce cifras que el guion no trae (255.). Me quedo con el cold-open original.
+→ hook juez: hook descartado por inventar cifras
+→ voz toma única de 6 escenas
+  voz: 1 toma de 43.0s partida en 6 escenas (prosodia continua, modelo eleven_multilingual_v2)
+→ escena 1/6 generando voz
+→ escena 1/6 sin cambios: reutilizo el render
+→ escena 2/6 generando voz
+→ escena 2/6 programando animación a medida
+→ escena 2/6 animando custom
+→ escena 3/6 generando voz
+→ escena 3/6 animando receipt
+→ escena 4/6 generando voz
+→ escena 4/6 ejecutando modelo real (sklearn)
+→ escena 4/6 animando código → gráfica
+→ escena 5/6 generando voz
+→ escena 5/6 generando video de fondo (Veo)
+→ escena 5/6 animando kinetic_video
+→ escena 6/6 generando voz
+→ escena 6/6 programando animación a medida
+→ escena 6/6 animando custom
+→ ensamblando 6 escenas → gen_ver_galeria_sin_cara.mp4
+→ audio audio continuo + SFX de transición
+→ música generando cama del video (Lyria)
+✔ /home/jose/tiktok/videos/gen_ver_galeria_sin_cara.mp4
+
+Ahora pásalo por el flujo normal para subtítulos y copys:
+  autoedit gen_ver_galeria_sin_cara.mp4 --auto   (o desde la web)
+→ Transcribiendo con Whisper (small, CPU)…
+  107 palabras, 45.9s → /home/jose/tiktok/videos/gen_ver_galeria_sin_cara.autoedit/transcript.json
+→ Gemini analizando la transcripción (cortes + énfasis)…
+
+Plan de edición (7 cortes, −4.9s de 45.9s):
+  ✂    4.94 →    5.54  silencio de 0.8s
+  ✂   13.26 →   14.32  silencio de 1.3s
+  ✂   20.84 →   21.36  silencio de 0.8s
+  ✂   23.06 →   23.54  silencio de 0.7s
+  ✂   33.42 →   34.08  silencio de 0.9s
+  ✂   38.40 →   39.28  silencio de 1.1s
+  ✂   45.22 →   45.89  silencio final
+  ★ 14 palabras enfatizadas en subtítulos
+→ Renderizando gen_ver_galeria_sin_cara_final.mp4: 7 tramos, 41.0s…
+✔ /home/jose/tiktok/videos/gen_ver_galeria_sin_cara_final.mp4
+→ Generando copys (TikTok/IG/FB)…
+✔ /home/jose/tiktok/videos/gen_ver_galeria_sin_cara.autoedit/copys.md
+
+✔ ver01_galeria_sin_cara.mp4  (41.1s)
+  QC   → /home/jose/tiktok/scratchpad/qc_ver_galeria_sin_cara.png
+  copy → revisar y reescribir a mano si hace falta:
+Así entiende tu teléfono tu cara en números dentro de la galería.
+No busca tu rostro, lee los saltos de brillo entre pixeles del 0 al 255.
+Y mañana en @ia.conjose te enseño la operación exacta que lo hace en un segundo.
+
+¿Fascinante o aterrador? Yo digo que es pura belleza matemática.
+
+#iaconjose #fotos #galeria #numeros #maquina

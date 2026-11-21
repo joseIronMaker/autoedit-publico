@@ -1,0 +1,1 @@
+c02_gradiente {"cortes":[],"tapa_la_voz":[],"limpio":true}

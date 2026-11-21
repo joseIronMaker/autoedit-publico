@@ -1,0 +1,105 @@
+{
+  "slug": "pro_cinco_piezas",
+  "tema": "No existe el prompt mágico: existen cinco piezas, y la que omites la inventa el modelo — con el mismo encargo mandado dos veces en pantalla real",
+  "title": "No te falta el prompt mágico. Te faltan cinco piezas.",
+  "theme": "hielo",
+  "hook_locked": true,
+  "concepto": "las cinco piezas de un prompt: contexto, tarea, formato, ejemplos y restricciones",
+  "en_una_frase": "Un prompt no es una frase mágica: son cinco piezas, y la que tú no pongas el modelo la rellena con lo más común que existe.",
+  "quien_decide": "lo que TÚ omites decide lo que el modelo inventa para rellenar el hueco",
+  "que_cuesta": "tres reescrituras por tarea, todos los días, culpando al modelo de algo que nunca le dijiste",
+  "palanca": "antes de mandarlo, cuenta las cinco piezas: contexto, tarea, formato, ejemplos, restricciones. La que falte, la inventa él",
+  "pregunta_ab": "Cuando te sale mal, ¿reescribes el prompt entero o buscas qué pieza faltó?",
+  "scenes": [
+    {
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "narration": "No existe el prompt mágico. Lo que existe son cinco piezas, y la que tú no pongas, el modelo se la inventa.",
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "LA PIEZA"
+          },
+          {
+            "text": "QUE NO PONES"
+          },
+          {
+            "text": "SE LA INVENTA"
+          }
+        ],
+        "variant": "dark",
+        "video": "videos/gen_ln_lo_que_aprendio_solo.assets/veo_0.mp4"
+      }
+    },
+    {
+      "beat_type": "contexto",
+      "visual_type": "image",
+      "narration": "Porque llevo años dando estas clases a gente que no programa, y a mí el patrón me sale siempre igual. Nadie escribe un prompt malo por flojera. Lo escribe incompleto. Y cuando al modelo le llega un hueco, no se detiene a preguntarte: lee lo que sí le diste, busca lo más parecido que vio mientras aprendía, y devuelve eso. Rellenar el hueco no es un error suyo. Es literalmente su trabajo.",
+      "image_prompts": [
+        "A workshop table with a partly assembled wooden object and one empty slot where a piece is clearly missing, hand tools around it, warm side light. Documentary photography, muted palette, no text.",
+        "A hand hovering over a box of small wooden parts, choosing one, shallow depth of field, warm lamp above. Documentary photography.",
+        "The same wooden object from above with a mismatched piece forced into the empty slot, visible gap around it. Documentary photography, muted palette."
+      ]
+    },
+    {
+      "beat_type": "demostracion_incompleta",
+      "visual_type": "screen_demo",
+      "narration": "Así que míralo pasar. Este es el prompt incompleto que manda todo el mundo: escríbeme un correo para avisar de un retraso. Fíjate en todo lo que rellena solo, sin avisar.",
+      "screen_demo": {
+        "tool": "chatgpt",
+        "prompt": "Escríbeme un correo para avisar de un retraso.",
+        "nota": "captura REAL: se ve que inventa destinatario, motivo, tono y formato"
+      }
+    },
+    {
+      "beat_type": "las_cinco_piezas",
+      "visual_type": "image",
+      "narration": "Entonces las piezas son estas cinco, y se cuentan con los dedos. Contexto: quién eres tú y quién va a leer. Tarea: el verbo exacto de lo que quieres. Formato: en qué te lo tiene que entregar. Ejemplos: una muestra de cómo se ve bien. Y restricciones: el largo, el tono, y lo que no debe hacer.",
+      "image_prompts": [
+        "Five identical blank index cards laid in a row on a dark wooden table under a single lamp, evenly spaced, shot from directly above. Documentary photography, no text, no writing.",
+        "A hand placing the third index card straight in the row, warm side light, deep shadows. Documentary photography, no readable writing.",
+        "The complete row of five cards clipped together with a metal clip, seen close up at a low angle. Documentary photography, muted palette.",
+        "The same five cards standing upright in a wooden holder on a tidy dark desk beside a closed laptop. Documentary photography, no text."
+      ]
+    },
+    {
+      "beat_type": "demostracion_completa",
+      "visual_type": "screen_demo",
+      "narration": "Y por eso ahora va el mismo encargo, pero con las cinco puestas: quién soy, qué quiero, en qué formato, un ejemplo del saludo, y el límite de palabras. Mismo modelo, mismo día. Otro correo.",
+      "screen_demo": {
+        "tool": "chatgpt",
+        "prompt": "Eres el encargado de una refaccionaria en Monterrey. Escribe un correo para avisarle a un cliente que su pedido se retrasa una semana. Formato: asunto y tres párrafos cortos. Empieza el saludo así: 'Buen día, Ramón:'. Máximo 120 palabras, tono directo, y no prometas una fecha nueva.",
+        "nota": "captura REAL: el mismo encargo con las cinco piezas puestas"
+      }
+    },
+    {
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "narration": "Un prompt no se escribe. Se arma.",
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "UN PROMPT"
+          },
+          {
+            "text": "NO SE ESCRIBE"
+          },
+          {
+            "text": "SE ARMA"
+          }
+        ],
+        "variant": "dark",
+        "video": "videos/gen_ln_orden_lo_es_todo.assets/veo_4.mp4"
+      }
+    },
+    {
+      "beat_type": "cierre",
+      "visual_type": "image",
+      "narration": "Así que mi postura, después de enseñar esto muchas veces a gente que jamás va a programar: cuando te salga mal, no reescribas el prompt entero, porque vas a volver a dejar fuera la misma pieza que dejaste fuera la primera vez. Busca cuál de las cinco faltó y pon esa. Cuando te sale mal, ¿reescribes todo o buscas qué pieza faltó?",
+      "image_prompts": [
+        "A person's hands writing on an index card at a desk at night, warm lamp, a laptop dark behind. Shot from over the shoulder, no readable writing, film grain.",
+        "A tidy desk at dawn with a row of index cards clipped together beside a closed laptop and a cup of coffee. Documentary photography, muted palette, no text."
+      ]
+    }
+  ]
+}

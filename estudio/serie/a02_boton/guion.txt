@@ -1,0 +1,18 @@
+Aquí va un secreto: la inteligencia artificial jamás ha hecho nada.
+Ni mandar un mensaje. Ni reservar una mesa. Nada.
+Cuando parece que lo hizo, solo escribió.
+Tu agente está organizando la fiesta, y necesita saber si hay mesa para doce el sábado.
+No puede llamar al restaurante. Lo único que sabe hacer es escribir.
+Así que escribe un papelito muy ordenado: herramienta, reservar. Personas, doce. Día, sábado.
+Y se detiene. Se queda esperando.
+Afuera hay un programa normal, sin nada de inteligencia, como un mensajero. Toma el papelito, y hace la llamada de verdad.
+Regresa con la respuesta: hay mesa a las ocho.
+Y apenas entonces, el modelo te dice: listo, encontré lugar.
+A esto le llamamos function calling, llamada a funciones. Apareció en junio de dos mil veintitrés.
+Parece un detalle. Es el momento en que el lenguaje se volvió acción.
+Si sabe escribir bien el papelito, puede manejar cualquier programa del mundo, sin tocarlo.
+Y también significa algo que casi nadie te cuenta.
+Quien decide qué se hace de verdad no es la inteligencia artificial. Es el mensajero.
+Ahí está la puerta. Y ahí se pone la llave.
+La máquina nunca aprieta el botón.
+Solo escribe que alguien lo apriete.

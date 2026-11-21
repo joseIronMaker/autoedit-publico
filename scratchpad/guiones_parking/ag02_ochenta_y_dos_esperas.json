@@ -1,0 +1,96 @@
+{
+  "slug": "ag_ochenta_y_dos_esperas",
+  "tema": "Un agente dio 94 vueltas por una tarea y 82 fueron solo esperar: el bucle, y quién decide cuándo parar",
+  "title": "El agente dio 94 vueltas. 82 fueron esperar.",
+  "theme": "hielo",
+  "hook_locked": true,
+  "quien_decide": "el agente decide cuándo terminó, y mientras no decida sigue dando vueltas cobrándote cada una",
+  "que_cuesta": "en esa sola tarea leyó dos millones cuatrocientos mil tokens para escribir seis mil, y eso son cincuenta y siete centavos de dólar por una tarea que dejó seis archivos",
+  "palanca": "no lo dejes esperando procesos largos: lanza tú el proceso pesado y vuelve con el resultado. Y antes de soltarle la siguiente tarea, mira la proporción entre lo que leyó y lo que escribió",
+  "pregunta_ab": "¿Dejas que el agente decida cuándo terminó, o le pones tú el tope?",
+  "scenes": [
+    {
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "narration": "Le pedí una tarea a mi agente y dio noventa y cuatro vueltas. Ochenta y dos de esas noventa y cuatro fueron solo esperar.",
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "94 VUELTAS"
+          },
+          {
+            "text": "82 FUERON"
+          },
+          {
+            "text": "SOLO ESPERAR"
+          }
+        ],
+        "variant": "dark",
+        "video": "videos/gen_ver_filtros_que_ya_usaste.assets/veo_0.mp4"
+      }
+    },
+    {
+      "beat_type": "contexto",
+      "visual_type": "image",
+      "narration": "Porque un agente no contesta y ya: da vueltas, y en cada vuelta piensa, usa una herramienta, mira lo que salió y decide si vuelve a empezar o si ya terminó, sin preguntarte a ti en ningún momento de esa cadena. Él decide. Y mientras no decida, cada vuelta te la cobra.",
+      "image_prompts": [
+        "A hand-cranked mechanism on a workbench with a leather belt looping around two wheels, warm workshop light, dust in the air. Documentary photography, muted palette, no text.",
+        "Extreme macro of the belt turning around one wheel, motion blur on the belt, shallow depth of field, warm side light.",
+        "The same workshop seen wide with the mechanism still running and nobody at the bench, cold daylight through a high window. Documentary photography."
+      ]
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "ml_demo",
+      "narration": "Así que abrí las bitácoras reales de mi agente, cuarenta sesiones, y las conté por código. En la más larga: noventa y cuatro llamadas, ochenta y dos fueron esperar a un proceso, doce fueron trabajo. Y en las cuarenta sesiones juntas, casi la mitad de todo lo que hizo fue esperar.",
+      "ml_demo": {
+        "caption": "medir_bucle_agente.py",
+        "editor_frac": 0.26,
+        "code": "import json\nd = json.load(open('/home/jose/tiktok/mediciones/bucle_agente.json'))\np = d['sesion_mas_larga']\na = d['agregado']\nfig, (ax, bx) = plt.subplots(2, 1, figsize=(9.2, 7.4))\nax.barh(['esperar', 'trabajo'], [p['esperas'], p['trabajo']], color=[RED, GREEN], height=0.5)\nax.set_xlim(0, p['llamadas'] * 1.25)\nax.set_xlabel('llamadas en UNA tarea')\nax.set_title('la sesión más larga: %d vueltas' % p['llamadas'])\nfor i, v in enumerate([p['esperas'], p['trabajo']]):\n    ax.text(v + p['llamadas'] * 0.03, i, str(v), va='center', color=TXT, fontsize=26, fontweight='bold')\nbx.bar(['leyó', 'escribió'], [p['entrada'] / 1000.0, p['salida'] / 1000.0], color=[ORANGE, CYAN], width=0.45)\nbx.set_ylabel('miles de tokens')\nbx.set_ylim(0, p['entrada'] / 1000.0 * 1.14)\nbx.set_title('en esa misma tarea')\nbx.text(0, p['entrada'] / 1000.0 * 0.90, '{:,}'.format(p['entrada']).replace(',', ' '), ha='center', va='top', color='#121318', fontsize=21, fontweight='bold')\nbx.text(1, p['entrada'] / 1000.0 * 0.06, '{:,}'.format(p['salida']).replace(',', ' '), ha='center', va='bottom', color=TXT, fontsize=21, fontweight='bold')\nbx.text(0.5, p['entrada'] / 1000.0 * 0.55, 'leyó %dx más\\nde lo que escribió\\n= %.2f USD' % (round(p['entrada'] / max(1, p['salida'])), p['costo_usd']), ha='center', va='center', color=MAG, fontsize=19, fontweight='bold')\nfig.text(0.5, 0.012, '%d sesiones reales de Codex CLI · %.1f%% de todas las llamadas fueron esperar · precios de lista · 15-ago-2026' % (d['sesiones_analizadas'], a['pct_espera']), ha='center', fontsize=11, color='#969491')",
+        "display_code": [
+          "d = json.load(open('bucle_agente.json'))",
+          "p['esperas'], p['trabajo'], p['costo_usd']"
+        ]
+      }
+    },
+    {
+      "beat_type": "giro",
+      "visual_type": "image",
+      "narration": "Y por eso la cuenta sale rara. En esa tarea leyó dos millones cuatrocientos mil tokens y escribió seis mil quinientos. Trescientos setenta veces más lectura que escritura. No pagas por lo que el agente produce. Pagas por lo que vuelve a leer en cada vuelta.",
+      "image_prompts": [
+        "A taxi meter mounted on a dashboard at night, numbers glowing faintly, the car standing still at a curb. Documentary photography, muted palette, shallow depth of field.",
+        "Extreme macro of the same meter's dial, the car clearly parked, reflections of streetlights on the windscreen. Warm amber light, deep shadows.",
+        "The parked car seen from outside on an empty street at night, meter still lit inside. Documentary photography, film grain, nobody in frame."
+      ]
+    },
+    {
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "narration": "El agente cobra por vuelta. Y es él quien decide cuántas da.",
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "COBRA"
+          },
+          {
+            "text": "POR VUELTA"
+          },
+          {
+            "text": "Y ÉL DECIDE"
+          }
+        ],
+        "variant": "dark",
+        "video": "videos/gen_ln_lo_que_aprendio_solo.assets/veo_4.mp4"
+      }
+    },
+    {
+      "beat_type": "cta",
+      "visual_type": "image",
+      "narration": "Así que mi postura, después de ver mis propias bitácoras: el tope lo pones tú o no lo pone nadie. Lo más barato que puedes hacer hoy es no dejarlo esperando procesos largos: lánzalos tú y vuelve con el resultado. ¿Dejas que decida él, o le pones tú el tope?",
+      "image_prompts": [
+        "A hand turning off a workshop machine at its switch, the belt slowing to a stop, warm side light, dust in the air. Documentary photography, no faces.",
+        "The quiet workbench afterwards with the machine stopped and the tools laid in a row, morning light through a window. Shallow depth of field, film grain."
+      ]
+    }
+  ]
+}

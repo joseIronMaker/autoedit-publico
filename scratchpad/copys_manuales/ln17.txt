@@ -1,0 +1,13 @@
+No le cambiaron la idea. Solo lo hicieron cien veces más grande.
+
+Mismo Transformer, mismo entrenamiento de tapar una palabra. Lo único que cambió fue el tamaño: de cientos de millones a cientos de miles de millones de parámetros. Todo ese monstruo entrenado para una sola tarea tontísima: adivinar la palabra que sigue.
+
+Y aquí está lo raro. Al pasar cierto tamaño, el modelo empezó a hacer cosas que nadie le pidió y que a escalas menores simplemente no aparecían.
+
+Es la parte que más me cuesta explicar en una junta: no hubo un algoritmo nuevo. Hubo un cambio de tamaño y un cambio de comportamiento.
+
+Mañana: las tres cosas que aprendió solo.
+
+¿Fue mejor idea o solo más tamaño? Yo digo solo tamaño.
+
+#escala #llm #transformers #parametros #iaconjose

@@ -1,0 +1,111 @@
+{
+  "tema": "Habilidades emergentes: lo que la IA aprendió sin que nadie se lo enseñara",
+  "modo": "corto",
+  "title": "Habilidades emergentes: lo que la IA aprendió sin que nadie se lo enseñara",
+  "slug": "ln_lo_que_aprendio_solo",
+  "hook_tipo": "contraria",
+  "theme": "sunset",
+  "image_style": "surreal fine-art photograph of unexpected forms emerging out of a dense swarm of tiny particles, burnt orange and coral light against deep charcoal, dreamlike and slightly unsettling, vertical 9:16 composition, lower third kept simple, no text, no letters, no words, no watermark",
+  "keyword": "habilidades emergentes modelos de lenguaje",
+  "hook_headline": [
+    "NADIE",
+    "SE LO ENSEÑÓ"
+  ],
+  "pregunta_ab": "¿Emergió inteligencia o solo estadística?",
+  "music_prompt": "eerie cinematic synth instrumental, detuned arpeggios and a slow swelling low brass, mysterious and unsettling, no vocals, 94 BPM",
+  "scenes": [
+    {
+      "narration": "Un solo objetivo creó sus habilidades emergentes.",
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.45,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "1 OBJETIVO",
+            "accent": true
+          },
+          {
+            "text": "HABILIDADES EMERGENTES",
+            "accent": false
+          }
+        ],
+        "variant": "dark",
+        "veo_prompt": "cinematic macro of bare dark soil under a hard spotlight where several completely different green shoots suddenly push up through the surface at the same moment, slow motion",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "El entrenamiento fue uno solo: adivinar la palabra que sigue. Nada más. Y al crecer, aparecieron habilidades que no estaban en el plan.",
+      "beat_type": "hook",
+      "visual_type": "host",
+      "host_top": {
+        "kind": "headline",
+        "lines": [
+          "NADIE",
+          "SE LO ENSEÑÓ"
+        ]
+      }
+    },
+    {
+      "narration": "Le escribes una frase y le pones al final: esto en inglés sería. Y traduce. Le pones un comentario de código, y lo programa. Le das formato de diálogo, y conversa.",
+      "beat_type": "proof",
+      "visual_type": "showcase",
+      "showcase": {
+        "items": [
+          {
+            "label": "TRADUCE",
+            "image_prompt": "two glowing orange speech shapes made of light merging into one single shared form in a dark void"
+          },
+          {
+            "label": "PROGRAMA",
+            "image_prompt": "a coral beam of light assembling scattered metallic blocks into a precise working mechanism in a dark void"
+          },
+          {
+            "label": "CONVERSA",
+            "image_prompt": "two warm glowing orbs passing a pulse of light back and forth between them in a dark void"
+          }
+        ]
+      }
+    },
+    {
+      "narration": "A eso le llamamos habilidades emergentes: capacidades que aparecen solas al escalar. Y todas salieron del mismo sitio, de completar lo que sigue.",
+      "beat_type": "giro",
+      "visual_type": "custom",
+      "custom_anim": {
+        "description": "Un tronco central grueso y luminoso que sube por el centro. De él brotan, una tras otra y con rebote, cuatro ramas gruesas hacia los lados, cada una terminando en una pastilla grande con una etiqueta: 'TRADUCIR', 'PROGRAMAR', 'RESUMIR', 'CONVERSAR'. Las cuatro bien separadas, sin tocarse. Todas laten al final."
+      }
+    },
+    {
+      "narration": "Ni sus creadores lo vieron venir.",
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.35,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "ni sus creadores",
+            "serif": true
+          },
+          {
+            "text": "LO VIERON VENIR",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "an unexpected silent bloom of light erupting outward in a dark empty space, expanding in slow motion far beyond its own boundary, cinematic, deep blacks",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Mañana cerramos la serie: qué pasa cuando a eso le das herramientas y memoria.",
+      "beat_type": "cta",
+      "visual_type": "host",
+      "host_top": {
+        "kind": "save",
+        "title": "SERIE: CÓMO LA IA LEE",
+        "subtitle": "SIGUIENTE: EL CIERRE →"
+      }
+    }
+  ],
+  "hook_locked": true
+}

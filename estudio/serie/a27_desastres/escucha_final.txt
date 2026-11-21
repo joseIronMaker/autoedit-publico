@@ -1,0 +1,1 @@
+a27_desastres {"cortes":[],"tapa_la_voz":[],"limpio":true}

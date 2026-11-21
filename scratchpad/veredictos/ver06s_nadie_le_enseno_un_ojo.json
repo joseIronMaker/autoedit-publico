@@ -1,0 +1,121 @@
+{
+  "nota": {
+    "hook": 5,
+    "coherencia": 3,
+    "viralidad": 4,
+    "explicabilidad": 3,
+    "marca": 3
+  },
+  "problemas": [
+    {
+      "escena": 1,
+      "eje": "hook",
+      "gravedad": "grave",
+      "que": "Aunque cabe en nueve palabras y usa una afirmación contraria, «esos nueve números» no significa nada todavía ni nombra algo que el espectador use o reconozca.",
+      "arreglo": "Abrir con «Esta IA encontró mis lentes sin que nadie le explicara qué son» mientras aparece la foto y la activación sobre la montura."
+    },
+    {
+      "escena": 1,
+      "eje": "coherencia",
+      "gravedad": "grave",
+      "que": "La pregunta «¿aprende conceptos o patrones?» solo existe en la ficha y nunca se formula en la narración.",
+      "arreglo": "Rematar el hook con «¿aprendió el concepto de lentes o solo un patrón?» y conservar esa disyuntiva hasta contestarla."
+    },
+    {
+      "escena": 1,
+      "eje": "viralidad",
+      "gravedad": "grave",
+      "que": "La prueba prometida son nueve números invisibles sobre un video generado, no un resultado verificable que parezca imposible en los primeros dos segundos.",
+      "arreglo": "Mostrar desde el primer cuadro la foto real, el mapa de activación real y el código ejecutándose; después revelar qué produjo esa marca."
+    },
+    {
+      "escena": 2,
+      "eje": "explicabilidad",
+      "gravedad": "grave",
+      "que": "«Entrenamiento», «tarea» y «ventana» aparecen sin referente, y «apilar una ventana sobre otra» no describe de forma comprensible una convolución ni una capa.",
+      "arreglo": "Enseñar una cuadrícula 3×3 y decir «este filtro, una cuadrícula que recorre la foto, multiplica nueve pixeles y produce una nueva imagen»."
+    },
+    {
+      "escena": 2,
+      "eje": "marca",
+      "gravedad": "grave",
+      "que": "Afirmar que son nueve parámetros es técnicamente engañoso si la foto es RGB: un filtro 3×3 de entrada suele tener 27 pesos por canal de salida, no nueve.",
+      "arreglo": "Usar explícitamente una imagen en escala de grises y un filtro 3×3 de un canal, o mostrar los 27 pesos del filtro RGB y corregir la cifra."
+    },
+    {
+      "escena": 3,
+      "eje": "marca",
+      "gravedad": "grave",
+      "que": "Aplicar dos veces el mismo filtro no demuestra que una red entrenada construya cruces ni que reconozca la montura; faltan filtros distintos, canales, no linealidades y pesos aprendidos.",
+      "arreglo": "Reemplazar el filtro repetido por activaciones de dos capas reales de una CNN entrenada, identificando modelo, capa, entrada y código reproducible."
+    },
+    {
+      "escena": 3,
+      "eje": "viralidad",
+      "gravedad": "grave",
+      "que": "Que el código se ejecute no vuelve verificable la conclusión: la marca sobre los lentes puede ser una coincidencia escogida y no se compara con ninguna intervención.",
+      "arreglo": "Ocultar la montura en una segunda ejecución y mostrar que la activación cae, con el valor antes y después visible en pantalla."
+    },
+    {
+      "escena": 4,
+      "eje": "coherencia",
+      "gravedad": "grave",
+      "que": "Repite la promesa de la escena 2 —que al apilar aparece algo no programado— sin aportar una prueba nueva y luego salta de una montura a ojos y nariz.",
+      "arreglo": "Eliminar la repetición y usar esta escena para comparar, sobre la misma foto, activaciones reales de una capa temprana y una profunda."
+    },
+    {
+      "escena": 4,
+      "eje": "marca",
+      "gravedad": "grave",
+      "que": "«Salió de apilar» atribuye el resultado solo a la profundidad e ignora los datos, el objetivo de entrenamiento y el ajuste de pesos; además, una activación no prueba un concepto humano de ojo.",
+      "arreglo": "Decir «el entrenamiento ajustó los pesos para combinar patrones; algunas activaciones se alinean con partes como ojos, pero eso no prueba que entienda el concepto»."
+    },
+    {
+      "escena": 5,
+      "eje": "explicabilidad",
+      "gravedad": "grave",
+      "que": "«Las capas no se reparten el trabajo. Se lo heredan» es una metáfora sin etiqueta, difícil de descifrar y falsa si sugiere que una capa solo recibe en vez de transformar.",
+      "arreglo": "Sustituirla por «Cada capa transforma los patrones de la anterior y los combina en patrones más complejos»."
+    },
+    {
+      "escena": 5,
+      "eje": "coherencia",
+      "gravedad": "grave",
+      "que": "La tesis no elige entre conceptos y patrones, así que el video termina sin responder su única pregunta.",
+      "arreglo": "Contestar de forma explícita: «Aprende patrones estadísticos; algunos forman representaciones útiles que nosotros interpretamos como partes, no conceptos humanos garantizados»."
+    },
+    {
+      "escena": 5,
+      "eje": "marca",
+      "gravedad": "medio",
+      "que": "«Lo hice sobre mi foto» aporta cercanía, pero no una postura que distinga a un ingeniero de cualquier creador que corrió un filtro.",
+      "arreglo": "Añadir «Como ingeniero, yo no llamaría a esa activación un concepto todavía: es evidencia de un patrón útil»."
+    },
+    {
+      "escena": 6,
+      "eje": "coherencia",
+      "gravedad": "grave",
+      "que": "«Ya sabe que hay una cara» no se desprende de detectar bordes o partes y el cierre cambia a cajas delimitadoras antes de resolver conceptos contra patrones.",
+      "arreglo": "Cerrar primero con la respuesta sobre patrones y, solo después, decir «localizar la cara requiere otra salida del modelo; eso sigue mañana»."
+    },
+    {
+      "escena": 6,
+      "eje": "explicabilidad",
+      "gravedad": "medio",
+      "que": "«Ponerle el recuadro» introduce una tarea nueva sin nombrarla ni explicar por qué es distinta.",
+      "arreglo": "Nombrarla en lenguaje común y técnico: «Encontrar las coordenadas del recuadro se llama localización, y es una tarea distinta de clasificar»."
+    }
+  ],
+  "lo_que_funciona": [
+    "El hook hablado tiene nueve palabras y usa una afirmación contraria a lo que la gente suele asumir.",
+    "La foto propia puede sostener un ejemplo visual único si todas las escenas permanecen sobre esa misma entrada.",
+    "El cierre no pide like, follow, comentario ni guardado."
+  ],
+  "_hook_medido": {
+    "palabras": 9,
+    "caracteres": 66,
+    "segundos_aprox": 4.1,
+    "cabe_en_12": true,
+    "primera_frase": "Esos nueve números nadie los escribió"
+  }
+}

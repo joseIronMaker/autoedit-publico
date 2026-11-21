@@ -1,0 +1,13 @@
+Nadie le enseñó a traducir. Ni a programar. Ni a conversar.
+
+El entrenamiento fue uno solo: adivinar la palabra que sigue. Nada más. Y al crecer, aparecieron habilidades que no estaban en el plan de nadie.
+
+Le escribes una frase y le pones al final "esto en inglés sería": traduce. Le pones un comentario de código: lo programa. Le das formato de diálogo: conversa. Todas salen del mismo sitio — completar lo que sigue.
+
+A eso se le llama habilidades emergentes. Y la parte honesta que casi nunca se dice: ni sus creadores lo vieron venir, no estaba prometido en ningún paper previo.
+
+Mañana cerramos la serie: qué pasa cuando a eso le das herramientas y memoria.
+
+¿Emergió inteligencia o solo estadística? Yo digo estadística — pero de una escala que ya nos rebasó.
+
+#habilidadesemergentes #llm #ia #deeplearning #iaconjose

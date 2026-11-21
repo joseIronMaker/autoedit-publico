@@ -1,0 +1,29 @@
+{
+  "tema": "cuantos datos puede sacar de un contexto largo de un jalon",
+  "modelo": "gemini-flash-latest",
+  "n_por_condicion": 10,
+  "registros_distractores": 2500,
+  "condiciones": {
+    "1 datos a la vez": {
+      "claves_correctas": 10,
+      "de": 10,
+      "pct": 100.0,
+      "corridas_perfectas": 10,
+      "corridas": 10
+    },
+    "4 datos a la vez": {
+      "claves_correctas": 40,
+      "de": 40,
+      "pct": 100.0,
+      "corridas_perfectas": 10,
+      "corridas": 10
+    },
+    "8 datos a la vez": {
+      "claves_correctas": 80,
+      "de": 80,
+      "pct": 100.0,
+      "corridas_perfectas": 10,
+      "corridas": 10
+    }
+  }
+}

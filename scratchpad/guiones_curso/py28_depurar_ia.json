@@ -1,0 +1,96 @@
+{
+  "title": "Depurar el código que escribió la IA",
+  "slug": "curso_py28_depurar_ia",
+  "tema": "la rutina de tres pruebas para el código que escribe un agente y cómo reportarle un fallo",
+  "theme": "curso python con ia",
+  "hook_tipo": "demostracion",
+  "keyword": "depurar código de ia",
+  "hook_headline": [
+    "LA IA",
+    "NO PRUEBA"
+  ],
+  "pregunta_ab": "¿Los fallos con IA son culpa del prompt o de no probar?",
+  "music_prompt": "hard techno bed, dark industrial groove, 150 BPM, rolling kick, restrained under a voice, instrumental, no vocals",
+  "modo": "corto",
+  "hook_locked": true,
+  "scenes": [
+    {
+      "beat_type": "hook",
+      "visual_type": "terminal",
+      "narration": "La IA no escribe código malo. Escribe código que funciona con el caso que le contaste, y ya. Lo que no le contaste, para ella no existe. Le pido al agente que revise el promedio que escribió Codex y me diga qué le falta. A ver si se cachan entre colegas.",
+      "pause_after": 0.35,
+      "terminal": {
+        "title": "revisión",
+        "lines": [
+          {
+            "text": "claude 'revisa promedio_codex.py y dime que le falta'"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "claude 'revisa promedio_codex.py y dime que le falta'",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "terminal",
+      "narration": "Con la lista vacía, una versión devuelve cero y la otra revienta con división entre cero. Cinco segundos de prueba y ya sé cuál me sirve. Eso no te lo dice el prompt, ni te lo dice la IA, ni te lo dice tu fe: te lo dice correrlo con el caso feo.",
+      "terminal": {
+        "title": "python3 prueba_vacia.py",
+        "lines": [
+          {
+            "text": "claude: 0.0"
+          },
+          {
+            "text": "ZeroDivisionError: division by zero"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "cat prueba_vacia.py; echo; echo '$ python3 prueba_vacia.py'; python3 prueba_vacia.py",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "contexto",
+      "visual_type": "custom",
+      "narration": "Mi rutina, siempre la misma, tres preguntas. Uno: ¿qué pasa si le doy nada, cero o vacío? Dos: ¿qué pasa si le doy texto donde iba un número? Y tres: ¿qué pasa si le doy algo enorme? Tres corridas. Si las tres pasan, el código va. Y si no, ya sabes exactamente qué pedirle, en vez de ese lloriqueo de no me funciona.",
+      "custom_anim": {
+        "description": "Una máquina rectangular con la etiqueta el código que escribió la IA, con una boca de entrada a la izquierda y una de salida a la derecha. Por la entrada pasan tres pruebas una tras otra, cada una etiquetada mientras entra. Primera: una caja vacía con el texto nada; la máquina tiembla y escupe una X roja. Segunda: una ficha con letras donde debería ir un número; la máquina vuelve a temblar y escupe otra X roja. Tercera: una pila enorme de datos que entra despacio; la máquina aguanta y sale una palomita verde. Al final las tres pruebas quedan alineadas abajo con su resultado. Sin cifras."
+      }
+    },
+    {
+      "beat_type": "giro",
+      "visual_type": "custom",
+      "narration": "Y cuando encuentres el fallo, no le digas al agente que no funciona: eso no le dice NADA. Es como llegar con el doctor y decirle me duele el cuerpo. Dile qué le pasaste, qué esperabas y qué te devolvió. Con esas tres cosas lo arregla a la primera; sin ellas, adivina igual de mal que tú.",
+      "custom_anim": {
+        "description": "Un mensaje que se escribe solo dentro de una burbuja de chat dirigida a un agente dibujado a la derecha. Aparecen tres renglones uno por uno, cada uno con su etiqueta a la izquierda y su contenido a la derecha: le pasé, con una caja vacía; esperaba, con un cero; me devolvió, con un símbolo de error rojo. Cuando el tercer renglón termina, la burbuja se envía volando hacia el agente y él responde con una palomita verde y una línea de código corregida. Al lado, una burbuja tachada que solo dice no funciona, con una X. Sin cifras nuevas."
+      }
+    },
+    {
+      "beat_type": "cta",
+      "visual_type": "kinetic_video",
+      "narration": "La IA escribe; tú pruebas donde duele. En las dos últimas: cómo guardar tu trabajo para no perderlo nunca, y cómo enseñarlo. ¿Los fallos con IA son culpa del prompt o de no probar? Yo digo de no probar.",
+      "pause_after": 0.3,
+      "kinetic_video": {
+        "video": "/home/jose/tiktok/videos/_clips_pagados/gen_ln_olvidaba_el_principio__veo_4.mp4",
+        "words": [
+          {
+            "text": "la IA escribe",
+            "serif": true
+          },
+          {
+            "text": "TÚ PRUEBAS",
+            "accent": true
+          }
+        ],
+        "variant": "dark"
+      }
+    }
+  ]
+}

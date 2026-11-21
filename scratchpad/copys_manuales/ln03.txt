@@ -1,0 +1,13 @@
+ChatGPT nunca ve tu texto. Ni una sola letra.
+
+Escribe "inteligencia artificial" en el tokenizador real de GPT-4o y te devuelve esto: int / elig / encia / artificial. Dos palabras, cuatro pedazos. Por eso te cobran por tokens y no por palabras.
+
+Después cada pedazo se vuelve un vector, y el modelo aprende a poner cerca lo que significa parecido: "aprender" queda junto a "estudiar" y lejos de "tenis".
+
+Lo compruebo seguido cuando calculo el costo de un proyecto: en español casi siempre pagas más tokens que en inglés por decir lo mismo.
+
+Mañana: la neurona con memoria.
+
+¿La IA procesa palabras o números? Yo digo números.
+
+#tokens #chatgpt #inteligenciaartificial #nlp #iaconjose

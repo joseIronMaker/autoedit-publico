@@ -1,0 +1,116 @@
+{
+  "title": "Funciones: ponerle nombre a un pedazo de trabajo",
+  "slug": "curso_py11_funciones",
+  "tema": "qué es una función en Python: nombre, parámetros y return",
+  "theme": "curso python con ia",
+  "hook_tipo": "demostracion",
+  "keyword": "funciones en python",
+  "hook_headline": [
+    "NOMBRE",
+    "ENTRA · SALE"
+  ],
+  "pregunta_ab": "¿Funciones chiquitas o una grande que lo hace todo?",
+  "music_prompt": "hard techno bed, dark industrial groove, 150 BPM, rolling kick, restrained under a voice, instrumental, no vocals",
+  "modo": "corto",
+  "hook_locked": true,
+  "scenes": [
+    {
+      "beat_type": "hook",
+      "visual_type": "terminal",
+      "narration": "Una función es ponerle nombre a un pedazo de trabajo para no volver a escribirlo. O sea: la flojera bien aplicada, que en esta chamba se llama ingeniería. Este archivo define promedio UNA vez y la usa tres. Son siete líneas, léelas conmigo.",
+      "pause_after": 0.35,
+      "terminal": {
+        "title": "promedio.py",
+        "lines": [
+          {
+            "text": "def promedio(notas):"
+          },
+          {
+            "text": "    return sum(notas) / len(notas)"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "/home/jose/tiktok/.venv/bin/python ver.py promedio.py --lento && sleep 20",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "custom",
+      "narration": "Tiene tres partes y ya, cabrón. El nombre, para llamarla. Lo que entra entre paréntesis, que son los datos con los que va a trabajar. Y lo que devuelve con return, que es el resultado que te regresa. Si no pones return, la función hace su chamba y no te entrega nada: te devuelve None, la nada de Python. Como el compa que sí fue por las chelas pero se las tomó en el camino.",
+      "custom_anim": {
+        "description": "Una máquina rectangular grande con la etiqueta promedio encima. Por la izquierda entra una lista de tres fichas 8, 9, 10 a través de una boca etiquetada paréntesis: entra. Adentro gira un engranaje. Por la derecha sale una ficha con 9.0 por una boca etiquetada return: sale. Luego la misma máquina sin la boca de la derecha, con la etiqueta sin return, y lo que sale es una ficha gris que dice None con una X. Sin más cifras que 8, 9, 10 y 9.0."
+      }
+    },
+    {
+      "beat_type": "contexto",
+      "visual_type": "terminal",
+      "narration": "Míralo corriendo: la misma función con tres listas distintas saca tres promedios, y con la lista vacía devuelve cero en vez de reventar. Eso es lo bueno de una función: el trabajo se escribe una vez, se arregla en UN lugar y se usa en todos. Si tienes el mismo cálculo copiado en cinco archivos, no tienes cinco funciones: tienes cinco problemas con fecha.",
+      "terminal": {
+        "title": "python3 promedio.py",
+        "lines": [
+          {
+            "text": "9.0"
+          },
+          {
+            "text": "6.5"
+          },
+          {
+            "text": "0.0"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "cat promedio.py; echo; echo '$ python3 promedio.py'; python3 promedio.py",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "giro",
+      "visual_type": "terminal",
+      "narration": "Y esto es lo que le pides al agente cuando ya sabes leer: no que te la escriba, que te la MEJORE. Le pido que le ponga una guardia a la lista vacía, y fíjate que la guardia va ANTES de dividir, no después. Después de dividir entre cero ya no hay guardia que valga: el programa ya se murió y tú ahí, llevándole flores.",
+      "terminal": {
+        "title": "guardia",
+        "lines": [
+          {
+            "text": "if not notas:"
+          },
+          {
+            "text": "    return 0.0"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "claude 'reescribe promedio.py con una guardia para la lista vacia'",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "cta",
+      "visual_type": "kinetic_video",
+      "narration": "Nombre, entra, sale. Con funciones tu código deja de ser una tira de estambre y se vuelve piezas. La que viene: tu primer juego completo armado con ellas. ¿Funciones chiquitas o una grandota que lo hace todo? Yo, chiquitas: una función, un trabajo. La que hace todo no es una función, es un changarro.",
+      "pause_after": 0.3,
+      "kinetic_video": {
+        "video": "/home/jose/tiktok/videos/_clips_pagados/gen_ver_pixel_por_pixel__veo_0.mp4",
+        "words": [
+          {
+            "text": "una función",
+            "serif": true
+          },
+          {
+            "text": "UN TRABAJO",
+            "accent": true
+          }
+        ],
+        "variant": "dark"
+      }
+    }
+  ]
+}

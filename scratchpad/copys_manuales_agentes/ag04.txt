@@ -1,0 +1,15 @@
+Le escribí una frase. Salió a buscar solo, entró a tres sitios distintos y volvió con la respuesta. Nunca me preguntó si podía.
+
+Y no es que se lo haya saltado. Ya tenía permiso.
+
+Un permiso, aquí, no es un candado que se abre cada vez: es una regla escrita de qué puede ejecutar sin volver a preguntarte. La diste una sola vez, cuando prendiste esa opción o conectaste esa cuenta.
+
+El ciclo tiene un paso que nadie te enseña. El modelo escribe el pedido. El programa lo recibe, revisa su lista de permisos y decide: si está del lado del sí, lo ejecuta y le devuelve el resultado; si no, se detiene. El modelo nunca toca nada. Quien abre la puerta es el programa, y la abre con las llaves de quien lo configuró.
+
+Por eso lo pienso dos veces antes de conectarle una cuenta. Cuando le das acceso a tu correo o a tus archivos, no autorizaste una acción: autorizaste la capacidad. Desde ese momento cada cosa que pida se ejecuta con tus llaves, y tú te enteras cuando ya está hecho.
+
+Diste el permiso una vez. Él lo usa todas.
+
+Mi pregunta antes de conectarle algo ya no es si es seguro, porque esa no se puede contestar. Es otra: qué puede hacer esto sin volver a preguntarme. Si la respuesta es larga, ahí está el riesgo, y no en la IA.
+
+¿Tú qué prefieres: que te pregunte cada vez y sea lento, o que haga todo solo y te enteres después?

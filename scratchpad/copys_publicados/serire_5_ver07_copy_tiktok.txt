@@ -1,0 +1,7 @@
+Reconocerte es fácil. Ponerte el recuadro encima, no.
+El recuadro son cuatro números que la red tiene que producir, y no sabe por dónde empezar. Los conté para una foto de quinientos por quinientos: más de medio millón de recuadros posibles, y eso con solo seis tamaños.
+Dejó de probar todos. Aprendió a proponer unos cuantos.
+
+¿Buscar mejor o buscar menos? Yo digo buscar menos.
+
+#inteligenciaartificial #vision #redesneuronales #ia #tecnologia

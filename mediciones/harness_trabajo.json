@@ -1,0 +1,55 @@
+{
+  "tema": "lo que un harness hace y un chat no: editar y ejecutar",
+  "herramienta": "Claude Code (bitácoras reales de este proyecto)",
+  "bitacoras": {
+    "turnos_asistente": 12443,
+    "turnos_usuario": 751,
+    "llamadas_a_herramienta": 6394,
+    "escrituras_en_archivo": 1074,
+    "comandos_ejecutados": 2921,
+    "lecturas": 831,
+    "archivos_distintos_escritos": 289,
+    "herramientas_distintas": 34,
+    "top_herramientas": [
+      [
+        "Bash",
+        2921
+      ],
+      [
+        "Read",
+        831
+      ],
+      [
+        "Edit",
+        759
+      ],
+      [
+        "mcp__chrome-devtools__evaluate_script",
+        399
+      ],
+      [
+        "Write",
+        315
+      ],
+      [
+        "mcp__chrome-devtools__click",
+        297
+      ]
+    ]
+  },
+  "git": {
+    "commits": 107,
+    "primer_commit": "2026-07-04",
+    "ultimo_commit": "2026-08-16",
+    "dias_calendario": 44,
+    "lineas_agregadas": 32238,
+    "lineas_borradas": 3336,
+    "archivos_tocados": 502,
+    "lineas_python_vivas": 11574
+  },
+  "resumen": {
+    "escrituras_por_turno_mio": 1.43,
+    "acciones_por_cada_lectura": 4.8,
+    "lineas_por_dia": 733
+  }
+}

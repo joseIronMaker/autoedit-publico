@@ -1,0 +1,1 @@
+a01_manos {"cortes":[],"tapa_la_voz":[],"limpio":true}

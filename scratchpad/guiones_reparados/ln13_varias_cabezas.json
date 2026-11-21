@@ -1,0 +1,110 @@
+{
+  "tema": "Multi-head: varias atenciones mirando cosas distintas a la vez",
+  "modo": "corto",
+  "title": "Multi-head: varias atenciones mirando cosas distintas a la vez",
+  "slug": "ln_varias_cabezas",
+  "hook_tipo": "secreto",
+  "theme": "menta",
+  "image_style": "clean studio photograph of several coloured spotlights hitting the same dark object from different angles, each revealing a different detail, mint and teal with warm gold accents, crisp and premium, vertical 9:16 composition, lower third kept simple, no text, no letters, no words, no watermark",
+  "keyword": "multi head attention",
+  "hook_headline": [
+    "NO ES UNA",
+    "SON MUCHAS"
+  ],
+  "pregunta_ab": "¿Una mirada experta o muchas simples?",
+  "music_prompt": "bright melodic house instrumental, layered plucks and airy pads building in parallel, uplifting, no vocals, 120 BPM",
+  "scenes": [
+    {
+      "narration": "No hay una atención dentro de ChatGPT. Hay decenas, al mismo tiempo.",
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.45,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "no hay una atención",
+            "serif": true
+          },
+          {
+            "text": "HAY DECENAS",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "cinematic shot of dozens of narrow light beams sweeping a dark scene from many different angles all at once, crossing each other, together revealing a shape no single beam could show",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Una sola aprende un tipo de relación y se queda ahí. Así que en vez de pedirle todo a una, ponen varias en paralelo.",
+      "beat_type": "hook",
+      "visual_type": "host",
+      "host_top": {
+        "kind": "headline",
+        "lines": [
+          "NO ES UNA",
+          "SON MUCHAS"
+        ]
+      }
+    },
+    {
+      "narration": "Cada cabeza acaba especializándose sola: una sigue de quién se habla, otra se fija en las negaciones, otra en el tiempo verbal. Nadie se lo asignó.",
+      "beat_type": "proof",
+      "visual_type": "showcase",
+      "showcase": {
+        "items": [
+          {
+            "label": "CABEZA 1 · EL SUJETO",
+            "image_prompt": "a single mint-green spotlight isolating one figure among many dark silhouettes, the rest unlit, dark background"
+          },
+          {
+            "label": "CABEZA 2 · LA NEGACIÓN",
+            "image_prompt": "a glowing teal beam locking onto one small inverted triangle among many upright ones, dark background"
+          },
+          {
+            "label": "CABEZA 3 · EL TIEMPO",
+            "image_prompt": "a warm gold light tracing a clock hand sweeping across a dark field of frozen gears, dark background"
+          }
+        ]
+      }
+    },
+    {
+      "narration": "Al final se pegan todas las miradas en una sola salida. Por eso capta ironía: una cabeza ve el elogio y otra ve el remate que lo destruye.",
+      "beat_type": "giro",
+      "visual_type": "custom",
+      "custom_anim": {
+        "description": "Cuatro recuadros grandes en dos filas de dos, cada uno con un color distinto y una etiqueta corta, que miran la misma frase corta de arriba y cada uno subraya una palabra DIFERENTE de ella. Al final los cuatro recuadros se deslizan hacia el centro y se funden en uno solo, grande. Bien separados hasta el momento de fundirse."
+      }
+    },
+    {
+      "narration": "Muchas miradas simples valen más que una experta.",
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.35,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "muchas simples",
+            "serif": true
+          },
+          {
+            "text": "MÁS QUE UNA EXPERTA",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "many small thin beams of light sweeping a dark scene from many different angles at once, together revealing a shape that no single beam could show, cinematic",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Con esto ya tenemos todas las piezas. Mañana las armamos: el Transformer.",
+      "beat_type": "cta",
+      "visual_type": "host",
+      "host_top": {
+        "kind": "save",
+        "title": "SERIE: CÓMO LA IA LEE",
+        "subtitle": "SIGUIENTE: EL TRANSFORMER →"
+      }
+    }
+  ],
+  "hook_locked": true
+}

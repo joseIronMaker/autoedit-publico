@@ -1,0 +1,1 @@
+a02_boton {"cortes":[],"tapa_la_voz":[],"limpio":true}

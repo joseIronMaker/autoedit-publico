@@ -1,0 +1,124 @@
+{
+  "title": "Tu primera petición con requests",
+  "slug": "curso_py23_requests",
+  "tema": "hacer una petición HTTP con requests en Python y leer el código de estado",
+  "theme": "curso python con ia",
+  "hook_tipo": "demostracion",
+  "keyword": "requests python",
+  "hook_headline": [
+    "TRES",
+    "LÍNEAS"
+  ],
+  "pregunta_ab": "¿requests o la librería que ya trae Python?",
+  "music_prompt": "hard techno bed, dark industrial groove, 150 BPM, rolling kick, restrained under a voice, instrumental, no vocals",
+  "modo": "corto",
+  "hook_locked": true,
+  "scenes": [
+    {
+      "beat_type": "hook",
+      "visual_type": "terminal",
+      "narration": "Tres líneas de Python y tu programa trae datos de internet. Sin navegador, sin copiar y pegar, sin pedirle el favor a nadie. Le pido al agente que escriba clima punto pi con requests para preguntarle la temperatura de la Ciudad de México a open-meteo, que es gratis y sin registro. Mira lo que escribe.",
+      "pause_after": 0.35,
+      "terminal": {
+        "title": "clima.py",
+        "lines": [
+          {
+            "text": "r = requests.get(URL, timeout=20)"
+          },
+          {
+            "text": "datos = r.json()"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "claude 'escribe clima.py: pide la temperatura de CDMX a open-meteo con requests'",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "terminal",
+      "narration": "Léelo conmigo: la dirección lleva la pregunta pegada al final, después del signo de interrogación. Latitud, longitud, y qué quiero, que es la temperatura de ahorita. Requests punto get manda la pregunta. Punto json convierte la respuesta en un diccionario. Y de ahí sacas el dato igualito que en la clase de las fichas. Sí: lo de hace cinco clases sirve hoy. Por eso te dije que le pusieras atención.",
+      "terminal": {
+        "title": "clima.py",
+        "lines": [
+          {
+            "text": "?latitude=19.43&longitude=-99.13"
+          },
+          {
+            "text": "&current=temperature_2m"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "/home/jose/tiktok/.venv/bin/python ver.py clima.py --lento && sleep 20",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "contexto",
+      "visual_type": "terminal",
+      "narration": "Y esto lo contestó de verdad hace un momento: la temperatura real de la ciudad a esta hora. No es captura vieja ni un número que yo tecleé para que se viera bonito. Cada vez que lo corres vuelve a preguntar. Ahí es cuando tu programa deja de estar solo en el mundo.",
+      "terminal": {
+        "title": "python3 clima.py",
+        "lines": [
+          {
+            "text": "En la Ciudad de México hay 21.3 grados a las 23:00."
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "cat clima.py; echo; echo '$ python3 clima.py'; python3 clima.py",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "giro",
+      "visual_type": "terminal",
+      "narration": "Los códigos que vas a ver toda tu vida son tres. Doscientos: salió bien. Cuatrocientos cuatro: eso que pediste no existe. Quinientos: se rompió del lado de ELLOS, no del tuyo, y ese es el único que se disfruta. Mira: la dirección buena contesta doscientos, y una que me acabo de inventar contesta cuatrocientos cuatro.",
+      "terminal": {
+        "title": "curl",
+        "lines": [
+          {
+            "text": "status 200"
+          },
+          {
+            "text": "status 404"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "echo '$ curl dirección buena'; curl -s -o /dev/null -w 'status %{http_code}\\n' 'https://api.open-meteo.com/v1/forecast?latitude=19.43&longitude=-99.13&current=temperature_2m'; echo; echo '$ curl dirección inventada'; curl -s -o /dev/null -w 'status %{http_code}\\n' 'https://api.open-meteo.com/v1/nada'",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "cta",
+      "visual_type": "kinetic_video",
+      "narration": "get, json, y un código que te dice si salió bien. La que viene: cómo leer esa respuesta llena de llaves sin que te dé el patatús. ¿requests o la librería que ya trae Python? Yo digo requests: tres líneas contra quince, y la vida es corta.",
+      "pause_after": 0.3,
+      "kinetic_video": {
+        "video": "/home/jose/tiktok/videos/_clips_pagados/gen_ln_tres_defectos__veo_4.mp4",
+        "words": [
+          {
+            "text": "tres líneas",
+            "serif": true
+          },
+          {
+            "text": "Y DATOS DE INTERNET",
+            "accent": true
+          }
+        ],
+        "variant": "dark"
+      }
+    }
+  ]
+}

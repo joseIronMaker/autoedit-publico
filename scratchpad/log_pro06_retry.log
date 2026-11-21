@@ -1,0 +1,10 @@
+######## pro06 (reintento, navegador libre)
+Traceback (most recent call last):
+  File "/home/jose/tiktok/scratchpad/producir_serie15.py", line 94, in <module>
+    main()
+  File "/home/jose/tiktok/scratchpad/producir_serie15.py", line 68, in main
+    subprocess.run([str(PY / "autoedit-gen"), g["tema"], "--guion", str(gpath),
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/jose/tiktok/.venv/bin/autoedit-gen', 'aprendizaje en contexto: el modelo copia la FORMA de los ejemplos que le pones, y por eso dos ejemplos ordenan mejor la respuesta que un parrafo describiendo el formato', '--guion', '/home/jose/tiktok/scratchpad/guiones_serie15/pro06_dos_ejemplos.json', '--dir', '/home/jose/tiktok/videos']' returned non-zero exit status 1.
+videos/gen_pro_dos_ejemplos_final.mp4: No such file or directory

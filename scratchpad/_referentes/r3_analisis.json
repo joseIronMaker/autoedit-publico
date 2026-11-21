@@ -1,0 +1,84 @@
+{
+  "voz": {
+    "genero_aparente": "Masculino",
+    "edad_aparente": "30-45 años",
+    "acento": "Español neutro latinoamericano (matiz mexicano/centroamericano muy contenido y limpio, dicción de doblaje/documental)",
+    "timbre": "Barítono cálido, redondo, con cuerpo en medios-graves y presencia aireada (cercanía íntima sin ser susurrada).",
+    "tono_emocional": "Didáctico, sereno, paciente y revelador; transmite la calma de quien desarma algo complejo sin esfuerzo.",
+    "ritmo": "Pausado y deliberado (~125-135 palabras por minuto), construido en bloques condicionales idénticos ('Si... obtienes...').",
+    "uso_de_pausas": "Micro-pausas quirúrgicas justo antes del término técnico que se revela ('obtienes un... [pausa] error', 'obtienes la... [pausa] pérdida', 'obtienes... [pausa] entrenamiento'). La pausa funciona como redoble de tambor silencioso para que la animación entre a tiempo.",
+    "actuacion": "En cada cláusula 'Si...' sube ligeramente la entonación creando expectativa; al llegar al concepto técnico ('error', 'pérdida', 'gradiente', 'aprendizaje automático'), baja el tono con gravedad suave y articula cada consonante. En 'pasito' (00:18) suaviza y achica la voz con ternura; en 'una y otra vez' (00:24) marca el pulso repetitivo; en 'datos, tamaño y cómputo gigantes' (00:39-00:41) abre la voz para dar sensación de escala; en el cierre (00:45-00:48) desacelera y aterriza en un tono casi íntimo en 'una sola predicción'.",
+    "humana_o_sintetica": "Altamente probable que sea sintética de última generación (tipo ElevenLabs con modelo multilingual v2 o voz clonada profesionalmente) o locutor humano muy editado. Evidencia: el video lleva la etiqueta 'AI-generated' de TikTok; las respiraciones son prácticamente inexistentes o ultra-limpias, la consistencia espectral entre frases es absoluta, aunque presenta inflexiones expresivas muy logradas (como el énfasis en 'baje' en 00:14 y la cadencia de 'pasito' en 00:18).",
+    "procesado": "Seco absoluto (cero reverb de sala), efecto de proximidad marcado (cercanía al micro tipo broadcast/podcast), compresión firme que nivela todo el rango dinámico y EQ con realce suave en 100-150 Hz (cuerpo) y brillo controlado sin sibilancias.",
+    "direccion_de_locucion": "Háblale a una sola persona que tienes a medio metro, con la calma de un mentor nocturno. Cada frase tiene dos mitades: en la primera ('Si haces X...') abre una pregunta suave en el aire, con curiosidad contenida; antes de decir el concepto clave, haz un silencio breve de medio segundo —deja que el espectador lo espere— y luego entrega el término técnico ('error', 'pérdida', 'gradiente') posándolo en el suelo, bajando el tono con peso y claridad, como quien coloca una pieza de lego que encaja perfecto. No corras ni vendas emoción: la fascinación debe nacer de la precisión y de cómo cada escalón parece inevitable."
+  },
+  "narrativa": {
+    "premisa": "Desmitificar qué es un gran modelo de IA (como ChatGPT) construyéndolo ladrillo a ladrillo desde la operación matemática más simple: restar dos números de una predicción.",
+    "gancho_primeros_3s": "Texto literal: 'Si haces una predicción y la comparas con la respuesta...'. Engancha porque no empieza con una promesa grandilocuente ('Así funciona ChatGPT'), sino en mitad de una acción mínima y concreta con un robotito pensando en el número 6, obligando al cerebro a esperar el resultado de la comparación.",
+    "estructura_por_actos": [
+      {
+        "acto": "Acto 1 - El átomo matemático (1 ejemplo)",
+        "tiempo": "00:00 - 00:10",
+        "descripcion": "De la predicción (6) vs respuesta (8) al Error (2) y su conversión geométrica en Pérdida (cuadrado 2x2 = 4)."
+      },
+      {
+        "acto": "Acto 2 - El mecanismo de ajuste (Optimización)",
+        "tiempo": "00:11 - 00:27",
+        "descripcion": "Aparece la parábola: el Gradiente (hacia dónde baja), el paso de Descenso del Gradiente (moverse a 7) y la repetición hasta Pérdida 0 = Entrenamiento."
+      },
+      {
+        "acto": "Acto 3 - De la unidad al sistema (Generalización)",
+        "tiempo": "00:27 - 00:37",
+        "descripcion": "Zoom out a cientos de miles de ejemplos que forman una regresión lineal ('NOTA = HORAS x 2'): Modelo Entrenado y Aprendizaje Automático al acertar un caso nuevo (3,5 h -> 7)."
+      },
+      {
+        "acto": "Acto 4 - Escala masiva y bucle conceptual",
+        "tiempo": "00:38 - 00:48",
+        "descripcion": "Complejización de la curva (Datos x Tamaño x Cómputo) hasta llegar a 'Algo como ChatGPT', seguido de un rebobinado vertiginoso hasta la predicción inicial del número 6."
+      }
+    ],
+    "recurso_central": "Encadenamiento anafórico condicional ('Si [acción sobre el resultado anterior], obtienes [nuevo concepto]'). Cada definición técnica es la consecuencia directa del cuadro anterior, nunca un concepto aislado.",
+    "giro": "En 00:38-00:43, cuando el espectador cree que el video trataba sobre una simple recta escolar (horas de estudio vs nota), la recta se ondula en funciones complejas y se multiplica para revelar que esa misma lógica elemental es la base de ChatGPT.",
+    "cierre": "Rebobinado visual y sonoro (00:45-00:48) que desanda todas las capas de complejidad en 3 segundos para regresar exactamente al frame 1 (el robot con el '6'), creando un loop perfecto para TikTok.",
+    "por_que_se_ve_hasta_el_final": "Porque utiliza una escalera de abstracción sin saltos: el espectador siente que está entendiendo cálculo diferencial y machine learning sin dolor. La estructura repetitiva crea adicción ('¿qué sale si doy un paso más?') y el zoom progresivo promete una revelación mayor en cada escalón."
+  },
+  "animacion": {
+    "estilo": "Pixel art minimalista de 8-bits sobre fondo negro espacial con sutiles partículas/líneas de cuadrícula oscuras; estética de videojuego educativo retro (tipo PICO-8).",
+    "paleta": "Fondo casi negro (#0B0B12) con alto contraste funcional: amarillo/ámbar (#FFB84D) para la predicción y curvas del modelo, verde menta (#2EE59D) para la respuesta correcta, rojo coral (#FF5263) para el error/pérdida, blanco/gris azulado para el robot y ejes, y cian celeste para los puntos de datos.",
+    "tipografia": "Fuente bitmap/pixel monoespaciada en mayúsculas para títulos y etiquetas técnicas en pantalla; subtítulos inferiores también en fuente monoespaciada pixelada con resaltado dinámico (blanco brillante para la palabra activa sobre gris apagado).",
+    "camara": "Cámara 2D fija que evoluciona por expansión espacial (el eje horizontal se despliega, luego nace el eje vertical) y dos grandes 'zoom outs' multiplicadores (en 00:28 pasa de 1 gráfica a una matriz de 4x5 gráficas; en 00:30 y 00:42 a grillas aún más densas).",
+    "como_se_sincroniza_con_la_voz": "Sincronización literal verbo-visual: ningún elemento gráfico aparece antes de ser nombrado. Cuando dice 'comparas' (00:02) se traza la recta; 'error' (00:04) pinta el segmento rojo; 'qué tan mal estuvo' (00:08) despliega los 4 cuadraditos rojos; 'pasito' (00:18) mueve el punto amarillo de 6 a 7.",
+    "transiciones": "No hay cortes de edición; todo ocurre en un único lienzo continuo mediante metamorfosis geométrica (la línea numérica se convierte en el eje X de un plano cartesiano en 00:11; las múltiples parábolas colapsan en los puntos de un diagrama de dispersión en 00:30).",
+    "ejemplos_tres_momentos_brillantes": [
+      {
+        "tiempo": "00:07 - 00:10",
+        "descripcion": "Visualización del error cuadrático (Pérdida): el segmento rojo de longitud 2 entre el 6 y el 8 proyecta hacia abajo un cuadrado físico de 2x2 dividido en 4 bloques numerados (1, 2, 3, 4), haciendo tangible por qué el error se eleva al cuadrado."
+      },
+      {
+        "tiempo": "00:18 - 00:26",
+        "descripcion": "Durante el descenso del gradiente, a medida que el punto amarillo baja por la parábola (7 -> 7,5 -> 7,75 -> 7,99), el cuadrado rojo de pérdida debajo del eje se encoge físicamente en tiempo real hasta volverse un punto diminuto y desaparecer."
+      },
+      {
+        "tiempo": "00:28 - 00:31",
+        "descripcion": "El zoom out muestra 20 parábolas entrenándose a la vez con un contador que sube a 389.191 ejemplos, y todas esas parábolas convergen espacialmente para transformarse en la nube de puntos celestes del gráfico de dispersión."
+      }
+    ],
+    "como_se_produciria_hoy": "Inferencia alta: Programación creativa / animación por código (probablemente Manim en Python con shaders/fuentes pixeladas, o un motor web en Canvas/PixiJS/p5.js o Motion Canvas controlado por código, posiblemente asistido por un LLM como Claude para generar el script de la escena). Razón: la precisión matemática de las curvas, el contador numérico dinámico, el encogimiento proporcional exacto del cuadrado respecto a la parábola y la grilla de decenas de funciones animadas simultáneamente son típicos de animación declarativa por código y no de keyframes manuales en After Effects."
+  },
+  "sonido": {
+    "musica": "Prácticamente ausente durante los primeros 44 segundos para dejar total protagonismo a la voz; solo al final (00:44-00:48), durante el rebobinado, entra un brevísimo arpegio/pad nostálgico de sintetizador suave que resuelve al volver al inicio.",
+    "efectos": "Diseño sonoro chiptune/8-bit ultra sutil y funcional: pequeños 'blips' agudos al aparecer números (00:00, 00:03), tonos graves suaves al marcar el error (00:04), cuatro 'pops' ascendentes al contarse los cuadros 1-2-3-4 (00:08), barridos deslizantes (slides) al trazarse la parábola y la tangente (00:12-00:15), 'ticks' rápidos de conteo durante los miles de ejemplos (00:28-00:30) y un efecto de rebobinado de cinta/sintetizador en 00:45.",
+    "relacion_con_la_voz": "Subordinación total y puntuación: los efectos nunca compiten en frecuencia ni volumen con el locutor; entran exactamente en los huecos de las micro-pausas o subrayan el impacto de la palabra clave a unos -18/-20 dB por debajo de la voz."
+  },
+  "plantilla_creativa": {
+    "nombre": "La Escalera de Abstracción en Lienzo Único",
+    "principios": [
+      "Empezar por el átomo visible, no por el título del tema: inicia con el caso individual más ridículamente simple (una sola resta, una sola célula, una sola transacción) sin anunciar la complejidad final.",
+      "Gramática de causa-efecto encadenada: estructura todo el guion con una fórmula condicional recursiva donde el concepto N se define exclusivamente haciendo algo concreto sobre el concepto N-1 ('Si a eso que acabas de ver le haces X, se llama Y').",
+      "Geometrizar las matemáticas o conceptos abstractos: nunca muestres solo una fórmula; convierte cada magnitud en un objeto con área o dirección visible que crezca, se encoja o se mueva cuando cambian los números.",
+      "Un solo lienzo que muta sin cortes: prohibido cortar a otra escena; cuando necesites introducir una nueva dimensión, haz que la línea actual se convierta en el eje del nuevo gráfico o aléjate (zoom out) para revelar que todo el gráfico anterior era solo un punto dentro de mil.",
+      "Honestidad pedagógica en notas al pie: cuando simplifiques para no romper el ritmo oral, deja una micro-etiqueta honesta en pantalla ('Simplificado: en realidad...') para satisfacer al experto sin frenar al novato.",
+      "Cierre por compresión temporal (Rewind): termina rebobinando visualmente todas las capas de escala hasta el átomo del segundo cero, demostrando que lo incomprensible y gigante no es más que lo simple repetido a escala."
+    ]
+  }
+}

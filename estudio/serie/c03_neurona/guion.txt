@@ -1,0 +1,17 @@
+Todo ChatGPT está hecho de una sola pieza, repetida.
+Y esa pieza cabe en una línea de matemáticas de secundaria.
+Imagina que decides si sales a correr.
+¿Hace buen clima? Un punto. ¿Dormiste bien? Otro punto. ¿Está lloviendo? Menos tres.
+Pero no todo pesa igual. La lluvia te importa más que el sueño.
+Cada dato se multiplica por su importancia. A esa importancia le llamamos peso.
+Luego se suma todo.
+Si pasa de cierto límite, sales. Si no pasa, te quedas.
+Felicidades. Acabas de ser una neurona artificial.
+Multiplicar, sumar y decidir. Nada más.
+La inventaron en mil novecientos cuarenta y tres, en papel, inspirados en el cerebro.
+Pero no te confundas: se parece a una neurona de verdad lo que un avión de papel a un pájaro.
+Y los pesos son esas perillas de las que tanto hablamos.
+Nadie los escribe a mano. Salen del error.
+Una sola neurona no entiende nada. No sabe qué es correr, ni qué es la lluvia.
+Y ChatGPT no tiene ninguna otra pieza.
+Solo tiene muchísimas.

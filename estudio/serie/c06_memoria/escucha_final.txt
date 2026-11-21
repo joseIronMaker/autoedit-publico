@@ -1,0 +1,1 @@
+c06_memoria {"cortes":[],"tapa_la_voz":[],"limpio":true}

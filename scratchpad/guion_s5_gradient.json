@@ -1,0 +1,84 @@
+{
+  "title": "Gradient descent: bajar la montaña de la pérdida",
+  "slug": "dl_gradient_descent",
+  "hook_tipo": "resultado",
+  "keyword": "gradient descent",
+  "hook_headline": ["BAJAR", "EL ERROR"],
+  "pregunta_ab": "¿Paso grande o chico?",
+  "music_prompt": "dark driving electronic instrumental, descending arpeggio, momentum, tech, no vocals, 122 BPM",
+  "modo": "corto",
+  "scenes": [
+    {
+      "narration": "Bajar el error es bajar una montaña.",
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.45,
+      "kinetic_video": {
+        "words": [
+          {"text": "bajar el error", "serif": true},
+          {"text": "UNA MONTAÑA", "accent": true}
+        ],
+        "variant": "dark",
+        "veo_prompt": "Cinematic shot of a glowing cyan sphere rolling down a smooth dark neon mountain valley made of light contours toward a glowing point at the bottom, sense of descent and momentum, magenta accents, near-black void, volumetric glow, dark tech aesthetic, no text, no people",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Se llama gradient descent: un pasito hacia abajo, y repites.",
+      "beat_type": "hook",
+      "visual_type": "host",
+      "host_top": {"kind": "headline", "lines": ["BAJAR", "EL ERROR"]}
+    },
+    {
+      "narration": "La pendiente te dice hacia dónde subiría el error; das un paso al revés. Eta decide qué tan grande, y repites hasta el fondo.",
+      "beat_type": "proof",
+      "visual_type": "gradient_descent"
+    },
+    {
+      "narration": "En código es esto: mira la pérdida bajar en cada paso hasta casi cero.",
+      "beat_type": "proof",
+      "visual_type": "ml_demo",
+      "ml_demo": {
+        "code": "import torch, torch.nn as nn, numpy as np\nfrom sklearn.datasets import make_moons\ntorch.manual_seed(0)\nX, y = make_moons(300, noise=0.2, random_state=0)\nXt = torch.tensor(X, dtype=torch.float32); yt = torch.tensor(y, dtype=torch.float32).view(-1,1)\nnet = nn.Sequential(nn.Linear(2,16), nn.ReLU(), nn.Linear(16,1))\nopt = torch.optim.SGD(net.parameters(), 0.1); lf = nn.BCEWithLogitsLoss()\nlosses = []\nfor _ in range(300):\n    opt.zero_grad(); loss = lf(net(Xt), yt); loss.backward(); opt.step(); losses.append(loss.item())\nfig, ax = plt.subplots(figsize=(6,6.5))\nax.plot(losses, color=CYAN, lw=3.5)\nax.fill_between(range(len(losses)), losses, color=CYAN, alpha=0.15)\nax.set_title('la pérdida BAJA en cada paso')\nax.set_xlabel('pasos'); ax.set_ylabel('error'); ax.set_xticks([]); ax.set_yticks([])",
+        "display_code": [
+          "for paso in range(300):",
+          "    loss = criterio(net(X), y)",
+          "    loss.backward()   # gradiente",
+          "    opt.step()        # W <- W - eta*grad"
+        ],
+        "caption": "entrenar.py"
+      }
+    },
+    {
+      "narration": "El gradiente dice hacia dónde.",
+      "beat_type": "giro",
+      "visual_type": "kinetic",
+      "kinetic": {
+        "words": [
+          {"text": "el gradiente", "serif": true},
+          {"text": "HACIA DÓNDE", "accent": true}
+        ],
+        "variant": "dark"
+      }
+    },
+    {
+      "narration": "Baja el error, paso a paso.",
+      "beat_type": "tesis",
+      "visual_type": "kinetic",
+      "pause_after": 0.35,
+      "kinetic": {
+        "words": [
+          {"text": "paso", "serif": true},
+          {"text": "A PASO", "accent": true}
+        ],
+        "variant": "accent"
+      }
+    },
+    {
+      "narration": "Ya sabe bajar. ¿Pero de dónde saca el gradiente en una red gigante? Mañana: backpropagation.",
+      "beat_type": "cta",
+      "visual_type": "host",
+      "host_top": {"kind": "save", "title": "PASO A PASO", "subtitle": "MAÑANA: BACKPROPAGATION →"}
+    }
+  ]
+}

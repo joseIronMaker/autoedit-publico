@@ -1,0 +1,96 @@
+{
+  "slug": "pro_ningun_truco_movio",
+  "tema": "Medí los cuatro trucos de prompting más famosos y ninguno cambió el resultado",
+  "title": "Medí los 4 trucos de prompting más famosos. Ninguno movió nada.",
+  "theme": "hielo",
+  "hook_locked": true,
+  "quien_decide": "los cursos y los packs de prompts deciden en qué gastas tus horas de práctica",
+  "que_cuesta": "meses coleccionando frases mágicas que no cambian una sola respuesta",
+  "palanca": "antes de creerle a un truco, córrelo tú: la misma tarea con y sin él, y cuenta los aciertos. Si empatan, el problema está en otro lado",
+  "pregunta_ab": "¿Coleccionas trucos de prompting o ya mides cuáles sirven?",
+  "scenes": [
+    {
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "narration": "Medí los cuatro trucos de prompting más famosos que existen. Doscientas corridas. Ninguno cambió una sola respuesta.",
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "CUATRO TRUCOS"
+          },
+          {
+            "text": "200 CORRIDAS"
+          },
+          {
+            "text": "CERO DIFERENCIA"
+          }
+        ],
+        "variant": "dark",
+        "video": "videos/gen_ver_tirar_a_proposito.assets/veo_0.mp4"
+      }
+    },
+    {
+      "beat_type": "contexto",
+      "visual_type": "image",
+      "narration": "Piensa paso a paso. Actúa como un experto. Dale dos ejemplos. Se venden en packs, se enseñan en cursos, se repiten en todos lados. Y casi nadie los mide, yo incluido: los repetí durante años.",
+      "image_prompts": [
+        "A stack of cheap printed booklets on a dark table under a single lamp, corners worn, shot from a low angle. Documentary photography, muted palette, no readable text.",
+        "A hand fanning through the pages of one of those booklets, motion blur on the pages, warm side light, deep shadows. Macro, no readable text.",
+        "The booklets pushed aside on the table, an open notebook and a pencil taking their place, morning light through a window. Documentary photography."
+      ]
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "ml_demo",
+      "narration": "Así que los corrí. Seis problemas de varios pasos, con respuesta verificable por código, cada condición decenas de veces. Piensa paso a paso: cuarenta y ocho de cuarenta y ocho contra cuarenta y ocho de cuarenta y ocho. Rol de experto: empate. Dos ejemplos: empate. Y hasta pidiéndole un formato exacto: empate.",
+      "ml_demo": {
+        "caption": "medir_prompts.py",
+        "editor_frac": 0.24,
+        "code": "import json\nbase = '/home/jose/tiktok/mediciones/'\ndef par(arch):\n    d = json.load(open(base + arch))['condiciones']\n    k = list(d.keys())\n    v = lambda x: x.get('aciertos', x.get('cumplen'))\n    return v(d[k[0]]), v(d[k[1]]), d[k[0]]['de']\ntrucos = [('piensa paso a paso', 'prompt_paso_a_paso.json'),\n          ('rol de experto', 'prompt_rol.json'),\n          ('dos ejemplos', 'prompt_ejemplos.json'),\n          ('ejemplos de formato', 'prompt_formato.json')]\nnoms, sin, con, des = [], [], [], []\nfor n, a in trucos:\n    s, c, d = par(a)\n    noms.append(n); sin.append(100.0*s/d); con.append(100.0*c/d); des.append(d)\ny = np.arange(len(noms))\nalto = 0.36\nfig, ax = plt.subplots(figsize=(9.2, 5.8))\nax.barh(y + alto/2, sin, alto, color=CYAN, label='sin el truco')\nax.barh(y - alto/2, con, alto, color=ORANGE, label='con el truco')\nax.set_yticks(y); ax.set_yticklabels(noms)\nax.set_xlim(0, 128)\nax.set_xlabel('% de aciertos')\nfor i, d in enumerate(des):\n    ax.text(104, i, 'empate  %d/%d' % (d, d), va='center', color=TXT, fontsize=18, fontweight='bold')\nax.set_title('los cuatro trucos, medidos')\nax.legend(loc='lower right', fontsize=16)\nfig.text(0.5, 0.015, 'gemini-flash · 6 tareas de respuesta verificable · 36 a 48 corridas por condicion · 13-ago-2026', ha='center', fontsize=11, color='#969491')",
+        "display_code": [
+          "for truco in ('paso a paso', 'rol', 'ejemplos'):",
+          "    aciertos[con] == aciertos[sin]   # las cuatro veces"
+        ]
+      }
+    },
+    {
+      "beat_type": "giro",
+      "visual_type": "image",
+      "narration": "Y hay algo peor para el mito. Corrí el mismo prompt noventa veces seguidas: las noventa dieron exactamente la misma respuesta. Subí la temperatura al máximo y veinte de veinte siguieron idénticas. Ni siquiera hay azar que un truco pueda acomodar.",
+      "image_prompts": [
+        "Twenty identical stamped metal discs laid out in a perfect grid on a dark table, each one exactly the same, raking side light. Macro, documentary photography, no text.",
+        "Extreme macro of two of those discs side by side, indistinguishable, shallow depth of field, warm reflection on the metal.",
+        "A hand sweeping the grid of identical discs into a small pile on the dark table, motion blur, single lamp above. Documentary photography."
+      ]
+    },
+    {
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "narration": "El truco no mueve al modelo. Lo mueve lo que le das y quién te contesta.",
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "EL TRUCO"
+          },
+          {
+            "text": "NO MUEVE"
+          },
+          {
+            "text": "AL MODELO"
+          }
+        ],
+        "variant": "dark",
+        "video": "videos/gen_ver_pixel_por_pixel.assets/veo_0.mp4"
+      }
+    },
+    {
+      "beat_type": "cta",
+      "visual_type": "image",
+      "narration": "Siendo justo: esto lo medí en tareas con respuesta verificable, aritmética de varios pasos y extracción con formato, sobre un modelo de dos mil veintiséis. No lo medí en redacción larga. Mi postura: deja de coleccionar frases y mide la tuya, con y sin, diez veces cada una. ¿Coleccionas trucos o ya mides cuáles sirven?",
+      "image_prompts": [
+        "A notebook page on a dark desk with two columns of hand-drawn tally marks side by side and a pencil across it, warm lamp at night. Documentary photography, shallow depth of field.",
+        "Hands closing a laptop beside that notebook at dawn, light through a window, dust in the air. Shot from the side, film grain."
+      ]
+    }
+  ]
+}

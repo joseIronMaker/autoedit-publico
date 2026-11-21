@@ -1,0 +1,83 @@
+{
+  "slug": "h_manos_en_tu_maquina",
+  "tema": "que es un harness de codigo (Claude Code, Codex, OpenCode): el bucle del agente corriendo en TU computadora, donde las herramientas son tu disco y tu terminal",
+  "title": "El chat te da el código. Esto lo escribe en tu disco.",
+  "theme": "hielo",
+  "hook_locked": true,
+  "concepto": "harness: el programa que corre el bucle del agente en tu propia máquina, con tus archivos y tu terminal como herramientas",
+  "en_una_frase": "Un harness es el mismo bucle de cualquier agente, pero instalado en tu computadora: las herramientas que el modelo puede pedir son abrir tus archivos, escribirlos y correr comandos.",
+  "quien_decide": "el harness decide qué archivos ve el modelo y cuáles puede tocar, y esa decisión la tomó quien lo configuró, no tú en cada paso",
+  "que_cuesta": "sigues copiando y pegando código del chat a tu editor, corrigiendo a mano lo que no compila, cuando eso es justo lo que el harness hace solo",
+  "palanca": "la prueba para saber si lo tuyo es un chat o un harness: pídele que ejecute algo y mira si tu carpeta cambió",
+  "pregunta_ab": "Para programar, ¿prefieres copiar y pegar tú, o que escriba directo en tu carpeta?",
+  "scenes": [
+    {
+      "beat_type": "cold_open",
+      "visual_type": "terminal",
+      "narration": "Le pedí lo mismo a un chat y a esto. El chat me dio el código. Esto ya lo dejó escrito en mi carpeta.",
+      "terminal": {
+        "title": "la diferencia, en una línea",
+        "lines": [
+          {"prompt": true, "text": "chat   → aquí tienes el código, cópialo en tu archivo"},
+          {"prompt": true, "text": "harness→ escribí src/caja.py y corrí las pruebas"},
+          {"text": "uno te lo describe. el otro lo hizo.", "accent": true}
+        ]
+      }
+    },
+    {
+      "beat_type": "definicion",
+      "visual_type": "image",
+      "narration": "Porque esto tiene nombre y no es un chat con esteroides: es un harness. Y es exactamente el bucle de cualquier agente, pero instalado en tu computadora. Las herramientas que el modelo puede pedir, aquí, son tus archivos y tu terminal.",
+      "image_prompts": [
+        "A workshop bench with hand tools laid out beside a closed laptop, warm work light. Documentary photography, muted palette, no readable text.",
+        "The same bench seen from above, one tool lifted out of its outline, raking light. Documentary photography.",
+        "Extreme macro of a worn tool handle against dark wood, warm side light. Documentary photography, shallow depth of field."
+      ]
+    },
+    {
+      "beat_type": "mecanismo",
+      "visual_type": "terminal",
+      "narration": "Y por eso las vueltas se ven distintas. El modelo pide leer un archivo; el harness lo abre y le pega el contenido. El modelo pide escribir; el harness escribe en tu disco de verdad. El modelo pide correr las pruebas; el harness las corre y le devuelve la salida, con el error incluido. Y el modelo lee ese error y vuelve a pedir.",
+      "terminal": {
+        "title": "una tarea, por dentro",
+        "lines": [
+          {"prompt": true, "text": "leer  src/caja.py        → 41 líneas"},
+          {"prompt": true, "text": "escribir src/caja.py     → guardado"},
+          {"prompt": true, "text": "correr pytest            → 1 falla"},
+          {"prompt": true, "text": "escribir src/caja.py     → guardado"},
+          {"prompt": true, "text": "correr pytest            → todo pasa"},
+          {"text": "ahí se detiene: ya no pidió nada.", "accent": true}
+        ],
+        "progress": {"label": "leer · escribir · correr · leer el error · repetir"}
+      }
+    },
+    {
+      "beat_type": "quien_decide",
+      "visual_type": "image",
+      "narration": "Así que la pregunta ya no es si sabe programar. Es qué alcanza a tocar. El harness decide qué archivos ve y cuáles puede escribir, y esa decisión la tomó quien lo configuró: no la tomas tú en cada paso, y a mí me tocó aprenderlo por las malas.",
+      "image_prompts": [
+        "A filing cabinet with one drawer open and the rest closed, dim office light. Documentary photography, muted palette, no readable text.",
+        "A hand resting on the open drawer's edge, seen close from the side. Documentary photography, shallow depth of field."
+      ]
+    },
+    {
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "narration": "El chat te lo dice. El harness lo hace.",
+      "kinetic_video": {
+        "words": [{"text": "EL CHAT"}, {"text": "TE LO DICE"}, {"text": "EL HARNESS LO HACE"}],
+        "variant": "dark",
+        "video": "videos/gen_ln_el_transformer.assets/veo_4.mp4"
+      }
+    },
+    {
+      "beat_type": "cierre",
+      "visual_type": "image",
+      "narration": "Entonces la prueba que te puedes robar hoy para saber qué tienes enfrente: pídele que ejecute algo y después mira tu carpeta. Si tienes que copiar y pegar, era un chat. Si el archivo ya cambió, hay un programa corriendo con tus permisos. Para programar, ¿prefieres copiar y pegar tú, o que escriba directo en tu carpeta?",
+      "image_prompts": [
+        "A desk with an open notebook and a closed laptop side by side at night, warm lamp. Documentary photography, muted palette, no readable text.",
+        "A hand opening the laptop lid, screen still dark, seen from behind. Documentary photography, shallow depth of field."
+      ]
+    }
+  ]
+}

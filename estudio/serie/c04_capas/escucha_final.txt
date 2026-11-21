@@ -1,0 +1,1 @@
+c04_capas {"cortes":[],"tapa_la_voz":[],"limpio":true}

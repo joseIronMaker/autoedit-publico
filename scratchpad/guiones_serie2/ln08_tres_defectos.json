@@ -1,0 +1,109 @@
+{
+  "tema": "Los 3 defectos que mataron a las redes recurrentes",
+  "modo": "corto",
+  "title": "Los 3 defectos que mataron a las redes recurrentes",
+  "slug": "ln_tres_defectos",
+  "hook_tipo": "problema",
+  "theme": "sunset",
+  "image_style": "bold graphic poster illustration, flat vector shapes with heavy grain texture, burnt orange and hot coral on charcoal, strong silhouette, mid-century print feel, vertical 9:16 composition, lower third kept simple, no text, no letters, no words, no watermark",
+  "keyword": "limitaciones redes recurrentes",
+  "hook_headline": [
+    "3 DEFECTOS",
+    "DE FÁBRICA"
+  ],
+  "pregunta_ab": "¿Lo mató la memoria o la lentitud?",
+  "music_prompt": "gritty electro instrumental, distorted bass stabs and mechanical percussion, tense and industrial, no vocals, 126 BPM",
+  "scenes": [
+    {
+      "narration": "Funcionaban. Y aun así, se murieron en cinco años.",
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.45,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "funcionaban",
+            "serif": true
+          },
+          {
+            "text": "Y SE MURIERON",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "cinematic macro of an intricate brass mechanism turning smoothly in a dark room, then slowing, stuttering and coming to a complete stop while dust settles on it, dramatic low light",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Las redes que leen palabra por palabra tenían tres defectos que ningún truco arreglaba.",
+      "beat_type": "hook",
+      "visual_type": "host",
+      "host_top": {
+        "kind": "headline",
+        "lines": [
+          "3 DEFECTOS",
+          "DE FÁBRICA"
+        ]
+      }
+    },
+    {
+      "narration": "Uno: todo lo leído se comprime en un solo resumen, y ahí se pierde. Dos: lee de a una palabra, así que la tarjeta gráfica se queda esperando. Y tres: la memoria larga nunca terminó de funcionar.",
+      "beat_type": "proof",
+      "visual_type": "showcase",
+      "showcase": {
+        "items": [
+          {
+            "label": "1 · CUELLO DE BOTELLA",
+            "image_prompt": "an enormous river of glowing orange light forced through a single narrow glass funnel, most of the light spilling away and lost, dark background"
+          },
+          {
+            "label": "2 · LENTA",
+            "image_prompt": "a long queue of glowing coral cubes moving one at a time through a single narrow gate while a huge empty parallel highway glows unused beside it, dark background"
+          },
+          {
+            "label": "3 · MEMORIA CORTA",
+            "image_prompt": "a chain of glowing orange links fading and dissolving into dust toward its far end, the near links bright and solid, dark background"
+          }
+        ]
+      }
+    },
+    {
+      "narration": "El tercero duele, pero el que la mató fue el segundo: si no puedes usar miles de núcleos a la vez, no puedes entrenar con internet entero.",
+      "beat_type": "giro",
+      "visual_type": "custom",
+      "custom_anim": {
+        "description": "Comparación en DOS MITADES separadas por una línea vertical. Izquierda: un solo punto de luz avanza LENTO por un camino largo en zigzag, un paso a la vez, y se ve cuánto le falta. Derecha: una cuadrícula de muchos puntos que se encienden TODOS A LA VEZ, de golpe, y terminan de inmediato. Cada mitad con su etiqueta grande arriba. Se repite en bucle para que se vea la diferencia de velocidad."
+      }
+    },
+    {
+      "narration": "No la mató la memoria. La mató la lentitud.",
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.35,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "no la mató la memoria",
+            "serif": true
+          },
+          {
+            "text": "LA MATÓ LA LENTITUD",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "split composition: one slow lonely dot crawling along a single line while beside it hundreds of dots race simultaneously along many parallel lines, cinematic, dark",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Así que alguien preguntó: ¿y si quitamos la memoria por completo? Mañana, la idea que cambió todo.",
+      "beat_type": "cta",
+      "visual_type": "host",
+      "host_top": {
+        "kind": "save",
+        "title": "SERIE: CÓMO LA IA LEE",
+        "subtitle": "SIGUIENTE: ATENCIÓN →"
+      }
+    }
+  ]
+}

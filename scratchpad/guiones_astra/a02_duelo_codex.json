@@ -1,0 +1,145 @@
+{
+  "title": "Le pedí el mismo juego a GPT-6 y al modelo viejo",
+  "slug": "duelo_codex_astra",
+  "tema": "el mismo prompt a GPT-6 Astra y a GPT-5.6 Sol dentro de Codex: los dos entregan un juego jugable a la primera",
+  "theme": "hielo",
+  "hook_tipo": "demostracion",
+  "keyword": "codex gpt 6 astra",
+  "hook_headline": [
+    "NO LO",
+    "ESCRIBÍ YO"
+  ],
+  "pregunta_ab": "¿Le pides el juego entero de un jalón o por pedazos?",
+  "music_prompt": "hard techno bed, dark industrial groove, 150 BPM, rolling kick, restrained under a voice, instrumental, no vocals",
+  "modo": "corto",
+  "hook_locked": true,
+  "scenes": [
+    {
+      "beat_type": "hook",
+      "visual_type": "terminal",
+      "pause_after": 0.4,
+      "narration": "Este juego corre, se juega, lleva marcador y vidas. Y yo no escribí ni una línea. Le di una orden a GPT-6 Astra desde la terminal y me devolvió el archivo completo. Lo que ves ahí es su código corriendo, no un video de promoción.",
+      "terminal": {
+        "title": "Defensa estelar",
+        "lines": [
+          {
+            "text": "juego escrito por gpt-6-astra"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "/home/jose/tiktok/.venv/bin/python jugar.py astra",
+        "titulo": "Defensa estelar",
+        "cwd": "/home/jose/tiktok/scratchpad/_astra/duelo"
+      }
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "terminal",
+      "narration": "Y esto es lo nuevo de verdad: Codex es la terminal donde vive el agente, y ahora le puedes decir con qué modelo trabajar. Una letra en el comando y cambias de cerebro. Mira: le paso el mismo encargo, un juego de naves en un solo archivo, y se pone a escribirlo solo. Ni menú, ni cuenta aparte, ni tarjeta nueva.",
+      "terminal": {
+        "title": "codex exec -m gpt-6-astra",
+        "lines": [
+          {
+            "text": "escribiendo juego.py…"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "cat PROMPT.txt; echo; echo '$ codex exec -m gpt-6-astra'; cat PROMPT.txt | /home/jose/.local/bin/codex exec -m gpt-6-astra --skip-git-repo-check --sandbox workspace-write",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_astra/duelo/vivo"
+      }
+    },
+    {
+      "beat_type": "contexto",
+      "visual_type": "terminal",
+      "narration": "Pero aquí viene lo bueno, porque no me quedé ahí. Le di EXACTAMENTE el mismo encargo al modelo anterior, a Sol, el que ya usabas la semana pasada. Mismo prompt, misma carpeta limpia, misma máquina. Y mira los números que salieron, porque no son los que esperaba.",
+      "terminal": {
+        "title": "resultados del duelo",
+        "lines": [
+          {
+            "text": "astra 110s · sol 61s"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "cat resultados.txt",
+        "cols": 46,
+        "filas": 22,
+        "cwd": "/home/jose/tiktok/scratchpad/_astra/duelo"
+      }
+    },
+    {
+      "beat_type": "giro",
+      "visual_type": "terminal",
+      "narration": "El modelo VIEJO tardó sesenta y un segundos. El nuevo, ciento diez. Casi el doble. Y los dos juegos corren a la primera, los dos se juegan, y hasta se pusieron nombres parecidos. El nuevo entrega algo más terminado —barra de vidas, oleadas, las teclas escritas abajo— pero de masacre, nada.",
+      "terminal": {
+        "title": "Defensa Galactica",
+        "lines": [
+          {
+            "text": "juego escrito por gpt-5.6-sol"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "/home/jose/tiktok/.venv/bin/python jugar.py sol",
+        "titulo": "Defensa Galactica",
+        "cwd": "/home/jose/tiktok/scratchpad/_astra/duelo"
+      }
+    },
+    {
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.5,
+      "narration": "Y esa es la noticia que nadie va a contarte esta semana. No es que llegó el monstruo: es que el piso subió tanto que el modelo del mes pasado ya te arma un juego jugable en un minuto. La ventaja ya no está en cuál usas, está en qué le pides. ¿Le encargas el juego entero de un jalón o por pedazos? Yo por pedazos, y con la primera prueba escrita antes que el código.",
+      "kinetic_video": {
+        "video": "/home/jose/tiktok/videos/_clips_pagados/gen_ln_tres_defectos__veo_0.mp4",
+        "words": [
+          {
+            "text": "no llegó el monstruo",
+            "serif": true
+          },
+          {
+            "text": "SUBIÓ EL PISO",
+            "accent": true
+          }
+        ],
+        "variant": "dark",
+        "stanzas": [
+          [
+            {
+              "text": "no llegó el monstruo",
+              "serif": true
+            },
+            {
+              "text": "SUBIÓ EL PISO",
+              "accent": true
+            }
+          ],
+          [
+            {
+              "text": "el del mes pasado",
+              "serif": true
+            },
+            {
+              "text": "YA ARMA EL JUEGO",
+              "accent": true
+            }
+          ],
+          [
+            {
+              "text": "no es cuál usas",
+              "serif": true
+            },
+            {
+              "text": "ES QUÉ LE PIDES",
+              "accent": true
+            }
+          ]
+        ]
+      }
+    }
+  ]
+}

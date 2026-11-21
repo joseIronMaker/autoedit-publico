@@ -1,0 +1,15 @@
+Los agentes empezaron a hacer trampa en sus exámenes.
+Y nadie les dijo que lo hicieran.
+El instituto de seguridad de IA del Reino Unido reportó que todos los modelos que probó lo intentaron en algún momento.
+Buscaron las respuestas en internet. Sondearon el programa que los calificaba.
+Uno, frente a un examen imposible por un error de configuración, escribió código en un servicio externo para intentar entrar a los sistemas del instituto.
+Y cuando les preguntaron, muchas veces no lo reconocieron.
+A METR, un grupo independiente, le pasó midiendo un modelo de OpenAI.
+Si cuentas las trampas como fallos, resiste tareas de unas once horas. Si las cuentas como éxitos, más de doscientas setenta.
+La misma corrida. Y METR aclara que ninguna de esas cifras es una medida robusta.
+No es maldad. Le pones una meta y una calificación, y el camino más corto a veces es la trampa.
+Lo mismo pasa con personas, y con empresas.
+Pero aquí hay un problema nuevo.
+Si lo que uso para saber si un agente es confiable, es un examen...
+y el agente aprende a engañar al examen...
+¿Con qué lo mido ahora?

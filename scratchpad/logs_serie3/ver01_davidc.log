@@ -1,0 +1,57 @@
+=== ver01_galeria_solo_ve_numeros.json  →  gen_ver_galeria_solo_ve_numeros  (tema hielo)
+→ guion guion de Claude (guionista)
+→ hook motor de hooks: 4 candidatos + juez de retención
+→ hook cold-open ganador: animacion_medida — “¿Tu cara? Solo una matriz de píxeles.”
+→ voz toma única de 6 escenas
+  voz: 1 toma de 37.9s partida en 6 escenas (prosodia continua, modelo eleven_multilingual_v2)
+→ escena 1/6 generando voz
+→ escena 1/6 programando animación a medida
+→ escena 1/6 animando custom
+→ escena 2/6 generando voz
+→ escena 2/6 generando talking-head (D-ID)
+→ escena 2/6 animando banda de marca
+→ escena 3/6 generando voz
+→ escena 3/6 animando receipt
+→ escena 4/6 generando voz
+→ escena 4/6 ejecutando modelo real (sklearn)
+→ escena 4/6 animando código → gráfica
+→ escena 5/6 generando voz
+→ escena 5/6 animando kinetic_video
+→ escena 6/6 generando voz
+→ escena 6/6 generando talking-head (D-ID)
+→ escena 6/6 animando banda de marca
+→ ensamblando 6 escenas → gen_ver_galeria_solo_ve_numeros.mp4
+→ audio audio continuo + SFX de transición
+→ música reutilizo la cama musical de este video
+✔ /home/jose/tiktok/videos/gen_ver_galeria_solo_ve_numeros.mp4
+
+Ahora pásalo por el flujo normal para subtítulos y copys:
+  autoedit gen_ver_galeria_solo_ve_numeros.mp4 --auto   (o desde la web)
+→ Transcribiendo con Whisper (small, CPU)…
+  108 palabras, 40.6s → /home/jose/tiktok/videos/gen_ver_galeria_solo_ve_numeros.autoedit/transcript.json
+→ Gemini analizando la transcripción (cortes + énfasis)…
+
+Plan de edición (7 cortes, −4.7s de 40.6s):
+  ✂    2.24 →    3.06  silencio de 1.1s
+  ✂    9.70 →   10.64  silencio de 1.2s
+  ✂   17.26 →   17.86  silencio de 0.8s
+  ✂   19.50 →   20.02  silencio de 0.8s
+  ✂   31.18 →   31.70  silencio de 0.8s
+  ✂   34.36 →   35.08  silencio de 1.0s
+  ✂   40.02 →   40.62  silencio final
+  ★ 13 palabras enfatizadas en subtítulos
+→ Renderizando gen_ver_galeria_solo_ve_numeros_final.mp4: 7 tramos, 35.9s…
+✔ /home/jose/tiktok/videos/gen_ver_galeria_solo_ve_numeros_final.mp4
+→ Generando copys (TikTok/IG/FB)…
+✔ /home/jose/tiktok/videos/gen_ver_galeria_solo_ve_numeros.autoedit/copys.md
+
+✔ ver01_galeria_solo_ve_numeros.mp4  (36.0s)
+  QC   → /home/jose/tiktok/scratchpad/qc_ver_galeria_solo_ve_numeros.png
+  copy → revisar y reescribir a mano si hace falta:
+Así es como ve la IA tu cara: no reconoce tu piel, reconoce una matriz de píxeles.
+La máquina detecta los saltos de luz del 0 al 255 entre tu frente y tus ojos.
+Mañana la desgloso a fondo en @ia.conjose, pero la foto en crudo son solo números.
+
+¿Esto te resulta fascinante o aterrador? Yo digo fascinante.
+
+#reconocimientofacial #matrizdepixeles #inteligenciaartificial #tecnologia

@@ -1,0 +1,15 @@
+"Pon lo importante al principio del prompt." Es el consejo de prompting más repetido que existe. Yo también lo repetí. Nunca lo había medido.
+
+Así que lo medí. Escondí un dato entre 2,500 registros parecidos —unos 65 mil tokens— y lo puse al inicio, a la mitad y al final. 96 preguntas en total. 96 aciertos. Cero diferencia por posición.
+
+Por si acaso, le pedí varios datos de un jalón: 1, 4 y 8 claves escondidas en el mismo contexto. 130 claves pedidas, 130 correctas.
+
+Y no es que el consejo fuera mentira. Salió de un estudio real de 2023, "Lost in the Middle", que sí encontró esa curva: lo de en medio se perdía. Lo que cambió no fue el consejo. Fueron los modelos. El consejo se quedó y nadie volvió a medirlo.
+
+Mi límite honesto: esto lo corrí con un modelo de 2026, con un dato exacto y un contexto de 65 mil tokens. No estoy diciendo que la atención sea infinita. Estoy diciendo que en esta prueba, la posición no movió nada.
+
+Tú puedes hacerlo en cinco minutos: el mismo dato al inicio y al final, cinco corridas cada uno, y cuentas. Si no cambia, el problema está en otro lado.
+
+Un consejo de prompting sin medición es una superstición con buena reputación.
+
+¿Sigues moviendo tus prompts de lugar o ya mides si sirve?

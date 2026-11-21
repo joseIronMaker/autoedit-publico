@@ -1,0 +1,29 @@
+{
+  "tema": "cuantas veces se vacio la memoria del agente y quien la vacio",
+  "sesion": "a07764de-5f8e-44d0-a023-92d200ab26f2.jsonl",
+  "bytes": 372652962,
+  "turnos_con_uso": 12319,
+  "cortes": {
+    "totales": 15,
+    "los_pedi_yo": 12,
+    "se_lleno_sola": 3
+  },
+  "pico_de_contexto": 998707,
+  "picos_por_corte": [
+    920710,
+    998707,
+    389938,
+    997309,
+    484822,
+    509905,
+    147905,
+    709416,
+    906589,
+    238911,
+    688252,
+    439811,
+    898233,
+    670387,
+    354682
+  ]
+}

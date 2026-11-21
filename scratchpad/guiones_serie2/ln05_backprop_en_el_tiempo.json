@@ -1,0 +1,102 @@
+{
+  "tema": "Backpropagation en el tiempo: cómo aprende una red que lee",
+  "modo": "corto",
+  "title": "Backpropagation en el tiempo: cómo aprende una red que lee",
+  "slug": "ln_backprop_en_el_tiempo",
+  "hook_tipo": "secreto",
+  "theme": "hielo",
+  "image_style": "crisp isometric 3D render of frosted glass and brushed steel structures, icy pale blue and white light on deep navy, clean studio lighting, architectural and precise, vertical 9:16 composition, lower third kept simple, no text, no letters, no words, no watermark",
+  "keyword": "backpropagation through time",
+  "hook_headline": [
+    "EL ERROR",
+    "VIAJA ATRÁS"
+  ],
+  "pregunta_ab": "¿El error viaja o se queda?",
+  "music_prompt": "ambient IDM instrumental, granular textures and a slow reversed piano motif, cold and spacious, no vocals, 96 BPM",
+  "scenes": [
+    {
+      "narration": "Se equivoca en la última palabra, pero la culpa puede estar en la primera.",
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.45,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "falla al final",
+            "serif": true
+          },
+          {
+            "text": "LA CULPA ESTÁ AL PRINCIPIO",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "cinematic macro of a long line of dominoes on a dark surface: the very LAST domino topples, and then a wave of light races backwards along the whole line all the way to the first one, slow motion",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Una red que lee no se equivoca una vez: se equivoca en cada palabra. Y todas esas fallas se suman en una sola.",
+      "beat_type": "hook",
+      "visual_type": "host",
+      "host_top": {
+        "kind": "headline",
+        "lines": [
+          "EL ERROR",
+          "VIAJA ATRÁS"
+        ]
+      }
+    },
+    {
+      "narration": "Para corregir, el error viaja hacia atrás paso por paso, hasta la primera palabra de la frase. Eso es backpropagation en el tiempo.",
+      "beat_type": "proof",
+      "visual_type": "backprop",
+      "backprop": {
+        "title": "HACIA ATRÁS EN EL TIEMPO",
+        "subtitle": "de la última palabra a la primera"
+      }
+    },
+    {
+      "narration": "Y aquí está la trampa: en cada paso hacia atrás se vuelve a multiplicar por la misma matriz de pesos. Una y otra vez.",
+      "beat_type": "giro",
+      "visual_type": "ml_demo",
+      "ml_demo": {
+        "code": "import numpy as np\npasos = np.arange(1, 21)\nchico = 0.8 ** pasos\ngrande = 1.2 ** pasos\nfig, ax = plt.subplots(figsize=(7.4, 5.2))\nax.plot(pasos, chico, color=CYAN, lw=5, label='factor 0.8')\nax.plot(pasos, grande, color=RED, lw=5, label='factor 1.2')\nax.set_yscale('log')\nax.set_xlabel('pasos hacia atrás', fontsize=19)\nax.set_ylabel('tamaño del gradiente', fontsize=19)\nax.legend(loc='center left', fontsize=18)\nax.set_title('multiplicar 20 veces por lo mismo')\nax.grid(alpha=0.25)",
+        "display_code": [
+          "grad = grad @ W_hh    # en CADA paso hacia atrás",
+          "20 pasos  ->  W_hh multiplicada 20 veces"
+        ],
+        "caption": "bptt.py"
+      }
+    },
+    {
+      "narration": "Aprender a leer es corregir hacia atrás.",
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.35,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "aprender a leer",
+            "serif": true
+          },
+          {
+            "text": "ES CORREGIR HACIA ATRÁS",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "a pulse of light travelling BACKWARDS along a long chain of connected glowing nodes, each node flaring as the pulse passes it in reverse, cinematic, dark background",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Multiplicar veinte veces por lo mismo rompe algo. Mañana: por qué la IA olvidaba el principio.",
+      "beat_type": "cta",
+      "visual_type": "host",
+      "host_top": {
+        "kind": "save",
+        "title": "SERIE: CÓMO LA IA LEE",
+        "subtitle": "SIGUIENTE: POR QUÉ OLVIDABA →"
+      }
+    }
+  ]
+}

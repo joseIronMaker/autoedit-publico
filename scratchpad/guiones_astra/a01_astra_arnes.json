@@ -1,0 +1,107 @@
+{
+  "title": "El 99.9% de GPT-6 Astra y el número que no te enseñaron",
+  "slug": "astra_arnes",
+  "tema": "por qué GPT-6 Astra marca 99.9% en ARC-AGI-3 en el anuncio y 62.7% cuando lo mide ARC Prize con su arnés estándar, y qué es un arnés",
+  "theme": "hielo",
+  "hook_tipo": "recibo",
+  "keyword": "gpt 6 astra benchmarks",
+  "hook_headline": [
+    "99.9",
+    "Y 62.7"
+  ],
+  "pregunta_ab": "¿Te fías del número del anuncio o esperas al que mide desde fuera?",
+  "music_prompt": "hard techno bed, dark industrial groove, 150 BPM, rolling kick, restrained under a voice, instrumental, no vocals",
+  "modo": "corto",
+  "hook_locked": true,
+  "scenes": [
+    {
+      "beat_type": "hook",
+      "visual_type": "receipt",
+      "pause_after": 0.4,
+      "narration": "Noventa y nueve punto nueve. Ese es el número con el que salió GPT-6 Astra y con el que medio internet perdió la cabeza. Pero lee este renglón, que no lo escribió OpenAI sino los que MIDEN: mismo modelo, mismo examen, sesenta y dos punto siete. Y ojo, nadie hizo trampa.",
+      "receipt": {
+        "image": "/home/jose/tiktok/scratchpad/_astra/recibos/r_arcprize_resumen.png",
+        "highlight": "62.7%",
+        "nota": "captura REAL del análisis de ARC Prize, la organización del benchmark"
+      }
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "custom",
+      "narration": "Lo que cambia entre un número y el otro se llama arnés, y no es el modelo: es cómo lo sientas a hacer el examen. Si se acuerda de lo que ya intentó. Si puede tomar notas. Si le dejan releer el enunciado. O sea, la silla. Y resulta que la silla te mueve la calificación. Es la diferencia entre presentar a pelo o presentar con acordeón, cuaderno y el compa soplándote desde atrás.",
+      "custom_anim": {
+        "description": "Dos siluetas idénticas de un mismo modelo sentadas ante el mismo examen, una a la izquierda y otra a la derecha, sobre fondo grafito. La de la izquierda está en una silla desnuda, con el pupitre vacío. La de la derecha tiene sobre el pupitre una libreta abierta y una pila de hojas de intentos anteriores que va creciendo. Debajo de cada una aparece la etiqueta ARNES ESTANDAR y ARNES PROPIO en tipografía grande. El acento cálido apagado marca los objetos extra del lado derecho. Sin brillos ni neón, look documental."
+      }
+    },
+    {
+      "beat_type": "contexto",
+      "visual_type": "custom",
+      "narration": "El mecanismo es este, y es más simple de lo que suena. En el arnés de la casa, el modelo se guarda su razonamiento entre intento e intento, y cuando la conversación se hace larga se la resumen para que no se le pierda nada por el camino. En el arnés estándar, cada vuelta arranca más limpia. Mismo cerebro, distinta memoria de trabajo. Y por eso el mismo examen escupe dos calificaciones que no se parecen en nada.",
+      "custom_anim": {
+        "description": "Animación de proceso en dos carriles horizontales sobre fondo tinta. En el carril de arriba, tres intentos numerados que se encadenan: al terminar cada uno, una pastilla clara etiquetada memoria pasa al siguiente y va engordando. En el carril de abajo, los mismos tres intentos pero la pastilla se desvanece entre uno y otro y cada intento empieza del mismo tamaño. Etiquetas grandes CONSERVA y REINICIA a la izquierda de cada carril. Movimiento continuo con periodo propio, no repartido en la duración total."
+      }
+    },
+    {
+      "beat_type": "giro",
+      "visual_type": "receipt",
+      "narration": "Y ahora lo que NO depende de la silla, que es lo que te va a tocar a ti. En Terminal-Bench, que es chamba de terminal de verdad, Astra saca cincuenta y siete punto nueve contra treinta y siete de su hermano mayor. Veinte puntos de diferencia. Eso no es marketing, eso se siente al primer día. Lo que también se siente es la cuenta: cuesta dos veces y media más que el anterior.",
+      "receipt": {
+        "image": "/home/jose/tiktok/scratchpad/_astra/recibos/r_openai_coding.png",
+        "highlight": "57.9%",
+        "nota": "captura REAL de la tabla de coding publicada por OpenAI"
+      }
+    },
+    {
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.5,
+      "narration": "El salto es real. El número del titular, no siempre. Así que la próxima vez que veas un porcentaje demasiado bonito, la pregunta no es cuánto sacó: es con qué arnés lo midieron. ¿Te fías del número del anuncio o esperas al que mide desde fuera? Yo espero. Llevo años esperando y todavía no me arrepiento.",
+      "kinetic_video": {
+        "video": "/home/jose/tiktok/videos/_clips_pagados/gen_ln_donde_quedo_el_orden__veo_4.mp4",
+        "words": [
+          {
+            "text": "no es cuánto sacó",
+            "serif": true
+          },
+          {
+            "text": "ES CON QUÉ ARNÉS",
+            "accent": true
+          }
+        ],
+        "variant": "dark",
+        "stanzas": [
+          [
+            {
+              "text": "el salto es real",
+              "serif": true
+            },
+            {
+              "text": "EL TITULAR NO",
+              "accent": true
+            }
+          ],
+          [
+            {
+              "text": "no es cuánto sacó",
+              "serif": true
+            },
+            {
+              "text": "ES CON QUÉ ARNÉS",
+              "accent": true
+            }
+          ],
+          [
+            {
+              "text": "yo espero al que",
+              "serif": true
+            },
+            {
+              "text": "MIDE DESDE FUERA",
+              "accent": true
+            }
+          ]
+        ]
+      }
+    }
+  ]
+}

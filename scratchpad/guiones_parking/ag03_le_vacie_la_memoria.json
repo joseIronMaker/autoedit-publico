@@ -1,0 +1,96 @@
+{
+  "slug": "ag_le_vacie_la_memoria",
+  "tema": "Le vacié la memoria al agente 12 veces para que no se llenara, y aun así se llenó 3: la ventana de contexto en una sesión real",
+  "title": "Le vacié la memoria 12 veces. Aun así se llenó 3.",
+  "theme": "hielo",
+  "hook_locked": true,
+  "quien_decide": "cuando la memoria se llena decide el sistema: resume lo que cabe y tira el resto, sin preguntarte qué te importaba",
+  "que_cuesta": "el agente vuelve a abrir lo que ya había leído, repite trabajo que ya estaba hecho y pierde decisiones que tú ya habías tomado con él",
+  "palanca": "abre un archivo de diez líneas con tres encabezados —qué decidí, qué ya está hecho, qué falta— y pídele que lo actualice antes de cada corte: eso sobrevive al vaciado, la conversación no",
+  "pregunta_ab": "¿Le vacías la memoria tú a propósito, o esperas a que se llene sola?",
+  "scenes": [
+    {
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "narration": "En una sola sesión con mi agente le vacié la memoria doce veces a propósito. Y aun así se llenó sola otras tres.",
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "12 VECES"
+          },
+          {
+            "text": "LA VACIÉ YO"
+          },
+          {
+            "text": "3 SE LLENÓ SOLA"
+          }
+        ],
+        "variant": "dark",
+        "video": "videos/gen_ln_neurona_con_memoria.assets/veo_4.mp4"
+      }
+    },
+    {
+      "beat_type": "contexto",
+      "visual_type": "image",
+      "narration": "Porque la memoria de tu agente no es memoria: es una hoja de tamaño fijo donde tiene que volver a caber todo lo que llevan platicado, y en cada vuelta se relee entera. Cuando ya no cabe, alguien tacha. Y el que tacha no eres tú.",
+      "image_prompts": [
+        "A single sheet of paper on a dark desk completely covered in handwriting to the very edges, no margin left, warm lamp above. Documentary photography, muted palette, no readable words.",
+        "A hand pressing a fresh sheet over the full one, the old page sliding out from underneath, macro, warm side light, shallow depth of field.",
+        "A wastebasket beside the desk with several crumpled sheets in it, the desk lamp lighting only its rim. Documentary photography, deep shadows."
+      ]
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "ml_demo",
+      "narration": "Así que conté los cortes en la bitácora real de esa sesión: doce mil trescientos diecinueve turnos y quince vaciados. Doce los pedí yo antes de que se llenara. Tres los disparó el sistema al toparse, con la hoja en novecientos noventa y ocho mil tokens de un millón.",
+      "ml_demo": {
+        "caption": "medir_memoria_agente.py",
+        "editor_frac": 0.26,
+        "code": "import json\nd = json.load(open('/home/jose/tiktok/mediciones/memoria_agente.json'))\nc = d['cortes']\nfig, (ax, bx) = plt.subplots(2, 1, figsize=(9.2, 7.4), gridspec_kw={'height_ratios': [1, 1.15]})\nax.bar(['los pedí yo', 'se llenó sola'], [c['los_pedi_yo'], c['se_lleno_sola']], color=[GREEN, RED], width=0.45)\nax.set_ylim(0, c['totales'] * 1.1)\nax.set_ylabel('vaciados de memoria')\nax.set_title('%d cortes en UNA sesión' % c['totales'])\nfor i, v in enumerate([c['los_pedi_yo'], c['se_lleno_sola']]):\n    ax.text(i, v + c['totales'] * 0.04, str(v), ha='center', color=TXT, fontsize=30, fontweight='bold')\npico = d['pico_de_contexto']\nlimite = 1000000\nbx.barh(['la hoja'], [limite], color='#23242b', height=0.42)\nbx.barh(['la hoja'], [pico], color=ORANGE, height=0.42)\nbx.set_xlim(0, limite * 1.02)\nbx.set_xticks([0, 250000, 500000, 750000, 1000000])\nbx.set_xticklabels(['0', '250k', '500k', '750k', '1M'])\nbx.set_xlabel('tokens que caben de una vez')\nbx.set_title('qué tan llena llegó')\nbx.text(pico * 0.5, 0, '{:,}'.format(pico).replace(',', ' '), ha='center', va='center', color='#121318', fontsize=22, fontweight='bold')\nfig.text(0.5, 0.012, 'bitácora real de una sesión de %d turnos · se cuentan marcadores, nunca el contenido · 15-ago-2026' % d['turnos_con_uso'], ha='center', fontsize=11, color='#969491')",
+        "display_code": [
+          "d = json.load(open('memoria_agente.json'))",
+          "c['los_pedi_yo'], c['se_lleno_sola']"
+        ]
+      }
+    },
+    {
+      "beat_type": "giro",
+      "visual_type": "image",
+      "narration": "Y por eso se te atora en el paso siete. Cuando la hoja se tacha, tu trabajo no se pierde —tus archivos siguen ahí— pero la libreta sí: lo que decidieron juntos, lo que ya habían descartado, por qué eligieron un camino. Eso se resume o se va, y el agente vuelve a proponerte lo que ya habías tirado.",
+      "image_prompts": [
+        "A workshop where the finished pieces sit neatly on the bench but the notebook beside them lies open on a blank page, warm side light. Documentary photography, no readable writing.",
+        "Extreme macro of a blank notebook page with the faint impressions of writing that was on the sheet above it, raking light revealing the grooves. Shallow depth of field.",
+        "A hand starting to write again on that blank page under a desk lamp at night, the finished pieces blurred behind. Documentary photography, no readable words."
+      ]
+    },
+    {
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "narration": "El agente no olvida lo que hizo. Olvida por qué lo hizo.",
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "NO OLVIDA"
+          },
+          {
+            "text": "LO QUE HIZO"
+          },
+          {
+            "text": "SINO POR QUÉ"
+          }
+        ],
+        "variant": "dark",
+        "video": "videos/gen_ver_galeria_sin_cara.assets/veo_0.mp4"
+      }
+    },
+    {
+      "beat_type": "cta",
+      "visual_type": "image",
+      "narration": "Así que mi postura, y me costó doce vaciados aprenderla: la memoria que importa no vive en la conversación, vive en un archivo. Diez líneas con tres encabezados: qué decidí, qué ya está hecho, qué falta. Eso sobrevive al corte. ¿Le vacías la memoria tú a propósito, o esperas a que se llene sola?",
+      "image_prompts": [
+        "A short handwritten list of three headings on a single index card propped against a laptop on a dark desk, warm lamp. Documentary photography, no readable writing, shallow depth of field.",
+        "That same index card clipped to the edge of the monitor at dawn, the desk otherwise clear, light through a window. Macro, film grain."
+      ]
+    }
+  ]
+}

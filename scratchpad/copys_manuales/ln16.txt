@@ -1,0 +1,13 @@
+Nadie entrena un modelo desde cero. Ni las empresas grandes.
+
+Entrenar uno grande cuesta millones y semanas de cómputo. Y aun así tú lo puedes usar hoy, en tu laptop, porque lo que ese modelo aprendió sirve para otras tareas: partes de él ya entrenado y le das solo el ajuste final con tus datos. Eso es fine-tuning.
+
+La diferencia es brutal: donde antes necesitabas cientos de miles de ejemplos etiquetados, ahora te alcanza con unos cientos.
+
+Es el consejo que más doy cuando alguien quiere empezar: no entrenes, afina. Casi ningún proyecto real justifica lo contrario.
+
+Mañana: qué pasó cuando a alguien se le ocurrió hacerlo gigante.
+
+¿Entrenar desde cero o afinar? Yo digo afinar, siempre.
+
+#finetuning #transferlearning #machinelearning #ia #iaconjose

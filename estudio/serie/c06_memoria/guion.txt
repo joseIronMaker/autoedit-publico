@@ -1,0 +1,18 @@
+Una inteligencia artificial puede sacar diez en todos sus exámenes, y no saber nada.
+Mira. Aquí están sus ejemplos, y le pides una curva que los explique.
+Al principio la curva es simple, y se equivoca un poco.
+Sigue entrenando. La curva se dobla, se retuerce, y toca cada punto.
+Error: cero. Perfecto.
+Ahora llega un dato nuevo... y falla por muchísimo.
+Se aprendió las respuestas, no la materia.
+A esto le llamamos sobreajuste.
+Y puede ser más raro todavía.
+Unos investigadores entrenaron, a propósito, un modelo con fotos de lobos y de perros. Todos los lobos salían en la nieve.
+Acertaba casi siempre. Parecía brillante.
+Hasta que revisaron en qué se fijaba. No miraba al animal.
+Miraba la nieve.
+Por eso se esconde una parte de los datos. La máquina jamás la ve mientras entrena.
+Ese es el examen de verdad.
+Y cuando el error en lo que ya vio sigue bajando, pero en lo escondido empieza a subir, ahí se detiene todo.
+Un modelo no vale por lo que acierta en lo que ya vio.
+Vale por lo que acierta en lo que nunca vio.

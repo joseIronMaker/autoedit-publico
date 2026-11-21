@@ -1,0 +1,49 @@
+Traceback (most recent call last):
+  File "<stdin>", line 10, in <module>
+  File "/usr/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 521, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 630, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 559, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 639, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 401: Unauthorized
+jose16: voz 67.709396s · pantalla 81.70s a 1.36829× → 67.709000s
+→ Transcribiendo con Whisper (small, CPU)…
+  171 palabras, 67.7s → scratchpad/_grabados_v2/jose16b.autoedit/transcript.json
+→ Gemini analizando la transcripción (cortes + énfasis)…
+
+Plan de edición (18 cortes, −5.3s de 67.7s):
+  ✂    3.50 →    3.76  silencio de 0.5s
+  ✂   10.70 →   11.12  silencio de 0.7s
+  ✂   14.14 →   14.38  silencio de 0.5s
+  ✂   17.38 →   17.60  silencio de 0.5s
+  ✂   18.50 →   18.90  silencio de 0.6s
+  ✂   19.68 →   20.00  silencio de 0.6s
+  ✂   23.42 →   23.66  silencio de 0.5s
+  ✂   24.74 →   25.10  silencio de 0.6s
+  ✂   27.14 →   27.36  silencio de 0.5s
+  ✂   28.72 →   29.00  silencio de 0.5s
+  ✂   34.98 →   35.30  silencio de 0.6s
+  ✂   37.82 →   38.06  silencio de 0.5s
+  ✂   46.26 →   46.52  silencio de 0.5s
+  ✂   50.12 →   50.34  silencio de 0.5s
+  ✂   55.00 →   55.38  silencio de 0.6s
+  ✂   58.10 →   58.38  silencio de 0.5s
+  ✂   61.26 →   61.60  silencio de 0.6s
+  ✂   63.08 →   63.40  silencio de 0.6s
+  ★ 18 palabras enfatizadas en subtítulos
+→ Renderizando jose16b_final.mp4: 19 tramos, 62.4s…
+✔ scratchpad/_grabados_v2/jose16b_final.mp4
+→ Generando copys (TikTok/IG/FB)…
+✔ scratchpad/_grabados_v2/jose16b.autoedit/copys.md

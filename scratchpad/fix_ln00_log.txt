@@ -1,0 +1,6 @@
+tema: neon
+escena 0: render kinetic_video (4.7s)
+escena 0: OK True
+escena 3: render showcase (6.0s)
+escena 3: OK True
+RE-ENSAMBLADO videos/gen_ln_frase_rompio_ia.mp4 (36.3s)

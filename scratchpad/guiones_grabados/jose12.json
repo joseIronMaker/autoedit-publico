@@ -1,0 +1,114 @@
+{
+  "tema": "ambar",
+  "ratio_clip": 0.45,
+  "recursos": {
+    "abuelita": "jose12.assets/img_abuelita.png",
+    "copiar": "jose12.assets/img_copiar_pegar.png",
+    "colaborador": "jose12.assets/img_colaborador.png",
+    "pieza3d": "jose12.assets/img_pieza3d.png",
+    "teclado": "videos/_clips_pagados/gen_ln_sin_gpu_fine_tuning__veo_0.mp4"
+  },
+  "paneles": [
+    {
+      "t": 0.0,
+      "spec": {
+        "kind": "headline",
+        "kicker": "ia con josé",
+        "lines": [
+          "¿SIGUES USANDO",
+          "CHATGPT COMO",
+          "TU ABUELITA?"
+        ]
+      }
+    },
+    {
+      "t": 5.5,
+      "spec": {
+        "kind": "photo",
+        "images": [
+          "@abuelita"
+        ],
+        "caption": "de 2022 a 2026: un chat y ya"
+      }
+    },
+    {
+      "t": 12.7,
+      "spec": {
+        "kind": "photo",
+        "images": [
+          "@copiar"
+        ],
+        "caption": "preguntar, copiar, pegar"
+      }
+    },
+    {
+      "t": 23.9,
+      "spec": {
+        "kind": "headline",
+        "kicker": "lo que cambió",
+        "lines": [
+          "YA NO ES",
+          "UN CHAT"
+        ]
+      }
+    },
+    {
+      "t": 35.1,
+      "spec": {
+        "kind": "reveal",
+        "mode": "cortina",
+        "before": {
+          "text": "le preguntas y copias",
+          "label": "chat"
+        },
+        "after": {
+          "text": "le pides y lo hace",
+          "label": "agente"
+        },
+        "caption": "eso es lo que cambió en 2026"
+      }
+    },
+    {
+      "t": 46.3,
+      "spec": {
+        "kind": "clip",
+        "video": "@teclado",
+        "lines": [
+          "ESTO",
+          "LO CAMBIA TODO"
+        ]
+      }
+    },
+    {
+      "t": 57.6,
+      "spec": {
+        "kind": "photo",
+        "images": [
+          "@colaborador"
+        ],
+        "caption": "un colaborador, no un buscador"
+      }
+    },
+    {
+      "t": 69.2,
+      "spec": {
+        "kind": "photo",
+        "images": [
+          "@pieza3d"
+        ],
+        "caption": "también CAD, electrónica, PCBs"
+      }
+    },
+    {
+      "t": 80.4,
+      "spec": {
+        "kind": "cita",
+        "text": "Entramos en la etapa agéntica.",
+        "highlight": [
+          "agéntica."
+        ],
+        "source": "ia con josé"
+      }
+    }
+  ]
+}

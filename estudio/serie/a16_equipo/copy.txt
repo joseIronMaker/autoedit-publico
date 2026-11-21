@@ -1,0 +1,1 @@
+¿Diez agentes trabajan mejor que uno? Google midió 180 configuraciones: mejoran lo divisible, empeoran lo secuencial, y sin coordinador los errores se multiplican hasta por 17. Yo empiezo con uno y solo agrego cuando duele. Parte 19 de 33 de «Cómo actúa una máquina». ¿Equipo de agentes o uno solo bien hecho? #agentesdeia #inteligenciaartificial #ia

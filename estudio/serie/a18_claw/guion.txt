@@ -1,0 +1,17 @@
+En noviembre de dos mil veinticinco, un programador llamado Peter Steinberger subió un proyecto a internet.
+Tenía un nombre aburrido: Warelay. En enero ya se llamaba Clawdbot, y era lo más comentado de la tecnología.
+La idea: un agente que corre en tu propia computadora, y que manejas por mensajes, desde tu teléfono.
+Le escribes como a un amigo, y él hace cosas en tu máquina.
+Anthropic le pidió cambiar el nombre, por parecerse a Claude. Pasó a Moltbot. Tres días después, a OpenClaw.
+A fines de enero ya tenía cien mil estrellas en GitHub.
+Y entonces llegó la factura.
+Se publicó una falla grave: con un solo clic, un atacante podía ejecutar código en tu máquina.
+Apareció Moltbook, una red social solo para agentes, que presumía un millón y medio.
+La empresa de seguridad Wiz entró a su base de datos, que estaba expuesta, y encontró a unas diecisiete mil personas detrás.
+Y un millón y medio de llaves de acceso, al aire libre.
+En febrero, Steinberger entró a OpenAI, y el proyecto pasó a una fundación.
+No fue el primer agente. Fue el momento en que la gente normal lo probó.
+Nadie pedía un chatbot más listo.
+Querían uno que viviera en sus mensajes...
+y pudiera tocar sus cosas.
+Aunque todavía no fuera seguro.

@@ -1,0 +1,198 @@
+{
+  "tema": "cuantos huecos rellena el modelo cuando el prompt no los trae",
+  "modelo": "gemini-flash-latest",
+  "n_por_condicion": 36,
+  "tareas": 6,
+  "que_cuenta_un_hueco": "marcador [x] {x} <x> que el modelo deja para que lo llenes",
+  "condiciones": {
+    "una línea": {
+      "respuestas": 36,
+      "huecos_totales": 407,
+      "huecos_por_respuesta": 11.31,
+      "respuestas_con_al_menos_un_hueco": 24,
+      "pct_con_hueco": 66.7,
+      "ejemplos_de_hueco": [
+        "[Tu Nombre y Apellidos]",
+        "[Nombre del destinatario]",
+        "[opcional: por ejemplo, tráfico intenso / un problema técnico]",
+        "[Tu Nombre]",
+        "[Nombre de la persona]",
+        "[opcional: por motivos de tráfico / una llamada urgente]",
+        "[Tu Nombre]",
+        "[Nombre del destinatario]",
+        "[opcional: por motivos de tráfico / una llamada urgente]",
+        "[Nombre del proyecto o motivo]",
+        "[Nombre del destinatario]",
+        "[número]",
+        "[Hora]",
+        "[Tu Nombre]"
+      ],
+      "por_encargo": [
+        {
+          "encargo": "Escríbeme un correo para avisar de un retraso.",
+          "respuestas": 6,
+          "huecos": 116,
+          "por_respuesta": 19.33,
+          "con_hueco": 6
+        },
+        {
+          "encargo": "Escríbeme una respuesta para un cliente molesto.",
+          "respuestas": 6,
+          "huecos": 60,
+          "por_respuesta": 10.0,
+          "con_hueco": 6
+        },
+        {
+          "encargo": "Hazme un resumen de una junta.",
+          "respuestas": 6,
+          "huecos": 0,
+          "por_respuesta": 0.0,
+          "con_hueco": 0
+        },
+        {
+          "encargo": "Escríbeme una publicación para anunciar algo.",
+          "respuestas": 6,
+          "huecos": 81,
+          "por_respuesta": 13.5,
+          "con_hueco": 6
+        },
+        {
+          "encargo": "Escríbeme un correo para pedir una prórroga.",
+          "respuestas": 6,
+          "huecos": 150,
+          "por_respuesta": 25.0,
+          "con_hueco": 6
+        },
+        {
+          "encargo": "Escríbeme la descripción de un producto.",
+          "respuestas": 6,
+          "huecos": 0,
+          "por_respuesta": 0.0,
+          "con_hueco": 0
+        }
+      ],
+      "corridas_perdidas": 0
+    },
+    "con contexto y datos": {
+      "respuestas": 36,
+      "huecos_totales": 67,
+      "huecos_por_respuesta": 1.86,
+      "respuestas_con_al_menos_un_hueco": 25,
+      "pct_con_hueco": 69.4,
+      "ejemplos_de_hueco": [
+        "[Tu Nombre / Tu Empresa]",
+        "[Tu Teléfono de contacto]",
+        "[Tu Nombre / Tu Empresa]",
+        "[Tu Teléfono de contacto]",
+        "[Tu Nombre/Nombre de tu empresa]",
+        "[Tu Teléfono de contacto]",
+        "[Tu Nombre / Tu Cargo]",
+        "[Nombre de tu empresa/taller de uniformes]",
+        "[Tu Teléfono de contacto]",
+        "[Tu Nombre/Nombre de tu empresa]",
+        "[Tu Teléfono de contacto]",
+        "[Tu Nombre/Nombre de tu Empresa]",
+        "[Tu Teléfono de contacto]",
+        "[Tu Nombre / El dueño]"
+      ],
+      "por_encargo": [
+        {
+          "encargo": "Escríbeme un correo para avisar de un retraso.",
+          "respuestas": 6,
+          "huecos": 13,
+          "por_respuesta": 2.17,
+          "con_hueco": 6
+        },
+        {
+          "encargo": "Escríbeme una respuesta para un cliente molesto.",
+          "respuestas": 6,
+          "huecos": 12,
+          "por_respuesta": 2.0,
+          "con_hueco": 5
+        },
+        {
+          "encargo": "Hazme un resumen de una junta.",
+          "respuestas": 6,
+          "huecos": 16,
+          "por_respuesta": 2.67,
+          "con_hueco": 6
+        },
+        {
+          "encargo": "Escríbeme una publicación para anunciar algo.",
+          "respuestas": 6,
+          "huecos": 2,
+          "por_respuesta": 0.33,
+          "con_hueco": 1
+        },
+        {
+          "encargo": "Escríbeme un correo para pedir una prórroga.",
+          "respuestas": 6,
+          "huecos": 21,
+          "por_respuesta": 3.5,
+          "con_hueco": 6
+        },
+        {
+          "encargo": "Escríbeme la descripción de un producto.",
+          "respuestas": 6,
+          "huecos": 3,
+          "por_respuesta": 0.5,
+          "con_hueco": 1
+        }
+      ],
+      "corridas_perdidas": 0
+    },
+    "con formato y restricciones": {
+      "respuestas": 36,
+      "huecos_totales": 0,
+      "huecos_por_respuesta": 0.0,
+      "respuestas_con_al_menos_un_hueco": 0,
+      "pct_con_hueco": 0.0,
+      "ejemplos_de_hueco": [],
+      "por_encargo": [
+        {
+          "encargo": "Escríbeme un correo para avisar de un retraso.",
+          "respuestas": 6,
+          "huecos": 0,
+          "por_respuesta": 0.0,
+          "con_hueco": 0
+        },
+        {
+          "encargo": "Escríbeme una respuesta para un cliente molesto.",
+          "respuestas": 6,
+          "huecos": 0,
+          "por_respuesta": 0.0,
+          "con_hueco": 0
+        },
+        {
+          "encargo": "Hazme un resumen de una junta.",
+          "respuestas": 6,
+          "huecos": 0,
+          "por_respuesta": 0.0,
+          "con_hueco": 0
+        },
+        {
+          "encargo": "Escríbeme una publicación para anunciar algo.",
+          "respuestas": 6,
+          "huecos": 0,
+          "por_respuesta": 0.0,
+          "con_hueco": 0
+        },
+        {
+          "encargo": "Escríbeme un correo para pedir una prórroga.",
+          "respuestas": 6,
+          "huecos": 0,
+          "por_respuesta": 0.0,
+          "con_hueco": 0
+        },
+        {
+          "encargo": "Escríbeme la descripción de un producto.",
+          "respuestas": 6,
+          "huecos": 0,
+          "por_respuesta": 0.0,
+          "con_hueco": 0
+        }
+      ],
+      "corridas_perdidas": 0
+    }
+  }
+}

@@ -1,0 +1,13 @@
+"Está increíble... para dormirse". Cuatro palabras que rompieron a la IA durante 25 años.
+
+En el año 2000 el análisis de sentimiento contaba palabras: las buenas suman, las malas restan. "Increíble" suma uno, así que la frase salía POSITIVA. Y en realidad era una burla.
+
+Lo que vino después no fue una regla mejor. Fueron tres saltos: redes con memoria, atención sobre la frase completa, y escala brutal. El patrón nunca cambió: menos reglas escritas a mano, más datos y más cómputo.
+
+Llevo años trabajando con estos modelos y sigo viendo equipos intentando arreglar el lenguaje con listas de palabras. No se arregla con reglas.
+
+Arranca la serie: cómo la IA aprendió a leer, de cero a Transformer.
+
+¿La IA entiende o solo predice? Yo digo que predice — y que a esta escala, la diferencia deja de importar.
+
+#inteligenciaartificial #nlp #deeplearning #sarcasmo #iaconjose

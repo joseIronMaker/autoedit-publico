@@ -1,0 +1,80 @@
+{
+  "title": "Yo ya no creo nada desde cero",
+  "slug": "ia_generativa_fabrica",
+  "hook_tipo": "confesion",
+  "keyword": "IA generativa",
+  "hook_headline": ["ASÍ CREO", "EN SEGUNDOS"],
+  "pregunta_ab": "¿Texto o imagen?",
+  "music_prompt": "dark uplifting electronic tech instrumental, creative pulsing energy, layered synth build, no vocals, 124 BPM",
+  "modo": "corto",
+  "scenes": [
+    {
+      "narration": "Yo ya no creo nada desde cero.",
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.45,
+      "kinetic_video": {
+        "words": [
+          {"text": "yo ya no creo", "serif": true},
+          {"text": "DESDE CERO", "accent": true}
+        ],
+        "variant": "dark",
+        "video": "/home/jose/tiktok/scratchpad/olas_datos.mp4"
+      }
+    },
+    {
+      "narration": "La IA generativa fabrica texto, imágenes y código que no existían.",
+      "beat_type": "hook",
+      "visual_type": "host",
+      "host_top": {"kind": "headline", "lines": ["ASÍ CREO", "EN SEGUNDOS"]}
+    },
+    {
+      "narration": "Así la uso yo: tres ideas con gancho incluido, fabricadas en diez segundos. Este prompt te va a servir cuando te bloquees.",
+      "beat_type": "proof",
+      "visual_type": "screen_demo",
+      "screen_demo": {
+        "tool": "chatgpt",
+        "prompt": "Escribe 3 ideas de posts virales para mi negocio, cada una con gancho de 8 palabras y llamada a la acción, en tono cercano mexicano"
+      }
+    },
+    {
+      "narration": "No busca en internet: aprendió patrones y fabrica texto, imagen, código o música.",
+      "beat_type": "proof",
+      "visual_type": "diagram",
+      "diagram": {
+        "type": "list",
+        "title": "FABRICA",
+        "items": ["Textos y posts", "Imágenes", "Código", "Música"]
+      }
+    },
+    {
+      "narration": "El giro: no copia. Genera combinaciones nuevas que nadie había visto.",
+      "beat_type": "giro",
+      "visual_type": "veo",
+      "veo": {
+        "prompt": "Abstract cinematic scene of flowing streams of glowing liquid light continuously morphing between different painting styles and shapes, neon cyan and magenta ribbons weaving through a near-black void, elegant slow motion, volumetric glow, dark tech aesthetic, no text, no people",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "No busca respuestas: las fabrica.",
+      "beat_type": "tesis",
+      "visual_type": "kinetic",
+      "pause_after": 0.35,
+      "kinetic": {
+        "words": [
+          {"text": "no busca", "serif": true},
+          {"text": "RESPUESTAS"},
+          {"text": "LAS FABRICA", "accent": true}
+        ],
+        "variant": "accent"
+      }
+    },
+    {
+      "narration": "Cuando te bloquees, este prompt es tu salida. ¿Texto o imagen? Yo digo texto. Mañana: cuál IA para cada chamba.",
+      "beat_type": "cta",
+      "visual_type": "host",
+      "host_top": {"kind": "save", "title": "TU SALIDA", "subtitle": "MAÑANA: CUÁL USAR →"}
+    }
+  ]
+}

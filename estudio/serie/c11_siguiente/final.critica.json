@@ -1,0 +1,103 @@
+{
+  "nivel_vs_listón_0a10": 6,
+  "primer_segundo": "No detiene el pulgar con la misma fuerza que el listón. Mientras el Video 1 tiene una física 3D limpia y un espacio tridimensional inmediato con un solo foco de atención, el Video 2 abre con una composición plana saturada de elementos compitiendo: la cinta superior corriendo rápido, una ruleta 2D con texto ilegible girando, palabras flotantes en marca de agua en el fondo y el texto gigante 'ChatGPT' entrando. Falta jerarquía visual en el segundo 0.",
+  "momentos_que_funcionan": [
+    {
+      "t": "00:18-00:21",
+      "que": "La traducción visual de los porcentajes de probabilidad (70%, 10%, 5%) a tamaños proporcionales de las casillas de la ruleta es una excelente metáfora visual, directa e intuitiva."
+    },
+    {
+      "t": "00:29-00:31",
+      "que": "El cambio a fondo negro donde la bola empuja físicamente el borde de la cinta de papel ('se dispersa en') rompe la monotonía del fondo crema y transmite muy bien el concepto de generación a ciegas paso a paso."
+    },
+    {
+      "t": "00:58-01:01",
+      "que": "El zoom out revelando miles de ruletas que forman las siglas 'LLM' logra dar sensación de escala masiva de forma gráfica y limpia."
+    },
+    {
+      "t": "01:13-01:15",
+      "que": "La pantalla dividida comparando dos resultados distintos ('azul porque...' vs 'hermoso cuando...') a partir de la misma pregunta explica la estocasticidad en segundos sin sobreexplicar."
+    }
+  ],
+  "momentos_donde_se_iria": [
+    {
+      "t": "00:10-00:17",
+      "que": "Siete segundos viendo barras deslizarse para mostrar tres porcentajes. En formato corto esto es tiempo muerto; la animación es demasiado lineal y predecible.",
+      "por_que": "Caída drástica de ritmo visual tras el inicio dinámico.",
+      "arreglo": "Hacer que las tres barras aparezcan de golpe con un golpe seco de sonido (snappy easing) en 1.5 segundos y que inmediatamente se deformen convirtiéndose en las tajadas de la ruleta."
+    },
+    {
+      "t": "00:49-00:56",
+      "que": "La explicación del entrenamiento (retropropagación) muestra un grafo genérico de nodos rojos y tres perillas abajo que se conectan con una línea punteada a la cinta superior.",
+      "por_que": "Es confuso, visualmente estático y rompe la metáfora de la ruleta. No se entiende qué hacen las perillas de abajo respecto a la ruleta de arriba.",
+      "arreglo": "Eliminar el grafo abstracto. Mostrar cómo el 'error' empuja físicamente las divisiones de la propia ruleta, encogiendo la tajada de 'queso' y agrandando la de 'azul' mediante engranajes o tensión mecánica."
+    },
+    {
+      "t": "01:05-01:07",
+      "que": "La repetición de 'el cielo es azul' cuatro veces con voz robótica.",
+      "por_que": "El chiste dura demasiado y visualmente solo es texto plano apilándose.",
+      "arreglo": "Acortar a la mitad (dos repeticiones rápidas que se traban como disco rayado) y pasar directo a la perilla de temperatura."
+    }
+  ],
+  "ritmo_visual": "Irregular y excesivamente compartimentado. El Video 1 es un plano secuencia continuo donde la cámara viaja por un mismo universo espacial (de un punto, a una línea, a un mapa topográfico). El Video 2 funciona como una presentación de diapositivas sofisticada: pone la ruleta, la quita para poner un teclado, lo quita para poner barras, las quita para volver a la ruleta, cambia a un celular, luego a una red neuronal. Además, el movimiento de la bola en la ruleta carece de peso físico real (gravedad, rebote elástico, fricción); se siente pegada a un riel con interpolación lineal.",
+  "sincronia_voz_imagen": [
+    {
+      "t": "00:44-00:45",
+      "problema": "La voz dice 'igual que todo en esta serie' y aparecen 4 iconos diminutos durante menos de un segundo. No da tiempo a procesarlos ni aportan nada si el espectador ve este video aislado en su feed."
+    },
+    {
+      "t": "00:51-00:53",
+      "problema": "Cuando dice 'repartían la culpa y ajustaban las perillas', el movimiento de las agujas en las tres perillas inferiores es microscópico; el ojo está mirando los nodos rojos de arriba y se pierde la acción de las perillas."
+    },
+    {
+      "t": "01:11-01:12",
+      "problema": "La voz dice 'temperatura' y aparecen en pantalla los textos 'aprieta' y 'suelta' a los lados de la perilla sin que la voz los mencione. Obliga a leer e interpretar dos conceptos cruzados al mismo tiempo que se escucha otro."
+    }
+  ],
+  "legibilidad_en_celular": [
+    {
+      "t": "00:00-01:33",
+      "problema": "Las palabras flotantes en el fondo ('azul', 'palabra', 'quizá', 'hermoso') con opacidad al 10% solo ensucian el lienzo. En la pantalla de un móvil parecen manchas o artefactos de compresión y restan contraste limpio."
+    },
+    {
+      "t": "00:18-00:28",
+      "problema": "Las palabras en las secciones estrechas de la ruleta ('infinito', 'oscuro', 'nuestro', 'tuyo') son minúsculas, están rotadas e invertidas al girar. Son completamente ilegibles en vertical."
+    },
+    {
+      "t": "00:37-00:40",
+      "problema": "Al hacer zoom out para mostrar la 'escala', el teléfono queda en la esquina inferior izquierda a un tamaño ridículamente pequeño donde el texto es una mancha ilegible."
+    },
+    {
+      "t": "00:44-00:45",
+      "problema": "Los cuatro iconos de referencia a episodios anteriores son demasiado pequeños para distinguirse en un celular."
+    }
+  ],
+  "sonido": {
+    "musica": "El beat lo-fi/funky con bajo marcado le da un tono de video corporativo o canal de YouTube tradicional, restándole la tensión hipnótica, cinematográfica y minimalista que tiene el diseño sonoro ambiental del Video 1.",
+    "efectos": "Repetitivos y mecánicos. El sonido de la bola girando en la ruleta suena enlatado (se repite exactamente igual en 00:00, 00:18, 00:24, 00:46, 01:02, 01:22) y no sincroniza con los rebotes reales ni la desaceleración de la bola.",
+    "mezcla": "La voz está clara, pero compite en frecuencias medias con el loop musical y el clic constante de la ruleta, saturando el oído.",
+    "problemas": [
+      {
+        "t": "00:29-00:31",
+        "que": "El efecto de susurro con reverberación ('cómo termina la frase') se siente forzado y rompe el tono seco y directo de la locución."
+      },
+      {
+        "t": "01:06-01:07",
+        "que": "El efecto de glitch/robot en la voz ('sonar-ía a ro-bot') es un cliché sonoro desgastado que abarata la producción."
+      }
+    ]
+  },
+  "guion": {
+    "claridad": "Alta, logra explicar muestreo probabilístico y temperatura a un público general con buen ritmo narrativo, salvo en la parte del entrenamiento (00:45-00:57) que pasa demasiado rápido por conceptos complejos.",
+    "afirmaciones_dudosas": [
+      "00:57: 'Por eso se le llama modelo de lenguaje grande'. Falso o confuso: la explicación previa describe cómo se entrena (predicción enmascarada y ajuste de errores), pero 'Grande' (Large) se refiere al número masivo de parámetros/perillas y datos, no al método de ajuste de error en sí.",
+      "01:11: Los rótulos visuales 'aprieta' y 'suelta' para explicar la temperatura confunden la física estadística (baja temperatura = distribución concentrada/determinista, alta temperatura = distribución plana/aleatoria). Además, en 01:12 al subir la temperatura ('suelta'), visualmente todas las casillas de la ruleta se vuelven del mismo tamaño exacto, lo cual solo ocurre con temperatura infinita; en la práctica solo se suavizan las diferencias."
+    ],
+    "final": "El cierre (01:26-01:33) pierde fuerza porque contradice lo que acaba de enseñar: termina diciendo 'y cada apuesta fue, nada más, la más creíble', justo después de haber dedicado 20 segundos (01:02-01:15) a explicar que NO siempre elige la más probable/creíble gracias a la temperatura. Además, deja 3 segundos de silencio muerto al final con la ruleta quieta, matando el loop en TikTok."
+  },
+  "tres_cambios_de_mayor_impacto": [
+    "Unificar el universo visual en un plano continuo: eliminar el fondo sucio de palabras flotantes y dejar de cortar entre pantallas aisladas (barras, celular, grafos). Hacer que todo ocurra dentro de la mecánica física de la ruleta y la cinta de papel (que las barras de porcentaje nazcan de las propias casillas de la ruleta y que las 'perillas' de entrenamiento sean engranajes acoplados a ella).",
+    "Rehacer las físicas de animación y el diseño sonoro: quitar la música de fondo genérica y sustituirla por un diseño sonoro táctil y atmosférico donde cada giro, freno, rebote con peso real de la bola y golpe de tecla tenga una respuesta física exacta (con curvas de animación bezier agresivas, no lineales).",
+    "Rediseñar los primeros 2 segundos y el final para retención: abrir en el segundo 00:00 directamente con la frase 'El cielo es...' y la ruleta gigante dividiéndose dramáticamente en porcentajes (quitando la intro genérica de 'Todo lo que ChatGPT ha escrito...'), y cortar el final exactamente en el golpe de 'la más creíble' (01:31) conectándolo en loop con el inicio."
+  ]
+}

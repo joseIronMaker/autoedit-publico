@@ -1,0 +1,111 @@
+{
+  "tema": "El orden lo es todo: por qué una red normal no sirve para leer",
+  "modo": "corto",
+  "title": "El orden lo es todo: por qué una red normal no sirve para leer",
+  "slug": "ln_orden_lo_es_todo",
+  "hook_tipo": "contraria",
+  "theme": "ambar",
+  "image_style": "clean technical blueprint illustration drafted on deep indigo paper, precise thin white and warm amber line-work, drafting-compass and schematic aesthetic, subtle paper grain, vertical 9:16 composition, generous empty space in the lower third, no text, no letters, no words, no watermark",
+  "keyword": "por qué una red neuronal no entiende el orden de las palabras",
+  "hook_headline": [
+    "MISMAS",
+    "PALABRAS"
+  ],
+  "pregunta_ab": "¿Manda la palabra o manda el orden?",
+  "music_prompt": "warm analog synthwave instrumental, hand-played fretless bass and soft vinyl crackle, curious and playful, mid-tempo groove, no vocals, 104 BPM",
+  "scenes": [
+    {
+      "narration": "Dos frases con exactamente las mismas palabras y significados opuestos.",
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.45,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "mismas palabras",
+            "serif": true
+          },
+          {
+            "text": "SENTIDO OPUESTO",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "cinematic macro of two identical rows of carved wooden letter blocks on a dark table, the second row slowly rearranging itself into a different order while the first row stays perfectly still, dramatic side light, shallow depth of field",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "No es bueno, es buenísimo. Ahora al revés: no es buenísimo, es bueno. Cambió todo, y la red ni se entera.",
+      "beat_type": "hook",
+      "visual_type": "host",
+      "host_top": {
+        "kind": "headline",
+        "lines": [
+          "MISMAS",
+          "PALABRAS"
+        ]
+      }
+    },
+    {
+      "narration": "Se lo damos a un modelo que cuenta cuántas veces aparece cada palabra. Las dos frases producen el mismo vector. Para el modelo son la misma frase.",
+      "beat_type": "proof",
+      "visual_type": "ml_demo",
+      "ml_demo": {
+        "code": "import numpy as np\nfrom sklearn.feature_extraction.text import CountVectorizer\na = 'no es bueno es buenísimo'\nb = 'no es buenísimo es bueno'\ncv = CountVectorizer(analyzer=str.split).fit([a, b])\nX = cv.transform([a, b]).toarray()\nvocab = cv.get_feature_names_out()\nfig, ax = plt.subplots(figsize=(7.5, 4.4))\nax.imshow(X, cmap='cividis', aspect='auto', vmin=0, vmax=2)\nax.set_xticks(range(len(vocab)))\nax.set_xticklabels(vocab, fontsize=19)\nax.set_yticks([0, 1])\nax.set_yticklabels(['frase A', 'frase B'], fontsize=19)\nfor i in range(X.shape[0]):\n    for j in range(X.shape[1]):\n        ax.text(j, i, str(X[i, j]), ha='center', va='center', color=TXT, fontsize=27, fontweight='bold')\nax.set_title('vector IDÉNTICO' if (X[0] == X[1]).all() else 'vectores distintos')\nax.set_xlabel('para el modelo son LA MISMA frase', color=RED, fontsize=22, fontweight='bold', labelpad=16)",
+        "display_code": [
+          "cv.transform(['no es bueno es buenísimo'])",
+          "cv.transform(['no es buenísimo es bueno'])",
+          "(A == B).all()  ->  True"
+        ],
+        "caption": "bolsa_de_palabras.py"
+      }
+    },
+    {
+      "narration": "El problema es de fábrica: una red normal recibe todo de golpe. No sabe qué palabra vino antes.",
+      "beat_type": "giro",
+      "visual_type": "diagram",
+      "diagram": {
+        "type": "neural_net",
+        "title": "TODO DE GOLPE",
+        "layers": [
+          5,
+          4,
+          4,
+          1
+        ],
+        "in_label": "las palabras, sin orden",
+        "out_label": "una respuesta"
+      }
+    },
+    {
+      "narration": "Sin orden no hay significado.",
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.35,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "sin orden",
+            "serif": true
+          },
+          {
+            "text": "NO HAY SIGNIFICADO",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "cinematic macro shot of solid letter-shaped blocks tumbling in the air in total disorder, then snapping one by one into a single straight line, dramatic side light, dark background",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Por eso el lenguaje necesitó otra arquitectura. Mañana: cómo la IA convierte las palabras en números.",
+      "beat_type": "cta",
+      "visual_type": "host",
+      "host_top": {
+        "kind": "save",
+        "title": "SERIE: CÓMO LA IA LEE",
+        "subtitle": "SIGUIENTE: PALABRAS → NÚMEROS →"
+      }
+    }
+  ]
+}

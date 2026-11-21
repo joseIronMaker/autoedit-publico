@@ -1,0 +1,16 @@
+Una inteligencia artificial propuso un medicamento contra una forma de ceguera. Y en el laboratorio, funcionó.
+En células. No en personas. Todavía.
+En mayo de dos mil veinticinco, FutureHouse presentó Robin: un equipo de agentes que lee miles de artículos, propone hipótesis, y diseña experimentos.
+Propuso usar un medicamento que ya existe, el ripasudil, contra la degeneración macular seca, una de las causas más comunes de ceguera en adultos mayores.
+Las personas hicieron los experimentos. Y el efecto apareció.
+Google tiene algo parecido, Co-Scientist, publicado en Nature: agentes que debaten entre sí, y se corrigen.
+Con Stanford propuso medicamentos para la fibrosis de hígado. Los probaron en organoides, mini hígados hechos en laboratorio, y dos la frenaron.
+Pero fíjate quién hizo qué.
+La máquina propone. Las personas eligen el problema, consiguen los materiales, y prueban.
+Y aquí vuelven las cuatro preguntas.
+En software, un agente corre la prueba y sabe en segundos si falló.
+En biología, la prueba es una célula, un ratón, o una persona. Toma meses, o años.
+El problema ya no es tener ideas. Es comprobarlas.
+La inteligencia artificial ya puede proponer curas.
+Quien todavía decide si funcionan...
+es el laboratorio.

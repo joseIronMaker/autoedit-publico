@@ -1,0 +1,33 @@
+[project]
+name = "autoedit"
+version = "0.1.0"
+description = "Editor automático de videos hablados: corta silencios/muletillas y quema subtítulos estilo CapCut. Whisper local + Gemini + ffmpeg."
+requires-python = ">=3.10"
+dependencies = [
+    "faster-whisper>=1.0",
+    "google-genai>=2.25",
+    "pyyaml>=6.0",
+    "python-dotenv>=1.0",
+    "fastapi>=0.110",
+    "uvicorn>=0.29",
+    "python-multipart>=0.0.9",
+    "pillow>=10.0",
+    "rembg>=2.0",          # recortes alpha de cutouts (modelo u2net en ~/.u2net)
+    "onnxruntime>=1.17",   # backend CPU de rembg
+    "yt-dlp>=2025.1.1",    # b-roll real (real_assets.fetch_video)
+]
+
+[project.scripts]
+autoedit = "autoedit.cli:main"
+autoedit-web = "autoedit.web.server:main"
+autoedit-gen = "autoedit.generate:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["autoedit", "autoedit.web"]
+
+[tool.setuptools.package-data]
+"autoedit.web" = ["static/*"]

@@ -1,0 +1,23 @@
+{
+  "tema": "los detectores de IA acusan a los hispanohablantes",
+  "fecha_verificacion": "2026-08-08",
+  "fuente": {
+    "titulo": "GPT detectors are biased against non-native English writers",
+    "autores": "Liang, Yuksekgonul, Mao, Wu, Zou",
+    "publicado": "Patterns (Cell Press), 2023",
+    "arxiv": "2304.02819",
+    "url": "https://arxiv.org/abs/2304.02819"
+  },
+  "cifras": {
+    "detectores_probados": 7,
+    "ensayos_no_nativos": 91,
+    "ensayos_nativos": 88,
+    "falsos_positivos_no_nativos_pct": 61.3,
+    "exactitud_nativos": "casi perfecta",
+    "acusados_por_los_7_a_la_vez": 18,
+    "acusados_por_los_7_pct": 19.8
+  },
+  "textual": "\"they misclassified over half of the TOEFL essays as 'AI-generated' (average false positive rate: 61.3%)\" · \"All seven detectors unanimously identified 18 of the 91 TOEFL essays (19.8%)\"",
+  "limite_honesto": "Se midio en 2023 sobre ensayos TOEFL de un foro chino, no sobre hispanohablantes ni con los detectores de hoy. El mecanismo (perplejidad baja = vocabulario mas comun) aplica igual a cualquier no nativo, pero la cifra exacta es de ese estudio y hay que decirlo.",
+  "traduccion_a_personas": "61.3% = 6 de cada 10 · 18 de 91 = 1 de cada 5 acusado por los siete"
+}

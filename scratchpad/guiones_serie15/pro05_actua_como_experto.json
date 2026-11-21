@@ -1,0 +1,94 @@
+{
+  "slug": "pro_actua_como_experto",
+  "tema": "que hace de verdad 'actua como un experto' en un prompt: te cambia el vocabulario y a quien le habla, no lo que sabe",
+  "title": "\"Actúa como un experto\" no lo hace más listo. Le cambia a quién le habla.",
+  "theme": "hielo",
+  "hook_locked": true,
+  "concepto": "el rol en un prompt mueve el REGISTRO (vocabulario, a quién se dirige, qué da por sabido), no el conocimiento",
+  "en_una_frase": "Decirle que es experto no le agrega nada que no supiera: le dice con qué palabras contestar y a quién se lo está explicando.",
+  "quien_decide": "el rol que escribes decide qué da por obvio y qué te explica — y si le pones experto, empieza a dar por obvio lo que tú necesitabas que te explicara",
+  "que_cuesta": "pides una explicación y te llega llena de términos que no entiendes, y crees que el tema es difícil cuando lo difícil era el rol que le pusiste",
+  "palanca": "en vez de decirle quién es él, dile quién eres tú y para qué lo quieres: eso sí cambia la respuesta",
+  "pregunta_ab": "Tú qué le pones al prompt: quién es él, o para quién es la respuesta?",
+  "scenes": [
+    {
+      "beat_type": "cold_open",
+      "visual_type": "screen_demo",
+      "narration": "Le voy a hacer la misma pregunta, con y sin el truco. Primero sin decirle nada de quién es. Fíjate en las palabras que usa.",
+      "screen_demo": {
+        "tool": "chatgpt",
+        "prompt": "Explícame qué es una API.",
+        "nota": "captura REAL: respuesta sin rol",
+        "capture_seconds": 26
+      }
+    },
+    {
+      "beat_type": "otra_vez",
+      "visual_type": "screen_demo",
+      "narration": "Entonces le pegué adelante el truco más repetido de internet: actúa como un ingeniero de software experto. Mismo tema, misma pregunta. Mira cómo cambió el vocabulario.",
+      "screen_demo": {
+        "tool": "chatgpt",
+        "prompt": "Actúa como un ingeniero de software experto. Explícame qué es una API.",
+        "nota": "captura REAL: la misma pregunta con rol de experto",
+        "capture_seconds": 26
+      }
+    },
+    {
+      "beat_type": "definicion",
+      "visual_type": "image",
+      "narration": "Y por eso el rol no es lo que la gente cree. Un rol no le agrega conocimiento: el modelo ya vio lo mismo antes de que tú escribieras nada. Un rol es una instrucción de REGISTRO: con qué palabras contestar, a quién le está hablando, y sobre todo qué puede dar por sabido sin explicarlo.",
+      "image_prompts": [
+        "The same room photographed twice in one frame idea: a lectern with a microphone facing empty folding chairs, warm dim hall light. Documentary photography, muted palette, no readable text.",
+        "A kitchen table with two mugs and a notebook, someone's hands mid-explanation, warm evening light, no faces. Documentary photography, shallow depth of field.",
+        "Extreme macro of a worn name badge lying face down on a table, raking warm light. Documentary photography."
+      ]
+    },
+    {
+      "beat_type": "mecanismo",
+      "visual_type": "image",
+      "narration": "Porque el modelo, antes de escribir, lee todo lo que tiene enfrente y de ahí decide el tono. Si arriba dice experto, arma la respuesta para alguien que ya sabe: mete los términos, se salta los pasos obvios y va directo. No es que sepa más. Es que decidió explicar menos.",
+      "image_prompts": [
+        "A stack of dense technical manuals beside a single thin illustrated booklet, warm lamp light. Documentary photography, muted palette, no readable text.",
+        "A hand choosing the thin booklet over the stack, extreme macro, raking light. Documentary photography, shallow depth of field."
+      ]
+    },
+    {
+      "beat_type": "quien_decide",
+      "visual_type": "image",
+      "narration": "Y por eso mismo el truco se te puede voltear. Si tú le pusiste experto porque querías una respuesta buena, lo que hiciste fue pedirle que dé por obvio justo lo que tú no sabías. Sale una explicación impecable que no te sirve, y te queda la sensación de que el tema es difícil. El tema no era difícil. El rol lo era.",
+      "image_prompts": [
+        "A door with a small sign at eye level, the corridor beyond in shadow, warm work light. Documentary photography, muted palette, no readable text.",
+        "That same door closed from the inside, seen from the dark corridor. Documentary photography, muted palette."
+      ]
+    },
+    {
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "narration": "No le digas quién es. Dile para quién es.",
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "NO LE DIGAS"
+          },
+          {
+            "text": "QUIÉN ES ÉL"
+          },
+          {
+            "text": "DILE PARA QUIÉN ES"
+          }
+        ],
+        "variant": "dark",
+        "video": "videos/gen_ln_tres_defectos.assets/veo_4.mp4"
+      }
+    },
+    {
+      "beat_type": "cierre",
+      "visual_type": "image",
+      "narration": "Así que lo que yo escribo ahora en vez del rol es una línea sobre mí: soy ingeniero pero no de esto, explícamelo como si me lo contaras en una comida, y dime qué término tengo que buscar después. Esa línea sí me cambia la respuesta, porque le dice a quién le está hablando. Tú qué le pones al prompt: quién es él, o para quién es la respuesta?",
+      "image_prompts": [
+        "Two chairs pulled up to the same small table by a window at dusk, nobody seated. Documentary photography, muted palette, no readable text.",
+        "A hand sliding a notebook across that table toward the empty chair, warm low light. Documentary photography, shallow depth of field."
+      ]
+    }
+  ]
+}

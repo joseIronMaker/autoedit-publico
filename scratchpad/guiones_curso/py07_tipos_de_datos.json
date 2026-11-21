@@ -1,0 +1,102 @@
+{
+  "title": "Tipos de datos: por qué dos más dos da veintidós",
+  "slug": "curso_py07_tipos_de_datos",
+  "tema": "los tipos de datos básicos de Python: número, texto y booleano, y el error de sumar textos",
+  "theme": "curso python con ia",
+  "hook_tipo": "demostracion",
+  "keyword": "tipos de datos python",
+  "hook_headline": [
+    "2 + 2",
+    "= 22"
+  ],
+  "pregunta_ab": "¿Convertir siempre o confiar en que viene número?",
+  "music_prompt": "hard techno bed, dark industrial groove, 150 BPM, rolling kick, restrained under a voice, instrumental, no vocals",
+  "modo": "corto",
+  "hook_locked": true,
+  "scenes": [
+    {
+      "beat_type": "hook",
+      "visual_type": "terminal",
+      "narration": "Dos más dos da cuatro. Obvio. Pero comillas dos, más comillas dos, da veintidós. Y no es que Python esté mal de la cabeza ni que tu compu esté poseída: le pediste dos cosas distintas y ni cuenta te diste. Míralo en la terminal.",
+      "pause_after": 0.35,
+      "terminal": {
+        "title": "dos sumas",
+        "lines": [
+          {
+            "text": "print(2 + 2)      → 4"
+          },
+          {
+            "text": "print(\"2\" + \"2\")  → 22"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "echo '$ python3 -c \"print(2 + 2)\"'; python3 -c 'print(2 + 2)'; echo; echo '$ python3 -c \"print(\\\"2\\\" + \\\"2\\\")\"'; python3 -c 'print(\"2\" + \"2\")'",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "custom",
+      "narration": "Cuando pones comillas ya no es un número: es texto. Y sumar dos textos no los suma, los PEGA, uno tras otro. Los tipos básicos son tres y con eso vives el primer mes: números, texto, y verdadero o falso. Cada dato es de un tipo, y el tipo decide qué significa el más. Es como el ahorita en México: la misma palabra, y nunca la misma hora.",
+      "custom_anim": {
+        "description": "Arriba, dos fichas con el número 2 se acercan y se funden en una sola ficha con el 4, etiquetada número. Debajo, dos fichas con el texto entre comillas \"2\" se acercan y se PEGAN una junto a la otra formando \"22\", etiquetada texto, con el texto no suma: pega. Al final aparecen tres tarjetas en fila: número con 7, texto con \"hola\", y verdadero/falso con True. Sin más cifras."
+      }
+    },
+    {
+      "beat_type": "contexto",
+      "visual_type": "terminal",
+      "narration": "Python te dice el tipo si se lo preguntas, y no cobra por la consulta. Le pido al agente un archivo que imprima el tipo de un cinco, de un cinco entre comillas y de un verdadero, y que lo corra. Int es número entero, str es texto, bool es verdadero o falso. Tres palabras que vas a ver toda tu vida, así que ve haciéndoles espacio.",
+      "terminal": {
+        "title": "tipos.py",
+        "lines": [
+          {
+            "text": "type(5)      → int"
+          },
+          {
+            "text": "type(\"5\")    → str"
+          },
+          {
+            "text": "type(True)   → bool"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "claude 'escribe tipos.py que imprima el type() de 5, de \"5\" y de True, y ejecutalo'",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "giro",
+      "visual_type": "custom",
+      "narration": "Y aquí está el que te va a morder de verdad: TODO lo que el usuario escribe con input entra como texto. Aunque teclee un número. Aunque lo teclee bien bonito y con ganas. Si no lo conviertes con int, tu suma pega en vez de sumar… y el programa NO se cae: te da un resultado mal y se queda tan tranquilo, silbando.",
+      "custom_anim": {
+        "description": "A la izquierda un teclado del que sale el carácter 7 y viaja hacia una caja etiquetada input; al entrar, la caja lo muestra entre comillas como \"7\" con la etiqueta texto en rojo. Debajo, una operación \"7\" + \"7\" produce \"77\" con una X roja. Luego aparece una máquina con el texto int( ) por la que pasa el \"7\" y sale un 7 sin comillas, etiquetado número en verde, y la operación 7 + 7 produce 14 con una palomita. Sin más cifras."
+      }
+    },
+    {
+      "beat_type": "cta",
+      "visual_type": "kinetic_video",
+      "narration": "Número, texto, verdadero o falso. Tres tipos, y el noventa por ciento de tus errores del primer mes son mezclarlos. La que viene: tu programa empieza a hablar y a escuchar. ¿Convertir siempre o confiar en que viene número? Yo convierto siempre: confiar en lo que teclea la gente es deporte extremo.",
+      "pause_after": 0.3,
+      "kinetic_video": {
+        "video": "/home/jose/tiktok/videos/_clips_pagados/gen_ln_donde_quedo_el_orden__veo_4.mp4",
+        "words": [
+          {
+            "text": "tres tipos",
+            "serif": true
+          },
+          {
+            "text": "NO LOS MEZCLES",
+            "accent": true
+          }
+        ],
+        "variant": "dark"
+      }
+    }
+  ]
+}

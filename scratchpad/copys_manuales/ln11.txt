@@ -1,0 +1,13 @@
+Toda la atención de ChatGPT se reduce a una multiplicación.
+
+Cada palabra es una flecha en el espacio. Para saber si dos se relacionan, se mide qué tan alineadas apuntan: eso es el producto punto. Alineadas dan un número grande, perpendiculares dan cero.
+
+Ese número se escala y pasa por un softmax, que lo convierte en porcentajes que suman 100. Esos porcentajes multiplican al value, y cada palabra sale reescrita con un poquito de las que le importan.
+
+Aquí está la frase que a mí me ordenó la cabeza: el modelo no entiende: mide qué tan alineado apunta. Todo lo demás es escala encima de esa medición.
+
+Mañana: si mira todo de golpe, ¿cómo sabe qué palabra iba primero?
+
+¿Entiende o solo mide parecido? Yo digo que mide.
+
+#atencion #softmax #transformers #matematicas #iaconjose

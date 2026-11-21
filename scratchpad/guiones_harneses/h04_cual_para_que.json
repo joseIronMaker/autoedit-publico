@@ -1,0 +1,95 @@
+{
+  "slug": "h_cual_para_que",
+  "tema": "Claude Code, Codex y OpenCode: en que se parecen (los tres son el mismo bucle) y en que se diferencian de verdad — donde corren, quien pone el modelo y como te cobran",
+  "title": "Los tres hacen lo mismo. La diferencia no es cuál programa mejor.",
+  "theme": "hielo",
+  "hook_locked": true,
+  "concepto": "los harneses de código son el mismo bucle; lo que cambia es dónde corre, qué modelo lleva dentro y cómo te cobran",
+  "en_una_frase": "Claude Code, Codex y OpenCode son el mismo mecanismo con distinta correa: la elección no es de inteligencia, es de dónde corre, con qué modelo y con qué cuenta se paga.",
+  "quien_decide": "el harness que elijas decide qué modelo escribe tu código y a dónde se va tu proyecto cuando lo mandas",
+  "que_cuesta": "eliges por la moda, te amarras a una cuenta y luego descubres que el que necesitabas era el otro",
+  "palanca": "elige por tres preguntas: dónde corre, qué modelo lleva y de qué bolsa sale el pago",
+  "pregunta_ab": "Al elegir herramienta, ¿te vas por el modelo que trae, o por lo que te deja tocar?",
+  "scenes": [
+    {
+      "beat_type": "cold_open",
+      "visual_type": "terminal",
+      "narration": "Claude Code, Codex y OpenCode. Los tres hacen exactamente lo mismo por dentro.",
+      "terminal": {
+        "title": "los tres, por dentro",
+        "lines": [
+          {
+            "prompt": true,
+            "text": "leer archivo → escribir → correr → leer el error"
+          },
+          {
+            "prompt": true,
+            "text": "y otra vez, hasta que ya no pide nada"
+          },
+          {
+            "text": "el mismo bucle. los tres.",
+            "accent": true
+          }
+        ]
+      }
+    },
+    {
+      "beat_type": "definicion",
+      "visual_type": "image",
+      "narration": "Porque ninguno de ellos es un modelo. Son harneses: el programa que corre el bucle en tu máquina. El modelo va adentro, como el motor va adentro del coche, y se puede cambiar. Por eso preguntar cuál programa mejor es como preguntar cuál llave aprieta más.",
+      "image_prompts": [
+        "Three identical wrenches of different brands laid side by side on dark cloth, warm light. Documentary photography, muted palette, no readable text.",
+        "Extreme macro of the jaws of one wrench, raking light, deep shadow. Documentary photography, shallow depth of field.",
+        "An engine bay open with the hood up in a dim garage, nobody in frame. Documentary photography, muted palette."
+      ]
+    },
+    {
+      "beat_type": "mecanismo",
+      "visual_type": "image",
+      "narration": "Y por eso las diferencias que importan son otras. Primero, dónde corre: si el bucle corre en tu terminal, lee tus archivos y los escribe ahí mismo; si corre en un servidor de ellos, tu proyecto sale de tu máquina, se sube y alguien más lo guarda. Segundo, qué modelo lleva dentro y si puedes cambiarlo. Y al final, de qué bolsa sale el pago: de una suscripción que ya tienes o de una llave que se consume cada vez que la usas.",
+      "image_prompts": [
+        "Three labeled drawers in a workshop cabinet, one pulled open, warm work light. Documentary photography, muted palette, no readable text.",
+        "A hand pulling open the second drawer, extreme macro. Documentary photography.",
+        "The three drawers open at different depths, seen straight on. Documentary photography, muted palette."
+      ]
+    },
+    {
+      "beat_type": "quien_decide",
+      "visual_type": "image",
+      "narration": "Así que la que a mí me cambió el trabajo no fue cuál escribe mejor código. Fue de qué bolsa sale el pago: mover el trabajo pesado a la suscripción que ya pagaba, en vez de a una llave que se consume por uso, y dejar la llave solo para lo que la suscripción no hace.",
+      "image_prompts": [
+        "Two wallets on a dark table, one open and one closed, warm lamp light. Documentary photography, muted palette, no readable text.",
+        "A hand pushing the closed wallet aside, extreme macro at night. Documentary photography, shallow depth of field."
+      ]
+    },
+    {
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "narration": "No elijas el que piensa mejor. Elige el que te deja trabajar.",
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "NO EL QUE"
+          },
+          {
+            "text": "PIENSA MEJOR"
+          },
+          {
+            "text": "EL QUE TE DEJA TRABAJAR"
+          }
+        ],
+        "variant": "dark",
+        "video": "videos/gen_ln_query_key_value.assets/veo_0.mp4"
+      }
+    },
+    {
+      "beat_type": "cierre",
+      "visual_type": "image",
+      "narration": "Entonces antes de amarrarte a uno, contéstate esto y ya: dónde corre, qué modelo lleva dentro, y de qué bolsa sale el pago. Con eso se elige en un minuto, y sin eso te vas por la moda y acabas mudándote en unos meses. Al elegir herramienta, ¿te vas por el modelo que trae, o por lo que te deja tocar?",
+      "image_prompts": [
+        "Three keys on a workshop table, one separated from the other two, warm side light. Documentary photography, muted palette, no readable text.",
+        "A hand picking up the separated key, seen close at night. Documentary photography, shallow depth of field."
+      ]
+    }
+  ]
+}

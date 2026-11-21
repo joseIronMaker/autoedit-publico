@@ -1,0 +1,103 @@
+{
+  "tema": "La neurona con memoria: el estado oculto de una red recurrente",
+  "modo": "corto",
+  "title": "La neurona con memoria: el estado oculto de una red recurrente",
+  "slug": "ln_neurona_con_memoria",
+  "hook_tipo": "resultado",
+  "theme": "carmin",
+  "image_style": "dramatic low-key oil-painting style illustration, deep crimson and warm gold light on near-black, visible brush texture, chiaroscuro, single subject, vertical 9:16 composition, lower third kept simple, no text, no letters, no words, no watermark",
+  "keyword": "red neuronal recurrente estado oculto",
+  "hook_headline": [
+    "LEE",
+    "PALABRA A PALABRA"
+  ],
+  "pregunta_ab": "¿Leer de golpe o palabra por palabra?",
+  "music_prompt": "cinematic orchestral electronica, pulsing cello ostinato and soft taiko hits, forward motion, no vocals, 100 BPM",
+  "scenes": [
+    {
+      "narration": "Adivina dónde cae la pelota. Sin verla venir, es imposible.",
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.45,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "sin historia",
+            "serif": true
+          },
+          {
+            "text": "ES ADIVINAR",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "cinematic slow motion of a single ball frozen dead still in mid air inside a dark empty space, no motion trail, no floor, nothing to tell where it came from, hard spotlight from above",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Con los tres rebotes anteriores ya no adivinas: predices. Leer funciona igual.",
+      "beat_type": "hook",
+      "visual_type": "host",
+      "host_top": {
+        "kind": "headline",
+        "lines": [
+          "LEE",
+          "PALABRA A PALABRA"
+        ]
+      }
+    },
+    {
+      "narration": "La solución fue darle memoria: la red lee una palabra, guarda un resumen de lo que lleva, y ese resumen entra junto con la siguiente palabra.",
+      "beat_type": "proof",
+      "visual_type": "custom",
+      "custom_anim": {
+        "description": "PROHIBIDO usar tarjetas, listas, viñetas o cajas con texto: esto se DIBUJA. Una cinta horizontal a media altura. Por la derecha entran palabras, una a la vez, como pastillas luminosas que viajan hacia la izquierda. En el centro hay un NÚCLEO redondo y grande (la memoria): cada vez que una palabra lo toca, el núcleo se hincha un poco, cambia de tono y suelta un anillo de luz. Del núcleo sale un hilo grueso que vuelve a la entrada, formando un lazo cerrado que se ve claramente: lo que sale del núcleo regresa a mezclarse con la siguiente palabra. Abajo a la derecha, una flecha gruesa sale del núcleo hacia un punto brillante: la predicción. Dos etiquetas grandes y nada más: 'memoria' junto al núcleo y 'predicción' junto al punto. Sin números."
+      }
+    },
+    {
+      "narration": "Y ojo con esto: son los mismos pesos en cada paso, no una red por palabra. Por eso puede leer frases de cualquier largo.",
+      "beat_type": "giro",
+      "visual_type": "ml_demo",
+      "ml_demo": {
+        "code": "import numpy as np\nrng2 = np.random.default_rng(1)\nWh = rng2.normal(0, 0.6, (3, 3))\nWx = rng2.normal(0, 0.6, (3, 3))\nfrase = ['el', 'gato', 'se', 'subió', 'al']\nh = np.zeros(3)\nH = []\nfor p in frase:\n    x = rng2.normal(0, 1, 3)\n    h = np.tanh(Wh @ h + Wx @ x)\n    H.append(h.copy())\nH = np.array(H).T\nfig, ax = plt.subplots(figsize=(7.5, 4.6))\nax.imshow(H, cmap='magma', aspect='auto', vmin=-1, vmax=1)\nax.set_xticks(range(len(frase)))\nax.set_xticklabels(frase, fontsize=20)\nax.set_yticks(range(3))\nax.set_yticklabels(['h1', 'h2', 'h3'], fontsize=18)\nax.set_title('la memoria cambia con cada palabra')\nax.set_xlabel('mismos pesos en los 5 pasos', color=CYAN, fontsize=21, fontweight='bold', labelpad=16)",
+        "display_code": [
+          "for palabra in frase:",
+          "    h = tanh(Wh @ h + Wx @ x)   # los MISMOS pesos",
+          "prediccion = Wy @ h"
+        ],
+        "caption": "rnn.py"
+      }
+    },
+    {
+      "narration": "Memoria que se arrastra, palabra tras palabra.",
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.35,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "memoria que se arrastra",
+            "serif": true
+          },
+          {
+            "text": "PALABRA TRAS PALABRA",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "a single luminous thread being dragged slowly across a dark surface, leaving a fading trail behind it that dims the further back it goes, cinematic macro, slow motion",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Ya lee en orden. ¿Pero cómo aprende, si cada palabra depende de la anterior? Mañana lo vemos.",
+      "beat_type": "cta",
+      "visual_type": "host",
+      "host_top": {
+        "kind": "save",
+        "title": "SERIE: CÓMO LA IA LEE",
+        "subtitle": "SIGUIENTE: APRENDER EN EL TIEMPO →"
+      }
+    }
+  ],
+  "hook_locked": true
+}

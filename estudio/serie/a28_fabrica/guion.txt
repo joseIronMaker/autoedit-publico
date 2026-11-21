@@ -1,0 +1,15 @@
+Hay equipos donde ningún humano escribe código, y ningún humano lo revisa.
+Le dicen fábrica oscura, como las fábricas que trabajan con las luces apagadas.
+La empresa StrongDM lo intentó con tres personas. Ellos escriben qué debe pasar, y los agentes hacen el resto. Su meta: mil dólares diarios en tokens, por ingeniero.
+Suena a que se acabó la programación. Ahora lee la letra chica.
+El compilador de dieciséis agentes usa otro compilador para una parte, y un humano diseñó sus pruebas.
+Cursor coordinó cientos de agentes para hacer un navegador, y salió lento, y con mucho sin funcionar.
+Steve Yegge construyó Gas Town, un orquestador de colmenas. Y él mismo avisa que es experimental, y que no es para cualquiera.
+Cursor también reportó que, con bloqueos, veinte agentes rendían como dos o tres.
+Una colmena no es magia. Es una empresa, con todos sus problemas: juntas, malentendidos, trabajo repetido.
+Pero tampoco es humo. Yegge trabaja con veinte o treinta agentes a la vez, todos los días.
+La pregunta cambió.
+Ya no es quién escribe el código.
+Es quién sabe qué pedir, y cómo comprobar que quedó bien.
+Una fábrica puede apagar las luces.
+No puede apagar el criterio.

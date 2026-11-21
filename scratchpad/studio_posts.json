@@ -1,0 +1,331 @@
+[
+ {
+  "dur": "01:12",
+  "caption": "Medí cuánto cuesta escribirle a la IA en español. Corrí el tokenizador real de OpenAI sobr",
+  "vistas": 621,
+  "likes": 26,
+  "com": 0
+ },
+ {
+  "dur": "01:13",
+  "caption": "\"Pon lo importante al principio del prompt.\" Es el consejo de prompting más repetido que e",
+  "vistas": 611,
+  "likes": 15,
+  "com": 0
+ },
+ {
+  "dur": "01:05",
+  "caption": "Le hice a ChatGPT dos preguntas del mismo tipo. Una la contestó con la fuente y la liga. L",
+  "vistas": 597,
+  "likes": 17,
+  "com": 2
+ },
+ {
+  "dur": "01:13",
+  "caption": "Le conectas tus documentos al chatbot y contesta como si no los hubiera leído. Casi nunca ",
+  "vistas": 595,
+  "likes": 13,
+  "com": 0
+ },
+ {
+  "dur": "01:21",
+  "caption": "Medí los cuatro trucos de prompting más famosos que existen. Doscientas corridas. Ninguno ",
+  "vistas": 558,
+  "likes": 11,
+  "com": 0
+ },
+ {
+  "dur": "01:18",
+  "caption": "Seis de cada diez textos escritos por gente que no es nativa del idioma fueron marcados co",
+  "vistas": 558,
+  "likes": 8,
+  "com": 0
+ },
+ {
+  "dur": "01:15",
+  "caption": "Si ibas a pagar un ajuste fino para meterle tus datos a un modelo, párale. OpenAI ya está ",
+  "vistas": 548,
+  "likes": 5,
+  "com": 0
+ },
+ {
+  "dur": "01:02",
+  "caption": "Tomé un prompt y no le cambié ni una letra. Solo cambié el modelo que lo contesta. Seis pr",
+  "vistas": 546,
+  "likes": 17,
+  "com": 0
+ },
+ {
+  "dur": "00:30",
+  "caption": "Lo básico del deep learning para evitar que tu IA memorice y falle con datos nuevos. El se",
+  "vistas": 283,
+  "likes": 19,
+  "com": 0
+ },
+ {
+  "dur": "00:39",
+  "caption": "ChatGPT nunca ve tu texto. Ni una sola letra. Escribe \"inteligencia artificial\" en el toke",
+  "vistas": 259,
+  "likes": 10,
+  "com": 0
+ },
+ {
+  "dur": "00:30",
+  "caption": "Las funciones de activación son el truco para que una red sepa separar un gato de un perro",
+  "vistas": 257,
+  "likes": 12,
+  "com": 0
+ },
+ {
+  "dur": "00:36",
+  "caption": "Tu cámara te pone el recuadro en la cara antes de que tomes la foto. Y nunca ha visto una ",
+  "vistas": 236,
+  "likes": 8,
+  "com": 0
+ },
+ {
+  "dur": "00:31",
+  "caption": "Entrenar redes neuronales con backpropagation es más simple de lo que crees cuando entiend",
+  "vistas": 235,
+  "likes": 14,
+  "com": 0
+ },
+ {
+  "dur": "00:31",
+  "caption": "Y esa que crea de la nada empieza aquí: la IA predictiva que hoy protege tu dinero. No es ",
+  "vistas": 230,
+  "likes": 7,
+  "com": 0
+ },
+ {
+  "dur": "00:35",
+  "caption": "Dejamos de pagarle a gente por etiquetar datos. Y fue por una idea de primaria. Antes, par",
+  "vistas": 227,
+  "likes": 9,
+  "com": 0
+ },
+ {
+  "dur": "00:36",
+  "caption": "\"Está increíble... para dormirse\". La frase con la que abrimos la serie: 25 años sin resol",
+  "vistas": 222,
+  "likes": 7,
+  "com": 0
+ },
+ {
+  "dur": "00:33",
+  "caption": "Nadie entrena un modelo desde cero. Ni las empresas grandes. Entrenar uno grande cuesta mi",
+  "vistas": 220,
+  "likes": 16,
+  "com": 0
+ },
+ {
+  "dur": "00:35",
+  "caption": "Nadie le enseñó a traducir. Ni a programar. Ni a conversar. El entrenamiento fue uno solo:",
+  "vistas": 219,
+  "likes": 6,
+  "com": 0
+ },
+ {
+  "dur": "00:36",
+  "caption": "Al mirar toda la frase de golpe, la IA volvió a perder el orden. Es el mismo problema del ",
+  "vistas": 219,
+  "likes": 11,
+  "com": 0
+ },
+ {
+  "dur": "00:32",
+  "caption": "Antes de medir su error esta noche, así es como una red neuronal traza curvas para entende",
+  "vistas": 218,
+  "likes": 8,
+  "com": 0
+ },
+ {
+  "dur": "00:37",
+  "caption": "Tu botón de nitidez hace la misma cuenta que una red neuronal. Un cinco al centro y menos ",
+  "vistas": 216,
+  "likes": 7,
+  "com": 0
+ },
+ {
+  "dur": "00:41",
+  "caption": "Tu cámara mira tu foto en pedacitos de tres por tres. Una ventanita de nueve números se po",
+  "vistas": 216,
+  "likes": 12,
+  "com": 0
+ },
+ {
+  "dur": "00:37",
+  "caption": "El truco de la LSTM no fue recordar más. Fue aprender a olvidar. Una red recurrente normal",
+  "vistas": 216,
+  "likes": 5,
+  "com": 0
+ },
+ {
+  "dur": "00:33",
+  "caption": "\"No es bueno, es buenísimo\" y \"no es buenísimo, es bueno\". Mismas palabras, sentido opuest",
+  "vistas": 216,
+  "likes": 10,
+  "com": 0
+ },
+ {
+  "dur": "00:44",
+  "caption": "Un recuadro no alcanza cuando lo que buscas mide tres milímetros. Se quitan las capas del ",
+  "vistas": 215,
+  "likes": 10,
+  "com": 0
+ },
+ {
+  "dur": "00:39",
+  "caption": "Toda la atención de ChatGPT se reduce a una multiplicación. Cada palabra es una flecha en ",
+  "vistas": 215,
+  "likes": 7,
+  "com": 0
+ },
+ {
+  "dur": "00:41",
+  "caption": "La T de GPT no es de tecnología. Es de Transformer. Y un Transformer no es magia: es el bl",
+  "vistas": 213,
+  "likes": 8,
+  "com": 0
+ },
+ {
+  "dur": "00:31",
+  "caption": "Así es como el Gradient Descent hace que tu IA aprenda a reducir su error casi a cero. La ",
+  "vistas": 211,
+  "likes": 4,
+  "com": 0
+ },
+ {
+  "dur": "00:31",
+  "caption": "Entender el perceptrón te revela el truco de la IA para separar tu correo spam hoy. Multip",
+  "vistas": 211,
+  "likes": 6,
+  "com": 0
+ },
+ {
+  "dur": "00:40",
+  "caption": "Las redes recurrentes funcionaban. Y aun así se murieron en cinco años. Tres defectos que ",
+  "vistas": 210,
+  "likes": 8,
+  "com": 0
+ },
+ {
+  "dur": "00:28",
+  "caption": "Ajustar el learning rate decide si tu red neuronal entrena o se estrella. El tamaño del pa",
+  "vistas": 209,
+  "likes": 2,
+  "com": 0
+ },
+ {
+  "dur": "00:40",
+  "caption": "La IA dejó de leer en orden. Y ahí empezó todo. Cuando ves una foto no la recorres pixel p",
+  "vistas": 204,
+  "likes": 4,
+  "com": 0
+ },
+ {
+  "dur": "00:38",
+  "caption": "La red se equivoca en la última palabra, pero la culpa puede estar en la primera. Una red ",
+  "vistas": 203,
+  "likes": 6,
+  "com": 0
+ },
+ {
+  "dur": "00:36",
+  "caption": "Moví mi foto tres píxeles y casi ningún número quedó igual. Lo medí fila por fila: el 76% ",
+  "vistas": 200,
+  "likes": 8,
+  "com": 0
+ },
+ {
+  "dur": "00:31",
+  "caption": "Mañana la bajamos, pero hoy la función de pérdida te enseña a medir el error de la IA. Es ",
+  "vistas": 198,
+  "likes": 12,
+  "com": 0
+ },
+ {
+  "dur": "00:34",
+  "caption": "Adivina dónde cae la pelota sin verla venir. Imposible. Con los tres rebotes anteriores ya",
+  "vistas": 194,
+  "likes": 4,
+  "com": 0
+ },
+ {
+  "dur": "00:44",
+  "caption": "Tu cámara te reconoce aunque te muevas. Por tirar detalle a propósito. Lo negativo se vuel",
+  "vistas": 193,
+  "likes": 3,
+  "com": 0
+ },
+ {
+  "dur": "00:40",
+  "caption": "Cada palabra de tu frase hace una búsqueda contra todas las demás. Piensa en cómo buscas a",
+  "vistas": 193,
+  "likes": 5,
+  "com": 0
+ },
+ {
+  "dur": "00:39",
+  "caption": "\"Crecí en Francia, pero llevo veinte años en México. Hablo perfecto...\" ¿francés o español",
+  "vistas": 193,
+  "likes": 8,
+  "com": 0
+ },
+ {
+  "dur": "00:38",
+  "caption": "No hay una atención dentro de ChatGPT. Hay decenas, funcionando al mismo tiempo. Una sola ",
+  "vistas": 191,
+  "likes": 12,
+  "com": 0
+ },
+ {
+  "dur": "00:48",
+  "caption": "Esos nueve números nadie los escribió. Salieron del entrenamiento. Empiezan al azar y el e",
+  "vistas": 190,
+  "likes": 4,
+  "com": 1
+ },
+ {
+  "dur": "00:33",
+  "caption": "No le cambiaron la idea. Solo lo hicieron cien veces más grande. Mismo Transformer, mismo ",
+  "vistas": 188,
+  "likes": 6,
+  "com": 0
+ },
+ {
+  "dur": "00:45",
+  "caption": "Reconocerte es fácil. Ponerte el recuadro encima, no. El recuadro son cuatro números que l",
+  "vistas": 182,
+  "likes": 0,
+  "com": 0
+ },
+ {
+  "dur": "00:30",
+  "caption": "Para tu chamba, la IA generativa fabrica ideas nuevas en 10 segundos. Con este prompt de s",
+  "vistas": 124,
+  "likes": 3,
+  "com": 0
+ },
+ {
+  "dur": "00:31",
+  "caption": "Y el futuro real es combinar IA para que trabajen por ti. Fusionar la IA predictiva con la",
+  "vistas": 116,
+  "likes": 7,
+  "com": 0
+ },
+ {
+  "dur": "00:39",
+  "caption": "Y la inteligencia artificial por dentro es todavía más simple de lo que parece. En 1958 na",
+  "vistas": 108,
+  "likes": 9,
+  "com": 0
+ },
+ {
+  "dur": "00:30",
+  "caption": "Mañana te muestro el combo, pero hoy domina estas dos herramientas de IA. Una decide con n",
+  "vistas": 103,
+  "likes": 5,
+  "com": 0
+ }
+]

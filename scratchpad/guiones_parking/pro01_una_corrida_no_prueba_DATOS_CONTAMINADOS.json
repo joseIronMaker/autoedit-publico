@@ -1,0 +1,109 @@
+{
+  "slug": "pro_una_corrida_no_prueba",
+  "tema": "Por qué una corrida no prueba que tu prompt funciona",
+  "title": "Corrí el mismo prompt 48 veces. Ni así pude decidir.",
+  "theme": "cyber",
+  "hook_locked": true,
+  "quien_decide": "Tú decides qué truco de prompt adoptas, y lo decides viendo una sola respuesta.",
+  "que_cuesta": "Cargas trucos que no hacen nada en cada prompt que escribes, y pagas sus tokens.",
+  "palanca": "Antes de adoptar un truco, córrelo diez veces con y sin él sobre una tarea con respuesta verificable, y cuenta.",
+  "pregunta_ab": "¿Un truco de prompt se adopta por instinto o por conteo?",
+  "scenes": [
+    {
+      "beat_type": "creencia",
+      "narration": "Si le agregas una línea a tu prompt y la respuesta sale mejor, dirías que la línea sirve. Yo lo medí cuarenta y ocho veces y ni así pude decidir.",
+      "visual_type": "kinetic_video",
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "48 corridas",
+            "serif": true
+          },
+          {
+            "text": "Y NO ALCANZÓ",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "slow push-in on a dark laptop screen in a dim room, cursor blinking in an empty text field, warm desk lamp glow, shallow depth of field, cinematic, 9:16"
+      }
+    },
+    {
+      "beat_type": "enumeracion",
+      "narration": "Y empecé a medir por vergüenza: le mandé a un cliente un dato inventado porque probé el prompt una vez, salió bien, y lo di por bueno.",
+      "visual_type": "image",
+      "image_prompt": "Vertical 9:16 cinematic editorial photograph, muted desaturated palette of graphite, ink blue and warm amber lamplight. A lone desk at night: a half-closed laptop, a phone face up showing a sent message, a notebook with a single tally mark. One warm desk lamp. The quiet second after realizing you sent something you did not verify. Documentary photography, shallow depth of field, film grain, no text, no faces, no logos."
+    },
+    {
+      "beat_type": "palanca",
+      "narration": "Así que esto es lo que hago ahora, y no necesitas saber programar: abres ChatGPT, pegas tu prompt diez veces, y anotas cuántas veces acertó. Luego lo mismo con la línea que quieres probar. Dos columnas de palitos en una hoja.",
+      "visual_type": "screen_demo",
+      "screen_demo": {
+        "tool": "chatgpt",
+        "prompt": "Un tinaco tiene 1200 litros. Una llave lo llena a 25 litros por minuto y un desagüe lo vacía a 18 litros por minuto. Empieza vacío con las dos abiertas. A los 40 minutos cierran el desagüe. ¿Cuántos minutos totales pasan hasta que se llena? Responde solo el número.",
+        "nota": "el MISMO prompt, pegado diez veces, contando los aciertos a mano"
+      }
+    },
+    {
+      "beat_type": "mecanismo",
+      "narration": "Por eso hace falta contar. Crees que el modelo te da la misma respuesta si le pides lo mismo, y no: elige cada palabra de una lista de opciones con dados cargados. En técnico se llama decodificación estocástica.",
+      "visual_type": "custom",
+      "custom_anim": {
+        "description": "El mismo prompt corto en la parte de arriba. Desde él salen cinco flechas hacia abajo, escalonadas, y cada una termina en una respuesta ligeramente distinta: tres iguales en verde y dos distintas en rojo. Las flechas se dibujan una por una y luego el conjunto late."
+      }
+    },
+    {
+      "beat_type": "mecanismo",
+      "narration": "Entonces una corrida no es un resultado: es una muestra de tamaño uno. Y con una muestra de uno no se decide nada, ni en IA ni en nada.",
+      "visual_type": "custom",
+      "kinetic": {
+        "words": [
+          {
+            "text": "una corrida",
+            "serif": true
+          },
+          {
+            "text": "ES UNA MUESTRA DE UNO",
+            "accent": true
+          }
+        ]
+      },
+      "custom_anim": {
+        "description": "Una barra horizontal larga se llena de cuadritos uno por uno, 24 en total: 22 verdes y 2 rojos. Cuando termina, aparece debajo otra barra igual con 24 cuadritos todos verdes. Las dos barras laten juntas y se ve que casi no hay diferencia. Sin título, sin cajas de texto."
+      }
+    },
+    {
+      "beat_type": "recibo",
+      "narration": "Y mira hasta dónde llega esto. Corrí el truco más famoso de todos, 'piensa paso a paso', sobre seis problemas de varios pasos: veinticuatro corridas con la línea y veinticuatro sin ella. Con la línea, veinticuatro de veinticuatro. Sin ella, veintidós. Dos respuestas de diferencia. Y esa diferencia no se distingue del azar: cuarenta y ocho corridas y sigo sin poder decidir.",
+      "visual_type": "ml_demo",
+      "ml_demo": {
+        "code": "import json, os\nfrom math import comb\n_p = 'mediciones/prompt_paso_a_paso.json'\nif not os.path.exists(_p):\n    _p = '/home/jose/tiktok/' + _p\nd = json.load(open(_p))\nks = list(d['condiciones'].keys())\nvals = [d['condiciones'][k]['aciertos'] for k in ks]\nde = d['condiciones'][ks[0]]['de']\ndef fisher(x1, n1, x2, n2):\n    f1, f2 = n1 - x1, n2 - x2\n    tot = f1 + f2\n    return sum(comb(n1, k) * comb(n2, tot - k) / comb(n1 + n2, tot)\n               for k in range(0, min(tot, n1) + 1) if k >= f1)\np = fisher(vals[0], de, vals[1], de)\nfig, ax = plt.subplots(figsize=(9.2, 5.4))\nb = ax.bar(['sin la línea', 'con la línea'], vals, color=[RED, CYAN], width=0.5)\nfor r, v in zip(b, vals):\n    ax.text(r.get_x() + r.get_width()/2, v + 0.5, '%d de %d' % (v, de),\n            ha='center', fontsize=27, fontweight='bold', color=TXT)\nax.set_ylim(0, de + 5)\nax.set_yticks([0, 6, 12, 18, 24])\nax.tick_params(labelsize=19)\nax.set_ylabel('aciertos', fontsize=18)\nax.set_title('p = %.2f  →  no se distingue del azar' % p, fontsize=21, color=MAG)\nfig.text(0.5, 0.015, 'gemini-flash-latest · 6 problemas · 24 corridas por condición · clave verificada a mano · 9-ago-2026',\n         ha='center', fontsize=13, color=TXT)",
+        "display_code": [
+          "for _ in range(24):",
+          "    correr(prompt)              # sin la línea",
+          "    correr(prompt + linea)      # con la línea",
+          "fisher(22, 24, 24, 24)          # p = 0.24"
+        ],
+        "caption": "medir_prompts.py",
+        "editor_frac": 0.2
+      }
+    },
+    {
+      "beat_type": "cierre",
+      "narration": "Así que no te voy a decir si ese truco sirve, porque no lo sé y mi medición tampoco. Lo que sí sé es que llevabas años decidiéndolo con una sola respuesta. ¿Tus prompts los eliges por instinto o los cuentas?",
+      "visual_type": "kinetic_video",
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "no lo sé",
+            "serif": true
+          },
+          {
+            "text": "Y ESO YA ES SABER MÁS",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "slow dolly across a dark desk at night: an open notebook with handwritten tally marks, a pen resting on it, a laptop glowing out of focus behind, warm lamp light, shallow depth of field, cinematic, 9:16"
+      }
+    }
+  ]
+}

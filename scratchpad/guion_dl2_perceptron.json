@@ -1,0 +1,136 @@
+{
+  "title": "Toda la IA cabe en una neurona",
+  "slug": "dl_perceptron_neurona",
+  "hook_tipo": "resultado",
+  "keyword": "perceptrón",
+  "hook_headline": [
+    "UNA",
+    "NEURONA"
+  ],
+  "pregunta_ab": "¿Simple o complejo?",
+  "music_prompt": "dark curious electronic instrumental, pulsing synth arpeggio, building wonder, tech, no vocals, 122 BPM",
+  "modo": "corto",
+  "scenes": [
+    {
+      "narration": "Toda la inteligencia artificial cabe en una neurona.",
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.45,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "toda la IA",
+            "serif": true
+          },
+          {
+            "text": "UNA NEURONA",
+            "accent": true
+          }
+        ],
+        "variant": "dark",
+        "veo_prompt": "Cinematic macro shot of a single glowing artificial neuron pulsing with light in a near-black void, delicate dendrite tendrils of cyan and magenta light radiating and flickering with energy, volumetric glow, dramatic depth of field, dark tech aesthetic, no text, no people",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Se llama perceptrón, y hace solo tres cosas.",
+      "beat_type": "hook",
+      "visual_type": "host",
+      "host_top": {
+        "kind": "headline",
+        "lines": [
+          "UNA",
+          "NEURONA"
+        ]
+      }
+    },
+    {
+      "narration": "Recibe tus datos, los multiplica por su peso, los suma, y una función decide si se activa.",
+      "beat_type": "proof",
+      "visual_type": "perceptron",
+      "perceptron": {
+        "inputs": [
+          "x₁",
+          "x₂",
+          "x₃"
+        ],
+        "weights": [
+          0.8,
+          -0.5,
+          1.2
+        ],
+        "activation": "sigmoide",
+        "output": "decisión"
+      }
+    },
+    {
+      "narration": "Apila millones de estas neuronas y tienes el cerebro detrás de ChatGPT.",
+      "beat_type": "proof",
+      "visual_type": "showcase",
+      "showcase": {
+        "items": [
+          {
+            "label": "UNA NEURONA",
+            "image_prompt": "a single glowing artificial neuron node with weighted input lines, luminous cyan and magenta, isolated in a near-black void, cinematic 3D render"
+          },
+          {
+            "label": "MILLONES",
+            "image_prompt": "a vast luminous brain-shaped network of millions of glowing interconnected neurons receding into depth, cyan and magenta light, epic scale, near-black background, cinematic 3D render"
+          }
+        ]
+      }
+    },
+    {
+      "narration": "El giro: una sola neurona solo sabe trazar una línea recta.",
+      "beat_type": "giro",
+      "visual_type": "kinetic_video",
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "solo una",
+            "serif": true
+          },
+          {
+            "text": "LÍNEA RECTA",
+            "accent": true
+          }
+        ],
+        "variant": "dark",
+        "veo_prompt": "Cinematic shot of a single glowing straight line slicing across a dark grid plane, trying to separate two intertwined swirling clusters of cyan and magenta glowing dots but failing to divide the curved data, volumetric neon glow, near-black background, dark tech aesthetic, no text, no people",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Multiplica, suma y decide.",
+      "beat_type": "tesis",
+      "visual_type": "kinetic",
+      "pause_after": 0.35,
+      "kinetic": {
+        "words": [
+          {
+            "text": "multiplica,",
+            "serif": true
+          },
+          {
+            "text": "SUMA"
+          },
+          {
+            "text": "Y DECIDE",
+            "accent": true
+          }
+        ],
+        "variant": "accent"
+      }
+    },
+    {
+      "narration": "La próxima vez que uses una IA, por dentro son millones de estas. ¿Te la imaginabas así de simple? Yo no. Mañana: por qué una línea recta no basta.",
+      "beat_type": "cta",
+      "visual_type": "host",
+      "host_top": {
+        "kind": "save",
+        "title": "POR DENTRO",
+        "subtitle": "MAÑANA: DOBLAR LA LÍNEA →"
+      }
+    }
+  ]
+}

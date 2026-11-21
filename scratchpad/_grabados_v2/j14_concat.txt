@@ -1,0 +1,2 @@
+file '/home/jose/tiktok/scratchpad/_grabados_v2/j14_res.mp4'
+file '/home/jose/tiktok/scratchpad/_grabados_v2/j14_tl.mp4'

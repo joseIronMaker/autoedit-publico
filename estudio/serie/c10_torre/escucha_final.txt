@@ -1,0 +1,1 @@
+c10_torre {"cortes":[],"tapa_la_voz":[],"limpio":true}

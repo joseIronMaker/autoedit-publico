@@ -1,0 +1,20 @@
+{
+  "truco": "ejemplos",
+  "n_por_condicion": 36,
+  "tareas": 6,
+  "modelo": "gemini-flash-latest",
+  "condiciones": {
+    "solo instrucción": {
+      "aciertos": 36,
+      "de": 36,
+      "pct": 100.0,
+      "corridas_perdidas": 0
+    },
+    "con dos ejemplos": {
+      "aciertos": 36,
+      "de": 36,
+      "pct": 100.0,
+      "corridas_perdidas": 0
+    }
+  }
+}

@@ -1,0 +1,214 @@
+gemini:
+  model: gemini-flash-latest
+  fallbacks:
+  - gemini-flash-lite-latest
+  temperature: 0.3
+  tts_model: gemini-3.1-flash-tts-preview
+  tts_fallbacks:
+  - gemini-2.5-flash-preview-tts
+  voice: Charon
+  image_model: gemini-3-pro-image
+  image_fallbacks:
+  - gemini-3.1-flash-image
+  - gemini-2.5-flash-image
+  music_model: lyria-3-pro-preview      # pistas ~3 min con estructura (cama completa)
+  music_fallbacks:
+  - lyria-3-clip-preview                # clips ~30s (music_gen los encadena con crossfade)
+  video_model: gemini-omni-1.1-flash   # Omni 1.1 salió el 2-sep-2026 (José: 'ya está mejorado')       # Omni ("omi" de José): video nativo por generateContent
+  video_fallbacks:
+  - veo-3.1-fast-generate-preview   # VALIDADO 20-jul (clip real 720x1280 8s)
+  - veo-3.1-lite-generate-preview   # tier barato
+  - veo-3.1-generate-preview        # tier calidad
+  prices:
+    image: 0.12
+    music: 0.0
+    video: 1.2                # estimado por clip Veo fast ~4-8s; ajustar al ver factura
+tts:
+  provider: elevenlabs
+  elevenlabs:
+    voice_id: dq04Lc2stQGXZAglGFG7   # narrador del CURSO: voz de barrio que creó José (2-sep-2026)
+    # David C: qRUgOhnxGASxirG4fKjv · clon de José: JXJizDZeZ1VEyaHJQIYE
+    # eleven_v3 SÍ, desde el 8-sep-2026 (José: "la voz ya no tiene emociones"). El veto del
+    # 27-jul era sobre el CLON DE JOSÉ: v3 le subía el tono y dejaba de ser su voz. Esta voz
+    # NO es su clon, es una que él diseñó, así que esa objeción no aplica. Medido sobre la
+    # misma frase: v2 daba 3.42 semitonos de variación a 99 Hz; v3 con stability 0.5 da
+    # 5.19 semitonos a 115 Hz — 52% más expresiva y MÁS cerca de los 109 Hz de la voz
+    # original que la propia v2. Ojo: v3 no acepta style ni speed, así que la curva
+    # `by_beat` deja de aplicarse (el ritmo se ajusta en post si hace falta).
+    model_id: eleven_v3
+    output_format: mp3_44100_128
+    # TOMA ÚNICA: toda la narración del video en UNA petición, cortada por alineación de
+    # caracteres (model_router.generate_tts_batch). Una petición por escena reinicia la
+    # entonación en frío 6 veces por video; en una toma las frases encadenan. Esto sube la
+    # expresividad SIN tocar el timbre, que es justo lo que se necesitaba.
+    single_take: true
+    # menos plano que el 0.6/0.1 anterior, pero sin llegar al 0.35/0.45 que le sacaba
+    # risitas al modelo (queja vieja de José)
+    # medido contra la voz original: stability 0.20 + style 0.65 la suben ~2 semitonos
+    # hacia ella (246 → 276 Hz) sin perder calidad; speed 0.80 la deja en 150 ppm,
+    # el ritmo del referente (156)
+    # MEDIDO 8-sep: con v3 la expresividad va toda aquí y NO es monótona la relación —
+    # 0.0 da 4.15 semitonos y 0.5 da 5.19. Tocar stability/style en v2 no movía nada
+    # (3.42 / 3.16 / 3.51): el problema nunca estuvo en los deslizadores, sino en el modelo.
+    stability: 0.5
+    similarity_boost: 1.0
+    style: 0.35
+    speed: 0.98   # medido: a 0.85 salía a 133 ppm; el referente de barrio narra a 154
+    speaker_boost: true
+    master: true
+    price_per_1k_chars: 0.3
+    by_beat:            # curva de voz por beat (medida en Alborná: 119→190 wpm)
+      hook: {speed: 0.96, style: 0.16}      # lento y con gravedad: el claim pesa
+      contexto: {speed: 1.08}               # arranca el ritmo
+      proof: {speed: 1.08}                  # desarrollo ágil
+      giro: {speed: 1.04, style: 0.16}      # confesión/opinión con matiz
+      tesis: {speed: 0.94, style: 0.2}      # LA frase: lenta, con peso
+      cta: {speed: 1.02}
+  xtts:
+    model: tts_models/multilingual/multi-dataset/xtts_v2
+    language: es
+    speaker_wav: branding/voz_ref.wav
+    speed: 1.0
+branding:
+  handle: '@ia.conjose'   # handle REAL de TikTok (con punto)
+  # misión pública (táctica Kumar): el canal es una historia con protagonista; los CTA
+  # pueden referenciar el progreso para que la audiencia quiera VERNOS ganar
+  mision: convertirme en el referente de IA en español de LATAM, documentándolo video a video
+  canal: IA con José
+  outro: false
+  outro_text: ¿Te sirvió? Sígueme. Soy IA con José.
+  outro_sub: Sígueme para más IA en español
+generate:
+  remotion: true            # motor Remotion (diagramas + beats); PIL de fallback
+  hook_engine: true         # cold-open a concurso: 4 candidatos Gemini + juez de retención
+  # CADA VIDEO CON SU CAMA (José 8-sep-2026: "cámbiale a tu pinche canción, 15 videos con
+  # la misma"). Estaba en false y `render.music` apuntaba al mismo bed_techno_build.m4a
+  # desde el 30-ago: ni uno de los videos recientes tenía `music.m4a` propio. Con true,
+  # music_gen genera la cama con Lyria a partir del `music_prompt` del guion y render.py
+  # la usa con prioridad sobre la global.
+  music_generated: true
+  sfx: true                 # whoosh en las uniones de escena (audio continuo)
+  sfx_gain: 0.32
+  n_scenes: 7
+  width: 1080
+  height: 1920
+  fps: 30
+  zoom_max: 1.13
+  ken_burns_zoom: 1.13
+  transitions: true
+  transition_dur: 0.15
+  anchor: true
+  validate_scenes: true
+  tts_style: 'Narra en español mexicano, acento natural de Ciudad de México, como
+    un creador de contenido joven hablándole a su audiencia: cercano, con energía
+    y un toque de emoción. RITMO ÁGIL Y RÁPIDO, sin pausas largas ni arrastrar las
+    palabras (habla a velocidad natural de conversación, no dramático ni lento):'
+  # PALETA SOBRIA (José, 11-ago-2026). Este texto PISA a generate._IMG_STYLE: si vuelve
+  # a decir "neon cyan and magenta", los videos salen fosforescentes aunque el resto del
+  # motor esté sobrio. Es el cuarto lugar donde vive la paleta (con diagrams.THEMES,
+  # remotion/src/theme.ts y ml_demo.py) y hay que moverlo con los otros tres.
+  image_style: >-
+    Ultra realistic documentary photograph, vertical 9:16, shot on a 50mm
+    lens at f/1.8. Natural or practical light only — a window, a desk lamp, a bare
+    bulb — never coloured studio gels. MUTED DESATURATED palette, low saturation:
+    graphite, ink blue, bone white and warm amber lamplight. The contrast comes from
+    VALUE (deep shadow against lit subject), never from brightness or glow. Sharp
+    focus on one concrete subject, cinematic shallow depth of field, fine film grain,
+    editorial photojournalism look. Subject UPRIGHT and level, horizon horizontal.
+    Lower 30% kept simple for subtitles. STRICTLY FORBIDDEN: neon, fluorescent cyan
+    or magenta, coloured rim light, glowing edges, bloom, volumetric haze, 3D render,
+    glossy plastic reflections, glowing brains, circuit boards, humanoid robots,
+    holograms, binary code, wireframe heads, blue tech grids — every visual cliché
+    of "artificial intelligence". No text, no letters, no words, no watermark, no
+    logo, no warped faces, no cluttered background.
+screen_demo:
+  enabled: true
+  port: 9222
+  capture_seconds: 11
+  max_speed: 1.15
+  vw: 432
+  vh: 768
+  dsf: 2.5
+whisper:
+  model: small
+  language: es
+  compute_type: int8
+  # términos que el canal ENSEÑA: sin esto Whisper escribe "a la gente" por "al agente"
+  vocabulario: "Hablamos de programar en Python con un agente de IA: el agente, Claude Code, Codex, la terminal, print, input, if, else, elif, bucle for, bucle while, función, return, lista, diccionario, tkinter, pygame, PyInstaller, SQLite, una API, requests, JSON, traceback, NameError, TypeError, IndentationError, depurador, breakpoint, commit, Git, GitHub, token, prompt, backpropagation, arnés de evaluación, benchmark, GPT-6 Astra, Codex, Cybercab, robotaxi, Waymo, lidar, Tesla."
+  # correcciones deterministas sobre la transcripción (respetan los tiempos): el sesgo
+  # ayuda pero no garantiza, y estos términos quedan QUEMADOS en los subtítulos
+  correcciones:
+    "a la gente": "al agente"
+    "la gente que escriba": "al agente que escriba"
+    "bad propagation": "backpropagation"
+    "el ifs": "elifs"
+    "in put": "input"
+    "pay ton": "Python"
+    "pitón": "Python"
+    "esquilait": "SQLite"
+    "es que ele": "SQL"
+    "yeison": "JSON"
+    "trace back": "traceback"
+    "brake point": "breakpoint"
+    "guit hub": "GitHub"
+    "pai game": "pygame"
+    "ti kinter": "tkinter"
+    # vocabulario de las noticias de IA (7-sep-2026): "arnés" es el término que el
+    # video de GPT-6 Astra ENSEÑA y Whisper lo escribió "Arnez" cuatro veces
+    "arnez": "arnés"
+    "codecs": "Codex"
+    "cyber cab": "Cybercab"
+    "cybercap": "Cybercab"
+    "way mo": "Waymo"
+    # 8-sep: "las erres de strawberry" salió "las cerres" — la palabra que el
+    # chiste necesita entender
+    "cerres": "erres"
+    "navier stokes": "Navier-Stokes"
+    "epoch ai": "Epoch AI"
+edit:
+  # 0.45 (antes 0.7): con TOMA ÚNICA la entonación ya viene encadenada, pero cada escena
+  # añade su cola de 0.3 s y quedaban ~180 ms de aire muerto en cada unión — cinco uniones
+  # por video, casi un segundo troceado. José, 6-ago-2026: "los videos se cortan en tramos".
+  min_silence: 0.45
+  padding: 0.12
+  min_segment: 0.2
+subtitles:
+  font: Anton
+  bold: false
+  uppercase: true
+  size_ratio: 0.06
+  max_words: 3
+  max_gap: 0.6
+  max_duration: 1.6
+  base_color: FFFFFF
+  highlight_color: 04C2F7
+  outline_color: '000000'
+  outline: 7
+  shadow: 3
+  margin_v_ratio: 0.16   # subs abajo (no chocan con cards/paneles de las escenas)
+  pop: true
+zoom:
+  enabled: true
+  factor: 1.06
+clips:
+  max_clips: 4
+  min_len: 15
+  max_len: 60
+render:
+  crf: 16        # 3ª generación de encode: alto para no macroblockear degradados oscuros
+  preset: slow   # videos de 30-60s: el tiempo extra es mínimo y reparte mejor los bits
+  audio_bitrate: 192k
+  loudnorm: I=-16:TP=-1.5:LRA=11
+  finish: true
+  grain: 6
+  vignette: true
+  music: autoedit/assets/bed_techno_build.m4a   # hard techno = cama por defecto del canal
+  music_gain: 0.38   # medido: al 0.22 la cama aportaba 8.8% de graves y no se oía
+
+# Motor nuevo (estudio/). Los scripts leen de aquí: los modelos cambian, el código no.
+estudio:
+  tts: gemini-3.8-flash-lite-tts      # ganó el casting del 2-nov-2026 frente a Flash
+  voz: es-419-commercial-6
+  voz_estilo: "Narradora de documental: voz limpia, cálida y segura. Ritmo tranquilo con intención. Sin susurrar."
+  critica: gemini-4-argon             # ve y oye: crítica y revisión de tomas
+  musica: lyria-3.5

@@ -1,0 +1,106 @@
+{
+  "title": "Git: la máquina del tiempo de tu proyecto",
+  "slug": "curso_py29_git",
+  "tema": "qué es un commit, cómo ver el historial y cómo volver a una versión anterior con git",
+  "theme": "curso python con ia",
+  "hook_tipo": "demostracion",
+  "keyword": "git para principiantes",
+  "hook_headline": [
+    "FOTOS",
+    "DE TU CÓDIGO"
+  ],
+  "pregunta_ab": "¿Commit antes de pedirle un cambio grande a la IA?",
+  "music_prompt": "hard techno bed, dark industrial groove, 150 BPM, rolling kick, restrained under a voice, instrumental, no vocals",
+  "modo": "corto",
+  "hook_locked": true,
+  "scenes": [
+    {
+      "beat_type": "hook",
+      "visual_type": "terminal",
+      "narration": "Si tienes carpetas que se llaman proyecto final, proyecto final dos y proyecto final bueno este sí, necesitas Git. Es una máquina del tiempo para tu código. Este proyecto tiene un cambio sin guardar: le pido al agente que haga commit con un mensaje claro, y mira lo que hace.",
+      "pause_after": 0.35,
+      "terminal": {
+        "title": "git",
+        "lines": [
+          {
+            "text": "git add juego.py"
+          },
+          {
+            "text": "git commit -m \"mensaje claro\""
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "bash _git_setup.sh && cd ~/curso_git && claude 'haz commit de los cambios con un mensaje claro'",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "custom",
+      "narration": "Un commit es una foto de cómo estaba todo en ese momento, con un mensaje tuyo. Add elige qué sale en la foto, commit la toma. Y las fotos se van apilando en orden: primer programa, el juego elige un número, contador de intentos. Puedes volver a cualquiera cuando se te antoje. Es lo más cerca que vas a estar de arreglar el pasado.",
+      "custom_anim": {
+        "description": "Una línea de tiempo horizontal con tres fotos tipo polaroid que van apareciendo de izquierda a derecha, cada una con un archivo dibujado adentro y una etiqueta debajo: primer programa, elige un número, contador. A la derecha una cuarta foto con borde punteado etiquetada cambios sin guardar; una flecha etiquetada add la rellena y otra etiquetada commit la vuelve sólida y la pega a la línea. Sin cifras."
+      }
+    },
+    {
+      "beat_type": "contexto",
+      "visual_type": "terminal",
+      "narration": "Míralo de verdad: git log me enseña las fotos con su mensaje, la más nueva arriba. Y git diff me dice qué cambió respecto a la anterior: un archivo, una línea más. Ya no adivinas qué tocaste ayer a las once de la noche. Git lo sabe. Y no te juzga… tanto.",
+      "terminal": {
+        "title": "git log",
+        "lines": [
+          {
+            "text": "contador de intentos y gitignore"
+          },
+          {
+            "text": "el juego elige un número"
+          },
+          {
+            "text": "primer programa"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "bash _git_setup.sh && cd ~/curso_git && echo '$ git log --oneline'; git log --oneline; echo; echo '$ git diff HEAD~1 --stat'; git diff HEAD~1 --stat",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "giro",
+      "visual_type": "mascota",
+      "narration": "Por eso yo hago commit ANTES de pedirle un cambio grande a un agente. Si lo que devuelve está peor, vuelvo a la foto anterior con una orden y no perdí nada. Sin commit, un agente equivocado te deja peor que antes y sin camino de regreso. Es cinturón de seguridad: estorboso hasta el día que lo necesitas.",
+      "mascota": {
+        "pose": "profesor",
+        "caption": "commit → pide → si sale mal, regresa"
+      },
+      "foto": {
+        "archivo": "/home/jose/tiktok/branding/perrito/codex_sabio.png"
+      }
+    },
+    {
+      "beat_type": "cta",
+      "visual_type": "kinetic_video",
+      "narration": "Fotos de tu código, con mensaje, en orden. En la última las subimos a internet para que cualquiera las vea. ¿Commit antes de pedirle un cambio grande a la IA? Yo digo siempre: es gratis y te salva el pellejo.",
+      "pause_after": 0.3,
+      "kinetic_video": {
+        "video": "/home/jose/tiktok/videos/_clips_pagados/gen_ln_tres_defectos__veo_0.mp4",
+        "words": [
+          {
+            "text": "una foto",
+            "serif": true
+          },
+          {
+            "text": "ANTES DE CADA CAMBIO",
+            "accent": true
+          }
+        ],
+        "variant": "dark"
+      }
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "tema": "lo que un modelo escribe cuando 'usa una herramienta': un pedido, no una acción",
+  "modelo": "gemini-flash-latest",
+  "pregunta": "¿Cuántas piezas me quedan del pedido B-2208?",
+  "inventario_que_vive_en_python": {
+    "A-4471": 3,
+    "B-2208": 0,
+    "C-9015": 12
+  },
+  "vuelta_1_texto_del_modelo": "",
+  "vuelta_1_pedido_del_modelo": {
+    "name": "consultar_inventario",
+    "args": {
+      "folio": "B-2208"
+    }
+  },
+  "lo_ejecuto": "Python (el agente), no el modelo",
+  "resultado_de_la_herramienta": {
+    "folio": "B-2208",
+    "piezas": 0
+  },
+  "vuelta_2_respuesta_final": "No quedan piezas disponibles del pedido **B-2208** (0 piezas en almacén).",
+  "lineas_para_pantalla": [
+    {
+      "prompt": true,
+      "text": "¿Cuántas piezas me quedan del pedido B-2208?"
+    },
+    {
+      "text": "el modelo escribe:"
+    },
+    {
+      "text": "{\"name\": \"consultar_inventario\", \"args\": {\"folio\": \"B-2208\"}}",
+      "accent": true
+    },
+    {
+      "text": "no ejecutó nada. pidió."
+    },
+    {
+      "prompt": true,
+      "text": "el agente lo ejecuta →  {\"folio\": \"B-2208\", \"piezas\": 0}"
+    },
+    {
+      "text": "No quedan piezas disponibles del pedido **B-2208** (0 piezas en almacén).",
+      "accent": true
+    }
+  ]
+}

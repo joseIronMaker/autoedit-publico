@@ -1,0 +1,81 @@
+=== pro05_actua_como_experto.json  →  gen_pro_actua_como_experto
+→ guion guion de Claude (guionista)
+→ estilo generando imagen ancla de marca
+→ voz toma única de 7 escenas
+  voz: 1 toma de 108.6s partida en 7 escenas (prosodia continua, modelo eleven_multilingual_v2)
+→ escena 1/7 generando voz
+→ escena 1/7 grabando herramienta REAL
+→ escena 2/7 generando voz
+→ escena 2/7 grabando herramienta REAL
+→ escena 3/7 generando voz
+→ escena 3/7 generando 3 imagen(es) en paralelo
+→ escena 3/7 animando (Ken Burns)
+→ escena 4/7 generando voz
+→ escena 4/7 generando 2 imagen(es) en paralelo
+→ escena 4/7 animando (Ken Burns)
+→ escena 5/7 generando voz
+→ escena 5/7 generando 2 imagen(es) en paralelo
+→ escena 5/7 animando (Ken Burns)
+→ escena 6/7 generando voz
+→ escena 6/7 animando kinetic_video
+  aviso: gemini-flash-latest falló (500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}); probando fallback…
+→ escena 7/7 generando voz
+→ escena 7/7 generando 2 imagen(es) en paralelo
+→ escena 7/7 animando (Ken Burns)
+→ escena 7/7 QC visual rechazó: Corte con bloque negro sólido en la parte inferior de los fo
+→ escena 7/7 generando 2 imagen(es) en paralelo
+→ escena 7/7 animando (Ken Burns)
+→ ensamblando 7 escenas → gen_pro_actua_como_experto.mp4
+→ audio audio continuo + SFX de transición
+✔ /home/jose/tiktok/videos/gen_pro_actua_como_experto.mp4
+
+Ahora pásalo por el flujo normal para subtítulos y copys:
+  autoedit gen_pro_actua_como_experto.mp4 --auto   (o desde la web)
+→ Transcribiendo con Whisper (small, CPU)…
+  300 palabras, 111.1s → /home/jose/tiktok/videos/gen_pro_actua_como_experto.autoedit/transcript.json
+→ Gemini analizando la transcripción (cortes + énfasis)…
+
+Plan de edición (26 cortes, −9.5s de 111.1s):
+  ✂    2.40 →    2.62  silencio de 0.5s
+  ✂    6.80 →    7.02  silencio de 0.5s
+  ✂    9.14 →    9.64  silencio de 0.7s
+  ✂   13.82 →   14.14  silencio de 0.6s
+  ✂   17.38 →   17.64  silencio de 0.5s
+  ✂   18.68 →   19.04  silencio de 0.6s
+  ✂   20.24 →   20.58  silencio de 0.6s
+  ✂   26.44 →   26.88  silencio de 0.7s
+  ✂   32.94 →   33.38  silencio de 0.7s
+  ✂   35.88 →   36.20  silencio de 0.6s
+  ✂   42.88 →   43.12  silencio de 0.5s
+  ✂   47.84 →   48.20  silencio de 0.6s
+  ✂   50.24 →   50.46  silencio de 0.5s
+  ✂   54.68 →   55.00  silencio de 0.6s
+  ✂   62.26 →   62.76  silencio de 0.7s
+  ✂   68.76 →   69.00  silencio de 0.5s
+  ✂   73.78 →   74.18  silencio de 0.6s
+  ✂   80.18 →   80.72  silencio de 0.8s
+  ✂   82.06 →   82.42  silencio de 0.6s
+  ✂   83.58 →   83.90  silencio de 0.6s
+  ✂   87.14 →   87.40  silencio de 0.5s
+  ✂   91.90 →   92.18  silencio de 0.5s
+  ✂   99.34 →   99.94  silencio de 0.8s
+  ✂  104.24 →  104.82  silencio de 0.8s
+  ✂  106.46 →  106.76  silencio de 0.5s
+  ✂  110.52 →  111.06  silencio final
+  ★ 29 palabras enfatizadas en subtítulos
+→ Renderizando gen_pro_actua_como_experto_final.mp4: 26 tramos, 101.6s…
+✔ /home/jose/tiktok/videos/gen_pro_actua_como_experto_final.mp4
+→ Generando copys (TikTok/IG/FB)…
+✔ /home/jose/tiktok/videos/gen_pro_actua_como_experto.autoedit/copys.md
+
+✔ pro05_actua_como_experto.mp4  (101.7s)
+  QC   → /home/jose/tiktok/scratchpad/qc_pro_actua_como_experto.png
+  copy → Siempre para quién es: el rol en el prompt te está jugando en contra cada vez que pides un experto.
+Un rol no le agrega conocimiento al modelo, solo cambia las palabras y asume que ya sabes todo.
+La diferencia entre entender o frustrarte está en una sola línea sobre ti.
+
+En vez de inventarle una profesión a la IA, descríbele tu nivel y cómo quieres la explicación.
+
+¿En tus prompts sueles poner Quién o Para quién? Yo siempre Para.
+
+#prompts #chatgpt #trucoschatgpt #inteligenciaartificial #tipsia

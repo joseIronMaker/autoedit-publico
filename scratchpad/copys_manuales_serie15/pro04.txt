@@ -1,0 +1,17 @@
+Le pedí a ChatGPT una historia corta sobre un perro. No le dije el nombre, ni la raza, ni el tono, ni cómo termina.
+
+Le puso nombre igual: Bruno.
+
+Mismo prompt, letra por letra, en un chat nuevo. Otra historia, otro final… y otra vez Bruno. Yo no escribí Bruno en ninguna parte.
+
+Cuando tu prompt no dice algo, eso es un hueco. Y el modelo nunca deja un hueco en blanco: lo rellena. Lo conté con cuarenta historias y salieron cinco nombres nada más, con Toby en casi la mitad.
+
+Y lo rellena así, que no es obedecer: el modelo continúa. Lee todo lo que lleva enfrente, arma la lista de los pedazos que podrían venir y les pone un número. No escoge el más alto: saca uno de esa tómbola cargada, lo pega al final y vuelve a leer todo otra vez.
+
+Los números de esa tómbola los mueve lo que TÚ escribiste. Lo que no escribiste se queda con los de fábrica: lo más común que vio mientras aprendía.
+
+Lo que no escribes, ya viene escrito.
+
+Mi prueba antes de confiarle un texto: se lo pido otra vez en un chat nuevo y pongo las respuestas lado a lado. Lo que cambie entre ellas es exactamente lo que yo no escribí. Ahí meto mano.
+
+¿Tú te quedas con lo primero que salga, o se lo pides otra vez y comparas?

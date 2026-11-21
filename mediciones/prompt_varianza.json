@@ -1,0 +1,56 @@
+{
+  "tema": "el mismo prompt repetido: cuanto varia la respuesta",
+  "modelo": "gemini-flash-latest",
+  "n_por_tarea": 15,
+  "tareas": [
+    {
+      "n": 1,
+      "aciertos": 15,
+      "de": 15,
+      "pct": 100.0,
+      "prompt": "Un tinaco tiene 1200 litros. Una llave lo llena a 25 litros por minuto"
+    },
+    {
+      "n": 2,
+      "aciertos": 15,
+      "de": 15,
+      "pct": 100.0,
+      "prompt": "Cinco amigos comparten una cuenta de 1,240 pesos. Dos de ellos no toma"
+    },
+    {
+      "n": 3,
+      "aciertos": 15,
+      "de": 15,
+      "pct": 100.0,
+      "prompt": "Un tren sale de Puebla a las 8:40 y va a 90 km/h. Otro sale de la mism"
+    },
+    {
+      "n": 4,
+      "aciertos": 15,
+      "de": 15,
+      "pct": 100.0,
+      "prompt": "En una bodega hay cajas de 12 y de 20 piezas. Hay 31 cajas y 500 pieza"
+    },
+    {
+      "n": 5,
+      "aciertos": 15,
+      "de": 15,
+      "pct": 100.0,
+      "prompt": "Un producto sube 25% y después baja 25%. Si terminó en 1,125 pesos, ¿c"
+    },
+    {
+      "n": 6,
+      "aciertos": 15,
+      "de": 15,
+      "pct": 100.0,
+      "prompt": "Ana tiene el triple de años que Beto. Hace 6 años, Ana tenía cinco vec"
+    }
+  ],
+  "resumen": {
+    "aciertos": 90,
+    "de": 90,
+    "pct": 100.0,
+    "tareas_perfectas": 6,
+    "tareas": 6
+  }
+}

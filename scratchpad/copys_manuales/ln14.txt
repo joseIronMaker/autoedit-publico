@@ -1,0 +1,13 @@
+La T de GPT no es de tecnología. Es de Transformer.
+
+Y un Transformer no es magia: es el bloque de atención que ya viste, apilado muchas veces. Cada bloque hace lo mismo — suma la posición, deja que las palabras se miren entre sí con varias cabezas, y pasa el resultado a una capa normal. Y otra vez. Y otra.
+
+Lo decisivo no fue la elegancia: fue que nada espera a la palabra anterior. Todo se calcula al mismo tiempo y miles de núcleos trabajan en paralelo.
+
+Las ideas de atención venían de años antes. Lo nuevo fue que por fin cabía en una GPU — y eso, no la teoría, es lo que cambió la industria.
+
+Mañana: con qué datos se entrena, si etiquetar a mano cuesta una fortuna.
+
+¿Fue la idea o fue la GPU? Yo digo la GPU.
+
+#transformer #gpt #gpu #deeplearning #iaconjose

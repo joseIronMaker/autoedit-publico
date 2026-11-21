@@ -1,0 +1,115 @@
+{
+  "tema": "De LLM a agente: el cambio que estamos viviendo",
+  "modo": "corto",
+  "title": "De LLM a agente: el cambio que estamos viviendo",
+  "slug": "ln_de_llm_a_agente",
+  "hook_tipo": "resultado",
+  "theme": "cyber",
+  "image_style": "cinematic photograph of a single robotic hand reaching out and physically picking up a real tool from a workbench, cold blue key light with magenta rim, shallow depth of field, grounded and tactile, vertical 9:16 composition, lower third kept simple, no text, no letters, no words, no watermark",
+  "keyword": "agentes de inteligencia artificial",
+  "hook_headline": [
+    "DEJÓ",
+    "DE SER UN CHAT"
+  ],
+  "pregunta_ab": "¿Agente que actúa o chat que responde?",
+  "music_prompt": "driving cinematic synthwave finale, arpeggiated bass and soaring lead, triumphant and forward-looking, no vocals, 118 BPM",
+  "_nota_produccion": "La escena 2 (terminal) DEBE llevar la respuesta REAL de un modelo sobre la frase conductora; se captura al producir el video y se pega literal. Nada inventado.",
+  "scenes": [
+    {
+      "narration": "Volvamos a la frase del primer video. Ahora se resuelve sin entrenar nada.",
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.45,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "está increíble…",
+            "serif": true
+          },
+          {
+            "text": "PARA DORMIRSE",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "cinematic macro of a printed page on a dark desk being turned back to an earlier page, the camera pushing slowly in on the reopened page, warm raking side light",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Veinticinco años de intentos, y hoy la resuelves escribiéndole. Sin datos, sin entrenamiento, sin etiquetar nada.",
+      "beat_type": "hook",
+      "visual_type": "host",
+      "host_top": {
+        "kind": "headline",
+        "lines": [
+          "DEJÓ",
+          "DE SER UN CHAT"
+        ]
+      }
+    },
+    {
+      "narration": "Le pides que clasifique el sentimiento, le pasas la frase, y entiende la burla. Cero entrenamiento: solo se lo pediste bien.",
+      "beat_type": "proof",
+      "visual_type": "terminal",
+      "terminal": {
+        "lines": [
+          "> clasifica el sentimiento: positivo o negativo",
+          "> \"está increíble... para dormirse\"",
+          "negativo"
+        ],
+        "caption": "cero entrenamiento"
+      }
+    },
+    {
+      "narration": "Y ahí no para. Dale herramientas, memoria y pasos, y deja de responder para empezar a hacer. Eso es un agente.",
+      "beat_type": "giro",
+      "visual_type": "showcase",
+      "showcase": {
+        "items": [
+          {
+            "label": "HERRAMIENTAS",
+            "image_prompt": "a glowing cyan robotic hand closing around a real metal wrench on a dark workbench, dramatic rim light"
+          },
+          {
+            "label": "MEMORIA",
+            "image_prompt": "a luminous magenta thread being spooled and stored inside a dark glass vault, dark background"
+          },
+          {
+            "label": "PASOS",
+            "image_prompt": "a row of glowing cyan footprints advancing one after another across a dark reflective floor into the distance"
+          }
+        ]
+      }
+    },
+    {
+      "narration": "Veinticinco años para dejar de programarla y empezar a pedírselo.",
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.35,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "dejamos de programarla",
+            "serif": true
+          },
+          {
+            "text": "AHORA SE LO PEDIMOS",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "cinematic slow motion macro of a dense tangle of glowing fiber-optic cables slowly untangling itself and resolving into one single clean line of light travelling forward, pure black background, no screens, no text, no letters, no numbers anywhere, shallow depth of field, volumetric light",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Con esto cierra la serie. Lo siguiente que quiero destripar son los agentes por dentro.",
+      "beat_type": "cta",
+      "visual_type": "host",
+      "host_top": {
+        "kind": "save",
+        "title": "SERIE COMPLETA",
+        "subtitle": "SIGUE: AGENTES POR DENTRO →"
+      }
+    }
+  ]
+}

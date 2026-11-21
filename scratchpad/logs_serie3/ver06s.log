@@ -1,0 +1,57 @@
+=== ver06s_nadie_le_enseno_un_ojo.json  →  gen_ver_nadie_le_enseno_un_ojo  (tema violeta)
+→ guion guion de Claude (guionista)
+→ estilo generando imagen ancla de marca
+→ voz reutilizo la locución ya pagada (6 escenas)
+→ escena 1/6 animando kinetic_video
+→ escena 1/6 QC visual rechazó: El texto en pantalla ('nadie le dijo QUÉ ES UN OJO') no coin
+→ escena 1/6 animando kinetic_video
+  aviso: escena 1 sigue con observaciones: El texto en pantalla ('nadie le dijo QUÉ ES UN OJO') no tiene relación con la narración ('Esos nueve números nadie los escribió...').
+→ escena 2/6 programando animación a medida
+  aviso: animación custom falló (intento 1): NameError: name 'divmod' is not defined
+→ escena 2/6 animando custom
+→ escena 3/6 ejecutando modelo real (sklearn)
+→ escena 3/6 animando código → gráfica
+→ escena 4/6 programando animación a medida
+→ escena 4/6 animando custom
+→ escena 5/6 animando kinetic_video
+→ escena 6/6 generando imagen
+→ escena 6/6 animando (Ken Burns)
+→ ensamblando 6 escenas → gen_ver_nadie_le_enseno_un_ojo.mp4
+→ audio audio continuo + SFX de transición
+→ música reutilizo la cama musical de este video
+✔ /home/jose/tiktok/videos/gen_ver_nadie_le_enseno_un_ojo.mp4
+
+Ahora pásalo por el flujo normal para subtítulos y copys:
+  autoedit gen_ver_nadie_le_enseno_un_ojo.mp4 --auto   (o desde la web)
+→ Transcribiendo con Whisper (small, CPU)…
+  123 palabras, 52.9s → /home/jose/tiktok/videos/gen_ver_nadie_le_enseno_un_ojo.autoedit/transcript.json
+→ Gemini analizando la transcripción (cortes + énfasis)…
+
+Plan de edición (14 cortes, −5.0s de 52.9s):
+  ✂   13.24 →   13.72  silencio de 0.7s
+  ✂   17.06 →   17.32  silencio de 0.5s
+  ✂   20.24 →   20.48  silencio de 0.5s
+  ✂   21.42 →   21.64  silencio de 0.5s
+  ✂   25.46 →   25.82  silencio de 0.6s
+  ✂   27.70 →   28.24  silencio de 0.8s
+  ✂   34.26 →   34.52  silencio de 0.5s
+  ✂   35.36 →   35.80  silencio de 0.7s
+  ✂   36.68 →   37.10  silencio de 0.7s
+  ✂   40.76 →   41.16  silencio de 0.6s
+  ✂   43.64 →   44.08  silencio de 0.7s
+  ✂   45.32 →   45.64  silencio de 0.6s
+  ✂   47.54 →   47.84  silencio de 0.5s
+  ✂   50.44 →   50.74  silencio de 0.5s
+  ★ 11 palabras enfatizadas en subtítulos
+→ Renderizando gen_ver_nadie_le_enseno_un_ojo_final.mp4: 15 tramos, 47.9s…
+✔ /home/jose/tiktok/videos/gen_ver_nadie_le_enseno_un_ojo_final.mp4
+→ Generando copys (TikTok/IG/FB)…
+✔ /home/jose/tiktok/videos/gen_ver_nadie_le_enseno_un_ojo.autoedit/copys.md
+
+✔ ver06_nadie_le_enseno_un_ojo.mp4  (48.1s)
+  QC   → /home/jose/tiktok/scratchpad/qc_ver_nadie_le_enseno_un_ojo.png
+  copy → revisar y reescribir a mano si hace falta:
+Mañana completamos el recuadro, pero hoy te muestro cómo las redes neuronales reconocen tu cara desde cero.
+Apilé el mismo filtro sobre mi foto y las capas heredan el trabajo pasando de bordes a un rostro completo.
+¿Magia o matemática?
+#redesneuronales #inteligenciaartificial #visionporcomputadora #iaconjose

@@ -1,0 +1,22 @@
+Hay preguntas que ningún mapa de parecidos puede contestar.
+¿El restaurante del sábado le sirve a tu mamá?
+Tu agente tiene tres notas.
+Tu mamá no come mariscos. El sábado reservamos en La Perla. La Perla es una marisquería.
+Ninguna, sola, contesta. La respuesta está entre las tres.
+Y la tercera es la que menos se parece a lo que preguntaste. Un buscador por significado la puede dejar fuera.
+Para eso hay otra forma de guardar: un grafo de conocimiento.
+No guarda páginas. Guarda cosas, y cómo se conectan.
+Tu mamá, no come, mariscos. La Perla, sirve, mariscos.
+Así el agente sigue el hilo, de una cosa a la siguiente, y llega: hay que cambiar de restaurante.
+Microsoft publicó en dos mil veinticuatro una versión muy conocida: GraphRAG.
+Pero armar el grafo cuesta, y mantenerlo al día también.
+Hay otra salida, más de agente.
+No buscar una vez. Buscar otra vez, con lo que ya encontró.
+Busca sábado: aparece La Perla. Ahora busca La Perla: aparece marisquería.
+A eso le llaman búsqueda agéntica.
+Boris Cherny, creador de Claude Code, contó que al principio buscaban en el código con una base vectorial. Y que pronto vieron que, en general, funcionaba mejor dejar que el agente buscara solo.
+Mapa, hilos, o volver a buscar. Ninguno gana siempre.
+Lo nuevo es quién elige.
+Antes, alguien decidía qué páginas iba a leer el modelo.
+Hoy, el agente decide qué buscar...
+y cuándo ya encontró.

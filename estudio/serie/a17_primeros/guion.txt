@@ -1,0 +1,15 @@
+En marzo de dos mil veintitrés apareció un programa que prometía algo enorme.
+Dale una meta, y la inteligencia artificial hace todo sola.
+Se llamaba AutoGPT. Se volvió viral. Y casi siempre acababa dando vueltas, gastando dinero, sin terminar nada.
+Mucha gente concluyó que los agentes eran humo.
+Pero la idea venía de antes. En octubre de dos mil veintidós, un artículo llamado ReAct propuso algo simple: pensar y actuar, por turnos.
+Y en junio de dos mil veintitrés, OpenAI lanzó las llamadas a funciones.
+Ya estaban todas las piezas. Faltaba que el modelo no se perdiera.
+En marzo de dos mil veinticuatro, Devin se presentó como el primer ingeniero de software con IA, y sacudió a toda la industria.
+Sus números se discutieron. Pero la promesa ya estaba en la mesa.
+En octubre de ese año, Anthropic enseñó a un modelo a usar una computadora, viendo la pantalla y moviendo el ratón.
+Lento. Torpe. Lleno de errores. Y aun así, impresionante.
+AutoGPT no falló por mala idea.
+Falló por llegar antes que el modelo que la podía cumplir.
+En tecnología, adelantarse dos años...
+se ve igual que equivocarse.

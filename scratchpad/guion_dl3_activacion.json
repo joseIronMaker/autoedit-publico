@@ -1,0 +1,85 @@
+{
+  "title": "Sin esto, la IA solo dibuja rayas",
+  "slug": "dl_activacion_doblar_linea",
+  "hook_tipo": "contraria",
+  "keyword": "funciones de activación",
+  "hook_headline": ["DOBLAR", "LA LÍNEA"],
+  "pregunta_ab": "¿Recta o curva?",
+  "music_prompt": "dark curious electronic instrumental, tension resolving into flow, pulsing synth, no vocals, 122 BPM",
+  "modo": "corto",
+  "scenes": [
+    {
+      "narration": "Apila mil neuronas y solo trazan una raya.",
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.45,
+      "kinetic_video": {
+        "words": [
+          {"text": "mil neuronas", "serif": true},
+          {"text": "UNA RAYA", "accent": true}
+        ],
+        "variant": "dark",
+        "veo_prompt": "Cinematic shot of a rigid grid of straight glowing neon laser lines trying and failing to wrap around a curved organic swirling path of light, stiffness versus flow, cyan and magenta, near-black void, volumetric glow, dark tech aesthetic, no text, no people",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "El truco se llama función de activación.",
+      "beat_type": "hook",
+      "visual_type": "host",
+      "host_top": {"kind": "headline", "lines": ["DOBLAR", "LA LÍNEA"]}
+    },
+    {
+      "narration": "Sin ella, tu red solo separa con líneas rectas. La activación la deja doblarse y envolver los datos.",
+      "beat_type": "proof",
+      "visual_type": "activation_bend"
+    },
+    {
+      "narration": "Y es real: sin activación la frontera es una raya y falla. Con ReLU se curva y acierta.",
+      "beat_type": "proof",
+      "visual_type": "ml_demo",
+      "ml_demo": {
+        "code": "import torch, torch.nn as nn\nfrom sklearn.datasets import make_moons\ntorch.manual_seed(0)\nX, y = make_moons(300, noise=0.2, random_state=0)\nXt = torch.tensor(X, dtype=torch.float32); yt = torch.tensor(y, dtype=torch.float32).view(-1,1)\ndef train(act):\n    layers = [nn.Linear(2,16)]\n    if act: layers += [nn.ReLU()]\n    layers += [nn.Linear(16,1)]\n    net = nn.Sequential(*layers)\n    opt = torch.optim.Adam(net.parameters(), 0.05); lf = nn.BCEWithLogitsLoss()\n    for _ in range(400):\n        opt.zero_grad(); loss = lf(net(Xt), yt); loss.backward(); opt.step()\n    return net\nxx, yy = np.meshgrid(np.linspace(-2,3,300), np.linspace(-1.5,2,300))\ngrid = torch.tensor(np.c_[xx.ravel(), yy.ravel()], dtype=torch.float32)\nfig, axs = plt.subplots(1,2, figsize=(9,5.2))\nfor ax, act, title in [(axs[0], False, 'SIN activacion'), (axs[1], True, 'CON ReLU')]:\n    net = train(act)\n    with torch.no_grad(): Z = torch.sigmoid(net(grid)).numpy().reshape(xx.shape)\n    ax.contourf(xx, yy, Z, levels=12, cmap='magma', alpha=0.7)\n    ax.scatter(X[y==0,0], X[y==0,1], c=CYAN, s=14, zorder=3)\n    ax.scatter(X[y==1,0], X[y==1,1], c=MAG, s=14, zorder=3)\n    ax.set_title(title); ax.set_xticks([]); ax.set_yticks([])",
+        "display_code": [
+          "net = nn.Sequential(",
+          "    nn.Linear(2, 16),",
+          "    nn.ReLU(),      # la activacion",
+          "    nn.Linear(16, 1))"
+        ],
+        "caption": "activacion.py"
+      }
+    },
+    {
+      "narration": "ReLU, sigmoid o tanh: distintas formas de doblar.",
+      "beat_type": "giro",
+      "visual_type": "kinetic",
+      "kinetic": {
+        "words": [
+          {"text": "RELU", "accent": true},
+          {"text": "sigmoid", "serif": true},
+          {"text": "TANH"}
+        ],
+        "variant": "dark"
+      }
+    },
+    {
+      "narration": "Sin doblar, no aprende.",
+      "beat_type": "tesis",
+      "visual_type": "kinetic",
+      "pause_after": 0.35,
+      "kinetic": {
+        "words": [
+          {"text": "sin doblar,", "serif": true},
+          {"text": "NO APRENDE", "accent": true}
+        ],
+        "variant": "accent"
+      }
+    },
+    {
+      "narration": "La próxima IA que uses está llena de estas curvas. ¿Recta o curva? Yo, curva. Mañana: cómo se arma la red completa.",
+      "beat_type": "cta",
+      "visual_type": "host",
+      "host_top": {"kind": "save", "title": "LLENA DE CURVAS", "subtitle": "MAÑANA: LA RED COMPLETA →"}
+    }
+  ]
+}

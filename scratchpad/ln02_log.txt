@@ -1,0 +1,31 @@
+→ guion guion de Claude (guionista)
+→ escena 1/6 generando voz
+→ escena 1/6 animando kinetic
+→ escena 2/6 generando voz
+→ escena 2/6 generando talking-head (D-ID)
+→ escena 2/6 animando banda de marca
+→ escena 3/6 generando voz
+→ escena 3/6 ejecutando modelo real (sklearn)
+  aviso: ml_demo falló (ml_demo: el código no generó figura.
+ile "/home/jose/tiktok/.venv/lib/python3.12/site-packages/sklearn/feature_extraction/text.py", line 1387, in fit_transform
+    vocabulary, X = self._count_vocab(raw_documents, self.fixed_vocabulary_)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jose/tiktok/.venv/lib/python3.12/site-packages/sklearn/feature_extraction/text.py", line 1293, in _count_vocab
+    raise ValueError(
+ValueError: empty vocabulary; perhaps the documents only contain stop words
+); uso big_text de respaldo
+→ escena 3/6 animando big_text
+→ escena 4/6 generando voz
+→ escena 4/6 animando neural_net
+→ escena 5/6 generando voz
+→ escena 5/6 animando kinetic
+→ escena 6/6 generando voz
+→ escena 6/6 generando talking-head (D-ID)
+→ escena 6/6 animando banda de marca
+→ ensamblando 6 escenas → gen_ln_orden_lo_es_todo.mp4
+→ audio audio continuo + SFX de transición
+→ música generando cama del video (Lyria)
+✔ /home/jose/tiktok/videos/gen_ln_orden_lo_es_todo.mp4
+
+Ahora pásalo por el flujo normal para subtítulos y copys:
+  autoedit gen_ln_orden_lo_es_todo.mp4 --auto   (o desde la web)

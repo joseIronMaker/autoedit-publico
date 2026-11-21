@@ -1,0 +1,17 @@
+########## RAMA B: gen_ln_frase_rompio_ia
+  101 palabras, 36.3s → videos/gen_ln_frase_rompio_ia.autoedit/transcript.json
+→ Gemini analizando la transcripción (cortes + énfasis)…
+
+Plan de edición (5 cortes, −3.9s de 36.3s):
+  ✂    3.80 →    4.44  silencio de 0.9s
+  ✂   10.74 →   11.34  silencio de 0.8s
+  ✂   23.68 →   24.68  silencio de 1.2s
+  ✂   27.93 →   28.93  falso comienzo: “La”
+  ✂   35.64 →   36.27  silencio final
+  ★ 12 palabras enfatizadas en subtítulos
+→ Renderizando gen_ln_frase_rompio_ia_final.mp4: 5 tramos, 32.4s…
+✔ videos/gen_ln_frase_rompio_ia_final.mp4
+→ Generando copys (TikTok/IG/FB)…
+✔ videos/gen_ln_frase_rompio_ia.autoedit/copys.md
+==> gen_ln_frase_rompio_ia_final.mp4  32.500000s
+RAMA B COMPLETA

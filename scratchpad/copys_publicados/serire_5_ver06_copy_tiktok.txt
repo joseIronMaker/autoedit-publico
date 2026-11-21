@@ -1,0 +1,7 @@
+Esos nueve números nadie los escribió. Salieron del entrenamiento.
+Empiezan al azar y el entrenamiento los corrige hasta que sirven. Apilé el mismo filtro dos veces sobre mi foto: la primera pasada marca bordes sueltos, la segunda responde donde los bordes se cruzan.
+Las capas no se reparten el trabajo. Se lo heredan.
+
+¿Que una red aprenda sola es magia o matemáticas? Yo digo matemáticas, y por eso me impresiona más.
+
+#redesneuronales #deeplearning #inteligenciaartificial #ia #tecnologia

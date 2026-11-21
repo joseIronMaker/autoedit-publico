@@ -1,0 +1,114 @@
+{
+  "nota": {
+    "hook": 5,
+    "coherencia": 5,
+    "viralidad": 4,
+    "explicabilidad": 6,
+    "marca": 4
+  },
+  "problemas": [
+    {
+      "escena": 1,
+      "eje": "hook",
+      "gravedad": "grave",
+      "que": "La frase sí cabe justo en 12 palabras, pero entrega la respuesta de inmediato y no usa con claridad llamada de identidad, bucle abierto, confesión ni una contradicción que el resto demuestre.",
+      "arreglo": "Abrir con «Tu celular no mira toda tu foto a la vez: la recorre en pedacitos» y demostrar esa afirmación con la misma foto durante todo el video."
+    },
+    {
+      "escena": 1,
+      "eje": "viralidad",
+      "gravedad": "grave",
+      "que": "«Mirar la foto de a pedacitos» es una abstracción: no nombra el celular, la galería ni el botón de nitidez que el espectador realmente usa.",
+      "arreglo": "Poner desde la primera palabra un objeto reconocible —«tu celular» o «tu botón de nitidez»— sobre una foto real en pantalla."
+    },
+    {
+      "escena": 1,
+      "eje": "marca",
+      "gravedad": "grave",
+      "que": "«Es multiplicar y sumar. Nada más» simplifica de más y hace parecer que toda la visión por computadora se reduce a esa operación.",
+      "arreglo": "Acotar la afirmación a «Una convolución básica calcula cada pedacito multiplicando y sumando» y decir que es una pieza del sistema, no todo el sistema."
+    },
+    {
+      "escena": 2,
+      "eje": "explicabilidad",
+      "gravedad": "medio",
+      "que": "Se describe la operación, pero nunca se da el nombre técnico «kernel» o «filtro», así que la metáfora de la ventanita queda desconectada del concepto real.",
+      "arreglo": "Decir «Esta ventanita es una metáfora: técnicamente se llama kernel o filtro de 3 por 3» antes de mostrar las multiplicaciones."
+    },
+    {
+      "escena": 3,
+      "eje": "viralidad",
+      "gravedad": "grave",
+      "que": "«El primero da cuatro» no es una prueba verificable si no se ven simultáneamente los nueve valores de la imagen, los nueve pesos y la suma que produce cuatro.",
+      "arreglo": "Congelar el primer cálculo y mostrar los nueve productos y su suma hasta llegar a 4, además de dejar visible el código ejecutado."
+    },
+    {
+      "escena": 3,
+      "eje": "coherencia",
+      "gravedad": "medio",
+      "que": "La demostración cambia de una foto a una matriz de 5 por 5 sin establecer que esa matriz sea un recorte numérico de la misma foto.",
+      "arreglo": "Usar una sola foto, ampliar un recorte de 5 por 5 píxeles y convertir esos mismos píxeles en la matriz que recorre la animación."
+    },
+    {
+      "escena": 4,
+      "eje": "marca",
+      "gravedad": "grave",
+      "que": "«La hace barata» es técnicamente impreciso: compartir pesos reduce parámetros y memoria, pero la ventana todavía exige cómputo en cada posición.",
+      "arreglo": "Sustituirlo por «Compartir los mismos pesos reduce cuántos parámetros hay que aprender, aunque el cálculo se repite en cada posición»."
+    },
+    {
+      "escena": 4,
+      "eje": "marca",
+      "gravedad": "grave",
+      "que": "«Nueve números para toda la foto, no uno por pixel» compara cantidades equivocadas: sin compartir habría nueve pesos por posición de salida, no un peso por píxel.",
+      "arreglo": "Decir «Son nueve pesos reutilizados; sin compartirlos necesitarías nueve pesos nuevos por cada posición de salida»."
+    },
+    {
+      "escena": 5,
+      "eje": "coherencia",
+      "gravedad": "grave",
+      "que": "Repite casi literalmente la escena 4 y desperdicia segundos sin contestar la pregunta central con precisión.",
+      "arreglo": "Convertirla en la respuesta explícita: «Entonces: calcula cada salida de a pedacitos, pero al recorrerlos termina cubriendo toda la foto»."
+    },
+    {
+      "escena": 6,
+      "eje": "coherencia",
+      "gravedad": "grave",
+      "que": "El cierre cambia del ejemplo genérico a «tu botón de nitidez» y pospone la explicación, en vez de rematar la pregunta que abrió el video.",
+      "arreglo": "Cerrar primero con la respuesta «la procesa por pedacitos y recorre toda la imagen» y dejar la nitidez como una última consecuencia del mismo ejemplo visual."
+    },
+    {
+      "escena": 6,
+      "eje": "marca",
+      "gravedad": "grave",
+      "que": "Afirmar que son «los mismos» nueve números del botón de nitidez promete una equivalencia universal falsa: distintas apps usan kernels, máscara de enfoque, métodos adaptativos o modelos de IA.",
+      "arreglo": "Decir «Un filtro clásico de nitidez puede usar un kernel como este; el botón de tu app puede aplicar un método distinto»."
+    },
+    {
+      "escena": 0,
+      "eje": "marca",
+      "gravedad": "medio",
+      "que": "No hay ninguna frase de experiencia o postura propia que haga reconocible a un ingeniero de IA mexicano; el texto podría salir de cualquier canal genérico.",
+      "arreglo": "Añadir una línea breve y comprobable, por ejemplo «Cuando depuro redes de visión, esta es la operación que reviso primero», sin desplazar la demostración."
+    },
+    {
+      "escena": 0,
+      "eje": "explicabilidad",
+      "gravedad": "medio",
+      "que": "La pregunta «¿mira todo o de a pedacitos?» plantea una falsa disyuntiva: cada salida usa un vecindario, pero el filtro termina recorriendo toda la imagen.",
+      "arreglo": "Responder explícitamente «las dos: calcula localmente, pedacito por pedacito, hasta cubrir toda la foto» y separar cálculo local de cobertura total."
+    }
+  ],
+  "lo_que_funciona": [
+    "La primera frase tiene exactamente 12 palabras habladas.",
+    "El ejemplo 5 por 5 con ventana 3 por 3 produce correctamente nueve posiciones si no se agrega relleno.",
+    "No pide likes, comentarios, seguidores ni guardados."
+  ],
+  "_hook_medido": {
+    "palabras": 12,
+    "caracteres": 62,
+    "segundos_aprox": 3.9,
+    "cabe_en_12": true,
+    "primera_frase": "Mirar la foto de a pedacitos es multiplicar y sumar"
+  }
+}

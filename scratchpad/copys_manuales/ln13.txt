@@ -1,0 +1,13 @@
+No hay una atención dentro de ChatGPT. Hay decenas, funcionando al mismo tiempo.
+
+Una sola cabeza aprende un tipo de relación y se queda ahí. Así que en vez de pedirle todo a una, las ponen en paralelo: eso es multi-head attention.
+
+Y cada cabeza acaba especializándose sola: una sigue de quién se habla, otra se fija en las negaciones, otra en el tiempo verbal. Nadie se lo asignó — sale del entrenamiento. Al final se pegan todas las miradas en una sola salida.
+
+Por eso capta la ironía de "está increíble... para dormirse": una cabeza ve el elogio y otra ve el remate que lo destruye. La misma frase con la que abrimos la serie.
+
+Mañana armamos todas las piezas: el Transformer.
+
+¿Una mirada experta o muchas simples? Yo digo muchas simples.
+
+#multihead #atencion #transformers #deeplearning #iaconjose

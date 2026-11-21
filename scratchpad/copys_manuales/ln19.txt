@@ -1,0 +1,13 @@
+"Está increíble... para dormirse". La frase con la que abrimos la serie: 25 años sin resolverse.
+
+Hoy la resuelves escribiéndole. Le pides que clasifique el sentimiento, le pasas la frase, y entiende la burla. Cero datos etiquetados, cero entrenamiento, cero GPU. Solo se lo pediste bien.
+
+Y ahí no para. Dale herramientas, memoria y pasos, y deja de responder para empezar a hacer. Eso es un agente, y es el cambio que estamos viviendo ahora mismo.
+
+Veinticinco años para dejar de programarla y empezar a pedírselo. Esa es la historia completa de cómo la IA aprendió a leer.
+
+Lo siguiente que quiero destripar son los agentes por dentro.
+
+¿Agente que actúa o chat que responde? Yo digo que el salto real está en actuar.
+
+#agentes #llm #inteligenciaartificial #serie #iaconjose

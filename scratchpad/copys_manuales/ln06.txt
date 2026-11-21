@@ -1,0 +1,13 @@
+"Crecí en Francia, pero llevo veinte años en México. Hablo perfecto..." ¿francés o español?
+
+Para completar esa frase hay que acordarse de la PRIMERA palabra. Y eso es justo lo que las redes con memoria no lograban.
+
+El motivo es aritmético: al corregir hacia atrás, el gradiente se multiplica por la misma matriz en cada paso. Si esos números son menores que uno, se encoge hasta desaparecer — a diez palabras atrás ya no llega señal para aprender. Y al revés, si pasan de uno, explota y hay que recortarlo a mano.
+
+Memoria corta por construcción, no por descuido. Es el defecto que se estudia como desvanecimiento del gradiente, y es la razón por la que las RNN puras nunca leyeron un párrafo largo.
+
+Mañana: qué recordar y qué olvidar.
+
+¿Memoria corta o pasos cortos? Yo digo que el problema son los pasos.
+
+#deeplearning #rnn #gradientes #redesneuronales #iaconjose

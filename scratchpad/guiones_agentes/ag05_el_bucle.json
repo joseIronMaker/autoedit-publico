@@ -1,0 +1,84 @@
+{
+  "slug": "ag_el_bucle",
+  "tema": "la definicion completa de agente: un modelo de lenguaje metido en un bucle, con herramientas, que repite pedir-ejecutar-devolver hasta que su respuesta ya no trae ningun pedido adentro",
+  "title": "Un agente no es una IA más lista. Es un modelo metido en un bucle.",
+  "theme": "hielo",
+  "hook_locked": true,
+  "concepto": "agente = modelo de lenguaje + herramientas + bucle que repite hasta que la respuesta ya no trae un pedido adentro",
+  "en_una_frase": "Un agente son tres cosas juntas: el modelo que escribe, la lista de herramientas que puede pedir, y el bucle que ejecuta lo que pidió y se lo devuelve para que siga.",
+  "quien_decide": "el bucle decide cuántas vueltas se dan y cuándo se detiene — no tú, y casi nunca lo ves",
+  "que_cuesta": "llamas agente a cualquier chat y le encargas cosas que no puede hacer, o le confías tareas a algo que sí las hace y no sabías",
+  "palanca": "para saber si lo que usas es un agente, pregúntate si algo ejecutó de verdad entre tu mensaje y su respuesta: si nada se movió, es un modelo",
+  "pregunta_ab": "Lo que usas a diario, ¿te contesta de una, o va y viene varias veces antes de contestarte?",
+  "scenes": [
+    {
+      "beat_type": "cold_open",
+      "visual_type": "terminal",
+      "narration": "A esto le llaman agente. Y son tres cosas, no una.",
+      "terminal": {
+        "title": "un agente, completo",
+        "lines": [
+          {"prompt": true, "text": "1. el modelo    → escribe texto. nada más."},
+          {"prompt": true, "text": "2. herramientas → la lista de lo que puede pedir."},
+          {"prompt": true, "text": "3. el bucle     → ejecuta lo pedido y se lo devuelve."},
+          {"text": "las tres juntas. una sola no es un agente.", "accent": true}
+        ]
+      }
+    },
+    {
+      "beat_type": "definicion",
+      "visual_type": "image",
+      "narration": "Porque la palabra agente no nombra un programa ni un modelo más listo. Un agente es un modelo de lenguaje metido dentro de un bucle, con una lista de herramientas que puede pedir. Quítale las herramientas y te queda un chat. Quítale el bucle y te queda un chat que pide cosas que nadie ejecuta.",
+      "image_prompts": [
+        "Three separate machine parts laid out on a dark workbench, none assembled, warm work light. Documentary photography, muted palette, no readable text.",
+        "The same three parts fitted together into one mechanism, seen close, raking warm light. Documentary photography, shallow depth of field.",
+        "Extreme macro of the joint where two of those parts meet, deep shadow behind. Documentary photography, muted palette."
+      ]
+    },
+    {
+      "beat_type": "mecanismo",
+      "visual_type": "terminal",
+      "narration": "Y por eso el bucle se llama bucle: no pasa una vez. El modelo lee todo lo que tiene enfrente y escribe. Si lo que escribió trae un pedido adentro, el bucle lo ejecuta, le pega el resultado abajo y le vuelve a pasar todo. El modelo lo lee otra vez, ahora con el dato, y vuelve a escribir. Y otra vez. Y otra.",
+      "terminal": {
+        "title": "el bucle, vuelta por vuelta",
+        "lines": [
+          {"prompt": true, "text": "vuelta 1 → el modelo pide: buscar_pedido(B-2208)"},
+          {"text": "          el bucle lo ejecuta y le pega el resultado"},
+          {"prompt": true, "text": "vuelta 2 → el modelo pide: revisar_almacen(B-2208)"},
+          {"text": "          el bucle lo ejecuta y le pega el resultado"},
+          {"prompt": true, "text": "vuelta 3 → el modelo contesta. sin pedidos adentro."},
+          {"text": "ahí se detiene.", "accent": true}
+        ],
+        "progress": {"label": "leer · pedir · ejecutar · pegar · repetir"}
+      }
+    },
+    {
+      "beat_type": "condicion_de_paro",
+      "visual_type": "image",
+      "narration": "Así que la pregunta que casi nadie contesta es cuándo para. Y la respuesta es sencilla: para cuando lo que el modelo escribió ya no trae ningún pedido adentro. Ahí el bucle deja de dar vueltas y eso último es lo que te llega a ti. Todo lo demás pasó sin que lo vieras.",
+      "image_prompts": [
+        "A spinning top slowing down on a dark wooden table, warm side light, motion blur. Documentary photography, muted palette.",
+        "That same top fallen still on the table, long shadow, warm low light. Documentary photography, shallow depth of field."
+      ]
+    },
+    {
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "narration": "No es más listo. Es el mismo, con manos y con vueltas.",
+      "kinetic_video": {
+        "words": [{"text": "NO ES"}, {"text": "MÁS LISTO"}, {"text": "ES EL MISMO, EN UN BUCLE"}],
+        "variant": "dark",
+        "video": "videos/gen_ln_lo_que_aprendio_solo.assets/veo_4.mp4"
+      }
+    },
+    {
+      "beat_type": "cierre",
+      "visual_type": "image",
+      "narration": "Entonces la prueba que yo uso para saber qué tengo enfrente no es preguntarle si es un agente, porque te va a decir que sí. Es fijarme si algo se movió de verdad entre mi mensaje y su respuesta: un archivo, un correo, una búsqueda. Si nada se movió, era un modelo escribiendo bonito. Lo que usas a diario, ¿te contesta de una, o va y viene varias veces antes de contestarte?",
+      "image_prompts": [
+        "A desk seen before and after: an open ledger and a pen at rest, warm lamp light, nobody in frame. Documentary photography, muted palette, no readable text.",
+        "A hand closing that ledger, seen close from the side at night. Documentary photography, shallow depth of field."
+      ]
+    }
+  ]
+}

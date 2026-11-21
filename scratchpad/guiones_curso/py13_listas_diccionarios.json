@@ -1,0 +1,100 @@
+{
+  "title": "Listas y diccionarios: guardar muchas cosas",
+  "slug": "curso_py13_listas_diccionarios",
+  "tema": "listas y diccionarios en Python: la fila con posición y la ficha con etiquetas",
+  "theme": "curso python con ia",
+  "hook_tipo": "demostracion",
+  "keyword": "listas y diccionarios python",
+  "hook_headline": [
+    "FILA",
+    "O FICHA"
+  ],
+  "pregunta_ab": "¿Lista o diccionario para el marcador?",
+  "music_prompt": "hard techno bed, dark industrial groove, 150 BPM, rolling kick, restrained under a voice, instrumental, no vocals",
+  "modo": "corto",
+  "hook_locked": true,
+  "scenes": [
+    {
+      "beat_type": "hook",
+      "visual_type": "terminal",
+      "narration": "Una caja guarda un dato. ¿Y si quieres los tres últimos jugadores de tu partida? Ahí ya necesitas cajas grandes, y hay dos: la lista y el diccionario. Le pido al agente que le meta a tu juego un marcador con los últimos tres, y a ver cuál de las dos agarra.",
+      "pause_after": 0.35,
+      "terminal": {
+        "title": "marcador",
+        "lines": [
+          {
+            "text": "ultimos = [\"Ana\", \"Luis\", \"José\"]"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "claude 'agrega a juego.py un marcador con los ultimos 3 jugadores'",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "custom",
+      "narration": "La lista es la fila del banco: importa el orden y llegas a cada cosa por su número de lugar… que empieza en CERO, no en uno. Esa te va a morder mínimo una vez y te vas a quedar viendo la pantalla como si te hubiera insultado. El diccionario es una credencial: cada dato trae su etiqueta y lo pides por el nombre, no por el lugar.",
+      "custom_anim": {
+        "description": "Arriba una fila de tres cajas pegadas con los nombres Ana, Luis, José y debajo de cada una su índice 0, 1, 2; un puntero recorre la fila y al señalar el 0 la caja Ana se ilumina con el texto lista: por posición. Debajo una ficha tipo tarjeta con tres renglones etiquetados nombre, puntos, nivel y sus valores Ana, 15, 3; un puntero señala la etiqueta puntos y el 15 se ilumina con el texto diccionario: por etiqueta. Sin más cifras que 0, 1, 2, 15 y 3."
+      }
+    },
+    {
+      "beat_type": "contexto",
+      "visual_type": "terminal",
+      "narration": "Míralo corriendo: la ficha del jugador trae nombre, puntos y nivel. Le pido los puntos por su etiqueta y me da quince. Y la lista de últimos la recorro con un for y me suelta los tres en orden. Dos cajas, dos formas de preguntar. Como cuando buscas a alguien: o dices el tercero de la fila, o dices su nombre. Una de las dos deja de funcionar en cuanto alguien se mueve.",
+      "terminal": {
+        "title": "python3 ficha.py",
+        "lines": [
+          {
+            "text": "jugador[\"puntos\"] → 15"
+          },
+          {
+            "text": "ultimos → Ana, Luis, José"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "cat ficha.py; echo; echo '$ python3 ficha.py'; python3 ficha.py",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "giro",
+      "visual_type": "mascota",
+      "narration": "Mi regla después de años en esto: si vas a recorrer TODO, lista. Si vas a buscar UNO por su nombre, diccionario. Cuando le pegas al revés no explota nada, nomás el código sale largo y feo, y tú ahí escribiendo veinte líneas para algo que eran dos. Ese sentimiento tiene nombre técnico: te equivocaste de caja.",
+      "mascota": {
+        "pose": "profesor",
+        "caption": "recorrer todo → lista · buscar uno → diccionario"
+      },
+      "foto": {
+        "archivo": "/home/jose/tiktok/branding/perrito/codex_sabio.png"
+      }
+    },
+    {
+      "beat_type": "cta",
+      "visual_type": "kinetic_video",
+      "narration": "Fila para el orden, ficha para la etiqueta. La que viene: piedra, papel o tijera con reglas de verdad, y ahí el diccionario te salva el pellejo. ¿Lista o diccionario para el marcador? Yo digo lista, porque lo que importa es quién llegó primero.",
+      "pause_after": 0.3,
+      "kinetic_video": {
+        "video": "/home/jose/tiktok/videos/_clips_pagados/gen_ln_donde_quedo_el_orden__veo_4.mp4",
+        "words": [
+          {
+            "text": "fila o ficha",
+            "serif": true
+          },
+          {
+            "text": "DEPENDE DE CÓMO PREGUNTAS",
+            "accent": true
+          }
+        ],
+        "variant": "dark"
+      }
+    }
+  ]
+}

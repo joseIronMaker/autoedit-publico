@@ -1,0 +1,21 @@
+Tu agente no se sabe tus documentos. Y no le hace falta.
+Lo que aprendió quedó fijo cuando lo entrenaron. No conoce el menú del restaurante, ni la lista de tu familia, ni lo que pasó ayer.
+Y en su mesa no cabe una biblioteca.
+Así que hace lo que harías tú: va, busca, trae tres páginas, y contesta leyéndolas.
+Primero recupera. Después escribe.
+A eso le llamamos Rag: generación aumentada por recuperación. Así lo bautizó un equipo de Facebook en dos mil veinte.
+El truco está en cómo busca.
+No busca palabras iguales. Busca significados parecidos.
+Imagina un mapa donde cada idea tiene un lugar, y las parecidas viven cerca. Pastel, junto a postre.
+Cada pedazo de tus documentos recibe un lugar en ese mapa. Tu pregunta también.
+Y trae lo que quedó más cerca.
+Esos lugares son vectores, y donde se guardan se llama base de datos vectorial.
+Por eso encuentra el pastel, aunque escribiste postre.
+Y por eso también se equivoca.
+Le pides un restaurante sin mariscos, porque tu mamá no los come.
+Y te puede traer una marisquería. En el mapa, quedan cerquísima.
+Parecido no es correcto.
+Yo, cuando un agente me contesta así, primero veo qué páginas trajo.
+Porque Rag no lo hace saber más.
+Lo hace ir a buscar...
+y decirte de dónde lo sacó.

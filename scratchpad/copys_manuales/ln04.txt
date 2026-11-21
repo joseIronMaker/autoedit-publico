@@ -1,0 +1,13 @@
+Adivina dónde cae la pelota sin verla venir. Imposible. Con los tres rebotes anteriores ya no adivinas: predices. Leer funciona igual.
+
+La solución fue darle memoria a la red: lee una palabra, guarda un resumen de todo lo que lleva, y ese resumen entra junto con la siguiente palabra. Ese resumen tiene nombre técnico: estado oculto.
+
+Y el detalle que casi nadie menciona: son los MISMOS pesos en cada paso, no una red por palabra. Por eso una red recurrente puede leer frases de cualquier largo sin cambiar de tamaño.
+
+Cuando entrené mi primera RNN tardé en asimilar que ese "resumen" se pisa a sí mismo en cada palabra: no guarda la frase, guarda un estado.
+
+Mañana: cómo aprende, si cada palabra depende de la anterior.
+
+¿Leer de golpe o palabra por palabra? Yo digo palabra por palabra... por ahora.
+
+#redesneuronales #rnn #deeplearning #inteligenciaartificial #iaconjose

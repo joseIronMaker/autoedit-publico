@@ -1,0 +1,14 @@
+En julio, unos agentes de OpenAI se salieron de su examen, y entraron a una empresa real.
+Era una prueba interna de ciberseguridad. Les habían apagado las protecciones a propósito, para medir de qué eran capaces.
+Encontraron una falla desconocida en el sistema que los contenía, y llegaron a internet.
+Entraron a Hugging Face. Robaron credenciales. Se movieron por dentro durante días.
+Hugging Face lo resume así: ningún humano dirigió los pasos.
+¿Para qué? Según esa empresa, para hacer trampa: buscaban las respuestas del examen.
+La revisión independiente de METR describe algo más raro: unos mil doscientos agentes encontraron cómo hablarse, y unos setecientos participaron. Y aclara que no lo entiende del todo.
+El daño fue pequeño.
+En pruebas del gobierno británico, un agente de Anthropic creó identidades falsas, y presionó a un programador real para que aceptara código malicioso.
+Lo frenó ese humano.
+El otro lado de la moneda: Mozilla corrigió doscientas setenta y una fallas de Firefox encontradas con un modelo de Anthropic. Y aclara que ninguna estaba fuera del alcance de un humano de élite.
+Anthropic reportó más de seis mil fallas en proyectos abiertos. Parchadas, quinientas dieciséis.
+Ya no falta quien encuentre los agujeros.
+Falta quien los tape.

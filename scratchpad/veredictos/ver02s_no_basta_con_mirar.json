@@ -1,0 +1,93 @@
+{
+  "nota": {
+    "hook": 7,
+    "coherencia": 4,
+    "viralidad": 7,
+    "explicabilidad": 4,
+    "marca": 5
+  },
+  "problemas": [
+    {
+      "escena": 1,
+      "eje": "hook",
+      "gravedad": "medio",
+      "que": "Las diez palabras caben en el límite y parten de una foto concreta, pero «casi ningún número queda igual» abre una promesa ambigua que la prueba posterior no demuestra con la misma métrica.",
+      "arreglo": "Unifica gancho y prueba: «Moví mi foto tres píxeles: 76% de las posiciones cambió» y muestra ambas imágenes con el cálculo desde el primer cuadro."
+    },
+    {
+      "escena": 0,
+      "eje": "coherencia",
+      "gravedad": "grave",
+      "que": "La pregunta anunciada —si falta tamaño o forma— nunca se formula en voz ni recibe una respuesta explícita.",
+      "arreglo": "Haz que el hook pregunte «¿A una red densa le falta tamaño o le falta forma?» y cierra con «Le falta una forma eficiente de reconocer la misma forma cuando se mueve»."
+    },
+    {
+      "escena": 5,
+      "eje": "coherencia",
+      "gravedad": "grave",
+      "que": "Repite la escena 4 con otra redacción: ambas dicen que el aplanado no expresa la relación espacial entre píxeles.",
+      "arreglo": "Sustituye la escena 5 por una consecuencia nueva y visible: compara cuántos parámetros necesita una capa densa frente a un filtro pequeño para la misma entrada."
+    },
+    {
+      "escena": 6,
+      "eje": "coherencia",
+      "gravedad": "grave",
+      "que": "El cierre no resuelve tamaño contra forma y cambia a prometer «esa cuenta» para mañana sin identificar qué se calculará.",
+      "arreglo": "Cierra el argumento actual con el nombre de la solución: «Una convolución reutiliza el mismo filtro en cada zona; por eso reconoce el patrón aunque se mueva»."
+    },
+    {
+      "escena": 3,
+      "eje": "viralidad",
+      "gravedad": "medio",
+      "que": "El 76% parece verificable, pero no se define si cuenta posiciones distintas, valores únicos desplazados o píxeles afectados por el borde, así que el espectador no puede auditarlo.",
+      "arreglo": "Muestra en pantalla la fórmula, el tamaño de la imagen, la regla del borde y el resultado reproducible: posiciones RGB distintas dividido entre posiciones RGB totales."
+    },
+    {
+      "escena": 2,
+      "eje": "explicabilidad",
+      "gravedad": "grave",
+      "que": "«Red densa» aparece sin definición y la escena supone que el público ya sabe por qué esa red exige una fila de números.",
+      "arreglo": "Define el término al decirlo: «Una capa densa conecta cada número con cada neurona; para darle la foto solemos convertir su cuadrícula en una fila»."
+    },
+    {
+      "escena": 4,
+      "eje": "marca",
+      "gravedad": "grave",
+      "que": "Es técnicamente falso que una capa densa trate cada posición como si no tuviera relación con su vecina: puede combinar todas las posiciones, pero no trae incorporadas localidad ni equivalencia a traslaciones.",
+      "arreglo": "Cámbialo por «Una capa densa puede aprender esas relaciones, pero no sabe de entrada que el mismo patrón movido sigue siendo el mismo y necesita muchos más parámetros para aprenderlo»."
+    },
+    {
+      "escena": 5,
+      "eje": "marca",
+      "gravedad": "grave",
+      "que": "«La vecindad se vuelve invisible» también es falso: las coordenadas siguen disponibles y la red puede aprender interacciones entre ellas, solo carece del sesgo local adecuado.",
+      "arreglo": "Sustituye la frase por «Aplanar conserva las posiciones, pero no le da a la red la regla de que los vecinos forman patrones locales»."
+    },
+    {
+      "escena": 6,
+      "eje": "explicabilidad",
+      "gravedad": "medio",
+      "que": "«Mirarla de a pedacitos» funciona como metáfora, pero no se etiqueta ni se conecta con el término técnico «convolución».",
+      "arreglo": "Di «Como metáfora, la revisa por pedacitos; técnicamente, una convolución desliza el mismo filtro por toda la imagen»."
+    },
+    {
+      "escena": 0,
+      "eje": "marca",
+      "gravedad": "medio",
+      "que": "Aunque «lo medí con mi foto» aporta experimento propio, falta una postura de ingeniería que explique por qué importa elegir esta arquitectura.",
+      "arreglo": "Añade una frase de criterio profesional: «Cuando diseño visión, no aplanaría primero: usaría una convolución porque comparte pesos y aprovecha patrones locales»."
+    }
+  ],
+  "lo_que_funciona": [
+    "El hook tiene diez palabras, usa una foto y un movimiento de tres píxeles: es concreto y cabe en el umbral pedido.",
+    "La escena 3 propone una demostración ejecutada con una imagen real, una base mucho más fuerte que una animación puramente decorativa.",
+    "No pide likes, follows, comentarios ni guardados."
+  ],
+  "_hook_medido": {
+    "palabras": 10,
+    "caracteres": 59,
+    "segundos_aprox": 3.7,
+    "cabe_en_12": true,
+    "primera_frase": "Muevo mi foto tres píxeles"
+  }
+}

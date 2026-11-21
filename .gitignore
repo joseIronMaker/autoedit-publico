@@ -1,0 +1,37 @@
+.env
+.venv/
+__pycache__/
+*.egg-info/
+*.autoedit/
+*.assets/
+usage.jsonl
+*.mp4
+*.wav
+
+# piloto de Remotion: node_modules y cachés (zip de Chrome de 110 MB)
+scratchpad/remotion-pilot/node_modules/
+scratchpad/remotion-pilot/.remotion/
+scratchpad/logs_serie2/
+scratchpad/serie2_v1_descartados/
+subir/
+
+# artefactos de QC: tiras de fotogramas y frames sueltos que se regeneran solos
+# (155 MB de PNGs el 12-ago-2026). Lo que se versiona del scratchpad son los guiones,
+# los copys a mano y las herramientas .py — no las imágenes que produce revisar.
+scratchpad/*.png
+scratchpad/_sd_frames/
+scratchpad/placas_*/
+branding/voz_ref.mp3
+scratchpad/_curso/logs/
+scratchpad/_curso/*.log
+scratchpad/_curso/demo/_cap_*.sh
+scratchpad/_curso/demo/datos.json
+scratchpad/_curso/demo/*.db
+scratchpad/_curso/demo/pong.png
+dist/
+
+estudio/remotion/node_modules/
+estudio/remotion/out/
+estudio/**/*.wav
+estudio/**/*.mp4
+scratchpad/_referentes/fuente/

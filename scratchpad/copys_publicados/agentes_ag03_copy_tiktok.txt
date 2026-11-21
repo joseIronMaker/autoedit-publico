@@ -1,0 +1,15 @@
+Cuando le contestas a una IA, tu mensaje no le llega solo. Le llega otra vez la conversación entera.
+
+Porque entre un mensaje y el siguiente, el modelo no guarda nada. Nada.
+
+Eso que se le vuelve a poner enfrente completo es el contexto: todo el texto que tiene delante en ese momento. No es una memoria. Es una hoja que alguien vuelve a dejar sobre la mesa.
+
+El ciclo es este, cada vez, sin excepción: el programa arma la hoja con todo lo que llevan, se la pasa, el modelo la lee entera desde arriba, escribe lo que sigue, y suelta. No guarda. A la siguiente vuelta el programa vuelve a armar la hoja, ahora con lo nuevo pegado abajo.
+
+Y ahí está el problema que ya viviste sin saber por qué. La hoja tiene un tamaño máximo. Cuando ya no cabe, algo se recorta — y lo primero que se va es lo de arriba, o sea lo que le explicaste al principio. No se le olvidó: es que ya no lo tenía enfrente.
+
+No recuerda. Relee.
+
+Por eso en conversaciones largas hago lo contrario de lo que parece lógico: lo importante lo repito tarde, no temprano. Si algo tiene que seguir vivo, lo vuelvo a escribir cerca del final.
+
+Cuando se te pierde en una conversación larga, ¿abres un chat nuevo, o le repites lo importante?

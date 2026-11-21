@@ -1,0 +1,16 @@
+¿Cómo sabes que tu agente funciona?
+Si tu respuesta es lo probé y se veía bien, no lo sabes.
+Un programa normal siempre da lo mismo. Un agente no. Hoy organiza la fiesta perfecta, mañana, con el mismo encargo, se le olvida el pastel.
+Y si cambias una palabra de sus instrucciones, puede mejorar en un caso, y romperse en otros tres.
+Probarlo una vez es como lanzar una moneda, que caiga águila, y decir que siempre cae águila.
+Por eso existen las evals: exámenes automáticos.
+Una lista de encargos. Una forma de calificarlos. Y correrlos todos, muchas veces, antes de cambiar nada.
+Veinte fiestas distintas. ¿Respetó el presupuesto? ¿Invitó a todos? ¿Avisó a tu mamá por error?
+Y sale un número: diecisiete de veinte.
+Ahora sí cambias algo, y vuelves a medir.
+Es lo mismo que vimos en la primera serie. Sin un error medido, nadie aprende.
+Solo que aquí quien aprende eres tú.
+La diferencia entre un juguete y un producto casi nunca es el modelo.
+Es que alguien se sentó a escribir el examen.
+Lo que no mides...
+lo adivinas.

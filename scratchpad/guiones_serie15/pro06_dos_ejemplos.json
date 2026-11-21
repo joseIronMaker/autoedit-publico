@@ -1,0 +1,95 @@
+{
+  "slug": "pro_dos_ejemplos",
+  "tema": "aprendizaje en contexto: el modelo copia la FORMA de los ejemplos que le pones, y por eso dos ejemplos ordenan mejor la respuesta que un parrafo describiendo el formato",
+  "title": "Le describí el formato en un párrafo. Salió mal. Se lo enseñé con dos ejemplos.",
+  "theme": "hielo",
+  "hook_locked": true,
+  "concepto": "aprendizaje en contexto: el modelo continúa el patrón que ve enfrente, así que un ejemplo enseña la forma mejor que una descripción de la forma",
+  "en_una_frase": "Un ejemplo no le enseña nada nuevo al modelo: le enseña la FORMA que quieres, y él continúa esa forma como continúa cualquier otra cosa que tenga enfrente.",
+  "quien_decide": "si no le enseñas la forma, la forma la decide él con lo más común que vio mientras aprendía, y luego tú la corriges a mano una por una",
+  "que_cuesta": "escribes tres párrafos describiendo cómo lo quieres, sale distinto, y acabas reescribiendo el resultado en vez de reescribir el prompt",
+  "palanca": "cuando algo salga con la forma equivocada, no expliques mejor: pega dos ejemplos del resultado que sí quieres",
+  "pregunta_ab": "Cuando algo te sale mal, ¿le explicas más, o le enseñas un ejemplo?",
+  "scenes": [
+    {
+      "beat_type": "cold_open",
+      "visual_type": "screen_demo",
+      "narration": "Le describí el formato que quería con todo detalle. Un párrafo entero de instrucciones. Fíjate en lo que devuelve.",
+      "screen_demo": {
+        "tool": "chatgpt",
+        "prompt": "Convierte estas notas en una lista. Quiero que cada línea empiece con un guion, después el nombre del cliente en mayúsculas, luego dos puntos, y al final el monto en pesos sin decimales entre paréntesis. Notas: Ana Ruiz pagó 1200.50 el martes, Luis Mena quedó a deber 800, Carmen Soto pagó 3400.",
+        "capture_seconds": 24,
+        "nota": "captura REAL: instrucciones largas describiendo el formato"
+      }
+    },
+    {
+      "beat_type": "otra_vez",
+      "visual_type": "screen_demo",
+      "narration": "Entonces borré todas esas instrucciones y en su lugar le puse dos ejemplos del resultado. Nada más dos. Las mismas notas, el mismo modelo.",
+      "screen_demo": {
+        "tool": "chatgpt",
+        "prompt": "Convierte estas notas en una lista con este formato:\n- PEDRO GOMEZ: (500)\n- MARIA LUNA: (2100)\nNotas: Ana Ruiz pagó 1200.50 el martes, Luis Mena quedó a deber 800, Carmen Soto pagó 3400.",
+        "capture_seconds": 24,
+        "nota": "captura REAL: mismo encargo, con dos ejemplos en vez del párrafo"
+      }
+    },
+    {
+      "beat_type": "definicion",
+      "visual_type": "image",
+      "narration": "Y por eso esto tiene nombre: se llama aprendizaje en contexto. Y ojo con la palabra aprender, porque no aprendió nada: el modelo sigue igual que hace un minuto. Lo que le enseñaste no fue información. Fue una FORMA.",
+      "image_prompts": [
+        "A metal cookie cutter resting on rolled dough on a floured dark counter, warm kitchen light. Documentary photography, muted palette, no readable text.",
+        "Two identical shapes already cut out of the dough beside the cutter, extreme macro, raking light. Documentary photography.",
+        "A hand pressing the cutter down into the dough, seen close from the side. Documentary photography, shallow depth of field."
+      ]
+    },
+    {
+      "beat_type": "mecanismo",
+      "visual_type": "image",
+      "narration": "Porque el modelo hace una sola cosa, siempre la misma: lee todo lo que tiene enfrente, busca cómo sigue eso que está leyendo, y escribe el pedazo que continúa; después vuelve a leer todo, ahora con lo que acaba de escribir pegado al final, y arma el siguiente. Si enfrente hay un párrafo que DESCRIBE un formato, lo que continúa es un texto que habla de formatos. Si enfrente hay líneas con la forma exacta, lo que continúa son más líneas iguales. No obedece. Sigue un patrón que tú pusiste ahí.",
+      "image_prompts": [
+        "A row of identical brick shapes drying in a yard, one gap at the end of the row, warm late light. Documentary photography, muted palette.",
+        "A hand placing one more brick to close that gap, extreme macro. Documentary photography, shallow depth of field.",
+        "The finished row seen from one end at eye level, long shadows. Documentary photography, muted palette."
+      ]
+    },
+    {
+      "beat_type": "quien_decide",
+      "visual_type": "image",
+      "narration": "Así que si tú no le enseñas la forma, la forma la decide él. Y la decide con lo más común que vio mientras aprendía, que casi nunca es lo que tu cliente quiere. A mí eso me costó años de estar corrigiendo a mano lo que salía, en vez de corregir el prompt una sola vez.",
+      "image_prompts": [
+        "A stack of printed pages with hand corrections in red pencil covering the margins, warm lamp light. Documentary photography, muted palette, no readable words.",
+        "A hand setting down the red pencil beside that stack at night. Documentary photography, shallow depth of field."
+      ]
+    },
+    {
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "narration": "No expliques la forma. Enséñala.",
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "NO EXPLIQUES"
+          },
+          {
+            "text": "LA FORMA"
+          },
+          {
+            "text": "ENSÉÑALA"
+          }
+        ],
+        "variant": "dark",
+        "video": "videos/gen_ln_varias_cabezas.assets/veo_0.mp4"
+      }
+    },
+    {
+      "beat_type": "cierre",
+      "visual_type": "image",
+      "narration": "Entonces lo que yo hago cuando algo sale con la forma equivocada ya no es explicar mejor. Pego dos ejemplos del resultado que sí quiero, con datos falsos, y borro el párrafo de instrucciones. Tarda menos que escribirlo y sale bien a la primera. Cuando algo te sale mal, ¿le explicas más, o le enseñas un ejemplo?",
+      "image_prompts": [
+        "Two finished ceramic tiles set side by side as a reference next to a blank one, warm workshop light. Documentary photography, muted palette, no readable text.",
+        "A hand sliding the blank tile up against the two finished ones, extreme macro, raking light. Documentary photography."
+      ]
+    }
+  ]
+}

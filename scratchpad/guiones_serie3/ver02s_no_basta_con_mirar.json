@@ -1,0 +1,94 @@
+{
+  "tema": "Por qué tu computadora no puede simplemente mirar la foto",
+  "modo": "corto",
+  "title": "Por qué tu computadora no puede simplemente mirar la foto (sin cara)",
+  "slug": "ver_no_basta_con_mirar_sc",
+  "hook_tipo": "resultado",
+  "theme": "carmin",
+  "keyword": "red densa contra convolución",
+  "hook_headline": [
+    "APLANARLA",
+    "LA MATA"
+  ],
+  "pregunta_ab": "¿Le falta tamaño o le falta forma?",
+  "music_prompt": "tense cinematic electronica, low pulsing bass and metallic ticks, unresolved, no vocals, 104 BPM",
+  "scenes": [
+    {
+      "narration": "Muevo mi foto tres píxeles. Casi ningún número queda igual.",
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.45,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "tres píxeles",
+            "serif": true
+          },
+          {
+            "text": "Y SE PIERDE",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "cinematic macro of a photograph sliding a tiny distance across a dark surface while everything behind it violently reshuffles into chaos, motion blur, deep blacks, slow motion",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Para meterla a una red densa hay que aplanarla: la tabla se vuelve una fila larguísima de números.",
+      "beat_type": "hook",
+      "visual_type": "custom",
+      "custom_anim": {
+        "description": "PROHIBIDO tarjetas, listas o cajas con texto: esto se DIBUJA. Arriba, una cuadrícula cuadrada de celdas luminosas cuyo patrón forma una figura clara. Abajo, una fila larga y recta de borde a borde. Las celdas caen de la cuadrícula a la fila una por una y, al aterrizar, la figura desaparece: abajo queda una tira de brillos sin sentido. Dos líneas punteadas muestran que dos celdas vecinas arriba quedan lejísimos abajo. Etiquetas GRANDES: con espacio, sin espacio. Sin números."
+      }
+    },
+    {
+      "narration": "Lo medí con mi foto: la moví tres píxeles y comparé las dos filas. Setenta y seis por ciento de los valores cambiaron de lugar.",
+      "beat_type": "proof",
+      "visual_type": "ml_demo",
+      "ml_demo": {
+        "code": "import numpy as np\nimport os\nfrom PIL import Image\n_p = 'branding/host_jose.png'\nif not os.path.exists(_p):\n    _p = '/home/jose/tiktok/branding/host_jose.png'\nf = np.asarray(Image.open(_p).convert('RGB')).mean(axis=2)\na = f[400:600, 300:500]\nb = f[400:600, 303:503]\nfila_a = a.reshape(-1)\nfila_b = b.reshape(-1)\ncambio = (np.abs(fila_a - fila_b) > 3).mean() * 100\nfig, axs = plt.subplots(1, 3, figsize=(9.8, 4.4))\naxs[0].imshow(a, cmap='gray'); axs[0].set_title('mi foto', fontsize=20)\naxs[1].imshow(b, cmap='gray'); axs[1].set_title('movida 3 píxeles', fontsize=20)\naxs[2].imshow(np.abs(a - b), cmap='inferno'); axs[2].set_title('lo que cambió', fontsize=20)\nfor ax in axs:\n    ax.set_xticks([]); ax.set_yticks([])\naxs[1].set_xlabel('%d%% de los números son distintos' % round(cambio), color=CYAN, fontsize=20, fontweight='bold', labelpad=16)",
+        "display_code": [
+          "fila_a = mi_foto.reshape(-1)",
+          "fila_b = movida.reshape(-1)",
+          "cambio = (fila_a != fila_b).mean()"
+        ],
+        "caption": "mover.py"
+      }
+    },
+    {
+      "narration": "Los píxeles siguen ahí, en orden. El problema es que una capa densa trata cada posición como si nada tuviera que ver con su vecina.",
+      "beat_type": "giro",
+      "visual_type": "custom",
+      "custom_anim": {
+        "description": "PROHIBIDO tarjetas, listas o cajas con texto: esto se DIBUJA. Arriba, una cuadrícula cuadrada de celdas luminosas cuyo patrón de brillos forma una figura clara. Abajo, una única fila larga de esas mismas celdas, de borde a borde. Las celdas caen de la cuadrícula a la fila una por una y, al aterrizar, la figura desaparece: abajo solo queda una tira de brillos sin sentido. Dos líneas punteadas muestran que dos celdas que arriba eran vecinas quedan abajo lejísimos. Una etiqueta GRANDE arriba y otra abajo: con espacio, sin espacio. Sin números."
+      }
+    },
+    {
+      "narration": "Aplanar no borra la vecindad. La vuelve invisible para la red.",
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.35,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "no borra la vecindad",
+            "serif": true
+          },
+          {
+            "text": "LA VUELVE INVISIBLE",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "a three dimensional lattice of glowing points collapsing into a single flat line of light, losing all depth, pure black background, cinematic, slow motion",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "La solución fue mirarla de a pedacitos. Pedacitos de tres por tres píxeles. Mañana.",
+      "beat_type": "cta",
+      "visual_type": "image",
+      "image_prompt": "extreme macro photograph of a printed contact sheet of photographs on a dark desk, one small frame lit by a narrow beam of light while the rest stays in shadow, shallow depth of field, shot on 50mm at f/1.8, cinematic"
+    }
+  ],
+  "hook_locked": true
+}

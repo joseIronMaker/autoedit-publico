@@ -1,0 +1,93 @@
+{
+  "tema": "Para ver, la red tira información a propósito",
+  "modo": "corto",
+  "title": "Para ver, la red tira información a propósito",
+  "slug": "ver_tirar_a_proposito",
+  "hook_tipo": "resultado",
+  "theme": "selva",
+  "keyword": "ReLU y max pooling",
+  "hook_headline": [
+    "APAGA",
+    "Y RESUME"
+  ],
+  "pregunta_ab": "¿Perder detalle es perder o ganar?",
+  "music_prompt": "punchy minimal electronica, staccato bass and bright blips, decisive, no vocals, 114 BPM",
+  "scenes": [
+    {
+      "narration": "Tu cámara te reconoce aunque te muevas. Por tirar detalle.",
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.45,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "tirar información",
+            "serif": true
+          },
+          {
+            "text": "A PROPÓSITO",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "cinematic macro of a dense field of glowing particles where most fade out and only a few bright ones survive and grow stronger, deep black background, slow motion",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Después de pasar la ventana, lo típico son dos pasos: lo negativo se vuelve cero, y de cada cuadrito de dos por dos píxeles sobrevive el valor más alto.",
+      "beat_type": "hook",
+      "visual_type": "custom",
+      "custom_anim": {
+        "description": "PROHIBIDO tarjetas o cajas con texto. FRANJAS: título SOLO entre y=H*0.06 y y=H*0.16; dibujo SOLO entre y=H*0.22 y y=H*0.68. Una cuadrícula de cuatro por cuatro celdas GRANDES, algunas brillantes y otras oscuras. Primero, las oscuras se apagan del todo una por una hasta quedar negras. Luego la cuadrícula se divide en cuatro bloques de dos por dos con líneas gruesas; en cada bloque, la celda más brillante crece y absorbe a las otras tres, que se encogen y desaparecen. Al final quedan solo cuatro celdas grandes latiendo. Sin números."
+      }
+    },
+    {
+      "narration": "Lo corrí con números. Un mapa de cuatro por cuatro: se apagan los negativos y queda el máximo de cada cuadrito. Termina en dos por dos, con la cuarta parte de números.",
+      "beat_type": "proof",
+      "visual_type": "ml_demo",
+      "ml_demo": {
+        "code": "import numpy as np\nmapa = np.array([[1,-1,2,4],[5,6,-7,8],[3,2,1,0],[-1,2,3,4]])\nrelu = np.maximum(0, mapa)\npool = np.zeros((2,2), dtype=int)\nfor i in range(2):\n    for j in range(2):\n        pool[i,j] = relu[2*i:2*i+2, 2*j:2*j+2].max()\nfig, axs = plt.subplots(1, 3, figsize=(9.8, 4.2))\nfor ax, M, t, c in zip(axs, [mapa, relu, pool], ['mapa 4x4', 'sin negativos', 'solo el máximo'], ['coolwarm', 'YlGn', 'spring']):\n    ax.imshow(M, cmap=c)\n    for a in range(M.shape[0]):\n        for b in range(M.shape[1]):\n            ax.text(b, a, str(int(M[a,b])), ha='center', va='center', fontsize=23, fontweight='bold', color='#0A0A0F')\n    ax.set_title(t, fontsize=19)\n    ax.set_xticks([]); ax.set_yticks([])\naxs[1].set_xlabel('lo débil se apaga, lo fuerte sobrevive', color=CYAN, fontsize=18, fontweight='bold', labelpad=16)",
+        "display_code": [
+          "relu = np.maximum(0, mapa)",
+          "pool[i,j] = ventana.max()"
+        ],
+        "caption": "relu_pooling.py"
+      }
+    },
+    {
+      "narration": "Ahí está la ganancia: si el mismo rasgo cae unos píxeles más allá pero dentro del mismo cuadrito, el máximo no cambia. Por eso moverte un poco deja de importar.",
+      "beat_type": "giro",
+      "visual_type": "custom",
+      "custom_anim": {
+        "description": "PROHIBIDO tarjetas o cajas con texto. FRANJAS: título entre y=H*0.06 y y=H*0.16; dibujo entre y=H*0.22 y y=H*0.68. Arriba, una cuadrícula amplia donde un grupo de celdas brillantes forma una manchita que se DESPLAZA lentamente de lado a lado. Abajo, una cuadrícula mucho más chica conectada por hilos de luz: ahí una sola celda se mantiene encendida y QUIETA aunque la mancha de arriba se mueva; cuando la mancha llega muy lejos, la celda apenas se recorre una posición. Etiquetas grandes junto a cada cuadrícula: se mueve, no se mueve. Sin números."
+      }
+    },
+    {
+      "narration": "Apagar lo débil y quedarse con el máximo de cada zona.",
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.35,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "apagar lo débil",
+            "serif": true
+          },
+          {
+            "text": "QUEDARSE CON EL MÁXIMO",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "a dense cluster of glowing embers where the dim ones extinguish one by one until a few intense points remain burning, pure black background, cinematic macro, slow motion",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Ya tenemos las tres piezas. Pero esos nueve números, ¿quién los escribe? Mañana.",
+      "beat_type": "cta",
+      "visual_type": "image",
+      "image_prompt": "extreme macro photograph of three stacked panes of dark glass on a black surface, a single beam of light passing through all three and getting brighter, shot on 100mm macro at f/2.8, cinematic"
+    }
+  ],
+  "hook_locked": true
+}

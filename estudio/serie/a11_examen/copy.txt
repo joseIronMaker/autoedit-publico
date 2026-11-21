@@ -1,0 +1,1 @@
+Probar un agente una vez es como lanzar una moneda y decir que siempre cae águila. Por eso existen las evals: exámenes automáticos antes de cambiar nada. Yo creo que eso separa un juguete de un producto. Parte 14 de 33 de «Cómo actúa una máquina». ¿Tú confiarías en algo que solo probaron una vez? #agentesdeia #inteligenciaartificial #ia

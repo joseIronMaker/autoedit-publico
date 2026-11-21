@@ -1,0 +1,15 @@
+Le conectas tus documentos al chatbot y contesta como si no los hubiera leído. Casi nunca es el modelo. Es el trozo que le llegó.
+
+Un modelo no lee tu documento entero. Alguien lo parte en trozos, guarda cada trozo, y cuando preguntas busca los que más se parecen a tu pregunta. Solo esos entran. El modelo contesta con lo que le dieron.
+
+Y lo que casi nadie revisa es cómo lo cortaste. Corrí el buscador dos veces sobre el mismo documento real —el que documenta este canal—: cortado por párrafos, el trozo que tiene la respuesta queda en el lugar 2 de 7. Cortado a ciegas cada 220 caracteres, el mismo dato se hunde al lugar 59 de 89.
+
+Mismo documento. Misma pregunta. Mismo buscador. Solo cambió dónde se hizo el corte.
+
+Por eso te contesta genérico: nunca vio el dato. Le llegó media frase, sin el sujeto o sin el número, y con media frase hace lo único que sabe hacer: rellenar con lo más probable.
+
+Mi postura, después de montar varios de estos: casi todo lo que le achacan al modelo se arregla mirando el trozo que le llegó, no cambiando de modelo. Imprímelo antes de tocar nada más.
+
+Tu chatbot no sabe menos. Le estás dando de leer menos.
+
+¿Le echas la culpa al modelo o al trozo que le llegó?

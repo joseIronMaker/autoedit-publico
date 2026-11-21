@@ -1,0 +1,18 @@
+La diferencia entre un chatbot y un agente cabe en tres palabras: vuelve a intentar.
+Le pides a un chatbot un lugar para la fiesta, y te da una lista. Ahí se acaba.
+Un agente hace otra cosa.
+Busca un restaurante. Pregunta. Está lleno.
+Ve que está lleno. Piensa. Busca otro.
+Este sí tiene mesa, pero es carísimo. Lo ve. Busca otro.
+Mira, actúa, revisa qué pasó, y vuelve a empezar.
+A eso le llamamos bucle agéntico. Un agente no es una respuesta. Son muchas vueltas.
+Y cada vuelta se paga.
+En cada una, el modelo vuelve a leer todo lo anterior. Por eso diez vueltas cuestan mucho más que diez veces una.
+¿Y sabes qué es lo más importante? En ninguna vuelta se volvió más inteligente.
+Es el mismo modelo de la primera serie, adivinando la siguiente palabra.
+Lo único nuevo es que por fin ve el resultado de lo que hizo.
+Eso mismo es lo que nos hace buenos a nosotros: probar, fallar, ajustar.
+Un agente no es más listo que un chatbot.
+Solo tiene una segunda oportunidad.
+Y una tercera.
+Y todas las que le pagues.

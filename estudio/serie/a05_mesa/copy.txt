@@ -1,0 +1,1 @@
+Tu agente lee todo desde cero en cada paso, y su mesa tiene un tamaño fijo. Cuando se llena no falla de golpe: se vuelve torpe. Por eso hoy importa más qué pones en la mesa que escribir prompts mágicos. Parte 6 de 33 de «Cómo actúa una máquina». ¿Tú le das todo el contexto o solo lo necesario? #agentesdeia #inteligenciaartificial #ia

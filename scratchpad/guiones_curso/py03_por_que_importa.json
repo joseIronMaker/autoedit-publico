@@ -1,0 +1,111 @@
+{
+ "title": "Por qué programar importa MÁS ahora que hay IA",
+ "slug": "curso_py03_por_que_importa",
+ "tema": "por qué saber programar importa más ahora que la IA escribe el código",
+ "theme": "curso python con ia",
+ "hook_tipo": "demostracion",
+ "keyword": "programar con inteligencia artificial",
+ "hook_headline": [
+  "TRUENA",
+  "CALLADA"
+ ],
+ "pregunta_ab": "¿Le crees a la IA o la pruebas siempre?",
+ "music_prompt": "hard techno bed, dark industrial groove, 150 BPM, rolling kick, restrained under a voice, instrumental, no vocals",
+ "modo": "corto",
+ "hook_locked": true,
+ "scenes": [
+  {
+   "beat_type": "hook",
+   "visual_type": "terminal",
+   "pause_after": 0.35,
+   "narration": "¿Qué pedo, banda? Le pedí la misma pinche función a dos inteligencias artificiales: un promedio de calificaciones, nada del otro mundo. Las dos me la escupieron en dos segundos, bien chingonas. Y una de las dos te truena el programa.",
+   "terminal": {
+    "title": "la misma función, dos IAs",
+    "lines": [
+     {
+      "text": "promedio([8, 9, 10])"
+     },
+     {
+      "text": "las dos contestan 9.0",
+      "accent": true
+     }
+    ]
+   },
+   "captura": {
+    "cmd": "claude 'escribe promedio.py con una funcion promedio(notas)'",
+    "cols": 46,
+    "filas": 30,
+    "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+   }
+  },
+  {
+   "beat_type": "proof",
+   "visual_type": "terminal",
+   "narration": "Míralo, cabrón: le paso una lista vacía. La primera me regresa cero, muy digna. La segunda se cae de hocico con un ZeroDivisionError, porque dividió entre cero como si nada. Mismo prompt, dos respuestas, y ninguna me avisó. Yo tuve que probarlo.",
+   "terminal": {
+    "title": "la lista vacía",
+    "lines": [
+     {
+      "prompt": true,
+      "text": "python3 prueba_vacia.py"
+     },
+     {
+      "text": "claude: 0.0"
+     },
+     {
+      "text": "ZeroDivisionError: division by zero",
+      "accent": true
+     }
+    ]
+   },
+   "captura": {
+    "cmd": "cat prueba_vacia.py; echo; echo '$ python3 prueba_vacia.py'; python3 prueba_vacia.py",
+    "cols": 46,
+    "filas": 30,
+    "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+   }
+  },
+  {
+   "beat_type": "contexto",
+   "visual_type": "custom",
+   "narration": "Y eso es lo que cambió, mi chavo. Antes, no saber programar te frenaba en la primera línea: ni empezabas. Hoy te frena tres semanas después, cuando el programa que no entiendes se cae enfrente del cliente con un caso que nunca probaste, y tú nomás viéndolo como pendejo.",
+   "custom_anim": {
+    "description": "Dos carriles horizontales apilados, cada uno con su etiqueta grande a la izquierda: ANTES arriba y HOY abajo. En el de ANTES se dibuja un archivo de código de cinco líneas y un cursor que llega a la línea 1 y se atora ahí: la línea se pone roja y sale una X grande. En el de HOY el mismo archivo se rellena en verde línea a línea, y avanza una barra de tiempo con tres marcas etiquetadas semana 1, semana 2 y semana 3; justo en la marca 3 el programa se rompe: la barra se corta, aparece una X roja y un signo de interrogación grande al lado. Sin cifras."
+   }
+  },
+  {
+   "beat_type": "tesis",
+   "visual_type": "diagram",
+   "narration": "Programar hoy no es teclear, eso ya lo hace la máquina. Son tres cosas: saber qué pedir, entender lo que te devolvió, y probarlo justo donde duele: con la lista vacía, con el cero, con el texto donde iba un número.",
+   "diagram": {
+    "type": "flow",
+    "title": "Programar hoy",
+    "items": [
+     "Saber qué pedir",
+     "Entender lo que devolvió",
+     "Probarlo donde duele"
+    ]
+   }
+  },
+  {
+   "beat_type": "cta",
+   "visual_type": "kinetic_video",
+   "pause_after": 0.3,
+   "narration": "La IA no te avisa cuando la caga. Por eso este curso no te va a hacer memorizar sintaxis: te va a enseñar a leer. ¿Le crees a la IA o la pruebas siempre? Yo la pruebo, cabrón, siempre.",
+   "kinetic_video": {
+    "video": "/home/jose/tiktok/videos/_clips_pagados/gen_ln_olvidaba_el_principio__veo_4.mp4",
+    "words": [
+     {
+      "text": "la IA no te avisa",
+      "serif": true
+     },
+     {
+      "text": "CUANDO LA CAGA",
+      "accent": true
+     }
+    ],
+    "variant": "dark"
+   }
+  }
+ ]
+}

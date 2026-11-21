@@ -1,0 +1,65 @@
+{
+  "tema": "tokenizacion espanol vs ingles",
+  "fecha": "2026-08-08",
+  "instrumento": "tiktoken (el tokenizador real de los modelos de OpenAI)",
+  "n_pares": 4,
+  "pares": [
+    [
+      "Necesito que me ayudes a redactar un correo para mi jefe explicando por qué el proyecto se retrasó dos semanas.",
+      "I need you to help me write an email to my boss explaining why the project was delayed by two weeks."
+    ],
+    [
+      "Los desarrolladores mexicanos que trabajan con inteligencia artificial enfrentan dificultades para acceder a computadoras potentes.",
+      "Mexican developers working with artificial intelligence face difficulties accessing powerful computers."
+    ],
+    [
+      "Explícame como si tuviera diez años qué es una red neuronal y por qué se llama así.",
+      "Explain to me like I am ten years old what a neural network is and why it is called that."
+    ],
+    [
+      "El murciélago comió cuatro sandías del jardín de Cuauhtémoc antes del amanecer.",
+      "The bat ate four watermelons from Cuauhtemoc's garden before dawn."
+    ]
+  ],
+  "resultados": {
+    "o200k_base": {
+      "nombre": "modelos actuales",
+      "tokens_es": 90,
+      "tokens_en": 73,
+      "razon": 1.233,
+      "sobrecosto_pct": 23.3
+    },
+    "cl100k_base": {
+      "nombre": "GPT-4, 2023",
+      "tokens_es": 107,
+      "tokens_en": 75,
+      "razon": 1.427,
+      "sobrecosto_pct": 42.7
+    }
+  },
+  "palabras_partidas": {
+    "Cuauhtémoc": [
+      "Cu",
+      "au",
+      "ht",
+      "ém",
+      "oc"
+    ],
+    "murciélago": [
+      "mur",
+      "ci",
+      "él",
+      "ago"
+    ],
+    "Balbuena": [
+      "Bal",
+      "bu",
+      "ena"
+    ],
+    "Oaxaca": [
+      "O",
+      "axaca"
+    ]
+  },
+  "limite_honesto": "No es 'el doble': con el tokenizador actual el español cuesta 23% mas. Con el de 2023 costaba 43%. La brecha se ha reducido, no desaparecido."
+}

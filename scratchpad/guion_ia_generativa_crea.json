@@ -1,0 +1,62 @@
+{
+  "title": "IA Generativa: la máquina que aprendió a crear",
+  "slug": "ia_generativa_crea",
+  "hook_tipo": "contraria",
+  "keyword": "IA generativa",
+  "modo": "corto",
+  "theme": "violeta",
+  "scenes": [
+    {
+      "narration": "La IA generativa no busca respuestas: las inventa de cero. Y eso lo cambia todo.",
+      "visual_type": "host",
+      "host_top": {"kind": "duo", "labels": ["BUSCA", "CREA"], "title": "LO INVENTA"}
+    },
+    {
+      "narration": "No copia nada: aprende patrones, los combina y crea algo que nunca había existido.",
+      "visual_type": "diagram",
+      "diagram": {
+        "type": "flow",
+        "title": "Cómo crea",
+        "items": ["Aprende patrones", "Los combina", "Crea algo nuevo"]
+      }
+    },
+    {
+      "narration": "Míralo en vivo: le pido a ChatGPT que invente un animal que no existe, con nombre y un dato curioso. Y lo crea en segundos, de la nada.",
+      "visual_type": "screen_demo",
+      "screen_demo": {
+        "tool": "chatgpt",
+        "prompt": "Inventa un animal que no exista: dale un nombre, descríbelo en una línea y un dato curioso."
+      }
+    },
+    {
+      "narration": "Y no solo texto: crea imágenes, código, música y hasta video, todo desde una simple instrucción.",
+      "visual_type": "diagram",
+      "diagram": {
+        "type": "list",
+        "title": "Lo que puede crear",
+        "items": ["Textos e ideas", "Imágenes y arte", "Código y música"]
+      }
+    },
+    {
+      "narration": "¿Cómo? Entrenada con miles de millones de ejemplos, aprendió a predecir qué sigue, y así lo escribe.",
+      "visual_type": "diagram",
+      "diagram": {
+        "type": "neural_net",
+        "title": "Aprendió de todo internet",
+        "layers": [4, 5, 5, 3],
+        "in_label": "Tu instrucción",
+        "out_label": "Algo nuevo"
+      }
+    },
+    {
+      "narration": "Resúmelo así: la predictiva elige la mejor opción, la generativa crea una nueva. No las confundas.",
+      "visual_type": "big_text",
+      "big_text": {"items": ["Predictiva ELIGE", "Generativa CREA", "no las CONFUNDAS"]}
+    },
+    {
+      "narration": "Guárdalo para no olvidarlo. Y mañana te enseño cuándo usar cada una en tu trabajo.",
+      "visual_type": "host",
+      "host_top": {"kind": "save", "title": "GUÁRDALO", "subtitle": "MAÑANA: CUÁL USAR →"}
+    }
+  ]
+}

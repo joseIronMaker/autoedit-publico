@@ -1,0 +1,102 @@
+{
+  "tema": "El número que decide a qué palabra mira el modelo",
+  "modo": "corto",
+  "title": "El número que decide a qué palabra mira el modelo",
+  "slug": "ln_numero_que_decide",
+  "hook_tipo": "numero",
+  "theme": "neon",
+  "image_style": "abstract macro render of two beams of light crossing at an angle and forming a bright node where they align, electric cyan and hot magenta on near-black, precise geometric feel, vertical 9:16 composition, lower third kept simple, no text, no letters, no words, no watermark",
+  "keyword": "producto punto softmax atención",
+  "hook_headline": [
+    "UN NÚMERO",
+    "DECIDE"
+  ],
+  "pregunta_ab": "¿Entiende o solo mide parecido?",
+  "music_prompt": "tight electro-funk instrumental, slap bass and crisp claps, confident and precise, no vocals, 116 BPM",
+  "scenes": [
+    {
+      "narration": "Toda la atención de ChatGPT se reduce a una multiplicación.",
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.45,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "toda la atención",
+            "serif": true
+          },
+          {
+            "text": "ES UNA MULTIPLICACIÓN",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "cinematic macro of two translucent glowing grids sliding toward each other through a dark void and passing through one another, every intersection flaring bright as they cross",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Cada palabra es una flecha. Y para saber si dos se relacionan, se mide qué tan alineadas apuntan.",
+      "beat_type": "hook",
+      "visual_type": "host",
+      "host_top": {
+        "kind": "headline",
+        "lines": [
+          "UN NÚMERO",
+          "DECIDE"
+        ]
+      }
+    },
+    {
+      "narration": "Eso es el producto punto: alineadas da un número grande, perpendiculares da cero. Se escala, y luego un softmax lo convierte en porcentajes que suman cien.",
+      "beat_type": "proof",
+      "visual_type": "ml_demo",
+      "ml_demo": {
+        "code": "import numpy as np\npal = ['está', 'increíble', 'para', 'dormirse']\nvec = np.array([[0.2, 0.1], [0.95, 0.25], [0.15, 0.3], [0.75, -0.55]])\nvec = vec / np.linalg.norm(vec, axis=1, keepdims=True)\nS = vec @ vec.T / np.sqrt(2)\nA = np.exp(S) / np.exp(S).sum(axis=1, keepdims=True)\nfig, ax = plt.subplots(figsize=(7.2, 5.6))\nim = ax.imshow(A, cmap='inferno', vmin=0, vmax=A.max())\nax.set_xticks(range(4)); ax.set_xticklabels(pal, fontsize=17, rotation=20)\nax.set_yticks(range(4)); ax.set_yticklabels(pal, fontsize=17)\nfor i in range(4):\n    for j in range(4):\n        ax.text(j, i, ('%.2f' % A[i, j]), ha='center', va='center', color=('#0A0A12' if A[i, j] > A.max() * 0.62 else TXT), fontsize=17, fontweight='bold')\nax.set_title('cuánto mira cada palabra a cada palabra')\nax.set_xlabel('cada fila suma 1', color=CYAN, fontsize=19, fontweight='bold', labelpad=14)",
+        "display_code": [
+          "S = Q @ K.T / sqrt(d)      # que tan alineadas",
+          "A = softmax(S)             # porcentajes que suman 1",
+          "salida = A @ V"
+        ],
+        "caption": "atencion.py"
+      }
+    },
+    {
+      "narration": "Esos porcentajes multiplican al value. Lo que sale es una mezcla: cada palabra se reescribe con un poquito de las que le importan.",
+      "beat_type": "giro",
+      "visual_type": "custom",
+      "custom_anim": {
+        "description": "Tres barras horizontales grandes con porcentajes bien visibles (70%, 20%, 10%) que se llenan. Debajo, tres bloques de color de tamaño proporcional a esos porcentajes se deslizan y se FUNDEN en un solo bloque final más grande, cuyo color es la mezcla de los tres. Todo enorme y bien separado."
+      }
+    },
+    {
+      "narration": "No entiende. Mide qué tan alineado apunta.",
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.35,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "no entiende",
+            "serif": true
+          },
+          {
+            "text": "MIDE ALINEACIÓN",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "two long glowing arrows floating in a dark void slowly rotating until they point in exactly the same direction, the angle between them closing, cinematic macro",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Pero si mira todo de golpe, ¿cómo sabe qué palabra iba primero? Mañana, el problema del orden otra vez.",
+      "beat_type": "cta",
+      "visual_type": "host",
+      "host_top": {
+        "kind": "save",
+        "title": "SERIE: CÓMO LA IA LEE",
+        "subtitle": "SIGUIENTE: DÓNDE QUEDÓ EL ORDEN →"
+      }
+    }
+  ]
+}

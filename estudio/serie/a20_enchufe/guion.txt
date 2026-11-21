@@ -1,0 +1,18 @@
+Antes de dos mil veinticuatro, conectar una inteligencia artificial con un programa era hacer un cable a mano.
+Un cable para tu calendario. Otro para tus archivos. Otro para tu correo.
+Y cada asistente necesitaba sus propios cables.
+Diez modelos y cien programas: mil cables.
+En noviembre de dos mil veinticuatro, Anthropic publicó MCP.
+Es la misma idea que un enchufe.
+El programa ofrece sus herramientas una sola vez, en un formato estándar, y cualquier agente compatible las puede usar.
+Parecía la apuesta de una sola empresa. Pero pasó algo raro: sus rivales lo adoptaron.
+En diciembre de dos mil veinticinco, Anthropic lo donó a una fundación, creada junto con Block y OpenAI.
+Faltaba otra pieza.
+MCP conecta a un agente con sus herramientas. Pero, ¿y si tu agente de fiestas necesita hablar con el agente del restaurante?
+Google presentó A2A en abril de dos mil veinticinco: un idioma común, para que agentes de distintas empresas se presenten y se repartan el trabajo.
+Este agosto entró a la misma fundación.
+Uno es para usar herramientas. El otro, para hablar con colegas.
+Internet creció cuando todos aceptaron el mismo idioma.
+Esto es lo mismo, para máquinas que actúan.
+Y como todo enchufe nuevo...
+también es una puerta nueva.

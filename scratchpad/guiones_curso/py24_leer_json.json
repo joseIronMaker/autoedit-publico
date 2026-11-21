@@ -1,0 +1,97 @@
+{
+  "title": "Leer JSON y sacar solo lo que te importa",
+  "slug": "curso_py24_leer_json",
+  "tema": "navegar la respuesta JSON de una API: diccionarios dentro de diccionarios",
+  "theme": "curso python con ia",
+  "hook_tipo": "demostracion",
+  "keyword": "leer json python",
+  "hook_headline": [
+    "LLAVES",
+    "DENTRO DE LLAVES"
+  ],
+  "pregunta_ab": "¿Imprimir todo primero o ir directo al dato?",
+  "music_prompt": "hard techno bed, dark industrial groove, 150 BPM, rolling kick, restrained under a voice, instrumental, no vocals",
+  "modo": "corto",
+  "hook_locked": true,
+  "scenes": [
+    {
+      "beat_type": "hook",
+      "visual_type": "terminal",
+      "narration": "La respuesta de una API se ve como un muro de llaves y corchetes. La primera vez asusta; parece que alguien se recargó en el teclado. Pero es exactamente lo que ya sabes: diccionarios dentro de diccionarios. Mírala completa, tal como llega, sin recortarle nada.",
+      "pause_after": 0.35,
+      "terminal": {
+        "title": "respuesta cruda",
+        "lines": [
+          {
+            "text": "{\"latitude\": 19.43, \"current\": {\"temperature_2m\": 21.3, ...}}"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "python3 -c \"import requests, json; print(json.dumps(requests.get('https://api.open-meteo.com/v1/forecast?latitude=19.43&longitude=-99.13&current=temperature_2m', timeout=20).json(), indent=1))\"",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "custom",
+      "narration": "Se navega igual que una ficha: pides la llave current y, adentro, pides temperature dos metros. Cada corchete es abrir una caja y sacar la de adentro, como las muñecas rusas pero con menos gracia. Datos, corchete current, corchete temperature. Dos pasos y ya tienes el número pelón, sin llaves ni comillas.",
+      "custom_anim": {
+        "description": "Una caja grande etiquetada datos que se abre y muestra dos cajas adentro: latitude y current. Un puntero toca current, esa caja se abre y adentro hay dos más: time y temperature_2m. El puntero toca temperature_2m y sale una ficha con 21.3 que sube hasta una línea de texto arriba: datos[\"current\"][\"temperature_2m\"], donde cada corchete se ilumina al abrir cada caja. Sin más cifras que 21.3."
+      }
+    },
+    {
+      "beat_type": "contexto",
+      "visual_type": "terminal",
+      "narration": "Y ya con el dato suelto haces lo que se te antoje: meterlo en una frase, compararlo, guardarlo en tu base. Le pido al agente que clima punto pi imprima una frase con la temperatura, y fíjate que no toca la petición: nada más cambia lo que hace con el número. A eso se le llama tener el código ordenado.",
+      "terminal": {
+        "title": "frase",
+        "lines": [
+          {
+            "text": "print(f\"En CDMX hay {temperatura} grados\")"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "claude 'haz que clima.py imprima una frase con la temperatura de CDMX'",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "giro",
+      "visual_type": "mascota",
+      "narration": "Truco que uso siempre y no me da pena: antes de escribir nada, imprime la respuesta completa UNA vez y quédate viéndola con calma. Diez segundos leyendo la estructura te ahorran media hora adivinando nombres de llaves, y otra media hora echándole la culpa a la API. Si no sabes cómo se llama la caja, no la puedes abrir.",
+      "mascota": {
+        "pose": "profesor",
+        "caption": "imprime todo · luego elige"
+      },
+      "foto": {
+        "archivo": "/home/jose/tiktok/branding/perrito/codex_sabio.png"
+      }
+    },
+    {
+      "beat_type": "cta",
+      "visual_type": "kinetic_video",
+      "narration": "Diccionarios dentro de diccionarios. Nada nuevo bajo el sol. La que viene: juntamos todo, la API metida en tu ventana, con botón y todo. ¿Imprimir todo primero o irte directo al dato? Yo imprimo todo primero, siempre, aunque jure que ya sé qué trae.",
+      "pause_after": 0.3,
+      "kinetic_video": {
+        "video": "/home/jose/tiktok/videos/_clips_pagados/gen_ver_pixel_por_pixel__veo_0.mp4",
+        "words": [
+          {
+            "text": "abre la caja",
+            "serif": true
+          },
+          {
+            "text": "SACA LA DE ADENTRO",
+            "accent": true
+          }
+        ],
+        "variant": "dark"
+      }
+    }
+  ]
+}

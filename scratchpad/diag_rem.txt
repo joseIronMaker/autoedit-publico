@@ -1,0 +1,65 @@
+CMD: npx remotion render Beat /tmp/claude-1000/-home-jose-tiktok/a07764de-5f8e-44d0-a023-92d200ab26f2/scratchpad/diag_out.mp4 --props=/tmp/claude-1000/-home-jose-tiktok/a07764de-5f8e-44d0-a023-92d200ab26f2/scratchpad/diag_props.json --browser-executable=/usr/bin/google-chrome --log=verbose --concurrency=1
+rc 0 en 39.7 s
+STDOUT tail:
+  max cache on thread: 4020MB
+[Tab 0, delayRender()] "Fetching http://localhost:3001/proxy?src=http%3A%2F%2Flocalhost%3A3001%2Fpublic%2Fdyn%2Fe4e62a7813c0.mp4&time=4.633333333333334&transparent=false&toneMapped=true from server" handle was cleared after 26ms
+[Tab 0, delayRender()] "Loading <Img> with src=blob:http://localhost:3001/40e5172c-4f64-45cd-bd13-97ebd184a873" handle was cleared after 27ms
+Rendered 140/141, time remaining: 0s
+[Tab 0, delayRender()] "Setting the current frame to 140" handle was cleared after 5ms
+[compositor] Reusing thread 0 for stream http://localhost:3001/public/dyn/e4e62a7813c0.mp4 at time 4.666666666666667
+[compositor] Nothing to prune on thread 0, frames in cache: 96, cache on thread: 253MB, total cache size: 253MB, max cache on thread: 4020MB
+[Tab 0, delayRender()] "Fetching http://localhost:3001/proxy?src=http%3A%2F%2Flocalhost%3A3001%2Fpublic%2Fdyn%2Fe4e62a7813c0.mp4&time=4.666666666666667&transparent=false&toneMapped=true from server" handle was cleared after 31ms
+[Tab 0, delayRender()] "Loading <Img> with src=blob:http://localhost:3001/af278f78-4dcc-4529-915f-4d7dd68ca57d" handle was cleared after 26ms
+Encoded 65/141
+[compositor] [FFmpeg] Statistics: 1412024 bytes read, 0 seeks
+
+[compositor] Freed memory from compositor
+Encoded 70/141
+Encoded 81/141
+Encoded 90/141
+Encoded 105/141
+Encoded 113/141
+Rendering frames done in 36235ms
+[stitchFramesToVideo()] audioCodec aac
+[stitchFramesToVideo()] pixelFormat yuv420p
+[stitchFramesToVideo()] codec h264
+[stitchFramesToVideo()] shouldRenderAudio true
+[stitchFramesToVideo()] shouldRenderVideo true
+[audio] asset positions []
+[audio] Encoding progress: 80%
+[audio] Encoding progress: 100%
+[stitchFramesToVideo()] Encoder: libx264, hardware accelerated: false
+[stitchFramesToVideo()] Generated final FFmpeg command:
+[stitchFramesToVideo()] -i /tmp/react-motion-renderpG7oAv/pre-encode.mp4 -i /tmp/remotion-v4.0.416-assetsgmlr2u92lg/remotion-audio-preprocessing/audio.aac -c:a copy -c:v copy -movflags faststart -map_metadata -1 -metadata comment=Made with Remotion 4.0.416 -y /tmp/claude-1000/-home-jose-tiktok/a07764de-5f8e-44d0-a023-92d200ab26f2/scratchpad/diag_out.mp4
+Encoded 141/141
+Stitching done in 234ms
++                    /tmp/claude-1000/-home-jose-tiktok/a07764de-5f8e-44d0-a023-92d200ab26f2/scratchpad/diag_out.mp4 4 MB
+Slowest frames:
+  Frame 0 (712.000ms)
+  Frame 6 (324.000ms)
+  Frame 4 (266.000ms)
+  Frame 5 (246.000ms)
+  Frame 3 (207.000ms)
+  Frame 2 (202.000ms)
+  Frame 7 (202.000ms)
+  Frame 8 (199.000ms)
+  Frame 9 (187.000ms)
+  Frame 1 (182.000ms)
+Render performance:
+  capture => 134ms (n = 141)
+  piping => 0ms (n = 141)
+Cleaning up...
+Cleanup job "Delete /tmp/remotion-webpack-bundle-Xg2b5D" done
+Cleanup job "Cleanup bundle" done
+Received SIGTERM signal. Killing browser process
+Trying to kill browser process group -3480874
+Cleanup job "Closing browser instance" done
+Cleanup job "Close server" done
+Cleanup job "Delete /tmp/react-motion-renderpG7oAv" done
+Cleanup done in 47ms
+
+STDERR tail:
+ [chrome] [3480874:3480915:0726/152947.975393:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[chrome] Created TensorFlow Lite XNNPACK delegate for CPU.
+[chrome] [3480874:3480915:0726/153011.355872:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+

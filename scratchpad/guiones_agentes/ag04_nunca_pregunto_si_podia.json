@@ -1,0 +1,83 @@
+{
+  "slug": "ag_nunca_pregunto_si_podia",
+  "tema": "permisos de un agente: autorizas la capacidad una sola vez y el programa ejecuta cada accion sin volver a preguntarte, con las llaves de quien lo configuro",
+  "title": "Salió a internet solo. Nunca me preguntó si podía.",
+  "theme": "hielo",
+  "hook_locked": true,
+  "concepto": "permiso: la regla escrita de qué puede ejecutar el programa sin volver a preguntarte, y con las llaves de quién",
+  "en_una_frase": "Un permiso no es un candado que se abre cada vez: es una regla que autorizaste una sola vez, y el programa la usa en cada acción sin volver a consultarte.",
+  "quien_decide": "quien configuró el agente decide qué queda del lado del sí; tú solo ves el resultado, nunca la lista",
+  "que_cuesta": "conectas tu correo o tus archivos para que te ayude, y desde ese momento cada cosa que pide se ejecuta con tus llaves, sin que nadie te vuelva a preguntar",
+  "palanca": "antes de conectarle una cuenta, la pregunta no es si es seguro: es qué puede hacer sin volver a preguntarme",
+  "pregunta_ab": "Tú qué prefieres: que te pregunte cada vez y sea lento, o que haga todo solo y te enteres después?",
+  "scenes": [
+    {
+      "beat_type": "cold_open",
+      "visual_type": "receipt",
+      "narration": "Le escribí una frase. Salió a buscar solo, entró a tres sitios distintos y volvió con la respuesta. Nunca me preguntó si podía.",
+      "receipt": {
+        "image": "/home/jose/tiktok/scratchpad/bucle_pasos/respuesta_final_con_fuentes_17s.jpg",
+        "highlight": "Fuentes",
+        "nota": "captura REAL: las fuentes de abajo son de tres sitios distintos"
+      }
+    },
+    {
+      "beat_type": "definicion",
+      "visual_type": "image",
+      "narration": "Porque no es que se lo haya saltado. Es que ya tenía permiso. Un permiso, aquí, no es un candado que se abre cada vez: es una regla escrita de qué puede ejecutar sin volver a preguntarte. Tú la diste una sola vez, cuando prendiste esa opción o conectaste esa cuenta.",
+      "image_prompts": [
+        "A single key left in the lock of an old office door, seen close in warm dim light. Documentary photography, muted palette, no readable text.",
+        "The same door slightly ajar, light spilling from inside into a dark corridor. Documentary photography, muted palette.",
+        "Extreme macro of the worn key head in the lock, raking warm light. Documentary photography, shallow depth of field."
+      ]
+    },
+    {
+      "beat_type": "mecanismo",
+      "visual_type": "image",
+      "narration": "Y por eso el ciclo tiene un paso que nadie te enseña. El modelo escribe el pedido. El programa lo recibe, revisa su lista de permisos, y decide: si eso está del lado del sí, lo ejecuta y le devuelve el resultado; si no, se detiene. El modelo nunca toca nada. Quien abre la puerta es el programa, y la abre con las llaves de quien lo configuró.",
+      "image_prompts": [
+        "A night watchman's clipboard hanging by a metal door, warm work light above. Documentary photography, muted palette, no readable text.",
+        "A hand checking off something on that clipboard beside the door, extreme macro. Documentary photography, shallow depth of field.",
+        "A heavy door opening from a dim corridor into a lit room, nobody in frame. Documentary photography, muted palette."
+      ]
+    },
+    {
+      "beat_type": "que_cuesta",
+      "visual_type": "image",
+      "narration": "Así que aquí está lo que a mí me hace pensarlo dos veces antes de conectarle una cuenta. Cuando le das acceso a tu correo o a tus archivos para que te ayude, no autorizaste una acción: autorizaste la capacidad. Y desde ese momento cada cosa que pida se ejecuta con tus llaves, sin que nadie te vuelva a preguntar, y tú te enteras cuando ya está hecho.",
+      "image_prompts": [
+        "A ring of keys handed from one hand to another over a dark counter, warm lamp above. Documentary photography, muted palette, no faces.",
+        "That ring of keys left alone on the counter, the second hand gone, same light. Documentary photography, shallow depth of field."
+      ]
+    },
+    {
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "narration": "Diste el permiso una vez. Él lo usa todas.",
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "LO DISTE"
+          },
+          {
+            "text": "UNA VEZ"
+          },
+          {
+            "text": "ÉL LO USA TODAS"
+          }
+        ],
+        "variant": "dark",
+        "video": "videos/gen_ln_varias_cabezas.assets/veo_4.mp4"
+      }
+    },
+    {
+      "beat_type": "cierre",
+      "visual_type": "image",
+      "narration": "Entonces la pregunta que yo me hago antes de conectarle algo ya no es si es seguro, porque esa no se puede contestar. Es otra, y te la puedes robar hoy: qué puede hacer esto sin volver a preguntarme. Si la respuesta es larga, ahí está tu riesgo, y no en la IA. Tú qué prefieres: que te pregunte cada vez y sea lento, o que haga todo solo y te enteres después?",
+      "image_prompts": [
+        "A row of light switches on a wall, one flipped up, warm evening light. Documentary photography, muted palette, no readable text.",
+        "A hand hovering over that row of switches, seen close from the side at night. Documentary photography, shallow depth of field."
+      ]
+    }
+  ]
+}

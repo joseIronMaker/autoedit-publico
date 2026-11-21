@@ -1,0 +1,96 @@
+{
+  "slug": "ag_no_lo_invento",
+  "tema": "Le escondí el dato al agente 45 veces para ver si lo inventaba: nunca lo hizo, y el miedo está puesto en el lugar equivocado",
+  "title": "Le escondí el dato 45 veces. Ni una se lo inventó.",
+  "theme": "hielo",
+  "hook_locked": true,
+  "quien_decide": "el modelo decide si llama a la herramienta o si te pregunta, y en esta prueba decidió bien las noventa veces",
+  "que_cuesta": "gastas tus horas blindando descripciones contra un riesgo que no aparece, mientras el riesgo que sí existe —quién ejecuta la llamada— sigue sin un solo candado",
+  "palanca": "deja de redactar descripciones defensivas y ve a abrir tu lista de permisos: ahí es donde no hay red, y escribir la primera prohibición toma dos minutos",
+  "pregunta_ab": "¿Le tienes más miedo a que invente un dato o a que ejecute algo sin preguntarte?",
+  "scenes": [
+    {
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "narration": "Le escondí a propósito el dato que necesitaba, cuarenta y cinco veces, para ver si se lo inventaba. Ni una sola vez lo hizo.",
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "45 VECES"
+          },
+          {
+            "text": "LE ESCONDÍ EL DATO"
+          },
+          {
+            "text": "NUNCA LO INVENTÓ"
+          }
+        ],
+        "variant": "dark",
+        "video": "videos/gen_ln_tres_defectos.assets/veo_0.mp4"
+      }
+    },
+    {
+      "beat_type": "contexto",
+      "visual_type": "image",
+      "narration": "Porque el miedo que te venden con los agentes es ese: que le des una herramienta y se ponga a llenar los huecos con lo que se le ocurra. Un folio inventado, un correo a la persona equivocada, una devolución a nombre de nadie.",
+      "image_prompts": [
+        "A blank paper form on a dark desk with several fields left empty, a pen resting beside it, warm lamp above. Documentary photography, muted palette, no readable text.",
+        "Extreme macro of one empty field on that form, the paper fibres visible under raking light, shallow depth of field.",
+        "The same form seen from above with a hand hovering over it without writing, deep shadows around. Documentary photography, no readable text."
+      ]
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "ml_demo",
+      "narration": "Así que lo probé de verdad: noventa llamadas. Seis casos, tres con el folio y tres sin él, contra tres versiones de la herramienta —descripción floja, descripción con la política de no inventar, y una tercera donde el folio ni siquiera era obligatorio. En las tres pasó lo mismo. Llamó exactamente en los quince casos con dato. En ninguno de los quince sin dato. Cero inventados.",
+      "ml_demo": {
+        "caption": "medir_herramientas.py",
+        "editor_frac": 0.24,
+        "code": "import json\nd = json.load(open('/home/jose/tiktok/mediciones/herramientas_politica.json'))\nc = d['condiciones']\nnoms = list(c.keys())\ncorto = [n.replace('descripción ', 'desc. ') for n in noms]\nllamo = [c[n]['llamo_la_herramienta'] for n in noms]\ninv = [c[n]['invento_el_folio'] for n in noms]\nhue = [c[n]['casos_con_hueco'] for n in noms]\nde = [c[n]['de'] for n in noms]\nx = np.arange(len(noms))\nfig, (ax, bx) = plt.subplots(2, 1, figsize=(9.2, 7.4))\nax.bar(x, llamo, color=CYAN, width=0.45)\nax.set_xticks(x); ax.set_xticklabels(corto, fontsize=15)\nax.set_ylim(0, max(de) * 1.2)\nax.set_ylabel('veces que llamó')\nax.set_title('llamó la herramienta')\nfor i, v in enumerate(llamo):\n    ax.text(i, v + max(de) * 0.04, '%d de %d' % (v, de[i]), ha='center', color=TXT, fontsize=19, fontweight='bold')\nbx.bar(x, inv, color=RED, width=0.45)\nbx.set_xticks(x); bx.set_xticklabels(corto, fontsize=15)\nbx.set_ylim(0, max(hue) * 1.2)\nbx.set_ylabel('folios inventados')\nbx.set_title('inventó el dato que faltaba')\nfor i, v in enumerate(inv):\n    bx.text(i, max(hue) * 0.12, '%d de %d' % (v, hue[i]), ha='center', color=TXT, fontsize=23, fontweight='bold')\nfig.text(0.5, 0.012, '%d llamadas reales a %s · 6 casos, la mitad con un hueco a propósito · 16-ago-2026' % (sum(de), d['modelo']), ha='center', fontsize=11, color='#969491')",
+        "display_code": [
+          "fc = resp.candidates[0].content.parts[0].function_call",
+          "fc.args.get('folio')   # ¿lo inventó o no llamó?"
+        ]
+      }
+    },
+    {
+      "beat_type": "giro",
+      "visual_type": "image",
+      "narration": "Y por eso el miedo está puesto en el lugar equivocado. El modelo no llenó el hueco: se detuvo y preguntó. Lo que nadie detiene es lo que pasa después, cuando sí trae todos los datos y alguien ejecuta la llamada sin preguntarte a ti. Ahí no hay política que valga: hay permisos, y los tuyos probablemente están todos en sí.",
+      "image_prompts": [
+        "A sealed envelope resting on a dark desk beside an open letter opener, warm side light, deep shadows. Documentary photography, no readable text.",
+        "The same envelope now open and empty on the desk, its contents gone, single lamp above. Macro, shallow depth of field.",
+        "A mail slot in a door seen from inside a dim room, daylight coming through the slot. Documentary photography, nobody in frame."
+      ]
+    },
+    {
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "narration": "No te va a inventar el dato. Te va a ejecutar la orden.",
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "NO INVENTA"
+          },
+          {
+            "text": "EL DATO"
+          },
+          {
+            "text": "EJECUTA LA ORDEN"
+          }
+        ],
+        "variant": "dark",
+        "video": "videos/gen_ver_no_basta_con_mirar_sc.assets/veo_0.mp4"
+      }
+    },
+    {
+      "beat_type": "cta",
+      "visual_type": "image",
+      "narration": "Así que mi postura, después de estas noventa llamadas: dejé de blindar descripciones y me fui a mi lista de permisos, que era donde no había nada escrito. Si vas a gastar dos minutos hoy, gástalos ahí y no en la redacción. ¿Le tienes más miedo a que invente un dato o a que ejecute algo sin preguntarte?",
+      "image_prompts": [
+        "A hand closing a notebook of drafts and reaching instead for a laptop on a dark desk at night, warm lamp. Documentary photography, no readable writing.",
+        "A single bolt being thrown on an old door lock, extreme macro, warm raking light, deep shadows behind. Documentary photography."
+      ]
+    }
+  ]
+}

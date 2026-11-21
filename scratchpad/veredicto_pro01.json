@@ -1,0 +1,124 @@
+{
+  "nota": {
+    "apuesta": 2,
+    "hilo": 4,
+    "dueno": 6,
+    "ritmo": 9,
+    "explicabilidad": 6,
+    "rigor": 3
+  },
+  "reordenable": true,
+  "idea_unica": "Hay dos ideas compitiendo: que «piensa paso a paso» ya no aporta en modelos actuales y que una sola corrida no sirve para evaluar un prompt.",
+  "problemas": [
+    {
+      "escena": 1,
+      "eje": "apuesta",
+      "gravedad": "grave",
+      "que": "Nadie decide nada sobre el espectador y no se nombra una pérdida en minutos, pesos o calificación, así que el tema sigue siendo higiene de prompting sin apuesta personal.",
+      "arreglo": "Abre con un caso real donde un cliente, jefe o profesor evalúe una entrega hecha con IA y di en esa misma escena el costo real del error en minutos, pesos o puntos de calificación."
+    },
+    {
+      "escena": 3,
+      "eje": "apuesta",
+      "gravedad": "grave",
+      "que": "La palanca aparece después de unas setenta palabras, claramente más tarde del segundo 12, y diez corridas secuenciales difícilmente caben en menos de dos minutos.",
+      "arreglo": "Pon antes del segundo 12 este filtro completo: «haz dos pares de pruebas, cada par con la frase y sin ella, sobre una respuesta verificable; si no mejora ambos pares, no adoptes el truco», y aclara que es un filtro rápido, no una medición definitiva."
+    },
+    {
+      "escena": 0,
+      "eje": "hilo",
+      "gravedad": "grave",
+      "que": "Las escenas 3 y 4 se pueden intercambiar y la escena 2 se puede mover o borrar sin romper nada, por lo que hay bloques temáticos, no una cadena causal.",
+      "arreglo": "Reordena como apuesta y palanca, incidente propio, refutación, prueba A/B y conclusión limitada, y abre cada bloque con la consecuencia concreta del anterior."
+    },
+    {
+      "escena": 0,
+      "eje": "hilo",
+      "gravedad": "grave",
+      "que": "El video intenta demostrar que un truco quedó obsoleto y enseñar que una corrida no prueba nada, dos ideas que compiten incluso en el cierre.",
+      "arreglo": "Elige como única idea «un truco de prompt no se adopta por una corrida: se compara contra un control» y convierte el caso de «piensa paso a paso» en una sola demostración de esa idea."
+    },
+    {
+      "escena": 2,
+      "eje": "hilo",
+      "gravedad": "medio",
+      "que": "La enumeración abre cinco objetos nuevos —prompt reescrito, respuesta falsa, consejo del compañero, video y sensación— sin explicar causalmente ninguno.",
+      "arreglo": "Conserva solo una respuesta que sonó perfecta y estaba mal, y úsala como causa directa de que José diseñara la comparación de la escena siguiente."
+    },
+    {
+      "escena": 2,
+      "eje": "dueno",
+      "gravedad": "grave",
+      "que": "«Me pasó a mí primero» promete una anécdota, pero entrega una lista genérica que podría leer cualquier cuenta y nunca dice por qué José decidió investigar esto.",
+      "arreglo": "Sustituye la lista por un hecho verdadero con día, tarea y error concreto, y remata con el motivo personal para comprobarlo en vez de seguir repitiendo consejos."
+    },
+    {
+      "escena": 0,
+      "eje": "explicabilidad",
+      "gravedad": "grave",
+      "que": "Veinte corridas, ocho reescrituras, diez intentos, cuatro problemas y veinte por condición se dicen como cifras de laboratorio sin traducirse en minutos, pesos o impacto humano en la misma frase.",
+      "arreglo": "Deja los tamaños de muestra en pantalla y di en voz cuánto tiempo y cuántos pesos costó realmente la prueba o el error, medidos y no estimados."
+    },
+    {
+      "escena": 5,
+      "eje": "explicabilidad",
+      "gravedad": "medio",
+      "que": "«Escriben esos pasos por dentro» presenta una metáfora como si describiera literalmente el mecanismo y no explica qué puede observar el usuario.",
+      "arreglo": "Di «como metáfora, parece que el modelo ya trae el paso a paso; técnicamente, en este modelo la instrucción no produjo una mejora adicional observable»."
+    },
+    {
+      "escena": 3,
+      "eje": "rigor",
+      "gravedad": "grave",
+      "que": "Repetir diez veces solo el prompt con el truco mide variación, pero no prueba si el truco sirve porque falta la condición idéntica sin la frase y falta una respuesta correcta definida antes.",
+      "arreglo": "Compara el mismo conjunto con y sin la frase, fija modelo y parámetros, define la clave de respuestas antes de correr y califica ambas condiciones con la misma regla."
+    },
+    {
+      "escena": 4,
+      "eje": "rigor",
+      "gravedad": "grave",
+      "que": "Afirmar que acertaba más porque escribía los pasos convierte una asociación experimental en una causa que el trabajo original no demostró ([Kojima et al.](https://arxiv.org/abs/2205.11916)).",
+      "arreglo": "Cámbialo por «en modelos y tareas concretos de 2022, pedir pasos produjo más aciertos; ese experimento no demostró que escribirlos fuera la causa»."
+    },
+    {
+      "escena": 5,
+      "eje": "rigor",
+      "gravedad": "grave",
+      "que": "«Los modelos de ahora» y «dejó de importar» universalizan un efecto que varía por modelo y tarea, pues aún hay modelos no razonadores y tareas donde la instrucción cambia el resultado ([Prompting Science Report 2](https://arxiv.org/abs/2506.07142)).",
+      "arreglo": "Nombra el modelo exacto y limita la tesis a «en este modelo de razonamiento y estas tareas, la frase no añadió aciertos»."
+    },
+    {
+      "escena": 6,
+      "eje": "rigor",
+      "gravedad": "grave",
+      "que": "Veinte de veinte en ambas condiciones revela un efecto techo: el ensayo eligió problemas donde era imposible observar una mejora y por eso no sustenta que el truco no haga nada.",
+      "arreglo": "Incluye tareas donde la condición base cometa errores, varios niveles de dificultad y más de un modelo, o abandona el titular universal y presenta el resultado como una prueba local inconclusa."
+    },
+    {
+      "escena": 6,
+      "eje": "rigor",
+      "gravedad": "medio",
+      "que": "«Hoy, en mi máquina» no vuelve reproducible la prueba porque faltan nombre y versión del modelo, temperatura o esfuerzo de razonamiento, prompts exactos y criterio de calificación.",
+      "arreglo": "Pon esos datos en la gráfica ejecutada y di en voz el modelo y la configuración que más podrían cambiar la conclusión."
+    },
+    {
+      "escena": 0,
+      "eje": "rigor",
+      "gravedad": "medio",
+      "que": "No hay aterrizaje mexicano: «problemas de varios pasos» podría ser cualquier benchmark anglosajón y no conecta con una decisión local.",
+      "arreglo": "Sustituye al menos una prueba genérica por una tarea mexicana verificable, como revisar un presupuesto con IVA expresado en pesos, y muestra su respuesta correcta."
+    },
+    {
+      "escena": 7,
+      "eje": "rigor",
+      "gravedad": "medio",
+      "que": "«¿Tú lo sigues escribiendo?» funciona como petición implícita de comentario y desperdicia el cierre en interacción prohibida en vez de cerrar la decisión.",
+      "arreglo": "Termina con la regla de decisión: «si no gana contra el mismo prompt sin la frase, bórrala; si gana, conserva la evidencia»."
+    }
+  ],
+  "lo_que_funciona": [
+    "La escena 4 introduce el mecanismo por refutación —«crees que... y no»— y nombra «cadena de pensamiento»; conserva esa estructura.",
+    "La escena 6 dice en voz que solo probó un modelo y tareas fáciles; conserva ese límite aunque obliga a bajar el alcance del titular.",
+    "El ritmo sí tiene rango: la acumulación larga de la escena 2 contrasta con el martillazo de cinco palabras «No cambió ni una respuesta»."
+  ]
+}

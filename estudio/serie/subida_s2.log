@@ -1,0 +1,313 @@
+c13_tokens: 97.5 s | parados 8.5% | mediana 1.43 | 3 s 5.19 | racha 1.0 s | -14.8 LUFS | final -120 dB
+  ✔ pasa
+######## parte E (c13_tokens) → 2026-11-08 19:00 (intento 1, 04-Nov 21:28:55)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-08", "19:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 8 nov, 19:00 | 01:37 | Durante doce videos te dije que la IA adivina la siguiente palabra. Te
+   ✔ confirmada
+a01_manos: 71.4 s | parados 7.4% | mediana 1.14 | 3 s 4.53 | racha 2.2 s | -15.4 LUFS | final -120 dB
+  ✔ pasa
+######## parte 1 (a01_manos) → 2026-11-09 19:00 (intento 1, 04-Nov 21:37:48)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-09", "19:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 9 nov, 19:00 | 01:11 | ChatGPT no puede apagar la luz de tu cuarto, pero un agente sí. Es el 
+   ✔ confirmada
+a02_boton: 93.8 s | parados 0.0% | mediana 2.97 | 3 s 9.71 | racha 0.0 s | -14.3 LUFS | final -120 dB
+  ✔ pasa
+######## parte 2 (a02_boton) → 2026-11-09 20:00 (intento 1, 04-Nov 21:48:29)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-09", "20:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 9 nov, 20:00 | 01:33 | La inteligencia artificial jamás ha hecho nada: cuando parece que rese
+   ✔ confirmada
+a03_vueltas: 80.4 s | parados 1.7% | mediana 3.81 | 3 s 14.47 | racha 0.4 s | -14.6 LUFS | final -120 dB
+  ✔ pasa
+######## parte 3 (a03_vueltas) → 2026-11-10 19:00 (intento 1, 04-Nov 22:00:49)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-10", "19:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 10 nov, 19:00 | 01:20 | Un agente no es más listo que un chatbot: solo vuelve a intentar. Mira
+   ✔ confirmada
+a03b_cuenta: 96.7 s | parados 0.0% | mediana 2.01 | 3 s 12.46 | racha 0.0 s | -14.1 LUFS | final -120 dB
+  ✔ pasa
+######## parte 4 (a03b_cuenta) → 2026-11-10 20:00 (intento 1, 04-Nov 22:10:07)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-10", "20:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 10 nov, 20:00 | 01:36 | Una IA te cobra en tokens, y hay tres precios: lo que lee, lo que escr
+   ✔ confirmada
+a04_terminar: 96.9 s | parados 0.1% | mediana 5.27 | 3 s 26.57 | racha 0.1 s | -14.0 LUFS | final -120 dB
+  ✔ pasa
+######## parte 5 (a04_terminar) → 2026-11-11 19:00 (intento 1, 04-Nov 22:27:59)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-11", "19:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 11 nov, 19:00 | 01:36 | Un agente no sabe cuándo terminó, y a veces te dice que sí cuando no. 
+   ✔ confirmada
+a05_mesa: 87.0 s | parados 0.2% | mediana 4.56 | 3 s 6.17 | racha 0.2 s | -15.0 LUFS | final -120 dB
+  ✔ pasa
+######## parte 6 (a05_mesa) → 2026-11-11 20:00 (intento 1, 04-Nov 22:41:34)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-11", "20:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 11 nov, 20:00 | 01:26 | Tu agente lee todo desde cero en cada paso, y su mesa tiene un tamaño 
+   ✔ confirmada
+a06_notas: 82.2 s | parados 0.0% | mediana 3.46 | 3 s 13.67 | racha 0.0 s | -14.2 LUFS | final -120 dB
+  ✔ pasa
+######## parte 7 (a06_notas) → 2026-11-12 19:00 (intento 1, 04-Nov 22:53:20)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-12", "19:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 12 nov, 19:00 | 01:22 | Una IA no te recuerda: guarda notas en un archivo y las vuelve a leer.
+   ✔ confirmada
+a06b_biblioteca: 92.6 s | parados 2.4% | mediana 2.33 | 3 s 9.70 | racha 1.0 s | -14.2 LUFS | final -120 dB
+  ✔ pasa
+######## parte 8 (a06b_biblioteca) → 2026-11-12 20:00 (intento 1, 04-Nov 23:02:48)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-12", "20:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 12 nov, 20:00 | 01:32 | Tu agente no se sabe tus documentos: los busca. Eso es RAG, y busca po
+   ✔ confirmada
+a06c_hilos: 112.3 s | parados 0.0% | mediana 1.95 | 3 s 3.59 | racha 0.0 s | -14.4 LUFS | final -120 dB
+  ✔ pasa
+######## parte 9 (a06c_hilos) → 2026-11-13 19:00 (intento 1, 04-Nov 23:15:26)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-13", "19:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 13 nov, 19:00 | 01:52 | Hay preguntas cuya respuesta no está en ninguna página, sino entre var
+   ✔ confirmada
+a07_plan: 80.7 s | parados 0.2% | mediana 3.71 | 3 s 7.99 | racha 0.2 s | -14.5 LUFS | final -120 dB
+  ✔ pasa
+######## parte 10 (a07_plan) → 2026-11-13 20:00 (intento 1, 04-Nov 23:27:31)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-13", "20:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 13 nov, 20:00 | 01:20 | Si le pides todo de golpe, tu agente se queda sin espacio a la mitad y
+   ✔ confirmada
+a08_control: 77.7 s | parados 1.0% | mediana 5.86 | 3 s 12.86 | racha 0.3 s | -14.6 LUFS | final -120 dB
+  ✔ pasa
+######## parte 11 (a08_control) → 2026-11-14 19:00 (intento 1, 04-Nov 23:36:30)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-14", "19:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 14 nov, 19:00 | 01:17 | Puedes tener al agente más inteligente del mundo y arruinarlo con una 
+   ✔ confirmada
+a09_arnes: 88.8 s | parados 0.0% | mediana 3.72 | 3 s 5.10 | racha 0.0 s | -14.4 LUFS | final -83 dB
+  ✔ pasa
+######## parte 12 (a09_arnes) → 2026-11-14 20:00 (intento 1, 04-Nov 23:50:46)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-14", "20:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 14 nov, 20:00 | 01:28 | El mismo modelo puede ser un genio o un inútil según su arnés: el vola
+   ✔ confirmada
+== 05-Nov 00:00 parte 13 (a10_jefe, 2026-11-15 19:00) aún no cabe en 239 h: fin de la pasada
+== pasada fin 05-Nov 00:00 · confirmadas 13
+== pasada inicio 10-Nov 22:19 (manual, José: 'sube los que se puedan')
+a10_jefe: 77.7 s | parados 0.8% | mediana 2.91 | 3 s 7.59 | racha 0.4 s | -14.3 LUFS | final -120 dB
+  ✔ pasa
+######## parte 13 (a10_jefe) → 2026-11-15 19:00 (intento 1, 10-Nov 22:20:21)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-15", "19:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 15 nov, 19:00 | 01:17 | Decirle a un agente que es el mejor experto del mundo sirve de poco. L
+   ✔ confirmada
+a11_examen: 77.5 s | parados 2.5% | mediana 2.29 | 3 s 6.98 | racha 0.5 s | -14.7 LUFS | final -120 dB
+  ✔ pasa
+######## parte 14 (a11_examen) → 2026-11-15 20:00 (intento 1, 10-Nov 22:29:17)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-15", "20:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 15 nov, 20:00 | 01:17 | Probar un agente una vez es como lanzar una moneda y decir que siempre
+   ✔ confirmada
+a12_trampa: 80.8 s | parados 2.4% | mediana 1.51 | 3 s 5.43 | racha 0.6 s | -14.4 LUFS | final -120 dB
+  ✔ pasa
+######## parte 15 (a12_trampa) → 2026-11-16 19:00 (intento 1, 10-Nov 22:37:51)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-16", "19:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 16 nov, 19:00 | 01:20 | El instituto de seguridad de IA del Reino Unido reportó que todos los 
+   ✔ confirmada
+a13_correo: 77.0 s | parados 0.1% | mediana 3.35 | 3 s 6.19 | racha 0.1 s | -14.5 LUFS | final -120 dB
+  ✔ pasa
+######## parte 16 (a13_correo) → 2026-11-16 20:00 (intento 1, 10-Nov 22:46:38)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-16", "20:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 16 nov, 20:00 | 01:16 | Un correo con letras invisibles puede darle órdenes a tu agente. Se ll
+   ✔ confirmada
+a14_llaves: 80.0 s | parados 0.0% | mediana 2.65 | 3 s 5.00 | racha 0.0 s | -15.1 LUFS | final -120 dB
+  ✔ pasa
+######## parte 17 (a14_llaves) → 2026-11-17 19:00 (intento 1, 10-Nov 22:56:43)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-17", "19:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 17 nov, 19:00 | 01:19 | A un agente no le das confianza, le das llaves, y hay tres que nunca d
+   ✔ confirmada
+a15_planos: 77.0 s | parados 0.3% | mediana 2.28 | 3 s 10.75 | racha 0.1 s | -14.4 LUFS | final -120 dB
+  ✔ pasa
+######## parte 18 (a15_planos) → 2026-11-17 20:00 (intento 1, 10-Nov 23:05:28)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-17", "20:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 17 nov, 20:00 | 01:16 | El mejor consejo para construir agentes es casi no usarlos: empieza co
+   ✔ confirmada
+a16_equipo: 78.2 s | parados 0.0% | mediana 3.63 | 3 s 11.58 | racha 0.0 s | -14.8 LUFS | final -120 dB
+  ✔ pasa
+######## parte 19 (a16_equipo) → 2026-11-18 19:00 (intento 1, 10-Nov 23:14:12)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-18", "19:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 18 nov, 19:00 | 01:18 | ¿Diez agentes trabajan mejor que uno? Google midió 180 configuraciones
+   ✔ confirmada
+a17_primeros: 86.4 s | parados 0.6% | mediana 2.74 | 3 s 6.83 | racha 0.1 s | -14.4 LUFS | final -120 dB
+  ✔ pasa
+######## parte 20 (a17_primeros) → 2026-11-18 20:00 (intento 1, 10-Nov 23:22:55)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-18", "20:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 18 nov, 20:00 | 01:26 | AutoGPT prometió en 2023 que la IA haría todo sola y casi siempre acab
+   ✔ confirmada
+a18_claw: 87.2 s | parados 3.0% | mediana 2.95 | 3 s 7.20 | racha 0.7 s | -14.2 LUFS | final -120 dB
+  ✔ pasa
+######## parte 21 (a18_claw) → 2026-11-19 19:00 (intento 1, 10-Nov 23:31:25)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-19", "19:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 19 nov, 19:00 | 01:27 | OpenClaw pasó de proyecto desconocido a 100,000 estrellas en menos de 
+   ✔ confirmada
+a19_carrera: 95.5 s | parados 0.2% | mediana 2.92 | 3 s 5.28 | racha 0.2 s | -14.7 LUFS | final -120 dB
+  ✔ pasa
+######## parte 22 (a19_carrera) → 2026-11-19 20:00 (intento 1, 10-Nov 23:40:42)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-19", "20:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 19 nov, 20:00 | 01:35 | ¿ChatGPT le copió a Claude? Las fechas dicen algo más interesante: Cow
+   ✔ confirmada
+a20_enchufe: 90.6 s | parados 0.6% | mediana 1.40 | 3 s 16.88 | racha 0.2 s | -14.4 LUFS | final -120 dB
+  ✔ pasa
+######## parte 23 (a20_enchufe) → 2026-11-20 19:00 (intento 1, 10-Nov 23:49:30)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-20", "19:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 20 nov, 19:00 | 01:30 | Antes cada conexión entre una IA y un programa era un cable hecho a ma
+   ✔ confirmada
+a21_preguntas: 86.2 s | parados 6.4% | mediana 1.78 | 3 s 8.70 | racha 0.8 s | -14.5 LUFS | final -120 dB
+  ✔ pasa
+######## parte 24 (a21_preguntas) → 2026-11-20 20:00 (intento 1, 10-Nov 23:58:13)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-20", "20:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 20 nov, 20:00 | 01:26 | Te van a vender que los agentes hacen todo, y otros que no sirven. Yo 
+   ✔ confirmada
+== 11-Nov 00:05 parte 25 (a22_programar, 2026-11-21 19:00) aún no cabe en 239 h: fin de la pasada
+== pasada fin 11-Nov 00:05 · confirmadas 25
+==== pasada manual 2026-11-16 21:09:14 ====
+a22_programar: 78.4 s | parados 2.8% | mediana 1.59 | 3 s 10.34 | racha 0.8 s | -14.2 LUFS | final -120 dB
+  ✔ pasa
+######## parte 25 (a22_programar) → 2026-11-21 19:00 (intento 1, 16-Nov 21:10:19)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-21", "19:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 21 nov, 19:00 | 01:18 | Programar es lo que mejor hacen los agentes, y aun así medir cuánto ay
+   ✔ confirmada
+a23_hackear: 88.2 s | parados 2.0% | mediana 1.93 | 3 s 8.39 | racha 1.0 s | -14.2 LUFS | final -120 dB
+  ✔ pasa
+######## parte 26 (a23_hackear) → 2026-11-21 20:00 (intento 1, 16-Nov 21:18:59)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-21", "20:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 21 nov, 20:00 | 01:28 | En julio, agentes de OpenAI en una prueba interna se salieron de su en
+   ✔ confirmada
+a24_milenio: 97.8 s | parados 1.5% | mediana 2.59 | 3 s 4.17 | racha 0.4 s | -14.1 LUFS | final -120 dB
+  ✔ pasa
+######## parte 27 (a24_milenio) → 2026-11-22 19:00 (intento 1, 16-Nov 21:27:40)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-22", "19:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 22 nov, 19:00 | 01:37 | OpenAI anunció un resultado sobre Navier-Stokes y el Instituto Clay lo
+   ✔ confirmada
+a25_laboratorio: 94.5 s | parados 0.2% | mediana 2.56 | 3 s 6.71 | racha 0.2 s | -14.3 LUFS | final -120 dB
+  ✔ pasa
+######## parte 28 (a25_laboratorio) → 2026-11-22 20:00 (intento 1, 16-Nov 21:37:07)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-22", "20:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 22 nov, 20:00 | 01:34 | Un equipo de agentes propuso un medicamento contra una forma de ceguer
+   ✔ confirmada
+a26_oficina: 84.3 s | parados 0.6% | mediana 2.12 | 3 s 7.05 | racha 0.4 s | -14.6 LUFS | final -120 dB
+  ✔ pasa
+######## parte 29 (a26_oficina) → 2026-11-23 19:00 (intento 1, 16-Nov 21:45:37)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-23", "19:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 23 nov, 19:00 | 01:24 | ¿Un agente ya puede hacer tu trabajo? En encargos reales que un client
+   ✔ confirmada
+a27_desastres: 87.9 s | parados 1.6% | mediana 2.06 | 3 s 8.20 | racha 0.8 s | -14.5 LUFS | final -120 dB
+  ✔ pasa
+######## parte 30 (a27_desastres) → 2026-11-23 20:00 (intento 1, 16-Nov 21:55:03)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-23", "20:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 23 nov, 20:00 | 01:27 | Le dijeron que no tocara nada y borró la base de datos. Luego dijo que
+   ✔ confirmada
+a28_fabrica: 89.0 s | parados 2.6% | mediana 2.54 | 3 s 6.62 | racha 0.8 s | -14.4 LUFS | final -120 dB
+  ✔ pasa
+######## parte 31 (a28_fabrica) → 2026-11-24 19:00 (intento 1, 16-Nov 22:04:09)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-24", "19:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 24 nov, 19:00 | 01:29 | Hay equipos donde ningún humano escribe ni revisa código: les dicen fá
+   ✔ confirmada
+a29_ataques: 81.8 s | parados 4.4% | mediana 1.53 | 3 s 14.96 | racha 1.0 s | -14.4 LUFS | final -120 dB
+  ✔ pasa
+######## parte 32 (a29_ataques) → 2026-11-24 20:00 (intento 1, 16-Nov 22:12:45)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-24", "20:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 24 nov, 20:00 | 01:21 | En una prueba del gobierno británico, un modelo pasó de 3 a 6 de 10 en
+   ✔ confirmada
+a30_agi: 99.3 s | parados 1.4% | mediana 2.48 | 3 s 6.71 | racha 0.5 s | -14.6 LUFS | final -120 dB
+  ✔ pasa
+######## parte 33 (a30_agi) → 2026-11-25 19:00 (intento 1, 16-Nov 22:21:20)
+  revision terminada: música y contenido sin problemas
+  programacion: ["2026-11-25", "19:00"]
+  publicar: OK
+OK
+   Studio dice: PROGRAMADA | 25 nov, 19:00 | 01:39 | Los expertos esperaban oro en la Olimpiada de Matemáticas hacia 2030 y
+   ✔ confirmada
+== pasada fin 16-Nov 22:28 · confirmadas 34

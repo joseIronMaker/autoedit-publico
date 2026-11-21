@@ -1,0 +1,85 @@
+{
+  "slug": "ia_citar_o_adivinar",
+  "tema": "Cómo saber en un renglón si la IA te está citando una fuente o adivinando",
+  "title": "La IA te da un número perfecto. ¿Lo buscó o lo adivinó?",
+  "theme": "cyber",
+  "hook_locked": true,
+  "quien_decide": "el modelo decide si busca o si completa de memoria, y no te avisa cuál de las dos hizo",
+  "que_cuesta": "pasas un dato a un cliente creyendo que salió de una fuente cuando salió de una probabilidad",
+  "palanca": "pídele la cita textual y la liga; la respuesta te dice sola de dónde vino. 30 segundos.",
+  "pregunta_ab": "¿Le crees a la IA por cómo suena o por lo que puede citar?",
+  "scenes": [
+    {
+      "beat_type": "hook",
+      "visual_type": "screen_demo",
+      "narration": "Le pedí el mismo tipo de dato dos veces. Una vez me trajo la fuente. La otra no. Y por el tono, no se notaba.",
+      "screen_demo": {
+        "tool": "chatgpt",
+        "prompt": "¿Cuántos habitantes tenía Tlaxcala en el censo de 2020? Dame el número y pégame la frase textual de la fuente oficial donde aparece, con la liga.",
+        "nota": "captura REAL: responde 1,342,977 y cita al INEGI con liga"
+      }
+    },
+    {
+      "beat_type": "contexto",
+      "visual_type": "image",
+      "narration": "Yo llevo años construyendo con estos modelos y aun así me pasó: mandé un dato a un cliente porque la respuesta sonaba impecable. Cuando me preguntó de dónde salía, no supe.",
+      "image_prompt": "Vertical 9:16 cinematic editorial photograph, muted desaturated palette of graphite, ink blue and warm amber lamplight. A printed report on a meeting table, one paragraph circled in pencil, a pen resting across it, morning light through blinds. Documentary photography, shallow depth of field, film grain, no text, no faces, no logos."
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "image",
+      "narration": "Y aquí está el motivo. El modelo no guarda datos: elige la palabra siguiente por probabilidad, una tras otra. En técnico, predicción del siguiente token.",
+      "image_prompts": [
+        "An old wooden printer's type case seen from directly above, its dozens of compartments filled with thousands of tiny metal letters, all loose and unsorted into any word. Raking warm lamplight from the left, deep shadows in the compartments, worn wood.",
+        "Extreme macro close-up of a typesetter's fingers lifting ONE single small metal letter out of a wooden compartment full of identical metal letters. Very shallow depth of field, the chosen letter sharp, everything else dissolving into warm blur.",
+        "A metal composing stick held in one hand, holding a half-finished line of set metal type that stops abruptly in the middle, leaving empty space at the end of the line. The type case blurred behind. Side lamplight."
+      ]
+    },
+    {
+      "beat_type": "giro",
+      "visual_type": "image",
+      "narration": "Por eso completar de memoria y citar una fuente le cuestan lo mismo: las dos salen como cadenas de palabras probables. El tono seguro no mide si es verdad. Mide qué tan común suena.",
+      "image_prompts": [
+        "Two identical sheets of printed paper lying side by side on a dark wooden desk, lit by exactly the same lamp, indistinguishable from each other. A small paper slip is clipped to the left sheet; the right sheet has nothing clipped to it. Shot from straight above, symmetrical.",
+        "Extreme macro of a vintage brass analogue meter, its needle pinned all the way to the right against the stop. The dial face is completely blank: no numbers, no markings, no letters at all. Scratched glass, warm amber reflection, dark background.",
+        "A hand sliding one printed sheet of paper across a dark wooden meeting table toward someone sitting opposite, whose hands rest at the far edge of the table. Morning light through blinds, dust in the air."
+      ]
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "screen_demo",
+      "narration": "Esta es la palanca y toma treinta segundos: pídele la cita y la liga. Cuando no la tiene, hoy te lo dice. Eso es exactamente lo que quieres saber antes de pasar el dato.",
+      "screen_demo": {
+        "tool": "chatgpt",
+        "prompt": "¿Cuántas sucursales tiene la taquería 'El Rincón del Tlacoyo' en Tlaxcala y cuál fue su facturación en 2023? Dame la cifra y pégame la frase textual de la fuente con la liga.",
+        "nota": "captura REAL: responde que no pudo verificarlo con fuentes públicas"
+      }
+    },
+    {
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "narration": "Un modelo de lenguaje no es una base de datos. Es un predictor que suena a experto.",
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "NO ES"
+          },
+          {
+            "text": "UNA BASE"
+          },
+          {
+            "text": "DE DATOS"
+          }
+        ],
+        "variant": "dark",
+        "video": "videos/gen_ln_el_transformer.assets/veo_0.mp4"
+      }
+    },
+    {
+      "beat_type": "cta",
+      "visual_type": "image",
+      "narration": "Así que la próxima vez que te dé un número redondo y perfecto, pídele la liga antes de pasarlo. ¿Le crees por cómo suena o por lo que puede citar?",
+      "image_prompt": "Vertical 9:16 cinematic editorial photograph, muted desaturated palette of graphite, ink blue and warm amber lamplight. A hand about to press send on a phone lying on a wooden desk beside an open notebook, warm lamp, dark room. The pause before sending. Documentary photography, shallow depth of field, film grain, no text, no faces, no logos."
+    }
+  ]
+}

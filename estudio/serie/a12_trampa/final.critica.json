@@ -1,0 +1,109 @@
+{
+  "nivel_vs_listón_0a10": 6,
+  "primer_segundo": "No detiene el pulgar con la misma fuerza que el listón. El plano picado sobre un fondo beige con baldosas es visualmente plano y la acción (una bola negra con brazos de goma mirando un papel) tarda demasiado en leerse. El listón usa un espacio infinito limpio, contraste puro y física inmediata en los primeros 0.5 segundos.",
+  "momentos_que_funcionan": [
+    {
+      "t": "00:13-00:18",
+      "que": "La visualización de los vectores punteados rojos y brazos estirándose hacia la ventana (internet) y la caja del calificador traduce bien un concepto técnico a comedia física."
+    },
+    {
+      "t": "00:34-00:54",
+      "que": "El paso al gráfico 2D sobre fondo limpio. Aquí el video por fin respira al nivel del listón: buen uso del espacio negativo, excelente diseño de información con los bloques cayendo y subiendo en la escala logarítmica."
+    },
+    {
+      "t": "00:57-01:02",
+      "que": "El contraste visual entre el camino punteado en zigzag ('resolverlo') y el puente recto ('trampa') explica la optimización de recompensas en 3 segundos sin esfuerzo."
+    }
+  ],
+  "momentos_donde_se_iria": [
+    {
+      "t": "00:03-00:06",
+      "por_que": "La cámara está estática durante casi 4 segundos mientras la bola solo mueve el lápiz. En TikTok esto es tiempo muerto visual.",
+      "arreglo": "Cortar directo del impacto de la palabra 'trampa' (00:02) a un plano detalle extremo de la tira de papel de respuestas saliendo a escondidas, o iniciar el zoom out del salón en 00:03."
+    },
+    {
+      "t": "00:19-00:23",
+      "por_que": "La metáfora de 'examen imposible por error de configuración' se muestra solo como el personaje rompiendo la hoja a la mitad. Se siente genérico y desconectado de lo técnico.",
+      "arreglo": "Mostrar que las casillas del examen están bloqueadas, corridas fuera del papel o con un candado roto, obligando al agente a buscar otra vía física."
+    },
+    {
+      "t": "00:48-00:54",
+      "por_que": "La pantalla se satura con demasiadas capas de texto simultáneas ('METR', 'la misma corrida', 'ninguna cifra es robusta', 'tareas de +270 h', 'tareas de ~11 h', 'horas de una persona'). El ojo no sabe dónde leer y la animación se congela.",
+      "arreglo": "Desvanecer los textos secundarios ('horas de una persona', 'la misma corrida') antes de meter la cita entre comillas, dejando solo los dos números (11h vs 270h) y el veredicto."
+    },
+    {
+      "t": "01:07-01:13",
+      "por_que": "El plano cenital simétrico de la bola sosteniendo la regla frente al examen dura 6 segundos casi sin movimiento relevante mientras la voz construye la premisa final.",
+      "arreglo": "Hacer que el propio agente sea quien dibuje las palomitas y el '10' rojo usando la regla como plantilla o sello falso, mostrando activamente cómo 'engaña al examen'."
+    }
+  ],
+  "ritmo_visual": "Irregular y dividido en dos estilos que chocan. El acto 1 (00:00-00:33) y el acto 3 (01:07-01:20) en el salón 3D tienen movimientos de cámara robóticos (paneos y zooms lineales sin curvas de aceleración suaves) y el entorno con líneas de contorno en el piso ensucia el cuadro. El acto 2 (00:34-01:06) en 2D plano tiene mucho mejor ritmo, limpieza y claridad.",
+  "sincronia_voz_imagen": [
+    {
+      "t": "00:04-00:06",
+      "problema": "La voz dice 'y nadie les dijo que lo hicieran', que es el gancho conceptual, pero en pantalla no hay ningún cambio visual ni énfasis que subraye la autonomía del agente."
+    },
+    {
+      "t": "00:20-00:22",
+      "problema": "Dice 'error de configuración' mientras el agente rompe el papel con las manos. Romper el papel sugiere frustración humana, no un fallo del entorno de prueba."
+    },
+    {
+      "t": "01:13-01:15",
+      "problema": "Cuando dice 'y el agente aprende a engañar al examen', el agente solo agarra la regla y se inclina; la acción de 'engañar' (ponerse el 10) ocurrió antes en 01:12 de forma automática."
+    }
+  ],
+  "legibilidad_en_celular": [
+    {
+      "t": "00:08-00:18",
+      "problema": "El texto 'CALIFICADOR' en la caja del escritorio derecho y 'INSTITUTO' en la puerta están en perspectiva, con trazo fino y muy pequeños; se pierden en pantallas verticales chicas."
+    },
+    {
+      "t": "00:24-00:25",
+      "problema": "El código dentro de la pantalla negra en la ventana es microscópico. En un celular solo se ve una mancha negra en la pared."
+    },
+    {
+      "t": "00:50-00:54",
+      "problema": "Colisión tipográfica: '«ninguna cifra es robusta»' queda encimado sobre 'tareas de +270 h', compitiendo con el mismo color rojo y misma tipografía serif."
+    },
+    {
+      "t": "00:57-01:06",
+      "problema": "La palabra 'META' en la banderita queda justo en el margen derecho, en zona de riesgo donde TikTok pone los iconos de perfil, likes y comentarios."
+    }
+  ],
+  "sonido": {
+    "musica": "El track electrónico con pulso percusivo funciona bien al inicio para dar tensión de 'espionaje/trampa', pero el corte al piano ambiental en 01:07 es demasiado abrupto.",
+    "efectos": "Abuso de sonidos caricaturescos ('boing' en 00:19, 00:30, 00:55; chispazos y ruidos de papel exagerados). El listón usa efectos minimalistas, secos y táctiles (clicks suaves, sub-bajos) que hacen que la pieza se sienta sofisticada. Los sonidos de caricatura abaratan el tono periodístico.",
+    "mezcla": "La voz es clara, pero entre 00:00 y 00:06 los efectos de lápiz y papel compiten directamente en las frecuencias medias-altas con la locutora.",
+    "problemas": [
+      {
+        "t": "00:01-00:05",
+        "que": "El sonido de rayar papel está demasiado alto y seco, ensucia la primera frase del guion."
+      },
+      {
+        "t": "00:19",
+        "que": "Sonido de resorte/caricatura al saltar que rompe la tensión seria de lo que se está contando."
+      },
+      {
+        "t": "00:55",
+        "que": "Efecto cómico en los cuernos de diablo que infantiliza la explicación."
+      },
+      {
+        "t": "01:06-01:07",
+        "que": "Transición musical macheteada entre el beat rítmico y el silencio con golpe grave."
+      }
+    ]
+  },
+  "guion": {
+    "claridad": "Alta en el planteamiento y el cierre, pero el segmento de METR (00:34-00:54) exige demasiado procesamiento rápido: 'resiste tareas de unas 11 horas' y 'la misma corrida' son jergas o traducciones literales ('the same run') que un público general no entiende a la primera.",
+    "afirmaciones_dudosas": [
+      "Usar 'la misma corrida' (00:48) es un calco del inglés 'the same run'; en español estándar suena confuso fuera de nichos técnicos (mejor: 'en la misma prueba' o 'en el mismo intento').",
+      "Decir 'resiste tareas de unas 11 horas' (00:41) no explica que se refiere al horizonte de tiempo que le tomaría a un humano experto completar esas tareas."
+    ],
+    "final": "Excelente pregunta final ('¿Con qué lo mido ahora?'), acompañada de la mejor metáfora visual del corto (doblar la regla rígida)."
+  },
+  "tres_cambios_de_mayor_impacto": [
+    "Limpiar la dirección de arte del salón 3D (00:00-00:33 y 01:07-01:20): eliminar la cuadrícula del piso y las paredes beige, dejando los pupitres flotando en el mismo fondo blanco limpio del segmento 2D (00:34), y suavizar las curvas de animación de la cámara (easing) para quitar el look de previsualización 3D.",
+    "Reemplazar todos los efectos de sonido de caricatura (resortes, boings, chispazos fuertes) por diseño sonoro minimalista y orgánico (clicks precisos, whooshes suaves de aire, tonos graves sutiles) al estilo del Video 1.",
+    "Rehacer el bloque de 00:34 a 00:54 simplificando el texto en pantalla (nunca más de 2 elementos de texto activos a la vez) y cambiando 'la misma corrida' por 'en la misma prueba' para no perder a la audiencia no técnica a mitad del video."
+  ]
+}

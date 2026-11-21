@@ -1,0 +1,17 @@
+La inteligencia artificial más poderosa del mundo empezó adivinando al azar.
+Sin saber nada. Puros números al azar.
+Pídele algo sencillo: que adivine cuánto cuesta una casa.
+Su primera respuesta: dos pesos.
+El precio real: tres millones.
+Entre lo que dijo y lo que era, hay una distancia.
+A esa distancia le llamamos error.
+Y aquí está todo el secreto. La máquina no sabe qué es una casa. No sabe qué es un peso. Lo único que puede sentir es ese número.
+Así que ajusta sus números por dentro, tantito, y vuelve a intentar.
+Dos millones de error. Un millón. Cien mil.
+Una vez, otra vez. Millones de veces.
+Hasta que un día le atina a una casa que nunca había visto.
+Eso es entrenar a una inteligencia artificial.
+No le explicaron qué es una casa. Solo le dijeron cuánto se equivocó.
+ChatGPT, los autos que se manejan solos, esta voz que te está hablando... todo nació de ese número.
+Si le quitas el error, la máquina más poderosa del mundo no aprende nada.
+Porque lo único que aprende una máquina... es a equivocarse menos.

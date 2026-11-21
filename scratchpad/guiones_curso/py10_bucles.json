@@ -1,0 +1,122 @@
+{
+  "title": "Bucles for y while: repetir sin copiar y pegar",
+  "slug": "curso_py10_bucles",
+  "tema": "los bucles for y while en Python y el bucle infinito",
+  "theme": "curso python con ia",
+  "hook_tipo": "demostracion",
+  "keyword": "bucles en python",
+  "hook_headline": [
+    "REPITE",
+    "SIN COPIAR"
+  ],
+  "pregunta_ab": "¿for o while cuando no sabes cuántas vueltas?",
+  "music_prompt": "hard techno bed, dark industrial groove, 150 BPM, rolling kick, restrained under a voice, instrumental, no vocals",
+  "modo": "corto",
+  "hook_locked": true,
+  "scenes": [
+    {
+      "beat_type": "hook",
+      "visual_type": "terminal",
+      "narration": "Si te cachas copiando y pegando la misma línea tres veces, felicidades: acabas de escribir un bucle a mano, como los abuelitos. Python ya trae dos hechos y no cobran. Le pido al agente uno que recorra una lista de frutas y las imprima. Mira qué corto sale.",
+      "pause_after": 0.35,
+      "terminal": {
+        "title": "frutas.py",
+        "lines": [
+          {
+            "text": "for fruta in [\"mango\", \"sandía\", \"papaya\"]:"
+          },
+          {
+            "text": "    print(\"me gusta la\", fruta)"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "claude 'escribe frutas.py: recorre una lista de frutas con for e imprime cada una'",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "terminal",
+      "narration": "El for recorre una lista: da una vuelta por cada cosa, y en cada vuelta la caja fruta vale otra. Tres frutas, tres vueltas, tres líneas. Si la lista trajera cien, serían cien vueltas con la MISMA línea de código. Ahí es donde copiar y pegar te deja como escribano del siglo pasado: la mano acalambrada y el archivo de mil renglones.",
+      "terminal": {
+        "title": "python3 frutas.py",
+        "lines": [
+          {
+            "text": "me gusta la mango"
+          },
+          {
+            "text": "me gusta la sandía"
+          },
+          {
+            "text": "me gusta la papaya"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "cat frutas.py; echo; echo '$ python3 frutas.py'; python3 frutas.py",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "contexto",
+      "visual_type": "terminal",
+      "narration": "El while es el otro, y ese no cuenta cosas, cuenta ganas: repite MIENTRAS se cumpla una condición. Le quedan intentos, sigue; se le acaban, se va. Es el bucle de los juegos y también el de tu ex: mientras no entiendas, te vuelve a preguntar. Míralo bajar de tres a cero.",
+      "terminal": {
+        "title": "python3 intentos.py",
+        "lines": [
+          {
+            "text": "te quedan 3"
+          },
+          {
+            "text": "te quedan 2"
+          },
+          {
+            "text": "te quedan 1"
+          },
+          {
+            "text": "se acabaron"
+          }
+        ]
+      },
+      "captura": {
+        "cmd": "cat intentos.py; echo; echo '$ python3 intentos.py'; python3 intentos.py",
+        "cols": 46,
+        "filas": 30,
+        "cwd": "/home/jose/tiktok/scratchpad/_curso/demo"
+      }
+    },
+    {
+      "beat_type": "giro",
+      "visual_type": "custom",
+      "narration": "Ahora la advertencia que te va a pasar sí o sí: si dentro del while nunca cambias lo que estás midiendo, el programa se queda dando vueltas para SIEMPRE. No se cae, no avisa, no se queja. Ahí se queda, girando feliz, como perro persiguiéndose la cola. Se corta con control C. Y sí, a mí me pasó todo el primer mes.",
+      "custom_anim": {
+        "description": "Una flecha circular grande girando alrededor de una caja con la condición intentos > 0. A un lado un contador que baja 3, 2, 1, 0 en cada vuelta y al llegar a 0 la flecha se abre y sale por una puerta etiquetada se sale. Luego la misma escena pero el contador se queda pegado en 3 y no cambia: la flecha gira cada vez más rápido, se pone roja, aparece un símbolo de infinito y al final el texto Ctrl + C la detiene. Sin más cifras que 3, 2, 1, 0."
+      }
+    },
+    {
+      "beat_type": "cta",
+      "visual_type": "kinetic_video",
+      "narration": "For cuando sabes cuántas vueltas, while cuando no. La que viene: ponerle nombre a un pedazo de trabajo para no volver a escribirlo nunca. ¿for o while cuando no sabes cuántas vueltas? Yo digo while, pero con la salida escrita ANTES que el cuerpo, o acabas invocando otra vez al perro de la cola.",
+      "pause_after": 0.3,
+      "kinetic_video": {
+        "video": "/home/jose/tiktok/videos/_clips_pagados/gen_ln_tres_defectos__veo_0.mp4",
+        "words": [
+          {
+            "text": "for si sabes cuántas",
+            "serif": true
+          },
+          {
+            "text": "WHILE SI NO",
+            "accent": true
+          }
+        ],
+        "variant": "dark"
+      }
+    }
+  ]
+}

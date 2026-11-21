@@ -1,0 +1,1 @@
+c12_adivina {"cortes":[{"t":"00:19","que":"Corte brusco y silencio total antinatural justo después de la palabra 'mentira', interrumpiendo la música de fondo y el flujo de la narración"}],"tapa_la_voz":[],"limpio":false}

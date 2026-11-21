@@ -1,0 +1,7 @@
+Tu cámara te pone el recuadro en la cara antes de que tomes la foto. Y nunca ha visto una cara.
+Le pasé mi foto a un detector real: la encontró con 87% de confianza. En un recorte de tela, cero.
+No busca tu cara. Busca un patrón de brillos que la tela no tiene.
+
+¿La cámara reconoce o solo mide? Yo digo que solo mide.
+
+#inteligenciaartificial #vision #camara #ia #tecnologia

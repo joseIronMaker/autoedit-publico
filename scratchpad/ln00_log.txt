@@ -1,0 +1,40 @@
+→ guion guion de Claude (guionista)
+→ escena 1/7 generando voz
+→ escena 1/7 generando video de fondo (Veo)
+→ escena 1/7 animando kinetic_video
+  aviso: render con tiles caídos (53%); reintentando…
+  aviso: Remotion falló (render dañado tras reintento (53% anómalo)); degrado a PIL
+→ escena 1/7 QC visual rechazó: El texto en pantalla ('está increíble... PARA DORMIRSE') no 
+→ escena 1/7 animando kinetic_video
+  aviso: render con tiles caídos (53%); reintentando…
+  aviso: Remotion falló (Command '['npx', 'remotion', 'render', 'Beat', '/home/jose/tiktok/videos/gen_ln_frase_rompio_ia.assets/_rem_seg_0.mp4', '--props=/home/jose/tiktok/videos/gen_ln_frase_rompio_ia.assets/_props__rem_seg_0.json', '--browser-executable=/usr/bin/google-chrome', '--log=error']' timed out after 1800 seconds); degrado a PIL
+→ escena 2/7 generando voz
+→ escena 2/7 generando talking-head (D-ID)
+→ escena 2/7 animando banda de marca
+→ escena 3/7 generando voz
+→ escena 3/7 ejecutando modelo real (sklearn)
+→ escena 3/7 animando código → gráfica
+→ escena 4/7 generando voz
+→ escena 4/7 generando imagen 1 (codex)
+→ escena 4/7 generando imagen 2 (codex)
+→ escena 4/7 generando imagen 3 (codex)
+→ escena 4/7 animando showcase
+  aviso: Remotion falló (Command '['npx', 'remotion', 'render', 'Beat', '/home/jose/tiktok/videos/gen_ln_frase_rompio_ia.assets/_rem_seg_3.mp4', '--props=/home/jose/tiktok/videos/gen_ln_frase_rompio_ia.assets/_props__rem_seg_3.json', '--browser-executable=/usr/bin/google-chrome', '--log=error']' timed out after 1800 seconds); degrado a PIL
+→ escena 4/7 QC visual rechazó: La escena está prácticamente vacía y es abstracta, no ilustr
+→ escena 4/7 animando showcase
+  aviso: Remotion falló (Command '['npx', 'remotion', 'render', 'Beat', '/home/jose/tiktok/videos/gen_ln_frase_rompio_ia.assets/_rem_seg_3.mp4', '--props=/home/jose/tiktok/videos/gen_ln_frase_rompio_ia.assets/_props__rem_seg_3.json', '--browser-executable=/usr/bin/google-chrome', '--log=error']' timed out after 1800 seconds); degrado a PIL
+  aviso: escena 4 sigue con observaciones: Escena vacía y sin relación visual con los tres conceptos narrados (redes con memoria, atención y escala)
+→ escena 5/7 generando voz
+→ escena 5/7 animando kinetic
+→ escena 6/7 generando voz
+→ escena 6/7 animando kinetic
+→ escena 7/7 generando voz
+→ escena 7/7 generando talking-head (D-ID)
+→ escena 7/7 animando banda de marca
+→ ensamblando 7 escenas → gen_ln_frase_rompio_ia.mp4
+→ audio audio continuo + SFX de transición
+→ música generando cama del video (Lyria)
+✔ /home/jose/tiktok/videos/gen_ln_frase_rompio_ia.mp4
+
+Ahora pásalo por el flujo normal para subtítulos y copys:
+  autoedit gen_ln_frase_rompio_ia.mp4 --auto   (o desde la web)

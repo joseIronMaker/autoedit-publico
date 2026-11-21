@@ -1,0 +1,24 @@
+=== ver01s_galeria_sin_cara.json  →  gen_ver_galeria_sin_cara  (tema hielo)
+(ya existía el mp4 base; salto la generación)
+→ Transcribiendo con Whisper (small, CPU)…
+  106 palabras, 38.0s → /home/jose/tiktok/videos/gen_ver_galeria_sin_cara.autoedit/transcript.json
+→ Gemini analizando la transcripción (cortes + énfasis)…
+
+Plan de edición (4 cortes, −1.6s de 38.0s):
+  ✂    2.96 →    3.50  silencio de 0.8s
+  ✂    5.46 →    5.78  silencio de 0.6s
+  ✂   11.08 →   11.58  silencio de 0.7s
+  ✂   18.50 →   18.78  silencio de 0.5s
+  ★ 13 palabras enfatizadas en subtítulos
+→ Renderizando gen_ver_galeria_sin_cara_final.mp4: 5 tramos, 36.3s…
+✔ /home/jose/tiktok/videos/gen_ver_galeria_sin_cara_final.mp4
+→ Generando copys (TikTok/IG/FB)…
+✔ /home/jose/tiktok/videos/gen_ver_galeria_sin_cara.autoedit/copys.md
+
+✔ ver01_galeria_sin_cara.mp4  (36.4s)
+  QC   → /home/jose/tiktok/scratchpad/qc_ver_galeria_sin_cara.png
+  copy → revisar y reescribir a mano si hace falta:
+Así es como un detector de caras te reconoce usando matemática básica.
+No ve rostros: analiza una tabla de números del 0 al 255 y busca un patrón de brillos que la ropa no tiene.
+¿Para ti esto es magia o matemática?
+#detectordecaras #patrondebrillos #pixel #camara

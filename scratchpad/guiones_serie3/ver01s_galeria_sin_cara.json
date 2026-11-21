@@ -1,0 +1,101 @@
+{
+  "tema": "Tu cámara encuentra la cara antes de que tomes la foto",
+  "modo": "corto",
+  "title": "Tu cámara encuentra la cara antes de que tomes la foto",
+  "slug": "ver_galeria_sin_cara",
+  "hook_tipo": "secreto",
+  "theme": "hielo",
+  "keyword": "una imagen es una matriz de píxeles",
+  "hook_headline": [
+    "NUNCA VIO",
+    "UNA CARA"
+  ],
+  "pregunta_ab": "¿La cámara reconoce o solo mide?",
+  "music_prompt": "cold minimal electronica, glassy pads and soft digital clicks, curious and precise, no vocals, 108 BPM",
+  "scenes": [
+    {
+      "narration": "Tu cámara te encuentra la cara. Y nunca ha visto una.",
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.45,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "nunca vio",
+            "serif": true
+          },
+          {
+            "text": "UNA CARA",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "extreme macro of a printed photograph on a dark table, its surface breaking apart into a fine grid of tiny glowing squares that drift upward, shallow depth of field, deep blacks, slow motion",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Para ella no hay cara. Hay una tabla de números: cada pixel, un valor del cero al doscientos cincuenta y cinco.",
+      "beat_type": "hook",
+      "visual_type": "custom",
+      "custom_anim": {
+        "description": "PROHIBIDO tarjetas o cajas con texto. FRANJAS: el título va SOLO entre y=H*0.06 y y=H*0.16, en UNA línea de máximo cuatro palabras ('DEL 0 AL 255'); el dibujo va SOLO entre y=H*0.22 y y=H*0.68 y no puede tocar el título. Dibuja una cuadrícula de 6 columnas por 7 filas de celdas grandes, centrada, con distinto brillo cada una, que juntas forman una figura reconocible. Las celdas se voltean una por una en ola de arriba a abajo y, al girar, dejan de ser color y muestran un número dibujado dentro. Los números SOLO entre 0 y 255. Cuando la ola termina queda una cuadrícula de números latiendo. Calcula el tamaño de celda para que las 7 filas quepan exactas en la franja: nada se sale por abajo."
+      }
+    },
+    {
+      "narration": "Así se ve una foto en crudo, en una página que puedes abrir ahorita: los valores de brillo, uno por pixel.",
+      "beat_type": "proof",
+      "visual_type": "receipt",
+      "receipt": {
+        "image": "scratchpad/receipts/pixeles_numeros.png",
+        "url_label": "setosa.io/ev/image-kernels",
+        "title": "LO QUE SÍ VE",
+        "highlight": {
+          "y": 0.52,
+          "h": 0.3
+        },
+        "caption": "una foto real, en crudo · 0 es negro, 255 es blanco"
+      }
+    },
+    {
+      "narration": "Le pasé mi foto a un detector de caras de verdad. Puso el recuadro con ochenta y siete por ciento de confianza. Y en un recorte sin cara: cero.",
+      "beat_type": "giro",
+      "visual_type": "ml_demo",
+      "ml_demo": {
+        "code": "import numpy as np\nimport os\nimport cv2\nfrom PIL import Image\n_p = 'branding/host_jose.png'\nif not os.path.exists(_p):\n    _p = '/home/jose/tiktok/branding/host_jose.png'\n_m = 'branding/modelos/yunet.onnx'\nif not os.path.exists(_m):\n    _m = '/home/jose/tiktok/branding/modelos/yunet.onnx'\nrgb = np.asarray(Image.open(_p).convert('RGB'))\nbgr = rgb[:, :, ::-1].copy()\ndet = cv2.FaceDetectorYN_create(_m, '', (320, 320), 0.6)\nh, w = bgr.shape[:2]\ndet.setInputSize((w, h))\n_, caras = det.detect(bgr)\nx, y, bw, bh = caras[0][:4].astype(int)\nconf = float(caras[0][-1])\npared = np.tile(rgb[980:1240, 120:380], (1, 1, 1))\ndet.setInputSize((pared.shape[1], pared.shape[0]))\n_, sin = det.detect(pared[:, :, ::-1].copy())\nn_sin = 0 if sin is None else len(sin)\nfig, axs = plt.subplots(1, 2, figsize=(9.4, 5.2))\naxs[0].imshow(rgb)\naxs[0].add_patch(plt.Rectangle((x, y), bw, bh, fill=False, edgecolor='#3CFF78', lw=6))\naxs[0].set_title('mi foto', fontsize=21)\naxs[0].set_xlabel('1 cara · confianza %d%%' % round(conf*100), color=GREEN, fontsize=20, fontweight='bold', labelpad=14)\naxs[1].imshow(pared)\naxs[1].set_title('sin cara', fontsize=21)\naxs[1].set_xlabel('%d caras' % n_sin, color=RED, fontsize=20, fontweight='bold', labelpad=14)\nfor ax in axs:\n    ax.set_xticks([]); ax.set_yticks([])",
+        "display_code": [
+          "det = detector_de_caras(modelo)",
+          "_, caras = det.detect(mi_foto)",
+          "# devuelve x, y, ancho, alto y confianza"
+        ],
+        "caption": "detector.py"
+      }
+    },
+    {
+      "narration": "No busca tu cara. Busca un patrón de brillos que la tela no tiene.",
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.35,
+      "kinetic_video": {
+        "words": [
+          {
+            "text": "no busca tu cara",
+            "serif": true
+          },
+          {
+            "text": "BUSCA UN PATRÓN",
+            "accent": true
+          }
+        ],
+        "veo_prompt": "slow drifting field of faint glowing numerals arranged in a perfect grid inside deep black space, the grid rotating slowly in perspective, cinematic, no readable text",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "¿Y cómo busca ese patrón en toda la foto? Repitiendo una cuenta que ya usas. Mañana.",
+      "beat_type": "cta",
+      "visual_type": "image",
+      "image_prompt": "extreme macro photograph of a camera lens element on a dark surface, a single sharp point of light travelling across its curved glass, reflections of tiny numbers barely visible in the coating, shot on a 100mm macro at f/2.8, deep blacks, cinematic"
+    }
+  ],
+  "hook_locked": true
+}

@@ -1,0 +1,84 @@
+{
+  "slug": "pro_prompt_prestado",
+  "tema": "El mismo prompt, letra por letra, en dos modelos: 6 de 6 tareas contra 3 de 6",
+  "title": "El mismo prompt: 6 de 6 en un modelo, 3 de 6 en otro.",
+  "theme": "hielo",
+  "hook_locked": true,
+  "quien_decide": "el modelo que te tocó decide si tu prompt sirve, no la redacción del prompt",
+  "que_cuesta": "tiras un prompt bueno o pagas por uno prestado, y el problema nunca fue el texto",
+  "palanca": "antes de reescribirlo, córrelo tal cual en el modelo bueno: si ahí sí sale, deja de tocar el prompt",
+  "pregunta_ab": "Cuando un prompt te falla, ¿lo reescribes o cambias de modelo?",
+  "scenes": [
+    {
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "narration": "Tomé un prompt y no le cambié ni una letra. Solo cambié el modelo que lo contesta. Seis de seis tareas contra tres de seis.",
+      "kinetic_video": {
+        "words": [
+          {"text": "MISMO PROMPT"},
+          {"text": "6 DE 6"},
+          {"text": "CONTRA 3 DE 6"}
+        ],
+        "variant": "dark",
+        "video": "videos/gen_ver_no_basta_con_mirar_sc.assets/veo_0.mp4"
+      }
+    },
+    {
+      "beat_type": "contexto",
+      "visual_type": "image",
+      "narration": "Y por eso se cae el negocio de los packs de prompts. Compras el que le funcionó a alguien, lo pegas igualito, te sale mal, y concluyes que lo escribiste mal tú.",
+      "image_prompts": [
+        "A printed page being handed from one pair of hands to another across a dark wooden table, warm side light, deep shadows. Documentary photography, no readable text, no faces.",
+        "The same page lying alone on a different desk, colder daylight through blinds, a closed laptop beside it. Documentary photography, muted palette.",
+        "A hand crumpling that page slightly at the corner on the desk, macro, shallow depth of field, cold light."
+      ]
+    },
+    {
+      "beat_type": "proof",
+      "visual_type": "ml_demo",
+      "narration": "Aquí está medido. Seis problemas de varios pasos, cada uno corrido cuatro veces, contra dos modelos de la misma familia. El grande resuelve los seis. El chico resuelve tres, y falla siempre los mismos tres.",
+      "ml_demo": {
+        "caption": "medir_modelos.py",
+        "editor_frac": 0.24,
+        "code": "import json\nd = json.load(open('/home/jose/tiktok/mediciones/prompt_entre_modelos.json'))['modelos']\nnoms = list(d.keys())\ncorto = [n.replace('gemini-', '').replace('-latest', '') for n in noms]\nK = d[noms[0]]['corridas_por_tarea']\nT = d[noms[0]]['tareas']\nfig, (ax, bx) = plt.subplots(2, 1, figsize=(9.2, 7.2))\nres = [d[n]['tareas_resueltas'] for n in noms]\nax.bar(corto, res, color=[CYAN, RED], width=0.5)\nax.set_ylim(0, T + 1.6)\nax.set_ylabel('tareas resueltas')\nax.set_title('el MISMO prompt, dos modelos')\nfor i, r in enumerate(res):\n    ax.text(i, r + 0.25, '%d de %d' % (r, T), ha='center', color=TXT, fontsize=26, fontweight='bold')\nx = np.arange(1, T + 1)\nancho = 0.38\nfor j, n in enumerate(noms):\n    vals = [t['aciertos'] for t in d[n]['detalle']]\n    bx.bar(x + (j - 0.5) * ancho, vals, ancho, color=[CYAN, RED][j], label=corto[j])\nbx.set_xticks(x)\nbx.set_ylim(0, K + 1)\nbx.set_xlabel('tarea')\nbx.set_ylabel('aciertos de %d' % K)\nbx.set_title('tarea por tarea')\nbx.legend(loc='upper right', fontsize=15)\nfig.text(0.5, 0.012, 'mismas 6 tareas · %d corridas cada una · prompt identico letra por letra · 13-ago-2026' % K, ha='center', fontsize=11, color='#969491')",
+        "display_code": [
+          "prompt = TAREAS[i]          # identico en los dos",
+          "router_de('flash') vs router_de('flash-lite')"
+        ]
+      }
+    },
+    {
+      "beat_type": "giro",
+      "visual_type": "image",
+      "narration": "Y fíjate en el detalle que lo vuelve accionable: falla siempre las mismas tres. No es mala suerte ni una corrida rara. Es que ese modelo no puede con esas, y ninguna redacción se lo va a arreglar.",
+      "image_prompts": [
+        "Two keys of different sizes lying side by side on a dark table beside a single lock, one clearly too small for it. Macro, warm side light, deep shadows, documentary photography.",
+        "A hand trying the smaller key in the lock, extreme macro, shallow depth of field, warm lamplight.",
+        "The larger key turned in the lock, the shackle open, the small key discarded beside it on the dark table. Macro, documentary photography."
+      ]
+    },
+    {
+      "beat_type": "tesis",
+      "visual_type": "kinetic_video",
+      "narration": "Un prompt no es bueno o malo. Es bueno o malo con un modelo.",
+      "kinetic_video": {
+        "words": [
+          {"text": "UN PROMPT"},
+          {"text": "NO ES BUENO"},
+          {"text": "CON CUALQUIERA"}
+        ],
+        "variant": "dark",
+        "video": "videos/gen_ln_el_transformer.assets/veo_4.mp4"
+      }
+    },
+    {
+      "beat_type": "cta",
+      "visual_type": "image",
+      "narration": "Mi postura, y me ahorra tardes enteras: cuando un prompt falla, antes de reescribirlo lo corro tal cual en el modelo bueno. Si ahí sale, el texto nunca fue el problema. Cuando te falla un prompt, ¿lo reescribes o cambias de modelo?",
+      "image_prompts": [
+        "A desk at night with a laptop closed and two printed pages side by side under a warm lamp, one marked with a pencil tick. Documentary photography, no readable text.",
+        "Hands sliding one of the two pages into a folder on a wooden desk, morning light through a window, dust in the air. Shallow depth of field."
+      ]
+    }
+  ]
+}

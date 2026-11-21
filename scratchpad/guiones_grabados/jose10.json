@@ -1,0 +1,232 @@
+{
+  "tema": "carmin",
+  "ratio_clip": 0.45,
+  "recursos": {
+    "privacidad": "jose10.assets/img_privacidad.png",
+    "enterprise": "jose10.assets/img_enterprise.png",
+    "anonimizar": "jose10.assets/img_anonimizar.png",
+    "sesgo": "jose10.assets/img_sesgo.png",
+    "alucinacion": "jose10.assets/img_alucinacion.png",
+    "contexto": "jose10.assets/img_contexto.png",
+    "fibras": "videos/_clips_pagados/gen_ln_tres_defectos__veo_4.mp4",
+    "humo": "videos/_clips_pagados/gen_ln_lo_que_aprendio_solo__veo_4.mp4",
+    "locales": "jose10.assets/img_locales.png"
+  },
+  "paneles": [
+    {
+      "t": 0.0,
+      "spec": {
+        "kind": "headline",
+        "kicker": "ia con josé",
+        "lines": [
+          "TRES PROBLEMAS",
+          "QUE NADIE",
+          "TE CUENTA"
+        ]
+      }
+    },
+    {
+      "t": 7.9,
+      "spec": {
+        "kind": "stat",
+        "value": 1,
+        "label": "la privacidad de tus datos",
+        "sub": "lo que pegas en el chat sale de tu casa"
+      }
+    },
+    {
+      "t": 10.4,
+      "spec": {
+        "kind": "photo",
+        "images": [
+          "@privacidad"
+        ],
+        "caption": "lo pegas en el chat y ya salió"
+      }
+    },
+    {
+      "t": 21.6,
+      "spec": {
+        "kind": "clip",
+        "video": "@fibras",
+        "lines": [
+          "TUS DATOS",
+          "ENTRENAN",
+          "EL SIGUIENTE MODELO"
+        ]
+      }
+    },
+    {
+      "t": 27.8,
+      "spec": {
+        "kind": "photo",
+        "images": [
+          "@enterprise"
+        ],
+        "caption": "solución 1: plan enterprise"
+      }
+    },
+    {
+      "t": 41.8,
+      "spec": {
+        "kind": "photo",
+        "images": [
+          "@locales"
+        ],
+        "caption": "solución 2: en tu propio servidor"
+      }
+    },
+    {
+      "t": 55.5,
+      "spec": {
+        "kind": "photo",
+        "images": [
+          "@anonimizar"
+        ],
+        "caption": "solución 3: anonimizar"
+      }
+    },
+    {
+      "t": 73.4,
+      "spec": {
+        "kind": "stat",
+        "value": 2,
+        "label": "el sesgo",
+        "sub": "lo aprendió de nosotros"
+      }
+    },
+    {
+      "t": 80.2,
+      "spec": {
+        "kind": "photo",
+        "images": [
+          "@sesgo"
+        ],
+        "caption": "aprendió de internet, y de nosotros"
+      }
+    },
+    {
+      "t": 98.9,
+      "spec": {
+        "kind": "reveal",
+        "mode": "persiana",
+        "before": {
+          "text": "datos con sesgo",
+          "label": "entra"
+        },
+        "after": {
+          "text": "respuestas con sesgo",
+          "label": "sale"
+        },
+        "caption": "lo que entra con los datos, sale en las respuestas"
+      }
+    },
+    {
+      "t": 110.9,
+      "spec": {
+        "kind": "flow",
+        "title": "quién lo arregla",
+        "steps": [
+          "Explorar los datos",
+          "Antes de entrenar",
+          "Del lado de quien crea el modelo"
+        ]
+      }
+    },
+    {
+      "t": 120.7,
+      "spec": {
+        "kind": "stat",
+        "value": 3,
+        "label": "la alucinación",
+        "sub": "la que más te va a afectar a ti"
+      }
+    },
+    {
+      "t": 127.3,
+      "spec": {
+        "kind": "clip",
+        "video": "@humo",
+        "lines": [
+          "SE LO",
+          "INVENTA"
+        ]
+      }
+    },
+    {
+      "t": 131.2,
+      "spec": {
+        "kind": "completa",
+        "modo": "candidatos",
+        "prompt": "mi perro es ",
+        "tokens": [
+          " grande",
+          " y",
+          " le",
+          " gusta",
+          " correr"
+        ],
+        "candidatos": [
+          [
+            "grande 62%",
+            "negro 17%",
+            "muy 10%"
+          ],
+          [
+            "y 41%",
+            ", 33%",
+            "pero 12%"
+          ],
+          [
+            "le 38%",
+            "que 22%",
+            "siempre 14%"
+          ],
+          [
+            "gusta 71%",
+            "encanta 18%",
+            "molesta 5%"
+          ],
+          [
+            "correr 44%",
+            "dormir 26%",
+            "comer 19%"
+          ]
+        ],
+        "label": "su única función",
+        "caption": "el más probable no es el verdadero"
+      }
+    },
+    {
+      "t": 146.9,
+      "spec": {
+        "kind": "photo",
+        "images": [
+          "@alucinacion"
+        ],
+        "caption": "lo más probable no es lo correcto"
+      }
+    },
+    {
+      "t": 153.1,
+      "spec": {
+        "kind": "photo",
+        "images": [
+          "@contexto"
+        ],
+        "caption": "se quedó sin ventana de contexto"
+      }
+    },
+    {
+      "t": 162.6,
+      "spec": {
+        "kind": "cita",
+        "text": "Si no tiene el dato, lo completa igual.",
+        "highlight": [
+          "completa"
+        ],
+        "source": "ia con josé"
+      }
+    }
+  ]
+}

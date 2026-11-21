@@ -1,0 +1,81 @@
+{
+  "title": "Learning rate y mini-batches: entrenar en el mundo real",
+  "slug": "dl_learning_rate",
+  "hook_tipo": "error",
+  "keyword": "learning rate",
+  "hook_headline": ["EL PASO", "JUSTO"],
+  "pregunta_ab": "¿Chico o grande?",
+  "music_prompt": "dark energetic electronic instrumental, driving beat, momentum, tech, no vocals, 124 BPM",
+  "modo": "corto",
+  "scenes": [
+    {
+      "narration": "Un mal paso y tu IA nunca aprende.",
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.45,
+      "kinetic_video": {
+        "words": [
+          {"text": "un mal paso", "serif": true},
+          {"text": "NUNCA APRENDE", "accent": true}
+        ],
+        "variant": "dark",
+        "veo_prompt": "Cinematic shot of a glowing cyan sphere trying to descend a neon valley but either barely moving (stuck) or violently overshooting and bouncing out of frame, contrast of tiny vs huge steps, magenta accents, near-black void, volumetric glow, dark tech aesthetic, no text, no people",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Dos ajustes deciden si entrena bien o se estrella.",
+      "beat_type": "hook",
+      "visual_type": "host",
+      "host_top": {"kind": "headline", "lines": ["EL PASO", "JUSTO"]}
+    },
+    {
+      "narration": "El learning rate es el tamaño del paso. Muy chico, se atora; muy grande, explota; el justo baja suave hasta el fondo.",
+      "beat_type": "proof",
+      "visual_type": "ml_demo",
+      "ml_demo": {
+        "code": "import torch, torch.nn as nn, numpy as np\nfrom sklearn.datasets import make_moons\nX, y = make_moons(300, noise=0.2, random_state=0)\nXt = torch.tensor(X, dtype=torch.float32); yt = torch.tensor(y, dtype=torch.float32).view(-1,1)\ndef run(lr):\n    torch.manual_seed(0)\n    net = nn.Sequential(nn.Linear(2,16), nn.ReLU(), nn.Linear(16,1))\n    opt = torch.optim.SGD(net.parameters(), lr); lf = nn.BCEWithLogitsLoss(); L = []\n    for _ in range(120):\n        opt.zero_grad(); loss = lf(net(Xt), yt); loss.backward(); opt.step(); L.append(min(loss.item(), 2.0))\n    return L\nfig, ax = plt.subplots(figsize=(6,6.5))\nax.plot(run(0.001), color=CYAN, lw=3.5, label='muy chico (se atora)')\nax.plot(run(60), color=RED, lw=3.5, label='muy grande (explota)')\nax.plot(run(0.3), color=GREEN, lw=3.5, label='justo (baja suave)')\nax.set_title('el learning rate lo decide todo')\nax.legend(loc='upper right'); ax.set_xlabel('pasos'); ax.set_xticks([]); ax.set_yticks([])",
+        "display_code": [
+          "opt = SGD(net.parameters(), lr)",
+          "# lr chico  -> se atora",
+          "# lr grande -> explota",
+          "# lr justo  -> converge"
+        ],
+        "caption": "learning_rate.py"
+      }
+    },
+    {
+      "narration": "Y no usa todos los datos de golpe: lotes chicos que la GPU entrena en paralelo, rapidísimo.",
+      "beat_type": "giro",
+      "visual_type": "kinetic_video",
+      "kinetic_video": {
+        "words": [
+          {"text": "lotes chicos", "serif": true},
+          {"text": "GPU EN PARALELO", "accent": true}
+        ],
+        "variant": "dark",
+        "veo_prompt": "Cinematic shot of streams of small glowing data batches flowing simultaneously through many parallel neon lanes of a GPU chip lighting up at once, speed and parallelism, cyan and magenta, near-black background, volumetric glow, dark tech aesthetic, no text, no people",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "El paso justo lo es todo.",
+      "beat_type": "tesis",
+      "visual_type": "kinetic",
+      "pause_after": 0.35,
+      "kinetic": {
+        "words": [
+          {"text": "el paso", "serif": true},
+          {"text": "JUSTO", "accent": true}
+        ],
+        "variant": "accent"
+      }
+    },
+    {
+      "narration": "Ya entrena rápido y estable. ¿Pero y si aprende demasiado? Mañana: overfitting.",
+      "beat_type": "cta",
+      "visual_type": "host",
+      "host_top": {"kind": "save", "title": "EL PASO JUSTO", "subtitle": "MAÑANA: OVERFITTING →"}
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "nota": {
+    "hook": 6,
+    "coherencia": 5,
+    "viralidad": 6,
+    "explicabilidad": 4,
+    "marca": 3
+  },
+  "problemas": [
+    {
+      "escena": 1,
+      "eje": "hook",
+      "gravedad": "grave",
+      "que": "Aunque cabe en 11 palabras y usa contradicción, «la red» es una abstracción y «la hace mejor» promete una mejora general que el video no demuestra.",
+      "arreglo": "Abrir con «Tu celular reconoce esto aunque se mueva dos píxeles» y demostrar exactamente esa tolerancia con la misma imagen antes y después."
+    },
+    {
+      "escena": 1,
+      "eje": "coherencia",
+      "gravedad": "grave",
+      "que": "La pregunta «¿perder detalle es perder o ganar?» solo está en la ficha: la voz abre con una conclusión y nunca plantea una pregunta concreta que el espectador espere resolver.",
+      "arreglo": "Convertir la primera escena en una pregunta visible y hablada —«¿Por qué borrar 75% de estos números ayuda a reconocer la imagen?»— y contestarla en la escena 4."
+    },
+    {
+      "escena": 2,
+      "eje": "explicabilidad",
+      "gravedad": "grave",
+      "que": "«Red», «ventana», «negativo» y «cuadrito» aparecen sin referente visual ni definición, así que un principiante no sabe qué objeto cambia ni por qué.",
+      "arreglo": "Mostrar una matriz etiquetada «mapa de activaciones» y decir «son puntuaciones de dónde detectó un rasgo; ReLU pone en cero las negativas y max pooling conserva la mayor de cada bloque 2×2»."
+    },
+    {
+      "escena": 2,
+      "eje": "marca",
+      "gravedad": "grave",
+      "que": "«Después de cada ventana» describe falsamente una regla universal: ReLU y max pooling son operaciones distintas, su orden depende de la arquitectura y muchas redes modernas ni siquiera usan max pooling en cada bloque.",
+      "arreglo": "Decir «En este ejemplo de una CNN clásica, aplico ReLU al mapa y después max pooling 2×2» y no presentarlo como comportamiento de toda red."
+    },
+    {
+      "escena": 3,
+      "eje": "viralidad",
+      "gravedad": "medio",
+      "que": "La supuesta prueba no especifica los 16 valores de entrada ni enseña el resultado exacto, de modo que «lo corrí con números» puede parecer una animación disfrazada de evidencia.",
+      "arreglo": "Mantener en pantalla la matriz 4×4, el código ejecutado y la salida 2×2, con colores que permitan verificar cada máximo a simple vista."
+    },
+    {
+      "escena": 3,
+      "eje": "explicabilidad",
+      "gravedad": "medio",
+      "que": "La cifra «la cuarta parte de números» aparece sin hacer explícita la cuenta que la produce.",
+      "arreglo": "Rotular «16 valores → 4 valores: queda 4/16 = 25%» mientras se agrupan los cuatro bloques 2×2."
+    },
+    {
+      "escena": 4,
+      "eje": "marca",
+      "gravedad": "grave",
+      "que": "La explicación exagera la invariancia: mover un rasgo unos píxeles puede cambiar la activación o cruzar el borde del bloque, y entonces el máximo sí cambia.",
+      "arreglo": "Limitar la afirmación a «puede dar tolerancia a pequeños desplazamientos si la activación sigue dentro del mismo bloque y conserva el máximo» y mostrar también el caso límite al cruzar de bloque."
+    },
+    {
+      "escena": 4,
+      "eje": "coherencia",
+      "gravedad": "medio",
+      "que": "El único ejemplo concreto —un rasgo desplazado— aparece hasta el giro, en vez de sostener visualmente todo el video desde el hook.",
+      "arreglo": "Usar desde la escena 1 la misma figura movida dos píxeles y seguir sus activaciones, ReLU y max pooling hasta comparar ambas salidas."
+    },
+    {
+      "escena": 5,
+      "eje": "coherencia",
+      "gravedad": "grave",
+      "que": "La tesis repite las escenas 2 y 3 sin añadir respuesta, costo ni condición, desperdiciando segundos decisivos para la finalización.",
+      "arreglo": "Sustituirla por la respuesta «Gana tolerancia a la posición, pero pierde ubicación exacta: sirve cuando importa qué apareció, no el píxel preciso»."
+    },
+    {
+      "escena": 5,
+      "eje": "marca",
+      "gravedad": "grave",
+      "que": "«Apagar lo débil» es técnicamente falso: ReLU apaga valores negativos, no valores débiles, y max pooling descarta todo valor que no sea el máximo aunque sea alto.",
+      "arreglo": "Decir «ReLU elimina activaciones negativas; max pooling conserva solo la activación más alta de cada zona»."
+    },
+    {
+      "escena": 6,
+      "eje": "explicabilidad",
+      "gravedad": "grave",
+      "que": "«Las tres piezas» y «los nueve números de la ventana» llegan sin antecedente comprensible, y además se pasa de bloques 2×2 a nueve números sin introducir un filtro 3×3.",
+      "arreglo": "Presentar antes un filtro 3×3 o cerrar sin esa referencia: «Siguiente: cómo la red aprende los 9 pesos de un filtro 3×3 durante el entrenamiento»."
+    },
+    {
+      "escena": 6,
+      "eje": "coherencia",
+      "gravedad": "medio",
+      "que": "El cierre abandona la pregunta sobre perder detalle y abre otra sobre quién escribe un filtro, sin rematar la respuesta del video actual.",
+      "arreglo": "Cerrar primero el balance «gana tolerancia, pierde precisión espacial» y solo después enlazar el siguiente episodio sobre cómo se aprenden los pesos."
+    },
+    {
+      "escena": 0,
+      "eje": "marca",
+      "gravedad": "grave",
+      "que": "No hay ninguna frase de experiencia, criterio o postura propia que identifique a un ingeniero de IA; el texto podría venir de cualquier cuenta genérica.",
+      "arreglo": "Añadir una línea honesta de oficio, por ejemplo «Cuando depuro una CNN, comparo el mapa antes y después para comprobar qué información sacrificó»."
+    }
+  ],
+  "lo_que_funciona": [
+    "La primera frase tiene 11 palabras y usa una afirmación contraria a la intuición.",
+    "La reducción de una matriz 4×4 a una 2×2 mediante max pooling 2×2 sí produce cuatro valores, el 25% del conteo original.",
+    "No pide likes, seguidores, comentarios ni guardados."
+  ],
+  "_hook_medido": {
+    "palabras": 11,
+    "caracteres": 53,
+    "segundos_aprox": 3.3,
+    "cabe_en_12": true,
+    "primera_frase": "La red tira detalle a propósito"
+  }
+}

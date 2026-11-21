@@ -1,0 +1,84 @@
+{
+  "voz": {
+    "genero_aparente": "Masculino",
+    "edad_aparente": "30-40 años",
+    "acento": "Español latinoamericano neutro (con ligera cadencia mexicana o colombiana de locución comercial/documental).",
+    "timbre": "Barítono medio-grave, cuerpo denso, limpio, con brillo controlado en agudos y resonancia de pecho muy marcada.",
+    "tono_emocional": "Autoritativo pero accesible, didáctico, preciso, con entusiasmo intelectual contenido (nunca eufórico, pero sí fascinado por los datos).",
+    "ritmo": "Ágil y constante (aprox. 170-180 palabras por minuto), sin atropellar sílabas; dicción quirúrgica en términos técnicos e ingleses ('McCulloch & Pitts', 'Attention is all you need', 'softmax').",
+    "uso_de_pausas": "Micro-pausas métricas exactas antes de fechas clave ('1943...', 'En 1958...', 'En 2017...') y antes de conclusiones tajantes ('...no aprendía nada', '...llegó el primer invierno de la IA'). Las pausas funcionan como signos de dos puntos auditivos.",
+    "actuacion": "En momentos de límite o fracaso ('pero los pesos se ponían a mano, no aprendía nada' 0:14, 'pero el O exclusivo, no' 0:34) baja medio tono y seca la entrega. En los hitos ('Attention is all you need' 1:30, 'nació ChatGPT' 2:21) abre ligeramente la vocalización y marca un staccato sutil en cada palabra importante. En primera persona ('Lo programé con su regla original' 0:30, 'Mi red de nueve pesos' 1:06) adopta un matiz de complicidad técnica.",
+    "humana_o_sintetica": "Sintética de altísima gama (tipo ElevenLabs con modelo Multilingual v2 ajustado o voz clonada profesionalmente con edición de respiraciones). Evidencia: perfección absoluta e invariable en el ataque de cada frase durante 2:50 minutos, ausencia total de sonidos de saliva o respiraciones orgánicas entre cláusulas rápidas, y una consistencia espectral idéntica entre el segundo 0:05 y el 2:45, aunque con prosodia extremadamente bien dirigida.",
+    "procesado": "Seco total (0% reverb de sala), efecto de proximidad muy presente (cercanía íntima al micrófono), compresión alta y rápida que mantiene todas las sílabas al mismo nivel de presión sonora, de-esser bien ajustado en las 's' y realce suave en 120Hz (cuerpo) y 4kHz (inteligibilidad).",
+    "direccion_de_locucion": "Quiero una lectura de divulgador científico moderno que domina el tema porque él mismo lo ha programado: segura, rítmica y sin adornos teatrales innecesarios. Habla pegado al micrófono, con voz de pecho pero ágil, como si le explicaras un secreto fascinante a un colega inteligente en poco tiempo. No corras: logra la velocidad eliminando los silencios muertos entre ideas, no acelerando las palabras. Cada vez que digas un año o una cifra grande, clávala con peso y deja un microsegundo de aire antes de explicar la consecuencia. Cuando menciones un límite técnico ('no aprende', 'invierno', 'olvidaban'), deja caer la energía con ironía seca; cuando presentes la solución matemática, recupera el pulso firme y luminoso."
+  },
+  "narrativa": {
+    "premisa": "Toda la revolución actual de la inteligencia artificial (Claude, GPT, agentes de 2026) se basa exactamente en la misma fórmula matemática de una neurona artificial creada en papel en 1943; lo único que cambió fue el método para ajustar sus pesos y una escala de cómputo multiplicada por 21 órdenes de magnitud.",
+    "gancho_primeros_3s": "Literal: 'De una neurona en papel a Claude y GPT: la historia de los LLM, rápido.' Engancha porque conecta un objeto mínimo y tangible ('una neurona en papel') con las herramientas más complejas y cotidianas del presente ('Claude y GPT'), prometiendo resolver un misterio tecnológico enorme bajo una restricción de tiempo explícita ('rápido') mientras en pantalla esa única caja se multiplica instantáneamente en una red.",
+    "estructura_por_actos": [
+      {
+        "acto": "Acto I: El origen estático y el primer aprendizaje (1943-1969)",
+        "tiempo": "0:00 - 0:46",
+        "descripcion": "De la neurona lógica manual de McCulloch & Pitts al Perceptrón físico de Rosenblatt que aprende moviendo motores, culminando en el muro matemático del XOR y el primer invierno de la IA."
+      },
+      {
+        "acto": "Acto II: Capas ocultas, retropropagación y poder de cómputo (1975-2014)",
+        "tiempo": "0:46 - 1:27",
+        "descripcion": "El problema de asignar culpa del error en redes multicapa, la solución mediante la regla de la cadena y descenso de gradiente (1986), la explosión con GPUs en AlexNet (2012) y el cuello de botella secuencial de las RNN/LSTM."
+      },
+      {
+        "acto": "Acto III: La era Transformer y la ley de escala (2017-2022)",
+        "tiempo": "1:27 - 2:15",
+        "descripcion": "El paralelismo del mecanismo de atención (Q, K, V), la predicción del siguiente token en GPT-1 a GPT-3, las leyes de escalado (Chinchilla) y el salto de 21 órdenes de magnitud en FLOPs."
+      },
+      {
+        "acto": "Acto IV: Alineación, razonamiento, agentes y cierre circular (2022-2026)",
+        "tiempo": "2:15 - 2:50",
+        "descripcion": "Del predictor de texto al conversador (RLHF / ChatGPT), modelos que piensan antes de hablar (o1, DeepSeek-R1), agentes actuales de 2026 y regreso a la ecuación original de 1943 para demostrar que el ladrillo básico nunca cambió."
+      }
+    ],
+    "recurso_central": "La línea de tiempo viva combinada con demostraciones ejecutadas por el propio autor ('corrida propia'). El narrador no solo cuenta la historia teórica: somete cada arquitectura histórica a pruebas reales programadas por él mismo (resolver AND, fallar 1 millón de veces en XOR, resolver XOR en 550 pasos con 9 pesos, inspeccionar la cabeza 8 de la capa 14 de Qwen2.5).",
+    "giro": "En el minuto 2:38 ('Pero, 83 años después, la pieza básica es la misma'), tras haber escalado hasta agentes autónomos de 2026 y cifras astronómicas de cómputo, el video desinfla la complejidad aparente y vuelve exactamente al mismo diagrama de 1943 para revelar que un LLM moderno no es más que esa misma suma ponderada repetida a escala colosal.",
+    "cierre": "Cierre circular perfecto ('Así llegamos de una neurona en papel a los LLM'): repite literalmente las palabras del segundo 0:00 mientras contrapone en pantalla dividida la neurona solitaria de 1943 frente a la torre de bloques Transformer de 2026 unidos por 'x 10^21 cómputo' y el binomio 'ESCALA + APRENDER'.",
+    "por_que_se_ve_hasta_el_final": "Porque mantiene un contrato implícito de 'cero relleno': cada 6 a 10 segundos hay un ciclo completo de [problema técnico -> visualización matemática real -> límite que obliga al siguiente salto]. Además, el uso de simulaciones propias con datos concretos y una barra de progreso temporal en la parte superior genera una expectativa de completitud cronológica hasta llegar al año actual (2026)."
+  },
+  "animacion": {
+    "estilo": "Infografía técnica de interfaz retro-futurista (HUD científico / blueprint de terminal oscura). Estética minimalista de alta densidad informativa: cajas de línea fina (stroke 1px), retículas de datos, fórmulas LaTeX limpias y gráficos matemáticos animados en tiempo real sobre fondo negro espacial con sutiles constelaciones de nodos.",
+    "paleta": "Fondo carbón/negro profundo (#0A0C0E), líneas estructurales y texto técnico en blanco hueso y gris pizarra, con codificación semántica estricta por color pastel luminoso: cian/azul hielo para aciertos, activaciones y flujo positivo; rosa coral/salmón para errores, límites o fallos; lavanda/violeta para matrices, gradientes y conceptos clave; verde menta puntual para validaciones (1/0).",
+    "tipografia": "Combinación de tres familias con roles estrictos: 1) Monoespaciada técnica (estilo JetBrains Mono o IBM Plex Mono) para metadatos, fechas, etiquetas de código y ejes; 2) Serif matemática clásica (Computer Modern / LaTeX) para ecuaciones con sumatorias, derivadas parciales y vectores; 3) Sans-serif condensada ultra-bold (estilo Anton o Bebas Neue) con gradientes suaves para los titulares de impacto ('HISTORIA DE LOS LLM', 'NO APRENDE', 'INVIERNO DE LA IA', 'ESCALA + APRENDER').",
+    "camara": "Cámara 2D fija ortogonal en el 95% del video (la estructura del marco superior de línea de tiempo permanece anclada como un osciloscopio). El movimiento ocurre dentro del encuadre mediante aparición modular de paneles, excepto en 1:01-1:05 donde se introduce una proyección isométrica 3D de una malla de superficie de pérdida.",
+    "como_se_sincroniza_con_la_voz": "Sincronización silábica literal con los valores numéricos y operadores: cuando la voz dice 'suma sus entradas' aparece Σ; cuando dice 'si pasan de un umbral' aparece θ=2; cuando dice 'mueve cada peso un poquito' los contadores numéricos (0,2 -> 0,9 -> 1,2) rotan exactamente en el golpe de voz. Ningún elemento gráfico entra antes de ser nombrado.",
+    "transiciones": "Cortes secos por desvanecimiento ultrarrápido de contenido interno manteniendo el marco HUD superior fijo, donde el punto indicador en la línea de tiempo (1943 -> 2026) se desliza horizontalmente hacia la derecha con easing suave al cambiar de año.",
+    "ejemplos_de_tres_momentos_brillantes": [
+      {
+        "tiempo": "0:34 - 0:40",
+        "descripcion": "La prueba de fuerza bruta del XOR: mientras el narrador dice 'Probé un millón al azar y ninguna acierta los cuatro casos', un contador inferior corre vertiginosamente de 0 a 1.000.000 mientras decenas de rectas blancas cortan el plano cartesiano intentando sin éxito separar los dos cuadrados verdes de los dos rosas, dejando una telaraña geométrica que demuestra visualmente la imposibilidad lineal."
+      },
+      {
+        "tiempo": "1:01 - 1:11",
+        "descripcion": "El paso de la intuición 3D a la prueba real 2D: primero muestra una esfera rosada rodando con física suave por una malla tridimensional morada (L(w)) hasta el valle del error (paso 6.000), y al corte siguiente muestra la 'corrida propia' donde el fondo del plano XOR se deforma en una curva de calor azulada no lineal al mismo tiempo que la curva de pérdida cae en picado en el paso 550."
+      },
+      {
+        "tiempo": "1:42 - 1:50",
+        "descripcion": "Visualización real de la matriz de atención triangular en Qwen2.5-1.5B con la frase 'El trofeo no cabe en la maleta porque es demasiado grande': al llegar a la fila 'grande', se ilumina la intersección con la columna 'trofeo' mostrando barras de progreso comparativas (54% hacia 'trofeo' vs 4,6% hacia 'maleta'), haciendo visible en 7 segundos cómo un LLM entiende a qué sustantivo se refiere un adjetivo lejano."
+      }
+    ],
+    "como_se_produciria_hoy": "Inferencia altamente probable: Producción programática (Code-driven animation) usando React/TypeScript con Remotion o Motion Canvas (o una arquitectura personalizada en HTML5 Canvas/SVG exportada a video, posiblemente asistida por código generado con Claude/LLMs), combinada con scripts reales en Python (NumPy/PyTorch, mencionados explícitamente en los subtítulos técnicos del propio video como 'corrida propia · numpy') para extraer los datos exactos de entrenamiento y matrices de atención. Evidencia: la precisión milimétrica de las grillas flexbox/grid, el renderizado nativo de fuentes monoespaciadas, contadores que iteran con curvas matemáticas exactas y la consistencia absoluta del sistema de diseño en más de 25 pantallas distintas hacen que producir esto manualmente keyframe por keyframe en After Effects sea ineficiente frente a un sistema declarativo basado en código."
+  },
+  "sonido": {
+    "musica": "Ausente o imperceptible (un drone sub-grave casi inexistente por debajo del umbral de atención). El video confía el 100% del ritmo y la tensión dramática a la cadencia de la voz en off.",
+    "efectos": "Diseño sonoro minimalista o nulo; toda la percusión audiovisual proviene de la articulación consonántica de la locución sincronizada con los cortes visuales secos (con el cierre estándar de marca de agua de TikTok al final en 2:50).",
+    "relacion_con_la_voz": "Monopolio absoluto de la voz. Al eliminar música épica y efectos de sonido clichés ('whooshes', 'beeps'), se evita la fatiga auditiva ante tanta densidad matemática y se obliga al cerebro del espectador a usar toda su capacidad de procesamiento en conectar lo que oye con las fórmulas que ve."
+  },
+  "plantilla_creativa": {
+    "nombre_del_formato": "Genealogía Técnica Ejecutable (Del Átomo a la Catedral)",
+    "principios": [
+      "1. Anclaje de extremo a extremo: Abre y cierra conectando la unidad mínima fundacional (el 'átomo' teórico en papel) con la manifestación más compleja y famosa del presente (la 'catedral' tecnológica), demostrando al final que la catedral sigue hecha del mismo átomo.",
+      "2. Cadena causal de cuellos de botella: Nunca presentes un avance como 'luego alguien inventó X'. Preséntalo siempre como la respuesta obligada al fracaso matemático o físico del paso anterior ('funcionaba para A, pero rompía en B; para cruzar B hacía falta C').",
+      "3. Evidencia ejecutable en primera persona ('Corrida Propia'): No uses gráficos genéricos de archivo. Corre tú mismo el experimento histórico en código, mide el fallo o el acierto real y muestra tus propios números en pantalla con transparencia metodológica (semilla, épocas, modelo usado).",
+      "4. Interfaz constante, contenido mutable: Mantén un chasis visual inamovible (encabezado de era, línea de tiempo, tipografía, paleta semántica de 3 colores) para que el ojo del espectador no tenga que re-aprender a leer la pantalla en cada corte y dedique toda su atención al cambio conceptual.",
+      "5. Sincronización de aparición por nombramiento: Ningún símbolo matemático, variable o bloque de diagrama debe existir en pantalla antes de que la voz pronuncie su función, ni debe quedar huérfano de explicación verbal; la ecuación se construye al ritmo de la sintaxis hablada.",
+      "6. Silencio instrumental como respeto cognitivo: Cuando la densidad visual y conceptual es alta, elimina la música de fondo y los efectos sonoros decorativos; deja que la prosodia seca, precisa y rítmica de la voz sea el único metrónomo del video."
+    ]
+  }
+}

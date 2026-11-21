@@ -1,0 +1,78 @@
+{
+  "title": "Overfitting y regularización: que la red generalice",
+  "slug": "dl_overfitting",
+  "hook_tipo": "problema",
+  "keyword": "overfitting",
+  "hook_locked": true,
+  "hook_headline": ["MEMORIZA", "≠ APRENDE"],
+  "pregunta_ab": "¿Memoriza o aprende?",
+  "music_prompt": "dark reflective electronic instrumental, resolving warm synth, sense of closure, tech, no vocals, 120 BPM",
+  "modo": "corto",
+  "scenes": [
+    {
+      "narration": "Si tu IA memoriza, está rota.",
+      "beat_type": "hook",
+      "visual_type": "kinetic_video",
+      "pause_after": 0.45,
+      "kinetic_video": {
+        "words": [
+          {"text": "si memoriza", "serif": true},
+          {"text": "ESTÁ ROTA", "accent": true}
+        ],
+        "variant": "dark",
+        "veo_prompt": "Cinematic shot of a glowing neon brain-network that rigidly locks and crystallizes into a frozen memorized pattern, brittle and cracking, unable to adapt, cyan and magenta light, near-black void, volumetric glow, dark tech aesthetic, no text, no people",
+        "seconds": 4
+      }
+    },
+    {
+      "narration": "Le pasa a las redes grandes con pocos datos.",
+      "beat_type": "hook",
+      "visual_type": "host",
+      "host_top": {"kind": "headline", "lines": ["MEMORIZA", "NO APRENDE"]}
+    },
+    {
+      "narration": "Mira: en los datos de entrenamiento acierta cada vez más, pero en datos nuevos empeora. Memorizó en vez de aprender.",
+      "beat_type": "proof",
+      "visual_type": "ml_demo",
+      "ml_demo": {
+        "code": "import torch, torch.nn as nn, numpy as np\nfrom sklearn.datasets import make_moons\ntorch.manual_seed(0)\nXtr, ytr = make_moons(60, noise=0.35, random_state=0)\nXte, yte = make_moons(400, noise=0.35, random_state=1)\nXtr_ = torch.tensor(Xtr, dtype=torch.float32); ytr_ = torch.tensor(ytr, dtype=torch.float32).view(-1,1)\nXte_ = torch.tensor(Xte, dtype=torch.float32); yte_ = torch.tensor(yte, dtype=torch.float32).view(-1,1)\nnet = nn.Sequential(nn.Linear(2,64), nn.ReLU(), nn.Linear(64,64), nn.ReLU(), nn.Linear(64,1))\nopt = torch.optim.Adam(net.parameters(), 0.01); lf = nn.BCEWithLogitsLoss()\ntr, te = [], []\nfor _ in range(400):\n    opt.zero_grad(); loss = lf(net(Xtr_), ytr_); loss.backward(); opt.step(); tr.append(loss.item())\n    with torch.no_grad(): te.append(lf(net(Xte_), yte_).item())\nbest = int(np.argmin(te))\nfig, ax = plt.subplots(figsize=(6,6.5))\nax.plot(tr, color=CYAN, lw=3.5, label='entrenamiento')\nax.plot(te, color=MAG, lw=3.5, label='datos nuevos')\nax.axvline(best, color=GREEN, ls='--', lw=2.5)\nax.annotate('early stopping', (best, te[best]), xytext=(best+30, te[best]+0.1), color=GREEN, fontsize=14, fontweight='bold')\nax.set_title('memoriza: en lo nuevo SUBE'); ax.legend(loc='upper right'); ax.set_xlabel('pasos'); ax.set_xticks([]); ax.set_yticks([])",
+        "display_code": [
+          "# red grande, pocos datos",
+          "train_loss  # sigue bajando",
+          "test_loss   # baja y luego SUBE",
+          "# early stopping = mejor momento"
+        ],
+        "caption": "overfitting.py"
+      }
+    },
+    {
+      "narration": "Dos remedios: dropout apaga la mitad de las neuronas al entrenar, y early stopping frena en el mejor momento.",
+      "beat_type": "proof",
+      "visual_type": "diagram",
+      "diagram": {
+        "type": "list",
+        "title": "REGULARIZACIÓN",
+        "items": ["Dropout: apaga el 50% de neuronas", "Early stopping: frena a tiempo"]
+      }
+    },
+    {
+      "narration": "Que generalice, no que memorice.",
+      "beat_type": "tesis",
+      "visual_type": "kinetic",
+      "pause_after": 0.35,
+      "kinetic": {
+        "words": [
+          {"text": "que generalice,", "serif": true},
+          {"text": "NO QUE MEMORICE", "accent": true}
+        ],
+        "variant": "accent"
+      }
+    },
+    {
+      "narration": "De una simple recta a una red que generaliza. Esto fue lo básico del deep learning. Sígueme, que apenas empezamos.",
+      "beat_type": "cta",
+      "visual_type": "host",
+      "host_top": {"kind": "save", "title": "YA ENTIENDES LA IA", "subtitle": "APENAS EMPEZAMOS →"}
+    }
+  ]
+}
